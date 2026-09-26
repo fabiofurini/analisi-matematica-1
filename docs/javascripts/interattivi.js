@@ -20,10 +20,13 @@
     return s.replace(".", "{,}");
   };
   const numTxt = (x, c = 3) => num(x, c).replace("{,}", ",");
+  // ogni formula \(...\) va in uno span «arithmatex»: è l'unica classe che
+  // il MathJax della collana elabora
+  const mj = (html) => String(html).replace(/\\\((.+?)\\\)/gs, (m) => `<span class="arithmatex">${m}</span>`);
   const h = (tag, attrs = {}, html = "") => {
     const e = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
-    e.innerHTML = html;
+    e.innerHTML = mj(html);
     return e;
   };
   const typeset = (el) => { if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(() => {}); };
@@ -268,7 +271,7 @@
       nuova.onclick = nuovaSfida;
       bAiuto.onclick = () => {
         const k = R.parametri.map((p) => p.k).find((k) => Math.abs(val(k) - bersaglio[k]) > 0.051) || R.parametri[0].k;
-        aiuto.innerHTML = R.sfida.aiuti[k];
+        aiuto.innerHTML = mj(R.sfida.aiuti[k]);
         aiuto.hidden = false;
         typeset(aiuto);
       };
@@ -313,6 +316,7 @@
         .filter((v) => v[0] !== "target" || modo === "sfida")
         .map(([k, t, s]) => `<span><i style="border-color:var(--gi-${k});border-top-style:${s || "solid"}"></i>${/[\\_^]/.test(t) ? `\\(${t}\\)` : t}</span>`)
         .join("");
+      legenda.innerHTML = mj(legenda.innerHTML);
       typeset(legenda);
     }
 
@@ -333,7 +337,7 @@
       if (ricrea) { creaBoard(); scriviLegenda(); }
       board.update();
       R.parametri.forEach((q) => (valEl[q.k].textContent = numTxt(val(q.k), q.step < 0.05 ? 2 : 1)));
-      formula.innerHTML = `\\(${R.formula(p(), fn(), col, chiave)}\\)`;
+      formula.innerHTML = mj(`\\(${R.formula(p(), fn(), col, chiave)}\\)`);
       typeset(formula);
       if (R.letture) { letture.hidden = false; letture.textContent = R.letture(p(), fn()); }
       if (modo === "sfida" && bersaglio) {

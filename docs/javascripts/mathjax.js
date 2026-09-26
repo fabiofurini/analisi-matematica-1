@@ -25,11 +25,11 @@ window.MathJax = {
       settanH: "\\operatorname{SettTh}",
       Ima: "\\operatorname{Im}",
       brkbinom: ["\\genfrac{[}{]}{0pt}{}{#1}{#2}", 2],
-      blue: ["{\\color{#1971c2}{#1}}", 1], red: ["{\\color{#e03131}{#1}}", 1],
-      green: ["{\\color{#2f9e44}{#1}}", 1], yellow: ["{\\color{#f08c00}{#1}}", 1],
-      violet: ["{\\color{#9c36b5}{#1}}", 1], orange: ["{\\color{#e8590c}{#1}}", 1],
-      airforceblue: ["{\\color{#5d8aa8}{#1}}", 1], munsell: ["{\\color{#d4a300}{#1}}", 1],
-      viridian: ["{\\color{#40826d}{#1}}", 1],
+      blue: ["{\\color[RGB]{25,113,194}{#1}}", 1], red: ["{\\color[RGB]{224,49,49}{#1}}", 1],
+      green: ["{\\color[RGB]{47,158,68}{#1}}", 1], yellow: ["{\\color[RGB]{240,140,0}{#1}}", 1],
+      violet: ["{\\color[RGB]{156,54,181}{#1}}", 1], orange: ["{\\color[RGB]{232,89,12}{#1}}", 1],
+      airforceblue: ["{\\color[RGB]{93,138,168}{#1}}", 1], munsell: ["{\\color[RGB]{212,163,0}{#1}}", 1],
+      viridian: ["{\\color[RGB]{64,130,109}{#1}}", 1],
       thicksim: "\\sim", thickapprox: "\\approx",
       mathscr: ["\\mathcal{#1}", 1]
     }

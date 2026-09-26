@@ -9,7 +9,7 @@ riprodurre.
 !!! tip "Come si usa"
     Trascina i cursori, oppure clicca ▶ per l'animazione. Sul grafico puoi
     spostarti trascinando con due dita (o con il mouse) e ingrandire con
-    ++shift++ + rotellina. Ogni grafico si ritrova anche nel capitolo delle
+    Maiusc + rotellina. Ogni grafico si ritrova anche nel capitolo delle
     dispense a cui si riferisce.
 
 ## Funzioni e grafici
