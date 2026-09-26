@@ -27,12 +27,14 @@ ma si può anche saltare direttamente a una sezione dal menu a destra.
 3. Ripassa i [teoremi d'esame](teoremi-esame.md): enunciato, ipotesi,
    dimostrazione.
 
-## Testi di riferimento
+## Libri di riferimento
 
-Le dispense seguono i testi del corso:
+Per chi vuole approfondire o cercare altri esercizi:
 
 - M. Bramanti, C. D. Pagani, S. Salsa, *Analisi matematica 1*, Zanichelli.
+- P. Marcellini, C. Sbordone, *Analisi Matematica uno*, Liguori.
 - M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+- P. Marcellini, C. Sbordone, *Esercitazioni di Matematica*, vol. 1, Liguori.
 
 ## Autori
 

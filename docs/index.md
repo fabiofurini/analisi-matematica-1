@@ -134,7 +134,7 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     ---
 
-    Come usare il sito, i testi di riferimento, l'indice completo dei
+    Come usare il sito, i libri di riferimento, l'indice completo dei
     capitoli.
 
     [:octicons-arrow-right-24: Organizzazione](organizzazione.md)
