@@ -574,6 +574,11 @@ def tabella(spec: str, corpo: str, st: Stato) -> str:
             cella = re.sub(r"\\(bbb|rrr)\b", "", cella)
             cella = re.sub(r"\\cellcolor\{[^}]*\}", "", cella)
             testo = converti(cella, st).strip().replace("\n\n", "<br>").replace("\n", " ")
+            # dentro l'HTML della tabella Markdown non elabora la matematica:
+            # la si marca a mano per MathJax
+            testo = re.sub(r"\$\$(.+?)\$\$", lambda k: f'<span class="arithmatex">\\[{k.group(1)}\\]</span>', testo)
+            testo = re.sub(r"\$(.+?)\$", lambda k: f'<span class="arithmatex">\\({k.group(1)}\\)</span>', testo)
+            testo = re.sub(r"\\begin\{(\w+\*?)\}(.+?)\\end\{\1\}", lambda k: f'<span class="arithmatex">\\[\\begin{{{k.group(1)}}}{k.group(2)}\\end{{{k.group(1)}}}\\]</span>', testo)
             html.append(f"<td{attr}>{testo}</td>")
         html.append("</tr>")
     html.append("</table></div>")
@@ -869,7 +874,11 @@ def ambiente(env: str, corpo: str, st: Stato) -> str | None:
     if env == "proof":
         opt, k = read_opt(corpo, 0)
         corpo_md = converti(corpo[k:], st)
-        corpo_md = corpo_md.rstrip() + " <span class=\"qed\">□</span>"
+        corpo_md = corpo_md.rstrip()
+        if corpo_md.endswith(("$$", "}")) or corpo_md.split("\n")[-1].startswith(("-", "1.", "    ")):
+            corpo_md += "\n\n<p class=\"qed-riga\"><span class=\"qed\">□</span></p>"
+        else:
+            corpo_md += " <span class=\"qed\">□</span>"
         titolo = "Dimostrazione" + (f" ({inline(opt, st)})" if opt else "")
         return box("dimostrazione", titolo, corpo_md, apribile=True)
     if env == "texercise":

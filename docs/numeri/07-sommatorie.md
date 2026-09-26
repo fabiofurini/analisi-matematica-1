@@ -84,7 +84,9 @@ title: "Sommatorie e progressioni geometriche"
 
     $$
     \underbrace{c\:  + c  + \dots + c\:}_{=\sum_{k=1}^n c {\rm ~~~~ovvero~} c {\rm ~sommato~} n {\rm ~volte}} = c \: n
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 2"
 
@@ -101,7 +103,9 @@ title: "Sommatorie e progressioni geometriche"
 
     $$
     \underbrace{a_1 +  a_2 + \dots + a_n +  b_1 +  b_2 + \dots +  b_n}_{=\sum_{k=1}^n a_k  + \sum_{k=1}^n b_k} = \underbrace{a_1 + b_1 +a_2 + b_2+\dots+a_n + b_n}_{=\sum_{k=1}^n (a_k + b_k) }
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 3"
 
@@ -137,7 +141,9 @@ title: "Sommatorie e progressioni geometriche"
      & = \frac{1}{2}  \; \sum_{k=1}^{n}  \big(k+ n-k+1 \big)
       = \frac{1}{2} \; \sum_{k=1}^{n}  \big(n +1  \big)
       = \frac{n \: (n+1)}{2}
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 5: somma dei primi $n$ numeri dispari"
 
@@ -162,7 +168,9 @@ title: "Sommatorie e progressioni geometriche"
         & = 2\:\left( \frac{n \: (n+1)}{2} - n \right)+ n 
          =  n^2 + n - 2\:n + n 
          =  n^2
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 6: somma dei primi $n$ numeri pari (senza lo zero)"
 
@@ -176,7 +184,9 @@ title: "Sommatorie e progressioni geometriche"
 
     \begin{align*}
     \sum_{k=1}^{n} 2\:k &= 2\:\sum_{k=1}^{n} k = 2 \left(\frac{n\:(n+1)}{2} \right) =  n \: (n+1)
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ## 2. Progressioni geometriche
 
@@ -253,7 +263,9 @@ title: "Sommatorie e progressioni geometriche"
 
     $$
     \sum_{k=1}^{n} q^{k-1} = \sum_{k=1}^{n} 1 = n
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Dati $q \in\ \R_+, n \in \N, n \ge 1$ e $a \in \R$, la formula \(\eqref{GEOM}\) si estende come segue:
 

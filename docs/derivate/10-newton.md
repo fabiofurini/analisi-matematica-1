@@ -376,22 +376,22 @@ title: "Metodo di Newton"
     <div class="tabella" markdown><table>
     <tr>
     <td>iter.</td>
-    <td>$x_n$</td>
-    <td>stima di $\sqrt{2}$</td>
-    <td>$\varepsilon_n$</td>
+    <td><span class="arithmatex">\(x_n\)</span></td>
+    <td>stima di <span class="arithmatex">\(\sqrt{2}\)</span></td>
+    <td><span class="arithmatex">\(\varepsilon_n\)</span></td>
     </tr>
     <tr>
-    <td>$n=3$</td>
-    <td>$\frac{23,137}{16,272}$</td>
+    <td><span class="arithmatex">\(n=3\)</span></td>
+    <td><span class="arithmatex">\(\frac{23,137}{16,272}\)</span></td>
     <td>1.421890363…</td>
-    <td>$\le \frac{1}{2}\; \varepsilon^2_{3} \approx$</td>
+    <td><span class="arithmatex">\(\le \frac{1}{2}\; \varepsilon^2_{3} \approx\)</span></td>
     <td>0.16213…</td>
     </tr>
     <tr>
-    <td>$n=4$</td>
-    <td>$\frac{1,064,876,737}{752,970,528}$</td>
+    <td><span class="arithmatex">\(n=4\)</span></td>
+    <td><span class="arithmatex">\(\frac{1,064,876,737}{752,970,528}\)</span></td>
     <td>1.414234285…</td>
-    <td>$\le \frac{1}{2}\; \varepsilon^2_{4} \approx$</td>
+    <td><span class="arithmatex">\(\le \frac{1}{2}\; \varepsilon^2_{4} \approx\)</span></td>
     <td>0.01314…</td>
     </tr>
     </table></div>

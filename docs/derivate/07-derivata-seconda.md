@@ -202,30 +202,30 @@ title: "Derivata seconda"
 
     <div class="tabella" markdown><table>
     <tr>
-    <td>$F = \big\{ ~~(x,y) \in \R^2:$</td>
-    <td>$x$</td>
+    <td><span class="arithmatex">\(F = \big\{ ~~(x,y) \in \R^2:\)</span></td>
+    <td><span class="arithmatex">\(x\)</span></td>
     <td>\+</td>
-    <td>$y$</td>
-    <td>$\ge$</td>
+    <td><span class="arithmatex">\(y\)</span></td>
+    <td><span class="arithmatex">\(\ge\)</span></td>
     <td>3,</td>
-    <td>$x$</td>
+    <td><span class="arithmatex">\(x\)</span></td>
     <td>\+</td>
-    <td>$y$</td>
-    <td>$\le$</td>
+    <td><span class="arithmatex">\(y\)</span></td>
+    <td><span class="arithmatex">\(\le\)</span></td>
     <td>9,</td>
     </tr>
     <tr>
     <td></td>
-    <td>\-	 	$x$</td>
+    <td>\-	 	<span class="arithmatex">\(x\)</span></td>
     <td>\+</td>
-    <td>$y$</td>
-    <td>$\le$</td>
+    <td><span class="arithmatex">\(y\)</span></td>
+    <td><span class="arithmatex">\(\le\)</span></td>
     <td>3,</td>
-    <td>\-	 	$x$</td>
+    <td>\-	 	<span class="arithmatex">\(x\)</span></td>
     <td>\+</td>
-    <td>$y$</td>
-    <td>$\ge$</td>
-    <td>\-3   $\big\}$</td>
+    <td><span class="arithmatex">\(y\)</span></td>
+    <td><span class="arithmatex">\(\ge\)</span></td>
+    <td>\-3   <span class="arithmatex">\(\big\}\)</span></td>
     </tr>
     </table></div>
 

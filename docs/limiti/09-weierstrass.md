@@ -253,7 +253,9 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
     $$
     g\big(x(\lambda)\big) = 0 {\rm ~~~~e~cioè~~~~} f\big(x(\lambda)\big) = \lambda
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Presa una funzione continua in un intervallo $[a,b]$ abbiamo graficamente:
 

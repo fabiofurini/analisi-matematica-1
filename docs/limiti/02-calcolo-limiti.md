@@ -105,7 +105,9 @@ title: "Calcolo dei limiti di funzioni"
 
     $$
     f(x) > 0,  {\rm ~~definitivamente,~per~~} x \rr c
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! teorema "Teorema 3: di permanenza del segno per funzioni $2^a$ forma"
 
@@ -163,7 +165,9 @@ title: "Calcolo dei limiti di funzioni"
 
     $$
     f(x) > 0 {\rm ~~definitivamente~per~~} x \rr c.
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.3 Teorema del confronto
 
@@ -219,7 +223,9 @@ title: "Calcolo dei limiti di funzioni"
 
     $$
     h(x_n) \rr \ell {\rm ~~per~~} n \rr +\infty
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! teorema "Corollario 1: del teorema del confronto  (parte I)"
 

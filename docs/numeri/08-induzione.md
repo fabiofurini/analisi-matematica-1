@@ -105,7 +105,9 @@ title: "Principio di induzione"
         (1 + x)^{n+1} \ge 1 + (n + 1) \: x
         $$
 
-        che è esattamente l'asserto voluto, per $n + 1$. <span class="qed">□</span>
+        che è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 1: Disuguaglianza di Bernoulli"
 
@@ -166,7 +168,9 @@ title: "Principio di induzione"
         & =  \frac{(n+1)\:( n  + 2 )}{2}  =  \frac{(n+1)\:\big(( n+1) +1\big)}{2}
         \end{align*}
 
-        che è esattamente l'asserto voluto, per $n + 1$. <span class="qed">□</span>
+        che è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 2.3 Somma dei termini della progressione geometrica
 
@@ -212,4 +216,6 @@ title: "Principio di induzione"
         & =  \frac{q^n-1+q^{n+1}-q^n}{q-1} =  \frac{q^{n+1}-1}{q-1}
         \end{align*}
 
-        che è esattamente l'asserto voluto, per $n + 1$. <span class="qed">□</span>
+        che è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>

@@ -88,7 +88,9 @@ title: "Funzioni continue"
         {\rm ~~quindi~~}  \cos x \rr 1 {\rm  ~~per~~} x \rr 0
         $$
 
-        e perciò $\cos x$ è continuo in $0$. <span class="qed">□</span>
+        e perciò $\cos x$ è continuo in $0$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -113,7 +115,9 @@ title: "Funzioni continue"
         \sin(x_0 + h) \rr \sin x_0 {\rm ~~per~~} h \rr 0
         $$
 
-        e $\sin x$ è continua in $x_0$. Un analogo ragionamento mostra la continuità di $\cos x$. <span class="qed">□</span>
+        e $\sin x$ è continua in $x_0$. Un analogo ragionamento mostra la continuità di $\cos x$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 

@@ -288,64 +288,64 @@ title: "Teorema degli zeri e metodo della bisezione"
         <div class="tabella" markdown><table>
         <tr>
         <td>iterazione</td>
-        <td>$a_n$</td>
-        <td>$c_n$</td>
-        <td>$b_b$</td>
-        <td>stima di $\sqrt{2}$</td>
-        <td>$\varepsilon_n$</td>
+        <td><span class="arithmatex">\(a_n\)</span></td>
+        <td><span class="arithmatex">\(c_n\)</span></td>
+        <td><span class="arithmatex">\(b_b\)</span></td>
+        <td>stima di <span class="arithmatex">\(\sqrt{2}\)</span></td>
+        <td><span class="arithmatex">\(\varepsilon_n\)</span></td>
         </tr>
         <tr>
-        <td>$n=0$</td>
-        <td>$\frac{1}{2}$</td>
-        <td>$\frac{9}{4}$</td>
-        <td>$4$</td>
-        <td>$2.25$</td>
-        <td>$\le \frac{7/2}{2^1}=$</td>
+        <td><span class="arithmatex">\(n=0\)</span></td>
+        <td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{9}{4}\)</span></td>
+        <td><span class="arithmatex">\(4\)</span></td>
+        <td><span class="arithmatex">\(2.25\)</span></td>
+        <td><span class="arithmatex">\(\le \frac{7/2}{2^1}=\)</span></td>
         <td>1.75</td>
         </tr>
         <tr>
-        <td>$n=1$</td>
-        <td>$\frac{1}{2}$</td>
-        <td>$\frac{11}{8}$</td>
-        <td>$\frac{9}{4}$</td>
-        <td>$1.375$</td>
-        <td>$\le\frac{7/2}{2^2}=$</td>
+        <td><span class="arithmatex">\(n=1\)</span></td>
+        <td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{11}{8}\)</span></td>
+        <td><span class="arithmatex">\(\frac{9}{4}\)</span></td>
+        <td><span class="arithmatex">\(1.375\)</span></td>
+        <td><span class="arithmatex">\(\le\frac{7/2}{2^2}=\)</span></td>
         <td>0.875</td>
         </tr>
         <tr>
-        <td>$n=2$</td>
-        <td>$\frac{11}{8}$</td>
-        <td>$\frac{29}{16}$</td>
-        <td>$\frac{9}{4}$</td>
-        <td>$1.8125$</td>
-        <td>$\le \frac{7/2}{2^3}=$</td>
+        <td><span class="arithmatex">\(n=2\)</span></td>
+        <td><span class="arithmatex">\(\frac{11}{8}\)</span></td>
+        <td><span class="arithmatex">\(\frac{29}{16}\)</span></td>
+        <td><span class="arithmatex">\(\frac{9}{4}\)</span></td>
+        <td><span class="arithmatex">\(1.8125\)</span></td>
+        <td><span class="arithmatex">\(\le \frac{7/2}{2^3}=\)</span></td>
         <td>0.4375</td>
         </tr>
         <tr>
-        <td>$n=3$</td>
-        <td>$\frac{11}{8}$</td>
-        <td>$\frac{51}{32}$</td>
-        <td>$\frac{29}{16}$</td>
-        <td>$1.59375$</td>
-        <td>$\le \frac{7/2}{2^4}=$</td>
+        <td><span class="arithmatex">\(n=3\)</span></td>
+        <td><span class="arithmatex">\(\frac{11}{8}\)</span></td>
+        <td><span class="arithmatex">\(\frac{51}{32}\)</span></td>
+        <td><span class="arithmatex">\(\frac{29}{16}\)</span></td>
+        <td><span class="arithmatex">\(1.59375\)</span></td>
+        <td><span class="arithmatex">\(\le \frac{7/2}{2^4}=\)</span></td>
         <td>0.21875</td>
         </tr>
         <tr>
-        <td>$n=4$</td>
-        <td>$\frac{11}{8}$</td>
-        <td>$\frac{95}{64}$</td>
-        <td>$\frac{51}{32}$</td>
-        <td>$1.484375$</td>
-        <td>$\le \frac{7/2}{2^5}=$</td>
+        <td><span class="arithmatex">\(n=4\)</span></td>
+        <td><span class="arithmatex">\(\frac{11}{8}\)</span></td>
+        <td><span class="arithmatex">\(\frac{95}{64}\)</span></td>
+        <td><span class="arithmatex">\(\frac{51}{32}\)</span></td>
+        <td><span class="arithmatex">\(1.484375\)</span></td>
+        <td><span class="arithmatex">\(\le \frac{7/2}{2^5}=\)</span></td>
         <td>0.109375</td>
         </tr>
         <tr>
-        <td>$n=5$</td>
-        <td>$\frac{11}{8}$</td>
-        <td>$\frac{91}{64}$</td>
-        <td>$\frac{94}{64}$</td>
-        <td>$1.421875$</td>
-        <td>$\le \frac{7/2}{2^6}=$</td>
+        <td><span class="arithmatex">\(n=5\)</span></td>
+        <td><span class="arithmatex">\(\frac{11}{8}\)</span></td>
+        <td><span class="arithmatex">\(\frac{91}{64}\)</span></td>
+        <td><span class="arithmatex">\(\frac{94}{64}\)</span></td>
+        <td><span class="arithmatex">\(1.421875\)</span></td>
+        <td><span class="arithmatex">\(\le \frac{7/2}{2^6}=\)</span></td>
         <td>0.0546875</td>
         </tr>
         </table></div>

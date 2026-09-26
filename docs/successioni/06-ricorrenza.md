@@ -390,49 +390,49 @@ title: "Successioni definite per ricorrenza"
         <div class="tabella" markdown><table>
         <tr>
         <td>iter.</td>
-        <td>$\frac{2}{a_n}$</td>
-        <td>$a_n$</td>
-        <td>stima di $\sqrt{2}$</td>
-        <td>$\varepsilon_n$</td>
+        <td><span class="arithmatex">\(\frac{2}{a_n}\)</span></td>
+        <td><span class="arithmatex">\(a_n\)</span></td>
+        <td>stima di <span class="arithmatex">\(\sqrt{2}\)</span></td>
+        <td><span class="arithmatex">\(\varepsilon_n\)</span></td>
         </tr>
         <tr>
-        <td>$n=0$</td>
-        <td>$\frac{1}{2}$</td>
-        <td>$4$</td>
+        <td><span class="arithmatex">\(n=0\)</span></td>
+        <td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+        <td><span class="arithmatex">\(4\)</span></td>
         <td>4</td>
-        <td>$<\frac{7}{2}=$</td>
+        <td><span class="arithmatex">\(<\frac{7}{2}=\)</span></td>
         <td>3.5</td>
         </tr>
         <tr>
-        <td>$n=1$</td>
-        <td>$\frac{8}{9}$</td>
-        <td>$\frac{9}{4}$</td>
+        <td><span class="arithmatex">\(n=1\)</span></td>
+        <td><span class="arithmatex">\(\frac{8}{9}\)</span></td>
+        <td><span class="arithmatex">\(\frac{9}{4}\)</span></td>
         <td>2.25</td>
-        <td>$<\frac{49}{36}=$</td>
+        <td><span class="arithmatex">\(<\frac{49}{36}=\)</span></td>
         <td>1.361…</td>
         </tr>
         <tr>
-        <td>$n=2$</td>
-        <td>$\frac{144}{113}$</td>
-        <td>$\frac{113}{72}$</td>
+        <td><span class="arithmatex">\(n=2\)</span></td>
+        <td><span class="arithmatex">\(\frac{144}{113}\)</span></td>
+        <td><span class="arithmatex">\(\frac{113}{72}\)</span></td>
         <td>1.569444444…</td>
-        <td>$<\frac{2,401}{8,136}=$</td>
+        <td><span class="arithmatex">\(<\frac{2,401}{8,136}=\)</span></td>
         <td>0.295…</td>
         </tr>
         <tr>
-        <td>$n=3$</td>
-        <td>$\frac{32,544}{23,137}$</td>
-        <td>$\frac{23,137}{16,272}$</td>
+        <td><span class="arithmatex">\(n=3\)</span></td>
+        <td><span class="arithmatex">\(\frac{32,544}{23,137}\)</span></td>
+        <td><span class="arithmatex">\(\frac{23,137}{16,272}\)</span></td>
         <td>1.421890363…</td>
-        <td>$< \frac{5,764,801}{376,485,264}$=</td>
+        <td><span class="arithmatex">\(< \frac{5,764,801}{376,485,264}\)</span>=</td>
         <td>0.0153…</td>
         </tr>
         <tr>
-        <td>$n=4$</td>
-        <td>$\frac{1,505,941,056}{1,064,876,737}$</td>
-        <td>$\frac{1,064,876,737}{752,970,528}$</td>
+        <td><span class="arithmatex">\(n=4\)</span></td>
+        <td><span class="arithmatex">\(\frac{1,505,941,056}{1,064,876,737}\)</span></td>
+        <td><span class="arithmatex">\(\frac{1,064,876,737}{752,970,528}\)</span></td>
         <td>1.414234285…</td>
-        <td>$< \frac{33,232,930,569,601}{801,820,798,913,807,136}$</td>
+        <td><span class="arithmatex">\(< \frac{33,232,930,569,601}{801,820,798,913,807,136}\)</span></td>
         <td>0.000041…</td>
         </tr>
         </table></div>

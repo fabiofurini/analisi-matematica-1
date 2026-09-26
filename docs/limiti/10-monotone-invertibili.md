@@ -131,7 +131,9 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
     $$
     \lim_{x \rr a^+} f(x)
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 
@@ -219,7 +221,9 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
     - Per quanto osservato dopo il teorema di monotonia, la funzione $g$, strettamente monotona, o è continua, oppure ha dei punti di discontinuità a salto.
 
-    - In tal caso l'immagine di $g$ non è un intervallo (ma è l'unione di almeno due intervalli disgiunti), il che è <strong>assurdo</strong> perché tale immagine è $I$. Dunque $g$ è continua. <span class="qed">□</span>
+    - In tal caso l'immagine di $g$ non è un intervallo (ma è l'unione di almeno due intervalli disgiunti), il che è <strong>assurdo</strong> perché tale immagine è $I$. Dunque $g$ è continua.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Si noti che nella dimostrazione del teorema precedente si sono utilizzati sia il teorema dei valori intermedi, sia il teorema di monotonia per le funzioni. Abbiamo inoltre fatto implicitamente uso dell'assioma di continuità di $\R$.
 

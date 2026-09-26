@@ -145,7 +145,9 @@ title: "Serie numeriche"
 
     $$
     a_n = s_n - s_{n-1} {\rm ~~~~e~quindi~~~} \lim_{n \rr \ip} a_n =  \lim_{n \rr \ip} \big( s_n -s_{n-1} \big)= s -s =0
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 
@@ -380,7 +382,9 @@ title: "Serie numeriche"
 
     $$
     \lim_{n \rightarrow +\infty} s_n = \lim_{n \rightarrow +\infty} (n+1)= +\infty
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 2: di serie geometrica"
 
@@ -438,7 +442,9 @@ title: "Serie numeriche"
 
     $$
     \sum_{k=0}^{\infty} (b_k-b_{k+1})=\lim_{n \rightarrow +\infty} s_n = \lim_{n \rightarrow +\infty} (b_{n_0} - b_{n_0+n+1}) = b_{n_0} -\lim_{n \rr \ip} b_n
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 2"
 

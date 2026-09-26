@@ -87,7 +87,9 @@ $$
         & = \frac{\phi^{k-1} \big(\phi^2\big) - \hat{\phi}^{k-1} \big(\hat{\phi}^2\big)}{\sqrt{5}} = \frac{\phi^{k+1} - \hat{\phi}^{k+1}}{\sqrt{5}}
         \end{align*}
 
-        che è esattamente l'asserto voluto, per $i= k + 1$. <span class="qed">□</span>
+        che è esattamente l'asserto voluto, per $i= k + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 2"
 
@@ -108,7 +110,9 @@ $$
 
     $$
     F_i  = \left\lfloor \frac{{\phi}^i}{\sqrt{5}} + \frac{1}{2} \right\rfloor, \qquad  \qquad i=0,1,2,
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - I valori di
 

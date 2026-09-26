@@ -199,7 +199,9 @@ title: "Serie numeriche a termini di segno variabile"
 
     $$
     s_n \rr s {\rm ~~~per~~~} n \rr \ip
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! teorema "Corollario 1: del teorema del criterio di Leibniz"
 
@@ -235,7 +237,9 @@ title: "Serie numeriche a termini di segno variabile"
 
     $$
     |s-s_{m}|=\left| \sum_{k=m+1}^{\infty} (-1)^k \; a_k \right| \le a_{m+1}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 3: criterio di Leibniz "
 

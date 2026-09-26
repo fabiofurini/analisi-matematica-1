@@ -55,7 +55,9 @@ Un numero razionale, scritto in forma decimale, dopo la virgola può presentare 
     \frac{1}{3} &= 0,\overline{3}\\
     \frac{1}{3} \cdot 3 &= 0,\overline{3} \cdot 3\\
      1 &= 0,\overline{9}
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -68,7 +70,9 @@ Un numero razionale, scritto in forma decimale, dopo la virgola può presentare 
     10\:x &= 9 + x & {\rm per~definizione~di~} x\\
     9\:x &= 9  & {\rm sottraendo~} x\\
     x &= 1  & {\rm dividendo~per~} 9
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -82,7 +86,9 @@ Un numero razionale, scritto in forma decimale, dopo la virgola può presentare 
     0,\overline{9} \cdot  (9+1) & \neq 9,\overline{9}\\
     0,\overline{9} \cdot  (10) & \neq 9,\overline{9}\\
     9,\overline{9} & \neq 9,\overline{9} ~~~~~~ {\rm assurdo!}
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 
@@ -124,7 +130,9 @@ Un numero razionale, scritto in forma decimale, dopo la virgola può presentare 
 
     $$
     0.999\dots = 1
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 

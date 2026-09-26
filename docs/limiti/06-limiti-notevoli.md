@@ -213,7 +213,9 @@ title: "Limiti notevoli e stime asintotiche"
 
     \begin{equation*}
     \frac{\log(1 + y)}{y} \rr 1 {\rm ~~per~~} y \rr 0.
-    \end{equation*} <span class="qed">□</span>
+    \end{equation*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ![Figura 7](../img/limiti-06-limiti-notevoli/fig07.svg){ .fig .ovale loading=lazy style="width:61%" }
 

@@ -273,7 +273,9 @@ Monotonia"
         \frac{f(z)-f(x)}{z-x} \ge 0 {\rm ~~~per~ogni~}z,x \in I, z \neq x
         $$
 
-        e, per il teorema della permanenza del segno, è non negativo anche il suo limite del rapporto per $z \rr x$, che per ipotesi esiste e vale $f'(x)$ per ogni $x$ interno a $I$. Se $f$ è non crescente si ragiona in maniera analoga. <span class="qed">□</span>
+        e, per il teorema della permanenza del segno, è non negativo anche il suo limite del rapporto per $z \rr x$, che per ipotesi esiste e vale $f'(x)$ per ogni $x$ interno a $I$. Se $f$ è non crescente si ragiona in maniera analoga.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! attenzione ""
 

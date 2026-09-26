@@ -171,7 +171,9 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
         &=   \sum_{k=0}^{n+1} ~~   {{n+1}\choose{k}} ~~\; a^{n+1-k} \; b^{k}
         \end{align*}
 
-        che è esattamente l'asserto voluto, per $n + 1$. <span class="qed">□</span>
+        che è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 2"
 
@@ -193,7 +195,9 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 
     $$
     (1+1)^n = \sum_{k=0}^{n} ~~{{n}\choose{k}} ~~\; 1^{n-k} \; 1^k =  \sum_{k=0}^{n} ~~{{n}\choose{k}}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 2.2 Calcolo ricursivo dei coefficienti binomiali
 
@@ -218,42 +222,42 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <div class="tabella" markdown><table>
     <tr>
     <td></td>
-    <td>$k=0$</td>
-    <td>$k=1$</td>
-    <td>$k=2$</td>
-    <td>$k=3$</td>
-    <td>$k=4$</td>
-    <td>$k=5$</td>
-    <td>$k=6$</td>
-    <td>$k=7$</td>
-    <td>$k=8$</td>
-    <td>$k=9$</td>
-    <td>$k=10$</td>
+    <td><span class="arithmatex">\(k=0\)</span></td>
+    <td><span class="arithmatex">\(k=1\)</span></td>
+    <td><span class="arithmatex">\(k=2\)</span></td>
+    <td><span class="arithmatex">\(k=3\)</span></td>
+    <td><span class="arithmatex">\(k=4\)</span></td>
+    <td><span class="arithmatex">\(k=5\)</span></td>
+    <td><span class="arithmatex">\(k=6\)</span></td>
+    <td><span class="arithmatex">\(k=7\)</span></td>
+    <td><span class="arithmatex">\(k=8\)</span></td>
+    <td><span class="arithmatex">\(k=9\)</span></td>
+    <td><span class="arithmatex">\(k=10\)</span></td>
     </tr>
     <tr>
-    <td>$n=0$</td>
+    <td><span class="arithmatex">\(n=0\)</span></td>
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=1$</td>
+    <td><span class="arithmatex">\(n=1\)</span></td>
     <td>1</td>
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=2$</td>
+    <td><span class="arithmatex">\(n=2\)</span></td>
     <td>1</td>
     <td>2</td>
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=3$</td>
+    <td><span class="arithmatex">\(n=3\)</span></td>
     <td>1</td>
     <td>3</td>
     <td>3</td>
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=4$</td>
+    <td><span class="arithmatex">\(n=4\)</span></td>
     <td>1</td>
     <td>4</td>
     <td class="cella-rossa">6</td>
@@ -261,7 +265,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=5$</td>
+    <td><span class="arithmatex">\(n=5\)</span></td>
     <td>1</td>
     <td>5</td>
     <td>10</td>
@@ -270,7 +274,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=6$</td>
+    <td><span class="arithmatex">\(n=6\)</span></td>
     <td>1</td>
     <td>6</td>
     <td>15</td>
@@ -280,7 +284,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=7$</td>
+    <td><span class="arithmatex">\(n=7\)</span></td>
     <td>1</td>
     <td>7</td>
     <td>21</td>
@@ -291,7 +295,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=8$</td>
+    <td><span class="arithmatex">\(n=8\)</span></td>
     <td>1</td>
     <td>8</td>
     <td>28</td>
@@ -303,7 +307,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=9$</td>
+    <td><span class="arithmatex">\(n=9\)</span></td>
     <td>1</td>
     <td>9</td>
     <td>36</td>
@@ -316,7 +320,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     <td>1</td>
     </tr>
     <tr>
-    <td>$n=10$</td>
+    <td><span class="arithmatex">\(n=10\)</span></td>
     <td>1</td>
     <td>10</td>
     <td>45</td>

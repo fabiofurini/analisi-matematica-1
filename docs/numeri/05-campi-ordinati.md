@@ -297,14 +297,14 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>I)</td>
-    <td>$\mathbb{N}$</td>
-    <td>$0$</td>
+    <td><span class="arithmatex">\(\mathbb{N}\)</span></td>
+    <td><span class="arithmatex">\(0\)</span></td>
     <td>non esiste</td>
     </tr>
     <tr>
@@ -320,13 +320,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>III)</td>
-    <td>$\bigg\{~~\frac{1}{n} ~~:~~ n \in \mathbb{N}\setminus \{0\}~~\bigg\}$</td>
+    <td><span class="arithmatex">\(\bigg\{~~\frac{1}{n} ~~:~~ n \in \mathbb{N}\setminus \{0\}~~\bigg\}\)</span></td>
     <td>non esiste</td>
     <td>1</td>
     </tr>
@@ -339,13 +339,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>IV)</td>
-    <td>$\bigg\{~~\frac{n-1}{n+1} ~~:~~ n \in \mathbb{N}~~\bigg\}$</td>
+    <td><span class="arithmatex">\(\bigg\{~~\frac{n-1}{n+1} ~~:~~ n \in \mathbb{N}~~\bigg\}\)</span></td>
     <td>\-1</td>
     <td>non esiste</td>
     </tr>
@@ -368,13 +368,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>V)</td>
-    <td>$\left\{ x \in \mathbb{R}:~~ 27 \le  x^3 \right\}$</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{R}:~~ 27 \le  x^3 \right\}\)</span></td>
     <td>3</td>
     <td>non esiste</td>
     </tr>
@@ -391,13 +391,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>VI)</td>
-    <td>$\left\{ x \in \mathbb{Q}:~~ x \ge 0,  x  < \sqrt{2}   \right\}$</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{Q}:~~ x \ge 0,  x  < \sqrt{2}   \right\}\)</span></td>
     <td>0</td>
     <td>non esiste</td>
     </tr>
@@ -412,13 +412,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>VII)</td>
-    <td>$\left\{ x \in \mathbb{Q}:~~  ~  x  < \sqrt{2}, x\le 4   \right\}$</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{Q}:~~  ~  x  < \sqrt{2}, x\le 4   \right\}\)</span></td>
     <td>non esiste</td>
     <td>4</td>
     </tr>
@@ -469,15 +469,15 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
-    <td>$\inf E$</td>
-    <td>$\sup E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
+    <td><span class="arithmatex">\(\inf E\)</span></td>
+    <td><span class="arithmatex">\(\sup E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>I)</td>
-    <td>$\left\{ x \in \mathbb{Q}:~~ x \ge 0, x  < \sqrt{2}   \right\}$</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{Q}:~~ x \ge 0, x  < \sqrt{2}   \right\}\)</span></td>
     <td>0</td>
     <td>non esiste</td>
     <td>0</td>
@@ -497,17 +497,17 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <div class="tabella" markdown><table>
     <tr>
     <td>Esempio</td>
-    <td>insieme $E$</td>
-    <td>$\inf E$</td>
-    <td>$\sup E$</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
+    <td><span class="arithmatex">\(\inf E\)</span></td>
+    <td><span class="arithmatex">\(\sup E\)</span></td>
     <td>minimo</td>
     <td>massimo</td>
     </tr>
     <tr>
     <td>II)</td>
-    <td>$\left\{ x \in \mathbb{R}:~~ x \ge 0,  ~x  < \sqrt{2}   \right\}$</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{R}:~~ x \ge 0,  ~x  < \sqrt{2}   \right\}\)</span></td>
     <td>0</td>
-    <td>$\sqrt{2}$</td>
+    <td><span class="arithmatex">\(\sqrt{2}\)</span></td>
     <td>0</td>
     <td>non esiste</td>
     </tr>

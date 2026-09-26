@@ -225,7 +225,9 @@ title: "Calcolo dei limiti delle successioni"
 
     $$
     \ell_a - \ell_b \ge 0 {\rm ~~~e~quindi~~}  \ell_a \ge \ell_b.
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Questo teorema ci dice che in una disuguaglianza tra due successioni si può passare al limite ad ambo i membri, mantenendo il “$\le$” o il “$\ge$”.
 

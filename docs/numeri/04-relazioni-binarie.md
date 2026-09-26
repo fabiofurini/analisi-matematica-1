@@ -115,7 +115,9 @@ title: "Relazioni binarie"
 
         - **** oppure entrambe le opzioni precedenti
 
-    - Per essere transitiva  dobbiamo provare che $(S_1,S_2) \in R_{\subseteq}$ e  $(S_2,S_3) \in R_{\subseteq}$ implica $(S_1,S_3) \in  R_{\subseteq}$.  Chiaramente,  dato che  $S_1 \subseteq S_2$ e $S_2 \subseteq S_3$,  abbiamo   $S_1 \subseteq S_3$. <span class="qed">□</span>
+    - Per essere transitiva  dobbiamo provare che $(S_1,S_2) \in R_{\subseteq}$ e  $(S_2,S_3) \in R_{\subseteq}$ implica $(S_1,S_3) \in  R_{\subseteq}$.  Chiaramente,  dato che  $S_1 \subseteq S_2$ e $S_2 \subseteq S_3$,  abbiamo   $S_1 \subseteq S_3$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! definizione "Definizione 3: di insieme parzialmente ordinato"
 

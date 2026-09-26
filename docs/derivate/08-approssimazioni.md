@@ -514,7 +514,9 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
     $$
     \frac{f'(x) - \left( f'(0) +  f''(0)  \; x\right)}{x} \rr 0 {\rm ~~~per~~~} x \rr 0
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -932,7 +934,9 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     \begin{equation}
     \label{TTTT}
      f(b) -T_{n,a}(b) = k \: (b-a)^{n+1}
-    \end{equation} <span class="qed">□</span>
+    \end{equation}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -966,7 +970,9 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
         k =  \frac{f^{(n+1)}(c)}{(n+1)!}
         $$
 
-        che, inserita nella \(\eqref{TTTT}\),  dà la tesi. <span class="qed">□</span>
+        che, inserita nella \(\eqref{TTTT}\),  dà la tesi.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 4.1 Relazioni con la convessità
 

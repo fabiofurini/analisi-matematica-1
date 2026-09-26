@@ -207,7 +207,9 @@ title: "Le funzioni"
 
         $$
         \underbrace{|A_{n}|}_{\le~|A_{n+1}|-1} \ge \underbrace{|B_{n}|}_{=~|B_{n+1}|-1} {\rm~~qundi~~} |A_{n+1}| \ge |B_{n+1}|.
-        $$ <span class="qed">□</span>
+        $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! definizione "Definizione 5: di iniezione (funzione iniettiva)"
 
@@ -251,7 +253,9 @@ title: "Le funzioni"
 
         $$
         \underbrace{|A_{n}|}_{=~|A_{n+1}|-1} \le \underbrace{|B_{n}|}_{\le~|B_{n+1}|-1} {\rm~~quindi~~} |A_{n+1}| \le |B_{n+1}|.
-        $$ <span class="qed">□</span>
+        $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! definizione "Definizione 6: di biiezione (funzione biunivoca o bigettiva)"
 

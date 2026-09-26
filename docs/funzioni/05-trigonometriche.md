@@ -112,66 +112,66 @@ title: "Funzioni trigonometriche"
 <div class="tabella" markdown><table>
 <tr>
 <td></td>
-<td>$\cos$</td>
-<td>$\sin$</td>
-<td>$\tan$</td>
-<td>$\cot$</td>
-<td>$\sec$</td>
-<td>$\csc$</td>
+<td><span class="arithmatex">\(\cos\)</span></td>
+<td><span class="arithmatex">\(\sin\)</span></td>
+<td><span class="arithmatex">\(\tan\)</span></td>
+<td><span class="arithmatex">\(\cot\)</span></td>
+<td><span class="arithmatex">\(\sec\)</span></td>
+<td><span class="arithmatex">\(\csc\)</span></td>
 </tr>
 <tr>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>$\pm \infty$</td>
+<td><span class="arithmatex">\(\pm \infty\)</span></td>
 <td>1</td>
-<td>$\pm \infty$</td>
+<td><span class="arithmatex">\(\pm \infty\)</span></td>
 </tr>
 <tr>
-<td>$x=\frac{\pi}{6}$ ($30^{\circ}$)</td>
-<td>$\frac{\sqrt{3}}{2}$</td>
-<td>$\frac{1}{2}$</td>
-<td>$\frac{\sqrt{3}}{3}$</td>
-<td>$\sqrt{3}$</td>
-<td>$\frac{2}{3}\:\sqrt{3}$</td>
+<td><span class="arithmatex">\(x=\frac{\pi}{6}\)</span> (<span class="arithmatex">\(30^{\circ}\)</span>)</td>
+<td><span class="arithmatex">\(\frac{\sqrt{3}}{2}\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+<td><span class="arithmatex">\(\frac{\sqrt{3}}{3}\)</span></td>
+<td><span class="arithmatex">\(\sqrt{3}\)</span></td>
+<td><span class="arithmatex">\(\frac{2}{3}\:\sqrt{3}\)</span></td>
 <td>2</td>
 </tr>
 <tr>
-<td>$x=\frac{\pi}{4}$ ($45^{\circ}$)</td>
-<td>$\frac{\sqrt{2}}{2}$</td>
-<td>$\frac{\sqrt{2}}{2}$</td>
+<td><span class="arithmatex">\(x=\frac{\pi}{4}\)</span> (<span class="arithmatex">\(45^{\circ}\)</span>)</td>
+<td><span class="arithmatex">\(\frac{\sqrt{2}}{2}\)</span></td>
+<td><span class="arithmatex">\(\frac{\sqrt{2}}{2}\)</span></td>
 <td>1</td>
 <td>1</td>
-<td>$\sqrt{2}$</td>
-<td>$\sqrt{2}$</td>
+<td><span class="arithmatex">\(\sqrt{2}\)</span></td>
+<td><span class="arithmatex">\(\sqrt{2}\)</span></td>
 </tr>
 <tr>
-<td>$x=\frac{\pi}{3}$ ($60^{\circ}$)</td>
-<td>$\frac{1}{2}$</td>
-<td>$\frac{\sqrt{3}}{2}$</td>
-<td>$\sqrt{3}$</td>
-<td>$\frac{\sqrt{3}}{3}$</td>
+<td><span class="arithmatex">\(x=\frac{\pi}{3}\)</span> (<span class="arithmatex">\(60^{\circ}\)</span>)</td>
+<td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+<td><span class="arithmatex">\(\frac{\sqrt{3}}{2}\)</span></td>
+<td><span class="arithmatex">\(\sqrt{3}\)</span></td>
+<td><span class="arithmatex">\(\frac{\sqrt{3}}{3}\)</span></td>
 <td>2</td>
-<td>$\frac{2}{3}\: \sqrt{3}$</td>
+<td><span class="arithmatex">\(\frac{2}{3}\: \sqrt{3}\)</span></td>
 </tr>
 <tr>
-<td>$x=\frac{\pi}{2}$ ($90^{\circ}$)</td>
+<td><span class="arithmatex">\(x=\frac{\pi}{2}\)</span> (<span class="arithmatex">\(90^{\circ}\)</span>)</td>
 <td>0</td>
 <td>1</td>
-<td>$\pm \infty$</td>
+<td><span class="arithmatex">\(\pm \infty\)</span></td>
 <td>0</td>
-<td>$\pm \infty$</td>
+<td><span class="arithmatex">\(\pm \infty\)</span></td>
 <td>1</td>
 </tr>
 <tr>
-<td>$x=\pi$ ($180^{\circ}$)</td>
+<td><span class="arithmatex">\(x=\pi\)</span> (<span class="arithmatex">\(180^{\circ}\)</span>)</td>
 <td>\-1</td>
 <td>0</td>
 <td>0</td>
-<td>$\pm \infty$</td>
+<td><span class="arithmatex">\(\pm \infty\)</span></td>
 <td>\-1</td>
-<td>$\pm \infty$</td>
+<td><span class="arithmatex">\(\pm \infty\)</span></td>
 </tr>
 </table></div>
 
@@ -180,52 +180,52 @@ title: "Funzioni trigonometriche"
 <div class="tabella" markdown><table>
 <tr>
 <td></td>
-<td>$\phantom{-} \cos$</td>
-<td>$\phantom{-} \sin$</td>
-<td>$\phantom{-} \tan$</td>
-<td>$\phantom{-} \cot$</td>
+<td><span class="arithmatex">\(\phantom{-} \cos\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \sin\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \tan\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cot\)</span></td>
 </tr>
 <tr>
-<td>$\phantom{-}x$</td>
-<td>$\phantom{-} \cos x$</td>
-<td>$\phantom{-} \sin x$</td>
-<td>$\phantom{-} \tan x$</td>
-<td>$\phantom{-} \cot x$</td>
+<td><span class="arithmatex">\(\phantom{-}x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cos x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \sin x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \tan x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cot x\)</span></td>
 </tr>
 <tr>
-<td>$-x$</td>
-<td>$\phantom{-} \cos x$</td>
-<td>$- \sin x$</td>
-<td>$-\tan x$</td>
-<td>$-\cot x$</td>
+<td><span class="arithmatex">\(-x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cos x\)</span></td>
+<td><span class="arithmatex">\(- \sin x\)</span></td>
+<td><span class="arithmatex">\(-\tan x\)</span></td>
+<td><span class="arithmatex">\(-\cot x\)</span></td>
 </tr>
 <tr>
-<td>$\frac{\pi}{2} +x$</td>
-<td>$-\sin x$</td>
-<td>$\phantom{-} \cos x$</td>
-<td>$-\cot x$</td>
-<td>$-\tan x$</td>
+<td><span class="arithmatex">\(\frac{\pi}{2} +x\)</span></td>
+<td><span class="arithmatex">\(-\sin x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cos x\)</span></td>
+<td><span class="arithmatex">\(-\cot x\)</span></td>
+<td><span class="arithmatex">\(-\tan x\)</span></td>
 </tr>
 <tr>
-<td>$\frac{\pi}{2} - x$</td>
-<td>$\phantom{-} \sin x$</td>
-<td>$\phantom{-} \cos x$</td>
-<td>$\phantom{-} \cot  x$</td>
-<td>$\phantom{-} \tan x$</td>
+<td><span class="arithmatex">\(\frac{\pi}{2} - x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \sin x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cos x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cot  x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \tan x\)</span></td>
 </tr>
 <tr>
-<td>$\pi+x$</td>
-<td>$-\cos x$</td>
-<td>$-\sin x$</td>
-<td>$\phantom{-} \tan x$</td>
-<td>$\phantom{-} \cot x$</td>
+<td><span class="arithmatex">\(\pi+x\)</span></td>
+<td><span class="arithmatex">\(-\cos x\)</span></td>
+<td><span class="arithmatex">\(-\sin x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \tan x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \cot x\)</span></td>
 </tr>
 <tr>
-<td>$\pi-x$</td>
-<td>$-\cos x$</td>
-<td>$\phantom{-} \sin x$</td>
-<td>$-\tan x$</td>
-<td>$-\cot x$</td>
+<td><span class="arithmatex">\(\pi-x\)</span></td>
+<td><span class="arithmatex">\(-\cos x\)</span></td>
+<td><span class="arithmatex">\(\phantom{-} \sin x\)</span></td>
+<td><span class="arithmatex">\(-\tan x\)</span></td>
+<td><span class="arithmatex">\(-\cot x\)</span></td>
 </tr>
 </table></div>
 
@@ -238,37 +238,37 @@ title: "Funzioni trigonometriche"
     <div class="tabella" markdown><table>
     <tr>
     <td></td>
-    <td>$\sin x$</td>
-    <td>$\cos x$</td>
-    <td>$\tan x$</td>
-    <td>$\cot x$</td>
+    <td><span class="arithmatex">\(\sin x\)</span></td>
+    <td><span class="arithmatex">\(\cos x\)</span></td>
+    <td><span class="arithmatex">\(\tan x\)</span></td>
+    <td><span class="arithmatex">\(\cot x\)</span></td>
     </tr>
     <tr>
-    <td>$\sin x$</td>
+    <td><span class="arithmatex">\(\sin x\)</span></td>
     <td>\-</td>
-    <td>$\pm \sqrt{1 - \cos^2 x}$</td>
-    <td>$\pm \sqrt{\frac{\tan^2 x}{1 + \tan^2 x}}$</td>
-    <td>$\pm \sqrt{\frac{1}{1 - \cot^2 x}}$</td>
+    <td><span class="arithmatex">\(\pm \sqrt{1 - \cos^2 x}\)</span></td>
+    <td><span class="arithmatex">\(\pm \sqrt{\frac{\tan^2 x}{1 + \tan^2 x}}\)</span></td>
+    <td><span class="arithmatex">\(\pm \sqrt{\frac{1}{1 - \cot^2 x}}\)</span></td>
     </tr>
     <tr>
-    <td>$\cos x$</td>
-    <td>$\pm \sqrt{1 + \sin^2 x}$</td>
+    <td><span class="arithmatex">\(\cos x\)</span></td>
+    <td><span class="arithmatex">\(\pm \sqrt{1 + \sin^2 x}\)</span></td>
     <td>\-</td>
-    <td>$\pm \sqrt{\frac{1}{1 + \tan^2 x}}$</td>
-    <td>$\pm \sqrt{\frac{\cot^2 x}{1 + \cot^2 x}}$</td>
+    <td><span class="arithmatex">\(\pm \sqrt{\frac{1}{1 + \tan^2 x}}\)</span></td>
+    <td><span class="arithmatex">\(\pm \sqrt{\frac{\cot^2 x}{1 + \cot^2 x}}\)</span></td>
     </tr>
     <tr>
-    <td>$\tan x$</td>
-    <td>$\pm\sqrt{\frac{\sin^2 x}{1 - \sin^2 x}}$</td>
-    <td>$\pm\sqrt{\frac{1- \cos^2 x}{\cos^2 x}}$</td>
+    <td><span class="arithmatex">\(\tan x\)</span></td>
+    <td><span class="arithmatex">\(\pm\sqrt{\frac{\sin^2 x}{1 - \sin^2 x}}\)</span></td>
+    <td><span class="arithmatex">\(\pm\sqrt{\frac{1- \cos^2 x}{\cos^2 x}}\)</span></td>
     <td>\-</td>
-    <td>$\frac{1}{\cot x}$</td>
+    <td><span class="arithmatex">\(\frac{1}{\cot x}\)</span></td>
     </tr>
     <tr>
-    <td>$\cot x$</td>
-    <td>$\pm\sqrt{\frac{1- \sin^2 x}{\sin^2 x}}$</td>
-    <td>$\pm\sqrt{\frac{\cos^2 x}{1 - \cos^2 x}}$</td>
-    <td>$\frac{1}{\tan x}$</td>
+    <td><span class="arithmatex">\(\cot x\)</span></td>
+    <td><span class="arithmatex">\(\pm\sqrt{\frac{1- \sin^2 x}{\sin^2 x}}\)</span></td>
+    <td><span class="arithmatex">\(\pm\sqrt{\frac{\cos^2 x}{1 - \cos^2 x}}\)</span></td>
+    <td><span class="arithmatex">\(\frac{1}{\tan x}\)</span></td>
     <td>\-</td>
     </tr>
     </table></div>

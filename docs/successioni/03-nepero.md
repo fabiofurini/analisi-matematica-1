@@ -54,7 +54,9 @@ title: "Il numero di Nepero"
     $$
     b_n = \left( 1 + \frac{1}{n}\right)^{n+1} {\rm~~si~noti~che~~} b_n = a_n \: \left( 1 + \frac{1}{n}\right) 
     {\rm ~~perciò~~} b_n > a_n, \forall n \in \N, n \ge 1
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 

@@ -107,7 +107,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     \frac{f(x + h) \: g(x + h) - f(x) \: g(x)}{h} \rr f(x) \: g' (x) + f' (x) \:g( x) {\rm ~~per~~} h \rr 0.
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -133,7 +135,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     \frac{1}{h} \left[ \frac{1}{g(x+h)} - \frac{1}{g(x)} \right] \rr -\frac{g'(x)}{g^2(x)} {\rm ~~per~~} h \rr 0.
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -145,7 +149,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     = f'(x) \cdot \frac{1}{g(x)} + f(x) \cdot \underbrace{\left( -\frac{g'(x)}{g^2(x)} \right)}_{{\rm regola~} \eqref{DD5}} = \frac{f'(x) \cdot g(x) -  f(x) \cdot g'(x)}{g^2(x)}.
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 1"
 
@@ -157,7 +163,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     f'(x)= \left( \frac{\sin x}{\cos x} \right)' = \frac{\cos^2 x+ \sin^2 x}{\cos^2 x}= \frac{1}{\cos^2 x} = 1 + \tan^2 x
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 2"
 
@@ -170,7 +178,9 @@ title: "Regole di calcolo delle derivate"
     \begin{align*}
     f'(x)&= \left( \frac{\cos x}{\sin x} \right)' = \frac{-\sin^2 x - \cos^2 x}{\sin^2 x} = -\frac{\sin^2 x + \cos^2 x}{\sin^2 x}\\[2ex]
     &= - \frac{1}{(\sin^2x)} = - (1 + \cot^2 x)
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.2 Derivata di funzione composta
 
@@ -409,7 +419,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     f'(x) = \exp \left( x \cdot  \log a \right) \cdot \log a = a^x \cdot  \log a
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 4"
 
@@ -427,7 +439,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     f'(x) = \frac{1}{\log a} \cdot \frac{1}{x} = \frac{1}{x \: \log a}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 5"
 
@@ -439,7 +453,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     f'(x)=\left(\frac{e^x - e^{-x}}{2} \right)' = \frac{1}{2} \bigg( e^x - \big(-e^{-x} \big)\bigg)=\frac{e^x + e^{-x}}{2}=\cosh x
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 6"
 
@@ -451,7 +467,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     f'(x)=\left(\frac{e^x + e^{-x}}{2} \right)'= \frac{1}{2} \bigg( e^x + \big(-e^{-x} \big)\bigg)=\frac{e^x - e^{-x}}{2}=\sinh x
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 
@@ -661,7 +679,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     \lim_{k \rr 0} \frac{g(y_0+k)-g(y_0)}{k} = \frac{1}{f'(x_0)}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Osserviamo che, assumendo la derivabilità di $f^{-1}$, la \(\eqref{INV}\) segue subito dall'identità
 
@@ -713,7 +733,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     (\arctan y)' = \frac{dx}{dy} =  \frac{1}{\frac{dy}{dx} } = \frac{1}{1 + \tan^2 x} = \frac{1}{1 + y^2}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 8"
 
@@ -731,7 +753,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     (\arcsin y)' =  \frac{dx}{dy}  =  \frac{1}{\frac{dy}{dx} } = \frac{1}{\cos x} = \frac{1}{\sqrt{1 - y^2}}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 9"
 
@@ -749,7 +773,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     (\arccos y)' =   \frac{dx}{dy}  =  \frac{1}{\frac{dy}{dx} } = \frac{1}{-\sin x} = - \frac{1}{\sqrt{1 - y^2}}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Si osservi che le funzioni $\arcsin x$, $\arccos x$, pur essendo definite e continue in $[- 1, 1]$, non sono derivabili agli estremi dell'intervallo: precisamente, presentano in questi punti tangente verticale.
 
@@ -793,7 +819,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     (\setsinH y)' =  \frac{dx}{dy}  =  \frac{1}{\frac{dy}{dx} } = \frac{1}{\cosH x} = \frac{1}{\sqrt{y^2+1}}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 11"
 
@@ -811,7 +839,9 @@ title: "Regole di calcolo delle derivate"
 
     $$
     (\setcosH y)' =  \frac{dx}{dy}  =  \frac{1}{\frac{dy}{dx} } = \frac{1}{\sinH x} = \frac{1}{\sqrt{y^2-1}}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.4 Derivata logaritmica ed elasticità
 

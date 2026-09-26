@@ -29,7 +29,9 @@ title: "Derivate di funzioni elementari"
 
     $$
     f'(x) = \lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} 0 = 0
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.1 Funzioni derivate di funzioni potenza
 
@@ -51,7 +53,9 @@ title: "Derivate di funzioni elementari"
 
     $$
     f'(x) = \lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} n \;x^{n-1} + \underbrace{\frac{ \sum_{k=2}^{n} ~~{{n}\choose{k}} ~~\; x^{n-k} \; h^k}{h}}_{\rr 0} = n \;x^{n-1}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -65,7 +69,9 @@ title: "Derivate di funzioni elementari"
 
     $$
     f'(x)= \lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} 2\:x + h = 2\:x
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 3"
 
@@ -96,28 +102,30 @@ title: "Derivate di funzioni elementari"
 
     $$
     f'(x)= \lim_{h \rr 0} ~\frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} ~~\alpha \; x^{\alpha-1} = \alpha \; x^{\alpha-1}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 1: Funzione derivata"
 
     <div class="tabella" markdown><table>
     <tr>
-    <td>$f(x)=x^{10}$</td>
-    <td>$\qquad$</td>
-    <td>$f'(x)=10\:x^9$</td>
-    <td>(per $x \in \R$)</td>
+    <td><span class="arithmatex">\(f(x)=x^{10}\)</span></td>
+    <td><span class="arithmatex">\(\qquad\)</span></td>
+    <td><span class="arithmatex">\(f'(x)=10\:x^9\)</span></td>
+    <td>(per <span class="arithmatex">\(x \in \R\)</span>)</td>
     </tr>
     <tr>
-    <td>$f(x)=\frac{1}{x} = x^{-1}$</td>
-    <td>$\qquad$</td>
-    <td>$f'(x)=-\frac{1}{x^2}$</td>
-    <td>(per $x >0$)</td>
+    <td><span class="arithmatex">\(f(x)=\frac{1}{x} = x^{-1}\)</span></td>
+    <td><span class="arithmatex">\(\qquad\)</span></td>
+    <td><span class="arithmatex">\(f'(x)=-\frac{1}{x^2}\)</span></td>
+    <td>(per <span class="arithmatex">\(x >0\)</span>)</td>
     </tr>
     <tr>
-    <td>$f(x)=\sqrt{x}=x^{\frac{1}{2}}$</td>
-    <td>$\qquad$</td>
-    <td>$f'(x)=\frac{1}{2\:\sqrt{x}}$</td>
-    <td>(per $x >0$)</td>
+    <td><span class="arithmatex">\(f(x)=\sqrt{x}=x^{\frac{1}{2}}\)</span></td>
+    <td><span class="arithmatex">\(\qquad\)</span></td>
+    <td><span class="arithmatex">\(f'(x)=\frac{1}{2\:\sqrt{x}}\)</span></td>
+    <td>(per <span class="arithmatex">\(x >0\)</span>)</td>
     </tr>
     </table></div>
 
@@ -165,7 +173,9 @@ title: "Derivate di funzioni elementari"
     \begin{align*}
     f'(x) &=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} = {\sin x \: \frac{\cos h -1}{h}} + {\frac{\sin h}{h}} \cos x  \\[2ex]
       & = \lim_{h \rr 0} \sin x \: \left(-\frac{1}{2} \: h\right) + \cos x = \cos x
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 5"
 
@@ -185,7 +195,9 @@ title: "Derivate di funzioni elementari"
     \begin{align*}
     f'(x) &=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} = {\cos x \: \frac{\cos h -1}{h}} - {\frac{\sin h}{h}} \sin x  \\[2ex]
       & = \lim_{h \rr 0} \cos x \: \left(-\frac{1}{2} \: h\right) - \sin x = -\sin x
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.3 Funzioni derivate della funzione esponenziale e logaritmica in base $e$
 
@@ -211,7 +223,9 @@ title: "Derivate di funzioni elementari"
 
     $$
     f'(x)=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} e^x = e^x
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! osservazione "Osservazione 7"
 
@@ -241,7 +255,9 @@ title: "Derivate di funzioni elementari"
 
     $$
     f'(x) =\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} \frac{1}{x} = \frac{1}{x}
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 2: Retta tangente"
 

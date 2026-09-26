@@ -399,7 +399,9 @@ title: "Funzione derivata"
 
     $$
     \lim_{x \rr x_0} f(x)  =  f(x_0)
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Una possibile dimostrazione alternativa ma equivalente è la seguente:
 
@@ -416,7 +418,9 @@ title: "Funzione derivata"
 
     $$
     \lim_{x \rr x_0} f(x)  =  f(x_0)
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 

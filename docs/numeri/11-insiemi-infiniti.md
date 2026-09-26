@@ -45,38 +45,38 @@ title: "Cardinalità degli insiemi infiniti"
 
     <div class="tabella" markdown><table>
     <tr>
-    <td>$\Z$</td>
+    <td><span class="arithmatex">\(\Z\)</span></td>
     <td>0</td>
     <td>1</td>
     <td>\-1</td>
     <td>2</td>
     <td>\- 2</td>
     <td>…</td>
-    <td>$n$</td>
-    <td>$-n$</td>
+    <td><span class="arithmatex">\(n\)</span></td>
+    <td><span class="arithmatex">\(-n\)</span></td>
     <td>…</td>
     </tr>
     <tr>
     <td></td>
-    <td>$\updownarrow$</td>
-    <td>$\updownarrow$</td>
-    <td>$\updownarrow$</td>
-    <td>$\updownarrow$</td>
-    <td>$\updownarrow$</td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
     <td></td>
-    <td>$\updownarrow$</td>
-    <td>$\updownarrow$</td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
+    <td><span class="arithmatex">\(\updownarrow\)</span></td>
     </tr>
     <tr>
-    <td>$\N$</td>
+    <td><span class="arithmatex">\(\N\)</span></td>
     <td>0</td>
     <td>1</td>
     <td>2</td>
     <td>3</td>
     <td>4</td>
     <td>…</td>
-    <td>$2\:n-1$</td>
-    <td>$2\:n$</td>
+    <td><span class="arithmatex">\(2\:n-1\)</span></td>
+    <td><span class="arithmatex">\(2\:n\)</span></td>
     <td>…</td>
     <td></td>
     </tr>
@@ -110,7 +110,7 @@ title: "Cardinalità degli insiemi infiniti"
 
         <div class="tabella" markdown><table>
         <tr>
-        <td>$\frac{n}{m}$, con $n+m=\dots$</td>
+        <td><span class="arithmatex">\(\frac{n}{m}\)</span>, con <span class="arithmatex">\(n+m=\dots\)</span></td>
         <td></td>
         <td></td>
         <td></td>
@@ -118,31 +118,31 @@ title: "Cardinalità degli insiemi infiniti"
         </tr>
         <tr>
         <td>2</td>
-        <td>$\frac{1}{1}$</td>
+        <td><span class="arithmatex">\(\frac{1}{1}\)</span></td>
         <td></td>
         <td></td>
         <td></td>
         </tr>
         <tr>
         <td>3</td>
-        <td>$\frac{1}{2}$</td>
-        <td>$\frac{2}{1}$</td>
+        <td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{2}{1}\)</span></td>
         <td></td>
         <td></td>
         </tr>
         <tr>
         <td>4</td>
-        <td>$\frac{1}{3}$</td>
-        <td>$\frac{2}{2}$</td>
-        <td>$\frac{3}{1}$</td>
+        <td><span class="arithmatex">\(\frac{1}{3}\)</span></td>
+        <td><span class="arithmatex">\(\frac{2}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{3}{1}\)</span></td>
         <td></td>
         </tr>
         <tr>
         <td>5</td>
-        <td>$\frac{1}{4}$</td>
-        <td>$\frac{2}{3}$</td>
-        <td>$\frac{3}{2}$</td>
-        <td>$\frac{4}{1}$</td>
+        <td><span class="arithmatex">\(\frac{1}{4}\)</span></td>
+        <td><span class="arithmatex">\(\frac{2}{3}\)</span></td>
+        <td><span class="arithmatex">\(\frac{3}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{4}{1}\)</span></td>
         </tr>
         <tr>
         <td>…</td>
@@ -171,15 +171,15 @@ title: "Cardinalità degli insiemi infiniti"
         <td>…</td>
         </tr>
         <tr>
-        <td>$\frac{1}{1}$</td>
-        <td>$\frac{1}{2}$</td>
-        <td>$\frac{2}{1}$</td>
-        <td>$\frac{1}{3}$</td>
-        <td>$\frac{3}{1}$</td>
-        <td>$\frac{1}{4}$</td>
-        <td>$\frac{2}{3}$</td>
-        <td>$\frac{3}{2}$</td>
-        <td>$\frac{4}{1}$</td>
+        <td><span class="arithmatex">\(\frac{1}{1}\)</span></td>
+        <td><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{2}{1}\)</span></td>
+        <td><span class="arithmatex">\(\frac{1}{3}\)</span></td>
+        <td><span class="arithmatex">\(\frac{3}{1}\)</span></td>
+        <td><span class="arithmatex">\(\frac{1}{4}\)</span></td>
+        <td><span class="arithmatex">\(\frac{2}{3}\)</span></td>
+        <td><span class="arithmatex">\(\frac{3}{2}\)</span></td>
+        <td><span class="arithmatex">\(\frac{4}{1}\)</span></td>
         <td>…</td>
         </tr>
         </table></div>
@@ -192,7 +192,7 @@ title: "Cardinalità degli insiemi infiniti"
 
         <div class="tabella" markdown><table>
         <tr>
-        <td>$\N$</td>
+        <td><span class="arithmatex">\(\N\)</span></td>
         <td>0</td>
         <td>1</td>
         <td>3</td>
@@ -204,30 +204,32 @@ title: "Cardinalità degli insiemi infiniti"
         </tr>
         <tr>
         <td></td>
-        <td>$\updownarrow$</td>
-        <td>$\updownarrow$</td>
-        <td>$\updownarrow$</td>
-        <td>$\updownarrow$</td>
-        <td>$\updownarrow$</td>
-        <td>$\updownarrow$</td>
-        <td>$\updownarrow$</td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
+        <td><span class="arithmatex">\(\updownarrow\)</span></td>
         <td></td>
         </tr>
         <tr>
-        <td>$\Q$</td>
+        <td><span class="arithmatex">\(\Q\)</span></td>
         <td>0</td>
-        <td>$q_1$</td>
-        <td>$-q_1$</td>
-        <td>$q_2$</td>
-        <td>$-q_2$</td>
-        <td>$q_3$</td>
-        <td>$-q_3$</td>
+        <td><span class="arithmatex">\(q_1\)</span></td>
+        <td><span class="arithmatex">\(-q_1\)</span></td>
+        <td><span class="arithmatex">\(q_2\)</span></td>
+        <td><span class="arithmatex">\(-q_2\)</span></td>
+        <td><span class="arithmatex">\(q_3\)</span></td>
+        <td><span class="arithmatex">\(-q_3\)</span></td>
         <td>…</td>
         <td></td>
         </tr>
         </table></div>
 
-        che realizza una corrispondenza biunivoca tra $\N$ e $\Q$. <span class="qed">□</span>
+        che realizza una corrispondenza biunivoca tra $\N$ e $\Q$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Aver scoperto che diversi insiemi infiniti, uno propriamente contenuto nell'altro $(\N, \Z, \Q)$, hanno la stessa cardinalità, potrebbe far pensare che questo sia vero per tutti gli insiemi infiniti. Ciò non è vero, come mostrato nella prossima sezione.
 
@@ -276,7 +278,9 @@ title: "Cardinalità degli insiemi infiniti"
         \end{cases}
         $$
 
-        Con questa definizione risulta $b_i \neq a_{ii}$ per ogni $i$. Si noti che il numero $r$ è stato costruito ragionando sulla diagonale della tabella infinita che ha per righe i numeri $r_i$, da cui il nome del procedimento. <span class="qed">□</span>
+        Con questa definizione risulta $b_i \neq a_{ii}$ per ogni $i$. Si noti che il numero $r$ è stato costruito ragionando sulla diagonale della tabella infinita che ha per righe i numeri $r_i$, da cui il nome del procedimento.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -288,7 +292,9 @@ title: "Cardinalità degli insiemi infiniti"
 
         - **$\rightarrow$** …
 
-    - Ma questo porta a una <strong>contraddizione</strong>, avevamo supposto che gli $r_i$ esaurissero completamente l'insieme dei numeri reali dell'intervallo $[0, 1]$. Dunque $[0, 1]$ non è numerabile. <span class="qed">□</span>
+    - Ma questo porta a una <strong>contraddizione</strong>, avevamo supposto che gli $r_i$ esaurissero completamente l'insieme dei numeri reali dell'intervallo $[0, 1]$. Dunque $[0, 1]$ non è numerabile.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 

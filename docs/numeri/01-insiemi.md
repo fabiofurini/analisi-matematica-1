@@ -169,7 +169,9 @@ title: "Insiemi"
                 0,\overline{9} \cdot  (9+1) & \neq 9,\overline{9}\\
                 0,\overline{9} \cdot  (10) & \neq 9,\overline{9}\\
                 9,\overline{9} & \neq 9,\overline{9} ~~~~~~ {\rm assurdo!}
-                \end{align*} <span class="qed">□</span>
+                \end{align*}
+
+            <p class="qed-riga"><span class="qed">□</span></p>
 
     4. Indichiamo con $\R$  l'insieme dei <strong>numeri reali</strong> ovvero l'insieme dei numeri che si indentificano con espansioni decimali finite o infinite, periodiche o non periodiche.
 
@@ -639,7 +641,9 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     $$
     \underbrace{\violet{U} \setminus (\blue{B} \cup \orange{C})}_{=\overline{\blue{B} \cup \orange{C}} } = (\underbrace{\violet{U} \setminus \blue{B}}_{=  \overline{\blue{B}}}) \cap (\underbrace {\violet{U} \setminus \orange{C}}_{= \overline{\orange{C}}})
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ??? dimostrazione "Dimostrazione"
 
@@ -797,7 +801,9 @@ Chiamiamo questo insieme $S$,  si possono fare due ipotesi:
 
     $$
     0.999\dots = 1
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 

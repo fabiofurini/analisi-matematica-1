@@ -76,7 +76,9 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 
     $$
     \left(\frac{n}{\left(a^{1/\alpha}\right)^n}\right)^{\alpha} \rr 0 {\rm ~~e~da~questo~la~tesi}.
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Questi limiti descrivono la “velocità” con cui i logaritmi (con base $> 1$), le potenze (con esponente $> 0$), gli esponenziali (con base $> 1$) vanno all'infinito. I logaritmi a base $> 1$ vanno più lentamente di qualsiasi potenza con esponente $>0$, le potenze con esponente $>0$ vanno più lentamente di qualsiasi esponenziale a base $> 1$.
 
@@ -226,7 +228,9 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
         a_{n(\varepsilon)+k}  >  (l - \varepsilon)^k a_{n(\varepsilon)} {\rm ~~~~~e ~~~~~} (l - \varepsilon)^k \rr \ip {\rm ~~per~~} k \rr \ip.
         $$
 
-        D'altro canto $n(\varepsilon)$ è fissato e di conseguenza anche $a_{n(\varepsilon)}$ è fissato; dunque per $k$ abbastanza grande il secondo membro (e quindi il primo) è grande quanto si vuole. Questo  dimostra la seconda tesi, ovvero: $a_n \rr \ip.$ <span class="qed">□</span>
+        D'altro canto $n(\varepsilon)$ è fissato e di conseguenza anche $a_{n(\varepsilon)}$ è fissato; dunque per $k$ abbastanza grande il secondo membro (e quindi il primo) è grande quanto si vuole. Questo  dimostra la seconda tesi, ovvero: $a_n \rr \ip.$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 3: Utilizzo del teorema del criterio del rapporto"
 

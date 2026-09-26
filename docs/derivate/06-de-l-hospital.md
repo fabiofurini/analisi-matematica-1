@@ -321,7 +321,9 @@ title: "Teorema di De l'Hospital e derivabilità"
 
     $$
     f'_+(a)=  \lim_{h \rr 0^+} \frac{f(a+h)-f(a)}{h}=m
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! chiave ""
 

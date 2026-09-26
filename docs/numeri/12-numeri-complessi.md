@@ -153,7 +153,9 @@ title: "Numeri complessi"
         1^2 = 1 {\rm ~~~e ~~~} i^2=-1
         $$
 
-        Abbiamo quindi due quadrati che sono l'uno l'opposto dell'altro. Nessuno dei due però può essere negativo (perché sono quadrati), e questo è assurdo (perché tra $a$ e $- a$ uno dev'essere negativo, se $a\neq 0$). Concludiamo che $\C$ non è un campo ordinato. <span class="qed">□</span>
+        Abbiamo quindi due quadrati che sono l'uno l'opposto dell'altro. Nessuno dei due però può essere negativo (perché sono quadrati), e questo è assurdo (perché tra $a$ e $- a$ uno dev'essere negativo, se $a\neq 0$). Concludiamo che $\C$ non è un campo ordinato.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! definizione "Definizione 4: di coniugato"
 
@@ -241,7 +243,9 @@ title: "Numeri complessi"
         0 ~~\le~~ - 2acbd + a^2d^2 + b^2 c^2 ~~=~~ \big(ad-bc\big)^2
         $$
 
-        che è vera per ogni $a, b, c, d \in \R$. <span class="qed">□</span>
+        che è vera per ogni $a, b, c, d \in \R$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Geometricamente, $|z|$ rappresenta la distanza del punto (o numero complesso) $z$ dall'origine; $|z_1 - z_2|$ rappresenta la distanza dei due punti $z_1$ e $z_2$; le disuguaglianze d) e e) traducono il noto teorema sulle <strong>lunghezze dei lati di un triangolo</strong>[^1]:
 
@@ -586,7 +590,9 @@ title: "Numeri complessi"
         \psi = \frac{\varphi}{n} + \frac{2k\pi}{n} + 2m\pi = \vartheta_k + 2m\pi
         $$
 
-        e ritroveremmo ancora gli stessi $z_k$ precedenti. <span class="qed">□</span>
+        e ritroveremmo ancora gli stessi $z_k$ precedenti.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 9: radice quinta di un numero complesso"
 
@@ -771,7 +777,9 @@ title: "Numeri complessi"
     (2\:a\:x + b)^2  &= \underbrace{b^2 - 4\:a\:c}_{:=\Delta {\rm~~(discriminante)}} \\[2ex]
     2\:a\:x + b  &= \pm \sqrt{b^2 - 4\:a\:c} \\[2ex]
     x  &= \frac{-b \pm \sqrt{b^2 - 4\:a\:c}}{2\:a}
-    \end{align*} <span class="qed">□</span>
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 - Se il discriminante $\Delta$ è negativo non ci sono soluzioni reali.
 

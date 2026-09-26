@@ -162,39 +162,39 @@ title: "Serie di funzioni"
     <div class="tabella" markdown><table>
     <tr>
     <td></td>
-    <td>$\left(1 + \frac{1}{n} \right)^n$</td>
-    <td>$\sum_{k=0}^{n} \frac{1}{k!}$</td>
-    <td>$e$</td>
+    <td><span class="arithmatex">\(\left(1 + \frac{1}{n} \right)^n\)</span></td>
+    <td><span class="arithmatex">\(\sum_{k=0}^{n} \frac{1}{k!}\)</span></td>
+    <td><span class="arithmatex">\(e\)</span></td>
     </tr>
     <tr>
-    <td>$n=1$</td>
-    <td>$2.0000000000\dots$</td>
-    <td>$2.0000000000\dots$</td>
-    <td>$2,7182818284\dots$</td>
+    <td><span class="arithmatex">\(n=1\)</span></td>
+    <td><span class="arithmatex">\(2.0000000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2.0000000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
-    <td>$n=2$</td>
-    <td>$2.2500000000\dots$</td>
-    <td>$2.5000000000\dots$</td>
-    <td>$2,7182818284\dots$</td>
+    <td><span class="arithmatex">\(n=2\)</span></td>
+    <td><span class="arithmatex">\(2.2500000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2.5000000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
-    <td>$n=3$</td>
-    <td>$2.3703703704\dots$</td>
-    <td>$2.6666666666\dots$</td>
-    <td>$2,7182818284\dots$</td>
+    <td><span class="arithmatex">\(n=3\)</span></td>
+    <td><span class="arithmatex">\(2.3703703704\dots\)</span></td>
+    <td><span class="arithmatex">\(2.6666666666\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
-    <td>$n=4$</td>
-    <td>$2.4414062500\dots$</td>
-    <td>$2.7083333333\dots$</td>
-    <td>$2,7182818284\dots$</td>
+    <td><span class="arithmatex">\(n=4\)</span></td>
+    <td><span class="arithmatex">\(2.4414062500\dots\)</span></td>
+    <td><span class="arithmatex">\(2.7083333333\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
-    <td>$n=5$</td>
-    <td>$2.4883200000\dots$</td>
-    <td>$2.7166666666\dots$</td>
-    <td>$2,7182818284\dots$</td>
+    <td><span class="arithmatex">\(n=5\)</span></td>
+    <td><span class="arithmatex">\(2.4883200000\dots\)</span></td>
+    <td><span class="arithmatex">\(2.7166666666\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     </table></div>
 

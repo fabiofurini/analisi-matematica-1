@@ -74,29 +74,29 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
     <div class="tabella" markdown><table>
     <tr>
-    <td>$1$</td>
-    <td>$1^2$</td>
-    <td>$=1$</td>
+    <td><span class="arithmatex">\(1\)</span></td>
+    <td><span class="arithmatex">\(1^2\)</span></td>
+    <td><span class="arithmatex">\(=1\)</span></td>
     </tr>
     <tr>
-    <td>$1,4$</td>
-    <td>$(1,4)^2$</td>
-    <td>$=1,96$</td>
+    <td><span class="arithmatex">\(1,4\)</span></td>
+    <td><span class="arithmatex">\((1,4)^2\)</span></td>
+    <td><span class="arithmatex">\(=1,96\)</span></td>
     </tr>
     <tr>
-    <td>$1,41$</td>
-    <td>$(1,41)^2$</td>
-    <td>$=1,9881$</td>
+    <td><span class="arithmatex">\(1,41\)</span></td>
+    <td><span class="arithmatex">\((1,41)^2\)</span></td>
+    <td><span class="arithmatex">\(=1,9881\)</span></td>
     </tr>
     <tr>
-    <td>$1,414$</td>
-    <td>$(1,414)^2$</td>
-    <td>$=1,999396$</td>
+    <td><span class="arithmatex">\(1,414\)</span></td>
+    <td><span class="arithmatex">\((1,414)^2\)</span></td>
+    <td><span class="arithmatex">\(=1,999396\)</span></td>
     </tr>
     <tr>
-    <td>$1,4142$</td>
-    <td>$(1,4142)^2$</td>
-    <td>$=1,99996164$</td>
+    <td><span class="arithmatex">\(1,4142\)</span></td>
+    <td><span class="arithmatex">\((1,4142)^2\)</span></td>
+    <td><span class="arithmatex">\(=1,99996164\)</span></td>
     </tr>
     <tr>
     <td>…</td>
@@ -115,29 +115,29 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
     <div class="tabella" markdown><table>
     <tr>
-    <td>$1$</td>
-    <td>$2^2$</td>
-    <td>$=4$</td>
+    <td><span class="arithmatex">\(1\)</span></td>
+    <td><span class="arithmatex">\(2^2\)</span></td>
+    <td><span class="arithmatex">\(=4\)</span></td>
     </tr>
     <tr>
-    <td>$1,5$</td>
-    <td>$(1,5)^2$</td>
-    <td>$=2, 25$</td>
+    <td><span class="arithmatex">\(1,5\)</span></td>
+    <td><span class="arithmatex">\((1,5)^2\)</span></td>
+    <td><span class="arithmatex">\(=2, 25\)</span></td>
     </tr>
     <tr>
-    <td>$1,42$</td>
-    <td>$(1,42)^2$</td>
-    <td>$=2,0164$</td>
+    <td><span class="arithmatex">\(1,42\)</span></td>
+    <td><span class="arithmatex">\((1,42)^2\)</span></td>
+    <td><span class="arithmatex">\(=2,0164\)</span></td>
     </tr>
     <tr>
-    <td>$1,415$</td>
-    <td>$(1,415)^2$</td>
-    <td>$=2,002225$</td>
+    <td><span class="arithmatex">\(1,415\)</span></td>
+    <td><span class="arithmatex">\((1,415)^2\)</span></td>
+    <td><span class="arithmatex">\(=2,002225\)</span></td>
     </tr>
     <tr>
-    <td>$1,4143$</td>
-    <td>$(1,4143)^2$</td>
-    <td>$=2,00024449$</td>
+    <td><span class="arithmatex">\(1,4143\)</span></td>
+    <td><span class="arithmatex">\((1,4143)^2\)</span></td>
+    <td><span class="arithmatex">\(=2,00024449\)</span></td>
     </tr>
     <tr>
     <td>…</td>

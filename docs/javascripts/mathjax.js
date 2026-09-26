@@ -38,6 +38,10 @@ window.MathJax = {
 };
 
 document$.subscribe(() => {
+  // formule nei titoli: anche l'indice laterale va reso da MathJax
+  document.querySelectorAll(".md-nav .md-ellipsis, .md-nav__link").forEach((el) => {
+    if (el.textContent.includes("\\(")) el.classList.add("arithmatex");
+  });
   MathJax.startup.output.clearCache();
   MathJax.typesetClear();
   MathJax.texReset();

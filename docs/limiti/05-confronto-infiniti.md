@@ -73,7 +73,9 @@ title: "Confronto degli infiniti"
 
     $$
     \lim_{x \rr \ip} \frac{\log_a^{\beta}  x}{x^{\alpha}}= (-1)^{\beta} \; \lim_{t \rr 0^+}   t^{\alpha} \; \log_a^{\beta}  x=0
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 3: Confronto degli infiniti"
 
@@ -142,7 +144,9 @@ title: "Confronto degli infiniti"
 
     $$
     \lim_{x \rr \ip} \frac{b^{\lambda \: x}}{x^{\alpha}}= \lim_{x \rr \ip}  \left(\frac{1}{x}\right)^{\alpha} \; b^{\lambda \: x}=  \lim_{t \rr 0^+} t^{\alpha} \; b^{\lambda/t} = \ip
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 5: Confronto degli infiniti"
 
@@ -172,7 +176,9 @@ title: "Confronto degli infiniti"
 
     $$
     \lim_{x \rr \ip}\frac{x^{\alpha} }{b^{\lambda \: x}}  = \lim_{x \rr \ip}  \left(  \frac{1 }{x} \right)^{-\alpha} \frac{1}{b^{\lambda \: x}} =  \lim_{t \rr 0^+}    t^{-\alpha} \; b^{-\lambda/t} = 0
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 6: Confronto degli infiniti"
 
@@ -202,7 +208,9 @@ title: "Confronto degli infiniti"
 
     $$
     \lim_{x \rr \ip}\frac{x^{\alpha} }{b^{\lambda \: x}} =\lim_{t \rr \im} \frac{(-t)^{\alpha} }{b^{-\lambda \: x}} = (-1)^\alpha \lim_{t \rr \im}   t^{\alpha} \; b^{\lambda \: y} = 0
-    $$ <span class="qed">□</span>
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 !!! esempio "Esempio 7: Confronto degli infiniti"
 
