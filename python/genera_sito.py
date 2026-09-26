@@ -39,17 +39,17 @@ def sommario(parte, num, slug, max_voci=4):
 
 def esercizi():
     """Pagina indice degli esercizi e voce di menu."""
-    from capitoli import ESERCIZI, PARTI_ES, ident_es
+    from capitoli import CARTELLA_ES, ESERCIZI, PARTI_ES, ident_es
     righe = ["# " + ("Exercises" if EN else "Esercizi"), "",
              ("Exercise sheets with **worked solutions**, organized as the parts of the notes. "
               "Try each exercise on your own first: the solution opens with a click." if EN else
               "Fogli di esercizi con le **soluzioni svolte**, divisi come le parti delle dispense. "
               "Prova prima da solo: la soluzione si apre con un clic."), "",
              '<div class="grid cards" markdown>', ""]
-    voci = ["  - " + ("Exercises" if EN else "Esercizi") + ":", "      - esercizi/index.md"]
+    voci = ["  - " + ("Exercises" if EN else "Esercizi") + ":", f"      - {CARTELLA_ES}/index.md"]
     for key, (nit, nen, cen) in PARTI_ES.items():
         fogli = [e for e in ESERCIZI if e[0] in (key, cen)]
-        fogli = [e for e in fogli if (DOCS / "esercizi" / f"{ident_es(*e[:3])}.md").exists()]
+        fogli = [e for e in fogli if (DOCS / CARTELLA_ES / f"{ident_es(*e[:3])}.md").exists()]
         if not fogli:
             continue
         nome = nen if EN else nit
@@ -57,14 +57,14 @@ def esercizi():
         righe += [f"-   **{nome}**", "", "    ---", ""]
         for e in fogli:
             cid = ident_es(*e[:3])
-            testo = (DOCS / "esercizi" / f"{cid}.md").read_text()
+            testo = (DOCS / CARTELLA_ES / f"{cid}.md").read_text()
             t = re.search(r'^title: "(.*)"$', testo, re.M).group(1)
             n = len(re.findall(r'^!!! esercizio ', testo, re.M))
-            voci.append(f'          - "{t}": esercizi/{cid}.md')
+            voci.append(f'          - "{t}": {CARTELLA_ES}/{cid}.md')
             righe.append(f"    - [{t}]({cid}.md) · {n} " + ("exercises" if EN else "esercizi"))
         righe.append("")
     righe += ["</div>", ""]
-    (DOCS / "esercizi" / "index.md").write_text("\n".join(righe))
+    (DOCS / CARTELLA_ES / "index.md").write_text("\n".join(righe))
     return "\n".join(voci)
 
 

@@ -1037,7 +1037,7 @@ def autori(corpo: str) -> str:
 
 
 def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool = False) -> dict:
-    from capitoli import SORGENTE_ES, ident_es, ident_es_it, PARTI_ES
+    from capitoli import SORGENTE_ES, ident_es, ident_es_it, PARTI_ES, CARTELLA_ES
     fonte = (SORGENTE_ES if esercizi else SORGENTE) / rel
     tex = fonte.read_text(encoding="utf-8", errors="replace")
     tex = strip_comments(tex)
@@ -1106,7 +1106,7 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
         md = inserisci(ident_it(cid), md, EN)
     out = "\n".join(testa) + "\n" + md + note + "\n"
     out = re.sub(r"\n{3,}", "\n\n", out)
-    dest = DOCS / "esercizi" / f"{cid}.md" if esercizi else DOCS / pagina(parte, num, slug)
+    dest = DOCS / CARTELLA_ES / f"{cid}.md" if esercizi else DOCS / pagina(parte, num, slug)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(out, encoding="utf-8")
     rep = BUILD / "report"

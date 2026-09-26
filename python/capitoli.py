@@ -141,6 +141,7 @@ def pagina(parte, num, slug):
 
 # ---------------------------------------------------------------- esercizi
 SORGENTE_ES = MODULO / "materiale_sorgente" / ("ESERCIZI" if LINGUA == "it" else "ESERCIZI_EN")
+CARTELLA_ES = "esercizi" if LINGUA == "it" else "exercises"   # cartella del sito
 
 # (parte del sito, numero, slug, file relativo a SORGENTE_ES)
 ESERCIZI = [
