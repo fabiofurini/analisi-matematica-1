@@ -9,6 +9,7 @@ title: "Derivata seconda"
 **Parte 4 · Derivate · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-07-derivata-seconda.pdf)
 
 </div>
+
 ## 1. Derivata seconda e funzione derivata seconda
 
 - Possiamo ora chiederci  se la funzione $f' (x)$ sia a sua volta derivabile (in un punto o in un  intervallo).

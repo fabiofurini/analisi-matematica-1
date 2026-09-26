@@ -9,6 +9,7 @@ title: "Insiemi"
 **Parte 1 · Numeri e logica · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-01-insiemi.pdf)
 
 </div>
+
 ## 1. Introduzione informale alla teoria degli insiemi
 
 - La teoria degli insiemi si basa sui seguenti tre concetti chiave:

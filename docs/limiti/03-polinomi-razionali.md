@@ -9,6 +9,7 @@ title: "Limiti di polinomi e funzioni razionali"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-03-polinomi-razionali.pdf)
 
 </div>
+
 ## 1. Limiti di polinomi a $\pm \infty$
 
 - Un polinomio  di grado (massimo) $n$ si può scrivere come:

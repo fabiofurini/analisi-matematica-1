@@ -9,6 +9,7 @@ title: "Limiti notevoli e stime asintotiche"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-06-limiti-notevoli.pdf)
 
 </div>
+
 ## 1. Limiti notevoli
 
 - Vediamo ora alcune comuni tecniche di calcolo dei limiti che  combinano i teoremi generali sui limiti con l'uso di alcuni limiti notevoli di certe funzioni elementari.

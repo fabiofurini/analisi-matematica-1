@@ -121,6 +121,15 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     [:octicons-arrow-right-24: I grafici](interattivi/index.md)
 
+-   :material-pencil-box-multiple: **Esercizi con soluzioni**
+
+    ---
+
+    Circa 300 esercizi divisi per argomento, ciascuno con la soluzione
+    svolta che si apre con un clic.
+
+    [:octicons-arrow-right-24: Gli esercizi](esercizi/index.md)
+
 -   :material-format-list-checks: **Teoremi d'esame**
 
     ---
@@ -147,3 +156,5 @@ Materiale didattico di **[Fabio Furini](https://sites.google.com/view/fabiofurin
 [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma. Fa parte della
 stessa collana del [Laboratorio di Ricerca Operativa](https://fabiofurini.github.io/laboratorio-ricerca-operativa/)
 e di [Modellazione MIP](https://fabiofurini.github.io/modellazione-mip/).
+
+*This website is also available in [English](https://fabiofurini.github.io/mathematical-analysis-1/).*

@@ -9,6 +9,7 @@ title: "Fenomeni vibratori"
 **Parte 2 · Funzioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-06-fenomeni-vibratori.pdf)
 
 </div>
+
 ## 1. Fenomeni vibratori
 
 - Abbiamo visto che le funzioni seno e coseno sono periodiche di <strong>periodo</strong> $2\: \pi$. Useremo la variabile $t$ per indicare il tempo.

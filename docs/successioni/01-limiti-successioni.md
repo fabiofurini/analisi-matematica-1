@@ -9,6 +9,7 @@ title: "Successioni e limiti di successioni"
 **Parte 3 · Limiti di successioni · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-01-limiti-successioni.pdf)
 
 </div>
+
 ## 1. Definizione di successione e proprietà
 
 - Consideriamo l'insieme $\mathbb{N}$ degli interi non negativi ordinato secondo l'ordine naturale

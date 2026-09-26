@@ -9,6 +9,7 @@ title: "Cardinalità degli insiemi infiniti"
 **Parte 1 · Numeri e logica · Capitolo 11** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-11-insiemi-infiniti.pdf)
 
 </div>
+
 ## 1. Potenza del numerabile
 
 !!! chiave ""

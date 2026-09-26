@@ -9,6 +9,7 @@ title: "Calcolo differenziale e approssimazioni"
 **Parte 4 · Derivate · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-08-approssimazioni.pdf)
 
 </div>
+
 ## 1. Sviluppi asintotici al primo ordine
 
 - Un'operazione molto frequente sia in matematica che nelle sue applicazioni è quella di approssimazione lineare di una data funzione derivabile (operazione anche chiamata sviluppo asintotico al primo ordine).

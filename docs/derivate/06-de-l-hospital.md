@@ -9,6 +9,7 @@ title: "Teorema di De l'Hospital e derivabilità"
 **Parte 4 · Derivate · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-06-de-l-hospital.pdf)
 
 </div>
+
 ## 1. Teorema di De l'Hospital
 
 - Una notevole applicazione del calcolo differenziale si ha nel calcolo dei limiti che si presentano nelle forme di indecisione:

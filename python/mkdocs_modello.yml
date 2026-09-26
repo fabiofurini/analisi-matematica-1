@@ -69,6 +69,13 @@ extra:
     - icon: material/vector-polygon
       link: https://fabiofurini.github.io/modellazione-mip/
       name: Modellazione MIP
+  alternate:
+    - name: Italiano
+      link: https://fabiofurini.github.io/analisi-matematica-1/
+      lang: it
+    - name: English
+      link: https://fabiofurini.github.io/mathematical-analysis-1/
+      lang: en
 
 extra_css:
   - stylesheets/extra.css

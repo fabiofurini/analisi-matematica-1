@@ -9,6 +9,7 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 **Parte 4 · Derivate · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-03-punti-angolosi-cuspidi.pdf)
 
 </div>
+
 ## 1. Derivata destra e derivata sinistra
 
 <a id="box-defXX-1"></a>

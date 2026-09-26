@@ -9,6 +9,7 @@ title: "Successioni definite per ricorrenza"
 **Parte 3 · Limiti di successioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-06-ricorrenza.pdf)
 
 </div>
+
 ## 1. Successioni definite per ricorrenza
 
 - Cominciamo con il seguente problema:

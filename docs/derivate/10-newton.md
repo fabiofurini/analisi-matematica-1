@@ -9,6 +9,7 @@ title: "Metodo di Newton"
 **Parte 4 · Derivate · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-10-newton.pdf)
 
 </div>
+
 ## 1. Metodo di Newton
 
 - Supponiamo di voler risolvere l'equazione

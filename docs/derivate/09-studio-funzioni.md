@@ -9,6 +9,7 @@ title: "Studio di funzioni"
 **Parte 4 · Derivate · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-09-studio-funzioni.pdf)
 
 </div>
+
 ## 1. Grafico di funzioni reali di variabile  reale
 
 - Il calcolo infinitesimale e differenziale sviluppato fin qui ci permette di affrontare in modo completo il problema di tracciare il grafico di una funzione $f$, ovvero effettuare lo <strong>studio di funzione</strong>.

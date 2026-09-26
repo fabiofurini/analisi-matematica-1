@@ -9,6 +9,7 @@ title: "Funzioni inverse"
 **Parte 2 · Funzioni · Capitolo 11** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-11-inverse.pdf)
 
 </div>
+
 ## 1. Funzioni invertibili e funzioni inverse
 
 - Data una funzione reale di variabile reale $f : D \rightarrow \mathbb{R}$,  per ogni ingresso $x$ nel dominio $D$ esiste un'unica uscita $y=f(x)$ nell'immagine del dominio $f(D)$.

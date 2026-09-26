@@ -6,27 +6,27 @@ iniziale o None). Il grafico si inserisce alla FINE della sezione indicata
 teoria, poi le mani sul grafico.
 """
 GRAFICI_NEI_CAPITOLI = {
-    "numeri-12-numeri-complessi": [("### 3.2 Radici", "radici", None)],
-    "funzioni-03-potenza": [("### 1.2 Esponente reale", "potenze", None)],
-    "funzioni-04-esponenziali-logaritmi": [("## 2. Funzioni logaritmiche", "esponenziali", None)],
-    "funzioni-06-fenomeni-vibratori": [("## 1. Fenomeni vibratori", "oscillazioni", None)],
-    "funzioni-09-operazioni-grafici": [("## 1. Operazioni sui grafici", "operazioni", None)],
-    "successioni-01-limiti-successioni": [("### 1.1 Successioni convergenti", "successione", None)],
-    "successioni-03-nepero": [("## 1. Il numero", "successione", "s4")],
-    "successioni-06-ricorrenza": [("## 2. L'algoritmo di Erone", "erone", None)],
-    "limiti-08-zeri-bisezione": [("## 2. Metodo della bisezione", "bisezione", None)],
-    "derivate-01-funzione-derivata": [("## 2. Retta tangente", "tangente", None)],
-    "derivate-05-valor-medio": [("## 3. Teorema del valor medio", "lagrange", None)],
-    "derivate-07-derivata-seconda": [("## 5. Punti di flesso", "concavita", None)],
-    "derivate-08-approssimazioni": [("## 3. Formula/sviluppo di Taylor con resto secondo Peano", "taylor", None)],
-    "derivate-10-newton": [("## 1. Metodo di Newton", "newton", None)],
-    "serie-01-serie-numeriche": [("### 1.4 Serie geometrica", "geometrica", None)],
-    "serie-02-termini-non-negativi": [("### 1.4 Serie armonica generalizzata", "seriep", None)],
-    "serie-03-segno-variabile": [("### 1.1 Serie a termini di segno alternato", "seriep", "alt")],
+    "numeri-12-numeri-complessi": [("### 3.2 ", "radici", None)],
+    "funzioni-03-potenza": [("### 1.2 ", "potenze", None)],
+    "funzioni-04-esponenziali-logaritmi": [("## 2. ", "esponenziali", None)],
+    "funzioni-06-fenomeni-vibratori": [("## 1. ", "oscillazioni", None)],
+    "funzioni-09-operazioni-grafici": [("## 1. ", "operazioni", None)],
+    "successioni-01-limiti-successioni": [("### 1.1 ", "successione", None)],
+    "successioni-03-nepero": [("## 1. ", "successione", "s4")],
+    "successioni-06-ricorrenza": [("## 2. ", "erone", None)],
+    "limiti-08-zeri-bisezione": [("## 2. ", "bisezione", None)],
+    "derivate-01-funzione-derivata": [("## 2. ", "tangente", None)],
+    "derivate-05-valor-medio": [("## 3. ", "lagrange", None)],
+    "derivate-07-derivata-seconda": [("## 5. ", "concavita", None)],
+    "derivate-08-approssimazioni": [("## 3. ", "taylor", None)],
+    "derivate-10-newton": [("## 1. ", "newton", None)],
+    "serie-01-serie-numeriche": [("### 1.4 ", "geometrica", None)],
+    "serie-02-termini-non-negativi": [("### 1.4 ", "seriep", None)],
+    "serie-03-segno-variabile": [("### 1.1 ", "seriep", "alt")],
 }
 
 
-def inserisci(cid: str, md: str) -> str:
+def inserisci(cid: str, md: str, en: bool = False) -> str:
     righe = md.split("\n")
     for titolo, nome, funzione in GRAFICI_NEI_CAPITOLI.get(cid, []):
         idx = next((i for i, r in enumerate(righe) if r.startswith(titolo)), None)
@@ -40,7 +40,9 @@ def inserisci(cid: str, md: str) -> str:
                 fine = j
                 break
         attr = f' data-funzione="{funzione}"' if funzione else ""
-        blocco = ["", '<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>',
+        invito = ('<p class="gi-invito"><strong>Try it</strong> — the interactive graph below shows what you have just read: move the sliders.</p>'
+                  if en else '<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>')
+        blocco = ["", invito,
                   "", f'<div class="gi" data-grafico="{nome}"{attr}></div>', ""]
         righe[fine:fine] = blocco
     return "\n".join(righe)

@@ -9,6 +9,7 @@ title: "Insiemi numerici e intervalli"
 **Parte 1 · Numeri e logica · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-03-insiemi-numerici.pdf)
 
 </div>
+
 ## 1. I cinque principali insiemi numerici
 
 ### 1.1 I numeri naturali

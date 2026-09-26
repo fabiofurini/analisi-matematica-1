@@ -11,14 +11,15 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from capitoli import CAPITOLI, DOCS, IT, SORGENTE, ident
+from capitoli import CAPITOLI, DOCS, ESERCIZI, IT, SORGENTE, SORGENTE_ES, ident, ident_es
 
 BUILD = IT / "build" / "tex"
+BUILD_ES = IT / "build" / "tex_es"
 
 
-def compila(cap):
-    cid = ident(*cap[:3])
-    tex = BUILD / cap[3]
+def compila(cap, esercizi=False):
+    cid = ident_es(*cap[:3]) if esercizi else ident(*cap[:3])
+    tex = (BUILD_ES if esercizi else BUILD) / cap[3]
     for _ in range(2):
         subprocess.run(["pdflatex", "-interaction=nonstopmode", tex.name], cwd=tex.parent,
                        capture_output=True, timeout=600)
@@ -34,9 +35,14 @@ if __name__ == "__main__":
     if BUILD.exists():
         shutil.rmtree(BUILD)
     shutil.copytree(SORGENTE, BUILD, ignore=shutil.ignore_patterns("*.pdf", "*.aux", "*.log"))
+    if BUILD_ES.exists():
+        shutil.rmtree(BUILD_ES)
+    shutil.copytree(SORGENTE_ES, BUILD_ES, ignore=shutil.ignore_patterns("*.pdf", "*.aux", "*.log"))
     caps = [c for c in CAPITOLI if ident(*c[:3]).startswith(filtro)]
+    es = [c for c in ESERCIZI if ident_es(*c[:3]).startswith(filtro)]
     with ThreadPoolExecutor(6) as ex:
-        for r in ex.map(compila, caps):
-            if not r.startswith("ok"):
-                print(r)
-    print(f"{len(caps)} capitoli compilati")
+        ris = list(ex.map(compila, caps)) + list(ex.map(lambda c: compila(c, True), es))
+    for r in ris:
+        if not r.startswith("ok"):
+            print(r)
+    print(f"{len(caps)} capitoli e {len(es)} fogli di esercizi compilati")

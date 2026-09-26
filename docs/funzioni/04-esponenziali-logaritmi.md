@@ -9,6 +9,7 @@ title: "Funzioni esponenziali e logaritmiche"
 **Parte 2 · Funzioni · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-04-esponenziali-logaritmi.pdf)
 
 </div>
+
 ## 1. Funzioni esponenziali
 
 <a id="box-defXX-1"></a>

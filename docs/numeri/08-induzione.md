@@ -9,6 +9,7 @@ title: "Principio di induzione"
 **Parte 1 · Numeri e logica · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-08-induzione.pdf)
 
 </div>
+
 ## 1. Il principio di induzione
 
 - Presentiamo ora un metodo dimostrativo, detto dimostrazione per induzione. Questo procedimento si può applicare a teoremi con la struttura seguente:

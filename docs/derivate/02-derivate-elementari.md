@@ -9,6 +9,7 @@ title: "Derivate di funzioni elementari"
 **Parte 4 · Derivate · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-02-derivate-elementari.pdf)
 
 </div>
+
 ## 1. Funzioni derivate di funzioni elementari
 
 - Deriveremo nel seguito le funzioni derivate di alcune delle principali funzioni elementari.

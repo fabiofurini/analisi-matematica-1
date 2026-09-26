@@ -9,6 +9,7 @@ title: "Serie numeriche a termini di segno variabile"
 **Parte 5 · Serie · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-03-segno-variabile.pdf)
 
 </div>
+
 ## 1. Serie a termini di segno variabile
 
 <a id="box-defXX-1"></a>

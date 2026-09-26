@@ -9,6 +9,7 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 **Parte 1 · Numeri e logica · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-09-fattoriali-binomiali.pdf)
 
 </div>
+
 ## 1. Fattoriali
 
 <a id="box-notationA-1"></a>

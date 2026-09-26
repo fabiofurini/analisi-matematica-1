@@ -9,6 +9,7 @@ title: "Funzioni iperboliche"
 **Parte 2 · Funzioni · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-08-iperboliche.pdf)
 
 </div>
+
 ## 1. Funzioni iperboliche
 
 <a id="box-defXX-1"></a>

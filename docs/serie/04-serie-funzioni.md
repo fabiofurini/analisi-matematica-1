@@ -9,6 +9,7 @@ title: "Serie di funzioni"
 **Parte 5 · Serie · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-04-serie-funzioni.pdf)
 
 </div>
+
 ## 1. Serie di funzioni
 
 - Le <strong>serie di funzioni</strong> sono serie numeriche dipendenti da un parametro $x$: quando queste serie convergono per ogni valore $x$ appartenente a un certo intervallo, rappresentano delle <strong>funzioni di nuovo tipo</strong>

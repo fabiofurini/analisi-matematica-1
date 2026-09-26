@@ -21,7 +21,9 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from capitoli import CAPITOLI, DOCS, IT, SORGENTE, ident, pagina
+from capitoli import CAPITOLI, DOCS, IT, LINGUA, SORGENTE, ident, ident_it, pagina
+
+EN = LINGUA == "en"
 
 BUILD = IT / "build"
 
@@ -531,6 +533,17 @@ TEOREMI = {
     "Lemma": ("teorema", "Lemma"),
     "Osservazione": ("osservazione", "Osservazione"), "Observation": ("osservazione", "Osservazione"),
 }
+if EN:
+    _EN = {"Definizione": "Definition", "Teorema": "Theorem", "Proposizione": "Proposition",
+           "Corollario": "Corollary", "Lemma": "Lemma", "Osservazione": "Remark"}
+    TEOREMI = {k: (t, _EN[n]) for k, (t, n) in TEOREMI.items()}
+T = {  # testi fissi della pagina
+    "Dimostrazione": "Proof" if EN else "Dimostrazione",
+    "Esempio": "Example" if EN else "Esempio",
+    "Esercizio": "Exercise" if EN else "Esercizio",
+    "Figura": "Figure" if EN else "Figura",
+    "Soluzione": "Solution" if EN else "Soluzione",
+}
 
 LARGHEZZA_TESTO_CM = 16.5  # \textwidth 6.5in delle note
 
@@ -564,7 +577,7 @@ def figura_tikz(codice: str, st: Stato, larg: int | None, ovale: bool) -> str:
     (d / f"fig{n:02d}.tikz").write_text(codice)
     stile = f'style="width:{larg}%"' if larg else ""
     classe = ".fig .ovale" if ovale else ".fig"
-    return f'![Figura {n}](../img/{st.cid}/fig{n:02d}.svg){{ {classe} loading=lazy {stile} }}'
+    return f'![{T["Figura"]} {n}](../img/{st.cid}/fig{n:02d}.svg){{ {classe} loading=lazy {stile} }}'
 
 
 def figura_file(path: str, st: Stato, larg: int | None) -> str:
@@ -581,7 +594,7 @@ def figura_file(path: str, st: Stato, larg: int | None) -> str:
     (d / f"fig{n:02d}.file").write_text(str(src))
     ext = ".svg" if src.suffix.lower() in (".pdf", ".eps") else src.suffix.lower()
     stile = f'style="width:{larg}%"' if larg else ""
-    return f'![Figura {n}](../img/{st.cid}/fig{n:02d}{ext}){{ .fig loading=lazy {stile} }}'
+    return f'![{T["Figura"]} {n}](../img/{st.cid}/fig{n:02d}{ext}){{ .fig loading=lazy {stile} }}'
 
 
 def tabella(spec: str, corpo: str, st: Stato) -> str:
@@ -916,13 +929,13 @@ def ambiente(env: str, corpo: str, st: Stato) -> str | None:
             corpo_md += "\n\n<p class=\"qed-riga\"><span class=\"qed\">□</span></p>"
         else:
             corpo_md += " <span class=\"qed\">□</span>"
-        titolo = "Dimostrazione" + (f" ({inline(opt, st)})" if opt else "")
+        titolo = T["Dimostrazione"] + (f" ({inline(opt, st)})" if opt else "")
         return box("dimostrazione", titolo, corpo_md, apribile=True)
     if env == "texercise":
         _, k = read_opt(corpo, 0)
         _, k = read_group(corpo, k)
         num = st.conta("Esercizio")
-        return box("esercizio", f"Esercizio {num}", converti(corpo[k:], st))
+        return box("esercizio", f"{T['Esercizio']} {num}", converti(corpo[k:], st))
     if env == "tcolorbox":
         opt, k = read_opt(corpo, 0)
         opt = opt or ""
@@ -932,9 +945,14 @@ def ambiente(env: str, corpo: str, st: Stato) -> str | None:
             titolo, fine = read_group(opt, me.end() - 1)
             etich, _ = read_group(opt, fine)
             num = st.conta("Esempio")
-            tit = f"Esempio {num}" + (f": {inline(titolo, st)}" if titolo.strip() else "")
-            ancora = registra_box(etich, f"Esempio {num}", st)
+            tit = f"{T['Esempio']} {num}" + (f": {inline(titolo, st)}" if titolo.strip() else "")
+            ancora = registra_box(etich, f"{T['Esempio']} {num}", st)
             return f'<a id="{ancora}"></a>\n\n' + box("esempio", tit, converti(contenuto, st))
+        if "blue" in opt:
+            corpo_sol = converti(contenuto, st)
+            if not corpo_sol.strip():
+                return ""  # riquadro della soluzione ancora vuoto nelle note
+            return box("soluzione", T["Soluzione"], corpo_sol, apribile=True)
         if "gray" in opt:
             if re.search(r"\\begin\{proof\}", contenuto) and re.sub(r"\\begin\{proof\}.*\\end\{proof\}", "", contenuto, flags=re.S).strip() == "":
                 return converti(contenuto, st)  # la proof interna diventa il box apribile
@@ -944,6 +962,8 @@ def ambiente(env: str, corpo: str, st: Stato) -> str | None:
         if "red" in opt:
             return box("attenzione", "", converti(contenuto, st))
         return box("nota", "", converti(contenuto, st))
+    if env == "comment":
+        return ""
     if env in ("lstlisting", "verbatim"):
         return "```\n" + corpo.strip("\n") + "\n```"
     if env == "forest":
@@ -1009,21 +1029,22 @@ def titolo_capitolo(corpo: str) -> str:
 
 
 def autori(corpo: str) -> str:
-    m = re.search(r"\\textbf\{Autor[ei]\}:(.*?)\\item", corpo, re.S)
+    m = re.search(r"\\textbf\{(?:Autor[ei]|Authors?)\}:(.*?)\\item", corpo, re.S)
     if not m:
         return "Fabio Furini"
     nomi = re.findall(r"\\underline\{([^}]*)\}", m.group(1))
     return ", ".join(nomi[:-1]) + " e " + nomi[-1] if len(nomi) > 1 else (nomi[0] if nomi else "Fabio Furini")
 
 
-def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
-    fonte = SORGENTE / rel
+def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool = False) -> dict:
+    from capitoli import SORGENTE_ES, ident_es, ident_es_it, PARTI_ES
+    fonte = (SORGENTE_ES if esercizi else SORGENTE) / rel
     tex = fonte.read_text(encoding="utf-8", errors="replace")
     tex = strip_comments(tex)
     tex = re.sub(r"\\vskip\s*-?[0-9.]+\s*(pt|cm|mm|em|ex|in)", "", tex)
     pre, _, resto = tex.partition("\\begin{document}")
     corpo, _, _ = resto.partition("\\end{document}")
-    cid = ident(parte, num, slug)
+    cid = ident_es(parte, num, slug) if esercizi else ident(parte, num, slug)
     st = Stato(cid=cid, fonte=fonte, preambolo=pre)
     titolo = titolo_capitolo(corpo)
     chi = autori(corpo)
@@ -1032,8 +1053,8 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
     if k >= 0:
         corpo = corpo[k + len("\\tableofcontents"):]
     else:
-        k = corpo.find("\\section")
-        corpo = corpo[k:] if k >= 0 else corpo
+        cand = [x for x in (corpo.find("\\section"), corpo.find("\\begin{texercise}")) if x >= 0]
+        corpo = corpo[min(cand):] if cand else corpo
     # definizioni TikZ/macro scritte nel corpo (es. i diagrammi di Venn):
     # vanno nel preambolo delle figure e non nel testo
     corpo, defs = estrai_definizioni(corpo)
@@ -1053,6 +1074,9 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
     st.box_prima = prova.box
     md = converti(corpo, st)
     md = md.replace("\x01", "<").replace("\x02", ">")
+    if esercizi:
+        titolo = re.sub(r"^(Esercizi|Exercises)\s*:\s*", "", titolo).strip()
+        titolo = titolo[:1].upper() + titolo[1:]
     testa = [
         "---",
         f"title: \"{titolo}\"",
@@ -1062,8 +1086,14 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
         "",
         f'<div class="info-capitolo" markdown>',
         "",
-        f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num}** · dalle dispense di {chi} · "
-        f"[:material-file-pdf-box: PDF del capitolo](../pdf/{cid}.pdf)",
+        ((f"**Exercises · {PARTI_ES[_parte_it(parte)][1]}** · with worked solutions · "
+          f"[:material-file-pdf-box: PDF](../pdf/{cid}.pdf)") if EN else
+         (f"**Esercizi · {PARTI_ES[_parte_it(parte)][0]}** · con le soluzioni svolte · "
+          f"[:material-file-pdf-box: PDF](../pdf/{cid}.pdf)")) if esercizi else
+        (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num}** · lecture notes by {chi} · "
+         f"[:material-file-pdf-box: Chapter PDF](../pdf/{cid}.pdf)") if EN else
+        (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num}** · dalle dispense di {chi} · "
+         f"[:material-file-pdf-box: PDF del capitolo](../pdf/{cid}.pdf)"),
         "",
         "</div>",
         "",
@@ -1072,10 +1102,11 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
     if st.note:
         note = "\n\n" + "\n".join(f"[^{k}]: {t}" for k, t in enumerate(st.note, 1))
     from interattivi_capitoli import inserisci
-    md = inserisci(cid, md)
-    out = "\n".join(testa) + md + note + "\n"
+    if not esercizi:
+        md = inserisci(ident_it(cid), md, EN)
+    out = "\n".join(testa) + "\n" + md + note + "\n"
     out = re.sub(r"\n{3,}", "\n\n", out)
-    dest = DOCS / pagina(parte, num, slug)
+    dest = DOCS / "esercizi" / f"{cid}.md" if esercizi else DOCS / pagina(parte, num, slug)
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(out, encoding="utf-8")
     rep = BUILD / "report"
@@ -1083,6 +1114,14 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
     from collections import Counter
     (rep / f"{cid}.txt").write_text("\n".join(f"{v:4d}  {k}" for k, v in Counter(st.avvisi).most_common()))
     return {"id": cid, "titolo": titolo, "figure": st.figure, "avvisi": len(st.avvisi), "autori": chi}
+
+
+def _parte_it(parte: str) -> str:
+    from capitoli import PARTI_ES
+    for k, v in PARTI_ES.items():
+        if parte in (k, v[2]):
+            return k
+    return parte
 
 
 def parte_numero(parte: str) -> str:
@@ -1104,6 +1143,19 @@ if __name__ == "__main__":
         if any(cid.startswith(f) for f in filtro):
             try:
                 r = converti_capitolo(*cap)
+            except Exception as e:  # noqa: BLE001
+                import traceback
+                print(f"{cid:45s} ERRORE: {e!r}")
+                traceback.print_exc(limit=-3)
+                continue
+            risultati.append(r)
+            print(f"{r['id']:45s} figure:{r['figure']:3d} avvisi:{r['avvisi']:3d}  {r['titolo']}")
+    from capitoli import ESERCIZI, ident_es
+    for cap in ESERCIZI:
+        cid = ident_es(*cap[:3])
+        if any(cid.startswith(f) for f in filtro):
+            try:
+                r = converti_capitolo(*cap, esercizi=True)
             except Exception as e:  # noqa: BLE001
                 import traceback
                 print(f"{cid:45s} ERRORE: {e!r}")

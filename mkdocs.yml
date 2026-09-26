@@ -69,6 +69,13 @@ extra:
     - icon: material/vector-polygon
       link: https://fabiofurini.github.io/modellazione-mip/
       name: Modellazione MIP
+  alternate:
+    - name: Italiano
+      link: https://fabiofurini.github.io/analisi-matematica-1/
+      lang: it
+    - name: English
+      link: https://fabiofurini.github.io/mathematical-analysis-1/
+      lang: en
 
 extra_css:
   - stylesheets/extra.css
@@ -167,6 +174,43 @@ nav:
       - "2. Serie numeriche a termini non negativi": serie/02-termini-non-negativi.md
       - "3. Serie numeriche a termini di segno variabile": serie/03-segno-variabile.md
       - "4. Serie di funzioni": serie/04-serie-funzioni.md
+  - Esercizi:
+      - esercizi/index.md
+      - Numeri e logica:
+          - "Massimi, minimi, estremi superiori e inferiori": esercizi/es-numeri-01-massimi-minimi.md
+          - "Equazioni e disequazioni di variabile reale": esercizi/es-numeri-02-equazioni-disequazioni.md
+          - "Sommatorie": esercizi/es-numeri-03-sommatorie.md
+          - "Principio di induzione": esercizi/es-numeri-04-induzione.md
+          - "Numeri complessi": esercizi/es-numeri-05-numeri-complessi.md
+      - Funzioni:
+          - "Insiemi di definizione": esercizi/es-funzioni-01-insiemi-definizione.md
+          - "Funzioni inverse": esercizi/es-funzioni-02-funzioni-inverse.md
+      - Limiti di successioni:
+          - "Proprietà delle successioni": esercizi/es-successioni-01-proprieta.md
+          - "Verifica di limiti di successioni": esercizi/es-successioni-02-verifica-limiti.md
+          - "Calcolo limiti di successioni": esercizi/es-successioni-03-calcolo-limiti.md
+          - "Esercizi aggiuntivi": esercizi/es-successioni-04-aggiuntivi.md
+      - Limiti di funzioni:
+          - "Limiti di funzioni reali di variabile reale": esercizi/es-limiti-01-limiti-funzioni.md
+      - Derivate:
+          - "Cuspidi, flessi e tangenti": esercizi/es-derivate-01-cuspidi-flessi-tangenti.md
+          - "Calcolo delle funzioni derivate": esercizi/es-derivate-02-calcolo-derivate.md
+          - "Rette tangenti": esercizi/es-derivate-03-rette-tangenti.md
+          - "Asintoti": esercizi/es-derivate-04-asintoti.md
+          - "Prolungamenti continui": esercizi/es-derivate-05-prolungamenti.md
+          - "Derivabilità": esercizi/es-derivate-06-derivabilita.md
+          - "Equazioni parametriche": esercizi/es-derivate-07-equazioni-parametriche.md
+          - "Studi di funzione": esercizi/es-derivate-08-studi-funzione.md
+          - "Sviluppi di Mc Laurin": esercizi/es-derivate-09-mclaurin.md
+          - "Limiti con sviluppi asintotici": esercizi/es-derivate-10-limiti-sviluppi.md
+          - "Metodi di Newton": esercizi/es-derivate-11-newton.md
+          - "Metodo di bisezione": esercizi/es-derivate-12-bisezione.md
+          - "Ricerca di estremi e punti di estremo locali e globali": esercizi/es-derivate-13-estremi.md
+      - Serie:
+          - "Serie numeriche": esercizi/es-serie-01-serie-numeriche.md
+      - Integrali:
+          - "Primitive": esercizi/es-integrali-01-primitive.md
+          - "Integrali": esercizi/es-integrali-02-integrali.md
   - Laboratorio interattivo:
       - interattivi/index.md
   - Il corso:

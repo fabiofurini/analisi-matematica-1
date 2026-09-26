@@ -9,6 +9,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 **Parte 1 · Numeri e logica · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-05-campi-ordinati.pdf)
 
 </div>
+
 ## 1. Proprietà $R_1$ e $R_2$
 
 - Inizieremo ora a studiare più da vicino la <strong>struttura degli insiemi numerici</strong> che abbiamo introdotto in precedenza, ed in particolare:  l'insieme $\mathbb{Q}$ dei <strong>numeri razionali</strong> e l'insieme $\mathbb{R}$ dei <strong>numeri reali</strong>.

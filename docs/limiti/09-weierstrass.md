@@ -9,6 +9,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-09-weierstrass.pdf)
 
 </div>
+
 ## 1. Teorema di Weierstrass
 
 - Il  seguente teorema stabilisce condizioni <strong>sufficienti  ma non necessarie</strong>  affinché una funzione abbia massimo e minimo.

@@ -9,6 +9,7 @@ title: "Funzioni composte"
 **Parte 2 · Funzioni · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-10-composte.pdf)
 
 </div>
+
 ## 1. Funzioni composte
 
 <a id="box-defXX-1"></a>

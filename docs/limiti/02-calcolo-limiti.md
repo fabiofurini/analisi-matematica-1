@@ -9,6 +9,7 @@ title: "Calcolo dei limiti di funzioni"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-02-calcolo-limiti.pdf)
 
 </div>
+
 ## 1. Il calcolo dei limiti di funzioni
 
 - Enunciamo i teoremi sui limiti di funzioni che discendono immediatamente dai corrispondenti teoremi sui limiti di successioni e dalla definizione successionale di limite

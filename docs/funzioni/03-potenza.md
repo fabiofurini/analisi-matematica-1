@@ -9,6 +9,7 @@ title: "Funzioni potenza"
 **Parte 2 · Funzioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-03-potenza.pdf)
 
 </div>
+
 ## 1. Funzioni potenza
 
 <a id="box-defXX-1"></a>

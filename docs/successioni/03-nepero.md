@@ -9,6 +9,7 @@ title: "Il numero di Nepero"
 **Parte 3 · Limiti di successioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-03-nepero.pdf)
 
 </div>
+
 ## 1. Il numero $e$ di Nepero
 
 <a id="box-theoNEPERO-1"></a>

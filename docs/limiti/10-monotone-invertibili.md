@@ -9,6 +9,7 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-10-monotone-invertibili.pdf)
 
 </div>
+
 ## 1. Funzioni monotone su un intervallo
 
 - Ci occupiamo ora di funzioni monotone su un intervallo (e <strong>non necessariamente continue</strong>) e il prossimo teorema  (basato sull'assioma di continuità di $\R$) si può vedere come una estensione alle funzioni del teorema di monotonia per le successioni.

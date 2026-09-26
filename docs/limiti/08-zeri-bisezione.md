@@ -9,6 +9,7 @@ title: "Teorema degli zeri e metodo della bisezione"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-08-zeri-bisezione.pdf)
 
 </div>
+
 ## 1. Zeri di una funzione
 
 !!! chiave ""

@@ -9,6 +9,7 @@ title: "Regole di calcolo delle derivate"
 **Parte 4 · Derivate · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-04-regole-calcolo.pdf)
 
 </div>
+
 ## 1. Regole di calcolo delle derivate
 
 - Vediamo ora la relazione tra l'operazione di derivata e le principali operazioni già note sulle funzioni; in particolare mostreremo la relazione tra:

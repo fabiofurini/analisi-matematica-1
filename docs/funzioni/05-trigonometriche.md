@@ -9,6 +9,7 @@ title: "Funzioni trigonometriche"
 **Parte 2 · Funzioni · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-05-trigonometriche.pdf)
 
 </div>
+
 ## 1. Funzioni trigonometriche
 
 <a id="box-defXX-1"></a>

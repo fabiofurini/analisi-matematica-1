@@ -9,6 +9,7 @@ title: "Funzioni reali di variabile reale"
 **Parte 2 · Funzioni · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-02-funzioni-reali.pdf)
 
 </div>
+
 ## 1. Funzione reale di variabile reale
 
 <a id="box-defImmagine-1"></a>

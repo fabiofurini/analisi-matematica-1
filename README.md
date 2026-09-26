@@ -49,6 +49,12 @@ Dispense di **Fabio Furini**.
 
 Per citare il materiale c'è [`CITATION.cff`](CITATION.cff).
 
+## English version
+
+The whole course is also available in English:
+**[fabiofurini.github.io/mathematical-analysis-1](https://fabiofurini.github.io/mathematical-analysis-1/)**
+([repository](https://github.com/fabiofurini/mathematical-analysis-1)).
+
 ## Della stessa collana
 
 - [Laboratorio di Ricerca Operativa](https://fabiofurini.github.io/laboratorio-ricerca-operativa/)

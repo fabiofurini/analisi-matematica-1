@@ -9,6 +9,7 @@ title: "Successione di Fibonacci"
 **Parte 1 · Numeri e logica · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-10-fibonacci.pdf)
 
 </div>
+
 ## 1. Successione di Fibonacci
 
 <a id="box-fibonacci-1"></a>

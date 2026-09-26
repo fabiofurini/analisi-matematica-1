@@ -9,6 +9,7 @@ title: "Sommatorie e progressioni geometriche"
 **Parte 1 · Numeri e logica · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-07-sommatorie.pdf)
 
 </div>
+
 ## 1. Sommatorie
 
 <a id="box-notationA-1"></a>

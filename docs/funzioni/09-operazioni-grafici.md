@@ -9,6 +9,7 @@ title: "Operazioni sui grafici"
 **Parte 2 · Funzioni · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-09-operazioni-grafici.pdf)
 
 </div>
+
 ## 1. Operazioni sui grafici
 
 - Conoscendo il grafico di una funzione $y = f (x)$ mediante semplici trasformazioni geometriche è possibile disegnare il grafico delle seguenti funzioni:

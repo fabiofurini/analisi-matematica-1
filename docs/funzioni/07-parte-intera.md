@@ -9,6 +9,7 @@ title: "Funzioni parte intera e mantissa"
 **Parte 2 · Funzioni · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-07-parte-intera.pdf)
 
 </div>
+
 ## 1. Funzioni parte intera e mantissa
 
 - Due funzioni che tipicamente si incontrano nella scrittura di <em>algoritmi</em> sono la funzione parte intera e la funzione mantissa (o parte decimale).

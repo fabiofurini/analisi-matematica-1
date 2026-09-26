@@ -9,6 +9,7 @@ title: "Relazioni binarie"
 **Parte 1 · Numeri e logica · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-04-relazioni-binarie.pdf)
 
 </div>
+
 ## 1. Relazioni binarie
 
 <a id="box-notationA-1"></a>

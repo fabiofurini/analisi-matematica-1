@@ -9,6 +9,7 @@ title: "Teorema del valore medio, massimi e minimi"
 **Parte 4 · Derivate · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-05-valor-medio.pdf)
 
 </div>
+
 ## 1. Massimi/minimi locali e globali
 
 - Uno degli usi  del calcolo differenziale consiste nella <strong>ricerca dei massimi e minimi</strong>, ovvero nell'<strong>ottimizzazione</strong> di una funzione definita su un intervallo $I$ (chiuso/aperto, limitato/illimitato).

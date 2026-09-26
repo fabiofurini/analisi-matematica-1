@@ -9,6 +9,7 @@ title: "Serie numeriche"
 **Parte 5 · Serie · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-01-serie-numeriche.pdf)
 
 </div>
+
 ## 1. Serie numeriche
 
 - Introduciamo ora le serie numeriche, che estendono l'operazione di somma a un numero infinito di addendi.

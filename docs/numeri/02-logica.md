@@ -9,6 +9,7 @@ title: "Basi di logica e tecniche di dimostrazione"
 **Parte 1 · Numeri e logica · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-02-logica.pdf)
 
 </div>
+
 ## 1. Simboli logici
 
 !!! chiave ""

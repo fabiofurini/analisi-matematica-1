@@ -25,11 +25,24 @@ from capitoli import DOCS, IT, SORGENTE
 BUILD = IT / "build"
 
 
-def preambolo_standalone(pre: str) -> str:
+def preambolo_standalone(pre: str, cartella: Path) -> str:
     pre = re.sub(r"\\documentclass(\[[^\]]*\])?\{[^}]*\}", r"\\documentclass[12pt,border=4pt]{standalone}", pre, count=1)
-    # \input{./../../decla} -> percorso assoluto della copia delle note
-    decla = (SORGENTE / "decla.tex").as_posix()
-    pre = re.sub(r"\\input\{[./]*decla(\.tex)?\}", lambda m: "\\input{" + decla + "}", pre)
+
+    # \input{./../../decla} -> percorso assoluto del decla.tex a cui punta
+    def assoluto(m):
+        rel = m.group(1) + ("" if m.group(1).endswith(".tex") else ".tex")
+        cand = (cartella / rel).resolve()
+        cand = cand if cand.exists() else SORGENTE / "decla.tex"
+        # copia ripulita: niente box dei teoremi (\tcbmaketheorem è obsoleto)
+        import hashlib
+        testo = re.sub(r"^\s*\\(tcbmaketheorem|newtcbtheorem)\b.*$", "", cand.read_text(errors="replace"), flags=re.M)
+        pulito = BUILD / "tmp" / f"decla_{hashlib.md5(str(cand).encode()).hexdigest()[:8]}.tex"
+        pulito.parent.mkdir(parents=True, exist_ok=True)
+        pulito.write_text(testo)
+        return "\\input{" + pulito.as_posix() + "}"
+    pre = re.sub(r"\\input\{([^}]*decla[^}]*)\}", assoluto, pre)
+    # i box dei teoremi non servono alle figure (e \tcbmaketheorem è obsoleto)
+    pre = re.sub(r"^\s*\\(tcbmaketheorem|newtcbtheorem)\b.*$", "", pre, flags=re.M)
     return pre
 
 
@@ -83,8 +96,8 @@ def main(filtri: list[str]):
     for d in sorted((BUILD / "figure").iterdir()):
         if not any(d.name.startswith(f) for f in filtri):
             continue
-        pre = preambolo_standalone((d / "preambolo.tex").read_text())
         cartella = Path((d / "cartella.txt").read_text().strip())
+        pre = preambolo_standalone((d / "preambolo.tex").read_text(), cartella)
         vecchie = DOCS / "img" / d.name
         if vecchie.exists():
             shutil.rmtree(vecchie)

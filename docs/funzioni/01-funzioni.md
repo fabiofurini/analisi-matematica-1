@@ -9,6 +9,7 @@ title: "Le funzioni"
 **Parte 2 · Funzioni · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-01-funzioni.pdf)
 
 </div>
+
 ## 1. Il concetto di funzione
 
 !!! chiave ""

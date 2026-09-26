@@ -9,6 +9,7 @@ title: "Calcolo dei limiti delle successioni"
 **Parte 3 · Limiti di successioni · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-02-calcolo-limiti.pdf)
 
 </div>
+
 ## 1. Il calcolo dei limiti delle successioni
 
 - Le dimostrazioni dei  <strong>teoremi basilari</strong> sul calcolo  limiti  si basano sulla <strong>definizione di limite</strong>, sull'<strong>uso di disuguaglianze</strong>, e sull'uso di <strong>proprietà definitivamente vere</strong>.

@@ -9,6 +9,7 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 **Parte 1 · Numeri e logica · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-06-radicali-potenze-logaritmi.pdf)
 
 </div>
+
 ## 1. Radicali, potenze, logaritmi
 
 - In conseguenza della proprietà $R_4$ possiamo eseguire, nel campo reale, operazioni che sono solo occasionalmente possibili nel campo razionale, come l'estrazione di radice o l'elevamento a potenza.

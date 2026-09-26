@@ -9,6 +9,7 @@ title: "Limiti di funzioni, asintoti e continuità"
 **Parte 3 · Limiti di funzioni e continuità · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-01-limiti-asintoti.pdf)
 
 </div>
+
 ## 1. Definizione successionale di limite
 
 L'operazione di limite si può estendere dalle successioni alle funzioni reali di variabile reale.  

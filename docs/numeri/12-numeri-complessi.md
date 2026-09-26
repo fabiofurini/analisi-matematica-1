@@ -9,6 +9,7 @@ title: "Numeri complessi"
 **Parte 1 · Numeri e logica · Capitolo 12** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-12-numeri-complessi.pdf)
 
 </div>
+
 ## 1. Definizione di $\C$ e struttura di campo
 
 - Abbiamo indicato con $\R^2$ (abbreviazione di $\R \times \R$) l'insieme delle coppie ordinate $(a, b)$ di numeri reali.

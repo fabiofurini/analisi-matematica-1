@@ -9,6 +9,7 @@ title: "Confronti e stime asintotiche"
 **Parte 3 · Limiti di successioni · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-04-stime-asintotiche.pdf)
 
 </div>
+
 ## 1. Confronti e stime asintotiche
 
 - Abbiamo visto che una successione che tende a $0$ è un <strong>infinitesimo</strong>; una successione che diverge (a $\ip$, a $\im$) si dice <strong>infinito</strong>.

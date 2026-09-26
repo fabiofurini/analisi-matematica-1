@@ -9,6 +9,7 @@ title: "Funzione derivata"
 **Parte 4 · Derivate · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-01-funzione-derivata.pdf)
 
 </div>
+
 ## 1. Retta passante per due punti
 
 - A partire da due punti

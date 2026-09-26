@@ -38,7 +38,8 @@ Per chi vuole approfondire o cercare altri esercizi:
 
 ## Autori
 
-Le dispense sono di **Fabio Furini**.
+Le dispense sono di **Fabio Furini**; gli esercizi con le soluzioni di
+**Fabio Furini** e **Gianluca Priori**.
 
 ## Licenza
 
