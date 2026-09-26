@@ -18,6 +18,7 @@ per vedere la matematica muoversi.
 
 [Inizia dai numeri :material-arrow-right:](numeri/index.md){ .md-button .md-button--primary }
 [Prova un grafico interattivo](interattivi/index.md){ .md-button }
+[:material-download: Tutte le dispense in PDF](pdf/dispense-analisi-matematica-1.pdf){ .md-button }
 
 </div>
 

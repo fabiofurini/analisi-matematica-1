@@ -11,7 +11,7 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-from capitoli import CAPITOLI, DOCS, ESERCIZI, IT, SORGENTE, SORGENTE_ES, ident, ident_es
+from capitoli import CAPITOLI, DOCS, ESERCIZI, IT, LINGUA, SORGENTE, SORGENTE_ES, ident, ident_es
 
 BUILD = IT / "build" / "tex"
 BUILD_ES = IT / "build" / "tex_es"
@@ -52,3 +52,8 @@ if __name__ == "__main__":
         if not r.startswith("ok"):
             print(r)
     print(f"{len(caps)} capitoli e {len(es)} fogli di esercizi compilati")
+    if caps:
+        # il PDF unico di tutte le dispense, nell'ordine dei capitoli
+        unico = DOCS / "pdf" / ("dispense-analisi-matematica-1.pdf" if LINGUA == "it" else "lecture-notes-mathematical-analysis-1.pdf")
+        subprocess.run(["pdfunite", *[str(DOCS / "pdf" / f"{ident(*c[:3])}.pdf") for c in CAPITOLI], str(unico)], check=True)
+        print("PDF unico:", unico.name)
