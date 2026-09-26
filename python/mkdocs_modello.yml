@@ -1,0 +1,111 @@
+# Modello di mkdocs.yml: la nav dei capitoli la inserisce genera_sito.py.
+# Non modificare mkdocs.yml a mano: si modifica questo file e si rigenera.
+site_name: Analisi Matematica 1 · Fabio Furini
+site_description: >-
+  Analisi Matematica 1: la dispensa del corso online, con definizioni,
+  teoremi e dimostrazioni, esempi svolti, esercizi e grafici interattivi.
+site_author: Fabio Furini
+site_url: https://fabiofurini.github.io/analisi-matematica-1/
+repo_url: https://github.com/fabiofurini/analisi-matematica-1
+copyright: >-
+  &copy; 2026 Fabio Furini — testi, figure e dati con licenza
+  <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC BY 4.0</a>,
+  codice con licenza
+  <a href="https://github.com/fabiofurini/analisi-matematica-1/blob/main/LICENSE-CODE">MIT</a>
+
+theme:
+  name: material
+  language: it
+  icon:
+    logo: material/function-variant
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Tema scuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Tema chiaro
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: it
+
+extra:
+  social:
+    - icon: material/web
+      link: https://sites.google.com/view/fabiofurini/home-page
+      name: Fabio Furini — sito personale
+    - icon: material/school
+      link: https://www.diag.uniroma1.it/
+      name: DIAG — Sapienza Università di Roma
+    - icon: fontawesome/brands/github
+      link: https://github.com/fabiofurini
+      name: GitHub
+    - icon: material/chart-timeline-variant
+      link: https://fabiofurini.github.io/laboratorio-ricerca-operativa/
+      name: Laboratorio di Ricerca Operativa
+    - icon: material/vector-polygon
+      link: https://fabiofurini.github.io/modellazione-mip/
+      name: Modellazione MIP
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
+  - stylesheets/interattivi.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      title: In questa pagina
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
+  - javascripts/interattivi.js
+
+nav:
+  - Home: index.md
+  # NAV_PARTI
+  - Laboratorio interattivo:
+      - interattivi/index.md
+  - Il corso:
+      - organizzazione.md
+      - Teoremi d'esame: teoremi-esame.md
+      - Indice completo: indice.md

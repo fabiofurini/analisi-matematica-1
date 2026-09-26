@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+# MkDocs
+site/
+# prodotti intermedi della conversione (si rigenerano)
+build/
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# materiale interno, non pubblicato
+STILE_E_FORMATO.md
+dispensa/
+# varie
+.DS_Store

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Se usi questo materiale, per favore citalo come segue."
+title: "Analisi Matematica 1: dispense online con grafici interattivi"
+abstract: >-
+  Le dispense del corso di Analisi Matematica 1 — numeri e logica, funzioni,
+  limiti di successioni e di funzioni, derivate, serie — con definizioni,
+  teoremi e dimostrazioni, esempi svolti, esercizi e grafici interattivi.
+authors:
+  - family-names: Furini
+    given-names: Fabio
+    email: fabio.furini@uniroma1.it
+    affiliation: "DIAG, Sapienza Università di Roma"
+  - family-names: Dose
+    given-names: Valerio
+url: "https://fabiofurini.github.io/analisi-matematica-1/"
+repository-code: "https://github.com/fabiofurini/analisi-matematica-1"
+license:
+  - CC-BY-4.0
+  - MIT
+date-released: 2026-09-26
+keywords:
+  - analisi matematica
+  - limiti
+  - derivate
+  - serie
+  - materiale didattico

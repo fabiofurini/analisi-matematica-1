@@ -1,0 +1,196 @@
+/* ------------------------------------------------------------------
+   Collana «Materiale didattico di Fabio Furini»: base comune ai moduli
+   (Laboratorio di Ricerca Operativa, Modellazione MIP, Analisi 1)
+   ------------------------------------------------------------------ */
+:root {
+  --md-primary-fg-color: #16324A;
+  --md-primary-fg-color--dark: #0e2233;
+  --md-accent-fg-color: #0E7490;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0E7490;
+  --md-accent-fg-color: #4dd0e1;
+}
+
+/* titoli */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .md-typeset h1 { color: #7fd4e4; }
+.md-typeset h2 {
+  border-bottom: 2px solid #0E749033;
+  padding-bottom: .15em;
+}
+
+/* schede della homepage */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid #0E749030;
+  border-left: 4px solid #0E7490;
+  border-radius: 8px;
+  transition: box-shadow .15s, transform .15s;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 6px 16px rgba(22, 50, 74, 0.25);
+  transform: translateY(-2px);
+}
+
+/* figure centrate con angoli morbidi */
+.md-typeset img {
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* blocchi codice piu' morbidi */
+.md-typeset pre > code { border-radius: 6px; }
+
+/* ------------------------------------------------------------------
+   Analisi Matematica 1: i box delle note, con gli stessi colori
+   ------------------------------------------------------------------ */
+:root {
+  --c-definizione: #1c6fc4;
+  --c-teorema: #c92a2a;
+  --c-osservazione: #9c36b5;
+  --c-esempio: #e8590c;
+  --c-chiave: #2b8a3e;
+  --c-dimostrazione: #6c757d;
+  --c-attenzione: #e03131;
+  --c-esercizio: #b08900;
+  --c-soluzione: #0e7490;
+  --c-nota: #6c757d;
+  --c-interattivo: #7048e8;
+}
+[data-md-color-scheme="slate"] {
+  --c-definizione: #4dabf7;
+  --c-teorema: #ff6b6b;
+  --c-osservazione: #da77f2;
+  --c-esempio: #ff922b;
+  --c-chiave: #51cf66;
+  --c-dimostrazione: #adb5bd;
+  --c-attenzione: #ff8787;
+  --c-esercizio: #fcc419;
+  --c-soluzione: #3bc9db;
+  --c-nota: #adb5bd;
+  --c-interattivo: #9775fa;
+}
+
+.md-typeset .admonition, .md-typeset details {
+  border-width: 0 0 0 4px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(22, 50, 74, .07);
+  font-size: .8rem;
+}
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details { box-shadow: none; }
+
+/* un solo blocco di regole per tipo, generato per ogni colore */
+.md-typeset .admonition.definizione, .md-typeset details.definizione { border-color: var(--c-definizione); background: color-mix(in srgb, var(--c-definizione) 6%, transparent); }
+.md-typeset .definizione > .admonition-title, .md-typeset .definizione > summary { background: color-mix(in srgb, var(--c-definizione) 14%, transparent); }
+.md-typeset .definizione > .admonition-title::before, .md-typeset .definizione > summary::before { background-color: var(--c-definizione); -webkit-mask-image: var(--md-admonition-icon--abstract); mask-image: var(--md-admonition-icon--abstract); }
+
+.md-typeset .admonition.teorema, .md-typeset details.teorema { border-color: var(--c-teorema); background: color-mix(in srgb, var(--c-teorema) 6%, transparent); }
+.md-typeset .teorema > .admonition-title, .md-typeset .teorema > summary { background: color-mix(in srgb, var(--c-teorema) 14%, transparent); }
+.md-typeset .teorema > .admonition-title::before, .md-typeset .teorema > summary::before { background-color: var(--c-teorema); -webkit-mask-image: var(--md-admonition-icon--danger); mask-image: var(--md-admonition-icon--danger); }
+
+.md-typeset .admonition.osservazione, .md-typeset details.osservazione { border-color: var(--c-osservazione); background: color-mix(in srgb, var(--c-osservazione) 5%, transparent); }
+.md-typeset .osservazione > .admonition-title, .md-typeset .osservazione > summary { background: color-mix(in srgb, var(--c-osservazione) 12%, transparent); }
+.md-typeset .osservazione > .admonition-title::before, .md-typeset .osservazione > summary::before { background-color: var(--c-osservazione); -webkit-mask-image: var(--md-admonition-icon--info); mask-image: var(--md-admonition-icon--info); }
+
+.md-typeset .admonition.esempio, .md-typeset details.esempio { border-color: var(--c-esempio); background: color-mix(in srgb, var(--c-esempio) 5%, transparent); }
+.md-typeset .esempio > .admonition-title, .md-typeset .esempio > summary { background: color-mix(in srgb, var(--c-esempio) 13%, transparent); }
+.md-typeset .esempio > .admonition-title::before, .md-typeset .esempio > summary::before { background-color: var(--c-esempio); -webkit-mask-image: var(--md-admonition-icon--example); mask-image: var(--md-admonition-icon--example); }
+
+.md-typeset .admonition.chiave, .md-typeset details.chiave { border-color: var(--c-chiave); background: color-mix(in srgb, var(--c-chiave) 7%, transparent); }
+.md-typeset .chiave > .admonition-title, .md-typeset .chiave > summary { background: color-mix(in srgb, var(--c-chiave) 14%, transparent); }
+.md-typeset .chiave > .admonition-title::before, .md-typeset .chiave > summary::before { background-color: var(--c-chiave); -webkit-mask-image: var(--md-admonition-icon--tip); mask-image: var(--md-admonition-icon--tip); }
+
+.md-typeset .admonition.dimostrazione, .md-typeset details.dimostrazione { border-color: var(--c-dimostrazione); background: color-mix(in srgb, var(--c-dimostrazione) 5%, transparent); }
+.md-typeset .dimostrazione > .admonition-title, .md-typeset .dimostrazione > summary { background: color-mix(in srgb, var(--c-dimostrazione) 12%, transparent); }
+.md-typeset .dimostrazione > .admonition-title::before, .md-typeset .dimostrazione > summary::before { background-color: var(--c-dimostrazione); -webkit-mask-image: var(--md-admonition-icon--success); mask-image: var(--md-admonition-icon--success); }
+
+.md-typeset .admonition.attenzione, .md-typeset details.attenzione { border-color: var(--c-attenzione); background: color-mix(in srgb, var(--c-attenzione) 6%, transparent); }
+.md-typeset .attenzione > .admonition-title, .md-typeset .attenzione > summary { background: color-mix(in srgb, var(--c-attenzione) 14%, transparent); }
+.md-typeset .attenzione > .admonition-title::before, .md-typeset .attenzione > summary::before { background-color: var(--c-attenzione); -webkit-mask-image: var(--md-admonition-icon--warning); mask-image: var(--md-admonition-icon--warning); }
+
+.md-typeset .admonition.esercizio, .md-typeset details.esercizio { border-color: var(--c-esercizio); background: color-mix(in srgb, var(--c-esercizio) 6%, transparent); }
+.md-typeset .esercizio > .admonition-title, .md-typeset .esercizio > summary { background: color-mix(in srgb, var(--c-esercizio) 15%, transparent); }
+.md-typeset .esercizio > .admonition-title::before, .md-typeset .esercizio > summary::before { background-color: var(--c-esercizio); -webkit-mask-image: var(--md-admonition-icon--question); mask-image: var(--md-admonition-icon--question); }
+
+.md-typeset .admonition.soluzione, .md-typeset details.soluzione { border-color: var(--c-soluzione); background: color-mix(in srgb, var(--c-soluzione) 5%, transparent); }
+.md-typeset .soluzione > .admonition-title, .md-typeset .soluzione > summary { background: color-mix(in srgb, var(--c-soluzione) 13%, transparent); }
+.md-typeset .soluzione > .admonition-title::before, .md-typeset .soluzione > summary::before { background-color: var(--c-soluzione); -webkit-mask-image: var(--md-admonition-icon--success); mask-image: var(--md-admonition-icon--success); }
+
+.md-typeset .admonition.nota, .md-typeset details.nota { border-color: var(--c-nota); background: color-mix(in srgb, var(--c-nota) 5%, transparent); }
+.md-typeset .nota > .admonition-title, .md-typeset .nota > summary { background: color-mix(in srgb, var(--c-nota) 12%, transparent); }
+.md-typeset .nota > .admonition-title::before, .md-typeset .nota > summary::before { background-color: var(--c-nota); -webkit-mask-image: var(--md-admonition-icon--note); mask-image: var(--md-admonition-icon--note); }
+
+.md-typeset .admonition.interattivo, .md-typeset details.interattivo { border-color: var(--c-interattivo); background: color-mix(in srgb, var(--c-interattivo) 5%, transparent); }
+.md-typeset .interattivo > .admonition-title, .md-typeset .interattivo > summary { background: color-mix(in srgb, var(--c-interattivo) 13%, transparent); }
+.md-typeset .interattivo > .admonition-title::before, .md-typeset .interattivo > summary::before { background-color: var(--c-interattivo); -webkit-mask-image: var(--md-admonition-icon--example); mask-image: var(--md-admonition-icon--example); }
+
+/* box senza titolo (i riquadri verdi di sintesi delle note) */
+.md-typeset .admonition > :last-child { margin-bottom: .8em; }
+.md-typeset .admonition:not(:has(> .admonition-title)) { padding-top: .2em; }
+
+/* dimostrazioni e soluzioni: si aprono con un clic */
+.md-typeset details.dimostrazione > summary, .md-typeset details.soluzione > summary { font-weight: 600; }
+.md-typeset .qed { float: right; color: var(--c-dimostrazione); font-size: 1.1em; }
+
+/* formule a blocco: niente barre di scorrimento inutili, ma scorrevoli su telefono */
+.md-typeset .arithmatex { overflow-x: auto; overflow-y: hidden; }
+.md-typeset div.arithmatex { padding: .1em 0; }
+
+/* figure delle note: su carta bianca anche in tema scuro */
+.md-typeset img.fig {
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px;
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgba(22, 50, 74, .10);
+  margin: 1em auto;
+}
+.md-typeset img.fig.ovale { border: 1px solid #0E749040; }
+[data-md-color-scheme="slate"] .md-typeset img.fig { box-shadow: none; }
+@media (max-width: 600px) { .md-typeset img.fig { width: 100% !important; } }
+.md-typeset .figure-affiancate { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
+.md-typeset .figure-affiancate > p { flex: 1 1 260px; margin: 0; }
+.md-typeset .figure-affiancate img.fig { width: 100% !important; }
+.md-typeset .didascalia { text-align: center; font-size: .75rem; color: var(--md-default-fg-color--light); }
+
+/* tabelle delle note */
+.md-typeset .tabella { overflow-x: auto; margin: 1em 0; }
+.md-typeset .tabella table { margin: 0 auto; border-collapse: collapse; font-size: .78rem; }
+.md-typeset .tabella td { border: 1px solid var(--md-default-fg-color--lightest); padding: .35em .6em; text-align: center; }
+.md-typeset .tabella td.cella-blu { background: color-mix(in srgb, #4dabf7 35%, transparent); }
+.md-typeset .tabella td.cella-rossa { background: color-mix(in srgb, #ff6b6b 35%, transparent); }
+
+/* intestazione di ogni capitolo */
+.md-typeset .info-capitolo {
+  display: inline-block;
+  font-size: .72rem;
+  color: var(--md-default-fg-color--light);
+  background: color-mix(in srgb, #0E7490 8%, transparent);
+  border-radius: 999px;
+  padding: .25em 1em;
+  margin: -.4em 0 1.2em;
+}
+.md-typeset .info-capitolo p { margin: 0; }
+
+/* homepage: la fascia di apertura */
+.md-typeset .hero {
+  background: linear-gradient(120deg, #16324A, #0E7490 70%, #15AABF);
+  color: #fff;
+  border-radius: 18px;
+  padding: 1.6em 1.8em 1.4em;
+  margin: .4em 0 1.6em;
+  box-shadow: 0 10px 30px rgba(22, 50, 74, .25);
+}
+.md-typeset .hero h1 { color: #fff !important; margin: 0 0 .3em; font-size: 2em; }
+.md-typeset .hero p { margin: .4em 0; opacity: .95; }
+.md-typeset .hero a { color: #fff; text-decoration: underline; }
+.md-typeset .hero .md-button { color: #fff; border-color: #ffffffaa; margin: .6em .4em 0 0; text-decoration: none; }
+.md-typeset .hero .md-button--primary { background: #fff; color: #16324A; border-color: #fff; }
+
+/* grafici interattivi */
+.md-typeset .interattivo-box { margin: 1em 0; }
