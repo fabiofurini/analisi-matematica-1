@@ -13,7 +13,8 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-SITE = Path(__file__).resolve().parents[1] / "site"
+from capitoli import IT as _RADICE
+SITE = _RADICE / "site"
 PORTA = 8766
 
 
@@ -43,7 +44,7 @@ if __name__ == "__main__":
     filtro = sys.argv[1] if len(sys.argv) > 1 else ""
     server()
     pagine = sorted(str(p.parent.relative_to(SITE)) + "/" for p in SITE.glob("*/*/index.html")
-                    if re.match(r"\d\d-", p.parent.name) and str(p.parent.relative_to(SITE)).startswith(filtro))
+                    if (re.match(r"\d\d-", p.parent.name) or p.parent.name.startswith("es-")) and str(p.parent.relative_to(SITE)).startswith(filtro))
     with ThreadPoolExecutor(6) as ex:
         ris = list(ex.map(controlla, pagine))
     tot = 0

@@ -64,6 +64,8 @@ def esercizi():
             righe.append(f"    - [{t}]({cid}.md) · {n} " + ("exercises" if EN else "esercizi"))
         righe.append("")
     righe += ["</div>", ""]
+    if len(voci) == 2:
+        return None  # nessun foglio di esercizi (ancora) in questa lingua
     (DOCS / CARTELLA_ES / "index.md").write_text("\n".join(righe))
     return "\n".join(voci)
 
@@ -93,7 +95,9 @@ def main():
         (DOCS / key / "index.md").write_text("\n".join(card))
         nav_parti.append(f"  - {nome}:\n" + "\n".join(voci))
     (DOCS / "indice.md").write_text("\n".join(indice))
-    nav_parti.append(esercizi())
+    voce_es = esercizi()
+    if voce_es:
+        nav_parti.append(voce_es)
 
     yml = (Path(__file__).parent / ("mkdocs_modello_en.yml" if EN else "mkdocs_modello.yml")).read_text()
     yml = yml.replace("  # NAV_PARTI", "\n".join(nav_parti))
