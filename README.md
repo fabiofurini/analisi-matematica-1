@@ -25,22 +25,27 @@ interattivi, con gli stessi numeri e gli stessi colori del PDF.
 | 3 · Limiti | successioni e limiti, Nepero, stime asintotiche; limiti di funzioni, continuità, zeri, Weierstrass |
 | 4 · Derivate | regole di calcolo, Fermat, Lagrange, De l'Hospital, Taylor, studio di funzione, Newton |
 | 5 · Serie | serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni |
+| Esercizi | circa 300 esercizi con soluzioni svolte, compresi primitive e integrali |
 
 ## Come è costruito
 
-Le pagine si generano dai sorgenti LaTeX delle dispense:
+Le pagine, le figure e i PDF si generano dai sorgenti LaTeX delle dispense e degli
+esercizi (gli stessi script producono anche la versione inglese, con `LINGUA=en`):
 
 ```bash
-python3 python/converti_tex.py     # LaTeX -> pagine Markdown
+python3 python/converti_tex.py     # LaTeX -> pagine Markdown (capitoli ed esercizi)
 python3 python/estrai_figure.py    # figure TikZ -> SVG (serve una distribuzione TeX)
-python3 python/genera_sito.py      # navigazione e indice
+python3 python/compila_pdf.py      # PDF dei capitoli, degli esercizi e PDF unico
+python3 python/genera_sito.py      # navigazione, pagine delle parti, indice
 python3 -m pip install mkdocs-material
 python3 -m mkdocs serve            # anteprima locale
 ```
 
+I grafici interattivi sono in `docs/javascripts/interattivi.js` (JSXGraph).
+
 ## Autori
 
-Dispense di **Fabio Furini**.
+Dispense di **Fabio Furini**; esercizi di **Fabio Furini** e **Gianluca Priori**.
 
 ## Licenza
 
