@@ -6,7 +6,7 @@ title: "Il numero di Nepero"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 3** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-03-nepero.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-03-nepero.pdf)
 
 </div>
 ## 1. Il numero $e$ di Nepero
@@ -293,6 +293,10 @@ title: "Il numero di Nepero"
     \end{align*}
 
     ![Figura 4](../img/successioni-03-nepero/fig04.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="successione" data-funzione="s4"></div>
 
 ## 2. Il numero di Nepero in finanza
 

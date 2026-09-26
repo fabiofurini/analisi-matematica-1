@@ -6,7 +6,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Serie · Capitolo 3** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-03-segno-variabile.pdf)
+**Parte 5 · Serie · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-03-segno-variabile.pdf)
 
 </div>
 ## 1. Serie a termini di segno variabile
@@ -384,3 +384,8 @@ title: "Serie numeriche a termini di segno variabile"
     $$
 
     inoltre la successione $a_k = \frac{1}{k}$ è decrescente e $\frac{1}{k}\rr 0$ per $k \rr \ip$ quindi rispetta le due condizioni del teorema. Di conseguenza la serie $\sum_{k=1}^{\infty}   \frac{(-1)^{k+1}}{k}$ converge.
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="seriep" data-funzione="alt"></div>
+

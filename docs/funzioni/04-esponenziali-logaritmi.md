@@ -6,7 +6,7 @@ title: "Funzioni esponenziali e logaritmiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 4** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-04-esponenziali-logaritmi.pdf)
+**Parte 2 · Funzioni · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-04-esponenziali-logaritmi.pdf)
 
 </div>
 ## 1. Funzioni esponenziali
@@ -79,6 +79,10 @@ title: "Funzioni esponenziali e logaritmiche"
 ![Figura 4](../img/funzioni-04-esponenziali-logaritmi/fig04.svg){ .fig .ovale loading=lazy style="width:97%" }
 
 </div>
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="esponenziali"></div>
 
 ## 3. Cambiamento di base
 

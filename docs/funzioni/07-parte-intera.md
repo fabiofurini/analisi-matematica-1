@@ -6,7 +6,7 @@ title: "Funzioni parte intera e mantissa"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 7** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-07-parte-intera.pdf)
+**Parte 2 · Funzioni · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-07-parte-intera.pdf)
 
 </div>
 ## 1. Funzioni parte intera e mantissa

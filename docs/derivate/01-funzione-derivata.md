@@ -6,7 +6,7 @@ title: "Funzione derivata"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 1** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-01-funzione-derivata.pdf)
+**Parte 4 · Derivate · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-01-funzione-derivata.pdf)
 
 </div>
 ## 1. Retta passante per due punti
@@ -198,6 +198,10 @@ title: "Funzione derivata"
     ![Figura 6](../img/derivate-01-funzione-derivata/fig06.svg){ .fig .ovale loading=lazy style="width:70%" }
 
     La funzione ha un punto a tangenza orizzontale ma che non è né di massimo né di minimo.
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="tangente"></div>
 
 ## 3. Derivata di una funzione in un punto e funzione derivata
 

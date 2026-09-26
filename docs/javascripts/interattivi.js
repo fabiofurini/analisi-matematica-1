@@ -557,7 +557,7 @@
     el.innerHTML = "";
 
     const funzioni = R.funzioniCustom || (R.funzioni ? Object.fromEntries(R.funzioni.map((k) => [k, F[k]])) : null);
-    let chiave = R.iniziale || (funzioni ? Object.keys(funzioni)[0] : null);
+    let chiave = (funzioni && el.dataset.funzione in funzioni ? el.dataset.funzione : null) || R.iniziale || (funzioni ? Object.keys(funzioni)[0] : null);
     let modo = "esplora", bersaglio = null, vinte = 0, giaVinta = false, board = null, anim = null;
 
     // --- intestazione

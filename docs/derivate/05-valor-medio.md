@@ -6,7 +6,7 @@ title: "Teorema del valore medio, massimi e minimi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 5** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-05-valor-medio.pdf)
+**Parte 4 · Derivate · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-05-valor-medio.pdf)
 
 </div>
 ## 1. Massimi/minimi locali e globali
@@ -261,6 +261,10 @@ title: "Teorema del valore medio, massimi e minimi"
     Ovvero ogni corda $AB$ della iperbole $y = \frac{1}{x}$ è parallela alla tangente nel punto di ascissa uguale alla media geometrica delle ascisse di $A$ e $B$. Prendendo ad esempio l'intervallo $[0.5,2]$ ($a=0.5,b=2$ e $c=1$), abbiamo:
 
     ![Figura 6](../img/derivate-05-valor-medio/fig06.svg){ .fig .ovale loading=lazy style="width:60%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="lagrange"></div>
 
 ## 4. Teorema del criterio differenziale di monotonia
 

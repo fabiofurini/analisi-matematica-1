@@ -6,7 +6,7 @@ title: "Teorema degli zeri e metodo della bisezione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 8** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-08-zeri-bisezione.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-08-zeri-bisezione.pdf)
 
 </div>
 ## 1. Zeri di una funzione
@@ -481,3 +481,8 @@ title: "Teorema degli zeri e metodo della bisezione"
     $$
 
     Il termine $\varepsilon_{n-1} / \varepsilon_{n}$, ovvero il rapporto fra gli errori di due iterazioni consecutive, può essere un numero piccolo o grande a piacere (l'errore a ogni iterazione può infatti crescere o decrescere).
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="bisezione"></div>
+

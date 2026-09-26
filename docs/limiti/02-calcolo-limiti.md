@@ -6,7 +6,7 @@ title: "Calcolo dei limiti di funzioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 2** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-02-calcolo-limiti.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-02-calcolo-limiti.pdf)
 
 </div>
 ## 1. Il calcolo dei limiti di funzioni

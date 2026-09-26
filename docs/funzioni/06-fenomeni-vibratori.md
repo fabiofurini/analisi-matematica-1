@@ -6,7 +6,7 @@ title: "Fenomeni vibratori"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 6** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-06-fenomeni-vibratori.pdf)
+**Parte 2 · Funzioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-06-fenomeni-vibratori.pdf)
 
 </div>
 ## 1. Fenomeni vibratori
@@ -148,6 +148,10 @@ In sintesi:
     \end{align*}
 
 - Sotto condizioni abbastanza generali; un fenomeno naturale periodico si potrà scrivere come sovrapposizione di un numero finito o infinito di vibrazioni elementari di frequenza diversa (<strong>serie di Fourier</strong>).
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="oscillazioni"></div>
 
 ## 2. Effetti di smorzamento o di amplificazione
 

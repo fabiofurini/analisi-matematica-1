@@ -10,8 +10,6 @@ authors:
     given-names: Fabio
     email: fabio.furini@uniroma1.it
     affiliation: "DIAG, Sapienza Università di Roma"
-  - family-names: Dose
-    given-names: Valerio
 url: "https://fabiofurini.github.io/analisi-matematica-1/"
 repository-code: "https://github.com/fabiofurini/analisi-matematica-1"
 license:

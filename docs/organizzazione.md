@@ -38,8 +38,7 @@ Per chi vuole approfondire o cercare altri esercizi:
 
 ## Autori
 
-Le dispense sono di **Fabio Furini** e **Valerio Dose**; gli esercizi di
-Fabio Furini, Valerio Dose e Gianluca Priori.
+Le dispense sono di **Fabio Furini**.
 
 ## Licenza
 

@@ -6,7 +6,7 @@ title: "Successioni e limiti di successioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 1** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-01-limiti-successioni.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-01-limiti-successioni.pdf)
 
 </div>
 ## 1. Definizione di successione e proprietà
@@ -416,6 +416,10 @@ title: "Successioni e limiti di successioni"
     $$
 
     per soddisfare la condizione richiesta dalla definizione di limite.
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="successione"></div>
 
 ### 1.2 Successioni divergenti e  successioni irregolari
 

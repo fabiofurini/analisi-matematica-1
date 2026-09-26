@@ -6,7 +6,7 @@ title: "Regole di calcolo delle derivate"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 4** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-04-regole-calcolo.pdf)
+**Parte 4 · Derivate · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-04-regole-calcolo.pdf)
 
 </div>
 ## 1. Regole di calcolo delle derivate

@@ -6,7 +6,7 @@ title: "Operazioni sui grafici"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 9** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-09-operazioni-grafici.pdf)
+**Parte 2 · Funzioni · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-09-operazioni-grafici.pdf)
 
 </div>
 ## 1. Operazioni sui grafici
@@ -167,3 +167,8 @@ title: "Operazioni sui grafici"
     ![Figura 13](../img/funzioni-09-operazioni-grafici/fig13.svg){ .fig .ovale loading=lazy style="width:61%" }
 
     ![Figura 14](../img/funzioni-09-operazioni-grafici/fig14.svg){ .fig .ovale loading=lazy style="width:61%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="operazioni"></div>
+

@@ -40,8 +40,7 @@ python3 -m mkdocs serve            # anteprima locale
 
 ## Autori
 
-Dispense di **Fabio Furini** e **Valerio Dose**; esercizi di Fabio Furini,
-Valerio Dose e Gianluca Priori.
+Dispense di **Fabio Furini**.
 
 ## Licenza
 

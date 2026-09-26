@@ -1009,7 +1009,7 @@ def titolo_capitolo(corpo: str) -> str:
 
 
 def autori(corpo: str) -> str:
-    m = re.search(r"\\textbf\{Autori\}:(.*?)\\item", corpo, re.S)
+    m = re.search(r"\\textbf\{Autor[ei]\}:(.*?)\\item", corpo, re.S)
     if not m:
         return "Fabio Furini"
     nomi = re.findall(r"\\underline\{([^}]*)\}", m.group(1))
@@ -1071,6 +1071,8 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
     note = ""
     if st.note:
         note = "\n\n" + "\n".join(f"[^{k}]: {t}" for k, t in enumerate(st.note, 1))
+    from interattivi_capitoli import inserisci
+    md = inserisci(cid, md)
     out = "\n".join(testa) + md + note + "\n"
     out = re.sub(r"\n{3,}", "\n\n", out)
     dest = DOCS / pagina(parte, num, slug)

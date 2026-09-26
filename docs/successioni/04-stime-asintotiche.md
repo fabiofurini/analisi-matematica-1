@@ -6,7 +6,7 @@ title: "Confronti e stime asintotiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 4** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-04-stime-asintotiche.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-04-stime-asintotiche.pdf)
 
 </div>
 ## 1. Confronti e stime asintotiche

@@ -6,7 +6,7 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 5** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-05-gerarchie-infiniti.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-05-gerarchie-infiniti.pdf)
 
 </div>
 ## 1. Gerarchie degli infiniti delle successioni parte 1 e parte 2

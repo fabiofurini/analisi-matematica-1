@@ -6,7 +6,7 @@ title: "Serie numeriche a termini non negativi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Serie · Capitolo 2** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-02-termini-non-negativi.pdf)
+**Parte 5 · Serie · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-02-termini-non-negativi.pdf)
 
 </div>
 ## 1. Serie numeriche a termini non negativi
@@ -332,6 +332,10 @@ title: "Serie numeriche a termini non negativi"
     $$
 
     ovvero una serie geometrica di ragione $2^{1-\alpha}$ che converge se e solo se $2^{1-\alpha}<1$ ovvero se $1 -\alpha < 0$. Quindi per $\alpha >1$, per il criterio di condensazione, la serie converge. <span class="qed">□</span>
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="seriep"></div>
 
 ### 1.5 Criterio del passaggio dal discreto al continuo
 

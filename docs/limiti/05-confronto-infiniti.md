@@ -6,7 +6,7 @@ title: "Confronto degli infiniti"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 5** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-05-confronto-infiniti.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-05-confronto-infiniti.pdf)
 
 </div>
 ## 1. Confronto degli infiniti per funzioni

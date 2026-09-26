@@ -6,7 +6,7 @@ title: "Funzioni potenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 3** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-03-potenza.pdf)
+**Parte 2 · Funzioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-03-potenza.pdf)
 
 </div>
 ## 1. Funzioni potenza
@@ -171,6 +171,10 @@ title: "Funzioni potenza"
 !!! esempio "Esempio 3: grafici di funzioni potenza con esponente reale"
 
     ![Figura 12](../img/funzioni-03-potenza/fig12.svg){ .fig .ovale loading=lazy style="width:55%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="potenze"></div>
 
 ### 1.3 Polinomi
 

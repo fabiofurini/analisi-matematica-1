@@ -6,7 +6,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 9** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-09-weierstrass.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-09-weierstrass.pdf)
 
 </div>
 ## 1. Teorema di Weierstrass

@@ -6,7 +6,7 @@ title: "Serie numeriche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Serie · Capitolo 1** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-01-serie-numeriche.pdf)
+**Parte 5 · Serie · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-01-serie-numeriche.pdf)
 
 </div>
 ## 1. Serie numeriche
@@ -433,6 +433,10 @@ title: "Serie numeriche"
     È una serie geometrica di ragione $q=13/12$ quindi è divergente.
 
     ![Figura 5](../img/serie-01-serie-numeriche/fig05.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="geometrica"></div>
 
 ### 1.5 Serie telescopica
 

@@ -6,7 +6,7 @@ title: "Numeri complessi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 12** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-12-numeri-complessi.pdf)
+**Parte 1 · Numeri e logica · Capitolo 12** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-12-numeri-complessi.pdf)
 
 </div>
 ## 1. Definizione di $\C$ e struttura di campo
@@ -699,6 +699,10 @@ title: "Numeri complessi"
         $$
 
         ![Figura 7](../img/numeri-12-numeri-complessi/fig07.svg){ .fig .ovale loading=lazy style="width:47%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="radici"></div>
 
 ### 3.3 Forma esponenziale dei numeri complessi
 

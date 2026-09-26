@@ -6,7 +6,7 @@ title: "Calcolo dei limiti delle successioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 2** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-02-calcolo-limiti.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-02-calcolo-limiti.pdf)
 
 </div>
 ## 1. Il calcolo dei limiti delle successioni

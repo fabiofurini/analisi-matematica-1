@@ -6,7 +6,7 @@ title: "Metodo di Newton"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 10** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-10-newton.pdf)
+**Parte 4 · Derivate · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-10-newton.pdf)
 
 </div>
 ## 1. Metodo di Newton
@@ -274,6 +274,10 @@ title: "Metodo di Newton"
     $$
     x_0 =b, \qquad  x_{n+1} = \frac{1}{2} \left( x_n + \frac{c}{x_n}  \right)  {\rm ~~con~~} n \in \N
     $$
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="newton"></div>
 
 ## 2. Stima degli errori del metodo di Newton
 

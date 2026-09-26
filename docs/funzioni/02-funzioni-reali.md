@@ -6,7 +6,7 @@ title: "Funzioni reali di variabile reale"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 2** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-02-funzioni-reali.pdf)
+**Parte 2 · Funzioni · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-02-funzioni-reali.pdf)
 
 </div>
 ## 1. Funzione reale di variabile reale

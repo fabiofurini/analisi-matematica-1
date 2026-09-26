@@ -6,7 +6,7 @@ title: "Limiti di polinomi e funzioni razionali"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 3** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-03-polinomi-razionali.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-03-polinomi-razionali.pdf)
 
 </div>
 ## 1. Limiti di polinomi a $\pm \infty$

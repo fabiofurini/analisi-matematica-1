@@ -6,7 +6,7 @@ title: "Calcolo differenziale e approssimazioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 8** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-08-approssimazioni.pdf)
+**Parte 4 · Derivate · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-08-approssimazioni.pdf)
 
 </div>
 ## 1. Sviluppi asintotici al primo ordine
@@ -839,6 +839,10 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     $$
 
     ![Figura 10](../img/derivate-08-approssimazioni/fig10.svg){ .fig .ovale loading=lazy style="width:55%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="taylor"></div>
 
 ## 4. Formula/sviluppo di Taylor con resto secondo Lagrange
 

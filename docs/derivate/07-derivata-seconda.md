@@ -643,3 +643,8 @@ title: "Derivata seconda"
     Quindi, per $x>0$ la funzione è convessa e   per $x<0$ è concava e $f'(0)=0$, quindi $x_0$ è un punto di flesso (ma $f''(0)$ non esiste).
 
     ![Figura 21](../img/derivate-07-derivata-seconda/fig21.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="concavita"></div>
+

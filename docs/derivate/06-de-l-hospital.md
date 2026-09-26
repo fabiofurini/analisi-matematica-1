@@ -6,7 +6,7 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 6** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-06-de-l-hospital.pdf)
+**Parte 4 · Derivate · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-06-de-l-hospital.pdf)
 
 </div>
 ## 1. Teorema di De l'Hospital

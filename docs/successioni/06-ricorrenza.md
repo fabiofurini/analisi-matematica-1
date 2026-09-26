@@ -6,7 +6,7 @@ title: "Successioni definite per ricorrenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 6** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-06-ricorrenza.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-06-ricorrenza.pdf)
 
 </div>
 ## 1. Successioni definite per ricorrenza
@@ -514,3 +514,8 @@ title: "Successioni definite per ricorrenza"
     !!! chiave ""
 
         L'errore relativo dell'algoritmo di Erone ad ogni passo è proporzionale al quadrato dell'errore relativo nel passaggio precedente.  <strong> La velocità di convergenza è quadratica.</strong>
+
+<p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
+
+<div class="gi" data-grafico="erone"></div>
+

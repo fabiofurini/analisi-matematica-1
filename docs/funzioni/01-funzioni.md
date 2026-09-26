@@ -6,7 +6,7 @@ title: "Le funzioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 1** · dalle dispense di Fabio Furini e Valerio Dose · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-01-funzioni.pdf)
+**Parte 2 · Funzioni · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-01-funzioni.pdf)
 
 </div>
 ## 1. Il concetto di funzione
