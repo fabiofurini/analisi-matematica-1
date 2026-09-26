@@ -548,6 +548,51 @@
     domanda: "Dove \\(f'\\) (tratteggiata) è positiva, \\(f\\) cresce; dove \\(f''\\) (punteggiata) è positiva, \\(f\\) è convessa. Trova i flessi: che cosa fa la tangente quando li attraversi?",
   };
 
+
+  /* 16. Somme di Riemann */
+  const RIEM = {
+    x2: { tex: "x^2", f: (x) => x * x, a: 0, b: 2, I: 8 / 3, Itex: "\\frac{8}{3}", vista: [-0.3, 4.6, 2.3, -0.5] },
+    sn: { tex: "\\sin x", f: Math.sin, a: 0, b: Math.PI, I: 2, Itex: "2", vista: [-0.3, 1.3, 3.4, -0.2] },
+    ex: { tex: "e^x", f: Math.exp, a: 0, b: 1, I: Math.E - 1, Itex: "e-1", vista: [-0.15, 3, 1.15, -0.3] },
+    iv: { tex: "\\frac{1}{x}", f: (x) => 1 / x, a: 1, b: 3, I: Math.log(3), Itex: "\\ln 3", vista: [0.7, 1.2, 3.2, -0.15] },
+  };
+  const riemann = (R, n, tipo) => {
+    const h = (R.b - R.a) / n; let s = 0; const rett = [];
+    for (let k = 0; k < n; k++) {
+      const x0 = R.a + k * h, t = tipo === 0 ? x0 : tipo === 2 ? x0 + h : x0 + h / 2, y = R.f(t);
+      s += y * h; rett.push([x0, x0 + h, y]);
+    }
+    return { s, rett };
+  };
+  const TIPI = ["sinistro", "punto medio", "destro"];
+  GRAFICI.riemann = {
+    titolo: "Somme di Riemann",
+    sottotitolo: "l'area sotto il grafico come limite di rettangoli",
+    funzioniCustom: RIEM,
+    iniziale: "x2",
+    originale: true, fPieno: true,
+    parametri: [
+      { k: "a", nome: "n", min: 1, max: 60, step: 1, val: 4, descr: "il numero di rettangoli" },
+      { k: "c", nome: "t", min: 0, max: 2, step: 1, val: 0, descr: "dove si calcola l'altezza: 0 = estremo sinistro, 1 = punto medio, 2 = estremo destro" },
+    ],
+    vista: (k) => RIEM[k].vista,
+    disegna(board, st) {
+      const R = () => RIEM[st.chiave()];
+      spezzata(board, () => {
+        const { rett } = riemann(R(), st.p().a, st.p().c), P = [[R().a, 0]];
+        for (const [x0, x1, y] of rett) P.push([x0, 0], [x0, y], [x1, y], [x1, 0]);
+        return P;
+      }, { strokeColor: st.colore("a"), strokeWidth: 1.5, fillColor: st.colore("a"), fillOpacity: 0.25 });
+    },
+    formula: (p, fn, col, k) => `S_{${col("a", p.a)}} = \\sum_{k=1}^{${col("a", p.a)}} f(t_k)\\,\\Delta x \;\\approx\; \\int_{${num(RIEM[k].a, 2)}}^{${k === "sn" ? "\\pi" : num(RIEM[k].b, 2)}} ${RIEM[k].tex}\\,dx = ${RIEM[k].Itex}`,
+    legenda: [["b", "y = f(x)", ""], ["a", "rettangoli", ""]],
+    letture(p, fn, k) {
+      const R = RIEM[k], { s } = riemann(R, p.a, p.c);
+      return `rettangoli con altezza nell'estremo <strong>${TIPI[p.c]}</strong>: \\(S_{${p.a}} = ${num(s, 5)}\\), integrale \\(= ${num(R.I, 5)}\\), errore \\(= ${num(Math.abs(s - R.I), 5)}\\)`;
+    },
+    domanda: "Raddoppia \\(n\\): di quanto si riduce l'errore con l'estremo sinistro? E con il punto medio? Con \\(x^2\\), perché la somma con l'estremo sinistro sta sempre sotto l'integrale?",
+  };
+
   // ------------------------------------------------------------------ motore
   function monta(el) {
     if (el.dataset.montato) return;

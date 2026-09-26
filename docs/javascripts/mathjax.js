@@ -42,6 +42,7 @@ document$.subscribe(() => {
   document.querySelectorAll(".md-nav .md-ellipsis, .md-nav__link").forEach((el) => {
     if (el.textContent.includes("\\(")) el.classList.add("arithmatex");
   });
+  if (!MathJax.startup || !MathJax.startup.output) return;  // primo caricamento: MathJax fa da sé
   MathJax.startup.output.clearCache();
   MathJax.typesetClear();
   MathJax.texReset();

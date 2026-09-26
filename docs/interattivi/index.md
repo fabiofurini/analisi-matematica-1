@@ -19,6 +19,7 @@ bersaglio da riprodurre.
 -   :material-chart-bell-curve: **[Limiti](#limiti)** — limite di successione, Erone, bisezione
 -   :material-chart-line: **[Derivate](#derivate)** — tangente, Lagrange, concavità, Taylor, Newton
 -   :material-sigma: **[Serie](#serie)** — serie geometrica, serie armonica generalizzata
+-   :material-chart-areaspline: **[Integrali](#integrali)** — somme di Riemann
 
 </div>
 
@@ -91,3 +92,9 @@ Il capitolo: [Serie numeriche](../serie/01-serie-numeriche.md).
 <div class="gi" data-grafico="seriep"></div>
 
 Il capitolo: [Serie numeriche a termini non negativi](../serie/02-termini-non-negativi.md).
+
+## Integrali
+
+<div class="gi" data-grafico="riemann"></div>
+
+Gli esercizi: [Primitive](../esercizi/es-integrali-01-primitive.md) · [Integrali](../esercizi/es-integrali-02-integrali.md).
