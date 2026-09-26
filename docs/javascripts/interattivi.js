@@ -29,7 +29,16 @@
     e.innerHTML = mj(html);
     return e;
   };
-  const typeset = (el) => { if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(() => {}); };
+  // MathJax può non essere ancora pronto quando il grafico si disegna: si aspetta
+  const typeset = (el) => {
+    const vai = (tentativi) => {
+      if (window.MathJax && MathJax.typesetPromise && MathJax.startup && MathJax.startup.document) {
+        MathJax.typesetClear([el]);
+        MathJax.typesetPromise([el]).catch(() => {});
+      } else if (tentativi > 0) setTimeout(() => vai(tentativi - 1), 150);
+    };
+    vai(100);
+  };
   const derivata = (f, x, hh = 1e-5) => (f(x + hh) - f(x - hh)) / (2 * hh);
   const fatt = (n) => { let r = 1; for (let k = 2; k <= n; k++) r *= k; return r; };
 
