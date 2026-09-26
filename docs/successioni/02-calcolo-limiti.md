@@ -21,6 +21,8 @@ title: "Calcolo dei limiti delle successioni"
 
 <strong>Proprietà dell'operazione di limite rispetto alle operazioni algebriche</strong>.
 
+<a id="box-theoALGEBRA_LIMITI_FINITI-1"></a>
+
 !!! teorema "Teorema 1: dell'algebra dei limiti caso dei limiti finiti"
 
     Ipotesi:
@@ -44,7 +46,7 @@ title: "Calcolo dei limiti delle successioni"
     Dimostriamo che:
 
     $$
-    a \rr \ell_a \in \R, ~b_n \rr \ell_b\in \R ~ \Rightarrow a_n + b_n \rr \ell_a + \ell_b
+    a_n \rr \ell_a \in \R, ~b_n \rr \ell_b\in \R ~ \Rightarrow a_n + b_n \rr \ell_a + \ell_b
     $$
 
     Consideriamo
@@ -105,7 +107,7 @@ title: "Calcolo dei limiti delle successioni"
      &=|a_n| \: |b_n - \ell_b| + |\ell_b| \: |a_n - \ell_a|
     \end{align*}
 
-    per la disuguaglianza triangolare e le proprieta' del valore assoluto. Quindi
+    per la disuguaglianza triangolare e le proprietà del valore assoluto. Quindi
 
     \begin{equation}
     |(a_n \: b_n) - (\ell_a \: \ell_b)| \le |a_n| \: |b_n - \ell_b| + |\ell_b| \: |a_n - \ell_a| \label{BBB}
@@ -134,6 +136,8 @@ title: "Calcolo dei limiti delle successioni"
     Per l'arbitrarietà di $\tilde{\varepsilon}$, abbiamo la tesi. <span class="qed">□</span>
 
 - L'<strong>operazione di limite mantiene inoltre l' ordinamento</strong>
+
+<a id="box-theoPERMANENZA_SEGNO_1-2"></a>
 
 !!! teorema "Teorema 2: di permanenza del segno $1^a$ forma"
 
@@ -173,6 +177,8 @@ title: "Calcolo dei limiti delle successioni"
 
     In modo analogo si dimostra il caso con $\ell_a < 0$. <span class="qed">□</span>
 
+<a id="box-theoPERMANENZA_SEGNO_2_A-3"></a>
+
 !!! teorema "Teorema 3: di permanenza del segno $2^a$ forma (parte I)"
 
     Ipotesi:
@@ -192,6 +198,8 @@ title: "Calcolo dei limiti delle successioni"
     Segue dal teorema precedente. Infatti, se per assurdo fosse $\ell_a < 0$, dal teorema precedente si avrebbe $a_n < 0$ definitivamente, il che è incompatibile con l'ipotesi che sia $a_n \ge 0$ definitivamente.
 
     Questo  caso non può accadere ovvero si verifica il contrario,    la tesi del teorema. <span class="qed">□</span>
+
+<a id="box-theoPERMANENZA_SEGNO_2_B-4"></a>
 
 !!! teorema "Teorema 4: di permanenza del segno $2^a$ forma (parte II)"
 
@@ -231,11 +239,15 @@ title: "Calcolo dei limiti delle successioni"
 
 - Questo teorema ci dice che in una disuguaglianza tra due successioni si può passare al limite ad ambo i membri, mantenendo il “$\le$” o il “$\ge$”.
 
-- Si noti che in generale, invece, nel passaggio al limite non si conservano  le diseguaglianze stretta “$<$” e “$>$”.
+- Si noti che in generale, invece, nel passaggio al limite non si conservano  le diseguaglianze strette “$<$” e “$>$”.
+
+    <a id="box-texexpbox1-5"></a>
 
     !!! esempio "Esempio 1: Passaggio al limite con disuguaglianze strette"
 
         Ad esempio, anche se gli $a_n$ sono strettamente positivi, il loro limite $\ell_a$ è positivo o nullo come mostra il semplice esempio di $\frac{1}{n} \rr 0$.
+
+<a id="box-theoCONFRONTO-6"></a>
 
 !!! teorema "Teorema 5: del confronto"
 
@@ -281,6 +293,8 @@ title: "Calcolo dei limiti delle successioni"
 
 - Casi particolari di questo teorema che si usano frequentemente sono espressi dai prossimi corollari, molto utili quando si studia il prodotto tra una successione oscillante (ma limitata) e una che tende a zero
 
+<a id="box-corolCONFRONTO_A-7"></a>
+
 !!! teorema "Corollario 1: del teorema del confronto (parte I)"
 
     Ipotesi:
@@ -305,6 +319,8 @@ title: "Calcolo dei limiti delle successioni"
 
     Quindi per il teorema del confronto (con $a_n = -c_n$ e $\ell = 0$) si ha che $b_n \rr 0$. <span class="qed">□</span>
 
+<a id="box-corolCONFRONTO_B-8"></a>
+
 !!! teorema "Corollario 2: del teorema del confronto (parte II)"
 
     Ipotesi:
@@ -321,7 +337,7 @@ title: "Calcolo dei limiti delle successioni"
 
 ??? dimostrazione "Dimostrazione"
 
-    Se $\{b_n\}$ è limitata, ossia $b_n \le M$ per un certo $M>0$ e per ogni $n \in \N$. Possiamo quindi scrivere
+    Se $\{b_n\}$ è limitata, ossia $|b_n| \le M$ per un certo $M>0$ e per ogni $n \in \N$. Possiamo quindi scrivere
 
     $$
     |b_n \: c_n| \le M \: |c_n|.
@@ -333,11 +349,13 @@ title: "Calcolo dei limiti delle successioni"
     c_n \rr 0 {\rm ~~anche~~} M \: |c_n| \rr 0,
     $$
 
-    per il corollario \(\eqref{cor_ita:corolCONFRONTO_A}\) si conclude che $b_n \: c_n \rr 0$. <span class="qed">□</span>
+    per il corollario [Corollario 1](#box-corolCONFRONTO_A-7) si conclude che $b_n \: c_n \rr 0$. <span class="qed">□</span>
 
 !!! chiave ""
 
     Il prodotto di una successione infinitesima e una limitata è infinitesimo.
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 2: Applicazione del corollario"
 
@@ -353,17 +371,19 @@ title: "Calcolo dei limiti delle successioni"
     \frac{ n^{{5}/{2}} \: \left( 1 - \frac{3}{n^{{3}/{2}} } + \frac{7}{n^{5/2}}\right)}{n^3\:\left(1 + \frac{1}{n^{{5}/{2}} } - \frac{3}{n}  \right)} = \frac{1}{\sqrt{n}} \: \frac{   1 - \frac{3}{n^{{3}/{2}} } + \frac{7}{n^{5/2}}}{ 1 + \frac{1}{n^{{5}/{2}} } - \frac{3}{n}  }
     $$
 
-    Ora per il teorema \(\eqref{theo_ita:theoALGEBRA_LIMITI_FINITI}\) sull'algebra dei limiti e sapendo che potenze negative di $n$ tendono a zero possiamo affermare che:
+    Ora per il teorema [Teorema 1](#box-theoALGEBRA_LIMITI_FINITI-1) sull'algebra dei limiti e sapendo che potenze negative di $n$ tendono a zero possiamo affermare che:
 
     $$
     1 - \underbrace{\frac{3}{n^{{3}/{2}} }}_{\rr 0} + \underbrace{\frac{7}{n^{5/2}}}_{\rr 0} \rr 1, \quad 1 + \underbrace{\frac{1}{n^{{5}/{2}} }}_{\rr 0} - \underbrace{\frac{3}{n}}_{\rr 0} \rr 1 {\rm ~~~e~~~} \left( \frac{   1 - \frac{3}{n^{{3}/{2}} } + \frac{7}{n^{5/2}}}{ 1 + \frac{1}{n^{{5}/{2}} } - \frac{3}{n}  } \right) \rr 1
     $$
 
-    quindi  l'ultima successione è convergente e di conseguenza limitata. Ora per il corollario \(\eqref{cor_ita:corolCONFRONTO_B}\) e dato che
+    quindi  l'ultima successione è convergente e di conseguenza limitata. Ora per il corollario [Corollario 2](#box-corolCONFRONTO_B-8) e dato che
 
     $$
     \frac{1}{\sqrt{n}} \rr 0 {\rm~~abbiamo~~} \frac{n^{{5}/{2}} - 3 \: n + 7}{n^3 + \sqrt{n} - 3 \: n^2} \rr 0
     $$
+
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 3: Applicazione del corollario"
 
@@ -379,9 +399,9 @@ title: "Calcolo dei limiti delle successioni"
     n \mapsto \frac{1}{n} {\rm ~~(convergente,~infinitesima)} {\rm ~~e~~} n \mapsto \sin n {\rm ~~(irregolare)},
     $$
 
-    quindi il teorema \(\eqref{theo_ita:theoALGEBRA_LIMITI_FINITI}\) sull'algebra dei limiti non è applicabile (il secondo limite non esiste).
+    quindi il teorema [Teorema 1](#box-theoALGEBRA_LIMITI_FINITI-1) sull'algebra dei limiti non è applicabile (il secondo limite non esiste).
 
-    - Tuttavia è applicabile il corollario \(\eqref{cor_ita:corolCONFRONTO_B}\). La successione $\left\{\frac{1}{n}\right\}$ è infinitesima e, dato che $|\sin n| \le 1$, la successione $\{\sin n\}$ è limitata, perciò abbiamo
+    - Tuttavia è applicabile il corollario [Corollario 2](#box-corolCONFRONTO_B-8). La successione $\left\{\frac{1}{n}\right\}$ è infinitesima e, dato che $|\sin n| \le 1$, la successione $\{\sin n\}$ è limitata, perciò abbiamo
 
         $$
         \lim_{n \rr \ip} \frac{\sin n}{n} = 0
@@ -411,7 +431,9 @@ title: "Calcolo dei limiti delle successioni"
 
 - Ragionando in maniera analoga possiamo compendiare le regole per il limite della somma (o differenza) di due successioni delle quali una o entrambe sono divergenti.
 
-<strong>Regole aritmetizzazione parziale del simbolo di infinito</strong>
+<strong>Regole di aritmetizzazione parziale del simbolo di infinito</strong>
+
+<a id="box-theoARIT_INF1-11"></a>
 
 !!! teorema "Teorema 6: di aritmetizzazione parziale del simbolo di infinito (addizione)"
 
@@ -431,6 +453,8 @@ title: "Calcolo dei limiti delle successioni"
     \textbf{3.}~~ b_n + c_n \rr \ip \ip = \ip \qquad \textbf{4.}~~- b_n - c_n \rr \im \im = \im.
     $$
 
+<a id="box-theoARIT_INF2-12"></a>
+
 !!! teorema "Teorema 7: di aritmetizzazione parziale del simbolo di infinito (prodotto)"
 
     Ipotesi:
@@ -447,6 +471,8 @@ title: "Calcolo dei limiti delle successioni"
 
 - il <strong>segno</strong> di $\infty$ va determinato con la <strong>usuale regola dei segni</strong>.
 
+<a id="box-texexpbox1-13"></a>
+
 !!! esempio "Esempio 4: Regola dei segni"
 
     Abbiamo:
@@ -459,7 +485,7 @@ title: "Calcolo dei limiti delle successioni"
 
     - ${\rm se~~} a_n \rr \ell_a \in \R, \ell_a < 0 {\rm ~~e~~} b_n \rr 0^+ {\rm ~~allora~~} \frac{a_n}{ b_n} \rr \im$
 
-    E' quindi necessario, per applicare le regole aritmetizzazione parziale del simbolo di infinito, determinare se $b_n$ tenda a zero per eccesso o per difetto.
+    È quindi necessario, per applicare le regole di aritmetizzazione parziale del simbolo di infinito, determinare se $b_n$ tenda a zero per eccesso o per difetto.
 
 ??? dimostrazione "Dimostrazione"
 
@@ -500,6 +526,8 @@ title: "Calcolo dei limiti delle successioni"
     $$
 
     si chiamano <strong>forme di indecisione</strong>, poiché nessuna regola può essere stabilita a priori per determinarne il risultato.
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 5: Risoluzione di forme di indecisione $\ip\im$"
 
@@ -566,6 +594,8 @@ title: "Calcolo dei limiti delle successioni"
 
     Se la successione $\left\{b_n \log a_n\right\}$ è indeterminata allora anche $\left\{a_n^{b_n}\right\}$ è indeterminata.
 
+<a id="box-texexpbox1-15"></a>
+
 !!! esempio "Esempio 6: Calcolo dei limiti col passaggio al logaritmo"
 
     $$
@@ -587,8 +617,10 @@ title: "Calcolo dei limiti delle successioni"
     allora
 
     $$
-    \lim_{n \rr \ip} (3 \: n)^{\left(-3 \: n^2 -7\right)} = 0
+    \lim_{n \rr \ip} (3 \: n)^{\left(-3 \: n^2 +7\right)} = 0
     $$
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 7: Calcolo dei limiti col passaggio al logaritmo (metodo alternativo)"
 
@@ -605,7 +637,7 @@ title: "Calcolo dei limiti delle successioni"
     allora
 
     $$
-    \lim_{n \rr \ip} (3 \: n)^{\left(-3 \: n^2 -7\right)} = e^{\im}=0
+    \lim_{n \rr \ip} (3 \: n)^{\left(-3 \: n^2 +7\right)} = e^{\im}=0
     $$
 
 !!! chiave ""
@@ -665,6 +697,8 @@ title: "Calcolo dei limiti delle successioni"
     $$
     \log \left( 0^{-\infty} \right)= -\infty \cdot \log 0 =  -\infty \cdot -\infty = +\infty  {\rm ~~~~e~~~~} e^{+\infty}=+\infty
     $$
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 8: Limiti nelle forme $0^{\ip}$ e $0^{\im}$"
 

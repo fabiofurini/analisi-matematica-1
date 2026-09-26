@@ -11,7 +11,9 @@ title: "Derivata seconda"
 </div>
 ## 1. Derivata seconda e funzione derivata seconda
 
-- Possiamo ora chiederci  se la funzione $f' (x)$ sia a sua volta derivabile (in un punto o in un  l'intervallo).
+- Possiamo ora chiederci  se la funzione $f' (x)$ sia a sua volta derivabile (in un punto o in un  intervallo).
+
+<a id="box-defXX-1"></a>
 
 !!! definizione "Definizione 1: di derivata seconda"
 
@@ -30,6 +32,8 @@ title: "Derivata seconda"
     \underbrace{\ddot{f}(x_0)}_{{\rm notazione~di~Newton}} \qquad 
     \underbrace{\frac{d^2f}{dx^2}\bigg\vert _{x=x_0} {\rm~~~~e~~~~~~} \frac{d^2y}{dx^2}\bigg\vert _{x=x_0}}_{{\rm notazione~di~Leibniz}}
     $$
+
+<a id="box-defXX-2"></a>
 
 !!! definizione "Definizione 2: di funzione derivata seconda"
 
@@ -68,7 +72,7 @@ title: "Derivata seconda"
 - Cominciamo considerando la famiglia di funzioni che soddisfano le condizioni:
 
     $$
-    f (0) = f' (0) = 0,~~ f" (0) \ge 0
+    f (0) = f' (0) = 0,~~ f'' (0) \ge 0
     $$
 
     e la famiglia di semicirconferenze con centro sull'asse $y$ tangente  al grafico di $f$ nell'origine
@@ -105,7 +109,7 @@ title: "Derivata seconda"
     \label{YY}   \underbrace{\frac{1}{r}}_{=c_r''(0)} =  f''(0)
     \end{equation}
 
-    La \(\eqref{YY}\) esprime il significato geometrico della derivata seconda in $x=0$ per la famiglia di funzioni che soddisfano le condizioni $f (0) = f' (0) = 0,~~ f" (0) \ge 0$. Ovvero $f'' (0)$ rappresenta il reciproco del raggio della semicirconferenza che meglio approssima $f$ in $x = 0$.
+    La \(\eqref{YY}\) esprime il significato geometrico della derivata seconda in $x=0$ per la famiglia di funzioni che soddisfano le condizioni $f (0) = f' (0) = 0,~~ f'' (0) \ge 0$. Ovvero $f'' (0)$ rappresenta il reciproco del raggio della semicirconferenza che meglio approssima $f$ in $x = 0$.
 
 - Riprendiamo la funzione $f(x)= 1 -\cos x$, abbiamo
 
@@ -129,7 +133,9 @@ title: "Derivata seconda"
     \label{ZZ}  \frac{1}{r(x)} ~~=~~ \frac{|f''(x)|}{\left(1 +  \big(f'(x)\big)^2\right)^{3/2}}
     \end{equation}
 
-    Il valore $\frac{1}{r(x)}$ prende il nome di <strong>curvatura</strong>  (del grafico) di $f$ in $x = 0$ e il valore $r(x)$ è il <strong>raggio di curvatura</strong>.
+    Il valore $\frac{1}{r(x)}$ prende il nome di <strong>curvatura</strong>  (del grafico) di $f$ in $x$ e il valore $r(x)$ è il <strong>raggio di curvatura</strong>.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 1: raggio di curvatura e curvatura"
 
@@ -174,6 +180,8 @@ title: "Derivata seconda"
 
 ### 2.1 Insiemi convessi
 
+<a id="box-defXX-4"></a>
+
 !!! definizione "Definizione 3: di insieme convesso"
 
     Un insieme $F \subseteq \R^2$ (porzione dello spazio euclideo) è  <strong>convesso</strong> se per ogni coppia di punti $P_a,P_b \in F$  il segmento  che congiunge $P_a$ a $P_b$ (chiamato <strong>corda</strong>) è interamente contenuto in $F$.
@@ -188,6 +196,8 @@ title: "Derivata seconda"
 
     si chiama <strong>combinazione (lineare) convessa</strong> dei punti $P_a$ e $P_b$. I punti $P_c$ al variare di $\lambda$ si muovono sul segmento che congiunge $P_a$ a $P_b$.
 
+<a id="box-defXX-5"></a>
+
 !!! definizione "Definizione 4: di insieme convesso – definizione equivalente"
 
     Un insieme $F \subseteq \R^2$  è  <strong>convesso</strong> se:
@@ -195,6 +205,8 @@ title: "Derivata seconda"
     $$
     \forall P_a, P_b \in F,~~0\le \lambda \le 1,\qquad P_c=\lambda\; P_a + (1-\lambda)\: P_b  \in F
     $$
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 2: insieme convesso"
 
@@ -231,13 +243,15 @@ title: "Derivata seconda"
 
     ![Figura 4](../img/derivate-07-derivata-seconda/fig04.svg){ .fig .ovale loading=lazy style="width:52%" }
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 3: insieme non convesso"
 
     Consideriamo ora il seguente insieme:
 
     ![Figura 5](../img/derivate-07-derivata-seconda/fig05.svg){ .fig .ovale loading=lazy style="width:52%" }
 
-    L'insieme non è convesso in quanto ad esempio la dalla combinazione convessa dei punti $(5,3)$ e $(3,5)$ con $\lambda=\frac{1}{2}$, ovvero il punto:
+    L'insieme non è convesso in quanto ad esempio la combinazione convessa dei punti $(5,3)$ e $(3,5)$ con $\lambda=\frac{1}{2}$, ovvero il punto:
 
     $$
     \left(~\frac{1}{2}\cdot 5 + \frac{1}{2}\cdot 3 ~~,~~ \frac{1}{2}\cdot 3 + \frac{1}{2}\cdot 5 ~\right) = (~4~~,~~4~)
@@ -247,6 +261,8 @@ title: "Derivata seconda"
 
 ### 2.2 Funzioni convesse/concave
 
+<a id="box-defXX-8"></a>
+
 !!! definizione "Definizione 5: di epigrafo (o sopragrafico)"
 
     Consideriamo una funzione $f: I \rr \R$. Si chiama <strong>epigrafico</strong> (o sopragrafico) di $f$ l'insieme:
@@ -255,21 +271,31 @@ title: "Derivata seconda"
     \epi f = \big\{(x,y) \in \R^2:~~x\in I {\rm ~~e~~} y \ge f(x) \big\}
     $$
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 4: epigrafo"
 
     ![Figura 6](../img/derivate-07-derivata-seconda/fig06.svg){ .fig .ovale loading=lazy style="width:55%" }
+
+<a id="box-defXX-10"></a>
 
 !!! definizione "Definizione 6: di funzione convessa (concava)"
 
     Una funzione $f: I \rr \R$ è <strong>convessa</strong> in $I$ se il suo epigrafo è un insieme convesso. Una funzione è <strong>concava</strong> in $I$ se $-f$ è convessa in $I$.
 
+<a id="box-texexpbox1-11"></a>
+
 !!! esempio "Esempio 5: funzione convessa"
 
     ![Figura 7](../img/derivate-07-derivata-seconda/fig07.svg){ .fig .ovale loading=lazy style="width:55%" }
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 6: funzione concava"
 
     ![Figura 8](../img/derivate-07-derivata-seconda/fig08.svg){ .fig .ovale loading=lazy style="width:55%" }
+
+<a id="box-defXX-13"></a>
 
 !!! definizione "Definizione 7: di funzione convessa (concava) – definizione equivalente"
 
@@ -301,6 +327,8 @@ title: "Derivata seconda"
 
     percorre il segmento di estremi $\big(x_1,f(x_1)\big)$ e $\big(x_2,f(x_2)\big)$.
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 7: grafico di funzione convessa"
 
     Consideriamo  la funzione convessa  $f(x) = (x-2)^2+1$ di  dominio $\left[\frac{1}{2},3\right]$ e prendiamo ad esempio l'intervallo $x_1=1$ e $x_2=\frac{5}{2}$ e $\lambda= \frac{1}{3}$. Abbiamo la seguente combinazione (lineare) convessa:
@@ -312,6 +340,8 @@ title: "Derivata seconda"
     ![Figura 10](../img/derivate-07-derivata-seconda/fig10.svg){ .fig .ovale loading=lazy style="width:61%" }
 
 - Si noti che la definizione di funzione convessa non richiede a priori che la funzione sia continua o derivabile in un intervallo.
+
+<a id="box-theoFERMAT-15"></a>
 
 !!! teorema "Teorema 1"
 
@@ -331,6 +361,8 @@ title: "Derivata seconda"
 
 - Se sappiamo a priori che la funzione è derivabile una volta o due volte nell'intervallo considerato, allora la convessità è legata alla derivata prima e seconda della funzione.
 
+<a id="box-theoFERMAT-16"></a>
+
 !!! teorema "Teorema 2"
 
     Sia $f: (a, b) \rr  \R$.
@@ -340,20 +372,22 @@ title: "Derivata seconda"
     2. Se $f$ è derivabile due volte in $(a,b)$, allora $f$ è convessa (concava) in $(a, b)$ se e solo se:
 
         $$
-        f" (x) \ge 0~~ (\le 0), ~~~\forall x \in (a, b)
+        f'' (x) \ge 0~~ (\le 0), ~~~\forall x \in (a, b)
         $$
 
 - Il teorema si modifica in maniera ovvia per le funzioni strettamente convesse o concave.
 
 ??? dimostrazione "Dimostrazione"
 
-    Non dimostriamo il punto (a). il punto (b) segue da (a) per il test di monotonia applicato ad $f'$. <span class="qed">□</span>
+    Non dimostriamo il punto (a). Il punto (b) segue da (a) per il test di monotonia applicato ad $f'$. <span class="qed">□</span>
 
 !!! chiave ""
 
     Come conseguenza di questo teorema, lo studio del segno della derivata seconda ci permette di decidere della convessità o concavità di una funzione (<span style="color:#e03131">controllare</span>).
 
     ![Figura 13](../img/derivate-07-derivata-seconda/fig13.svg){ .fig .ovale loading=lazy style="width:90%" }
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 8: convessità delle funzioni esponenziali"
 
@@ -368,6 +402,8 @@ title: "Derivata seconda"
     $$
     f'(x) = a^x \log a; ~~~~ f''(x) = a^x \log^2 a >0,~~~~ \forall x \in \R, \forall a >0, a \neq 1
     $$
+
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 9: convessità/concavità delle funzioni logaritmiche"
 
@@ -387,6 +423,8 @@ title: "Derivata seconda"
     > 0, ~ \forall x >0, & {\rm se}~~  0 < a < 1
     \end{cases}
     $$
+
+<a id="box-texexpbox1-19"></a>
 
 !!! esempio "Esempio 10: convessità/concavità delle funzioni potenza"
 
@@ -410,6 +448,8 @@ title: "Derivata seconda"
 
 - Un'utile caratterizzazione geometrica della convessità coinvolge le rette tangenti al grafico della funzione
 
+<a id="box-theoKKKK-20"></a>
+
 !!! teorema "Teorema 3"
 
     Una funzione $f: (a, b) \rr \R$, derivabile in $(a, b)$, è convessa (concava) in $(a, b)$ se e solo se comunque si scelga un punto $x_0 \in (a, b)$ si ha che il grafico di $f$ si mantiene in tutto $(a, b)$ sopra (sotto) il grafico della sua retta tangente in $\big(x_0, f(x_0)\big)$.
@@ -417,6 +457,8 @@ title: "Derivata seconda"
 ??? dimostrazione "Dimostrazione"
 
     Omessa <span class="qed">□</span>
+
+<a id="box-texexpbox1-21"></a>
 
 !!! esempio "Esempio 11: rette tangenti e grafici di funzioni convesse"
 
@@ -446,6 +488,8 @@ title: "Derivata seconda"
 
 - Questo permette di concludere che, presi due punti qualsiasi sul grafico di una funzione convessa, il grafico tra quei due punti cade tutto nel <strong>triangolo</strong> che ha per lati la corda che li unisce e le rette tangenti al grafico nei due punti.
 
+<a id="box-texexpbox1-22"></a>
+
 !!! esempio "Esempio 12: rette tangenti/corde e grafici di funzioni convesse"
 
     Consideriamo la funzione:
@@ -466,11 +510,15 @@ title: "Derivata seconda"
 
 - Il verso della concavità di una funzione (ossia  il fatto che sia convessa o concava) può cambiare, nel suo insieme di definizione; questo ci conduce al concetto di punto di flesso.
 
+<a id="box-defXX-23"></a>
+
 !!! definizione "Definizione 8: di punto di flesso"
 
     Sia $f : (a, b) \rr \R$ una funzione e $x_0 \in (a, b)$ sia un punto di derivabilità per $f$, oppure sia $f' (x_0) = \pm \infty$. Il punto $x_0$ si dice di <strong>flesso</strong> per $f$ se esiste un intorno destro $(x_0, x_0 + h)$, $h > 0$, in cui $f$ è convessa (concava) e un intorno sinistro $(x_0 - h, x_0)$, $h > 0$, in cui $f$ è concava (convessa).
 
 - Attraversando un punto di flesso, la derivata seconda di $f$ (se esiste) cambia segno. Ci aspettiamo allora che in questo punto $f''$ si annulli.
+
+<a id="box-theoKKKK-24"></a>
 
 !!! teorema "Teorema 4"
 
@@ -478,11 +526,13 @@ title: "Derivata seconda"
 
 ??? dimostrazione "Dimostrazione"
 
-    Notiamo che, se sapessimo che $f''$ esiste in un intorno di $x_0$ <strong>ed è continua</strong> in $x_0$, allora la tesi del teorema seguirebbe dal teorema dei valori intermedi per le funzione continue (applicato ad $f''$). Il teorema si può dimostrare  anche senza queste ipotesi ulteriori (omessa). <span class="qed">□</span>
+    Notiamo che, se sapessimo che $f''$ esiste in un intorno di $x_0$ <strong>ed è continua</strong> in $x_0$, allora la tesi del teorema seguirebbe dal teorema dei valori intermedi per le funzioni continue (applicato ad $f''$). Il teorema si può dimostrare  anche senza queste ipotesi ulteriori (omessa). <span class="qed">□</span>
 
 !!! chiave ""
 
     L'implicazione opposta a quella enunciata dal teorema non è vera,  un punto in cui la derivata seconda si annulla può non essere di flesso.
+
+<a id="box-texexpbox1-25"></a>
 
 !!! esempio "Esempio 13: punti a derivata seconda nulla ma non di flesso"
 
@@ -498,6 +548,8 @@ title: "Derivata seconda"
 
 - Il significato geometrico dei punti di flesso è chiarito dal seguente teorema.
 
+<a id="box-theoKKKK-26"></a>
+
 !!! teorema "Teorema 5"
 
     Se $f : (a, b) \rr \R$ è derivabile in $(a, b)$ e $x_0 \in (a, b)$ è un punto di flesso  allora il grafico di $f (x)$ attraversa la propria retta tangente in $\big(x_0, f (x_0)\big)$.
@@ -505,6 +557,8 @@ title: "Derivata seconda"
 ??? dimostrazione "Dimostrazione"
 
     Tracciamo la retta tangente al grafico di $f(x)$ nel punto di ascissa $x_0$. Se $f$ è (ad esempio) concava in $(a, x_0)$, poiché $f$ è derivabile, il grafico di $f$ sta sotto la retta in $(a, x_0)$; d'altra parte $f$ è convessa in $(x_0, b)$, perciò il suo grafico sta sopra la retta in $( x_0, b)$. Di conseguenza in $x_0$ il grafico attraversa la retta tangente. <span class="qed">□</span>
+
+<a id="box-texexpbox1-27"></a>
 
 !!! esempio "Esempio 14: punti di flesso (a tangente orizzontale)"
 
@@ -514,11 +568,13 @@ title: "Derivata seconda"
     f(x) = x^3, ~~f'(x) = 3\:x^2, ~~f''(x) = 6\;x
     $$
 
-    Poiché  $f' (x) >0$ per $x \in \R$, la funzione è crescente su tutto $\R$. Ha un punto stazionario per $x = 0$, che non sarà però punto di massimo o minimo, perché la funzione è sempre crescente.
+    Poiché  $f' (x) >0$ per $x \neq 0$, la funzione è crescente su tutto $\R$. Ha un punto stazionario per $x = 0$, che non sarà però punto di massimo o minimo, perché la funzione è sempre crescente.
 
-    Abbiamo $f''(0)=0$. Inoltre $f''(x)<0$ per $x < 0$ quindi è concava per $x < 0$ e $f''(x)>0$ per $x > 0$ quindi è convessa per $x < 0$. Di conseguenza il punto $x_0$ è <strong>un punto di flesso a tangente orizzontale</strong>, e il grafico della funzione attraversa la propria retta tangente in $\big(0, 0\big)$, ovvero la retta $y =0$.
+    Abbiamo $f''(0)=0$. Inoltre $f''(x)<0$ per $x < 0$ quindi è concava per $x < 0$ e $f''(x)>0$ per $x > 0$ quindi è convessa per $x > 0$. Di conseguenza il punto $x_0$ è <strong>un punto di flesso a tangente orizzontale</strong>, e il grafico della funzione attraversa la propria retta tangente in $\big(0, 0\big)$, ovvero la retta $y =0$.
 
     ![Figura 18](../img/derivate-07-derivata-seconda/fig18.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<a id="box-texexpbox1-28"></a>
 
 !!! esempio "Esempio 15: punti di flesso"
 
@@ -528,7 +584,7 @@ title: "Derivata seconda"
     f(x) = e^{-x^2}, ~~f'(x) = -2\;x\;e^{-x^2}, ~~f''(x) = \;e^{-x^2}\;(4\;x^2-2)
     $$
 
-    Abbiamo $f' (x) > 0$ per $x \le 0$, quindi la funzione cresce per $x \le 0$; e $f' (x) < 0$ per $x \ge 0$, quindi decresce per $x \ge 0$ e inoltre $f' (0) = 0$. Perciò ha un punto di massimo relativo in $x = 0$.
+    Abbiamo $f' (x) > 0$ per $x < 0$, quindi la funzione cresce per $x \le 0$; e $f' (x) < 0$ per $x > 0$, quindi decresce per $x \ge 0$ e inoltre $f' (0) = 0$. Perciò ha un punto di massimo relativo in $x = 0$.
 
     Abbiamo:
 
@@ -550,17 +606,21 @@ title: "Derivata seconda"
 
     ![Figura 19](../img/derivate-07-derivata-seconda/fig19.svg){ .fig .ovale loading=lazy style="width:85%" }
 
+<a id="box-texexpbox1-29"></a>
+
 !!! esempio "Esempio 16: punti di flesso (a tangente verticale)"
 
     Consideriamo la funzione:
 
     $$
-    f(x) = x^{1/3}, ~~f'(x) = \frac{1}{x^{2/3}}, {\rm ~~ per~~} x >0, ~~f''(x) = \frac{1}{x^{5/3}}, {\rm ~~ per~~} x >0
+    f(x) = x^{1/3}, ~~f'(x) = \frac{1}{3\;x^{2/3}}, {\rm ~~ per~~} x >0, ~~f''(x) = -\frac{2}{9\;x^{5/3}}, {\rm ~~ per~~} x >0
     $$
 
     Per $x_0=0$, abbiamo visto che $f'(0)= \ip$. In questo caso però $f''(0)$ non esiste e la funzione ha flesso a tangente verticale.
 
     ![Figura 20](../img/derivate-07-derivata-seconda/fig20.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<a id="box-texexpbox1-30"></a>
 
 !!! esempio "Esempio 17: punti di flesso (a tangente orizzontale)"
 

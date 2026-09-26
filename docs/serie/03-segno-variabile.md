@@ -11,9 +11,13 @@ title: "Serie numeriche a termini di segno variabile"
 </div>
 ## 1. Serie a termini di segno variabile
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di serie assolutamente convergente"
 
     Una serie $\sum a_k$ è assolutamente convergente se converge la serie $\sum |a_k|$.
+
+<a id="box-theoZERI-2"></a>
 
 !!! teorema "Teorema 1"
 
@@ -27,12 +31,12 @@ title: "Serie numeriche a termini di segno variabile"
     \sum_{k=0}^{\infty} \big(|a_k|-a_k \big)
     $$
 
-    E' una serie è a termini nonnegativi in quanto, per ogni $k\in\mathbb N$, abbiamo:
+    È una serie a termini nonnegativi in quanto, per ogni $k\in\mathbb N$, abbiamo:
 
     $$
     \begin{cases}
     |a_k|-a_k=-2a_k \ge 0 & {\rm se~~} a_k<0\\[2ex]
-    |a_k|-a_k=0  & {\rm se~~} a_k \le 0
+    |a_k|-a_k=0  & {\rm se~~} a_k \ge 0
     \end{cases}
     $$
 
@@ -79,6 +83,8 @@ title: "Serie numeriche a termini di segno variabile"
 
     D'altro canto, per ipotesi la serie $\sum a_k$ converge assolutamente, ossia $\sum |a_k|$ converge, e quindi la quantità $\sum_{k=0}^n |a_k|$ è limitata; perciò le successioni $\{s_n^+\}$ e $\{s_n^-\}$ sono superiormente limitate e non decrescenti, e pertanto convergono, per il teorema di monotonia delle successioni. <span class="qed">□</span>
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 1: convergenza assoluta"
 
     Determiniamo il carattere della serie:
@@ -90,7 +96,7 @@ title: "Serie numeriche a termini di segno variabile"
     Abbiamo:
 
     $$
-    \left| \frac{(-1)^k}{k^{\alpha}} \right| = \frac{1}{k^{\alpha}}, ~\forall k \in \N, k>1 {\rm ~~~~~~e~~~~~~} \sum_{n=1}^{\infty} \frac{1}{k^{\alpha}} {\rm ~~~è~convergente~per~~~}   \alpha > 1
+    \left| \frac{(-1)^k}{k^{\alpha}} \right| = \frac{1}{k^{\alpha}}, ~\forall k \in \N, k>1 {\rm ~~~~~~e~~~~~~} \sum_{k=1}^{\infty} \frac{1}{k^{\alpha}} {\rm ~~~è~convergente~per~~~}   \alpha > 1
     $$
 
     Perciò la serie converge assolutamente e quindi converge.
@@ -117,6 +123,8 @@ title: "Serie numeriche a termini di segno variabile"
 
 - Tra le serie a termini di segno variabile, un caso particolarmente semplice è costituito dalle serie a segni alterni, per le quali vale il seguente criterio di convergenza.
 
+<a id="box-theoZERI-4"></a>
+
 !!! teorema "Teorema 2: del criterio di Leibniz"
 
     Sia data la serie
@@ -134,6 +142,8 @@ title: "Serie numeriche a termini di segno variabile"
 - Le somme parziali di indice pari approssimano la somma $s$ per eccesso e  quelle di indice dispari per difetto.
 
 - Il criterio di Leibniz può chiaramente essere applicato anche se i termini sono definitivamente di segno alterno e la successione $\{a_k\}$ è definitivamente decrescente.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 2: criterio di Leibniz "
 
@@ -203,6 +213,8 @@ title: "Serie numeriche a termini di segno variabile"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-theoZERI-6"></a>
+
 !!! teorema "Corollario 1: del teorema del criterio di Leibniz"
 
     Data una serie che rispetta le ipotesi del teorema del criterio di Leibniz, abbiamo:
@@ -211,7 +223,7 @@ title: "Serie numeriche a termini di segno variabile"
     \underbrace{ |s-s_{m}|}_{=\left| \sum_{k=m+1}^{\infty} (-1)^k \; a_k \right|} \le a_{m+1}, ~~~\forall m \in \N
     $$
 
-- Per ogni $m$, l'errore che si commette approssimando $s$ con $s_m$ è, in valore assoluto, maggiorato dal valore del primo termine omesso. In altre parole, le coda della serie tende a un valore  minore o uguale a $a_{m+1}$.
+- Per ogni $m$, l'errore che si commette approssimando $s$ con $s_m$ è, in valore assoluto, maggiorato dal valore del primo termine omesso. In altre parole, la coda della serie tende a un valore  minore o uguale a $a_{m+1}$.
 
 ??? dimostrazione "Dimostrazione"
 
@@ -241,6 +253,8 @@ title: "Serie numeriche a termini di segno variabile"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 3: criterio di Leibniz "
 
     Determiniamo il carattere della serie:
@@ -262,6 +276,8 @@ title: "Serie numeriche a termini di segno variabile"
     $$
 
     quindi la serie converge per il criterio di Leibniz dato che è decrescente definitivamente.
+
+<a id="box-texexpbox1-8"></a>
 
 !!! esempio "Esempio 4: criterio di Leibniz "
 
@@ -294,7 +310,7 @@ title: "Serie numeriche a termini di segno variabile"
 !!! chiave ""
 
     $$
-    {\rm se~~} \sum a_k {\rm ~converge~~~e~~~~} \sum b_k {\rm ~coverge~~~~~allora~~} \sum (a_k+b_k) {\rm ~coverge}
+    {\rm se~~} \sum a_k {\rm ~converge~~~e~~~~} \sum b_k {\rm ~converge~~~~~allora~~} \sum (a_k+b_k) {\rm ~converge}
     $$
 
     $$
@@ -302,6 +318,8 @@ title: "Serie numeriche a termini di segno variabile"
     $$
 
     si verifica vedendo la serie come limite della successione delle somme parziali, e applicando il teorema sul limite della somma.
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 5: criterio di Leibniz "
 
@@ -331,6 +349,8 @@ title: "Serie numeriche a termini di segno variabile"
 
     La seconda serie converge per il criterio di Leibniz; quindi la serie di partenza converge.
 
+<a id="box-texexpbox1-10"></a>
+
 !!! esempio "Esempio 6: criterio di Leibniz "
 
     Determiniamo il carattere della serie:
@@ -347,6 +367,8 @@ title: "Serie numeriche a termini di segno variabile"
 
     La prima serie converge per il criterio di Leibniz; la seconda diverge (serie armonica); quindi la serie di partenza diverge.
 
+<a id="box-texexpbox1-11"></a>
+
 !!! esempio "Esempio 7: criterio di Leibniz "
 
     Determiniamo il carattere della serie:
@@ -361,4 +383,4 @@ title: "Serie numeriche a termini di segno variabile"
     \frac{(-1)^{k+1} }{k} = -\frac{(-1)^{k} }{k}, ~\forall k\in \N, k>1
     $$
 
-    inoltre la successione $a_k = \frac{1}{k}$ è decrescente e $\frac{1}{k}\rr 0$ per $n \rr \ip$ quindi rispetta le due condizioni del teorema. Di conseguenza la serie $\sum_{k=1}^{\infty}   \frac{(-1)^{k+1}}{k}$ converge.
+    inoltre la successione $a_k = \frac{1}{k}$ è decrescente e $\frac{1}{k}\rr 0$ per $k \rr \ip$ quindi rispetta le due condizioni del teorema. Di conseguenza la serie $\sum_{k=1}^{\infty}   \frac{(-1)^{k+1}}{k}$ converge.

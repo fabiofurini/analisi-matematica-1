@@ -27,6 +27,8 @@ title: "Serie numeriche"
 
 ![Figura 1](../img/serie-01-serie-numeriche/fig01.svg){ .fig .ovale loading=lazy style="width:55%" }
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di serie numerica"
 
     Data una successione $\{a_k\}_{k \in \N}$,  chiamiamo <strong>serie numerica</strong> dei termini $a_k$ la scrittura:
@@ -36,6 +38,8 @@ title: "Serie numeriche"
     $$
 
 - Si legge “serie (ma anche somma) per $k$ da 0 a $\ip$ di $a_k$”. I valori $a_k$ prendono il nome di <strong>termini generali della serie</strong>.
+
+<a id="box-defXX-2"></a>
 
 !!! definizione "Definizione 2: di successione delle somme parziali"
 
@@ -50,6 +54,8 @@ title: "Serie numeriche"
 !!! chiave ""
 
     Il <strong>carattere della serie</strong> è determinato dal limite della successione $\{ s_n\}$ per $n$ che tende all'infinito. Diremo che una serie  è <strong>convergente</strong>,  <strong>divergente</strong>,  <strong>irregolare</strong>, se la <strong>successione</strong> $\{s_n\}$ delle  somme parziali è <strong>convergente</strong>, <strong>divergente</strong> o <strong>irregolare</strong>,  rispettivamente.
+
+<a id="box-defXX-3"></a>
 
 !!! definizione "Definizione 3: di somma della serie"
 
@@ -83,6 +89,8 @@ title: "Serie numeriche"
 
     2. la successione $\{ s_n\}$ delle  <strong>somme parziali</strong>
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 1: carattere di una serie"
 
     Determiniamo il carattere della serie:
@@ -103,6 +111,8 @@ title: "Serie numeriche"
 
 ### 1.1 Principali proprietà  delle serie numeriche
 
+<a id="box-theoZERI-5"></a>
+
 !!! osservazione "Osservazione 1"
 
     Se una successione $\{a_k\}$ è a termini non-negativi, ovvero $a_k \ge 0,\forall k$, allora la successione delle somme parziali $\{s_n\}$ è crescente e regolare.
@@ -115,7 +125,7 @@ title: "Serie numeriche"
     s_{n+1}= s_{n} + \underbrace{a_{n+1}}_{\ge 0} \ge s_{n}, ~~~\forall n, {\rm ~~~~quindi~~} \lim_{n \rr \ip} s_n = \sup_{n \in \N} \{s_n\}
     $$
 
-    per il teorema di monotonia delle successioni. Di conseguenza la successione $\{s_n\}$ non può essere irregolare. E' quindi regolare ovvero o converge o diverge. <span class="qed">□</span>
+    per il teorema di monotonia delle successioni. Di conseguenza la successione $\{s_n\}$ non può essere irregolare. È quindi regolare ovvero o converge o diverge. <span class="qed">□</span>
 
 !!! chiave ""
 
@@ -127,9 +137,11 @@ title: "Serie numeriche"
 
 - Questa osservazione è valida anche per successioni a termini definitivamente non-negativi, positivi o definitivamente positivi.
 
+<a id="box-XXXX-6"></a>
+
 !!! teorema "Teorema 1"
 
-    Se un serie $\sum a_k$  è convergente allora $\lim_{k \rr \ip} a_k=0$
+    Se una serie $\sum a_k$  è convergente allora $\lim_{k \rr \ip} a_k=0$
 
 ??? dimostrazione "Dimostrazione"
 
@@ -138,7 +150,7 @@ title: "Serie numeriche"
     Osserviamo che la  successione $\{s_n\}$ può essere definita in maniera ricorsiva:
 
     $$
-    s_0= a_0,~~~~  s_n = s_{n-1} + a_n,~~ \forall n >1
+    s_0= a_0,~~~~  s_n = s_{n-1} + a_n,~~ \forall n \ge 1
     $$
 
     Di conseguenza abbiamo:
@@ -186,6 +198,8 @@ title: "Serie numeriche"
 
     I risultati sul carattere delle serie valgono quindi anche se le ipotesi sono verificate “definitivamente”, cioè da un certo indice $n_0$ in poi.
 
+<a id="box-defXX-7"></a>
+
 !!! definizione "Definizione 4: di coda di una serie"
 
     Data una serie $\sum_{k=0}^{\infty} a_k$ e un valore $m \in \N$, la serie  $\sum_{k=m+1}^{\infty} a_k$ viene detta <strong>coda della serie</strong>.
@@ -212,11 +226,13 @@ title: "Serie numeriche"
 
 !!! chiave ""
 
-    Dato $m \in \N$, ogni coda $\sum_{k=m+1}^{n} a_k$ di una serie convergente,  può  essere interpretata come l'<strong>errore</strong> che si commette approssimando la somma $s$ con la somma parziale $s_m$.
+    Dato $m \in \N$, ogni coda $\sum_{k=m+1}^{\infty} a_k$ di una serie convergente,  può  essere interpretata come l'<strong>errore</strong> che si commette approssimando la somma $s$ con la somma parziale $s_m$.
+
+<a id="box-MMM-8"></a>
 
 !!! teorema "Teorema 2"
 
-    Se un serie $\sum a_k$  è convergente allora
+    Se una serie $\sum a_k$  è convergente allora
 
     $$
     \underbrace{s-s_m}_{\displaystyle=\sum_{k=m+1}^{\infty} a_k} \rr  0 {\rm ~~~per~~~} m \rr \ip
@@ -250,9 +266,13 @@ title: "Serie numeriche"
 
 ### 1.3 Serie armonica
 
+<a id="box-defXX-9"></a>
+
 !!! definizione "Definizione 5: di serie armonica"
 
     Si dice <strong>serie armonica</strong> la serie $\sum_{k=1}^{\infty} \frac{1}{k}$
+
+<a id="box-theoZERI-10"></a>
 
 !!! teorema "Teorema 3: del carattere della serie armonica"
 
@@ -324,9 +344,13 @@ title: "Serie numeriche"
 
 ### 1.4 Serie geometrica
 
+<a id="box-defXX-11"></a>
+
 !!! definizione "Definizione 6: di serie geometrica"
 
     Dato $q \in \R$, si dice <strong>serie geometrica</strong> di <strong>ragione</strong> $q$ la serie $\sum_{k=0}^{\infty} q^k$
+
+<a id="box-theoZERI-12"></a>
 
 !!! teorema "Teorema 4: del carattere e somma della serie geometrica"
 
@@ -386,6 +410,8 @@ title: "Serie numeriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-texexpbox1-13"></a>
+
 !!! esempio "Esempio 2: di serie geometrica"
 
     Determiniamo il carattere della serie:
@@ -394,7 +420,7 @@ title: "Serie numeriche"
     \sum_{k=0}^{\infty} \frac{1}{2^k} = \sum_{k=0}^{\infty} \left(\frac{1}{2}\right)^k
     $$
 
-    E' una serie geometrica di ragione $q=1/2$ quindi è convergente  e la somma $s$ vale $1/(1-1/2) =2$.
+    È una serie geometrica di ragione $q=1/2$ quindi è convergente  e la somma $s$ vale $1/(1-1/2) =2$.
 
     ![Figura 4](../img/serie-01-serie-numeriche/fig04.svg){ .fig .ovale loading=lazy style="width:70%" }
 
@@ -404,11 +430,13 @@ title: "Serie numeriche"
     \sum_{k=0}^{\infty} \left(\frac{13}{12}\right)^k
     $$
 
-    E' una serie geometrica di ragione $q=13/12$ quindi è divergente.
+    È una serie geometrica di ragione $q=13/12$ quindi è divergente.
 
     ![Figura 5](../img/serie-01-serie-numeriche/fig05.svg){ .fig .ovale loading=lazy style="width:70%" }
 
 ### 1.5 Serie telescopica
+
+<a id="box-defXX-14"></a>
 
 !!! definizione "Definizione 7: di serie telescopica"
 
@@ -417,6 +445,8 @@ title: "Serie numeriche"
     $$
     \sum_{k=n_0}^{\infty} (b_k-b_{k+1}) {\rm ~~~~~dove~~} \{b_k\} {\rm~è~una ~successione}
     $$
+
+<a id="box-theoZERI-15"></a>
 
 !!! teorema "Teorema 5: del carattere e somma della serie telescopica"
 
@@ -433,7 +463,7 @@ title: "Serie numeriche"
     Abbiamo
 
     \begin{align*}
-    s_n &= \sum_{k=n_0}^n \big(b_k - b_{k+1}\big)\\[2ex]
+    s_n &= \sum_{k=n_0}^{n_0+n} \big(b_k - b_{k+1}\big)\\[2ex]
     & = (b_{n_0} - b_{n_0+1}) + (b_{n_0+1} - b_{n_0+2}) + {\rm \dots} + (b_{n_0+n} - b_{n_0+n+1})\\[2ex] 
     &= b_{n_0} - b_{n_0+n+1}
     \end{align*}
@@ -441,10 +471,12 @@ title: "Serie numeriche"
     quindi:
 
     $$
-    \sum_{k=0}^{\infty} (b_k-b_{k+1})=\lim_{n \rightarrow +\infty} s_n = \lim_{n \rightarrow +\infty} (b_{n_0} - b_{n_0+n+1}) = b_{n_0} -\lim_{n \rr \ip} b_n
+    \sum_{k=n_0}^{\infty} (b_k-b_{k+1})=\lim_{n \rightarrow +\infty} s_n = \lim_{n \rightarrow +\infty} (b_{n_0} - b_{n_0+n+1}) = b_{n_0} -\lim_{n \rr \ip} b_n
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-16"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -489,6 +521,8 @@ title: "Serie numeriche"
     $$
 
     Di conseguenza la serie di Mengoli è convergente e la sua somma $s$ vale 1. <span class="qed">□</span>
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 3: serie telescopica"
 

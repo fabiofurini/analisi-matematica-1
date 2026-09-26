@@ -23,7 +23,9 @@ title: "Teorema degli zeri e metodo della bisezione"
 
 - Quando $f$ è un polinomio di grado $\le 4$ esistono formule che forniscono le soluzioni della \(\eqref{TTT}\). Se però $f$ è un polinomio di grado $> 4$ o una funzione più complicata, salvo casi particolarmente fortunati, non esistono formule per le soluzioni dell'equazione \(\eqref{TTT}\).
 
-- Geometricamente, risolvere l'equazione la \(\eqref{TTT}\) significa determinare le ascisse dei punti di intersezione tra il grafico di $y = f (x)$ e l'asse delle ascisse.  Possono esserci: <strong>infinite soluzioni</strong>, <strong>numero finito di soluzioni</strong>, <strong>nessuna soluzione</strong>.
+- Geometricamente, risolvere l'equazione \(\eqref{TTT}\) significa determinare le ascisse dei punti di intersezione tra il grafico di $y = f (x)$ e l'asse delle ascisse.  Possono esserci: <strong>infinite soluzioni</strong>, <strong>numero finito di soluzioni</strong>, <strong>nessuna soluzione</strong>.
+
+<a id="box-texexpbox1-1"></a>
 
 !!! esempio "Esempio 1: Zeri di una funzione"
 
@@ -31,7 +33,9 @@ title: "Teorema degli zeri e metodo della bisezione"
 
     ![Figura 1](../img/limiti-08-zeri-bisezione/fig01.svg){ .fig .ovale loading=lazy style="width:85%" }
 
-    l'equazione $f(x) = 0$ ha 3 soluzioni  nell'intervallo $[a,b]$, ossia la funzione $f$ ha 3 zeri, $x$ $x_2$ e $x_3$.
+    l'equazione $f(x) = 0$ ha 3 soluzioni  nell'intervallo $[a,b]$, ossia la funzione $f$ ha 3 zeri, $x_1$, $x_2$ e $x_3$.
+
+<a id="box-theoZERI-2"></a>
 
 !!! teorema "Teorema 1: degli zeri (o di Bolzano)"
 
@@ -149,7 +153,7 @@ title: "Teorema degli zeri e metodo della bisezione"
     f(a_n) \cdot f(b_n) \rr \big(f(\ell)\big)^2 {\rm ~~~per~~~} n \rr \ip
     $$
 
-    Mentre dal punto 3) e dal teorema della permanenza del segno deduciamo $\big(f(\ell)\big)^2 \le 0$. Deve perciò essere $f(\ell)=0$ e cosi $\ell$ è lo zero cercato,  ovvero $c=\ell$. <span class="qed">□</span>
+    Mentre dal punto 3) e dal teorema della permanenza del segno deduciamo $\big(f(\ell)\big)^2 \le 0$. Deve perciò essere $f(\ell)=0$ e così $\ell$ è lo zero cercato,  ovvero $c=\ell$. <span class="qed">□</span>
 
 - Abbiamo dimostrato:
 
@@ -163,7 +167,7 @@ title: "Teorema degli zeri e metodo della bisezione"
     {\rm ~~esiste~} c \in [a,b]  {\rm ~~tale~che~} f(c)=0 ~~~\nRightarrow~~~ f: [a,b] \rr \R  {\rm ~~continua~in~~} [a,b] {\rm ~~e~~} f(a) \cdot f(b) < 0
     \end{equation*}
 
-    Basta ad esempio considerare $f(x)=x^2-2$ nell'intervallo $[-2,2]$. Abbiamo  $f(-2)=2$ e $f(2)=2$ quindi $(a) \cdot f(b) \nless 0$ ma esistono gli zeri della funzione:
+    Basta ad esempio considerare $f(x)=x^2-2$ nell'intervallo $[-2,2]$. Abbiamo  $f(-2)=2$ e $f(2)=2$ quindi $f(a) \cdot f(b) \nless 0$ ma esistono gli zeri della funzione:
 
     ![Figura 5](../img/limiti-08-zeri-bisezione/fig05.svg){ .fig .ovale loading=lazy style="width:52%" }
 
@@ -176,6 +180,8 @@ title: "Teorema degli zeri e metodo della bisezione"
         Se in $[a, b]$ la funzione $f$ ha più zeri, il procedimento non indica quale di essi venga determinato.  Lo zero trovato dipende   dall'intervallo $[a,b]$ considerato in input e può richiedere infinite iterazioni per essere trovato. Interrompendo il procedimento però, come vedremo, abbiamo una stima dello zero e dell'errore commesso.
 
 ## 2. Metodo della bisezione
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 2: Metodo della bisezione"
 
@@ -197,6 +203,8 @@ title: "Teorema degli zeri e metodo della bisezione"
 
     ![Figura 7](../img/limiti-08-zeri-bisezione/fig07.svg){ .fig .ovale loading=lazy style="width:53%" }
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 3: Metodo della bisezione"
 
     - Iterazione $n=2$, abbiamo:
@@ -211,11 +219,13 @@ title: "Teorema degli zeri e metodo della bisezione"
     - Iterazione $n=3$, abbiamo:
 
         $$
-        [a_3,b_3] = \left[\frac{11}{8},\frac{29}{6}\right],~~~~f(a_3)=-\frac{7}{4}, ~~~~f(b_3)=\frac{329}{256} ~~~~\Rightarrow~~~~
+        [a_3,b_3] = \left[\frac{11}{8},\frac{29}{16}\right],~~~~f(a_3)=-\frac{7}{64}, ~~~~f(b_3)=\frac{329}{256} ~~~~\Rightarrow~~~~
          c_3=\frac{51}{32} {\rm~~e~~}  f(c_3)=\frac{553}{1024}
         $$
 
     ![Figura 9](../img/limiti-08-zeri-bisezione/fig09.svg){ .fig .ovale loading=lazy style="width:59%" }
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 4: Intervalli del metodo della bisezione"
 
@@ -281,6 +291,8 @@ title: "Teorema degli zeri e metodo della bisezione"
 
     ovvero metà della lunghezza dell'intervallo $[a_n,b_n]$,  dato che $c \in (a_n,c_n)$ oppure $c \in (c_n,b_n)$.
 
+    <a id="box-texexpbox1-6"></a>
+
     !!! esempio "Esempio 5: Stima degli errori del metodo della bisezione ($\sqrt{2}=1.414213562\dots$)"
 
         Riprendiamo l'esercizio precedente con $b-a=\frac{7}{2}$, nelle prime 6 iterazioni abbiamo:
@@ -290,7 +302,7 @@ title: "Teorema degli zeri e metodo della bisezione"
         <td>iterazione</td>
         <td><span class="arithmatex">\(a_n\)</span></td>
         <td><span class="arithmatex">\(c_n\)</span></td>
-        <td><span class="arithmatex">\(b_b\)</span></td>
+        <td><span class="arithmatex">\(b_n\)</span></td>
         <td>stima di <span class="arithmatex">\(\sqrt{2}\)</span></td>
         <td><span class="arithmatex">\(\varepsilon_n\)</span></td>
         </tr>
@@ -342,9 +354,9 @@ title: "Teorema degli zeri e metodo della bisezione"
         <tr>
         <td><span class="arithmatex">\(n=5\)</span></td>
         <td><span class="arithmatex">\(\frac{11}{8}\)</span></td>
-        <td><span class="arithmatex">\(\frac{91}{64}\)</span></td>
-        <td><span class="arithmatex">\(\frac{94}{64}\)</span></td>
-        <td><span class="arithmatex">\(1.421875\)</span></td>
+        <td><span class="arithmatex">\(\frac{183}{128}\)</span></td>
+        <td><span class="arithmatex">\(\frac{95}{64}\)</span></td>
+        <td><span class="arithmatex">\(1.4296875\)</span></td>
         <td><span class="arithmatex">\(\le \frac{7/2}{2^6}=\)</span></td>
         <td>0.0546875</td>
         </tr>
@@ -398,20 +410,22 @@ title: "Teorema degli zeri e metodo della bisezione"
 
     Servono in media più di tre bisezioni per migliorare di una cifra significativa l'accuratezza della stima,   <strong>la convergenza è quindi lenta</strong>.
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 6: Metodo della bisezione (stima degli errori)"
 
     Sempre per l'esempio precedente:
 
-    - nel caso si volesse una tolleranza (errore massimo) $\delta=0.0001 = 10^{-5}$:
+    - nel caso si volesse una tolleranza (errore massimo) $\delta=0.00001 = 10^{-5}$:
 
         $$
         n\left(10^{-5}\right)>   \log_2 \left( \frac{7/2}{10^{-5}}\right) -1 = 17.416\dots \quad {\rm ~~quindi~~} n\left(10^{-5}\right)=18
         $$
 
-    - nel caso si volesse una tolleranza (errore massimo) $\delta=0.00001=10^{-6}$:
+    - nel caso si volesse una tolleranza (errore massimo) $\delta=0.000001=10^{-6}$:
 
         $$
-        n\left(10^{-6}\right)>   \log_2 \left( \frac{7/2}{10^{-6}}\right) -1 = 20.738\dots \quad {\rm ~~quindi~~} n\left(10^{-5}\right)=21
+        n\left(10^{-6}\right)>   \log_2 \left( \frac{7/2}{10^{-6}}\right) -1 = 20.738\dots \quad {\rm ~~quindi~~} n\left(10^{-6}\right)=21
         $$
 
 !!! chiave ""

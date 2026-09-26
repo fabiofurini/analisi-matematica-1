@@ -72,7 +72,7 @@
 
     ---
 
-    Teorema di Weierstrass · Teorema di valori intermedi · Teorema di esistenza della radice …-esima
+    Teorema di Weierstrass · Teorema dei valori intermedi · Teorema di esistenza della radice …-esima
 
     [:octicons-arrow-right-24: Leggi il capitolo](09-weierstrass.md)
 

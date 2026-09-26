@@ -43,13 +43,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     - **2** $\forall a,b,c, ~~$  $(a \cdot b) \cdot c = a \cdot (b\cdot c)~~~~$  (<strong>proprietà associativa</strong>)
 
-    - **3** esiste un elemento <strong>neutro della prodotto</strong>, indicato con $1$, tale che:
+    - **3** esiste un elemento <strong>neutro del prodotto</strong>, indicato con $1$, tale che:
 
         $$
         \forall a, ~~ a \cdot 1=a
         $$
 
-    - **4** per ogni $a \neq 0$ esiste un elemento <strong>inverso</strong> di $a$ <strong>rispetto alla prodotto</strong>, detto <strong>reciproco</strong> di $a$ e indicato con $a^{-1}$, tale che:
+    - **4** per ogni $a \neq 0$ esiste un elemento <strong>inverso</strong> di $a$ <strong>rispetto al prodotto</strong>, detto <strong>reciproco</strong> di $a$ e indicato con $a^{-1}$, tale che:
 
         $$
         a \cdot a^{-1}  = 1
@@ -78,7 +78,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     3. <strong>divisione</strong>, ponendo:
 
         $$
-        a / b = a \cdot b^{-1} {\rm~~~purchè~~sia~} b \neq 0
+        a / b = a \cdot b^{-1} {\rm~~~purché~~sia~} b \neq 0
         $$
 
 ## 2. Grandezze commensurabili
@@ -86,6 +86,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 !!! chiave ""
 
     In matematica con la parola <strong>grandezza</strong> si intende una <strong>proprietà</strong> di una <strong>figura geometrica</strong> che può essere <strong>misurata</strong>. Sono esempi di grandezze: la lunghezza di un segmento, la misura di un angolo, l'area di una figura piana o il volume di un solido.
+
+<a id="box-defXX-1"></a>
 
 !!! definizione "Definizione 1: di grandezze omogenee"
 
@@ -95,9 +97,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 - L'area di un quadrato e il volume di un cono non sono grandezze omogenee, infatti l'area si esprime in metri quadrati o in altre misure di superficie che però non possono essere usate per esprimere il volume.
 
+<a id="box-defXX-2"></a>
+
 !!! definizione "Definizione 2: di grandezze commensurabili e incommensurabili"
 
     Si dicono <strong>commensurabili</strong> due grandezze omogenee $a$ e $b$ il cui rapporto è un numero razionale, i.e.,  se ${a}/{b}  \in \mathbb{Q}$.  Si dicono invece <strong>incommensurabili</strong> se il loro rapporto non è un numero razionale,  i.e.,  se ${a}/{b}  \notin \mathbb{Q}$.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 1: di grandezze commensurabili"
 
@@ -119,9 +125,11 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     \frac{V_s}{V_c} = \frac{\frac{4}{3} \: \pi \: r^3}{2 \: \pi \: r^3}= \frac{2}{3} \in \mathbb{Q}
     $$
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 2: di grandezze incommensurabili"
 
-    La lunghezza della circonferenza e la lunghezza del suo diametro sono incommensurabili. In formule, denotiamo $d$ il diametro della circonferenza e con $c$ la lunghezza della circonferenza, abbiamo:
+    La lunghezza della circonferenza e la lunghezza del suo diametro sono incommensurabili. In formule, denotiamo con $d$ il diametro della circonferenza e con $c$ la lunghezza della circonferenza, abbiamo:
 
     $$
     c = \pi \: d
@@ -152,6 +160,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 ![Figura 1](../img/numeri-05-campi-ordinati/fig01.svg){ .fig .ovale loading=lazy style="width:80%" }
 
 ## 4. Relazioni di ordine totale
+
+<a id="box-propAAA-5"></a>
 
 !!! osservazione "Osservazione 1"
 
@@ -195,17 +205,23 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 - Osserviamo che tutte le regole  del calcolo algebrico derivano dalle proprietà: $R_1$, $R_2$, $R_3$.
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 3"
 
     Ad esempio tutte le usuali procedure con cui si risolvono le disequazioni sono  conseguenza degli  assiomi e delle proprietà algebriche della somma e del prodotto, espresse da $R_1$ e $R_2$.
 
 ## 6. Campi ordinati
 
+<a id="box-defXX-7"></a>
+
 !!! definizione "Definizione 3: di campo (ordinato)"
 
-    Un <strong>campo ordinato</strong> un insieme in cui sono definite due operazioni (somma e prodotto) e una relazione d'ordine totale, che soddisfano  le proprietà $R_1$, $R_2$, $R_3$. Un insieme con solo le proprietà $R_1$, $R_2$ si dice <strong>campo</strong>.
+    Un <strong>campo ordinato</strong> è un insieme in cui sono definite due operazioni (somma e prodotto) e una relazione d'ordine totale, che soddisfano  le proprietà $R_1$, $R_2$, $R_3$. Un insieme con solo le proprietà $R_1$, $R_2$ si dice <strong>campo</strong>.
 
 - Tutto ciò che abbiamo detto fin qui riguardo alle operazioni di somma e prodotto e alla relazione d'ordine totale “minore o uguale  di” (“$\le$”) vale sia per l'insieme dei numeri razionali che per l'insieme dei numeri reali.
+
+<a id="box-propAAA-8"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -231,6 +247,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 ## 7. Insiemi limitati, massimi e minimi
 
+<a id="box-defXX-9"></a>
+
 !!! definizione "Definizione 4: di insieme limitato"
 
     Sia $E$ un insieme contenuto in $\Q$ o in $\R$. L'insieme $E$ si dice <strong>limitato</strong>  se esistono due numeri $m$ e $M$,  tali che:
@@ -252,6 +270,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     $$
 
 - Non fa differenza imporre che $m$ e/o $M$ appartengano a $\Q$ o a $\R$ in quanto la condizione è soltanto di esistenza di tali numeri.
+
+<a id="box-defXX-10"></a>
 
 !!! definizione "Definizione 5: di massimo e minimo di un insieme"
 
@@ -282,7 +302,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
      \label{CCC}
     \end{equation}
 
-    Quindi il fatto che un insieme sia limitato è condizione necessaria ma non sufficiente alla fatto che l'insieme ammetta massimo e minimo. Inoltre l'esistenza di massimo e minimo è condizione sufficiente ma non necessaria al fatto che un insieme sia limitato.  
+    Quindi il fatto che un insieme sia limitato è condizione necessaria ma non sufficiente al fatto che l'insieme ammetta massimo e minimo. Inoltre l'esistenza di massimo e minimo è condizione sufficiente ma non necessaria al fatto che un insieme sia limitato.  
 
     Dalla contronominale o implicazione inversa  di \(\eqref{BBB}\) abbiamo:
 
@@ -290,7 +310,9 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     {\rm ~~insieme~non~limitato~}   ~~\Rightarrow~~ {\rm ~~non~esistenza~di~massimo~e~minimo~}
     $$
 
-    ovvero se un insieme non è limitato non ha nè massimo nè minimo.
+    ovvero se un insieme non è limitato non ha massimo o non ha minimo.
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 4: di massimi e minimi"
 
@@ -315,6 +337,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     </tr>
     </table></div>
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 5: di massimi e minimi"
 
     <div class="tabella" markdown><table>
@@ -333,6 +357,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     </table></div>
 
     ![Figura 3](../img/numeri-05-campi-ordinati/fig03.svg){ .fig .ovale loading=lazy style="width:58%" }
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 6: di massimi e minimi"
 
@@ -363,6 +389,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     Si osservi che talvolta, pur essendo l'insieme limitato, esso può non possedere massimo o minimo.
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 7: di massimi e minimi"
 
     <div class="tabella" markdown><table>
@@ -386,6 +414,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     27 \le  x^3 \Longleftrightarrow \sqrt[3]{27}=3 \le  x {\rm ~~~~e~~~} 3 \in E
     $$
 
+<a id="box-texexpbox1-15"></a>
+
 !!! esempio "Esempio 8: di massimi e minimi"
 
     <div class="tabella" markdown><table>
@@ -407,7 +437,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     ![Figura 5](../img/numeri-05-campi-ordinati/fig05.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-    E' un esempio di insieme limitato ma che non ammette massimo.
+    È un esempio di insieme limitato ma che non ammette massimo.
 
     <div class="tabella" markdown><table>
     <tr>
@@ -418,7 +448,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     </tr>
     <tr>
     <td>VII)</td>
-    <td><span class="arithmatex">\(\left\{ x \in \mathbb{Q}:~~  ~  x  < \sqrt{2}, x\le 4   \right\}\)</span></td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{Q}:~~  ~  x  > \sqrt{2}, x\le 4   \right\}\)</span></td>
     <td>non esiste</td>
     <td>4</td>
     </tr>
@@ -428,9 +458,11 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     ![Figura 6](../img/numeri-05-campi-ordinati/fig06.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-    E' un esempio di insieme limitato ma che non ammette minimo.
+    È un esempio di insieme limitato ma che non ammette minimo.
 
 ## 8. Maggioranti/minoranti e estremi superiori/inferiori
+
+<a id="box-defXX-16"></a>
 
 !!! definizione "Definizione 6: di maggioranti di un insieme"
 
@@ -439,6 +471,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     $$
     \forall x \in E, \qquad  x \le k
     $$
+
+<a id="box-defXX-17"></a>
 
 !!! definizione "Definizione 7: di minorante di un insieme"
 
@@ -452,9 +486,13 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     Osserviamo che un insieme superiormente (inferiormente) limitato ha molti maggioranti (minoranti). Inoltre  i maggioranti (minoranti) non appartengono necessariamente all'insieme stesso.
 
+<a id="box-defXX-18"></a>
+
 !!! definizione "Definizione 8: di estremo superiore"
 
     L' <strong>estremo superiore</strong> di $E$ ( indicato con $\sup E$)  è il minimo  dei maggioranti di $E$.
+
+<a id="box-defXX-19"></a>
 
 !!! definizione "Definizione 9: di estremo inferiore"
 
@@ -463,6 +501,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 !!! chiave ""
 
     Osserviamo che l'estremo superiore (inferiore) può non esistere (insiemi non limitati). Osserviamo inoltre  che se l'insieme possiede massimo (minimo), questo coincide con l'estremo superiore (inferiore).
+
+<a id="box-texexpbox1-20"></a>
 
 !!! esempio "Esempio 9: di estremi superiori e inferiori"
 
@@ -520,7 +560,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     {\rm ~~~~e~~~} \sqrt{2} \in \R
     $$
 
-    ovvero il massimo non esistem ma $\sqrt{2}$ è il minimo dei maggioranti e quindi è il $\sup$.
+    ovvero il massimo non esiste ma $\sqrt{2}$ è il minimo dei maggioranti e quindi è il $\sup$.
 
 ## 9. Definizione assiomatica dei numeri reali
 
@@ -539,6 +579,8 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     L'esempio VI mostra che certamente $\mathbb{Q}$ non ha la proprietà dell'estremo superiore. Invece, $\mathbb{R}$ ha questa proprietà. [^2]
 
 - Nella <strong>definizione assiomatica</strong> di $\mathbb{R}$, questa proprietà costituisce parte della definizione stessa di $\mathbb{R}$
+
+<a id="box-defXX-21"></a>
 
 !!! definizione "Definizione 10:  (assiomatica) dei numeri reali"
 

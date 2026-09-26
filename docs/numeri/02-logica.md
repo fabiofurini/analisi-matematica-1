@@ -33,7 +33,7 @@ title: "Basi di logica e tecniche di dimostrazione"
 
     2. il simbolo “$\wedge$” si chiama <em>congiunzione logica</em> e si legge “e”, “and”
 
-    3. il simbolo “$\neg$” si chiama <em>negazione logica</em> si legge “non”,  “not”.
+    3. il simbolo “$\neg$” si chiama <em>negazione logica</em> e si legge “non”,  “not”.
 
 ## 2. Implicazioni universali e dimostrazioni
 
@@ -81,6 +81,8 @@ title: "Basi di logica e tecniche di dimostrazione"
     p(n) \Rightarrow q(n).
     $$
 
+<a id="box-notationA-1"></a>
+
 !!! definizione "Definizione 1: di implicazione universale"
 
     In generale, un enunciato che presenti un <strong>insieme</strong> $A$, <strong>due predicati</strong> $p(x)$ e $q(x)$ il cui argomento $x$ varia in $A$ e la <strong>struttura logica</strong>:
@@ -96,6 +98,8 @@ title: "Basi di logica e tecniche di dimostrazione"
     La maggior parte dei <strong>teoremi</strong> è costituita da <strong>implicazioni universali</strong>, nelle quali il predicato $p(x)$ fa la parte dell'<strong>ipotesi</strong> e il predicato $q(x)$ fa la parte della <strong>tesi</strong>.
 
 - In particolare la \(\eqref{TTTT}\) è una proposizione (o un enunciato):
+
+    <a id="box-theoXXX-2"></a>
 
     !!! teorema "Proposizione 1"
 
@@ -131,6 +135,8 @@ title: "Basi di logica e tecniche di dimostrazione"
     Per dimostrare la correttezza di un'implicazione universale come la \(\eqref{JJ}\), si considera il generico $x$ che soddisfi l'ipotesi $p(x)$ e si cerca di dimostrare che la tesi $q(x)$ sia vera.
 
 - Proviamo ora una simile relazione per i numeri pari:
+
+<a id="box-theoXXX-3"></a>
 
 !!! teorema "Proposizione 2"
 
@@ -168,6 +174,8 @@ I <strong>controesempi</strong> sono una tecnica importante per dimostrare la <s
 
 - L'implicazione universale pretende che ogni $x$ che soddisfi l'ipotesi soddisfi anche la tesi: perciò, se troviamo anche un solo esempio di $x$ che soddisfi l'ipotesi ma non la tesi, questo significa che l'implicazione universale sia falsa. Non “falsa in un caso”, ma semplicemente “falsa”, perché  l'implicazione universale è vera o falsa una volta per tutte.
 
+<a id="box-notationA-4"></a>
+
 !!! definizione "Definizione 2: di controesempio"
 
     In generale, un esempio che soddisfi l'ipotesi ma non la tesi di una implicazione universale, e che quindi ne dimostri la falsità, si chiama <strong>controesempio</strong>.
@@ -204,7 +212,7 @@ I <strong>controesempi</strong> sono una tecnica importante per dimostrare la <s
 
 ## 3. Legge della contronominale
 
-- E' una tecnica di dimostrazioni indiretta
+- È una tecnica di dimostrazione indiretta
 
 !!! chiave ""
 
@@ -232,6 +240,8 @@ I <strong>controesempi</strong> sono una tecnica importante per dimostrare la <s
 
     vale la seguente proposizione:
 
+    <a id="box-theoXXX-5"></a>
+
     !!! teorema "Proposizione 3"
 
         \begin{equation}
@@ -250,7 +260,7 @@ I <strong>controesempi</strong> sono una tecnica importante per dimostrare la <s
 
     !!! chiave ""
 
-        L'equivalenza tra \(\eqref{AA}\) e \(\eqref{BB}\) è detta <strong>legge della contronominale</strong>. E' un metodo di <em>dimostrazione indiretta</em> che consiste  nel provare la \(\eqref{BB}\) per mostrare che la \(\eqref{AA}\) sia vera (prevede di dimostrare che la negazione della tesi implica la negazione dell'ipotesi).
+        L'equivalenza tra \(\eqref{AA}\) e \(\eqref{BB}\) è detta <strong>legge della contronominale</strong>. È un metodo di <em>dimostrazione indiretta</em> che consiste  nel provare la \(\eqref{BB}\) per mostrare che la \(\eqref{AA}\) sia vera (prevede di dimostrare che la negazione della tesi implica la negazione dell'ipotesi).
 
 Nell'usare la legge della contronominale occorre  saper costruire la <strong>corretta negazione</strong> di una proposizione o proprietà data.
 
@@ -346,9 +356,13 @@ Nell'usare la legge della contronominale occorre  saper costruire la <strong>cor
 
 ## 4. Condizioni sufficienti  e condizioni necessarie
 
+<a id="box-notationA-6"></a>
+
 !!! definizione "Definizione 3: di condizione sufficiente"
 
     Una <strong>condizione sufficiente</strong> è quella che, se soddisfatta, garantisce la verità della proposizione.
+
+<a id="box-notationA-7"></a>
 
 !!! definizione "Definizione 4: di condizione necessaria"
 
@@ -374,9 +388,11 @@ Nell'usare la legge della contronominale occorre  saper costruire la <strong>cor
     \forall n \in \N ~~(~n {\rm ~~dispari~~} \Rightarrow n^2 {\rm ~~dispari}~)
     \end{equation*}
 
-    Quindi “$n$ dispari” è condizione  sufficiente a “$n^2$ dispari” e“$n^2$ dispari” è condizione  necessaria per  “$n$ dispari” .
+    Quindi “$n$ dispari” è condizione  sufficiente a “$n^2$ dispari” e “$n^2$ dispari” è condizione  necessaria per  “$n$ dispari” .
 
 - Proviamo ora che anche la seguente proposizione sia vera:
+
+<a id="box-theoXXX-8"></a>
 
 !!! teorema "Proposizione 4"
 
@@ -397,6 +413,8 @@ Nell'usare la legge della contronominale occorre  saper costruire la <strong>cor
     Poiché $2\;k+1$ è un intero dispari, allora $n$ è dispari. <span class="qed">□</span>
 
 In questo modo abbiamo provato che “$n^2$ dispari” è condizione necessaria e sufficiente per  “$n$ dispari” e anche che “$n$ dispari” è condizione necessaria e sufficiente per “$n^2$ dispari”:
+
+<a id="box-theoXXX-9"></a>
 
 !!! teorema "Proposizione 5"
 
@@ -432,15 +450,21 @@ In questo modo abbiamo provato che “$n^2$ dispari” è condizione necessaria 
 
 In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e sufficiente per  “$n$ pari” e anche che “$n$ pari” è condizione necessaria e sufficiente per  “$n^2$ pari”:
 
+<a id="box-theoXXX-10"></a>
+
 !!! teorema "Proposizione 6"
 
     \begin{equation}
     \label{HHHHHHHHH} \forall n \in \N ~~(~n {\rm ~~pari~~} \Longleftrightarrow n^2 {\rm ~~pari}~)
     \end{equation}
 
+<a id="box-texexpbox1-11"></a>
+
 !!! esempio "Esempio 1: condizioni necessarie e sufficienti"
 
     Ad esempio, per una matrice quadrata di numeri reali, il fatto che il suo determinante sia diverso da zero è condizione necessaria e sufficiente affinché essa sia invertibile.
+
+<a id="box-theoXXX-12"></a>
 
 !!! teorema "Proposizione 7"
 
@@ -458,13 +482,15 @@ In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e s
 
 - Quindi “$n$ dispari” è condizione  necessaria per  “$n$  primo &gt;  2” e “$n$  primo &gt; 2” è condizione  sufficiente a “$n$ dispari”.
 
-- Pero'  “$n$ dispari” non implica “$n$  primo &gt; 2”,  dato che per esempio il numero $9$ non è primo  (controesempio).  Ovvero:
+- Però  “$n$ dispari” non implica “$n$  primo &gt; 2”,  dato che per esempio il numero $9$ non è primo  (controesempio).  Ovvero:
 
     \begin{equation*}
     \forall n \in \N ~~(~n {\rm ~~ dispari~~} \nRightarrow n  {\rm ~~numero~ primo~maggiore~di~} 2~)
     \end{equation*}
 
     Quindi  “$n$ dispari” è condizione  necessaria ma non sufficiente per  “$n$  primo &gt;2” e “$n$  primo &gt; 2” è condizione  sufficiente ma non necessaria a “$n$ dispari”.
+
+<a id="box-theoXXX-13"></a>
 
 !!! teorema "Proposizione 8"
 
@@ -482,13 +508,15 @@ In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e s
 
 - Quindi “$n$ pari” è condizione  necessaria per  “$n$ divisibile per 6” e “$n$  divisibile per 6” è condizione  sufficiente a “$n$ pari”.
 
-- Pero'  “$n$ pari” non implica “$n$  divisibile per 6”,  dato che per esempio il numero $2$ e' pari ma non e' divisibile per sei (controesempio).    Ovvero:
+- Però  “$n$ pari” non implica “$n$  divisibile per 6”,  dato che per esempio il numero $2$ è pari ma non è divisibile per sei (controesempio).    Ovvero:
 
     \begin{equation*}
     \forall n \in \N ~~(~n  {\rm ~~pari}  \nRightarrow ~ n {\rm ~ divisibile~per~~} 6)
     \end{equation*}
 
     Quindi  “$n$ pari” è condizione  necessaria ma non sufficiente per  “$n$  divisibile per 6” e “$n$  divisibile per 6” è condizione  sufficiente ma non necessaria a “$n$ pari”.
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 2: condizioni necessarie/sufficienti ma non sufficienti/necessarie"
 
@@ -500,27 +528,31 @@ In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e s
 
     dato che tutti i quadrati sono rettangoli. 
 
-    Qundi “essere un rettangolo” è condizione necessaria per “essere un quadrato” ed “essere un quadrato” e' condizione sufficiente ad “essere un rettangolo”.
+    Quindi “essere un rettangolo” è condizione necessaria per “essere un quadrato” ed “essere un quadrato” è condizione sufficiente ad “essere un rettangolo”.
 
-    Ma  essere un rettangolo non implica esssere un quadrato
+    Ma  essere un rettangolo non implica essere un quadrato
 
     $$
     {\rm essere~un~rettangolo~~} \nRightarrow {\rm essere~un~quadrato~~}
     $$
 
-    perchè esistono dei rettangoli che non sono dei quadrati.
+    perché esistono dei rettangoli che non sono dei quadrati.
 
-    Quindi “essere un rettangolo” non è condizione sufficiente (ma e' necessaria) per “essere un quadrato” ed “essere un quadrato” non e' condizione  necessaria (ma  e' sufficiente) per “essere un rettangolo”.
+    Quindi “essere un rettangolo” non è condizione sufficiente (ma è necessaria) per “essere un quadrato” ed “essere un quadrato” non è condizione  necessaria (ma  è sufficiente) per “essere un rettangolo”.
 
 ## 5. Dimostrazioni per assurdo
 
-- E' una tecnica di dimostrazioni indiretta
+- È una tecnica di dimostrazione indiretta
+
+<a id="box-notationA-15"></a>
 
 !!! definizione "Definizione 5: di dimostrazione per assurdo"
 
     In generale, la <strong>dimostrazione per assurdo</strong> consiste nel supporre vera l'ipotesi del teorema e la negazione della tesi, e dedurre da questi fatti una contraddizione di qualsiasi tipo.
 
 - Esemplifichiamo la <strong>dimostrazione per assurdo</strong>, col seguente teorema.
+
+<a id="box-theoXXX-16"></a>
 
 !!! teorema "Teorema 1"
 
@@ -544,7 +576,7 @@ In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e s
     n^2 =2\:m^2
     $$
 
-    per cui $n^2$ è pari; ma allora per la \(\eqref{HHHHHHHHH}\) anche $n$ è pari e possiamo scrivere $n = 2k$ per qualche per qualche $k \in \Z$.
+    per cui $n^2$ è pari; ma allora per la \(\eqref{HHHHHHHHH}\) anche $n$ è pari e possiamo scrivere $n = 2k$ per qualche $k \in \Z$.
 
     Quindi la relazione $n^2 = 2\:m^2$ si può riscrivere come:
 
@@ -608,7 +640,7 @@ Il linguaggio logico e il linguaggio insiemistico sono due facce della stessa me
     \big\{~ x \in A:  p(x) {\rm~~è~vera} ~\big\} ~~\subseteq~~ \big\{~ x \in A : q(x) {\rm~~è~vera} ~\big\} .
     $$
 
-### 6.2 Uguaglianza fra insieme e implicazioni universali
+### 6.2 Uguaglianza fra insiemi e implicazioni universali
 
 - Dimostrare l'uguaglianza tra due insiemi, i.e., $A=B$, comporta  dimostrare due implicazioni universali. Formalmente:
 
@@ -636,6 +668,8 @@ Esiste una relazione tra operazioni sugli insiemi e operazioni logiche. Precisam
 
 - Le proprietà distributive dell'unione e dell'intersezione degli insiemi:
 
+<a id="box-notationA-17"></a>
+
 !!! osservazione "Osservazione 1: proprietà distributive (insiemi)"
 
     Dati tre insiemi $\red{A}, \blue{B}$ e $\orange{C}$ abbiamo:
@@ -648,7 +682,9 @@ Esiste una relazione tra operazioni sugli insiemi e operazioni logiche. Precisam
     \red{A} \cup (\blue{B} \cap \orange{C}) = (\red{A} \cup \blue{B}) \cap (\red{A} \cup \orange{C}).
     $$
 
-- Si possono riscrivere in termini di predicati osservando che Il simbolo di l'intersezione $\cap$ equivale alla congiunzione $\wedge$ (“and”) e che il simbolo di l'unione $\cup$ equivale alla disgiunzione $\vee$ (“or”).
+- Si possono riscrivere in termini di predicati osservando che il simbolo dell'intersezione $\cap$ equivale alla congiunzione $\wedge$ (“and”) e che il simbolo dell'unione $\cup$ equivale alla disgiunzione $\vee$ (“or”).
+
+<a id="box-notationA-18"></a>
 
 !!! osservazione "Osservazione 2: proprietà distributive (predicati)"
 
@@ -664,6 +700,8 @@ Esiste una relazione tra operazioni sugli insiemi e operazioni logiche. Precisam
 
 - Le leggi di DeMorgan:
 
+<a id="box-propXX-19"></a>
+
 !!! teorema "Proposizione 9: Leggi di DeMorgan (insiemi)"
 
     Dati gli insiemi $\blue{B}, \orange{C} \subseteq \violet{U}$, abbiamo
@@ -676,11 +714,13 @@ Esiste una relazione tra operazioni sugli insiemi e operazioni logiche. Precisam
     \overline{\blue{B} \cup \orange{C}} = \overline{\blue{B}} \cap \overline{\orange{C}}
     $$
 
-- Si possono riscrivere in termini di predicati. osservando che  l'operazione di complementazione  equivale alla negazione $\neg$ (“not”).
+- Si possono riscrivere in termini di predicati osservando che  l'operazione di complementazione  equivale alla negazione $\neg$ (“not”).
+
+<a id="box-propXX-20"></a>
 
 !!! teorema "Proposizione 10: leggi di DeMorgan (predicati)"
 
-    Dati tre predicati $\blue{q(x)}$ e $\orange{r(x)}$ abbiamo:
+    Dati due predicati $\blue{q(x)}$ e $\orange{r(x)}$ abbiamo:
 
     $$
     \neg \big({\blue{q(x)} \wedge \orange{r(x)}}\big) = \neg {\blue{q(x)}} \vee \neg {\orange{r(x)}}

@@ -28,6 +28,8 @@ title: "Operazioni sui grafici"
 
 ### 1.1 Operazioni relative a $y_1= f(x) +a$
 
+<a id="box-texexpbox1-1"></a>
+
 !!! esempio "Esempio 1: Operazioni sui grafici relative a $y_1= f(x) +a$"
 
     Consideriamo  $y = \ln x$. Allora
@@ -41,6 +43,8 @@ title: "Operazioni sui grafici"
 - Il grafico di $y_1$ si ottiene da quello di $y$ con una <strong>traslazione</strong> di $a$ unità <strong>verso l'alto</strong> se $a> 0$, <strong>verso il basso</strong> se $a < 0$.
 
 ### 1.2 Operazioni relative a $y_2= f(x +a)$
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: Operazioni sui grafici relative a $y_2= f(x +a)$"
 
@@ -60,13 +64,15 @@ title: "Operazioni sui grafici"
 
 - Il grafico di $y_3 = k \: f ( x)$ si ottiene da quello di $f$ moltiplicando per $k$ tutte le ordinate $f(x)$.
 
-- In particolare se $k = -1$ le ordinate sono semplicemente cambiate di segno, cosicché il grafico di $y_2$ è simmetrico, rispetto $x$, a quello di $f$.
+- In particolare se $k = -1$ le ordinate sono semplicemente cambiate di segno, cosicché il grafico di $y_3$ è simmetrico, rispetto $x$, a quello di $f$.
 
 - Osserviamo che se $k > 1$, il grafico si “<strong>stira</strong>” nella <strong>direzione verticale</strong>, dilatando verso l'<strong>alto</strong> le ordinate <strong>positive</strong> e verso il <strong>basso</strong> quelle <strong>negative</strong>.
 
 - Al contrario, se $0 < k < 1$ il grafico si “<strong>contrae</strong>”, sempre in direzione verticale.
 
-- Perciò l'operazione di moltiplicazione di $f ( x)$ per $k$ ha il significato geometrico di <strong>dilatazione</strong> (se $k > 1$) o <strong>contrazione</strong> (se $k < 1$) sull'asse delle $y$, eventualmente accompagnata da una <strong>riflessione rispetto all'asse</strong> $x$, se $k < 0$.
+- Perciò l'operazione di moltiplicazione di $f ( x)$ per $k$ ha il significato geometrico di <strong>dilatazione</strong> (se $|k| > 1$) o <strong>contrazione</strong> (se $|k| < 1$) sull'asse delle $y$, eventualmente accompagnata da una <strong>riflessione rispetto all'asse</strong> $x$, se $k < 0$.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 3: Operazioni sui grafici relative a $y_3= k\: f( x)$"
 
@@ -86,7 +92,9 @@ title: "Operazioni sui grafici"
 
 - Analogamente se $0 < k < 1$ il grafico apparirà “<strong>dilatato</strong>” in <strong>direzione orizzontale</strong>, con oscillazioni più dolci.
 
-- Se $k < 0$, oltre ad una compressione (se $k > 1$) o dilatazione (se $k< 1$) sull'asse delle x ci sarà una <strong>riflessione rispetto all'asse delle $y$</strong>.
+- Se $k < 0$, oltre ad una compressione (se $|k| > 1$) o dilatazione (se $|k|< 1$) sull'asse delle x ci sarà una <strong>riflessione rispetto all'asse delle $y$</strong>.
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 4: Operazioni sui grafici relative a $y_4 =  f(k\: x)$"
 
@@ -95,6 +103,8 @@ title: "Operazioni sui grafici"
     ![Figura 6](../img/funzioni-09-operazioni-grafici/fig06.svg){ .fig .ovale loading=lazy style="width:75%" }
 
     ![Figura 7](../img/funzioni-09-operazioni-grafici/fig07.svg){ .fig .ovale loading=lazy style="width:75%" }
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 5: Operazioni sui grafici relative a $y_4=  f(k\: x)$"
 
@@ -120,6 +130,8 @@ title: "Operazioni sui grafici"
 
 - Il grafico  $y_5=|f(x)|$ si ottiene da quello di $f$  “ribaltando”  simmetricamente rispetto all'asse delle ascisse la parte del grafico di $f$ che si trova nel semipiano inferiore e lasciando inalterato il resto.
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 6: Operazioni sui grafici relative a $y_5=  |f(x)|$"
 
     Consideriamo $y = x$ allora $y_5 = |x|$
@@ -127,6 +139,8 @@ title: "Operazioni sui grafici"
     ![Figura 9](../img/funzioni-09-operazioni-grafici/fig09.svg){ .fig .ovale loading=lazy style="width:61%" }
 
     ![Figura 10](../img/funzioni-09-operazioni-grafici/fig10.svg){ .fig .ovale loading=lazy style="width:61%" }
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 7: Operazioni sui grafici relative a $y_5=  |f( x)|$"
 
@@ -143,6 +157,8 @@ title: "Operazioni sui grafici"
 - Abbiamo $|-x|=|x|$, e quindi $y_6$ è una funzione pari, perciò simmetrica rispetto all'asse delle ordinate.
 
 - Di conseguenza il grafico  $y_6 = f(|x|)$ verrà tracciato <strong>lasciando inalterato il grafico di $f$ nel semipiano destro e ribaltandolo simmetricamente rispetto all'asse delle ordinate</strong>.
+
+<a id="box-texexpbox1-8"></a>
 
 !!! esempio "Esempio 8: Operazioni sui grafici relative a $y_6=f(|x|)$"
 

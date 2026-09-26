@@ -17,6 +17,8 @@ title: "Le funzioni"
 
 - Questa relazione segue, di volta in volta, una certa <strong>legge</strong> o <strong>formula</strong>.
 
+<a id="box-texexpbox1-1"></a>
+
 !!! esempio "Esempio 1: Leggi/formule $\rightarrow$ funzioni"
 
     Se si lascia cadere un oggetto pesante da una certa altezza, lo spazio percorso dall'oggetto varia col tempo $t$ secondo la formula:
@@ -30,6 +32,8 @@ title: "Le funzioni"
     ![Figura 1](../img/funzioni-01-funzioni/fig01.svg){ .fig .ovale loading=lazy style="width:48%" }
 
     Al tempo $t$ viene quindi associato lo spazio percorso $s(t)$: $t  \mapsto s(t)$.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: Leggi/formule $\rightarrow$ funzioni"
 
@@ -69,6 +73,8 @@ title: "Le funzioni"
 
 - In generale, gli <strong>ingressi ammissibili</strong> per una data relazione (funzione) sono soggetti a restrizioni naturali, legate alla natura stessa della relazione.
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 3: Ingressi ammissibili"
 
     - Nel primo esempio il numero reale “di partenza” ha il significato di <em>tempo</em>; immaginando di lasciar cadere l'oggetto a un tempo iniziale $t = 0$ è evidente che ci si dovrà limitare a tempi $t \ge 0$.
@@ -77,11 +83,15 @@ title: "Le funzioni"
 
 ## 2. Definizione di funzione, dominio, codominio e immagine
 
+<a id="box-defDominio-4"></a>
+
 !!! definizione "Definizione 1: di dominio"
 
     L'insieme degli ingressi  ammissibili per una data funzione prende il nome di <strong>dominio</strong>.
 
 - Spesso si usano le locuzioni <strong>variabile indipendente</strong> per indicare un <em>ingresso</em> generico e <strong>variabile dipendente</strong> per indicare l'<em>uscita</em>.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 4: Altri tipi di relazioni"
 
@@ -92,6 +102,8 @@ title: "Le funzioni"
     - In questo caso né $A$ né $B$ sono insiemi numerici, ma tuttavia risulta ben definita una relazione univoca tra questi due insiemi.
 
     Mentre il viceversa non è necessariamente vero: potrebbero esserci due studenti con lo stesso nome.
+
+<a id="box-defFunzione-6"></a>
 
 !!! definizione "Definizione 2: di funzione"
 
@@ -111,9 +123,11 @@ title: "Le funzioni"
     f: x \mapsto f(x)
     \end{equation*}
 
-    (che si legge “$f$ ad $x$ associa $f(x)$") indica come la funzione $f$ agisce sugli elementi.
+    (che si legge “$f$ ad $x$ associa $f(x)$”) indica come la funzione $f$ agisce sugli elementi.
 
 - Il <strong>simbolo $f(x)$ indica l'uscita o il valore</strong>  che la funzione $f$ associa ad $x$, e non va confuso col simbolo $f$, che denota la <strong>funzione stessa</strong>.
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 5: Notazione delle funzioni"
 
@@ -145,9 +159,11 @@ title: "Le funzioni"
 
         Per brevità, a volte si definisce direttamente il valore di $f(x)$ in funzione di $x$, come ad esempio $f(x)=x^2+10$.
 
-- In generale, si può pensare a un a funzione come a una <strong>scatola nera</strong> che a ogni ingresso ammissibile $x$ (<strong>input</strong>) associa un'unica uscita $f(x)$ (<strong>output</strong>) :
+- In generale, si può pensare a una funzione come a una <strong>scatola nera</strong> che a ogni ingresso ammissibile $x$ (<strong>input</strong>) associa un'unica uscita $f(x)$ (<strong>output</strong>) :
 
 ![Figura 3](../img/funzioni-01-funzioni/fig03.svg){ .fig .ovale loading=lazy style="width:75%" }
+
+<a id="box-defImmagine-8"></a>
 
 !!! definizione "Definizione 3: di immagine e immagine del dominio"
 
@@ -161,7 +177,9 @@ title: "Le funzioni"
 
 - Se $f$ ha valori reali, solitamente si scrive $f : A \rightarrow \mathbb{R}$ senza precisare quale sia l'effettiva immagine di $f$.
 
-## 3. Suriezione, iniezioni e biiezioni
+## 3. Suriezioni, iniezioni e biiezioni
+
+<a id="box-notationA-9"></a>
 
 !!! definizione "Definizione 4: di suriezione (funzione suriettiva)"
 
@@ -179,6 +197,8 @@ title: "Le funzioni"
 
 </div>
 
+<a id="box-texexpbox1-10"></a>
+
 !!! esempio "Esempio 6: funzioni suriettive e non suriettive"
 
     - La funzione $f(n)=\lfloor \frac{n}{2} \rfloor$ è una funzione suriettiva da $\mathbb{N}$ a $\mathbb{N}$, dato che ogni elemento nel codominio $\mathbb{N}$ è l'immagine di un qualche valore del dominio.
@@ -186,6 +206,8 @@ title: "Le funzioni"
     - La funzione $f(n)= 2\:n$ non è una funzione suriettiva da $\mathbb{N}$ a $\mathbb{N}$, dato che nessun argomento di $f$ produce $3$ come valore.
 
     - La funzione $f(n)= 2\:n$ è però una funzione suriettiva dai numeri naturali ai numeri pari.
+
+<a id="box-propAAA-11"></a>
 
 !!! osservazione "Osservazione 1"
 
@@ -197,23 +219,25 @@ title: "Le funzioni"
 
     - <strong>Primo passo dell'induzione</strong>
 
-        Se c'è un solo elemento nel codominio ($|B|=1$),  poiché la funzione è suriettiva, abbiamo $|A| \ge 1$ (ogni elemento di $B$ è immagine di almeno un elemento di $A$. Quindi $1 \ge 1$, che è evidentemente vero.
+        Se c'è un solo elemento nel codominio ($|B|=1$),  poiché la funzione è suriettiva, abbiamo $|A| \ge 1$ (ogni elemento di $B$ è immagine di almeno un elemento di $A$). Quindi $1 \ge 1$, che è evidentemente vero.
 
     - <strong>Passo induttivo</strong>
 
         Supponiamo allora che tutte le funzioni con codominio di dimensione $n$ soddisfino $|A_{n}| \ge |B_{n}|$.
 
-        Considerando domini di dimensione  $n+1$ abbiamo $|B_{n+1}|=|B_{n}|+1$. Dato che il codominio ha un elemento in più e la funzione è suriettiva allora abbiamo $|A_{n+1}| \ge |A_{n}| +1$. Sostituendo abbiamo:
+        Considerando codomini di dimensione  $n+1$ abbiamo $|B_{n+1}|=|B_{n}|+1$. Dato che il codominio ha un elemento in più e la funzione è suriettiva allora abbiamo $|A_{n+1}| \ge |A_{n}| +1$. Sostituendo abbiamo:
 
         $$
-        \underbrace{|A_{n}|}_{\le~|A_{n+1}|-1} \ge \underbrace{|B_{n}|}_{=~|B_{n+1}|-1} {\rm~~qundi~~} |A_{n+1}| \ge |B_{n+1}|.
+        \underbrace{|A_{n}|}_{\le~|A_{n+1}|-1} \ge \underbrace{|B_{n}|}_{=~|B_{n+1}|-1} {\rm~~quindi~~} |A_{n+1}| \ge |B_{n+1}|.
         $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-notationA-12"></a>
+
 !!! definizione "Definizione 5: di iniezione (funzione iniettiva)"
 
-    Una funzione $f$ è un <strong>iniezione</strong> se argomenti distinti di $f$ producono valori distinti, ovvero se  $a \neq b$ implica $f(a) \neq f(b)$.
+    Una funzione $f$ è un'<strong>iniezione</strong> se argomenti distinti di $f$ producono valori distinti, ovvero se  $a \neq b$ implica $f(a) \neq f(b)$.
 
 - rappresentazione insiemistica:
 
@@ -225,13 +249,17 @@ title: "Le funzioni"
 
 </div>
 
+<a id="box-texexpbox1-13"></a>
+
 !!! esempio "Esempio 7"
 
-    - La funzione $f(n)=  2\:n$ è una funzione iniettiva da $\mathbb{N}$ a $\mathbb{N}$, dato che ciascun numero pari $b$ è l'immagine attraverso  $f$ di esattamente un elemento del dominio, ovvero $b=\frac{n}{2}$
+    - La funzione $f(n)=  2\:n$ è una funzione iniettiva da $\mathbb{N}$ a $\mathbb{N}$, dato che ciascun numero pari $b$ è l'immagine attraverso  $f$ di esattamente un elemento del dominio, ovvero $n=\frac{b}{2}$
 
-    - La funzione $f(n)=\lfloor \frac{n}{2} \rfloor$ non è una funzione inietttiva dato che il valore 1 si ottiene con due argomenti: $2$ and $3$.
+    - La funzione $f(n)=\lfloor \frac{n}{2} \rfloor$ non è una funzione iniettiva dato che il valore 1 si ottiene con due argomenti: $2$ e $3$.
 
 - Una iniezione è anche chiamata una funzione <strong>one-to-one</strong>.
+
+<a id="box-propAAA-14"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -257,6 +285,8 @@ title: "Le funzioni"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-notationA-15"></a>
+
 !!! definizione "Definizione 6: di biiezione (funzione biunivoca o bigettiva)"
 
     Una funzione $f$ è una <strong>biiezione</strong> se: $(i)$ è <u><em>iniettiva</em></u> e $(ii)$ è <u><em>suriettiva</em></u>.
@@ -264,6 +294,8 @@ title: "Le funzioni"
 - rappresentazione insiemistica:
 
 ![Figura 8](../img/funzioni-01-funzioni/fig08.svg){ .fig .ovale loading=lazy style="width:32%" }
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 8"
 

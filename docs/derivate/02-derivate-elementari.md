@@ -13,6 +13,8 @@ title: "Derivate di funzioni elementari"
 
 - Deriveremo nel seguito le funzioni derivate di alcune delle principali funzioni elementari.
 
+<a id="box-theoZERI-1"></a>
+
 !!! osservazione "Osservazione 1"
 
     Data la funzione $f(x)=c$ con $c \in \R$ costante, la funzione derivata è $f'(x)=0$.
@@ -34,6 +36,8 @@ title: "Derivate di funzioni elementari"
     <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.1 Funzioni derivate di funzioni potenza
+
+<a id="box-theoZERI-2"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -73,6 +77,8 @@ title: "Derivate di funzioni elementari"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-theoZERI-3"></a>
+
 !!! osservazione "Osservazione 3"
 
     Data la funzione $f(x)=x^{\alpha}$ con $\alpha \in \R$, la funzione derivata è $f'(x)=\alpha\;x^{\alpha-1}$ per $x >0$.
@@ -106,6 +112,8 @@ title: "Derivate di funzioni elementari"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 1: Funzione derivata"
 
     <div class="tabella" markdown><table>
@@ -131,6 +139,8 @@ title: "Derivate di funzioni elementari"
 
 ### 1.2 Funzioni derivate di funzioni trigonometriche elementari
 
+<a id="box-theoZERI-5"></a>
+
 !!! osservazione "Osservazione 4"
 
     Data la funzione $f(x)=\sin x$, la funzione derivata è $f'(x)=\cos x$.
@@ -144,7 +154,7 @@ title: "Derivate di funzioni elementari"
     & = {\sin x \: \frac{\cos h -1}{h}} + {\frac{\sin h}{h}} \cos x
     \end{align*}
 
-    Usando il limiti notevole
+    Usando il limite notevole
 
     $$
     \frac{1-\cos h}{h^2} \rr \frac{1}{2} {\rm ~~~per~~~} h \rr 0
@@ -156,7 +166,7 @@ title: "Derivate di funzioni elementari"
     \frac{\cos h - 1}{h}  = {h} \cdot \left( \underbrace{-\frac{1 -\cos h}{h^2}}_{\rr -\frac{1}{2} {\rm ~~~per~~~} h \rr 0} \right) \thicksim -\frac{1}{2} \: h  {\rm ~~~per~~~} h \rr 0.
     $$
 
-    Usando il limiti notevole
+    Usando il limite notevole
 
     $$
     \frac{\sin h}{h} \rr 1 {\rm ~~~per~~~} h \rr 0
@@ -171,11 +181,13 @@ title: "Derivate di funzioni elementari"
     Allora
 
     \begin{align*}
-    f'(x) &=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} = {\sin x \: \frac{\cos h -1}{h}} + {\frac{\sin h}{h}} \cos x  \\[2ex]
+    f'(x) &=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} {\sin x \: \frac{\cos h -1}{h}} + {\frac{\sin h}{h}} \cos x  \\[2ex]
       & = \lim_{h \rr 0} \sin x \: \left(-\frac{1}{2} \: h\right) + \cos x = \cos x
     \end{align*}
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-6"></a>
 
 !!! osservazione "Osservazione 5"
 
@@ -193,13 +205,15 @@ title: "Derivate di funzioni elementari"
     e,  usando i ragionamenti della prova precedente, abbiamo:
 
     \begin{align*}
-    f'(x) &=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} = {\cos x \: \frac{\cos h -1}{h}} - {\frac{\sin h}{h}} \sin x  \\[2ex]
+    f'(x) &=\lim_{h \rr 0} \frac{f(x + h) - f(x)}{h} = \lim_{h \rr 0} {\cos x \: \frac{\cos h -1}{h}} - {\frac{\sin h}{h}} \sin x  \\[2ex]
       & = \lim_{h \rr 0} \cos x \: \left(-\frac{1}{2} \: h\right) - \sin x = -\sin x
     \end{align*}
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.3 Funzioni derivate della funzione esponenziale e logaritmica in base $e$
+
+<a id="box-theoZERI-7"></a>
 
 !!! osservazione "Osservazione 6"
 
@@ -226,6 +240,8 @@ title: "Derivate di funzioni elementari"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-8"></a>
 
 !!! osservazione "Osservazione 7"
 
@@ -259,6 +275,8 @@ title: "Derivate di funzioni elementari"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 2: Retta tangente"
 
     Calcoliamo l'equazione della retta tangente al grafico della funzione
@@ -267,13 +285,15 @@ title: "Derivate di funzioni elementari"
     f(x) = e^x {\rm ~~nel~punto~di~ascissa~~} x = 2
     $$
 
-    Abbiamo $f(2)=e^2,~f'(x)=e^x,~ f'(2)=e^2$, quindi la retta tangete nel punto $(2,e^2)$ è:
+    Abbiamo $f(2)=e^2,~f'(x)=e^x,~ f'(2)=e^2$, quindi la retta tangente nel punto $(2,e^2)$ è:
 
     $$
     y = f(2) + f'(2)(x - 2) = e^2 + e^2 \; (x - 2)
     $$
 
     ![Figura 1](../img/derivate-02-derivate-elementari/fig01.svg){ .fig .ovale loading=lazy style="width:82%" }
+
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 3: Retta tangente"
 
@@ -283,7 +303,7 @@ title: "Derivate di funzioni elementari"
     f(x) = x^3 {\rm ~~nel~punto~di~ascissa~~} x = 2
     $$
 
-    Abbiamo $f(2)=8,~f'(x)=3\:x^2,~ f'(2)=12$, quindi la retta tangete nel punto $(2,8)$ è:
+    Abbiamo $f(2)=8,~f'(x)=3\:x^2,~ f'(2)=12$, quindi la retta tangente nel punto $(2,8)$ è:
 
     $$
     y = f(2) + f'(2)(x - 2) = 8 + 12\: (x - 2)

@@ -11,7 +11,9 @@ title: "Funzioni composte"
 </div>
 ## 1. Funzioni composte
 
-!!! definizione "Definizione 1: di funzioni composta"
+<a id="box-defXX-1"></a>
+
+!!! definizione "Definizione 1: di funzione composta"
 
     Date due funzioni:
 
@@ -29,9 +31,11 @@ title: "Funzioni composte"
 
     ![Figura 1](../img/funzioni-10-composte/fig01.svg){ .fig .ovale loading=lazy style="width:75%" }
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 1: di funzione composta"
 
-    La funzione $x \mapsto |f(x)|$  è in realtà "composta" di due funzioni:
+    La funzione $x \mapsto |f(x)|$  è in realtà “composta” di due funzioni:
 
     1. dato $x$, si calcola $f(x)$
 
@@ -48,6 +52,8 @@ title: "Funzioni composte"
     $$
 
     In altre parole <strong>non vale la proprietà commutativa</strong>.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 2: di composizione di funzioni"
 
@@ -74,6 +80,8 @@ title: "Funzioni composte"
         $$
 
         ![Figura 4](../img/funzioni-10-composte/fig04.svg){ .fig .ovale loading=lazy style="width:73%" }
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 3: di composizione di funzioni"
 

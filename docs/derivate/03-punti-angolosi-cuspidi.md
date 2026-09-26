@@ -11,6 +11,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 </div>
 ## 1. Derivata destra e derivata sinistra
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di derivata destra (sinistra)"
 
     Sia $f: (a, b) \rr \R$,  la funzione $f$ si dice derivabile in $x_0  \in (a, b)$ da destra (da sinistra) se esiste finito
@@ -25,9 +27,13 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
 ## 2. Punti angolosi
 
+<a id="box-defXX-2"></a>
+
 !!! definizione "Definizione 2: di punto angoloso"
 
     Nel caso in cui $f$ sia continua e derivabile da destra e da sinistra (ma non derivabile) in $x_0$ si dice che $f$ abbia un <strong>punto angoloso</strong> in $x = x_0$.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 1: Punti angolosi"
 
@@ -40,7 +46,7 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     Non esistendo il limite del rapporto incrementale, $f$ non è derivabile in $x =0$. La funzione è continua in $x=0$ nell'origine dato che
 
     $$
-    \lim_{x \rr 0^+} f(x)=\lim_{x \rr 0^+} x = 0 {\rm ~~~e~~~} \lim_{x \rr 0^-} f(x) =\lim_{x \rr 0^-} -x = 0 {\rm ~~~~quindi~~~} \lim_{h \rr 0} f(x) = f(0)=0
+    \lim_{x \rr 0^+} f(x)=\lim_{x \rr 0^+} x = 0 {\rm ~~~e~~~} \lim_{x \rr 0^-} f(x) =\lim_{x \rr 0^-} -x = 0 {\rm ~~~~quindi~~~} \lim_{x \rr 0} f(x) = f(0)=0
     $$
 
     Dato che esistono finiti i limiti destro e sinistro del rapporto incrementale in $x=0$, il grafico presenta quindi un punto angoloso in $x=0$.
@@ -77,6 +83,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
     e parleremo di <strong>punto a tangente verticale</strong>.
 
+<a id="box-defXX-4"></a>
+
 !!! definizione "Definizione 3: di punto a tangente verticale"
 
     Se
@@ -95,6 +103,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
     il grafico di $f$ ha una retta tangente ben definita e parallela all'asse delle ascisse.  Parleremo in questo caso di <strong>punto a tangente orizzontale</strong>.
 
+<a id="box-defXX-5"></a>
+
 !!! definizione "Definizione 4: di punto a tangente orizzontale"
 
     Se
@@ -104,6 +114,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     $$
 
     si dice che $f$ ha un <strong>punto a tangente orizzontale</strong> in $x = x_0$.
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 2: Punto a tangente verticale"
 
@@ -133,9 +145,11 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     f(h) = \frac{1}{h^{{2}/{3}}} = h^{-\frac{2}{3}}
     $$
 
-    è una potenza a esponente razionale $\frac{m}{n}$ negativo con $n$ dispari (quindi definita su tutto $\R$) e $m$ pari (quindi funzione pari). Il suo grafico è:
+    è una potenza a esponente razionale $\frac{m}{n}$ negativo con $n$ dispari (quindi definita su $\R \setminus \{0\}$) e $m$ pari (quindi funzione pari). Il suo grafico è:
 
     ![Figura 3](../img/derivate-03-punti-angolosi-cuspidi/fig03.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 3: Punto a tangente verticale"
 
@@ -163,6 +177,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
 ## 4. Cuspidi
 
+<a id="box-defXX-8"></a>
+
 !!! definizione "Definizione 5: di cuspide"
 
     Sia $f$ una funzione continua in $x_0$ se
@@ -172,6 +188,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     $$
 
     si dice che $f$ ha una cuspide in $x_0$.
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 4: Cuspide"
 
@@ -207,6 +225,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
 - Infine, se la funzione è definita solo per $x \ge x_0$ e in tal punto ha derivata (destra) infinita, diremo semplicemente che in tal punto ha tangente verticale, senza parlare né di cuspide né di punto a tangente verticale.
 
+<a id="box-texexpbox1-10"></a>
+
 !!! esempio "Esempio 5: Punto a tangente verticale"
 
     Sia
@@ -232,12 +252,14 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     La funzione ha un punto a tangente verticale  in $x_0=0$. La funzione:
 
     $$
-    f(h) = \frac{1}{h^{{1}/{2}}}  = h^{-\frac{2}{3}}
+    f(h) = \frac{1}{h^{{1}/{2}}}  = h^{-\frac{1}{2}}
     $$
 
     è una potenza a esponente razionale $\frac{m}{n}$ negativo con $n$ pari (quindi definita solo su $\R_+$). Il suo grafico è:
 
     ![Figura 7](../img/derivate-03-punti-angolosi-cuspidi/fig07.svg){ .fig .ovale loading=lazy style="width:75%" }
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 6: Prolungamento per continuità da destra e comportamento nell'origine"
 
@@ -249,7 +271,7 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     \lim_{x \rr 0^+} x\: \log x = 0
     $$
 
-    quindi la funzione  può essere prolungata per continuità da detra in $x = 0$, ponendo:
+    quindi la funzione  può essere prolungata per continuità da destra in $x = 0$, ponendo:
 
     $$
     f(x)= 
@@ -275,6 +297,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
     La funzione ha quindi un punto a tangente verticale  in $x_0=0$.
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 7: Prolungamento per continuità da destra e comportamento nell'origine"
 
     Sia
@@ -285,7 +309,7 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     \lim_{x \rr 0^+} e^{-\frac{1}{x}} = 0
     $$
 
-    quindi la funzione  può essere prolungata per continuità da detra in $x = 0$, ponendo:
+    quindi la funzione  può essere prolungata per continuità da destra in $x = 0$, ponendo:
 
     $$
     f(x)= 
@@ -317,4 +341,4 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     \lim_{h \rr 0^+} \frac{1}{e^{\frac{1}{h}} \; h} = \lim_{y \rr \ip} \frac{y}{e^y} = 0  {\rm ~~~~quindi~~~~} f'_+(x_0)= 0
     $$
 
-    e la funzione ha un punto a tangente orizontale (da destra)  in $x_0=0$.
+    e la funzione ha un punto a tangente orizzontale (da destra)  in $x_0=0$.

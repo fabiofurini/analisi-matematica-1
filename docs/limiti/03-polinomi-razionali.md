@@ -17,9 +17,9 @@ title: "Limiti di polinomi e funzioni razionali"
     P_n(x) = \sum_{i=0}^n a_i \: x^i  \quad  {\rm ~~con~~} a_i \in \R,  {\rm ~per~~} i \in \{0,1,\dots,n\}, ~ {\rm ~~e~~} a_n \neq 0.
     $$
 
-    Il valore $a_i$ è il <strong>coefficiente del monomio</strong> $i$, con $i=0,1,\dots,n$,  mentre $x^i$ è la <strong>parte letterale</strong> del monomio.   In questa scrittura, senza perdita di generalita',   i monomi sono ordinati per valori crescenti degli esponenti.  [^1]
+    Il valore $a_i$ è il <strong>coefficiente del monomio</strong> $i$, con $i=0,1,\dots,n$,  mentre $x^i$ è la <strong>parte letterale</strong> del monomio.   In questa scrittura, senza perdita di generalità,   i monomi sono ordinati per valori crescenti degli esponenti.  [^1]
 
-- Raccogliendo  $a_n  \: x^n$,  ovvero l'ultimo monomio che e' quello di grado  massimo,  si ha:
+- Raccogliendo  $a_n  \: x^n$,  ovvero l'ultimo monomio che è quello di grado  massimo,  si ha:
 
     $$
     P_n(x) = a_n \: x^n \left(
@@ -34,6 +34,8 @@ title: "Limiti di polinomi e funzioni razionali"
     $$
 
     Per calcolare il limite di un polinomio per $x \rr \pm \infty$, basta  calcolare il limite del monomio di grado massimo.
+
+<a id="box-texexpbox1-1"></a>
 
 !!! esempio "Esempio 1: Limiti di polinomi per $x \rr \pm \infty$"
 
@@ -68,7 +70,7 @@ title: "Limiti di polinomi e funzioni razionali"
 - Raccogliendo  al numeratore $a_n  \: x^n$ e al denominatore $b_m  \: x^m$,  ovvero i monomi di grado  massimo,  si ha:
 
     $$
-    \frac{P_n(x)}{P_m(x)} = \frac{a_n \: x^n}{b_m \: x^m} \frac{\left \{ \overbrace{\frac{a_0}{a_n \: x^n} + \frac{a_1}{a_n \: x^{n-1}} + \dots + \frac{a_{n-1}}{a_n \: x}}^{\rr 0 {\rm ~~per~~} x \rr \pm \infty} + 1 \right\}}{\left \{ \underbrace{\frac{b_0}{b_m \: x^m} + \frac{b_1}{b_m \: x^{m-1}} + \dots + \frac{b_{m-1}}{a_m \: x}}_{\rr 0 {\rm ~~per~~} x \rr \pm \infty} + 1 \right\}}.
+    \frac{P_n(x)}{P_m(x)} = \frac{a_n \: x^n}{b_m \: x^m} \frac{\left \{ \overbrace{\frac{a_0}{a_n \: x^n} + \frac{a_1}{a_n \: x^{n-1}} + \dots + \frac{a_{n-1}}{a_n \: x}}^{\rr 0 {\rm ~~per~~} x \rr \pm \infty} + 1 \right\}}{\left \{ \underbrace{\frac{b_0}{b_m \: x^m} + \frac{b_1}{b_m \: x^{m-1}} + \dots + \frac{b_{m-1}}{b_m \: x}}_{\rr 0 {\rm ~~per~~} x \rr \pm \infty} + 1 \right\}}.
     $$
 
 !!! chiave ""
@@ -78,6 +80,8 @@ title: "Limiti di polinomi e funzioni razionali"
     $$
 
     Per calcolare il limite di un rapporto fra polinomi per $x \rr \pm \infty$, basta  calcolare  il limite del rapporto dei monomi di grado massimo.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: Limiti di funzioni razionali per $x \rr \pm \infty$"
 
@@ -102,6 +106,8 @@ title: "Limiti di polinomi e funzioni razionali"
 
     Per calcolare il limite di funzioni razionali (senza il termine costante) per $x \to 0$ bisogna  raccogliere al numeratore e al denominatore le potenze di grado minimo.
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 3: Limiti di funzioni razionali per $x \rr 0$"
 
     Ad esempio:
@@ -121,6 +127,8 @@ title: "Limiti di polinomi e funzioni razionali"
 !!! chiave ""
 
     L'operazione di elevamento a potenza può essere definita anche con base negativa se l'esponente è un razionale (frazione) con denominatore dispari. Quindi in questo caso si può calcolare $x \rr 0$ (altrimenti soltanto $x \rr 0^+$).
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 4: Limiti di quozienti di somme di potenze a esponente razionale "
 
@@ -158,6 +166,8 @@ title: "Limiti di polinomi e funzioni razionali"
     $$
 
     e quindi ci si riconduce al caso di limiti a $\pm\infty$.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 5: Calcolo del limite di funzioni razionali per $x \rr 0^+$ col cambio di variabile"
 
@@ -216,4 +226,4 @@ title: "Limiti di polinomi e funzioni razionali"
     \lim_{x \rr  0}  f(x) =0
     $$
 
-[^1]: Se un monomio di grado $i$ e' mancante abbiamo $a_i=0$,  $a_0$ è il termine noto dato che $x^0=1.$
+[^1]: Se un monomio di grado $i$ è mancante abbiamo $a_i=0$,  $a_0$ è il termine noto dato che $x^0=1.$

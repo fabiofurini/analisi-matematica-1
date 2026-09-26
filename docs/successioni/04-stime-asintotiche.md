@@ -15,6 +15,8 @@ title: "Confronti e stime asintotiche"
 
 - Quando due successioni sono entrambe infinitesimi o entrambe infiniti è utile poter stabilire un confronto tra di esse, per capire quale delle due tenda “<strong>più rapidamente</strong>” a $0$ o all'infinito.
 
+<a id="box-texexpbox1-1"></a>
+
 !!! esempio "Esempio 1: Infiniti"
 
     Esempi di infiniti sono le successioni seguenti:
@@ -22,6 +24,8 @@ title: "Confronti e stime asintotiche"
     $$
     \left\{\log n \right\}, \quad \left\{\sqrt{n} \right\}, \quad \left\{n^2 \right\}, \quad \left\{2^n \right\}
     $$
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: Infinitesimi"
 
@@ -74,6 +78,8 @@ title: "Confronti e stime asintotiche"
         (si legge: $a_n$ è asintotico a $b_n$)
 
 - Il simbolo di asintotico è molto utile nel calcolo dei limiti per le seguenti <strong>proprietà</strong>:
+
+<a id="box-propFF-3"></a>
 
 !!! teorema "Proposizione 1: del comportamento asintotico"
 
@@ -149,6 +155,8 @@ title: "Confronti e stime asintotiche"
 
     3. Analogamente si prova la terza proprietà. <span class="qed">□</span>
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 3: Successioni asintotiche applicando la definizione"
 
     Dimostriamo che:
@@ -185,6 +193,8 @@ title: "Confronti e stime asintotiche"
 
         Ovvero decomporre $\{a_n\}$ nel prodotto di una successione $\{b_n\}$ e una successione $\{c_n\}$ che tende a 1.
 
+<a id="box-texexpbox1-5"></a>
+
 !!! esempio "Esempio 4: Successioni asintotiche col metodo della decomposizione"
 
     Esempio:
@@ -198,6 +208,8 @@ title: "Confronti e stime asintotiche"
     $$
     \underbrace{\left( 1 + \frac{3}{2\:n} + \frac{1}{2\: n^2}\right)}_{c_n} \rr 1
     $$
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 5: Calcolo dei limiti con stime asintotiche"
 
@@ -217,7 +229,7 @@ title: "Confronti e stime asintotiche"
     5\:(n+1)^3=   \underbrace{5 \: (n^3 + 3\:n^2 + 3 \:n +1)}_{c_n} = ~~\underbrace{5 \: n^3}_{c'_n} ~~ \underbrace{\left( 1 + \frac{3}{n} + \frac{3}{n^2} + \frac{1}{n^3}\right)}_{\rr 1} \thicksim 5\: n^3
     $$
 
-    Usando il punto 3 della proposizione \(\eqref{prop_ita:propFF}\) del comportamento asintotico possiamo scrivere:
+    Usando il punto 3 della proposizione [Proposizione 1](#box-propFF-3) del comportamento asintotico possiamo scrivere:
 
     $$
     {\rm se~~} a_n  \thicksim a'_n,  c_n  \thicksim c'_n  {\rm ~~~~allora~~~~} \frac{a_n}{c_n}  \thicksim \frac{a'_n}{c'_n}
@@ -263,6 +275,8 @@ title: "Confronti e stime asintotiche"
     \underbrace{\log n}_{a_n} \thicksim \underbrace{\log \: c_n}_{b_n}
     $$
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 6: Calcolo dei limiti col principio di sostituzione e stime asintotiche"
 
     Calcoliamo il limite
@@ -299,4 +313,4 @@ title: "Confronti e stime asintotiche"
 
     3. <em>Transitiva</em>:  se $a_n \thicksim b_n$  e $b_n \thicksim c_n$ allora $a_n \thicksim c_n$
 
-    fa si che “<strong>asintotico</strong>” sia una <strong>relazione di equivalenza</strong>.
+    fa sì che “<strong>asintotico</strong>” sia una <strong>relazione di equivalenza</strong>.

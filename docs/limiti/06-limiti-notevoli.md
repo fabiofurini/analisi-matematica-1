@@ -29,6 +29,8 @@ title: "Limiti notevoli e stime asintotiche"
 
 ![Figura 2](../img/limiti-06-limiti-notevoli/fig02.svg){ .fig .ovale loading=lazy style="width:80%" }
 
+<a id="box-lemmaXXX-1"></a>
+
 !!! teorema "Lemma 1"
 
     \begin{equation}
@@ -38,7 +40,7 @@ title: "Limiti notevoli e stime asintotiche"
 
 ??? dimostrazione "Dimostrazione"
 
-    Le funzioni $\sin x$ e $x$ funzioni dispari, allora $\frac{\sin x}{x}$ è una funzione pari.  Quindi è sufficiente calcolare
+    Le funzioni $\sin x$ e $x$ sono funzioni dispari, allora $\frac{\sin x}{x}$ è una funzione pari.  Quindi è sufficiente calcolare
 
     $$
     \lim_{x \rr 0^+} \frac{\sin x}{x}
@@ -78,6 +80,8 @@ title: "Limiti notevoli e stime asintotiche"
 
 ![Figura 4](../img/limiti-06-limiti-notevoli/fig04.svg){ .fig .ovale loading=lazy style="width:52%" }
 
+<a id="box-lemmaXXX-2"></a>
+
 !!! teorema "Lemma 2"
 
     \begin{equation}
@@ -99,7 +103,7 @@ title: "Limiti notevoli e stime asintotiche"
 
 ### 1.2 Prolungamento per continuità di una funzione
 
-- In base al limite \(\eqref{LN_1}\) dimostrato, le funzione $f(x) = \frac{\sin x}{x}$, e $g(x) = \frac{1-\cos x}{x^2}$ inizialmente non definite per $x = 0$ possono essere prolungate per continuità anche in $x = 0$, ponendo
+- In base al limite \(\eqref{LN_1}\) dimostrato, le funzioni $f(x) = \frac{\sin x}{x}$, e $g(x) = \frac{1-\cos x}{x^2}$ inizialmente non definite per $x = 0$ possono essere prolungate per continuità anche in $x = 0$, ponendo
 
     $$
     f(x)= 
@@ -143,6 +147,8 @@ title: "Limiti notevoli e stime asintotiche"
 
 - Questo fatto, per la definizione successionale di limite di funzione, implica immediatamente il prossimo limite notevole
 
+<a id="box-lemmaXXX-3"></a>
+
 !!! teorema "Lemma 3"
 
     \begin{equation}
@@ -159,6 +165,8 @@ title: "Limiti notevoli e stime asintotiche"
     \begin{align}
     \left( 1 + \frac{1}{\eta(x)} \right)^{\eta(x)} \rr e
     \end{align}
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 1: Limiti di funzioni che tendono a $e$"
 
@@ -188,11 +196,13 @@ title: "Limiti notevoli e stime asintotiche"
 
 <strong>Dal limite notevole \(\eqref{LN_3}\) se ne possono dedurre altri tre </strong>
 
+<a id="box-corolXXX-5"></a>
+
 !!! teorema "Corollario 1"
 
     \begin{equation}
     \label{LN_4}
-    \lim_{y \rr 0} = \frac{\log(1 + y)}{y} =1
+    \lim_{y \rr 0} \frac{\log(1 + y)}{y} =1
     \end{equation}
 
 ??? dimostrazione "Dimostrazione"
@@ -219,6 +229,8 @@ title: "Limiti notevoli e stime asintotiche"
 
 ![Figura 7](../img/limiti-06-limiti-notevoli/fig07.svg){ .fig .ovale loading=lazy style="width:61%" }
 
+<a id="box-corolXXX-6"></a>
+
 !!! teorema "Corollario 2"
 
     \begin{equation}
@@ -238,6 +250,8 @@ title: "Limiti notevoli e stime asintotiche"
 
 ![Figura 8](../img/limiti-06-limiti-notevoli/fig08.svg){ .fig .ovale loading=lazy style="width:61%" }
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 2: Limite notevole"
 
     Calcoliamo:
@@ -252,11 +266,13 @@ title: "Limiti notevoli e stime asintotiche"
     \lim_{x \rr 0} \frac{e^{-x}-1}{x} = \lim_{z \rr 0} \frac{e^{z}-1}{-z}=-\lim_{z \rr 0} ~~~\underbrace{\frac{e^{z}-1}{z}}_{\rr 1}=-1
     $$
 
+<a id="box-corolXXX-8"></a>
+
 !!! teorema "Corollario 3"
 
     \begin{equation}
     \label{LN_5__2}
-    \lim_{x \rr 0} = \frac{ (1 + x)^{\alpha} -1}{x} = \alpha {\rm ~~~~~~~~con~~~} \alpha \in \R
+    \lim_{x \rr 0} \frac{ (1 + x)^{\alpha} -1}{x} = \alpha {\rm ~~~~~~~~con~~~} \alpha \in \R
     \end{equation}
 
 ??? dimostrazione "Dimostrazione"
@@ -285,6 +301,8 @@ title: "Limiti notevoli e stime asintotiche"
 ![Figura 9](../img/limiti-06-limiti-notevoli/fig09.svg){ .fig .ovale loading=lazy style="width:61%" }
 
 ## 2. Stime asintotiche
+
+<a id="box-defXX-9"></a>
 
 !!! definizione "Definizione 1: di funzioni asintotiche"
 
@@ -328,11 +346,13 @@ title: "Limiti notevoli e stime asintotiche"
       \big(1+\varepsilon(x)\big)^{\alpha}  & \thicksim 1+ \alpha \; \varepsilon(x)  {\rm ~~~~~~~~con~~~} \alpha \in \R
     \end{align}
 
-- Le formule \(\eqref{LIM_NOT_C__2}\) si deducono dalla formule \(\eqref{LIMMMM}\)  semplicemente con un cambio di variabile
+- Le formule \(\eqref{LIM_NOT_C__2}\) si deducono dalle formule \(\eqref{LIMMMM}\)  semplicemente con un cambio di variabile
 
     $$
     x = \varepsilon(x)
     $$
+
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 3: Limiti con funzioni asintotiche"
 
@@ -364,6 +384,8 @@ title: "Limiti notevoli e stime asintotiche"
     $$
     \lim_{x \rr 1} \frac{(x-1)^2}{e^{3\: (x-1)^2}-1} = \lim_{x \rr 1} \frac{(x-1)^2}{3\: (x-1)^2} = \frac{1}{3}
     $$
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 4: Limiti con funzioni asintotiche"
 
@@ -420,6 +442,8 @@ title: "Limiti notevoli e stime asintotiche"
     \lim_{x \rr 0} \frac{\log(1+2\:x)}{\sin 3\:x} = \lim_{x \rr 0} \frac{2\:x}{3\:x} = \frac{2}{3}
     $$
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 5: Limiti con funzioni asintotiche"
 
     $$
@@ -461,9 +485,13 @@ title: "Limiti notevoli e stime asintotiche"
 
 - Le stime asintotiche non servono solo per calcolare limiti, ma anche per tracciare il grafico qualitativo di una funzione nell'intorno di un certo punto, oppure per $x \rr \pm \infty$.
 
+<a id="box-texexpbox1-13"></a>
+
 !!! esempio "Esempio 6: Grafici noti"
 
     ![Figura 10](../img/limiti-06-limiti-notevoli/fig10.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 7: Grafico qualitativo"
 
@@ -490,6 +518,8 @@ title: "Limiti notevoli e stime asintotiche"
         $$
 
         dunque il suo grafico sarà simile, in un intorno di $x = 0$, a quello di $x^{\frac{1}{3}}$ in particolare, avrà tangente verticale nell'origine.
+
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 8: Grafico reale"
 
@@ -533,6 +563,8 @@ title: "Limiti notevoli e stime asintotiche"
 
 - Solo nel caso in cui una funzione ha crescita lineare, è possibile che ammetta asintoto obliquo
 
+<a id="box-texexpbox1-16"></a>
+
 !!! esempio "Esempio 9: Crescita di una funzione all'infinito"
 
     Per esempio, con $x \rr \ip$
@@ -540,6 +572,8 @@ title: "Limiti notevoli e stime asintotiche"
     - Crescita sopralineare:$~~~$  esponenziali $a^x$ e  le potenze $x^a$ con $a > 1$.
 
     - Crescita sottolineare:$~~~$ logaritmi $\log_a x$ e  potenze $x^a$ con $0 < a < 1$.
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 10: Crescita di una funzione all'infinito"
 
@@ -565,6 +599,8 @@ title: "Limiti notevoli e stime asintotiche"
         y = 2\:x + 1 {\rm ~~per~~} x \rr \im
         $$
 
+<a id="box-texexpbox1-18"></a>
+
 !!! esempio "Esempio 11: Grafici"
 
     $$
@@ -574,10 +610,12 @@ title: "Limiti notevoli e stime asintotiche"
     ![Figura 12](../img/limiti-06-limiti-notevoli/fig12.svg){ .fig .ovale loading=lazy style="width:80%" }
 
     $$
-    f(x) = e^{\frac{1}{x}}, ~~~ \lim_{x \to \ip} e^{\frac{1}{x}} = 1, ~~~ \lim_{x \to \im} e^{\frac{1}{x}} = 1, , ~~~ \lim_{x \to 0^-} e^{\frac{1}{x}} = 0, ~~~ \lim_{x \to 0^+} e^{\frac{1}{x}} = \ip
+    f(x) = e^{\frac{1}{x}}, ~~~ \lim_{x \to \ip} e^{\frac{1}{x}} = 1, ~~~ \lim_{x \to \im} e^{\frac{1}{x}} = 1, ~~~ \lim_{x \to 0^-} e^{\frac{1}{x}} = 0, ~~~ \lim_{x \to 0^+} e^{\frac{1}{x}} = \ip
     $$
 
     ![Figura 13](../img/limiti-06-limiti-notevoli/fig13.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-texexpbox1-19"></a>
 
 !!! esempio "Esempio 12: Grafico reale"
 

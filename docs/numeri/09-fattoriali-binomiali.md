@@ -11,6 +11,8 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 </div>
 ## 1. Fattoriali
 
+<a id="box-notationA-1"></a>
+
 !!! definizione "Definizione 1: di fattoriale di $n$"
 
     Il fattoriale di $n$ è il prodotto dei primi $n$  interi. Si indica con $n!$ e si legge “$n$ fattoriale”. In formule:
@@ -67,7 +69,9 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
         \frac{n!}{(n-k)!}  =  n \cdot (n-1) \cdot (n-2) \cdot {\rm} \dots {\rm} \cdot (n-k+1),  {\rm ~~con~~} k\ge 1
         \end{equation}
 
-        Con $k\ge 1$,  diventa  il prodotto di $k$ fattori, partendo da $n$ e decrescendo di una unita' alla volta.
+        Con $k\ge 1$,  diventa  il prodotto di $k$ fattori, partendo da $n$ e decrescendo di una unità alla volta.
+
+    <a id="box-texexpbox1-2"></a>
 
     !!! esempio "Esempio 1: Calcolo del fattoriale"
 
@@ -78,6 +82,8 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
         Conviene sempre semplificare il più possibile le espressioni che contengono il fattoriale, prima di calcolarle!
 
 ## 2. Coefficienti binomiali
+
+<a id="box-notationA-3"></a>
 
 !!! definizione "Definizione 2: di coefficiente binomiale"
 
@@ -142,6 +148,8 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
 La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente formula (da cui deriva il nome di coefficiente binomiale):
 
+<a id="box-PROP_NEWTON-4"></a>
+
 !!! osservazione "Osservazione 1: formula di Newton"
 
     Per ogni intero $n \ge 0$, con $a, b \in \R$, vale:
@@ -157,7 +165,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 
     - <strong>Primo passo dell'induzione</strong>
 
-        Sia $n = 0$. Allora l'asserto diventa: $(a+b)^0 = {{0}\choose{0}} \; a^{0} \; b^0$ cioe' $1 = 1$ che è evidentemente vero.
+        Sia $n = 0$. Allora l'asserto diventa: $(a+b)^0 = {{0}\choose{0}} \; a^{0} \; b^0$ cioè $1 = 1$ che è evidentemente vero.
 
     - <strong>Passo induttivo</strong>
 
@@ -174,6 +182,8 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
         che è esattamente l'asserto voluto, per $n + 1$.
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-PROP_XX-5"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -199,7 +209,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-### 2.2 Calcolo ricursivo dei coefficienti binomiali
+### 2.2 Calcolo ricorsivo dei coefficienti binomiali
 
 !!! chiave ""
 
@@ -214,6 +224,8 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     3. Per $0 < k < n$, il numero ${{n}\choose{k}}$ viene scritto all'incrocio della $n$-esima riga e della $k$-esima colonna.
 
     4. Il numero ${{n}\choose{k}}$ risulta dalla somma dei due numeri che si trovano nella riga precedente, quello sulla stessa colonna e quello sulla colonna precedente.
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 2: triangolo di Tartaglia (o di Pascal)"
 
@@ -335,21 +347,25 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     </tr>
     </table></div>
 
-    Per calcolare il il coefficiente binomiale ${{5}\choose{3}}$, corrispondente alla cella blue, si può usare la relazione \(\eqref{TT}\) e sommare i due coefficienti binomiali: ${{4}\choose{2}}$ e ${{4}\choose{3}}$, corrispondenti alle celle rosse:
+    Per calcolare il coefficiente binomiale ${{5}\choose{3}}$, corrispondente alla cella blu, si può usare la relazione \(\eqref{TT}\) e sommare i due coefficienti binomiali: ${{4}\choose{2}}$ e ${{4}\choose{3}}$, corrispondenti alle celle rosse:
 
     $$
     {{5}\choose{3}} =  {{4}\choose{2}} +  {{4}\choose{3}} = 6+4 =10.
     $$
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 3: calcolo della potenza di un binomio usando il triangolo di Tartaglia"
 
-    Grazie al precedente triangolo di Tartaglia e alla formulata di Newton \(\eqref{NEWTON}\) possiamo calcolare:
+    Grazie al precedente triangolo di Tartaglia e alla formula di Newton \(\eqref{NEWTON}\) possiamo calcolare:
 
     $$
     (a+b)^5 = a^5 + 5\: a^4 \: b + 10\: a^3 \:b^2 + 10 \:a^2 \:b^3 + 5 \: a\: b^4 + b^5
     $$
 
 ## 3. Valore assoluto
+
+<a id="box-defXX-8"></a>
 
 !!! definizione "Definizione 3: di valore assoluto"
 
@@ -374,6 +390,8 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     \end{equation}
 
 ### 3.1 Disuguaglianza triangolare in $\R$
+
+<a id="box-notationA-9"></a>
 
 !!! osservazione "Osservazione 3: disuguaglianza triangolare in $\R$"
 
@@ -435,6 +453,8 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     $$
     b =  g - h, \quad  c = h
     $$
+
+<a id="box-notationA-10"></a>
 
 !!! osservazione "Osservazione 4: disuguaglianza triangolare inversa in $\R$"
 

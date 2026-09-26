@@ -31,6 +31,8 @@ title: "Serie di funzioni"
 
     e $c$ è un opportuno punto tra $x_0$ e $x$.
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: serie di Taylor"
 
     Se una funzione $f$ ha derivate di ogni ordine, la serie
@@ -49,11 +51,13 @@ title: "Serie di funzioni"
     E_n(x) \rr 0 {\rm ~~~per~~~} n \rr \ip
     $$
 
-    allora la serie di serie di Taylor è convergente e la sua somma equivale a $f(x)$. Ciò equivale a dire che la somma parziale $n$-esima della serie ammette limite finito e tale limite è precisamente $f(x)$. In formule:
+    allora la serie di Taylor è convergente e la sua somma equivale a $f(x)$. Ciò equivale a dire che la somma parziale $n$-esima della serie ammette limite finito e tale limite è precisamente $f(x)$. In formule:
 
     $$
     \underbrace{T_{n,x_0} (x)}_{{\rm polinomio~di~Taylor}} =  \sum_{k=0}^n \frac{f^{(k)}(x_0)}{k!} \; (x-x_0)^k \rr f(x) {\rm ~~~per~~~} n \rr \ip
     $$
+
+<a id="box-defXX-2"></a>
 
 !!! definizione "Definizione 2: funzione sviluppabile in serie di Taylor in un intervallo"
 
@@ -79,6 +83,8 @@ title: "Serie di funzioni"
 
 #### La serie di Taylor della funzione esponenziale
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 1: formula/sviluppo di MacLaurin dell'esponenziale"
 
     Formula/sviluppo di MacLaurin con resto secondo Lagrange di ordine $n$ dell'esponenziale:
@@ -88,6 +94,8 @@ title: "Serie di funzioni"
     $$
 
     ![Figura 1](../img/serie-04-serie-funzioni/fig01.svg){ .fig .ovale loading=lazy style="width:64%" }
+
+<a id="box-theoKKKK-4"></a>
 
 !!! osservazione "Osservazione 1: serie di Taylor della funzione esponenziale"
 
@@ -125,7 +133,9 @@ title: "Serie di funzioni"
     \frac{x^{n+1} }{(n+1)!} \; e^c\rr 0 {\rm ~~per~~} n \rr \ip
     $$
 
-    dato che è un prodotto di un successione infinitesima per una limitata. Abbiamo quindi dimostrato che la funzione $e^x$ si può scrivere come somma di una serie di potenze, la sua serie di Taylor, convergente per ogni $x \in \R$. <span class="qed">□</span>
+    dato che è un prodotto di una successione infinitesima per una limitata. Abbiamo quindi dimostrato che la funzione $e^x$ si può scrivere come somma di una serie di potenze, la sua serie di Taylor, convergente per ogni $x \in \R$. <span class="qed">□</span>
+
+<a id="box-theoZERI-5"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -147,13 +157,13 @@ title: "Serie di funzioni"
 
 - Di conseguenza abbiamo due metodi per il calcolo approssimato del valore di $e$:
 
-    1. Il primo metodo di basa sulla formula \(\eqref{first}\), e fissando $k=n$ abbiamo l'approssimazione:
+    1. Il primo metodo si basa sulla formula \(\eqref{first}\), e fissando $k=n$ abbiamo l'approssimazione:
 
         $$
         e \approx \left(1 + \frac{1}{n} \right)^n
         $$
 
-    2. Il secondo metodo di basa sulla formula \(\eqref{second}\), e calcolando la somma parziale $n$-esima abbiamo l'approssimazione:
+    2. Il secondo metodo si basa sulla formula \(\eqref{second}\), e calcolando la somma parziale $n$-esima abbiamo l'approssimazione:
 
         $$
         e \approx  \sum_{k=0}^{n} \frac{1}{k!}
@@ -204,6 +214,8 @@ title: "Serie di funzioni"
 
 #### Le serie di Taylor delle funzioni trigonometriche elementari
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 2: formula/sviluppo di MacLaurin del seno e del coseno"
 
     Formula/sviluppo di MacLaurin con resto secondo Lagrange di ordine dispari del seno:
@@ -223,6 +235,8 @@ title: "Serie di funzioni"
     \end{align*}
 
     ![Figura 4](../img/serie-04-serie-funzioni/fig04.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-theoKKKK-7"></a>
 
 !!! osservazione "Osservazione 3: serie di Taylor delle funzioni trigonometriche elementari"
 

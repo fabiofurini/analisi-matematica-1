@@ -11,6 +11,8 @@ title: "Funzioni trigonometriche"
 </div>
 ## 1. Funzioni trigonometriche
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: funzione seno e funzione coseno"
 
     Le funzioni trigonometriche:
@@ -73,7 +75,7 @@ title: "Funzioni trigonometriche"
     $$
     \begin{cases}
     {\rm se~~~}  x \in (2\;k\;\pi+ \pi,~ 2\;k\;\pi + 2\; \pi),~ \forall k \in \Z   & f {\rm ~~è~crescente}  \\[3ex]
-    {\rm se~~~}  x \in (2\;k\;\pi ~,~ 2\;k\;\pi + 2\; \pi),~ \forall k \in \Z   & f {\rm ~~è~decrescente}    
+    {\rm se~~~}  x \in (2\;k\;\pi ~,~ 2\;k\;\pi + \pi),~ \forall k \in \Z   & f {\rm ~~è~decrescente}    
     \end{cases}
     $$
 
@@ -248,11 +250,11 @@ title: "Funzioni trigonometriche"
     <td>\-</td>
     <td><span class="arithmatex">\(\pm \sqrt{1 - \cos^2 x}\)</span></td>
     <td><span class="arithmatex">\(\pm \sqrt{\frac{\tan^2 x}{1 + \tan^2 x}}\)</span></td>
-    <td><span class="arithmatex">\(\pm \sqrt{\frac{1}{1 - \cot^2 x}}\)</span></td>
+    <td><span class="arithmatex">\(\pm \sqrt{\frac{1}{1 + \cot^2 x}}\)</span></td>
     </tr>
     <tr>
     <td><span class="arithmatex">\(\cos x\)</span></td>
-    <td><span class="arithmatex">\(\pm \sqrt{1 + \sin^2 x}\)</span></td>
+    <td><span class="arithmatex">\(\pm \sqrt{1 - \sin^2 x}\)</span></td>
     <td>\-</td>
     <td><span class="arithmatex">\(\pm \sqrt{\frac{1}{1 + \tan^2 x}}\)</span></td>
     <td><span class="arithmatex">\(\pm \sqrt{\frac{\cot^2 x}{1 + \cot^2 x}}\)</span></td>

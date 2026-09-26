@@ -182,6 +182,9 @@ class Stato:
     etichette: dict = field(default_factory=dict)  # nome -> [nomi unici, in ordine]
     visti: dict = field(default_factory=dict)       # nome -> quante volte già definito
     math: list = field(default_factory=list)        # formule in linea protette
+    box: dict = field(default_factory=dict)         # etichetta -> [(nome, ancora)] (prima passata)
+    box_visti: dict = field(default_factory=dict)   # etichetta -> ultimo (nome, ancora) già incontrato
+    box_prima: dict = field(default_factory=dict)   # risultato della prima passata
 
     def conta(self, tipo: str) -> int:
         self.contatori[tipo] = self.contatori.get(tipo, 0) + 1
@@ -232,6 +235,34 @@ def nuova_etichetta(nome: str, st: Stato) -> str:
     unico = re.sub(r"[^A-Za-z0-9_:.-]", "_", unico)
     st.etichette.setdefault(nome, []).append(unico)
     return unico
+
+
+def registra_box(etich: str, nome: str, st: Stato) -> str:
+    base = re.sub(r"[^A-Za-z0-9_-]", "_", etich.strip()) or "box"
+    n = sum(1 for v in st.box_visti.values() for _ in [0]) + 1
+    ancora = f"box-{base}-{st.contatori.get('_box', 0) + 1}"
+    st.contatori["_box"] = st.contatori.get("_box", 0) + 1
+    st.box.setdefault(etich.strip(), []).append((nome, ancora))
+    st.box_visti[etich.strip()] = (nome, ancora)
+    return ancora
+
+
+def riferimento_box(arg: str, st: Stato):
+    """\\ref/\\eqref a un box (teorema, definizione, esempio): diventa un link
+    «Teorema 3». Le etichette dei box nelle note hanno spesso un prefisso
+    (theo_ita:, mytheorem:, def_ita:...) che si toglie."""
+    nome = arg.strip()
+    candidati = [nome, re.sub(r"^[A-Za-z_]+:", "", nome)]
+    for c in candidati:
+        if c in st.etichette and c == nome:
+            return None  # è un'equazione
+        if c in st.box_visti:
+            testo, ancora = st.box_visti[c]
+            return f"[{testo}](#{ancora})"
+        if c in st.box_prima:
+            testo, ancora = st.box_prima[c][0]
+            return f"[{testo}](#{ancora})"
+    return None
 
 
 def risolvi_etichetta(nome: str, st: Stato) -> str:
@@ -389,6 +420,11 @@ def inline_cmd(s: str, st: Stato) -> str:
                 continue
             if name in ("ref", "eqref", "pageref"):
                 arg, j = read_group(s, j)
+                rif = riferimento_box(arg, st)
+                if rif:
+                    out.append(rif)
+                    i = j
+                    continue
                 lab = risolvi_etichetta(arg, st)
                 if name == "eqref":
                     store_math = f"\\(\\eqref{{{lab}}}\\)"
@@ -870,7 +906,8 @@ def ambiente(env: str, corpo: str, st: Stato) -> str | None:
         etich, k = read_group(corpo, k)
         num = st.conta(nome)
         tit = f"{nome} {num}" + (f": {inline(titolo, st)}" if titolo.strip() else "")
-        return box(tipo, tit, converti(corpo[k:], st))
+        ancora = registra_box(etich, f"{nome} {num}", st)
+        return f'<a id="{ancora}"></a>\n\n' + box(tipo, tit, converti(corpo[k:], st))
     if env == "proof":
         opt, k = read_opt(corpo, 0)
         corpo_md = converti(corpo[k:], st)
@@ -892,10 +929,12 @@ def ambiente(env: str, corpo: str, st: Stato) -> str | None:
         contenuto = corpo[k:]
         me = re.search(r"example=\{", opt)
         if me:
-            titolo, _ = read_group(opt, me.end() - 1)
+            titolo, fine = read_group(opt, me.end() - 1)
+            etich, _ = read_group(opt, fine)
             num = st.conta("Esempio")
             tit = f"Esempio {num}" + (f": {inline(titolo, st)}" if titolo.strip() else "")
-            return box("esempio", tit, converti(contenuto, st))
+            ancora = registra_box(etich, f"Esempio {num}", st)
+            return f'<a id="{ancora}"></a>\n\n' + box("esempio", tit, converti(contenuto, st))
         if "gray" in opt:
             if re.search(r"\\begin\{proof\}", contenuto) and re.sub(r"\\begin\{proof\}.*\\end\{proof\}", "", contenuto, flags=re.S).strip() == "":
                 return converti(contenuto, st)  # la proof interna diventa il box apribile
@@ -1008,6 +1047,10 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str) -> dict:
     (d / "preambolo.tex").write_text(pre)
     (d / "cartella.txt").write_text(str(fonte.parent))
 
+    # prima passata: numerazione dei box, per i riferimenti in avanti
+    prova = Stato(cid=cid, fonte=fonte, preambolo=pre)
+    converti(corpo, prova)
+    st.box_prima = prova.box
     md = converti(corpo, st)
     md = md.replace("\x01", "<").replace("\x02", ">")
     testa = [

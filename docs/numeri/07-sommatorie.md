@@ -11,6 +11,8 @@ title: "Sommatorie e progressioni geometriche"
 </div>
 ## 1. Sommatorie
 
+<a id="box-notationA-1"></a>
+
 !!! definizione "Definizione 1: di sommatoria"
 
     Siano $a_1 , a_2, \dots, a_n$ , $n$ numeri reali. La loro somma
@@ -25,9 +27,11 @@ title: "Sommatorie e progressioni geometriche"
     \sum_{k=1}^n a_k
     $$
 
-    che si legge: “sommatoria per $i$ da $1$ a $n$ di $a_k$”. Il simbolo $k$ si dice indice di sommatoria.
+    che si legge: “sommatoria per $k$ da $1$ a $n$ di $a_k$”. Il simbolo $k$ si dice indice di sommatoria.
 
 - Il simbolo di sommatoria è dunque una pura e semplice stenografia, che tuttavia risulta molto utile quando i termini $a_k$ sono definiti esplicitamente in funzione dell'indice $k$.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 1: sommatorie"
 
@@ -37,6 +41,8 @@ title: "Sommatorie e progressioni geometriche"
     \end{align*}
 
 - L'indice di sommatoria è un <strong>indice muto</strong>. Questo vuol dire che se si sostituisce $k$ con $i$, $j$ o qualunque altro indice (in tutte le sue occorrenze) il valore della sommatoria non cambia.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 2: indice muto"
 
@@ -57,6 +63,8 @@ title: "Sommatorie e progressioni geometriche"
     in quanto i due simboli indicano la somma, rispettivamente, dei primi $n$ oppure dei primi $m$ quadrati (se $n \neq m$ il risultato sarà diverso).
 
 ### 1.1 Principali proprietà delle sommatorie
+
+<a id="box-propSUM-4"></a>
 
 !!! osservazione "Osservazione 1"
 
@@ -88,6 +96,8 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-propSUM-5"></a>
+
 !!! osservazione "Osservazione 2"
 
     Date due sommatorie $\sum_{k=1}^n a_k$ e $\sum_{k=1}^n b_k$, abbiamo:
@@ -106,6 +116,8 @@ title: "Sommatorie e progressioni geometriche"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-propSUM-6"></a>
 
 !!! osservazione "Osservazione 3"
 
@@ -126,6 +138,8 @@ title: "Sommatorie e progressioni geometriche"
 
 ### 1.2 Alcune sommatorie importanti
 
+<a id="box-propSUM-7"></a>
+
 !!! osservazione "Osservazione 4: somma dei primi $n$ numeri naturali (senza lo zero)"
 
     Per ogni numero naturale $n \ge 1$, vale:
@@ -145,6 +159,8 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-propYY-8"></a>
+
 !!! osservazione "Osservazione 5: somma dei primi $n$ numeri dispari"
 
     Per ogni numero naturale $n \ge 1$, vale:
@@ -155,7 +171,7 @@ title: "Sommatorie e progressioni geometriche"
 
 ??? dimostrazione "Dimostrazione"
 
-    Sfruttando le proprietà delle sommatoria abbiamo:
+    Sfruttando le proprietà delle sommatorie abbiamo:
 
     \begin{align*}
     \sum_{k=1}^{n} (2\:k-1) &= 2\:\sum_{k=1}^{n} k - {\sum_{k=1}^{n} 1}\\[2ex]
@@ -171,6 +187,8 @@ title: "Sommatorie e progressioni geometriche"
     \end{align*}
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-propYY-9"></a>
 
 !!! osservazione "Osservazione 6: somma dei primi $n$ numeri pari (senza lo zero)"
 
@@ -190,9 +208,11 @@ title: "Sommatorie e progressioni geometriche"
 
 ## 2. Progressioni geometriche
 
+<a id="box-notationA-10"></a>
+
 !!! definizione "Definizione 2: di progressione geometrica"
 
-    Una sequenza di numeri reali sono in <strong>progressione geometrica</strong> se il rapporto tra ogni termine (a partire dal secondo) e il precedente è costante. Tale costante si dice ragione della progressione.
+    Una sequenza di numeri reali è in <strong>progressione geometrica</strong> se il rapporto tra ogni termine (a partire dal secondo) e il precedente è costante. Tale costante si dice ragione della progressione.
 
 !!! chiave ""
 
@@ -202,7 +222,7 @@ title: "Sommatorie e progressioni geometriche"
     a,~~ a \: q,~~ a \: q^2,~~ a \: q^3,~~ a \: q^4,~~ \dots
     $$
 
-    Ogni termine (a partire dal secondo) si ottiene dal precendente moltiplicandolo per $q$. Il  $k$-esimo termine ($k \in \N$, $k \ge 1$) si può  scrivere $a\: q^{k-1}$ e abbiamo:
+    Ogni termine (a partire dal secondo) si ottiene dal precedente moltiplicandolo per $q$. Il  $k$-esimo termine ($k \in \N$, $k \ge 1$) si può  scrivere $a\: q^{k-1}$ e abbiamo:
 
     \begin{align*}
     &a\: q^{1-1}=a\: q^0=a   &{\rm primo~termine,~in~posizione~} k=1\\
@@ -211,6 +231,8 @@ title: "Sommatorie e progressioni geometriche"
     &a\: q^{4-1}=a\: q^3   &{\rm quarto~termine,~in~posizione~} k=4\\
     &\dots &   \dots
     \end{align*}
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 3: progressioni geometriche"
 
@@ -229,6 +251,8 @@ title: "Sommatorie e progressioni geometriche"
         $$
 
 ### 2.1 Sommatorie dei termini delle progressioni geometriche
+
+<a id="box-propXX-12"></a>
 
 !!! osservazione "Osservazione 7: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
 
@@ -281,12 +305,14 @@ title: "Sommatorie e progressioni geometriche"
     chiaramente:
 
     \begin{equation*}
-    \frac{q^n-1}{q-1} = \frac{1-q^n}{1-q} {\rm ~~e~quindi~abbiamo~anche~~~~} \sum_{k=1}^{n} a \; q^k  = 
+    \frac{q^n-1}{q-1} = \frac{1-q^n}{1-q} {\rm ~~e~quindi~abbiamo~anche~~~~} \sum_{k=1}^{n} a \; q^{k-1}  = 
     \begin{cases}
     a \; \left(\frac{1-q^{n}}{1-q} \right)& {\rm ~~~se~~~~}  q \neq 1\\[2ex]
     a \; n & {\rm ~~~altrimenti} 
     \end{cases}
     \end{equation*}
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 4: somma dei primi $n$ termini di progressioni geometriche"
 

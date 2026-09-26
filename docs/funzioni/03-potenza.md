@@ -11,6 +11,8 @@ title: "Funzioni potenza"
 </div>
 ## 1. Funzioni potenza
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: funzioni potenza"
 
     Dato $\alpha \in \R, \alpha \neq 0$, la funzione:
@@ -100,6 +102,8 @@ title: "Funzioni potenza"
 
     </div>
 
+    <a id="box-texexpbox1-2"></a>
+
     !!! esempio "Esempio 1: grafici di funzioni potenza con esponente razionale $\frac{m}{n}$ e $n$ dispari"
 
         Con $m$ pari:
@@ -132,6 +136,8 @@ title: "Funzioni potenza"
 
     </div>
 
+    <a id="box-texexpbox1-3"></a>
+
     !!! esempio "Esempio 2: grafici di funzioni potenza con esponente razionale $\frac{m}{n}$ e $n$ pari"
 
         ![Figura 9](../img/funzioni-03-potenza/fig09.svg){ .fig .ovale loading=lazy style="width:55%" }
@@ -160,11 +166,15 @@ title: "Funzioni potenza"
 
     </div>
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 3: grafici di funzioni potenza con esponente reale"
 
     ![Figura 12](../img/funzioni-03-potenza/fig12.svg){ .fig .ovale loading=lazy style="width:55%" }
 
 ### 1.3 Polinomi
+
+<a id="box-defXX-5"></a>
 
 !!! definizione "Definizione 2: polinomio"
 
@@ -184,6 +194,8 @@ title: "Funzioni potenza"
     2. la funzione potenza $x^i$ con esponente intero $i$  è la <strong>parte letterale</strong> del monomio
 
     Il valore $a_0$ è il <strong>termine noto</strong> del polinomio dato che $x^0=1.$
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 4: polinomio"
 
@@ -217,10 +229,10 @@ title: "Funzioni potenza"
 
 !!! chiave ""
 
-    Con $\alpha = -1$ e dato $\lambda \in \mathbb{R}$, abbiamo la famiglia di <strong>funzioni proporzionalità inversa o iperboli equilatere</strong>:
+    Con $\alpha = -1$ e dato $\lambda \in \mathbb{R}$, abbiamo la famiglia di <strong>funzioni di proporzionalità inversa o iperboli equilatere</strong>:
 
     $$
-    f:\R \rightarrow \mathbb{R} \setminus \{0\},~~~ f:x \mapsto \frac{\lambda}{x}  {\rm ~~~~dove~~}  \lambda {\rm ~~è~la~costante~di~proporzionalità ~indiretta}
+    f:\R \setminus \{0\} \rightarrow \mathbb{R},~~~ f:x \mapsto \frac{\lambda}{x}  {\rm ~~~~dove~~}  \lambda {\rm ~~è~la~costante~di~proporzionalità ~indiretta}
     $$
 
 <div class="figure-affiancate" markdown>

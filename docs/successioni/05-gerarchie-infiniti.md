@@ -11,6 +11,8 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 </div>
 ## 1. Gerarchie degli infiniti delle successioni parte 1 e parte 2
 
+<a id="box-theoXXX-1"></a>
+
 !!! teorema "Teorema 1: della gerarchia degli infiniti (parte I)"
 
     \begin{align}
@@ -50,13 +52,15 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 
     Per il corollario  del teorema del confronto, segue la tesi. <span class="qed">□</span>
 
+<a id="box-theoXXX-2"></a>
+
 !!! teorema "Teorema 2: della gerarchia degli infiniti (parte II)"
 
     \begin{align}
     \lim_{n \rightarrow +\infty} \frac{n^{\alpha}}{a^n}  &= 0
     \end{align}
 
-    per ogni  $\alpha > 0$.
+    per ogni $a>1$ e $\alpha > 0$.
 
 ??? dimostrazione "Dimostrazione"
 
@@ -82,7 +86,9 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 
 - Questi limiti descrivono la “velocità” con cui i logaritmi (con base $> 1$), le potenze (con esponente $> 0$), gli esponenziali (con base $> 1$) vanno all'infinito. I logaritmi a base $> 1$ vanno più lentamente di qualsiasi potenza con esponente $>0$, le potenze con esponente $>0$ vanno più lentamente di qualsiasi esponenziale a base $> 1$.
 
-- Gli esponenziale a base $> 1$ sono infiniti di ordine superiore alle potenze con  esponente $>0$ e ai logaritmi a base $> 1$. Le potenze con  esponente $>0$ sono infiniti di ordine superiore ai logaritmi a base $> 1$.
+- Gli esponenziali a base $> 1$ sono infiniti di ordine superiore alle potenze con  esponente $>0$ e ai logaritmi a base $> 1$. Le potenze con  esponente $>0$ sono infiniti di ordine superiore ai logaritmi a base $> 1$.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 1: Calcolo dei limiti usando la gerarchia degli infiniti"
 
@@ -109,6 +115,8 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
     $$
     \lim_{n \rr \ip} \sqrt[n]{n}= \lim_{n \rr \ip} e^{ \frac{\log n}{n}} =1
     $$
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 2: Calcolo dei limiti usando la gerarchia degli infiniti"
 
@@ -149,6 +157,8 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
     $$
 
 ## 2. Teorema del criterio del rapporto
+
+<a id="box-theoRAPPORTO-5"></a>
 
 !!! teorema "Teorema 3: del criterio del rapporto"
 
@@ -232,6 +242,8 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 3: Utilizzo del teorema del criterio del rapporto"
 
     Proviamo a calcolare, col criterio del rapporto, il limite
@@ -264,9 +276,11 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
     \lim_{n \rr \ip} \frac{a_{n+1}}{a_n} = 1 \cdot 1 = 1
     $$
 
-    quindi il teorema \(\eqref{theo_ita:theoRAPPORTO}\) del criterio del rapporto non permette, in questo caso,  di concludere nulla.
+    quindi il teorema [Teorema 3](#box-theoRAPPORTO-5) del criterio del rapporto non permette, in questo caso,  di concludere nulla.
 
 ## 3. Gerarchie degli infiniti delle successioni  parte 3 e parte 4
+
+<a id="box-corolXXX-7"></a>
 
 !!! teorema "Teorema 4: della gerarchia degli infiniti (parte III)"
 
@@ -291,6 +305,8 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
     $$
 
     Utilizzando il teorema del criterio del rapporto, si ottiene la tesi. <span class="qed">□</span>
+
+<a id="box-corolXXX-8"></a>
 
 !!! teorema "Teorema 5: della gerarchia degli infiniti (parte IV)"
 

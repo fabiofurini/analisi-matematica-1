@@ -11,6 +11,8 @@ title: "Sviluppi asintotici"
 </div>
 ## 1. Simbolo di "$o$ piccolo" e sviluppi asintotici
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di $o$ piccolo"
 
     Date due funzioni $f(x)$ e $g(x)$, definite in un intorno di $c \in \R^*$, si dice che
@@ -28,6 +30,8 @@ title: "Sviluppi asintotici"
 !!! chiave ""
 
     Il simbolo $o(g(x))$ per $x$ che tende a $c$ non denota  una particolare funzione $f(x)$,  ma qualsiasi funzione $f(x)$ tale che il rapporto tra $f(x)$ e $g(x)$ tende a 0 per $x$ che tende a $c$.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 1: $o$ piccolo"
 
@@ -119,6 +123,8 @@ title: "Sviluppi asintotici"
     o \big(f\big) \cdot  o \big(g\big) =  o \big(f \cdot  g\big)
     $$
 
+    <a id="box-texexpbox1-3"></a>
+
     !!! esempio "Esempio 2:  $o$ piccolo e prodotti"
 
         Ad esempio per $x \rr c$:
@@ -133,11 +139,13 @@ title: "Sviluppi asintotici"
 
     \begin{align*}
     o(x) \pm o(x) &= o(x),~~~ {\rm ~~per~~} x \rr c \\[1ex]
-     o(a \; x) &= o(x),~~~~~ \forall a \in \R,~~~ {\rm ~~per~~} x \rr c\\[1ex] 
+     o(a \; x) &= o(x),~~~~~ \forall a \in \R,~ a \neq 0,~~~ {\rm ~~per~~} x \rr c\\[1ex] 
      a\;o(x) &= o(x),~~~~~ \forall a \in \R,~~~ {\rm ~~per~~} x \rr c\\[1ex] 
      o(x) + o\big(x^2\big) &= o(x),~~~ {\rm ~~per~~} x \rr 0\\[1ex]
      o(x) + o\big(x^2\big) &= o\big(x^2\big),~ {\rm ~~per~~} x \rr \infty
     \end{align*}
+
+<a id="box-defXX-4"></a>
 
 !!! definizione "Definizione 2: di $o(1)$"
 
@@ -147,6 +155,8 @@ title: "Sviluppi asintotici"
     f(x) = o(1) {\rm ~~per~~}
     x \rr  c {\rm ~~se~~} f(x) \rr 0 {\rm ~~per~~} x \rr c
     $$
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 3:  $o(1)$ "
 
@@ -173,6 +183,8 @@ title: "Sviluppi asintotici"
     $$
 
     l'ultima espressione si legge “$f(x)$ è somma di $\ell$ e di una funzione infinitesima per $x \rr c$”
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 4:  $o(1)$ "
 
@@ -213,6 +225,8 @@ title: "Sviluppi asintotici"
     \frac{c}{1+o(1)} - c = c \; \left(  \frac{1}{1+o(1)} -1\right)= c \; \big(1+o(1)-1 \big)= o(1)
     $$
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 5:  $o(1)$ "
 
     Abbiamo
@@ -226,7 +240,7 @@ title: "Sviluppi asintotici"
 Abbiamo visto che valgono i seguenti limiti notevoli:
 
 $$
-\lim_{x \rr 0} \frac{\sin x}{x} =1,~~\lim_{x \rr 0} \frac{1 - \cos x}{x^2} = \frac{1}{2},~~ \lim_{x \rr 0} = \frac{\log(1 + x)}{x} =1,~~\lim_{x \rr 0} = \frac{e^x -1}{x} =1,~~\lim_{x \rr 0} = \frac{ (1 + x)^{\alpha} -1}{x} = \alpha
+\lim_{x \rr 0} \frac{\sin x}{x} =1,~~\lim_{x \rr 0} \frac{1 - \cos x}{x^2} = \frac{1}{2},~~ \lim_{x \rr 0} \frac{\log(1 + x)}{x} =1,~~\lim_{x \rr 0} \frac{e^x -1}{x} =1,~~\lim_{x \rr 0} \frac{ (1 + x)^{\alpha} -1}{x} = \alpha
 $$
 
 e di conseguenza valgono le seguenti <strong>equivalenze asintotiche</strong> per $x \rr 0$:
@@ -276,7 +290,7 @@ Vediamo ora come ottenere gli <strong>sviluppi asintotici</strong> a partire dai
 !!! chiave ""
 
     $$
-    \lim_{x \rr 0} = \frac{\log(1 + x)}{x} =1
+    \lim_{x \rr 0} \frac{\log(1 + x)}{x} =1
     $$
 
     Quindi per $x \rr 0$:
@@ -294,7 +308,7 @@ Vediamo ora come ottenere gli <strong>sviluppi asintotici</strong> a partire dai
 !!! chiave ""
 
     $$
-    \lim_{x \rr 0} = \frac{e^x -1}{x} =1
+    \lim_{x \rr 0} \frac{e^x -1}{x} =1
     $$
 
     Quindi per $x \rr 0$:
@@ -312,7 +326,7 @@ Vediamo ora come ottenere gli <strong>sviluppi asintotici</strong> a partire dai
 !!! chiave ""
 
     $$
-    \lim_{x \rr 0} = \frac{ (1 + x)^{\alpha} -1}{x} = \alpha  {\rm ~~~~~~~~con~~~} \alpha \in \R
+    \lim_{x \rr 0} \frac{ (1 + x)^{\alpha} -1}{x} = \alpha  {\rm ~~~~~~~~con~~~} \alpha \in \R
     $$
 
     Quindi per $x \rr 0$:

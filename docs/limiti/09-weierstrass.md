@@ -11,7 +11,9 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 </div>
 ## 1. Teorema di Weierstrass
 
-- Il  seguente teorema stabilisce condizioni <strong>sufficienti  ma non necessarie</strong>  affinché una funzione abbia massimo e minino.
+- Il  seguente teorema stabilisce condizioni <strong>sufficienti  ma non necessarie</strong>  affinché una funzione abbia massimo e minimo.
+
+<a id="box-theoWeierstrass-1"></a>
 
 !!! teorema "Teorema 1: di Weierstrass"
 
@@ -40,7 +42,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
     \sup \big(E_1 \cup E_2 \big) = \max \big(\sup E_1, \sup E_2 \big)
     $$
 
-    Questa proprietà è vera per insiemi sia limitati che illimitati.  Se uno o entrambi gli insiemi sono illimitati abbiamo: $\sup (E_1 \cup E_2) = \ip$. Per l'estremo inferiore abbiamo:
+    Questa proprietà è vera per insiemi sia limitati che illimitati.  Se uno o entrambi gli insiemi sono superiormente illimitati abbiamo: $\sup (E_1 \cup E_2) = \ip$. Per l'estremo inferiore abbiamo:
 
     $$
     \inf \big(E_1 \cup E_2 \big) = \min \big(\inf E_1, \inf E_2 \big)
@@ -65,7 +67,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
     $$
     \sup_{[a,b]} f 
-    = \max \bigg( \sup_{I_{1}} f, \sup_{I_{2}} f \bigg) {\rm ~~~ovvero~~~} \sup_{[a,b]} f = \sup_{I_{1}} f  {\rm ~~~oppure~~~}  \sup_{[a,b]} f = \sup_{I_{2}}
+    = \max \bigg( \sup_{I_{1}} f, \sup_{I_{2}} f \bigg) {\rm ~~~ovvero~~~} \sup_{[a,b]} f = \sup_{I_{1}} f  {\rm ~~~oppure~~~}  \sup_{[a,b]} f = \sup_{I_{2}} f
     $$
 
     Quindi per uno dei due intervalli, che chiamiamo $[a_1, b_1]$, sarà vero che:
@@ -118,7 +120,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
     per il teorema del confronto. Ancora per il teorema del confronto, la \(\eqref{RRRR}\) dà allora
 
     $$
-    \lim_{n \rr \ip} f(t_n) \rr \ell
+    \lim_{n \rr \ip} f(t_n) = \ell
     $$
 
     D'altro canto, poiché $f$ è continua e $t_n \rr x_0$  si ha che:
@@ -200,7 +202,9 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
         La funzione è definita su un intervallo chiuso e limitato $[0, 1]$  ma non è continua. La funzione non ha né massimo né minimo (il suo estremo superiore, $1$, e il suo estremo inferiore, $0$; e non sono assunti dalla funzione).
 
-## 2. Teorema di valori intermedi
+## 2. Teorema dei valori intermedi
+
+<a id="box-theoXXX-2"></a>
 
 !!! teorema "Teorema 2: dei valori intermedi"
 
@@ -261,6 +265,8 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
 ![Figura 2](../img/limiti-09-weierstrass/fig02.svg){ .fig .ovale loading=lazy style="width:85%" }
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 1: Funzione discontinua e assenza della proprietà dei
 valori intermedi"
 
@@ -271,6 +277,8 @@ valori intermedi"
     Questa funzione non ha la proprietà dei valori intermedi ovvero i valori $\lambda \in (y_1,y_2)$ non sono uscite di $f$.
 
 - Le proprietà dei due teoremi precedenti si possono sintetizzare nell'unico enunciato seguente:
+
+<a id="box-corolXXX-4"></a>
 
 !!! teorema "Corollario 1"
 
@@ -289,6 +297,8 @@ valori intermedi"
 ??? dimostrazione "Dimostrazione"
 
     Derivato dal teorema di Weierstrass e dal teorema dei valori intermedi. <span class="qed">□</span>
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 2: non validità del teorema dei valori intermedi in $\Q$"
 
@@ -310,11 +320,13 @@ valori intermedi"
 
         ma $f$ non assume tutti i valori razionali compresi tra 1 e 4: per esempio non assume mai il valore 2, o 3.
 
-    - In altre parole, la proprietà dci valori intermedi è vera per le funzioni continue <strong>grazie alle proprietà dell'insieme dei numeri reali</strong>.
+    - In altre parole, la proprietà dei valori intermedi è vera per le funzioni continue <strong>grazie alle proprietà dell'insieme dei numeri reali</strong>.
 
     - Questo è un ulteriore motivo  per cui è utile avere come ambiente di lavoro l'insieme dei reali e non l'insieme dei razionali.
 
 ## 3. Teorema di esistenza della radice $n$-esima
+
+<a id="box-theoXXX-6"></a>
 
 !!! teorema "Teorema 3"
 
@@ -355,7 +367,7 @@ valori intermedi"
     Poiché:
 
     $$
-    x_1^n < y < x_2^n, {\rm ~~esiste~~} x_0 \in [x_1,x_2] {\rm ~~tale~che~~} x_0 = y.
+    x_1^n < y < x_2^n, {\rm ~~esiste~~} x_0 \in [x_1,x_2] {\rm ~~tale~che~~} x_0^n = y.
     $$
 
     L'unicità deriva dal fatto che la funzione  è strettamente crescente. <span class="qed">□</span>

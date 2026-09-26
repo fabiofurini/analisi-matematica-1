@@ -13,6 +13,8 @@ title: "Teorema del valore medio, massimi e minimi"
 
 - Uno degli usi  del calcolo differenziale consiste nella <strong>ricerca dei massimi e minimi</strong>, ovvero nell'<strong>ottimizzazione</strong> di una funzione definita su un intervallo $I$ (chiuso/aperto, limitato/illimitato).
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di punto di massimo e massimo"
 
     Data una funzione $f:I \rr \R$, se esiste un punto $\tilde{x}_M \in I$  tale che:
@@ -22,6 +24,8 @@ title: "Teorema del valore medio, massimi e minimi"
     $$
 
     allora  $\tilde{x}_M$ è <strong>punto di massimo</strong> (globale) e $f(\tilde{x}_M)$ è il <strong>massimo</strong> (globale) di $f$ in $I$.
+
+<a id="box-defXX-2"></a>
 
 !!! definizione "Definizione 2: di punto di minimo e minimo"
 
@@ -37,6 +41,8 @@ title: "Teorema del valore medio, massimi e minimi"
 
     Chiamiamo <strong>estremo</strong> un massimo  o un minimo  e <strong>punto di estremo</strong> un punto di massimo  o di minimo. Un estremo se esiste è unico mentre possono esistere più punti di estremo (anche infiniti).
 
+<a id="box-defXX-3"></a>
+
 !!! definizione "Definizione 3: di punto di massimo locale e massimo locale"
 
     Data una funzione $f:I \rr \R$, se esiste un punto $\bar{x}_M \in I$ e un intorno $(\bar{x}_M-\delta,\bar{x}_M+\delta)$ con  $\delta >0$, tale che:
@@ -46,6 +52,8 @@ title: "Teorema del valore medio, massimi e minimi"
     $$
 
     allora  $\bar{x}_M$ è <strong>punto di massimo locale</strong>  e $f(\bar{x}_M)$ è il <strong>massimo locale</strong>  di $f$ in $(\bar{x}_M-\delta,\bar{x}_M+\delta) \cap I$.
+
+<a id="box-defXX-4"></a>
 
 !!! definizione "Definizione 4: di punto di minimo locale e minimo locale"
 
@@ -58,6 +66,8 @@ title: "Teorema del valore medio, massimi e minimi"
     allora  $\bar{x}_m$ è <strong>punto di minimo locale</strong> e $f(\bar{x}_m)$ è il <strong>minimo locale</strong>  di $f$ in $(\bar{x}_m-\delta,\bar{x}_m+\delta) \cap I$.
 
 - I punti di estremo globale sono anche punti di estremo locale e gli estremi globali  sono anche estremi locali.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 1: estremi e punti di estremo (globali e locali)"
 
@@ -73,13 +83,15 @@ title: "Teorema del valore medio, massimi e minimi"
 
     ![Figura 2](../img/derivate-05-valor-medio/fig02.svg){ .fig .ovale loading=lazy style="width:55%" }
 
-    - il massimo globale non esiste ($\lim_{x \to a^+}=\ip$); $f(x_1)$ è  massimo locale (non globale) e $x_1$ è  punto di massimo locale (non globale)
+    - il massimo globale non esiste ($\lim_{x \to a^+} f(x)=\ip$); $f(x_1)$ è  massimo locale (non globale) e $x_1$ è  punto di massimo locale (non globale)
 
     - il minimo globale è $f(x_0)$ che è uguale anche a $f(b)$; $x_0$ e $b$ sono due punti di minimo globale
 
 ## 2. Teorema di Fermat e punti stazionari
 
 - In un punto di estremo locale o globale la funzione  può non essere derivabile ed essere perfino discontinua. Però il seguente teorema ci dice che  se una funzione  è derivabile in un punto di estremo locale allora in quel punto la  derivata si annulla e quindi la tangente al grafico è orizzontale.
+
+<a id="box-theoFERMAT-6"></a>
 
 !!! teorema "Teorema 1: di Fermat"
 
@@ -117,6 +129,8 @@ title: "Teorema del valore medio, massimi e minimi"
 
     Se per assurdo fosse $f'(x_0) > 0$, allora per il teorema della permanenza del segno si dovrebbe avere $\frac{f(x) -f(x_0)}{x - x_0} >0$ definitivamente per $x \rr x_0$. Tenuto conto del segno di $x - x_0$, questo implica che $f(x) > f(x_0)$ definitivamente per $x \rr  x_0^+$ e $f(x) < f(x_0)$ definitivamente per $x \rr  x_0^-$. Ma questo contrasta con l’ipotesi che $x_0$ sia un punto di estremo locale per $f$. Analogamente si esclude il caso $f'(x_0) < 0$. Deve quindi essere $f'(x_0) = 0$. <span class="qed">□</span>
 
+<a id="box-defXX-7"></a>
+
 !!! definizione "Definizione 5: punto stazionario"
 
     Un punto $x_0$ si dice  punto stazionario di $f$ se $f$ è derivabile in $x_0$ e $f'(x_0) = 0$.
@@ -147,6 +161,8 @@ title: "Teorema del valore medio, massimi e minimi"
     $$
 
 ## 3. Teorema del valor medio o di Lagrange
+
+<a id="box-theoVM-8"></a>
 
 !!! teorema "Teorema 2: del valore medio o di Lagrange"
 
@@ -214,9 +230,11 @@ title: "Teorema del valore medio, massimi e minimi"
         w(x_1) = M, {\rm ~il~massimo~di~} w {\rm~in~} [a, b];~~~w(x_2) = m, {\rm ~il~minimo~di~} w {\rm~in~} [a, b].
         $$
 
-        Se $M = m$, allora $w(x)$ è costante in $[a,b]$, e quindi $w'(x) =0, \forall x \in [a,b]$.
+        Se $M = m$, allora $w(x)$ è costante in $[a,b]$, e quindi $w'(x) =0, \forall x \in (a,b)$.
 
         Se $M > m$, almeno uno dei due punti $x_1$ o $x_2$ non si trova agli estremi dell'intervallo, essendo $w(a) = w(b) = 0$. Il teorema di Fermat implica allora che nel punto di massimo o minimo che risulta interno (eventualmente entrambi) la derivata di $w$ si annulla e il teorema è così dimostrato. <span class="qed">□</span>
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 2: utilizzo del teorema dei valori medi"
 
@@ -229,6 +247,8 @@ title: "Teorema del valore medio, massimi e minimi"
     Ovvero ogni corda $AB$ della parabola $y = x^2$ è parallela alla tangente nel punto di ascissa uguale alla media aritmetica delle ascisse di $A$ e $B$. Prendendo ad esempio l'intervallo $[0.2,1]$ ($a=0.2,b=1$ e $c=0.6$), abbiamo:
 
     ![Figura 5](../img/derivate-05-valor-medio/fig05.svg){ .fig .ovale loading=lazy style="width:60%" }
+
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 3: utilizzo del teorema dei valori medi"
 
@@ -243,6 +263,8 @@ title: "Teorema del valore medio, massimi e minimi"
     ![Figura 6](../img/derivate-05-valor-medio/fig06.svg){ .fig .ovale loading=lazy style="width:60%" }
 
 ## 4. Teorema del criterio differenziale di monotonia
+
+<a id="box-theoTM-11"></a>
 
 !!! teorema "Teorema 3: del Criterio
 Differenziale di
@@ -285,7 +307,7 @@ Monotonia"
     f'(x) \ge 0,~ \forall x {\rm ~interno~a~} I ~~~\Longleftrightarrow~~~  f {\rm ~è~non~decrescente~in~} I
     $$
 
-    Quindi “$f'(x) \ge 0,~ \forall x$ interno a $I$” è condizione necessaria e sufficiente a “$f$ è non descrente in $I$”. Lo stesso vale per il caso di funzioni non crescenti.
+    Quindi “$f'(x) \ge 0,~ \forall x$ interno a $I$” è condizione necessaria e sufficiente a “$f$ è non decrescente in $I$”. Lo stesso vale per il caso di funzioni non crescenti.
 
 !!! attenzione ""
 
@@ -300,16 +322,16 @@ Monotonia"
     Quindi abbiamo:
 
     $$
-    f {\rm ~è~crescente~} I ~~~\nRightarrow~~~ f'(x) > 0,~ \forall x {\rm ~interno~a~} I
+    f {\rm ~è~crescente~in~} I ~~~\nRightarrow~~~ f'(x) > 0,~ \forall x {\rm ~interno~a~} I
     $$
 
-    Infine, dalla contronominale  di \(\eqref{C2}\), abbiamo:
+    Infine, dalla contronominale  di \(\eqref{C3}\), abbiamo:
 
     $$
-    f {\rm ~non~è~crescente~} I  ~~\Rightarrow~~  ~ \exists x {\rm ~interno~a~} I: f'(x) \le 0,
+    f {\rm ~non~è~crescente~in~} I  ~~\Rightarrow~~  ~ \exists x {\rm ~interno~a~} I: f'(x) \le 0,
     $$
 
-    <span style="color:#e03131">Controllare.</span> Lo stesso vale per il caso di funzioni decscenti.
+    <span style="color:#e03131">Controllare.</span> Lo stesso vale per il caso di funzioni decrescenti.
 
 - Segue immediatamente dal teorema che con $I=(a,b)$ abbiamo:
 
@@ -325,6 +347,8 @@ Monotonia"
     \end{align}
 
     Quindi “$f'(x) = 0,~ \forall x \in (a, b)$” è condizione necessaria e sufficiente a “$f$ costante in $(a,b)$”.
+
+<a id="box-texexpbox1-12"></a>
 
 !!! esempio "Esempio 4: funzioni a derivata nulla"
 
@@ -393,6 +417,8 @@ Monotonia"
 
     1. Trovati gli eventuali punti di estremo locale  si calcola il valore di $f$ in questi punti e lo si confronta con $f(a)$ e $f(b)$ per capire se siano o meno punti di estremo globale e si determinano così gli estremi globali.
 
+<a id="box-texexpbox1-13"></a>
+
 !!! esempio "Esempio 5: ricerca di massimi e minimi"
 
     Consideriamo la funzione:
@@ -406,6 +432,8 @@ Monotonia"
     $$
     f(0)=0,~~f(2)=2\; e^{-4}
     $$
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 6: ricerca di massimi e minimi"
 
@@ -432,7 +460,7 @@ Monotonia"
     Si conclude quindi che:
 
     $$
-    \frac{1}{\sqrt{2}} {\rm ~~e'~un~punto~di ~massimo~locale~~~e~~~} f\left(\frac{1}{\sqrt{2}}\right) =  \frac{1}{\sqrt{2}} \; e^{-1/2} = \frac{1}{\sqrt{2\: e}} {\rm ~~e' ~un~massimo~locale}
+    \frac{1}{\sqrt{2}} {\rm ~~è~un~punto~di ~massimo~locale~~~e~~~} f\left(\frac{1}{\sqrt{2}}\right) =  \frac{1}{\sqrt{2}} \; e^{-1/2} = \frac{1}{\sqrt{2\: e}} {\rm ~~è ~un~massimo~locale}
     $$
 
     Notiamo inoltre che:
@@ -440,6 +468,8 @@ Monotonia"
     $$
     \lim_{x \rr 0^+} \frac{x \; e^{-x^2}}{x} = \lim_{x \rr 0^+} \frac{1 }{e^{x^2}} = 1 {\rm ~~~~~quindi~~~~~} f(x) \sim x  {\rm ~~per~~} x \rr 0^+
     $$
+
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 7: ricerca di massimi e minimi"
 
@@ -452,11 +482,11 @@ Monotonia"
     Si conclude quindi che:
 
     $$
-    \frac{1}{\sqrt{2}} {\rm ~~e'~il~punto~di ~massimo~globale~(unico)~~~e~~~} 0 {\rm ~~e'~il~punto~di~minimo~globale~(unico)}
+    \frac{1}{\sqrt{2}} {\rm ~~è~il~punto~di ~massimo~globale~(unico)~~~e~~~} 0 {\rm ~~è~il~punto~di~minimo~globale~(unico)}
     $$
 
     $$
-    \frac{1}{\sqrt{2\: e}}  {\rm ~~e'~il~massimo~globale~~~e~~~} 0 {\rm ~~e'~il~minimo~globale}
+    \frac{1}{\sqrt{2\: e}}  {\rm ~~è~il~massimo~globale~~~e~~~} 0 {\rm ~~è~il~minimo~globale}
     $$
 
     ![Figura 10](../img/derivate-05-valor-medio/fig10.svg){ .fig .ovale loading=lazy style="width:90%" }
@@ -466,6 +496,8 @@ Monotonia"
 !!! chiave ""
 
     Il passaggio “dal discreto al continuo” per le successioni (cioè dai numeri naturali ai reali) è un modo per avere a disposizione gli strumenti del calcolo differenziale
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 8: dimostrazione di monotonia per successioni col passaggio al continuo"
 

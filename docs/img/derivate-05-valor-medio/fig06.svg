@@ -42,9 +42,6 @@
 <path style="stroke:none;" d=""/>
 </symbol>
 <symbol overflow="visible" id="glyph3-1">
-<path style="stroke:none;" d="M 0.9375 -3.40625 L 0.9375 -2.765625 L 3.625 -2.765625 L 3.625 -0.078125 L 4.265625 -0.078125 L 4.265625 -2.765625 L 6.953125 -2.765625 L 6.953125 -3.40625 L 4.265625 -3.40625 L 4.265625 -6.09375 L 3.625 -6.09375 L 3.625 -3.40625 Z M 0.9375 -3.40625 "/>
-</symbol>
-<symbol overflow="visible" id="glyph3-2">
 <path style="stroke:none;" d="M 6.953125 -2.765625 L 6.953125 -3.40625 L 0.9375 -3.40625 L 0.9375 -2.765625 Z M 6.953125 -2.765625 "/>
 </symbol>
 <symbol overflow="visible" id="glyph4-0">
@@ -144,7 +141,7 @@
   <use xlink:href="#glyph4-1" x="79.635756" y="71.987522"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph3-2" x="87.503978" y="71.987522"/>
+  <use xlink:href="#glyph3-1" x="87.503978" y="71.987522"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-4" x="96.83536" y="71.987522"/>

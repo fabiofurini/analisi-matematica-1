@@ -15,9 +15,11 @@ title: "Funzioni inverse"
 
 - Se anche per ogni uscita $y = f(x) \in f(D)$ esiste un unico ingresso $x \in D$, allora $f$ si dice <strong>invertibile</strong>, e realizza una <strong>corrispondenza biunivoca</strong> tra il dominio $D$ di $f$ e l'immagine   del dominio  $f(D)$.
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di funzione invertibile"
 
-    Un funzione $f : D \rightarrow \mathbb{R}$ è <strong>invertibile</strong> nel dominio $D$ se vale una delle seguenti condizioni equivalenti:
+    Una funzione $f : D \rightarrow \mathbb{R}$ è <strong>invertibile</strong> nel dominio $D$ se vale una delle seguenti condizioni equivalenti:
 
     \begin{align*}
     \forall x_1,x_2 \in D,&\qquad x_1 \neq x_2 \Longrightarrow f(x_1)\neq f(x_2)\\[2ex]
@@ -29,7 +31,9 @@ title: "Funzioni inverse"
 
 !!! chiave ""
 
-    <strong>ATENZIONE:</strong> la definizione di funzione invertibile data qui per funzioni reali di variabile reale è diversa dalla solita data per funzioni tra insiemi qualsiasi, che richiede anche la suriettività. In questo caso <em>basta l'iniettività</em> perché definiamo l'inversa sull'immagine di $f$ e non su tutto il suo codominio.
+    <strong>ATTENZIONE:</strong> la definizione di funzione invertibile data qui per funzioni reali di variabile reale è diversa dalla solita data per funzioni tra insiemi qualsiasi, che richiede anche la suriettività. In questo caso <em>basta l'iniettività</em> perché definiamo l'inversa sull'immagine di $f$ e non su tutto il suo codominio.
+
+<a id="box-defXX-2"></a>
 
 !!! definizione "Definizione 2: di funzione inversa"
 
@@ -62,17 +66,23 @@ title: "Funzioni inverse"
 
     La condizione di invertibilità equivale a richiedere che il grafico di $f$ sia intersecato al massimo in un punto da ogni retta parallela all'asse delle ascisse.
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 1:  grafico di funzione  invertibile "
 
     ![Figura 2](../img/funzioni-11-inverse/fig02.svg){ .fig .ovale loading=lazy style="width:80%" }
 
     Grafico di funzione  <strong>invertibile</strong> in $[a,b]$ in quanto ogni retta parallela all'asse delle ascisse o non interseca il grafico di $f$ o lo interseca esattamente in un punto.
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 2: grafico di funzione non invertibile "
 
     ![Figura 3](../img/funzioni-11-inverse/fig03.svg){ .fig .ovale loading=lazy style="width:80%" }
 
     Grafico di funzione <strong>non invertibile</strong> in $[a,b]$ in quanto per il valore di $\tilde{y}$ indicato esistono più valori $x$ (precisamente $x_1$ , $x_2$ e $x_3$) che hanno immagine $\tilde{y}$.
+
+<a id="box-theoINV-5"></a>
 
 !!! teorema "Teorema 1"
 
@@ -109,6 +119,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
 !!! chiave ""
 
     Una funzione può però essere invertibile anche senza essere strettamente crescente o decrescente.
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 3: funzione invertibile ma non strettamente crescente né decrescente"
 
@@ -158,7 +170,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
     indicano che se il punto $(x_0, y_0)$ è sul grafico di $f$ allora il punto $(y_0, x_0)$ è sul grafico di $f^{-1}$.
 
-- Essendo i punti $(x_0, y_0)$ e $(y_0, x_0)$ <strong>simmetrici rispetto alla bisettrice</strong> di equazione $y = x$, il grafico di $f^{-1}$ ricava da quello di $f$ per simmetria rispetto alla bisettrice.
+- Essendo i punti $(x_0, y_0)$ e $(y_0, x_0)$ <strong>simmetrici rispetto alla bisettrice</strong> di equazione $y = x$, il grafico di $f^{-1}$ si ricava da quello di $f$ per simmetria rispetto alla bisettrice.
 
     ![Figura 7](../img/funzioni-11-inverse/fig07.svg){ .fig .ovale loading=lazy style="width:58%" }
 
@@ -189,6 +201,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
     \end{cases}
     $$
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 4: funzione inversa di una funzione affine"
 
     La funzione  $f: \mathbb{R} \rightarrow \mathbb{R}, x \mapsto 2 \: x +3$ è strettamente crescente quindi invertibile su $\mathbb{R}$ e l'equazione
@@ -207,7 +221,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
     ![Figura 8](../img/funzioni-11-inverse/fig08.svg){ .fig .ovale loading=lazy style="width:52%" }
 
-    Il grafici $y=2 \: x +3$ e  $y=\frac{x-3}{2}$ sono simmetrici rispetto alla bisettrice $y = x$
+    I grafici $y=2 \: x +3$ e  $y=\frac{x-3}{2}$ sono simmetrici rispetto alla bisettrice $y = x$
 
     ![Figura 9](../img/funzioni-11-inverse/fig09.svg){ .fig .ovale loading=lazy style="width:52%" }
 
@@ -228,9 +242,11 @@ Per il caso strettamente crescente, graficamente abbiamo:
     \end{cases}
     $$
 
-!!! esempio "Esempio 5: funzioni inversa di $f(x)=x^2$"
+<a id="box-texexpbox1-8"></a>
 
-    La funzione  $f: \mathbb{R} \rightarrow \mathbb{R}, x \mapsto x^2 \: x +3$ è strettamente crescente nell'intervallo $[0,+\infty]$ quindi invertibile, l'equazione
+!!! esempio "Esempio 5: funzione inversa di $f(x)=x^2$"
+
+    La funzione  $f: \mathbb{R} \rightarrow \mathbb{R}, x \mapsto x^2$ è strettamente crescente nell'intervallo $[0,+\infty)$ quindi invertibile, l'equazione
 
     $$
     x^2 = y {\rm ~~risolta~rispetto~a~~} x,~~{\rm ~ovvero~~} x=\sqrt{y}
@@ -242,9 +258,9 @@ Per il caso strettamente crescente, graficamente abbiamo:
     f^{-1}(y) = \sqrt{y}
     $$
 
-    ovvero la funzione: $f^{-1}: [0,+\infty] \rightarrow \mathbb{R}, y \mapsto \sqrt{y}$.
+    ovvero la funzione: $f^{-1}: [0,+\infty) \rightarrow \mathbb{R}, y \mapsto \sqrt{y}$.
 
-    Il grafici $y=x^2$ e  $y=\sqrt{x}$ sono simmetrici rispetto alla bisettrice $y = x$
+    I grafici $y=x^2$ e  $y=\sqrt{x}$ sono simmetrici rispetto alla bisettrice $y = x$
 
     ![Figura 10](../img/funzioni-11-inverse/fig10.svg){ .fig .ovale loading=lazy style="width:58%" }
 
@@ -265,9 +281,11 @@ Per il caso strettamente crescente, graficamente abbiamo:
     \end{cases}
     $$
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 6: funzione inversa di $f(x)=e^x$"
 
-    La funzione  $f: \mathbb{R} \rightarrow \mathbb{R}, x \mapsto e^x \: x$ è strettamente crescente su tutto $\mathbb{R}$ e quindi invertibile, l'equazione
+    La funzione  $f: \mathbb{R} \rightarrow \mathbb{R}, x \mapsto e^x$ è strettamente crescente su tutto $\mathbb{R}$ e quindi invertibile, l'equazione
 
     $$
     e^x = y {\rm ~~risolta~rispetto~a~~} x,~~{\rm ~ovvero~~} x=\log{y}
@@ -281,7 +299,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
     ovvero la funzione: $f^{-1}: (0,+\infty) \rightarrow \mathbb{R}, y \mapsto \log{y}$.
 
-    Il grafici $y=e^x$ e  $y=\log {x}$ sono simmetrici rispetto alla bisettrice $y = x$
+    I grafici $y=e^x$ e  $y=\log {x}$ sono simmetrici rispetto alla bisettrice $y = x$
 
     ![Figura 11](../img/funzioni-11-inverse/fig11.svg){ .fig .ovale loading=lazy style="width:58%" }
 
@@ -291,7 +309,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
     f(x)= x + e^x
     $$
 
-    Essendo somma di due funzioni strettamente crescenti in tutto $\mathbb{R}$, $f(x)$ è strettamente crescente e quindi invertibile su tutto $\mathbb{R}$ (vedere Teorema \(\eqref{theo_ita:theoINV}\)). Tuttavia, cercheremmo inutilmente di risolvere rispetto a $x$ l'equazione $x + e^x = y$.  In altre parole, $f^{-1}$ esiste, ma non si sa scrivere esplicitamente.
+    Essendo somma di due funzioni strettamente crescenti in tutto $\mathbb{R}$, $f(x)$ è strettamente crescente e quindi invertibile su tutto $\mathbb{R}$ (vedere Teorema [Teorema 1](#box-theoINV-5)). Tuttavia, cercheremmo inutilmente di risolvere rispetto a $x$ l'equazione $x + e^x = y$.  In altre parole, $f^{-1}$ esiste, ma non si sa scrivere esplicitamente.
 
 ### 1.2 Le funzioni potenze inverse
 
@@ -361,7 +379,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
     e le <strong>potenze a esponente razionale</strong>
 
     $$
-    x^{\frac{m}{n}} {\rm~~con~~} n,m {\rm~~interi ~e~}n {\rm~~dispari}
+    x^{\frac{m}{n}} {\rm~~con~~} n,m {\rm~~interi ~positivi~e~dispari}
     $$
 
     essendo monotone strettamente  crescenti sono invertibili da $-\infty$ a $+\infty$.
@@ -381,6 +399,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
 - Per parlare di funzioni inverse di seno, coseno e tangente occorrerà restringersi a intervalli nei quali queste funzioni siano strettamente monotone e perciò invertibili.
 
 - Un intervallo nel quale la funzione seno è invertibile è $[-\frac{\pi}{2},\frac{\pi}{2}]$.
+
+<a id="box-defXX-10"></a>
 
 !!! definizione "Definizione 3: di arcoseno"
 
@@ -416,6 +436,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
 - Un intervallo nel quale la funzione coseno è invertibile è $[0,\pi]$.
 
+<a id="box-defXX-11"></a>
+
 !!! definizione "Definizione 4: di arcocoseno"
 
     La funzione inversa del coseno nell'intervallo $[0,\pi]$ è l'<strong>arcocoseno</strong>:
@@ -450,6 +472,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
 - Osserviamo che nell'intervallo $( -\frac{\pi}{2}, \frac{\pi}{2})$ la tangente è strettamente monotona e quindi invertibile. La funzione inversa si chiama arcotangente ($\arctan$), ed è definita in $\mathbb{R}$.
 
+<a id="box-defXX-12"></a>
+
 !!! definizione "Definizione 5: di arcotangente"
 
     La funzione inversa della tangente nell'intervallo $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$ è l'<strong>arcotangente</strong>:
@@ -483,6 +507,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
 ![Figura 16](../img/funzioni-11-inverse/fig16.svg){ .fig .ovale loading=lazy style="width:58%" }
 
 - Per mezzo delle funzioni trigonometriche inverse, possiamo esprimere le soluzioni di un'<strong>equazione o disequazione trigonometrica</strong>, quando questa coinvolge angoli non notevoli.
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 7: Equazioni/disequazioni trigonometriche"
 
@@ -536,7 +562,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
     È definita e strettamente crescente in tutto $\mathbb{R}$, perciò è invertibile.
 
-- Per risolvere l'equazione rispetto alla $x$, moltiplicando ambo i membri per $e^x$ e otteniamo:
+- Per risolvere l'equazione rispetto alla $x$, moltiplicando ambo i membri per $e^x$ otteniamo:
 
     \begin{align*}
     0 & = e^x \: y - e^x \: \frac{e^x - e^{-x}}{2}\\[2ex]
@@ -564,6 +590,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
     $$
 
 - Questa è l'espressione analitica della funzione inversa di $\sinH x$, che prende il nome di <strong>settore seno iperbolico</strong>, e si indica anche con $\setsinH$. È definita per ogni $y$ reale.
+
+<a id="box-defXX-14"></a>
 
 !!! definizione "Definizione 6: di settore seno iperbolico"
 
@@ -621,12 +649,14 @@ Per il caso strettamente crescente, graficamente abbiamo:
 
     Questa è l'espressione analitica della funzione inversa di $\cosH x$, che prende il nome di settore coseno iperbolico, e si indica anche con $\setcosH$.  Si noti che è definita per $y \ge 1$.
 
+<a id="box-defXX-15"></a>
+
 !!! definizione "Definizione 7: di settore coseno iperbolico"
 
     La funzione inversa del coseno iperbolico nell'intervallo $[0,+\infty)$ è il <strong>settore coseno iperbolico</strong>:
 
     $$
-    f: [1,+\infty) \rightarrow [0,+\infty),~~ f: y \mapsto \setsinH x
+    f: [1,+\infty) \rightarrow [0,+\infty),~~ f: y \mapsto \setcosH y
     $$
 
 !!! chiave ""
@@ -648,9 +678,11 @@ Per il caso strettamente crescente, graficamente abbiamo:
     \end{cases}
     \end{equation*}
 
-- Il grafico del settore coseno iperbolico si ottiene da quello del coseno iperbolico su $[1,+\infty)$ (strettamente monotono), per simmetria rispetto alla bisettrice $y = x$.
+- Il grafico del settore coseno iperbolico si ottiene da quello del coseno iperbolico su $[0,+\infty)$ (strettamente monotono), per simmetria rispetto alla bisettrice $y = x$.
 
 ![Figura 20](../img/funzioni-11-inverse/fig20.svg){ .fig .ovale loading=lazy style="width:58%" }
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 8: Equazioni iperboliche"
 

@@ -37,6 +37,8 @@ I numeri razionali possono essere scritti anche in forma decimale. Ad esempio:
 
 Un numero razionale, scritto in forma decimale, dopo la virgola può presentare un numero finito di cifre (diverse da zero), oppure un numero infinito di cifre diverse da zero, che però si ripetono <em>periodicamente</em>.
 
+<a id="box-obserXX-1"></a>
+
 !!! osservazione "Osservazione 1"
 
     $$
@@ -45,11 +47,11 @@ Un numero razionale, scritto in forma decimale, dopo la virgola può presentare 
 
 !!! chiave ""
 
-    Esistono differenti prove di questa osservazione basate su differente tecniche matematiche.
+    Esistono differenti prove di questa osservazione basate su differenti tecniche matematiche.
 
 ??? dimostrazione "Dimostrazione"
 
-    Una semplice prova deriva direttamente della definizione di $1$ diviso $3$, abbiamo infatti:
+    Una semplice prova deriva direttamente dalla definizione di $1$ diviso $3$, abbiamo infatti:
 
     \begin{align*}
     \frac{1}{3} &= 0,\overline{3}\\
@@ -96,9 +98,9 @@ Un numero razionale, scritto in forma decimale, dopo la virgola può presentare 
 
 ??? dimostrazione "Dimostrazione"
 
-    Scriviamo il numero $0,999...$ con $n$ cifre dopo la virgola come $0,(9)_n$, quindi $0,(9)_1 = 0.9$, $0,(9)_2 = 0.99$, $0,(9)_3 = 0.999$, e cosi via. 
+    Scriviamo il numero $0,999...$ con $n$ cifre dopo la virgola come $0,(9)_n$, quindi $0,(9)_1 = 0.9$, $0,(9)_2 = 0.99$, $0,(9)_3 = 0.999$, e così via. 
 
-    Dato  $\frac{1}{10^n} = 0,0 \dots 01$, con $n$ cifre dopo la virgola, le regola di addizione per i numeri decimali implicano
+    Dato  $\frac{1}{10^n} = 0,0 \dots 01$, con $n$ cifre dopo la virgola, le regole di addizione per i numeri decimali implicano
 
     $$
     0,(9)_n + \frac{1}{10^n} = 1
@@ -176,6 +178,8 @@ $\C$ è l'insieme dei <strong>numeri complessi</strong>, ossia del tipo $a + i\:
 
 ## 2. Intervalli
 
+<a id="box-defXX-2"></a>
+
 !!! definizione "Definizione 1: di intervallo"
 
     Dati due numeri reali $a$, $b$, si chiama <strong>intervallo</strong> di estremi $a$ e $b$ uno dei seguenti insiemi:
@@ -211,10 +215,12 @@ $\C$ è l'insieme dei <strong>numeri complessi</strong>, ossia del tipo $a + i\:
     Si può dimostrare che gli intervalli, limitati o illimitati, sono tutti e soli i sottoinsiemi $I$ di $\mathbb{R}$ che soddisfano la seguente proprietà  (detta <strong>connessione</strong>):
 
     $$
-    x_1 < x_2 < x_3, {\rm ~~se~~} x_1,x_2 \in I, {\rm ~~allora~~} x_2 \in I
+    x_1 < x_2 < x_3, {\rm ~~se~~} x_1,x_3 \in I, {\rm ~~allora~~} x_2 \in I
     $$
 
 - Nel seguito ci capiterà di considerare il prodotto cartesiano di due (o più) intervalli, cui si può dare il significato geometrico di rettangolo (in due dimensioni) o parallelepipedo (in tre dimensioni).
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 1: Prodotto cartesiano di intervalli"
 

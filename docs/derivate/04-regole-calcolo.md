@@ -13,13 +13,15 @@ title: "Regole di calcolo delle derivate"
 
 - Vediamo ora la relazione tra l'operazione di derivata e le principali operazioni già note sulle funzioni; in particolare mostreremo la relazione tra:
 
-    1. derivazione e operazione algebriche
+    1. derivazione e operazioni algebriche
 
     2. derivazione e composizione
 
     3. derivazione e inversione
 
 ### 1.1 Algebra delle derivate
+
+<a id="box-theoALGEBRA_DER-1"></a>
 
 !!! teorema "Teorema 1: dell'algebra delle derivate"
 
@@ -153,6 +155,8 @@ title: "Regole di calcolo delle derivate"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-theoZERI-2"></a>
+
 !!! osservazione "Osservazione 1"
 
     Data la funzione $f(x)=\tan x$, la funzione derivata è $f'(x)=\frac{1}{\cos^2 x} = 1 + \tan^2 x$.
@@ -166,6 +170,8 @@ title: "Regole di calcolo delle derivate"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-3"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -183,6 +189,8 @@ title: "Regole di calcolo delle derivate"
     <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.2 Derivata di funzione composta
+
+<a id="box-theoCATENA_DER-4"></a>
 
 !!! teorema "Teorema 2: della regola della catena"
 
@@ -254,6 +262,8 @@ title: "Regole di calcolo delle derivate"
     \left(~f\bigg(g \big(h(x) \big ) \bigg)~\right)' = f'\bigg(g \big(h(x) \big ) \bigg) \cdot g' \big(h(x) \big ) \cdot h'(x)
     $$
 
+<a id="box-texexpbox1-5"></a>
+
 !!! esempio "Esempio 1: Funzione derivata di funzione composta"
 
     Calcoliamo la funzione derivata della funzione composta:
@@ -299,6 +309,8 @@ title: "Regole di calcolo delle derivate"
 
     La regola \(\eqref{CAT2}\) esprime che il tasso di variazione di $w$ rispetto a $x$ è il prodotto dei tassi di variazione “intermedi”, di $w$ rispetto a $y$ e di $y$ rispetto a $x$.
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 2: Funzione derivata di funzione composta"
 
     Consideriamo la funzione composta dell'esercizio precedente.  Posto
@@ -320,12 +332,14 @@ title: "Regole di calcolo delle derivate"
      3 \: \sin^2 x \cdot \cos x.
     $$
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 3: Funzione derivata di funzione composta"
 
     Calcoliamo la funzione derivata della funzione composta (moltiplicata per una costante):
 
     $$
-    h(x)  =  A \cdot \underbrace{\sin \big(\omega \: x + \varphi \big)}_{=\cdot (g \circ f)(x) } {\rm ~~~con~~~} A,\omega,\varphi \in \R.
+    h(x)  =  A \cdot \underbrace{\sin \big(\omega \: x + \varphi \big)}_{=(g \circ f)(x) } {\rm ~~~con~~~} A,\omega,\varphi \in \R.
     $$
 
     Le due funzioni sono:
@@ -346,9 +360,11 @@ title: "Regole di calcolo delle derivate"
     h'(x)  = A \cdot \bigg(\cos \big(\omega \: x + \varphi \big) \cdot \omega \bigg)
     $$
 
+<a id="box-texexpbox1-8"></a>
+
 !!! esempio "Esempio 4: Funzione derivata di prodotto di funzioni composte"
 
-    Calcoliamo la funzione derivata del prodotto di due  funzioni composte per una constante:
+    Calcoliamo la funzione derivata del prodotto di due  funzioni composte per una costante:
 
     $$
     h(x) =  A \cdot \underbrace{e^{ -\alpha \: x}}_{= (r \circ s)(x)} \cdot \underbrace{\cos \big(\omega \: x + \varphi \big)}_{= (g \circ f)(x)} {\rm ~~~con~~~} A,\omega,\varphi \in \R, \alpha \in \R_+.
@@ -389,6 +405,8 @@ title: "Regole di calcolo delle derivate"
     ~~\bigg)
     $$
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 5: Funzione derivata di funzione composta"
 
     Sia $f(x)>0$ e derivabile, calcoliamo la derivata della funzione
@@ -402,6 +420,8 @@ title: "Regole di calcolo delle derivate"
     $$
     h'(x) =  \frac{1}{f(x)} \cdot f'(x)
     $$
+
+<a id="box-theoZERI-10"></a>
 
 !!! osservazione "Osservazione 3"
 
@@ -423,9 +443,11 @@ title: "Regole di calcolo delle derivate"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-theoZERI-11"></a>
+
 !!! osservazione "Osservazione 4"
 
-    Data la funzione $f(x)=\log_a x$, con $a>0,a\neq 1$, la funzione derivata è $f'(x)=a^x \cdot \log a$.
+    Data la funzione $f(x)=\log_a x$, con $a>0,a\neq 1$, la funzione derivata è $f'(x)=\frac{1}{x \: \log a}$.
 
 ??? dimostrazione "Dimostrazione"
 
@@ -443,6 +465,8 @@ title: "Regole di calcolo delle derivate"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-theoZERI-12"></a>
+
 !!! osservazione "Osservazione 5"
 
     Data la funzione $f(x)=\sinh x$, la funzione derivata è $f'(x)=\cosh x$.
@@ -456,6 +480,8 @@ title: "Regole di calcolo delle derivate"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-13"></a>
 
 !!! osservazione "Osservazione 6"
 
@@ -492,6 +518,8 @@ title: "Regole di calcolo delle derivate"
     &= \exp \left(~ g(x) \cdot \log \big(f(x)\big) ~\right) ~\cdot~ \bigg(~g(x) \cdot \log \big(f(x)\big) ~\bigg)'  \\[2ex]
     &= f(x)^{ g(x)} ~\cdot~ \left(~ g'(x) ~\cdot~  \log \big(f(x)\big) ~+~ g(x) ~\cdot~ \frac{f'(x)}{f(x)} ~\right)
     \end{align*}
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 6: Derivata di una funzione elevata a un'altra funzione"
 
@@ -530,6 +558,8 @@ title: "Regole di calcolo delle derivate"
 
     In generale, ci aspettiamo che la funzione $|f(x)|$  presenti punti angolosi nei punti in cui $f(x)$ si annulla.
 
+<a id="box-texexpbox1-15"></a>
+
 !!! esempio "Esempio 7: Funzione derivata di funzione col valore assoluto"
 
     Calcoliamo la funzione derivata della funzione:
@@ -567,6 +597,8 @@ title: "Regole di calcolo delle derivate"
     La funzione non è derivabile in $x_0 =1$ e $x_0 =3$ (ragionamenti analoghi a $x_0 =1$), dove ha punti angolosi.
 
     ![Figura 2](../img/derivate-04-regole-calcolo/fig02.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 8: Funzione derivata di funzione col valore assoluto"
 
@@ -608,7 +640,7 @@ title: "Regole di calcolo delle derivate"
 
 !!! chiave ""
 
-    Consideriamo ora le derivata di alcune funzioni logaritmiche. Calcoliamo:
+    Consideriamo ora le derivate di alcune funzioni logaritmiche. Calcoliamo:
 
     $$
     \bigg(~\log \big(|x|\big)~\bigg)' = \frac{1}{|x|} \cdot \sgn (x) = \frac{1}{x}
@@ -632,11 +664,13 @@ title: "Regole di calcolo delle derivate"
 
 ### 1.3 Derivata di funzione inversa
 
+<a id="box-theoINVERSA-17"></a>
+
 !!! teorema "Teorema 3: della derivata della funzione inversa"
 
     Sia $f : (a, b) \rr \R$ una funzione continua e invertibile in $(a, b)$ e $g = f^{-1}$ la sua funzione inversa, definita in $f\big( (a, b) \big)$.
 
-    Supponiamo inoltre che esista $f'(x_0)$ per un certo $x_0 \in  (a, b)$.
+    Supponiamo inoltre che esista $f'(x_0) \neq 0$ per un certo $x_0 \in  (a, b)$.
 
     Allora $g$ è derivabile in $y_0= f (x_0)$ e
 
@@ -669,7 +703,7 @@ title: "Regole di calcolo delle derivate"
     \frac{1}{\frac{f(x_0+h)-f(x_0)}{h}}
     $$
 
-    Inoltre, per $k \rr 0$ si ha $g (y_0 + k) \rr  g(y_0)$ perché $g$ è continua, essendo l'inversa di una funzione continua su un intervallo (Teorema sulla continuità delle funzione inverse ); d'altro canto $h = g (y_0 + k) - g (y_0)$, quindi per $k \rr 0$ anche $h \rr 0$, e per ipotesi
+    Inoltre, per $k \rr 0$ si ha $g (y_0 + k) \rr  g(y_0)$ perché $g$ è continua, essendo l'inversa di una funzione continua su un intervallo (Teorema sulla continuità delle funzioni inverse ); d'altro canto $h = g (y_0 + k) - g (y_0)$, quindi per $k \rr 0$ anche $h \rr 0$, e per ipotesi
 
     $$
     \frac{1}{\frac{f(x_0+h)-f(x_0)}{h}} \to \frac{1}{f'(x_0)} {\rm ~~per~~} h \to 0
@@ -723,6 +757,8 @@ title: "Regole di calcolo delle derivate"
 
 - Si faccia attenzione al fatto che nella formula di derivazione della funzione inversa, le derivate $f'$ e $g'$ sono calcolate in due punti diversi: è questa la principale attenzione da avere nell'applicazione di questo teorema.
 
+<a id="box-theoZERI-18"></a>
+
 !!! osservazione "Osservazione 7"
 
     Data la funzione $f(y)=\arctan y$, la funzione derivata è $f'(y)=\frac{1}{{1 + y^2}}$.
@@ -736,6 +772,8 @@ title: "Regole di calcolo delle derivate"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-19"></a>
 
 !!! osservazione "Osservazione 8"
 
@@ -756,6 +794,8 @@ title: "Regole di calcolo delle derivate"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-20"></a>
 
 !!! osservazione "Osservazione 9"
 
@@ -783,6 +823,8 @@ title: "Regole di calcolo delle derivate"
 
     L'utilità del teorema di derivazione della funzione inversa consiste nel fatto che permetta di calcolare la derivata della funzione inversa $g$ anche in situazioni in cui $g$ non si sa scrivere esplicitamente.
 
+<a id="box-texexpbox1-21"></a>
+
 !!! esempio "Esempio 9: Derivata di funzione inversa"
 
     Sia
@@ -803,6 +845,8 @@ title: "Regole di calcolo delle derivate"
     g' (1) = \frac{1}{f'(0)} = \frac{1}{2}.
     $$
 
+<a id="box-theoZERI-22"></a>
+
 !!! osservazione "Osservazione 10"
 
     Data la funzione $f(y)=\setsinH y$, la funzione derivata è $f'(y)=\frac{1}{\sqrt{y^2+1}}$
@@ -822,6 +866,8 @@ title: "Regole di calcolo delle derivate"
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-theoZERI-23"></a>
 
 !!! osservazione "Osservazione 11"
 
@@ -844,6 +890,8 @@ title: "Regole di calcolo delle derivate"
     <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.4 Derivata logaritmica ed elasticità
+
+<a id="box-defXX-24"></a>
 
 !!! definizione "Definizione 1: di derivata logaritmica"
 
@@ -877,9 +925,11 @@ title: "Regole di calcolo delle derivate"
 
     Un <strong>grafico in scala logaritmica</strong> è un grafico in cui invece di $x$ sull'asse delle ascisse si collocano i valori di $\log x$ e sull'asse delle ordinate invece di $f(x)$ si collocano i valori di $\log f(x)$
 
+<a id="box-defXX-25"></a>
+
 !!! definizione "Definizione 2: di elasticità"
 
-    La pendenza della retta tangente a un grafico in scala logaritmica si chiama di elasticità di $f$ e si indica con $E(x)$.
+    La pendenza della retta tangente a un grafico in scala logaritmica si chiama elasticità di $f$ e si indica con $E(x)$.
 
 - L'elasticità rappresenta il tasso di variazione relativa di $f$ rispetto a variazioni relative di $x$ ed equivale alla derivata di $\log f$ rispetto a $\log x$
 
@@ -896,6 +946,8 @@ title: "Regole di calcolo delle derivate"
     $$
     E(x) = x \cdot \frac{f'(x)}{f(x)}
     $$
+
+<a id="box-texexpbox1-26"></a>
 
 !!! esempio "Esempio 10: elasticità"
 

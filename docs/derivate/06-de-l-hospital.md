@@ -17,6 +17,8 @@ title: "Teorema di De l'Hospital e derivabilità"
     \left[ \frac{0}{0} \right] ~~e~~ \left[ \frac{\infty}{\infty} \right]
     $$
 
+<a id="box-theoHosp-1"></a>
+
 !!! teorema "Teorema 1: di De l'Hospital"
 
     Siano $f$, $g$ funzioni derivabili in  un intervallo $(a,b)$ con $g$,$g' \neq 0$ in $(a,b)$. Se
@@ -35,6 +37,8 @@ title: "Teorema di De l'Hospital e derivabilità"
 !!! chiave ""
 
     Il teorema continua a valere se $a = \im$ oppure se si considera il limite per $x \rr b^-$, con $b \le \ip$ (caso che non dimostriamo). Quindi se le ipotesi valgono per $a^-$ e $a^+$ si può chiaramente applicare anche a un punto interno di un intervallo.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 1: utilizzo del teorema di De l'Hospital"
 
@@ -153,6 +157,8 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 - Il teorema di De L'Hospital può essere utile per limiti non solubili solo con i limiti notevoli o con i derivanti sviluppi asintotici.
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 2: teorema di De l'Hospital e limiti notevoli"
 
     Calcoliamo
@@ -172,6 +178,8 @@ title: "Teorema di De l'Hospital e derivabilità"
     $$
     \lim_{x \rr 0} \frac{x-\sin x}{x^3} =^H \lim_{x \rr 0} \frac{(x-\sin x)'}{(x^3)'}=\lim_{x \rr 0} \frac{1 - \cos x}{3\; x^2} = \frac{1}{3} \cdot \lim_{x \rr 0} \underbrace{\frac{1 - \cos x}{x^2}}_{\rr \frac{1}{2}} = \frac{1}{6}
     $$
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 3: teorema di De l'Hospital e sviluppi asintotici"
 
@@ -198,6 +206,8 @@ title: "Teorema di De l'Hospital e derivabilità"
     Alla stessa conclusione si arriva anche col seguente ragionamento. Il simbolo $o(x)$ per $x \rr 0$ indica l'insieme delle funzioni che divise per $x$ tendono a 0 per $x \rr 0$. Quindi ad esempio $5\;x^2=o(x)$ ma anche $x^3=o(x)$ e il valore del limite non può  essere determinato con lo sviluppo asintotico del primo ordine.
 
     Come vedremo più avanti per determinare questo limite con gli sviluppi asintotici occorre uno sviluppo asintotico di un ordine superiore al primo.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 4: teorema di De l'Hospital e stime asintotiche"
 
@@ -235,6 +245,8 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 - Il teorema è utile quando la sua applicazione semplifica il limite anziché complicarlo, ovvero l'ordine di infinitesimo (o di infinito) al numeratore o a denominatore si abbassa.
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 5: teorema di De l'Hospital"
 
     Calcoliamo
@@ -264,6 +276,8 @@ title: "Teorema di De l'Hospital e derivabilità"
     dove l'ultimo limite è ottenuto grazie al teorema della gerarchia degli infiniti.
 
 - Talvolta, il teorema va applicato più volte consecutivamente, per sciogliere la forma di indeterminazione. Anche in questo caso  già dopo la prima applicazione ci si dovrebbe accorgere che l'ordine di infinitesimo (o di infinito) al numeratore o a denominatore si è abbassato.
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 6: teorema di De l'Hospital"
 
@@ -301,6 +315,8 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 ## 2. Limite della funzione derivata e derivabilità
 
+<a id="box-theoDDD-8"></a>
+
 !!! teorema "Teorema 2: del limite della funzione  derivata"
 
     Se $f: [a, b) \rr \R$ è continua in $a$, derivabile in $(a, b)$, e $\lim_{x \rr a^+} f'(x) = m \in \R^*$ allora $f'_+(a)=m$.
@@ -329,6 +345,8 @@ title: "Teorema di De l'Hospital e derivabilità"
 
     Sotto le ipotesi del teorema è possibile quindi calcolare la derivata destra,  la derivata sinistra o la derivata senza utilizzare il limite del rapporto incrementale
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 7: derivabilità"
 
     Supponiamo di voler studiare la derivabilità o meno della funzione:
@@ -354,7 +372,7 @@ title: "Teorema di De l'Hospital e derivabilità"
     In $x = 1$ la funzione $f(x)$ è continua, e abbiamo:
 
     $$
-    \lim_{x \rr 1^+} f'(x) = \lim_{x \rr 1^+} (\log x +1) = 1 {\rm ~~~~e~~~~} \lim_{x \rr 1^+} f'(x) = \lim_{x \rr 1^-} (-\log x -1) = -1
+    \lim_{x \rr 1^+} f'(x) = \lim_{x \rr 1^+} (\log x +1) = 1 {\rm ~~~~e~~~~} \lim_{x \rr 1^-} f'(x) = \lim_{x \rr 1^-} (-\log x -1) = -1
     $$
 
     quindi il teorema è applicabile (da destra e da sinistra) e abbiamo:
@@ -364,6 +382,8 @@ title: "Teorema di De l'Hospital e derivabilità"
     $$
 
     ![Figura 2](../img/derivate-06-de-l-hospital/fig02.svg){ .fig .ovale loading=lazy style="width:65%" }
+
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 8: derivabilità"
 
@@ -393,7 +413,7 @@ title: "Teorema di De l'Hospital e derivabilità"
     \lim_{x \rr 0} f'(x) {\rm ~~non~~esiste},~~~  \lim_{x \rr 0^-} f'(x) {\rm ~~non~~esiste},~~~  \lim_{x \rr 0^+} f'(x) {\rm ~~non~~esiste}
     $$
 
-    Questo non ci permette pero' di concludere che la funzione non sia derivabile in $x_0=0$.  Per calcolare la derivata  occorre usare il limite del rapporto incrementale. Abbiamo
+    Questo non ci permette però di concludere che la funzione non sia derivabile in $x_0=0$.  Per calcolare la derivata  occorre usare il limite del rapporto incrementale. Abbiamo
 
     $$
     f'(0)= \lim_{h \rr 0} \frac{f(h)-0}{h} = \lim_{h \rr 0} h \cdot \sin \left(\frac{1}{h}\right)=0 {\rm ~~quindi~la~funzione~è~derivabile~in~~} x=0

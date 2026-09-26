@@ -23,7 +23,7 @@ title: "Funzione derivata"
     y = m \: x + q
     $$
 
-    il cui grafico corrisponde alla retta passante per i due punti (equazione delle retta in forma esplicita).  Il <strong>coefficiente angolare</strong>  o <strong>pendenza</strong> della retta è il valore $m$ e l'<strong>ordinata all'origine</strong> della retta è il valore $q$.
+    il cui grafico corrisponde alla retta passante per i due punti (equazione della retta in forma esplicita).  Il <strong>coefficiente angolare</strong>  o <strong>pendenza</strong> della retta è il valore $m$ e l'<strong>ordinata all'origine</strong> della retta è il valore $q$.
 
 - Imponendo il passaggio per i due punti abbiamo:
 
@@ -63,7 +63,7 @@ title: "Funzione derivata"
     E otteniamo la retta:
 
     $$
-    y = \underbrace{\frac{y_2 -y_1}{x_2 - x_1}}_{m} \: x + \underbrace{y_1 - \frac{y_2 -y_1}{x_2 - x_1} \: x_1}_{q} {\rm ~~~~~chiaremente~~~~~} \frac{y_2 -y_1}{x_2 - x_1} = \frac{y_1 -y_2}{x_1 - x_2}
+    y = \underbrace{\frac{y_2 -y_1}{x_2 - x_1}}_{m} \: x + \underbrace{y_1 - \frac{y_2 -y_1}{x_2 - x_1} \: x_1}_{q} {\rm ~~~~~chiaramente~~~~~} \frac{y_2 -y_1}{x_2 - x_1} = \frac{y_1 -y_2}{x_1 - x_2}
     $$
 
 !!! chiave ""
@@ -85,6 +85,8 @@ title: "Funzione derivata"
     $$
     y = \tilde{y} + m (x-\tilde{x})
     $$
+
+<a id="box-texexpbox1-1"></a>
 
 !!! esempio "Esempio 1: Retta passante per due punti"
 
@@ -152,7 +154,9 @@ title: "Funzione derivata"
 
     Il calcolo della tangente è importante per determinare i punti in cui il grafico di una funzione ha <strong>tangente orizzontale</strong> (punti di massimo e di minimo locali o globali, ed eventualmente anche in altri punti).
 
-- E' quindi utile saper scrivere analiticamente l'equazione della retta tangente alla curva in un punto generico per vedere poi in quali punti essa è orizzontale. Questa idea si deve per primo a Fermat, che la elaborò intorno al 1630.
+- È quindi utile saper scrivere analiticamente l'equazione della retta tangente alla curva in un punto generico per vedere poi in quali punti essa è orizzontale. Questa idea si deve per primo a Fermat, che la elaborò intorno al 1630.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: Grafico di funzione – punto a tangente orizzontale"
 
@@ -165,6 +169,8 @@ title: "Funzione derivata"
     ![Figura 4](../img/derivate-01-funzione-derivata/fig04.svg){ .fig .ovale loading=lazy style="width:70%" }
 
     La funzione ha un punto a tangenza orizzontale che è punto di minimo globale.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 3: Grafico di funzione – punti a tangente orizzontale"
 
@@ -247,6 +253,8 @@ title: "Funzione derivata"
 
     3. L'angolo $\alpha$ è quello  tra la retta tangente e l'asse delle ascisse.
 
+<a id="box-defXX-4"></a>
+
 !!! definizione "Definizione 1: di derivata"
 
     Sia $f: (a, b) \rr \R$,  $f$ si dice derivabile in $x_0  \in (a, b)$ se esiste finito
@@ -273,6 +281,8 @@ title: "Funzione derivata"
     \underbrace{\frac{df}{dx}\bigg\vert _{x=x_0} {\rm~~~~e~~~~~~} \frac{dy}{dx}\bigg\vert _{x=x_0}}_{{\rm notazione~di~Leibniz}}
     $$
 
+<a id="box-defXX-5"></a>
+
 !!! definizione "Definizione 2: retta tangente 
 "
 
@@ -283,6 +293,8 @@ title: "Funzione derivata"
     $$
 
     si chiama <strong>retta tangente</strong> al grafico di una funzione $f$ nel punto $\big( x_0 , f ( x_0 )\big)$.
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 4: Retta tangente"
 
@@ -299,6 +311,8 @@ title: "Funzione derivata"
     $$
 
     ![Figura 9](../img/derivate-01-funzione-derivata/fig09.svg){ .fig .ovale loading=lazy style="width:56%" }
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 5: Retta tangente"
 
@@ -319,6 +333,8 @@ title: "Funzione derivata"
 
 - Possiamo ora definire una  funzione che ad ogni  $x$ associ la derivata di una funzione $f$  nel punto $x$ (ovviamente se $f$ è derivabile).
 
+<a id="box-defXX-8"></a>
+
 !!! definizione "Definizione 3: di funzione derivata"
 
     Se una funzione $f$ è derivabile in ogni punto di un intervallo $(a, b)$, la funzione:
@@ -336,6 +352,8 @@ title: "Funzione derivata"
     \underbrace{\dot{f}(x)}_{{\rm notazione~di~Newton}} \qquad 
     \underbrace{ \frac{df}{dx} {\rm~~~~,~~~~~~} \frac{df(x)}{dx}  {\rm~~~~e~~~~~~} \frac{dy}{dx}}_{{\rm notazione~di~Leibniz}}
     $$
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 6: funzione derivata"
 
@@ -370,6 +388,8 @@ title: "Funzione derivata"
     ![Figura 12](../img/derivate-01-funzione-derivata/fig12.svg){ .fig .ovale loading=lazy style="width:49%" }
 
 ### 3.2 Continuità e derivabilità
+
+<a id="box-theoXXX-10"></a>
 
 !!! teorema "Teorema 1"
 
@@ -439,7 +459,7 @@ title: "Funzione derivata"
 
     un controesempio è la funzione  $f(x) = |x|$ che è continua in $x_0 = 0$ ma non derivabile in $x_0=0$.  Di conseguenza <strong>se una funzione  è continua in $x_0$,  non necessariamente  è anche derivabile in $x_0$</strong>.
 
-- Il fatto che $f$  sia derivabile  in $x_0$ è condizione sufficiente ma non necessaria affinchè $f$ sia continua in $x_0$. Inoltre  il fatto che $f$  sia continua  in $x_0$ è condizione necessaria ma non sufficiente affinchè $f$ sia derivabile in $x_0$.
+- Il fatto che $f$  sia derivabile  in $x_0$ è condizione sufficiente ma non necessaria affinché $f$ sia continua in $x_0$. Inoltre  il fatto che $f$  sia continua  in $x_0$ è condizione necessaria ma non sufficiente affinché $f$ sia derivabile in $x_0$.
 
 - Dalla contronominale o implicazione inversa  di \(\eqref{BBB}\) abbiamo:
 
@@ -447,4 +467,4 @@ title: "Funzione derivata"
     f {\rm ~~non~è~continua~in~} x_0 ~~\Rightarrow~~ f {\rm ~~non~è~derivabile~in~} x_0
     $$
 
-    ovvero se una funzione è discontinua in $x_0$ non può essere derivabile $x_0$.
+    ovvero se una funzione è discontinua in $x_0$ non può essere derivabile in $x_0$.

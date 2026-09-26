@@ -23,6 +23,8 @@ Potremo così precisare il comportamento della funzione quando la variabile indi
 
     - Il <strong>punto</strong> $c$ può essere <strong>interno</strong> all'intervallo oppure <strong>uno dei suoi estremi</strong> (eventualmente $\ip$ o $\im$).
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: successionale di limite"
 
     Con $\ell,c\in \R^*$,  scriviamo
@@ -55,6 +57,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 ### 1.1 Intorni e definizione topologica di limite
 
+<a id="box-defXX-2"></a>
+
 !!! definizione "Definizione 2: di intorno centrato di un punto"
 
     Dati $\delta>0$ e $x_0 \in \R$, l'<strong>intorno</strong> centrato in $x_0$ associato a $\delta$ è l'intervallo aperto:
@@ -74,6 +78,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     si~pensa~~} 0 < \delta \ll 1.
     $$
 
+<a id="box-defXX-3"></a>
+
 !!! definizione "Definizione 3: di  intorno di $\pm \infty$"
 
     Dati $a,b \in \R$,   l'intorno associato ad $a$ di $\im$ è l'intervallo:
@@ -92,15 +98,19 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 - Introduciamo ora la locuzione “definitivamente per $x \rr c$” analogamente a quanto abbiamo fatto nel caso delle successioni
 
+<a id="box-defXX-4"></a>
+
 !!! definizione "Definizione 4: di proprietà posseduta definitivamente per funzioni"
 
     Diciamo che una funzione $f$ possiede <strong>definitivamente</strong> una certa proprietà  per $x \rr c \in \R^*$ se esiste un intorno $U$ di $c$ tale che la proprietà vale per $f(x)$ per ogni $x \in U, x \neq c$.
 
 - Diamo ora la definizione topologica di limite che, come già detto, è equivalente a quella successionale vista in precedenza ma che risulta utile.
 
+<a id="box-defXX-5"></a>
+
 !!! definizione "Definizione 5: topologica di limite"
 
-    Siano $c, \ell \in \R^*$, e sia $f$ una funzione definita almeno definitamente per $x \rr c$. Scriviamo
+    Siano $c, \ell \in \R^*$, e sia $f$ una funzione definita almeno definitivamente per $x \rr c$. Scriviamo
 
     $$
     f(x) \rr  \ell {\rm ~~~per~~~} x \rr c
@@ -150,6 +160,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
     Il fatto di avere già sviluppato le basi del <em>calcolo dei limiti per le successioni</em>, renderà molto vantaggioso l'utilizzo della definizione successionale di limite per dimostrare i teoremi sui limiti delle funzioni  a partire da quelli visti sulle successioni.
 
+<a id="box-theoXXX-6"></a>
+
 !!! teorema "Teorema 1: di unicità del limite di funzioni"
 
     Data una funzione $f$, se $f(x) \rr \ell$ per $x \rr c$ allora  tale limite $\ell$ è unico.
@@ -164,9 +176,13 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
     Quindi la successione $\left\{f(x_n)\right\}$ avrebbe due limiti distinti: assurdo. <span class="qed">□</span>
 
+<a id="box-defXX-7"></a>
+
 !!! definizione "Definizione 6: di funzione infinitesima"
 
     Una funzione $f$ tale che $f(x) \rr 0$ per $x \rr c$ si dice <strong>infinitesima</strong> per $x \rr c$.
+
+<a id="box-defXX-8"></a>
 
 !!! definizione "Definizione 7: di funzione infinita"
 
@@ -223,6 +239,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     f(x) \rr \ell {\rm ~~per~~} x \rr c {\rm~~~~con~~~~} \ell \in \R {\rm ~~~e~~~} c= \pm \infty
     $$
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 1: Limite finito all'infinito (definizione  successionale di limite)"
 
     Dimostriamo che:
@@ -265,6 +283,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 #### Asintoto orizzontale
 
+<a id="box-defXX-10"></a>
+
 !!! definizione "Definizione 8: di asintoto orizzontale"
 
     Si dice che $f$ ha <strong>asintoto orizzontale</strong> di equazione $y = \ell \in \R$ per $x \rr \ip$ ($x \rr \im$) se:
@@ -278,6 +298,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 #### Limite per eccesso o per difetto
 
 - Quando una funzione ha limite finito all'infinito, <strong>talvolta</strong> è possibile precisare se questo limite è per <strong>eccesso</strong> ($\ell^+$) o per <strong>difetto</strong> ($\ell^-$).  Graficamente, questo significa che il grafico della funzione si avvicina alla quota $y = \ell$ dall'<strong>alto</strong> o dal <strong>basso</strong>.
+
+<a id="box-defXX-11"></a>
 
 !!! definizione "Definizione 9: di limite per eccesso o per difetto"
 
@@ -299,6 +321,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 - In questi casi si dice che $f(x)$ tende a $\ell$ per eccesso (per difetto) per $x$ che tende a $c$.
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 2: Limiti per eccesso/difetto"
 
     Ad esempio:
@@ -310,6 +334,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     la scrittura $0^+$ significa che la funzione tende a $0$ per eccesso, ossia i valori di $f(x)$ tendono a zero mantenendosi non negativi.
 
     ![Figura 3](../img/limiti-01-limiti-asintoti/fig03.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 3: Limite per eccesso/difetto"
 
@@ -330,6 +356,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     f(x) \rr \ell {\rm ~~per~~} x \rr c {\rm~~~~con~~~~} \ell= \pm \infty {\rm ~~~e~~~} c= \pm \infty
     $$
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 4: Limite infinito all'infinito (definizione  successionale di limite)"
 
@@ -358,6 +386,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 - Nei casi in cui una funzione abbia, limite infinito all'infinito, può accadere (ma non sempre accade) che esista una retta, obliqua, a cui il grafico della funzione si avvicina sempre di più.
 
+<a id="box-defXX-15"></a>
+
 !!! definizione "Definizione 10: di asintoto obliquo"
 
     Si dice che $f$ ha <strong>asintoto obliquo</strong> di equazione $y = m \: x + q ~~(q,m \in \R, m \neq 0)$ per $x \rr \ip$ $(\im)$ se :
@@ -365,6 +395,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     \big( f(x) - (m \: x + q) \big)   \rr  0 {\rm ~~~per~~~} x \rr \ip ~~(\im)
     $$
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 5: di asintoto obliquo"
 
@@ -392,9 +424,11 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 - In casi meno elementari, anziché dover “indovinare” qual è l'asintoto obliquo è utile avere un criterio operativo per cercarlo.
 
+<a id="box-propXX-17"></a>
+
 !!! teorema "Proposizione 1: di esistenza asintoto obliquo"
 
-    Una  funzione $f$ ammette asintoto obliquo di equazione $y = mx+ q$ per $x \rr \ip$ se e solo valgono le seguenti due condizioni:
+    Una  funzione $f$ ammette asintoto obliquo di equazione $y = mx+ q$ per $x \rr \ip$ se e solo se valgono le seguenti due condizioni:
 
     $$
     \lim_{x \rr \ip} \frac{f(x)}{x} = m \in \R, m \neq 0 {\rm ~~~~~e~~~~~} \lim_{x \rr \ip} \big( f(x) - m\:x \big) = q \in \R
@@ -402,7 +436,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
     Analogo criterio vale per $x \rr \im$.
 
-- Osserviamo che la prima condizione impone che $f(x)$ abbia il medesimo ordine di infinito di $y=x$ per $x \rr \ip$, poichè:
+- Osserviamo che la prima condizione impone che $f(x)$ abbia il medesimo ordine di infinito di $y=x$ per $x \rr \ip$, poiché:
 
     $$
     \lim_{x \rr \im}{x} = \im {\rm ~~~~~e~~~~~} \lim_{x \rr \ip}{x} = \ip
@@ -426,13 +460,15 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 ??? dimostrazione "Dimostrazione"
 
-    La prima condizione  evita la possibilità che l'asintoto sia orizzontale e impone che $f(x)$ abbia il medesimo ordine di infinito di $y=x$. Dalle seconda condizione:
+    La prima condizione  evita la possibilità che l'asintoto sia orizzontale e impone che $f(x)$ abbia il medesimo ordine di infinito di $y=x$. Dalla seconda condizione:
 
     $$
     {\rm se~~}  \lim_{x \rr \ip} \big( f(x) - m\:x \big) = q  {\rm ~~~allora~~~} \lim_{x \rr \ip} \big(f(x) - (m \: x + q) \big) = 0
     $$
 
     Ragionamento analogo per $x \rr \im$. <span class="qed">□</span>
+
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 6: Asintoto obliquo"
 
@@ -457,6 +493,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     f(x) \rr \ell {\rm ~~per~~} x \rr c {\rm~~~~con~~~~} \ell= \pm \infty {\rm ~~~e~~~} c \in \R
     $$
+
+<a id="box-texexpbox1-19"></a>
 
 !!! esempio "Esempio 7: Limite infinito al finito (definizione  successionale di limite)"
 
@@ -487,6 +525,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 - Talvolta una funzione si comporta diversamente, dal punto di vista del suo limite, a seconda che $x$ si avvicini a $c$ da <strong>destra</strong> o da <strong>sinistra</strong>.
 
+<a id="box-defXX-20"></a>
+
 !!! definizione "Definizione 11: di limite destro e sinistro"
 
     Con $\ell \in \R^*$ e $c \in \R$, scriviamo
@@ -509,11 +549,13 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     \lim_{x \rr c^+} f(x) = \lim_{x \rr c^-} f(x) = \ell
     $$
 
-    Tuttavia, può accadere che il limite destro e il  limite sinistro esistano ma siano siano diversi fra loro, oppure solo uno dei due esista. In questi casi:
+    Tuttavia, può accadere che il limite destro e il  limite sinistro esistano ma siano diversi fra loro, oppure solo uno dei due esista. In questi casi:
 
     $$
     \lim_{x \rr c} f(x) {\rm ~~~~~non ~esiste~~}
     $$
+
+<a id="box-texexpbox1-21"></a>
 
 !!! esempio "Esempio 8: Limite destro e sinistro"
 
@@ -540,6 +582,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 #### Asintoto verticale
 
+<a id="box-defXX-22"></a>
+
 !!! definizione "Definizione 12: di asintoto verticale"
 
     Si dice che $f$ ha <strong>asintoto verticale</strong> di equazione $x = c \in \R$ per   $x \rr c ~~ (c^+ {\rm ~o~~} c^-)$  se:
@@ -549,6 +593,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
 
 - Ogni situazione di <strong>limite infinito al finito</strong>, quindi, corrisponde graficamente alla presenza di un <strong>asintoto verticale</strong>, ossia di una <strong>retta verticale</strong> a cui il grafico della funzione si avvicina sempre più.
+
+<a id="box-texexpbox1-23"></a>
 
 !!! esempio "Esempio 9: Asintoto verticale"
 
@@ -579,6 +625,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     f(x) \rr \ell {\rm ~~per~~} x \rr c  {\rm~~~~con~~~~} \ell \in \R  {\rm ~~~e~~~} c \in \R
     $$
+
+<a id="box-texexpbox1-24"></a>
 
 !!! esempio "Esempio 10: Limite finito al finito (definizione  successionale di limite)"
 
@@ -612,6 +660,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     \lim_{x \rr 0} \sin x = f(0)
     $$
+
+<a id="box-texexpbox1-25"></a>
 
 !!! esempio "Esempio 11: Limite finito al finito (definizione  successionale di limite)"
 
@@ -658,6 +708,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 ### 1.6 Continuità
 
+<a id="box-defXX-26"></a>
+
 !!! definizione "Definizione 13: di continuità"
 
     Se $f: I \rr \R$ e $c \in I$, si dice che $f$ è <strong>continua</strong> in $c$ se
@@ -676,6 +728,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 - Una funzione <strong>non continua</strong> in un punto $c$ si dice <strong>discontinua</strong> in $c$.
 
+<a id="box-texexpbox1-27"></a>
+
 !!! esempio "Esempio 12: Continuità"
 
     La funzione:
@@ -683,12 +737,14 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     f(x)= 
     \begin{cases}
-    1 &  {\rm se} x \neq 0\\
-    0 &  {\rm se} x= 0
+    1 &  {\rm se ~~} x \neq 0\\
+    0 &  {\rm se ~~} x= 0
     \end{cases}
     $$
 
     è discontinua in 0. La funzione $\sin x$ è continua in 0.
+
+<a id="box-texexpbox1-28"></a>
 
 !!! esempio "Esempio 13: Discontinuità"
 
@@ -702,6 +758,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     \lim_{x \rr 0^+} f(x) = 1 {\rm ~~e~~} \lim_{x \rr 0^-} f(x) = -1
     $$
 
+<a id="box-defXX-29"></a>
+
 !!! definizione "Definizione 14: di punto di discontinuità a salto"
 
     Si dice che $c$ è un <strong>punto di discontinuità a salto</strong> per $f$ quando i limiti destro e sinistro in $c$ esistono finiti, ma sono diversi tra loro. Il salto è costituito dalla differenza dei limiti:
@@ -709,6 +767,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     $$
     {\rm salto~in~} c = \lim_{x \rr c^+} f(x) - \lim_{x \rr c^-} f(x)
     $$
+
+<a id="box-texexpbox1-30"></a>
 
 !!! esempio "Esempio 14: Discontinuità a salto"
 
@@ -718,7 +778,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     f(x) = \frac{x}{|x|}
     $$
 
-    ha un un punto di discontinuità a salto in $x=0$, con salto uguale a 2.
+    ha un punto di discontinuità a salto in $x=0$, con salto uguale a 2.
 
 !!! chiave ""
 
@@ -744,6 +804,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     \lim_{x \rr c} f(x)   {\rm ~~~non~esiste}
     $$
 
+<a id="box-texexpbox1-31"></a>
+
 !!! esempio "Esempio 15: Non esistenza del limite (definizione  successionale di limite)"
 
     Dimostriamo che:
@@ -763,7 +825,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     di conseguenza abbiamo:
 
     $$
-    \{n \: \pi\} \rr \ip {\rm ~~~~e~~~~} \left\{\frac{\pi}{2} + 2 \: n \: \pi\right\} \rr \ip {\rm ~~~per~~~} n \ip
+    \{n \: \pi\} \rr \ip {\rm ~~~~e~~~~} \left\{\frac{\pi}{2} + 2 \: n \: \pi\right\} \rr \ip {\rm ~~~per~~~} n \rr \ip
     $$
 
     In corrispondenza di tali successioni si ha
@@ -775,6 +837,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     e di conseguenza le due successioni tendono a due limiti diversi.  Quindi la definizione di limite non è soddisfatta e il limite non esiste.
 
     ![Figura 9](../img/limiti-01-limiti-asintoti/fig09.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-texexpbox1-32"></a>
 
 !!! esempio "Esempio 16: Non esistenza del limite (definizione  successionale di limite)"
 
@@ -795,7 +859,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     di conseguenza abbiamo:
 
     $$
-    \left\{\frac{1}{n \: \pi}\right\} \rr 0 {\rm ~~~~e~~~~} \left\{\frac{1}{\frac{\pi}{2} + 2 \: n \: \pi}\right\} \rr 0 {\rm ~~~per~~~} n \ip
+    \left\{\frac{1}{n \: \pi}\right\} \rr 0 {\rm ~~~~e~~~~} \left\{\frac{1}{\frac{\pi}{2} + 2 \: n \: \pi}\right\} \rr 0 {\rm ~~~per~~~} n \rr \ip
     $$
 
     In corrispondenza di tali successioni si ha

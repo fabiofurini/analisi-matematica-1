@@ -8,7 +8,7 @@
 
     ---
 
-    Il concetto di funzione · Definizione di funzione, dominio, codominio e immagine · Suriezione, iniezioni e biiezioni
+    Il concetto di funzione · Definizione di funzione, dominio, codominio e immagine · Suriezioni, iniezioni e biiezioni
 
     [:octicons-arrow-right-24: Leggi il capitolo](01-funzioni.md)
 

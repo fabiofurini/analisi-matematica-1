@@ -13,6 +13,8 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
 - Ci occupiamo ora di funzioni monotone su un intervallo (e <strong>non necessariamente continue</strong>) e il prossimo teorema  (basato sull'assioma di continuità di $\R$) si può vedere come una estensione alle funzioni del teorema di monotonia per le successioni.
 
+<a id="box-theoXXX-1"></a>
+
 !!! teorema "Teorema 1: di monotonia delle funzioni"
 
     Sia $f : (a, b) \rr \R$ una funzione monotona. Allora per ogni $c \in  (a, b)$ esistono finiti i limiti destro e sinistro, per $x \rr c$; ai due estremi $a$, $b$ esistono i limiti destro (in $a$) e sinistro (in $b$), eventualmente infiniti.
@@ -38,7 +40,7 @@ title: "Funzioni monotone su un intervallo e invertibilità"
     Quindi occorre provare che
 
     $$
-    \lim_{x \rr c^-} = \ell
+    \lim_{x \rr c^-} f(x) = \ell
     $$
 
     Sia dunque $\{x_n\}$ una qualsiasi successione in $(a, c)$ tale che $x_n \rr c$, e proviamo che $f(x_n) \rr  \ell$, ossia che per ogni $\varepsilon > 0$ risulta definitivamente
@@ -54,7 +56,7 @@ title: "Funzioni monotone su un intervallo e invertibilità"
     Per provare la prima, osserviamo che essendo $\ell - \varepsilon$  minore di $\ell$, cioè del minimo maggiorante di $\{ f(x): x \in (a,c) \}$, non è un maggiorante di tale insieme, perciò esiste un punto
 
     $$
-    \tilde{x} \in (a,c) {\rm ~~tale~che~~} f(\tilde{x}) \le  \ell - \varepsilon
+    \tilde{x} \in (a,c) {\rm ~~tale~che~~} f(\tilde{x}) >  \ell - \varepsilon
     $$
 
     Poiché $f$ è crescente, ne segue che
@@ -124,7 +126,7 @@ title: "Funzioni monotone su un intervallo e invertibilità"
     perciò
 
     $$
-    \lim_{x \rr b^-} f(x_n) = \ip
+    \lim_{n \rr \ip} f(x_n) = \ip
     $$
 
     Allo stesso modo si  prova che esiste:
@@ -145,6 +147,8 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
 - Sappiamo anche che il viceversa non è vero in generale: esistono funzioni invertibili su un intervallo, e non monotone.
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 1: Funzione invertibile ma non monotona"
 
     Consideriamo ad esempio
@@ -161,9 +165,11 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
     ![Figura 1](../img/limiti-10-monotone-invertibili/fig01.svg){ .fig .ovale loading=lazy style="width:80%" }
 
-    Questa funzione rispetta la  condizione di invertibilità che richiedere che il grafico di $f$ sia intersecato al massimo in un punto da ogni retta parallela all'asse delle ascisse, ma non è monotona.
+    Questa funzione rispetta la  condizione di invertibilità che richiede che il grafico di $f$ sia intersecato al massimo in un punto da ogni retta parallela all'asse delle ascisse, ma non è monotona.
 
 - Se aggiungiamo l'ipotesi della continuità e il dominio uguale a un  intervallo, essere strettamente monotona diventa  condizione necessaria e sufficiente per  l'invertibilità come  enunciato dal seguente teorema.
+
+<a id="box-theoXXX-3"></a>
 
 !!! teorema "Teorema 2: di invertibilità di funzioni monotone e continue"
 
@@ -231,7 +237,7 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
     !!! chiave ""
 
-        un funzione continua e invertibile su un intervallo, ha come funzione inversa una funzione continua.
+        una funzione continua e invertibile su un intervallo, ha come funzione inversa una funzione continua.
 
 - Questo fatto completa la dimostrazione del teorema di continuità delle funzioni elementari:
 

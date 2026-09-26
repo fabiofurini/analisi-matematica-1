@@ -17,6 +17,8 @@ title: "Successioni e limiti di successioni"
     \mathbb{N}: 0,1,2,3,\dots,n,\dots
     $$
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di successione"
 
     Una <strong>successione</strong> è una relazione  che associa  a ogni numero naturale  $n \in \mathbb{N}$ (o da un certo numero naturale $n_0$ in poi) un numero reale $a_n \in \R$.
@@ -51,6 +53,8 @@ title: "Successioni e limiti di successioni"
 
 - I puntini di sospensione dopo $a_n$ indicano che non stiamo considerando soltanto i primi $n$ termini della successione (cioè un <strong>insieme finito</strong> di numeri), ma l'intera successione di <em>infiniti termini</em> (cioè un <strong>insieme infinito</strong> di numeri).
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 1: Successioni"
 
     \begin{align*}
@@ -60,6 +64,8 @@ title: "Successioni e limiti di successioni"
     \end{align*}
 
     L'ultima successione si chiama <strong>successione costante</strong>.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 2: Successioni"
 
@@ -71,6 +77,8 @@ title: "Successioni e limiti di successioni"
 !!! chiave ""
 
     Possiamo rappresentare graficamente le successioni  con i <strong>punti</strong> del piano cartesiano di coordinate $(n, a_n)$.
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 3: Grafico di successione"
 
@@ -96,7 +104,9 @@ title: "Successioni e limiti di successioni"
     m \le a_n \le M,  ~~~\forall n  \in \N
     $$
 
-    E' <strong>limitata inferiormente</strong> se esiste  $m$. E' <strong>limitata superiormente</strong> se esiste  $M$.
+    È <strong>limitata inferiormente</strong> se esiste  $m$. È <strong>limitata superiormente</strong> se esiste  $M$.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 4: Successioni limitate"
 
@@ -106,9 +116,13 @@ title: "Successioni e limiti di successioni"
 
     - la successione $\left\{( -2)^n \right\}$ non è limitata (né inferiormente, né superiormente).
 
+<a id="box-defXX-6"></a>
+
 !!! definizione "Definizione 2: di proprietà posseduta definitivamente"
 
     Diciamo che una successione $\{a_n\}$ possiede (o acquista) <strong>definitivamente</strong> una certa proprietà se esiste  $\tilde{n} \in \mathbb{N}$ tale che $a_n$ soddisfa quella proprietà per ogni  $n \ge \tilde{n}$.
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 5: Proprietà possedute definitivamente"
 
@@ -117,6 +131,8 @@ title: "Successioni e limiti di successioni"
     ![Figura 2](../img/successioni-01-limiti-successioni/fig02.svg){ .fig .ovale loading=lazy style="width:75%" }
 
     Questa  successione  è definitivamente positiva. Con $n=4$ abbiamo $a_n=0$, quindi prendendo   $\tilde{n}=5$,  si ha  $a_n > 0$ con $n \ge \tilde{n}$.
+
+<a id="box-texexpbox1-8"></a>
 
 !!! esempio "Esempio 6: Proprietà possedute definitivamente"
 
@@ -127,6 +143,8 @@ title: "Successioni e limiti di successioni"
     Questa successione è definitivamente minore di $10^{-100}$.  Con $n=10^{100}$ abbiamo $a_n =10^{-100}$,  quindi prendendo ad esempio $\tilde{n} = 10^{100} +1$ si ha $a_n < 10^{-100}$ con $n \ge \tilde{n}$.
 
 ### 1.1 Successioni convergenti e definizione di limite di successioni
+
+<a id="box-defXX-9"></a>
 
 !!! definizione "Definizione 3: di successione convergente"
 
@@ -148,6 +166,8 @@ title: "Successioni e limiti di successioni"
     $$
 
     Il numero $n(\varepsilon)$  dipende (in generale) dal valore di  $\varepsilon$. Se la successione $\{a_n\}$ è convergente,  ad essa è quindi associato  il numero $\ell \in \R$.
+
+<a id="box-defXX-10"></a>
 
 !!! definizione "Definizione 4: di limite della successione"
 
@@ -183,6 +203,8 @@ title: "Successioni e limiti di successioni"
 
     da un certo valore di $n$ in poi,  chiamato $n(\varepsilon)$, i punti $a_n$ della successione  non escono più da questa striscia.  Nel grafico di prima, fissata la larghezza della striscia, abbiamo i valori $a_n$ all'interno della striscia per $n \ge n(\varepsilon)$.
 
+<a id="box-theoXXX-11"></a>
+
 !!! teorema "Teorema 1: di unicità del limite  della successione"
 
     Se una successione $\{a_n\}$ converge al limite $\ell \in \R$ allora tale limite  è unico.
@@ -203,6 +225,8 @@ title: "Successioni e limiti di successioni"
     $$
 
     Quindi non possono esistere due valori differenti $\ell_1$ e $\ell_2$ e   di conseguenza il limite (se esiste) è unico. <span class="qed">□</span>
+
+<a id="box-texexpbox1-12"></a>
 
 !!! esempio "Esempio 7: Verifica del limite di successione"
 
@@ -249,7 +273,9 @@ title: "Successioni e limiti di successioni"
 
 !!! chiave ""
 
-    Le successione convergenti sono (definitivamente)  limitate.
+    Le successioni convergenti sono (definitivamente)  limitate.
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 8: Verifica del limite di successione"
 
@@ -282,7 +308,7 @@ title: "Successioni e limiti di successioni"
     $$
 
     $$
-    {\rm ~~qiundi~è~soddisfatta~se~~~}\qquad n > \frac{2 + \varepsilon}{\varepsilon}
+    {\rm ~~quindi~è~soddisfatta~se~~~}\qquad n > \frac{2 + \varepsilon}{\varepsilon}
     $$
 
     Fissato $\varepsilon > 0$, basterà scegliere il primo intero
@@ -293,6 +319,8 @@ title: "Successioni e limiti di successioni"
 
     per soddisfare la condizione richiesta dalla definizione di limite.
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 9: Verifica del limite di successione"
 
     Per l'esempio precedente, abbiamo dimostrato che il limite vale $1$. Verifichiamo ora cosa succede fissando $\varepsilon=\frac{1}{2}$.  In questo caso $n\left(\frac{1}{2}\right)> \frac{2+1/2}{1/2}=5$.
@@ -302,6 +330,8 @@ title: "Successioni e limiti di successioni"
     Fissando invece  $\varepsilon=\frac{1}{4}$,  in questo caso abbiamo $n\left(\frac{1}{4}\right)> \frac{2+1/4}{1/4}=9$.
 
     ![Figura 8](../img/successioni-01-limiti-successioni/fig08.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 10: Verifica del limite di successione"
 
@@ -347,6 +377,8 @@ title: "Successioni e limiti di successioni"
 
     per soddisfare la condizione richiesta dalla definizione di limite.
 
+<a id="box-texexpbox1-16"></a>
+
 !!! esempio "Esempio 11: Limite di successioni"
 
     Consideriamo la successione:
@@ -387,6 +419,8 @@ title: "Successioni e limiti di successioni"
 
 ### 1.2 Successioni divergenti e  successioni irregolari
 
+<a id="box-defXX-17"></a>
+
 !!! definizione "Definizione 5: di successione divergente a $+\infty$"
 
     Una successione $\{ a_n\}$ si dice <strong>divergente</strong> a $+\infty$ se per ogni $M>0$ esiste un numero $n(M) \in \N$  tale che:
@@ -394,6 +428,8 @@ title: "Successioni e limiti di successioni"
     $$
     a_n  > M {\rm~~per~ogni~~} n \ge n(M)
     $$
+
+<a id="box-defXX-18"></a>
 
 !!! definizione "Definizione 6: di successione divergente a $-\infty$"
 
@@ -431,6 +467,8 @@ title: "Successioni e limiti di successioni"
 
 - Sui simboli $+\infty$ e $-\infty$ le operazioni di somma e prodotto con le proprietà indicate in $R_1$ e $R_2$ non sono definite, anche se  potremo fare “parzialmente” queste operazioni (come vedremo in seguito).
 
+<a id="box-defXX-19"></a>
+
 !!! definizione "Definizione 7: dell'insieme $\mathbb{R}^*$"
 
     L'insieme dei numeri reali $\mathbb{R}$ con l'aggiunta dei due elementi $+\infty$ e $-\infty$ sarà indicato:
@@ -451,6 +489,8 @@ title: "Successioni e limiti di successioni"
 
     Le successioni il cui limite è un numero reale sono <strong>convergenti</strong>, quelle il cui limite è $+\infty$ oppure $-\infty$ sono <strong>divergenti</strong>.
 
+<a id="box-texexpbox1-20"></a>
+
 !!! esempio "Esempio 12: Successioni convergenti e divergenti"
 
     - la successione canonica $\{ n \}$ è divergente a $+\infty$;
@@ -460,6 +500,8 @@ title: "Successioni e limiti di successioni"
     - la successione $\{ -2^n \}$ è divergente a $-\infty$;
 
     - la successione $\{ 2^{\frac{1}{n}} \}$ è convergente  a $1$.
+
+<a id="box-theoXXX-21"></a>
 
 !!! osservazione "Osservazione 1"
 
@@ -526,9 +568,13 @@ title: "Successioni e limiti di successioni"
 
 - Infine osserviamo che ci sono successioni che non sono né convergenti né divergenti
 
+<a id="box-defXX-22"></a>
+
 !!! definizione "Definizione 8: di successione irregolare o indeterminata"
 
     Una  successione che non è né convergente né divergente si dice <strong>irregolare</strong> o <strong>indeterminata</strong>.
+
+<a id="box-texexpbox1-23"></a>
 
 !!! esempio "Esempio 13: Successioni irregolari"
 
@@ -546,6 +592,8 @@ title: "Successioni e limiti di successioni"
 
 - È comodo adottare la convenzione introdotta per i limiti anche per il $\sup$ e per l'$\inf$, estendendo la definizione di queste quantità nel modo seguente
 
+<a id="box-defXX-24"></a>
+
 !!! definizione "Definizione 9: di estremo superiore e inferiore $\sup$ e $\inf$  (insiemi non limitati)"
 
     Se un insieme $E \subseteq \mathbb{R}$ non è limitato superiormente (inferiormente) diremo che
@@ -562,9 +610,13 @@ title: "Successioni e limiti di successioni"
 
 ## 3. Successioni infinitesime e infinite
 
+<a id="box-defXX-25"></a>
+
 !!! definizione "Definizione 10: di successione infinitesima"
 
     Una successione $\{a_n\}$ tendente a zero si dice <strong>infinitesima</strong>
+
+<a id="box-texexpbox1-26"></a>
 
 !!! esempio "Esempio 14: Successioni infinitesime"
 
@@ -578,9 +630,13 @@ title: "Successioni e limiti di successioni"
 
     “<strong>infinitesimo</strong>” non è un “numero infinitamente piccolo” (concetto privo di senso) ma una <strong>quantità variabile</strong> (successione o, come vedremo, funzione), che <strong>diviene indefinitamente piccola</strong>.
 
+<a id="box-defXX-27"></a>
+
 !!! definizione "Definizione 11: di successione infinita"
 
     Una successione $\{a_n\}$ tendente a $\pm \infty$ si dice <strong>infinita</strong>
+
+<a id="box-texexpbox1-28"></a>
 
 !!! esempio "Esempio 15: Successioni infinite"
 
@@ -589,6 +645,8 @@ title: "Successioni e limiti di successioni"
     - la successione $\left\{ n! \right\}$ è infinita
 
 - Talvolta è possibile precisare se una successione convergente <strong>si avvicina al suo limite per eccesso o per difetto</strong>
+
+<a id="box-defXX-29"></a>
 
 !!! definizione "Definizione 12: di limite per eccesso"
 
@@ -603,6 +661,8 @@ title: "Successioni e limiti di successioni"
     $$
     0 \le a_n - \ell < \varepsilon, {\rm ~~~~definitivamente}.
     $$
+
+<a id="box-defXX-30"></a>
 
 !!! definizione "Definizione 13: di limite per difetto"
 
@@ -620,7 +680,9 @@ title: "Successioni e limiti di successioni"
 
 - Dire che $a_n \rightarrow \ell^+$ per $n \rr \ip$ significa affermare che $a_n \rightarrow \ell$ e inoltre $a_n \ge \ell$ definitivamente; dunque $a_n$ si avvicina ad $\ell$ <em>da sopra</em>, ossia approssima $\ell$ per eccesso.
 
-- Dire che $a_n \rightarrow \ell^-$ per $n \rr \ip$ significa affermare che $a_n \rightarrow \ell$ e inoltre $a_n \le l$ definitivamente; dunque $a_n$ si avvicina ad $\ell$ <em>da sotto</em>, ossia approssima $\ell$ per difetto.
+- Dire che $a_n \rightarrow \ell^-$ per $n \rr \ip$ significa affermare che $a_n \rightarrow \ell$ e inoltre $a_n \le \ell$ definitivamente; dunque $a_n$ si avvicina ad $\ell$ <em>da sotto</em>, ossia approssima $\ell$ per difetto.
+
+<a id="box-texexpbox1-31"></a>
 
 !!! esempio "Esempio 16: Successione con limite per eccesso"
 
@@ -630,6 +692,8 @@ title: "Successioni e limiti di successioni"
 
     ![Figura 12](../img/successioni-01-limiti-successioni/fig12.svg){ .fig .ovale loading=lazy style="width:75%" }
 
+<a id="box-texexpbox1-32"></a>
+
 !!! esempio "Esempio 17: Successione con limite per difetto"
 
     $$
@@ -637,6 +701,8 @@ title: "Successioni e limiti di successioni"
     $$
 
     ![Figura 13](../img/successioni-01-limiti-successioni/fig13.svg){ .fig .ovale loading=lazy style="width:75%" }
+
+<a id="box-texexpbox1-33"></a>
 
 !!! esempio "Esempio 18: Successione con limite ma né per difetto né per eccesso"
 
@@ -649,6 +715,8 @@ title: "Successioni e limiti di successioni"
     In questo caso non si può affermare né che $a_n \rightarrow 0^+$ né $a_n \rightarrow 0^-$ per $n \rr \ip$.
 
 ## 4. Successioni monotone
+
+<a id="box-defXX-34"></a>
 
 !!! definizione "Definizione 14: di successioni monotone"
 
@@ -676,6 +744,8 @@ title: "Successioni e limiti di successioni"
     ~a_n > a_{n+1},~ \forall n
     $$
 
+<a id="box-texexpbox1-35"></a>
+
 !!! esempio "Esempio 19: Successioni monotone crescenti/decrescenti"
 
     - La successione $\{ n^2\}$ è monotona strettamente crescente
@@ -687,6 +757,8 @@ title: "Successioni e limiti di successioni"
     - ogni successione costante è monotona (crescente o decrescente, non strettamente)
 
 - Riguardo all'operazione di limite, queste successioni hanno una importanza particolare; infatti esse non sono <strong>mai irregolari</strong>, ma sono <strong>convergenti oppure divergenti</strong> a seconda che siano <strong>limitate oppure no</strong>.
+
+<a id="box-theoSUCC_MONOTONE-36"></a>
 
 !!! teorema "Teorema 2: di monotonia delle successioni"
 
@@ -774,21 +846,25 @@ title: "Successioni e limiti di successioni"
 
 - Questo teorema è una conseguenza dell'assioma di continuità $R_4$ dei numeri reali e pertanto vale se l'ambiente che consideriamo è $\R$. Ad esempio non è  vero che una successione crescente e limitata  di numeri razionali ammette sempre limite razionale, cioè in $\Q$.
 
-    !!! esempio "Esempio 20: Successione crescente e limita  di $\Q$"
+    <a id="box-texexpbox1-37"></a>
 
-        Sia $\{a_n\}$ la successione cosi definita:
+    !!! esempio "Esempio 20: Successione crescente e limitata  di $\Q$"
+
+        Sia $\{a_n\}$ la successione così definita:
 
         $$
-        a_0 = 0, a_1 = 0,1, a_2= 0,1011, a_3= 0,10110111, a_3= 0,1011011101111 \dots
+        a_0 = 0, a_1 = 0,1, a_2= 0,1011, a_3= 0,10110111, a_4= 0,1011011101111 \dots
         $$
 
-        Al passo $n$ si aggiunge al numero decimale ottenuto al passo precedente una cifra zero seguita da $n$ cifre uguali a $1$. La successione ${a_n}$ è evidentemente crescente, e superiormente limitata (ad esempio, $a_n \le 1$).
+        Al passo $n$ si aggiunge al numero decimale ottenuto al passo precedente una cifra zero seguita da $n$ cifre uguali a $1$. La successione $\{a_n\}$ è evidentemente crescente, e superiormente limitata (ad esempio, $a_n \le 1$).
 
         - In $\R$ la successione converge al numero $\sup \{a_n : n \in \N\}$, che dopo la virgola presenta un allineamento decimale illimitato e non periodico di cifre (una cifra 1, una cifra 0, due cifre 1, una cifra 0, tre cifre 1, una cifra 0, e così via all'infinito)
 
         - Quindi il limite della successione è un numero irrazionale. Quest'esempio mostra che nell'insieme $\Q$ il teorema di monotonia è falso.
 
 - Il teorema di monotonia delle successioni si può completare con il prossimo corollario, che considera successioni limitate o illimitate.
+
+<a id="box-corolXXX-38"></a>
 
 !!! teorema "Corollario 1:  del teorema di monotonia delle successioni"
 
@@ -800,7 +876,7 @@ title: "Successioni e limiti di successioni"
 
 ??? dimostrazione "Dimostrazione"
 
-    Se $\{a_n\}$ è superiormente limitata, l'enunciato è contenuto nel teorema \(\eqref{theo_ita:theoSUCC_MONOTONE}\) di monotonia delle successioni.
+    Se $\{a_n\}$ è superiormente limitata, l'enunciato è contenuto nel teorema [Teorema 2](#box-theoSUCC_MONOTONE-36) di monotonia delle successioni.
 
     Se invece $\{a_n\}$ è superiormente illimitata, questo significa che fissato $M > 0$ esiste un $n(M) \in \N$  tale che
 
@@ -847,6 +923,8 @@ Riassumendo abbiamo:
 - Se $0 < a < 1$, la successione è monotona decrescente e tende a zero.
 
 - Se $a$ è negativo,  la successione non è  monotona.
+
+<a id="box-theoXXX-39"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -910,17 +988,25 @@ Riassumendo abbiamo:
 
     per soddisfare la condizione richiesta di divergenza. <span class="qed">□</span>
 
+<a id="box-texexpbox1-40"></a>
+
 !!! esempio "Esempio 21: Progressione geometrica infinitesima e monotona  decrescente"
 
     ![Figura 16](../img/successioni-01-limiti-successioni/fig16.svg){ .fig loading=lazy style="width:75%" }
+
+<a id="box-texexpbox1-41"></a>
 
 !!! esempio "Esempio 22: Progressione geometrica infinitesima (ma non monotona)"
 
     ![Figura 17](../img/successioni-01-limiti-successioni/fig17.svg){ .fig loading=lazy style="width:75%" }
 
+<a id="box-texexpbox1-42"></a>
+
 !!! esempio "Esempio 23: Progressione geometrica divergente"
 
     ![Figura 18](../img/successioni-01-limiti-successioni/fig18.svg){ .fig loading=lazy style="width:75%" }
+
+<a id="box-texexpbox1-43"></a>
 
 !!! esempio "Esempio 24: Progressione geometrica né convergente né divergente"
 

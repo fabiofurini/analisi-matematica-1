@@ -15,6 +15,8 @@ title: "Calcolo dei limiti di funzioni"
 
 ### 1.1 Teorema dell'algebra dei limiti
 
+<a id="box-theoALGEBRA_LIMITI_FUNZIONI-1"></a>
+
 !!! teorema "Teorema 1: dell'algebra dei limiti  caso dei limiti finiti"
 
     Ipotesi per $x \rr c$:
@@ -67,6 +69,8 @@ title: "Calcolo dei limiti di funzioni"
 
     Nei prossimi enunciati  $\ell$ e $c$ saranno punti di $\R^*$ salvo avviso contrario.
 
+<a id="box-theoXXX-2"></a>
+
 !!! teorema "Teorema 2: di permanenza del segno $1^a$ forma"
 
     Ipotesi:
@@ -109,6 +113,8 @@ title: "Calcolo dei limiti di funzioni"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-theoXXX-3"></a>
+
 !!! teorema "Teorema 3: di permanenza del segno per funzioni $2^a$ forma"
 
     Ipotesi:
@@ -132,6 +138,8 @@ title: "Calcolo dei limiti di funzioni"
     Deriva dal corrispettivo teorema per le successioni. <span class="qed">□</span>
 
 - Per le funzioni abbiamo anche il seguente teorema di permanenza del segno.
+
+<a id="box-theoXXX-4"></a>
 
 !!! teorema "Teorema 4: di permanenza del segno per funzioni continue"
 
@@ -170,6 +178,8 @@ title: "Calcolo dei limiti di funzioni"
     <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.3 Teorema del confronto
+
+<a id="box-theoXXX-5"></a>
 
 !!! teorema "Teorema 5: del confronto"
 
@@ -227,6 +237,8 @@ title: "Calcolo dei limiti di funzioni"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-corolCONFRONTO_FUNZIONI_A-6"></a>
+
 !!! teorema "Corollario 1: del teorema del confronto  (parte I)"
 
     Ipotesi:
@@ -249,6 +261,8 @@ title: "Calcolo dei limiti di funzioni"
 
     Deriva dal corrispondente corollario sulle successioni. <span class="qed">□</span>
 
+<a id="box-texexpbox1-7"></a>
+
 !!! esempio "Esempio 1: Corollario del teorema del confronto"
 
     Proviamo che:
@@ -263,7 +277,7 @@ title: "Calcolo dei limiti di funzioni"
     x \rr 0 {\rm ~~per~~} x \rr 0 {\rm ~~e~~} \lim_{x \rr 0} \sin \frac{1}{x} {\rm ~~non~esiste~}
     $$
 
-    quindi non si può applicare il teorema \(\eqref{theo_ita:theoALGEBRA_LIMITI_FUNZIONI}\) dell'algebra dei limiti per funzioni. 
+    quindi non si può applicare il teorema [Teorema 1](#box-theoALGEBRA_LIMITI_FUNZIONI-1) dell'algebra dei limiti per funzioni. 
 
     Abbiamo
 
@@ -271,13 +285,15 @@ title: "Calcolo dei limiti di funzioni"
     \left|\sin \frac{1}{x}\right| \le 1 {\rm~~quindi~~} \left|x \: \sin \frac{1}{x}\right| \le |x| {\rm ~~e~~} |x| \rr 0 {\rm ~~per~~} x \rr 0.
     $$
 
-    Quindi, per il corollario \(\eqref{cor_ita:corolCONFRONTO_FUNZIONI_A}\) del teorema del confronto per funzioni abbiamo:
+    Quindi, per il corollario [Corollario 1](#box-corolCONFRONTO_FUNZIONI_A-6) del teorema del confronto per funzioni abbiamo:
 
     $$
     x \: \sin \frac{1}{x} \rr 0 {\rm ~~per~~} x \rr 0.
     $$
 
     ![Figura 1](../img/limiti-02-calcolo-limiti/fig01.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-corolCONFRONTO_FUNZIONI_B-8"></a>
 
 !!! teorema "Corollario 2: del teorema del confronto  (parte II)"
 
@@ -301,6 +317,8 @@ title: "Calcolo dei limiti di funzioni"
 
     Deriva dal corrispondente corollario sulle successioni. <span class="qed">□</span>
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 2: Corollario del teorema del confronto"
 
     Proviamo che:
@@ -315,7 +333,7 @@ title: "Calcolo dei limiti di funzioni"
     \frac{x + \sin x}{2\: x + \cos x} = \frac{x \left( 1+ \frac{\sin x}{x} \right)}{2\:x \left( 1+ \frac{\cos x}{2\:x} \right)} = \frac{1}{2} \left(\frac{  1+ \frac{\sin x}{x} }{ 1+ \frac{\cos x}{2\:x} } \right)
     $$
 
-    Per il corollario \(\eqref{cor_ita:corolCONFRONTO_FUNZIONI_B}\) del teorema del confronto per funzioni, abbiamo:
+    Per il corollario [Corollario 2](#box-corolCONFRONTO_FUNZIONI_B-8) del teorema del confronto per funzioni, abbiamo:
 
     $$
     \frac{\sin x}{x} \rr 0 {\rm ~~e~~} \frac{\cos x}{2\: x} \rr 0 {\rm ~~per~~} x \rr \ip.
@@ -323,13 +341,15 @@ title: "Calcolo dei limiti di funzioni"
 
     ![Figura 2](../img/limiti-02-calcolo-limiti/fig02.svg){ .fig .ovale loading=lazy style="width:80%" }
 
-    Allora per il teorema \(\eqref{theo_ita:theoALGEBRA_LIMITI_FUNZIONI}\) sull'algebra dei limiti, abbiamo quindi:
+    Allora per il teorema [Teorema 1](#box-theoALGEBRA_LIMITI_FUNZIONI-1) sull'algebra dei limiti, abbiamo quindi:
 
     $$
     \frac{x + \sin x}{2\: x + \cos x} \rr \frac{1}{2} {\rm ~~per~~} x \rr \ip.
     $$
 
 ### 1.4 Teoremi di aritmetizzazione parziale del simbolo di infinito
+
+<a id="box-theoXXX-10"></a>
 
 !!! teorema "Teorema 6: di aritmetizzazione parziale del simbolo di infinito (addizione)"
 
@@ -352,6 +372,8 @@ title: "Calcolo dei limiti di funzioni"
 ??? dimostrazione "Dimostrazione"
 
     Deriva dal corrispettivo teorema per le successioni. <span class="qed">□</span>
+
+<a id="box-theoXXX-11"></a>
 
 !!! teorema "Teorema 7: di aritmetizzazione parziale del simbolo di infinito (prodotto)"
 
@@ -379,6 +401,8 @@ title: "Calcolo dei limiti di funzioni"
 
 - Come per le successioni,  il <strong>segno</strong> di $\infty$ va determinato con la <strong>regola dei segni</strong>.
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 3: Aritmetizzazione parziale del simbolo di infinito"
 
     $$
@@ -388,6 +412,8 @@ title: "Calcolo dei limiti di funzioni"
     In quanto $\left(\frac{1}{x} - 2\right) \rr -2 {\rm ~~e~~} x^3 \rr \im \quad {\rm per~~} x \rr \im$.
 
 ## 2. Teorema del cambio di variabile nel limite
+
+<a id="box-theoXXX-13"></a>
 
 !!! teorema "Teorema 8: del cambio di variabile nel limite"
 
@@ -413,7 +439,7 @@ title: "Calcolo dei limiti di funzioni"
 
 ??? dimostrazione "Dimostrazione"
 
-    Sia $\{x_n\}$ è una qualsiasi successione tale che
+    Sia $\{x_n\}$ una qualsiasi successione tale che
 
     $$
     x_n \neq x_0, \forall n, {\rm ~~e~~} x_n \rr x_0 {\rm ~~per~~} n \rr +\infty.
@@ -451,6 +477,8 @@ title: "Calcolo dei limiti di funzioni"
 
     sarebbe comunque garantita. <span class="qed">□</span>
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 4: Calcolo del limite col teorema del cambio di variabile nel limite"
 
     Calcoliamo il limite
@@ -480,7 +508,7 @@ title: "Calcolo dei limiti di funzioni"
     Ora calcoliamo
 
     $$
-    \lim_{t \rr 2/5} \log t = \log{\frac{2}{5}} \quad({\rm il~logartimo~come~vedremo~è ~continuo~in~} \R_+)
+    \lim_{t \rr 2/5} \log t = \log{\frac{2}{5}} \quad({\rm il~logaritmo~come~vedremo~è ~continuo~in~} \R_+)
     $$
 
     Quindi
@@ -497,7 +525,7 @@ title: "Calcolo dei limiti di funzioni"
     \lim_{x \rr 0} f\big(g(x)\big)=\log{\frac{1}{5}}
     $$
 
-    utilizzando il terorema abbiamo:
+    utilizzando il teorema abbiamo:
 
     $$
     \lim_{x \rr 0} g(x) = \frac{1}{5} {\rm ~~~e~~~}  \lim_{t \rr 1/5} \log t = \log{\frac{1}{5}}
@@ -508,6 +536,8 @@ title: "Calcolo dei limiti di funzioni"
     $$
     \lim_{x \rr 0} 2\:x^3+4\:x+1 = 1  {\rm ~~~e~~~}   \lim_{x \rr 0} 5\:(x+1)^3= 5
     $$
+
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 5: Calcolo del limite col teorema del cambio di variabile nel limite "
 

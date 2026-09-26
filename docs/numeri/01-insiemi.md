@@ -11,11 +11,13 @@ title: "Insiemi"
 </div>
 ## 1. Introduzione informale alla teoria degli insiemi
 
-- La teoria degli insiemi si base sui seguenti tre concetti chiave:
+- La teoria degli insiemi si basa sui seguenti tre concetti chiave:
 
     1. <strong>Insiemi</strong>
 
         La nozione di insieme è generalmente assunta come <strong>primitiva</strong> (cioè non riducibile a concetti più elementari). Si usano come sinonimi di insieme le parole: <em>collezione</em>, <em>classe</em>, <em>aggregato</em>, <em>famiglia</em>.
+
+        <a id="box-texexpbox1-1"></a>
 
         !!! esempio "Esempio 1: insiemi"
 
@@ -33,7 +35,7 @@ title: "Insiemi"
 
     3. <strong>Appartenenza</strong>
 
-        Il concetto di <em>appartenenza</em> lega gli elementi agli insiemi. Quando un oggetto è un elemento di un insieme si afferma che quell'elemento <em>appartiene</em> all'insieme. Per indicare che un elemento $x$ appartiene a un insieme insieme $A$ scriviamo:
+        Il concetto di <em>appartenenza</em> lega gli elementi agli insiemi. Quando un oggetto è un elemento di un insieme si afferma che quell'elemento <em>appartiene</em> all'insieme. Per indicare che un elemento $x$ appartiene a un insieme $A$ scriviamo:
 
         $$
         x \in A
@@ -41,11 +43,13 @@ title: "Insiemi"
 
 ### 1.1 Definizione informale di insiemi
 
-1. Un primo modo di definire gli insieme  è la <strong>definizione mediante  tabulazione</strong>
+1. Un primo modo di definire gli insiemi  è la <strong>definizione mediante  tabulazione</strong>
 
     !!! chiave ""
 
         Un insieme può essere definito <strong>mediante tabulazione</strong>  ossia elencando gli elementi che vi appartengono fra parentesi graffe. Questa tecnica  presuppone che l'insieme abbia un numero finito di elementi.
+
+    <a id="box-texexpbox1-2"></a>
 
     !!! esempio "Esempio 2: definizione mediante tabulazione"
 
@@ -57,7 +61,7 @@ title: "Insiemi"
 
         significa che l'insieme $A$ ha come elementi le tre  lettere $a$, $b$ e $c$. Ad esempio abbiamo che $a$ appartiene ad $A$ ovvero $a \in A$.
 
-2. Un secondo modo di definire gli insieme  è la <strong>definizione mediante proprietà</strong>:
+2. Un secondo modo di definire gli insiemi  è la <strong>definizione mediante proprietà</strong>:
 
     !!! chiave ""
 
@@ -68,6 +72,8 @@ title: "Insiemi"
         $$
 
         dove $p(x)$ è la proprietà che l'elemento $x$ dell'insieme  $U$ deve possedere per appartenere all'insieme $A$. Questa tecnica  si può utilizzare per definire insiemi con un numero finito di elementi o anche infinito.
+
+    <a id="box-texexpbox1-3"></a>
 
     !!! esempio "Esempio 3: definizione mediante proprietà"
 
@@ -86,15 +92,17 @@ title: "Insiemi"
 
     Notiamo che per definire un insieme $A$ mediante una proprietà abbiamo bisogno di un insieme $U$ a cui appartengono tutti gli elementi dell'insieme $A$ che si vuole  definire. L'insieme $U$ svolge il ruolo di <strong>insieme universo</strong>.
 
-    E' importante che la proprietà $p(x)$ che si utilizza abbia senso per ogni $x$ dell'insieme $U$ (insieme universo), e quindi risulti vera o falsa (senza ambiguità di significato) per ogni particolare $x \in U$; l'insieme $A$ consisterà allora di tutti e soli quegli $x$ appartenenti ad $U$ per cui la proprietà $p(x)$ è vera.
+    È importante che la proprietà $p(x)$ che si utilizza abbia senso per ogni $x$ dell'insieme $U$ (insieme universo), e quindi risulti vera o falsa (senza ambiguità di significato) per ogni particolare $x \in U$; l'insieme $A$ consisterà allora di tutti e soli quegli $x$ appartenenti ad $U$ per cui la proprietà $p(x)$ è vera.
 
 !!! chiave ""
 
-    Occorre fare attenzione alla definizione degli insiemi in quanto possono emergere contraddizioni. Esiste una definizione formale del concetto di insieme sviluppata per evitare contraddizioni ma che esula dal programma del corso. oggetti sono degli insiemi.
+    Occorre fare attenzione alla definizione degli insiemi in quanto possono emergere contraddizioni. Esiste una definizione formale del concetto di insieme sviluppata per evitare contraddizioni ma che esula dal programma del corso.
 
-- Ad esempio l'insieme di tutti gli insiemi che non contengono se stessi non è un insieme nella definizione formale degli insiemi. Ammettere questo insieme genererebbe la contraddizione: “l'insieme di tutti gli insiemi che non appartengono a se stessi appartiene a se stesso se e solo se non appartiene a se stesso” (<strong>Paradosso di Russel</strong> –  sezione [↗](#sec:Russell)).
+- Ad esempio l'insieme di tutti gli insiemi che non contengono se stessi non è un insieme nella definizione formale degli insiemi. Ammettere questo insieme genererebbe la contraddizione: “l'insieme di tutti gli insiemi che non appartengono a se stessi appartiene a se stesso se e solo se non appartiene a se stesso” (<strong>Paradosso di Russell</strong> –  sezione [↗](#sec:Russell)).
 
 ## 2. Insiemi numerici
+
+<a id="box-defXX-4"></a>
 
 !!! definizione "Definizione 1: sistema numerico"
 
@@ -118,7 +126,9 @@ title: "Insiemi"
         \Z = \{0,~ \pm 1,~ \pm 2,~ \pm 3,~ \pm 4,~ \dots \}
         $$
 
-    3. Indichiamo con $\Q$  l'insieme dei <strong>numeri razionali</strong> ovvero l'insieme dei numeri che si possono scrivere come <strong>espansioni decimali finite o infinite periodiche</strong>. In altre parole, è l'insieme è dei numeri che si possono scrivere come una frazione $\frac{p}{q}$ dove $p$ è un numero intero e $q$ è un numero naturale diverso da zero.
+    3. Indichiamo con $\Q$  l'insieme dei <strong>numeri razionali</strong> ovvero l'insieme dei numeri che si possono scrivere come <strong>espansioni decimali finite o infinite periodiche</strong>. In altre parole, è l'insieme dei numeri che si possono scrivere come una frazione $\frac{p}{q}$ dove $p$ è un numero intero e $q$ è un numero naturale diverso da zero.
+
+        <a id="box-texexpbox1-5"></a>
 
         !!! esempio "Esempio 4: numeri razionali"
 
@@ -130,6 +140,8 @@ title: "Insiemi"
 
         Possiamo tuttavia rappresentare ogni numero razionale diverso da $0$ mediante una sola frazione $\frac{p}{q}$ scegliendo $p \in \Z$ e $q \in \N$ coprimi (ovvero primi tra loro, cioè $p$ e $q$ non sono divisibili per uno stesso intero maggiore di 1).
 
+        <a id="box-obserXX-6"></a>
+
         !!! osservazione "Osservazione 1"
 
             $$
@@ -138,9 +150,9 @@ title: "Insiemi"
 
         ??? dimostrazione "Dimostrazione"
 
-            Esistono differenti dimostrazioni di questa osservazione basate su differente tecniche matematiche.
+            Esistono differenti dimostrazioni di questa osservazione basate su differenti tecniche matematiche.
 
-            1. Una semplice prova deriva direttamente della definizione di $1$ diviso $3$, abbiamo infatti:
+            1. Una semplice prova deriva direttamente dalla definizione di $1$ diviso $3$, abbiamo infatti:
 
                 \begin{align*}
                 \frac{1}{3} &= 0,\overline{3}\\
@@ -173,7 +185,9 @@ title: "Insiemi"
 
             <p class="qed-riga"><span class="qed">□</span></p>
 
-    4. Indichiamo con $\R$  l'insieme dei <strong>numeri reali</strong> ovvero l'insieme dei numeri che si indentificano con espansioni decimali finite o infinite, periodiche o non periodiche.
+    4. Indichiamo con $\R$  l'insieme dei <strong>numeri reali</strong> ovvero l'insieme dei numeri che si identificano con espansioni decimali finite o infinite, periodiche o non periodiche.
+
+        <a id="box-texexpbox1-7"></a>
 
         !!! esempio "Esempio 5: numeri reali"
 
@@ -187,7 +201,7 @@ title: "Insiemi"
 
             - Altri esempi di numeri reali ma non razionali sono $\sqrt{2}$ e $\sqrt{3}$ oppure $\pi$ e il numero di Nepero $e$ che hanno espansioni decimali infinite non periodiche e dunque sono numeri reali ma non razionali.
 
-- Esistono definizioni formali di degli  insiemi dei numeri naturali, interi e razionali che esulano dal programma del corso. Daremo più avanti una definizione formale dei numeri reali.
+- Esistono definizioni formali degli  insiemi dei numeri naturali, interi e razionali che esulano dal programma del corso. Daremo più avanti una definizione formale dei numeri reali.
 
 ## 3. Relazioni tra insiemi
 
@@ -219,6 +233,8 @@ title: "Insiemi"
 
         - un elemento appartiene a un insieme.
 
+    <a id="box-texexpbox1-8"></a>
+
     !!! esempio "Esempio 6: “appartiene a” vs “è contenuto in”"
 
         Ad esempio:
@@ -237,7 +253,9 @@ title: "Insiemi"
 
         In particolare, non si confonda $3$ (che è un numero) con $\{3\}$ , che è l'insieme che contiene come unico elemento il numero 3.
 
-    Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in questo caso  i simboli $\in$ e $\subseteq$ non sono intercambiabili, ma devono rispettare essere utilizzati correttamente.
+    Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in questo caso  i simboli $\in$ e $\subseteq$ non sono intercambiabili, ma devono essere utilizzati correttamente.
+
+    <a id="box-texexpbox1-9"></a>
 
     !!! esempio "Esempio 7: “appartiene a” vs “è contenuto in”"
 
@@ -251,9 +269,13 @@ title: "Insiemi"
 
 ### 3.1 Insieme vuoto, cardinalità e insieme delle parti
 
+<a id="box-defXX-10"></a>
+
 !!! definizione "Definizione 2: di insieme vuoto"
 
     L'<strong>insieme vuoto</strong> è l'insieme che non contiene alcun elemento. Si indica  con  $\varnothing.$
+
+<a id="box-obserXX-11"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -267,15 +289,21 @@ title: "Insiemi"
 
     Per dimostrarlo, dovremmo provare che ogni elemento che appartiene a $\varnothing$, appartiene anche ad $A$; ma nessun elemento appartiene a $\varnothing$, per cui abbiamo la tesi. <span class="qed">□</span>
 
+<a id="box-defXX-12"></a>
+
 !!! definizione "Definizione 3: di cardinalità di un insieme"
 
     Il numero di elementi di un insieme $A$ è la <strong>cardinalità</strong> dell'insieme.  Si indica con $|A|$.
+
+<a id="box-defXX-13"></a>
 
 !!! definizione "Definizione 4: di insieme delle parti"
 
     Dato  un insieme $A$, l'insieme che ha per elementi tutti i sottoinsiemi di $A$ si chiama <strong>insieme delle parti</strong> di $A$ e si indica col simbolo $\mathscr{P}(A).$
 
 - Ogni insieme $A$ ha due sottoinsiemi banali, che sono $A$ stesso e l'insieme vuoto $\varnothing$ (potrebbero coincidere, se $A$ è vuoto).
+
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 8: insieme delle parti"
 
@@ -291,6 +319,8 @@ title: "Insiemi"
     \mathscr{P}(A) = \bigg\{~\varnothing,~ \{1\},~ \{2\},~ \{3\},~ \{1, 2\},~ \{2, 3\},~ \{1 , 3\},~ \{1,2,3\} ~\bigg\}
     $$
 
+<a id="box-propAAA-15"></a>
+
 !!! osservazione "Osservazione 3"
 
     Dato un insieme $A$ con $n$ elementi, l'insieme delle parti $\mathscr{P}(A)$ ha $2^n$ elementi:
@@ -303,6 +333,8 @@ title: "Insiemi"
 
     Per ciascuno degli elementi di $A$, i sottoinsiemi di $A$ possono contenere  o meno quell'elemento. Quindi dobbiamo prendere una decisione tra due opzioni $n$  volte. Il numero totale di sottoinsiemi possibili è quindi $2^{n}$. <span class="qed">□</span>
 
+<a id="box-texexpbox1-16"></a>
+
 !!! esempio "Esempio 9: costruzione dell'insieme delle parti con un albero binario"
 
     Dato l'insieme $A=\{1,2,3\}$ con $n=3$ elementi, la cardinalità  del suo insieme delle parti è $2^3=8$. La costruzione dell'insieme delle parti $\mathscr{P}(A)$ può essere visualizzata attraverso il seguente <strong>albero binario</strong> (grafo non diretto, connesso e aciclico) a cui a ogni livello si decide se includere o meno l'oggetto nel sottoinsieme:
@@ -310,6 +342,8 @@ title: "Insiemi"
     ![Figura 1](../img/numeri-01-insiemi/fig01.svg){ .fig .ovale loading=lazy style="width:100%" }
 
 ## 4. Operazioni tra insiemi
+
+<a id="box-defXX-17"></a>
 
 !!! definizione "Definizione 5: di intersezione di insiemi"
 
@@ -319,7 +353,9 @@ title: "Insiemi"
     A \cap B = \big\{x \in U: x \in A {\rm ~~e~~} x \in B \big\}
     $$
 
-E' l'insieme degli elementi che appartengono sia al primo sia al secondo insieme.
+È l'insieme degli elementi che appartengono sia al primo sia al secondo insieme.
+
+<a id="box-defXX-18"></a>
 
 !!! definizione "Definizione 6: di unione di insiemi"
 
@@ -329,7 +365,9 @@ E' l'insieme degli elementi che appartengono sia al primo sia al secondo insieme
     A \cup B = \big\{x \in U: x \in A {\rm ~~o~~} x \in B \big\}
     $$
 
-E' l'insieme degli elementi che appartengono al primo o al secondo insieme, intendendo la “o” in modo <u>non esclusivo</u> (l'insieme degli elementi che appartengono ad $A$ o a $B$ o a entrambi).
+È l'insieme degli elementi che appartengono al primo o al secondo insieme, intendendo la “o” in modo <u>non esclusivo</u> (l'insieme degli elementi che appartengono ad $A$ o a $B$ o a entrambi).
+
+<a id="box-defXX-19"></a>
 
 !!! definizione "Definizione 7: di differenza di insiemi"
 
@@ -339,13 +377,17 @@ E' l'insieme degli elementi che appartengono al primo o al secondo insieme, inte
     A \setminus B = \big\{x \in A: x \notin B \big\}
     $$
 
-E' l'insieme degli elementi che appartengono al primo ma non al secondo insieme. Il simbolo “$\setminus$” si può anche scrivere “-” per analogia con la differenza aritmetica.
+È l'insieme degli elementi che appartengono al primo ma non al secondo insieme. Il simbolo “$\setminus$” si può anche scrivere “-” per analogia con la differenza aritmetica.
 
 ### 4.1 Insiemi complementari e insiemi disgiunti
+
+<a id="box-texexpbox1-20"></a>
 
 !!! esempio "Esempio 10: insiemi universo"
 
     Ad esempio, in questioni di aritmetica potrebbe essere $U= \N$, mentre in questioni di analisi potrebbe essere $U =\R$.
+
+<a id="box-defXX-21"></a>
 
 !!! definizione "Definizione 8: di complementazione insiemi e insiemi complementari"
 
@@ -383,6 +425,8 @@ E' l'insieme degli elementi che appartengono al primo ma non al secondo insieme.
       \overline{\varnothing} &= U
     \end{align*}
 
+<a id="box-notationA-22"></a>
+
 !!! definizione "Definizione 9: di insiemi disgiunti"
 
     Due insiemi $\red{A}$ e $\blue{B}$ sono  <strong>disgiunti</strong> se non hanno elementi in comune:
@@ -415,6 +459,8 @@ I diagrammi di Venn sono rappresentazioni grafiche in cui gli insiemi sono rappr
 
 Esiste un'altra operazione sugli insiemi, che può essere eseguita su due insiemi qualsiasi (cioè due insiemi non necessariamente contenuti nel medesimo universo):
 
+<a id="box-defXX-23"></a>
+
 !!! definizione "Definizione 10: di prodotto cartesiano"
 
     Dati due insiemi (non necessariamente distinti) $A$ e $B$, l'insieme costituito da tutte le <em>coppie ordinate</em> $(a, b)$, con $a \in A$ e $b \in B$, si chiama <strong>prodotto cartesiano</strong> di $A$ per $B$ e si indica col simbolo $A \times B$.
@@ -425,6 +471,8 @@ $$
 |{A} \times {B}| = |{A}| \cdot |{B}|.
 $$
 
+<a id="box-texexpbox1-24"></a>
+
 !!! esempio "Esempio 11: prodotto cartesiano"
 
     $$
@@ -432,7 +480,7 @@ $$
     $$
 
     $$
-    |\{a,b\}|=2,~~ |\{a,b\}|=3,~~ |\{a,b\} \times \{a,b,c\}| = 2 \cdot 3 = 6
+    |\{a,b\}|=2,~~ |\{a,b,c\}|=3,~~ |\{a,b\} \times \{a,b,c\}| = 2 \cdot 3 = 6
     $$
 
 - Un tipico uso di prodotto cartesiano si ha con $\R \times \R$, che si abbrevia col simbolo $\R^2$, e denota l'insieme delle coppie ordinate di numeri reali.
@@ -444,6 +492,8 @@ $$
     $$
 
 ### 4.4 Proprietà delle operazioni su insiemi
+
+<a id="box-notationA-25"></a>
 
 !!! osservazione "Osservazione 4: proprietà dell'intersezione"
 
@@ -461,7 +511,7 @@ $$
         \red{A} \cap (\blue{B} \cap \orange{C}) = (\red{A} \cap \blue{B}) \cap \orange{C}
         $$
 
-    - <strong>Idempotenza:</strong>:
+    - <strong>Idempotenza</strong>:
 
         $$
         \red{A} \cap \red{A} = \red{A}
@@ -485,6 +535,8 @@ $$
 
     </div> <span class="qed">□</span>
 
+<a id="box-notationA-26"></a>
+
 !!! osservazione "Osservazione 5: proprietà dell'unione"
 
     Dati tre insiemi $\red{A}, \blue{B}$ e $\orange{C}$, l'unione gode delle seguenti proprietà:
@@ -501,7 +553,7 @@ $$
         \red{A} \cup (\blue{B} \cup \orange{C}) = (\red{A} \cup \blue{B}) \cup \orange{C}
         $$
 
-    - <strong>Idempotenza:</strong>:
+    - <strong>Idempotenza</strong>:
 
         $$
         \red{A} \cup \red{A} = \red{A}
@@ -524,6 +576,8 @@ $$
     ![Figura 15](../img/numeri-01-insiemi/fig15.svg){ .fig .ovale loading=lazy style="width:20%" }
 
     </div> <span class="qed">□</span>
+
+<a id="box-notationA-27"></a>
 
 !!! osservazione "Osservazione 6: proprietà distributive (legano unione e intersezione)"
 
@@ -573,6 +627,8 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     </div> <span class="qed">□</span>
 
+<a id="box-propXX-28"></a>
+
 !!! teorema "Proposizione 1: leggi di DeMorgan (prima versione)"
 
     Dati tre insiemi $\red{A}, \blue{B}$ e $\orange{C}$ abbiamo:
@@ -619,6 +675,8 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     </div> <span class="qed">□</span>
 
+<a id="box-propXX-29"></a>
+
 !!! teorema "Proposizione 2: Leggi di DeMorgan (seconda versione)"
 
     Dati gli insiemi $\blue{B}, \orange{C} \subseteq \violet{U}$, abbiamo
@@ -633,7 +691,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
 ??? dimostrazione "Dimostrazione"
 
-    Queste leggi si possono  derivare settando $A$ uguale a $U$ nelle precedente leggi di DeMorgan, come segue:
+    Queste leggi si possono  derivare settando $A$ uguale a $U$ nelle precedenti leggi di DeMorgan, come segue:
 
     $$
     \underbrace{\violet{U} \setminus (\blue{B} \cap \orange{C})}_{=\overline{\blue{B} \cap \orange{C}} } = (\underbrace{\violet{U} \setminus \blue{B}}_{=  \overline{\blue{B}}}) \cup (\underbrace {\violet{U} \setminus \orange{C}}_{= \overline{\orange{C}}})
@@ -737,13 +795,15 @@ Chiamiamo questo insieme $S$,  si possono fare due ipotesi:
 
 !!! chiave ""
 
-    <strong>Paradosso di Russel:</strong> L'insieme di tutti gli insiemi che non appartengono a se stessi appartiene a se stesso se e solo se non appartiene a se stesso.
+    <strong>Paradosso di Russell:</strong> L'insieme di tutti gli insiemi che non appartengono a se stessi appartiene a se stesso se e solo se non appartiene a se stesso.
 
 - La definizione formale del concetto di insieme si basa sul <strong>sistema di assiomi di Zermelo-Fraenkel</strong>,  abbreviati con <strong>ZF</strong>. Questo sistema di assiomi comprende gli assiomi standard della teoria assiomatica degli insiemi su cui, insieme con l'<em>assioma di scelta</em>, si basa tutta la matematica ordinaria.
 
 - L'<strong>assioma di regolarità</strong> afferma che “Ogni insieme non vuoto $A$ contiene un elemento  disgiunto da $A$”.
 
 - L'<strong>assioma della coppia</strong> afferma che “Dati due oggetti, esiste un insieme i cui elementi sono  i due oggetti”
+
+    <a id="box-obserXX-30"></a>
 
     !!! osservazione "Osservazione 7"
 
@@ -761,15 +821,15 @@ Chiamiamo questo insieme $S$,  si possono fare due ipotesi:
     0,\overline{9}=1
     $$
 
-    parte dall'assunzione  che due numeri siano uguali se e solo se la loro differenza è uguale a zero e si basano sul calcolare quanto valga $1 - 0,\overline{9}$.
+    parte dall'assunzione  che due numeri siano uguali se e solo se la loro differenza è uguale a zero e si basa sul calcolare quanto valga $1 - 0,\overline{9}$.
 
 - Questa dimostrazione si basa sul fatto che 0 è l'unico numero non negativo minore di tutti gli inversi degli interi positivi, o equivalentemente che non esiste un numero maggiore di ogni intero. Questa è la <strong>proprietà di Archimede</strong>, che si verifica per i numeri razionali e reali.
 
 ??? dimostrazione "Dimostrazione"
 
-    Scriviamo il numero $0,999...$ con $n$ cifre dopo la virgola come $0,(9)_n$, quindi $0,(9)_1 = 0.9$, $0,(9)_2 = 0.99$, $0,(9)_3 = 0.999$, e cosi via. 
+    Scriviamo il numero $0,999...$ con $n$ cifre dopo la virgola come $0,(9)_n$, quindi $0,(9)_1 = 0.9$, $0,(9)_2 = 0.99$, $0,(9)_3 = 0.999$, e così via. 
 
-    Dato  $\frac{1}{10^n} = 0,0 \dots 01$, con $n$ cifre dopo la virgola, le regola di addizione per i numeri decimali implicano
+    Dato  $\frac{1}{10^n} = 0,0 \dots 01$, con $n$ cifre dopo la virgola, le regole di addizione per i numeri decimali implicano
 
     $$
     0,(9)_n + \frac{1}{10^n} = 1

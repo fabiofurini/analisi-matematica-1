@@ -11,6 +11,8 @@ title: "Funzioni reali di variabile reale"
 </div>
 ## 1. Funzione reale di variabile reale
 
+<a id="box-defImmagine-1"></a>
+
 !!! definizione "Definizione 1: funzione reale di variabile reale"
 
     Una funzione che ha per <em>dominio</em> $D$ un sottoinsieme di $\mathbb{R}$ e per <em>codominio</em> $\mathbb{R}$:
@@ -37,6 +39,8 @@ title: "Funzioni reali di variabile reale"
 
     Si noti che, invece, nulla impedisce che una retta parallela all'asse delle ascisse intersechi il grafico di $f$ in più punti o in nessun punto.
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 1: curva che non corrisponde al grafico di una funzione"
 
     Consideriamo ad esempio la curva dei  punti della circonferenza di raggio $r$:
@@ -51,7 +55,9 @@ title: "Funzioni reali di variabile reale"
 
 ## 2. Funzioni limitate
 
-!!! definizione "Definizione 2: funzione
+<a id="box-defLIM_SUP-3"></a>
+
+!!! definizione "Definizione 2: funzioni
 limitate"
 
     Data una funzione $f: D \subseteq \mathbb{R} \rightarrow \mathbb{R}$, la funzione si dice
@@ -72,6 +78,8 @@ limitate"
 
     3. una funzione è limitata se il suo grafico è contenuto in una striscia orizzontale
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 2: funzione limitata"
 
     Consideriamo la funzione:
@@ -83,14 +91,16 @@ limitate"
     abbiamo
 
     $$
-    \frac{1}{1 + x^2} +1=  \frac{1+ x^2- x^2}{1 + x^2} +1 = 2- \frac{x^2}{1+x^2} \qquad {\rm ~~e~~} \qquad \frac{x^2}{1+x^2} > 0, ~~\forall x \in \R
+    \frac{1}{1 + x^2} +1=  \frac{1+ x^2- x^2}{1 + x^2} +1 = 2- \frac{x^2}{1+x^2} \qquad {\rm ~~e~~} \qquad \frac{x^2}{1+x^2} \ge 0, ~~\forall x \in \R
     $$
 
     $$
-    {\rm ~~~quidi~~~}1  < \frac{1}{1 + x^2} +1 \le 2, \forall x \in \mathbb{R}
+    {\rm ~~~quindi~~~}1  < \frac{1}{1 + x^2} +1 \le 2, \forall x \in \mathbb{R}
     $$
 
     ![Figura 3](../img/funzioni-02-funzioni-reali/fig03.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 3: Funzione non limitata"
 
@@ -104,12 +114,14 @@ limitate"
 
     ![Figura 4](../img/funzioni-02-funzioni-reali/fig04.svg){ .fig .ovale loading=lazy style="width:42%" }
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 4: Funzione limitata inferiormente"
 
     La funzione
 
     $$
-    f: \mathbb{R} \rightarrow \mathbb{R},~~ f: x \mapsto x^2 +10 \qquad (y=x^2)
+    f: \mathbb{R} \rightarrow \mathbb{R},~~ f: x \mapsto x^2 \qquad (y=x^2)
     $$
 
     è limitata inferiormente; infatti $x^2  \ge 0, \forall x \in \mathbb{R}$
@@ -119,6 +131,8 @@ limitate"
 - Equivalentemente, si può dire che una funzione è <em>limitata superiormente </em>(<em>limitata inferiormente</em>, <em>limitata</em>) se, rispettivamente, la sua <strong>immagine</strong> è un sottoinsieme di $\mathbb{R}$ <em>limitato superiormente</em> (<em>limitato inferiormente</em>, <em>limitato</em>).
 
 ## 3. Funzioni simmetriche
+
+<a id="box-defFunzionePari-7"></a>
 
 !!! definizione "Definizione 3: di funzione pari"
 
@@ -132,6 +146,8 @@ limitate"
 
     che esprime l'uguaglianza delle ordinate corrispondenti ai punti $x$ e $-x$, simmetrici rispetto a $x = 0$.
 
+<a id="box-defFunzioneDisPari-8"></a>
+
 !!! definizione "Definizione 4: Funzione dispari"
 
     Funzioni che hanno il grafico simmetrico rispetto all'origine si chiamano <strong>dispari</strong>.
@@ -143,6 +159,8 @@ limitate"
     $$
 
     che esprime che le ordinate corrispondenti ai punti $x$ e $-x$, simmetrici rispetto a $x = 0$, sono una l'opposto dell'altra.
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 5: Funzioni pari e dispari"
 
@@ -162,6 +180,8 @@ limitate"
 
 ## 4. Funzioni monotone
 
+<a id="box-defFunzioneMONcre-10"></a>
+
 !!! definizione "Definizione 5: Funzione  crescente"
 
     Una funzione si dice <strong> non decrescente</strong> se per ogni coppia di punti $x_1$, $x_2$ nel dominio di $f$ si ha:
@@ -169,6 +189,8 @@ limitate"
     \begin{equation}
     x_1 > x_2 ~~\Longrightarrow~~ f(x_1) \ge f(x_2) \label{ed:monCRE}
     \end{equation}
+
+<a id="box-defFunzioneMONcre-11"></a>
 
 !!! definizione "Definizione 6: Funzione strettamente  crescente"
 
@@ -178,6 +200,8 @@ limitate"
     x_1 > x_2 ~~\Longrightarrow~~ f(x_1) > f(x_2) \label{ed:monCRES}
     \end{equation}
 
+<a id="box-defFunzioneMONcre-12"></a>
+
 !!! definizione "Definizione 7: Funzione  decrescente"
 
     Una funzione si dice <strong>non crescente</strong> se per ogni coppia di punti $x_1$, $x_2$ nel dominio di $f$ si ha:
@@ -185,6 +209,8 @@ limitate"
     \begin{equation}
     x_1 > x_2 ~~\Longrightarrow~~ f(x_1) \le f(x_2) \label{ed:monDECRE}
     \end{equation}
+
+<a id="box-defFunzioneMONcre-13"></a>
 
 !!! definizione "Definizione 8: Funzione strettamente  decrescente"
 
@@ -202,9 +228,11 @@ limitate"
 
     Le funzioni crescenti o decrescenti si chiamano <strong>monotone</strong>. Le funzioni strettamente crescenti o decrescenti si chiamano <strong>strettamente monotone</strong>.
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 6: Funzioni monotone"
 
-    Per esempio, la funzione $x \mapsto x^3$ è strettamente monotona crescente; la funzione costante  $x \mapsto k$ (che ha come grafico la retta di equazione $y = k$) è sia non monotona crescente che decrescente.
+    Per esempio, la funzione $x \mapsto x^3$ è strettamente monotona crescente; la funzione costante  $x \mapsto k$ (che ha come grafico la retta di equazione $y = k$) è sia non decrescente che non crescente.
 
 1. <strong>Esempio di grafico di funzione non decrescente</strong> (tratto orizzontale):
 
@@ -218,9 +246,11 @@ limitate"
 
 ## 5. Funzioni periodiche
 
+<a id="box-defFunzioneMONcre-15"></a>
+
 !!! definizione "Definizione 9: Funzione periodica"
 
-    Una funzione $f:D \rightarrow \mathbb{R}$ (non costante) è <strong>periodica</strong> di periodo $T$ , $T > 0$, se T è il più piccolo numero reale positivo tale che
+    Una funzione $f:D \rightarrow \mathbb{R}$ (non costante) è <strong>periodica</strong> di periodo $T$ , $T > 0$, se $T$ è il più piccolo numero reale positivo tale che
 
     $$
     f(x+T)=f(x) {\rm~~~per~ogni~~} x \in D
@@ -228,9 +258,13 @@ limitate"
 
 - Ogni intervallo di lunghezza $T$, contenuto in $D$, si chiama <strong>intervallo di periodicità</strong>.
 
+<a id="box-texexpbox1-16"></a>
+
 !!! esempio "Esempio 7: Funzioni periodiche"
 
     Tipici esempi di funzioni periodiche sono le <em>funzioni trigonometriche</em> $x \mapsto \sin(x)$ ($T=2\:\pi$), $x \mapsto \cos(x)$ ($T=2\:\pi$) e $x \mapsto \tan(x)$ ($T=\pi$).
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 8: Grafico di funzioni periodiche"
 

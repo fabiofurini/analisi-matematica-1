@@ -41,6 +41,8 @@ title: "Studio di funzioni"
 
 ## 2. Esempi
 
+<a id="box-texexpbox1-1"></a>
+
 !!! esempio "Esempio 1: Studio e grafico di funzione"
 
     Studiamo e tracciamo il grafico della funzione:
@@ -67,7 +69,7 @@ title: "Studio di funzioni"
     \lim_{x \rr 2^-}  e^{-|x|} \; \sqrt{x^2-5\;x+6} &= \lim_{x \rr 2^-}  e^{-x} \; \sqrt{(x-3)(x-2)}=   0^+
     \end{align*}
 
-    Quindi la retta $y=0$ è asintoto orizzontale per $x \rr \pm \infty$ e non  ci sono asitoti verticali.  Nel dominio non ci sono punti di discontinuità. Abbiamo $f(x) \ge 0$ per ogni $x$ nel dominio e $f(x)=0$ per $x=2$ e $x=3$. 
+    Quindi la retta $y=0$ è asintoto orizzontale per $x \rr \pm \infty$ e non  ci sono asintoti verticali.  Nel dominio non ci sono punti di discontinuità. Abbiamo $f(x) \ge 0$ per ogni $x$ nel dominio e $f(x)=0$ per $x=2$ e $x=3$. 
 
     <strong>Punto 3</strong>. La funzione non ha asintoti obliqui. 
 
@@ -84,9 +86,11 @@ title: "Studio di funzioni"
     f'(x) =
     \begin{cases}
     \displaystyle e^{-x} \cdot \frac{  -2\;x^2+12\;x-17 }{2\; \sqrt{(x-3)(x-2)}} ~~ & {\rm ~~~se~~} x >0\\[3ex]
-    \displaystyle e^{x} \cdot \frac{ 2\;x^2-3\;x+7 }{2\; \sqrt{(x-3)(x-2)}} ~~& {\rm ~~~se~~} x <0
+    \displaystyle e^{x} \cdot \frac{ 2\;x^2-8\;x+7 }{2\; \sqrt{(x-3)(x-2)}} ~~& {\rm ~~~se~~} x <0
     \end{cases}
     $$
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: Studio e grafico di funzione"
 
@@ -97,7 +101,7 @@ title: "Studio di funzioni"
     $$
 
     $$
-    f'_-(0)=  \lim_{x \rr 0^-} \frac{e^{x}\; ~~\big( 2\;x^2-3\;x+7 \big)}{2\; \sqrt{(x-3)(x-2)}}  =   \frac{7}{2\; \sqrt{6}}
+    f'_-(0)=  \lim_{x \rr 0^-} \frac{e^{x}\; ~~\big( 2\;x^2-8\;x+7 \big)}{2\; \sqrt{(x-3)(x-2)}}  =   \frac{7}{2\; \sqrt{6}}
     $$
 
     quindi $x=0$ è un punto angoloso, ovvero $f'(0)$ non esiste. Calcoliamo il limite destro in $x=3$ e il limite sinistro $x=2$ della funzione derivata:
@@ -117,7 +121,7 @@ title: "Studio di funzioni"
     - Per $x>0$ abbiamo:
 
         $$
-        f'(x) \ge 0 {\rm ~~~~se~~~~} 2\;x^2-12\;x+17 \le 0, {\rm ~~~~ovvero~~~~} x \in \left[\underbrace{\frac{6-\sqrt{2}}{2}}_{\approx 2.9}, \underbrace{\frac{6+\sqrt{2}}{2}}_{\approx 3.7} \right]
+        f'(x) \ge 0 {\rm ~~~~se~~~~} 2\;x^2-12\;x+17 \le 0, {\rm ~~~~ovvero~~~~} x \in \left[\underbrace{\frac{6-\sqrt{2}}{2}}_{\approx 2.3}, \underbrace{\frac{6+\sqrt{2}}{2}}_{\approx 3.7} \right]
         $$
 
         quindi:
@@ -132,7 +136,7 @@ title: "Studio di funzioni"
     - Per $x<0$ abbiamo:
 
         $$
-        f'(x) \ge 0 {\rm ~~~~se~~~~} 2\;x^2-3\;x+1 \ge 0, {\rm ~~~~ovvero~se~~~} x \in \left[\im,\frac{1}{2}\right] \cup \left[1,\ip\right]
+        f'(x) \ge 0 {\rm ~~~~se~~~~} 2\;x^2-8\;x+7 \ge 0, {\rm ~~~~ovvero~se~~~} x \in \left[\im,\frac{4-\sqrt{2}}{2}\right] \cup \left[\frac{4+\sqrt{2}}{2},\ip\right]
         $$
 
         quindi $f(x)$ è crescente per $x<0$.
@@ -141,11 +145,15 @@ title: "Studio di funzioni"
 
     Ci sono anche due punti di flesso, uno in $(0, 2)$ e uno in $( 3, \ip)$ ottenibili con lo studio del segno della derivata seconda.
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 3: Studio e grafico di funzione"
 
     ![Figura 1](../img/derivate-09-studio-funzioni/fig01.svg){ .fig .ovale loading=lazy style="width:88%" }
 
     ![Figura 2](../img/derivate-09-studio-funzioni/fig02.svg){ .fig .ovale loading=lazy style="width:88%" }
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 4: Studio e grafico di funzione"
 
@@ -168,7 +176,7 @@ title: "Studio di funzioni"
     $$
 
     $$
-    \lim_{x \rr \ip} x \cdot \exp \left(\frac{x+2}{x-1}\right) =  \im
+    \lim_{x \rr \im} x \cdot \exp \left(\frac{x+2}{x-1}\right) =  \im
     $$
 
     $$
@@ -190,7 +198,7 @@ title: "Studio di funzioni"
     quindi
 
     $$
-    x \cdot \exp \left(\frac{x+2}{x-1}\right) \sim x \cdot e {\rm ~~~~per~~~~} x \rr \pm \infty {\rm ~~perciò~~} f {\rm ~~ha~creascita~lineare}
+    x \cdot \exp \left(\frac{x+2}{x-1}\right) \sim x \cdot e {\rm ~~~~per~~~~} x \rr \pm \infty {\rm ~~perciò~~} f {\rm ~~ha~crescita~lineare}
     $$
 
     Verifichiamo quindi la presenza di  asintoti obliqui. Cerchiamo di calcolare il seguente limite:
@@ -218,6 +226,8 @@ title: "Studio di funzioni"
     $$
 
     Quindi la funzione ha asintoto obliquo: $y = e\;x +3\;e~$ per $x \rr \pm \infty$.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 5: Studio e grafico di funzione"
 
@@ -247,6 +257,8 @@ title: "Studio di funzioni"
     ![Figura 3](../img/derivate-09-studio-funzioni/fig03.svg){ .fig .ovale loading=lazy style="width:70%" }
 
     C'è un punto di flesso in $\left(\frac{5-\sqrt{21}}{2}, 1\right)$  ottenibile con lo studio del segno della derivata seconda.
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 6: Studio e grafico di funzione"
 

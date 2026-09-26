@@ -13,11 +13,11 @@ title: "Cardinalità degli insiemi infiniti"
 
 !!! chiave ""
 
-    E' possibile confrontarare la “numerosità” degli insiemi infiniti?
+    È possibile confrontare la “numerosità” degli insiemi infiniti?
 
 - Affrontiamo il discorso a partire dagli insiemi numerici notevoli che abbiamo introdotto: $\N, \Z, \Q, \R$ e chiediamoci: quanti sono gli elementi di ciascuno di questi insiemi?
 
-- Intuitivamente, la risposta sembra ovvia: ciascuno di questi insiemi ha infiniti elementi; tuttavia i numeri razionali sono più numerosi dei numeri interi, essendo $\Z \subset \Q$, e per lo stesso motivo i numeri reali sono più numerosi dei numeri dei numeri razionali, essendo $\Q \subset \R$.
+- Intuitivamente, la risposta sembra ovvia: ciascuno di questi insiemi ha infiniti elementi; tuttavia i numeri razionali sono più numerosi dei numeri interi, essendo $\Z \subset \Q$, e per lo stesso motivo i numeri reali sono più numerosi dei numeri razionali, essendo $\Q \subset \R$.
 
 - Come possiamo affermare, al tempo stesso, che due insiemi sono entrambi infiniti, ma uno è più numeroso dell'altro?
 
@@ -29,11 +29,15 @@ title: "Cardinalità degli insiemi infiniti"
 
 - Astraendo dall'esperienza del contare gli elementi di un insieme finito, si è giunti a identificare l'idea di <strong>uguale numerosità</strong> con quella di <strong>corrispondenza biunivoca</strong>:
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di uguale cardinalità di due insiemi"
 
     Due insiemi $A$, $B$ si dicono di <strong>uguale cardinalità</strong> (o potenza) se possono essere messi in corrispondenza biunivoca tra loro, cioè se esiste una legge che associa ad ogni elemento di $A$ uno e un solo elemento di $B$, e viceversa.
 
 - La cardinalità (o potenza) di un insieme traduce l'idea intuitiva di numerosità
+
+<a id="box-obserXX-2"></a>
 
 !!! osservazione "Osservazione 1"
 
@@ -88,6 +92,8 @@ title: "Cardinalità degli insiemi infiniti"
 
     Due insiemi che hanno la stessa cardinalità si dicono anche <strong>equipotenti</strong> e vanno pensati come ugualmente numerosi.
 
+<a id="box-defXX-3"></a>
+
 !!! definizione "Definizione 2: di insieme numerabile"
 
     Si dice <strong>numerabile</strong> un insieme che ha la stessa cardinalità di $\N$.
@@ -97,6 +103,8 @@ title: "Cardinalità degli insiemi infiniti"
 !!! chiave ""
 
     La cardinalità di $\N$ prende il nome di <strong>potenza del numerabile</strong>.
+
+<a id="box-obserXX-4"></a>
 
 !!! teorema "Teorema 1"
 
@@ -195,11 +203,11 @@ title: "Cardinalità degli insiemi infiniti"
         <td><span class="arithmatex">\(\N\)</span></td>
         <td>0</td>
         <td>1</td>
+        <td>2</td>
         <td>3</td>
         <td>4</td>
         <td>5</td>
         <td>6</td>
-        <td>7</td>
         <td>…</td>
         </tr>
         <tr>
@@ -235,6 +243,8 @@ title: "Cardinalità degli insiemi infiniti"
 
 ## 2. Potenza del continuo
 
+<a id="box-obserXX-5"></a>
+
 !!! teorema "Teorema 2"
 
     L'insieme dei numeri reali $~\R$ non è numerabile
@@ -253,7 +263,7 @@ title: "Cardinalità degli insiemi infiniti"
         0.a_1 a_2 a_3 \dots
         $$
 
-        dove gli $a_i$ sono cifre da $0$ a $9$; se le cifre sono tutte zero si ha $r_i =0$ e se sono tutte nove si ha $r_1 = 0.\overline{9}  = 1$):
+        dove gli $a_i$ sono cifre da $0$ a $9$; se le cifre sono tutte zero si ha $r_i =0$ e se sono tutte nove si ha $r_i = 0.\overline{9}  = 1$):
 
         \begin{align*}
         r_1=&0.a_{11} a_{12} a_{13} \dots \\

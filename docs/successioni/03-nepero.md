@@ -11,6 +11,8 @@ title: "Il numero di Nepero"
 </div>
 ## 1. Il numero $e$ di Nepero
 
+<a id="box-theoNEPERO-1"></a>
+
 !!! teorema "Teorema 1"
 
     La successione
@@ -23,7 +25,7 @@ title: "Il numero di Nepero"
 
 ??? dimostrazione "Dimostrazione"
 
-    Proveremo che  la successione $\{a_n\}$ è  monotona crescente ($a_n \ge a_{n-1}, \forall n \in \N, n\ge 1$) e limitata ($m \le a_n \le M, \forall n \in \N, n \ge 1$); quindi è convergente per il teorema di monotonia delle successioni.
+    Proveremo che  la successione $\{a_n\}$ è  monotona crescente ($a_n \ge a_{n-1}, \forall n \in \N, n\ge 2$) e limitata ($m \le a_n \le M, \forall n \in \N, n \ge 1$); quindi è convergente per il teorema di monotonia delle successioni.
 
     Per provare che $\{a_n\}$ è  monotona crescente, studiamo per $n \ge 2$, il rapporto:
 
@@ -105,6 +107,8 @@ title: "Il numero di Nepero"
 
     e $\{a_n\}$ è limitata. <span class="qed">□</span>
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 1: Grafici delle successioni $\{a_n\}$ e $\{b_n\}$"
 
     ![Figura 1](../img/successioni-03-nepero/fig01.svg){ .fig .ovale loading=lazy style="width:85%" }
@@ -131,6 +135,8 @@ title: "Il numero di Nepero"
     \lim_{n \rr \ip } n \: \log \left( 1 + \frac{1}{n}\right)  = \lim_{n \rr \ip }  \log \left( 1 + \frac{1}{n}\right)^n  = \log e =1
     \end{equation*}
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 2: Calcolo dei limiti con la successione che tende a $e$"
 
     \begin{align*}
@@ -144,6 +150,8 @@ title: "Il numero di Nepero"
     $$
 
     ![Figura 2](../img/successioni-03-nepero/fig02.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+<a id="box-theoNEPERO-4"></a>
 
 !!! teorema "Teorema 2"
 
@@ -197,6 +205,8 @@ title: "Il numero di Nepero"
 
     Questo teorema è  utile nel calcolo di limiti che coinvolgono la forma di indecisione $1^{\infty}$
 
+<a id="box-texexpbox1-5"></a>
+
 !!! esempio "Esempio 3: Calcolo dei limiti con la successione che tende a $e$"
 
     Calcoliamo
@@ -245,6 +255,8 @@ title: "Il numero di Nepero"
     \frac{3+n}{3} \rr \ip {\rm ~per~} n \rr \ip
     $$
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 4: Calcolo dei limiti con la successione che tende a $e$"
 
     \begin{align*}
@@ -258,6 +270,8 @@ title: "Il numero di Nepero"
     $$
 
     ![Figura 3](../img/successioni-03-nepero/fig03.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 5: Calcolo dei limiti con la successione che tende a $e$"
 

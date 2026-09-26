@@ -27,9 +27,11 @@ title: "Calcolo differenziale e approssimazioni"
 
 ![Figura 1](../img/derivate-08-approssimazioni/fig01.svg){ .fig .ovale loading=lazy style="width:97%" }
 
-- Data una funzione $f$ derivabile in punto $x_0$ interno al suo dominio,  l'<strong>approssimazione lineare</strong>  consiste nell'approssimare l'incremento/decremento $\Delta f(x_0)$ dei valori della funzione dovuto a un incremento/decremento dell'argomento da $x_0$ a $x_0 + dx$, sostituendo la funzione con la sua retta tangente nel punto $\big(x_0,f(x_0)\big)$.
+- Data una funzione $f$ derivabile in un punto $x_0$ interno al suo dominio,  l'<strong>approssimazione lineare</strong>  consiste nell'approssimare l'incremento/decremento $\Delta f(x_0)$ dei valori della funzione dovuto a un incremento/decremento dell'argomento da $x_0$ a $x_0 + dx$, sostituendo la funzione con la sua retta tangente nel punto $\big(x_0,f(x_0)\big)$.
 
-- L'idea che sta alla base dell'approssimazione lineare consiste quindi nello stimare  $\Delta f(x_0)$  con $df(x_0)$. Per avere buone approssimazione si considerano incrementi molto “piccoli” in valore assoluto, ovvero $|dx| \ll 1$.
+- L'idea che sta alla base dell'approssimazione lineare consiste quindi nello stimare  $\Delta f(x_0)$  con $df(x_0)$. Per avere buone approssimazioni si considerano incrementi molto “piccoli” in valore assoluto, ovvero $|dx| \ll 1$.
+
+<a id="box-defXX-1"></a>
 
 !!! definizione "Definizione 1: differenziale di una funzione"
 
@@ -78,9 +80,11 @@ title: "Calcolo differenziale e approssimazioni"
 
     Quindi l'errore  $\Delta f(x_0) - df(x_0)$ tende a zero più rapidamente di $(x-x_0)$ per $x \rr x_0$.
 
-!!! definizione "Definizione 2: sviluppo asintototico del primo ordine"
+<a id="box-defXX-2"></a>
 
-    Data una funzione  $f : (a, b) \rr  \R$, derivabile in un punto $x_0 \in (a,b)$, si chiama  <strong>asintototico del primo ordine</strong> o lineare di $f$ nel punto $x_0$ la seguente espressione:
+!!! definizione "Definizione 2: sviluppo asintotico del primo ordine"
+
+    Data una funzione  $f : (a, b) \rr  \R$, derivabile in un punto $x_0 \in (a,b)$, si chiama  <strong>sviluppo asintotico del primo ordine</strong> o lineare di $f$ nel punto $x_0$ la seguente espressione:
 
     \begin{equation}
     \label{F}f(x)   = f(x_0) + f'(x_0)\; (x -x_0) + o\big(x - x_0 \big) {\rm ~~~per~~~} x \rr x_0
@@ -93,7 +97,9 @@ L'espressione \(\eqref{F}\) segue direttamente  dalla \(\eqref{DIFF_bis}\)  e ne
 f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 \end{equation}
 
-!!! esempio "Esempio 1: sviluppi  asintotici al primo ordine o lineari e errori di approsimazione"
+<a id="box-texexpbox1-3"></a>
+
+!!! esempio "Esempio 1: sviluppi  asintotici al primo ordine o lineari e errori di approssimazione"
 
     Calcoliamo lo sviluppo asintotico al primo ordine o lineare per $x \rr 0$ di:
 
@@ -123,6 +129,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
     ![Figura 2](../img/derivate-08-approssimazioni/fig02.svg){ .fig .ovale loading=lazy style="width:70%" }
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 2: di sviluppi  asintotici al primo ordine o lineari"
 
     Calcoliamo lo sviluppo asintotico al primo ordine o lineare per $x \rr 1$ di:
@@ -131,7 +139,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     f(x) = \sqrt{1+x}
     $$
 
-    Abbiamo $x_0=0$ e inoltre:
+    Abbiamo $x_0=1$ e inoltre:
 
     $$
     f'(x) = \frac{1}{2\; \sqrt{1+x} }, ~~f'(1) = \frac{1}{2\sqrt{2}}{\rm ~~~~e~~~~} f(1) = \sqrt{2}
@@ -172,6 +180,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     P'_n(0)&=a_1&P''_n(0)&=2\;a_2
     \end{align*}
 
+<a id="box-texexpbox1-5"></a>
+
 !!! esempio "Esempio 3: derivata prima e derivata seconda di un polinomio"
 
     Consideriamo il seguente polinomio di grado $5$:
@@ -208,6 +218,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     P^{(k)}_n(x) &= \sum_{i=k}^n  \underbrace{(i-k+1)\cdot \cdots (i-2) \cdot (i-1) \cdot i}_{=\prod_{j=1}^{k} (i-j+1)} \;\; a_{i} \;\; x^{i-k}\\[2ex]
     P^{(k)}_n(0)&=k!\; a_k
     \end{align*}
+
+<a id="box-texexpbox1-6"></a>
 
 !!! esempio "Esempio 4: derivata terza quarta e quinta   di un polinomio"
 
@@ -298,6 +310,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 - Individuiamo un polinomio candidato  ad approssimare “bene” la funzione, cercando un polinomio che abbia tutte le derivate fino all'ordine $n$ uguali a quelle della funzione $f$, nel punto $x_0 = 0$.  Il polinomio deve essere di grado $n$ per avere la derivata $n$-esima uguale a $f^{(n)} (0)$.
 
+<a id="box-theoKKKK-7"></a>
+
 !!! teorema "Teorema 1: del polinomio di MacLaurin"
 
     Data una funzione $f:(a,b)\rr \R$ derivabile $n-1$ volte in $(a,b)$ e $n$ volte in $0 \in (a,b)$, esiste uno e un solo polinomio $T_{n,f}$ di grado $\le n$ con la proprietà che:
@@ -322,7 +336,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
     Quindi tutte le derivate in 0 fino all'ordine $n$ sono uguali a quelle della funzione $f$ (e ha lo stesso valore della funzione in $0$).
 
-    Dimostriamo ora che tale polinomio è unico. Consideriamo ora un polinonio generico di grado $n$:
+    Dimostriamo ora che tale polinomio è unico. Consideriamo ora un polinomio generico di grado $n$:
 
     $$
     P_n(x) = \sum_{i=0}^n a_i \cdot x^i  \quad  {\rm ~~con~~} a_i \in \R,  {\rm ~per~~} i=0,1,\dots,n, ~ {\rm ~~e~~} a_n \neq 0.
@@ -350,7 +364,9 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     T_{n,f}(x) & = f(0) + f'(0)  \; x + \frac{1}{2} \; f''(0)  \; x^2 + \frac{1}{3!} \; f'''(0) \; x^3  + {\rm \dots} + \frac{1}{n!} \; f^{(n)}(0) \; x^n
     \end{align*}
 
-- Quando è chiara la funzione a cui si fa riferimento, per comodità omettiamo il pedice $f$ del polinomio di  MacLaurin e scriviamo seimplicemente $T_{n}(x)$.
+- Quando è chiara la funzione a cui si fa riferimento, per comodità omettiamo il pedice $f$ del polinomio di  MacLaurin e scriviamo semplicemente $T_{n}(x)$.
+
+<a id="box-texexpbox1-8"></a>
 
 !!! esempio "Esempio 5: Calcolo del polinomio di MacLaurin"
 
@@ -388,6 +404,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     T_{n}(x) &= x - \frac{x^2}{2}+ \frac{x^3}{3} - \frac{x^4}{4}+ {\rm \dots} + (-1)^{n-1} \frac{x^n}{n}
     \end{align*}
 
+<a id="box-texexpbox1-9"></a>
+
 !!! esempio "Esempio 6: Calcolo del polinomio di MacLaurin"
 
     Calcoliamo il polinomio di MacLaurin di grado 3 della funzione
@@ -403,7 +421,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     $$
 
     $$
-    f^{(2)}(x)=(\alpha-2)(\alpha-1)\alpha \; (1 + x)^{\alpha-3},~f^{(3)}(0)=(\alpha-2)(\alpha-1)\alpha
+    f^{(3)}(x)=(\alpha-2)(\alpha-1)\alpha \; (1 + x)^{\alpha-3},~f^{(3)}(0)=(\alpha-2)(\alpha-1)\alpha
     $$
 
     Quindi il polinomio di MacLaurin di grado 3 della funzione è:
@@ -436,7 +454,9 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 - Proviamo ora che il polinomio di MacLaurin approssima “bene” $f (x)$, in un intorno di $x_0 = 0$. Precisamente, vale il seguente teorema:
 
-!!! teorema "Teorema 2: della formula di McLaurin all'ordine $n$ con resto secondo Peano"
+<a id="box-theoKKKK-10"></a>
+
+!!! teorema "Teorema 2: della formula di MacLaurin all'ordine $n$ con resto secondo Peano"
 
     Sia $f: (a, b) \rr  \R$ , derivabile $n-1$ volte in $(a,b)$ e $n$ volte in $0 \in (a,b)$. Allora
 
@@ -445,6 +465,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     $$
 
 - La formula ha la struttura: <strong>funzione da approssimare uguale al polinomio approssimante più l'errore di approssimazione</strong>. L'errore  è il termine $o \big( x^n \big)$ e viene detto resto secondo Peano. Per $x \rr 0$, l'errore è tanto più piccolo quanto maggiore è $n$.
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 7: degli errori delle approssimazioni polinomiali"
 
@@ -550,6 +572,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
     quindi il limite \(\eqref{NNN}\) è zero e, per il teorema di De L'Hospital, anche il limite \(\eqref{VVV}\) è zero, come volevamo dimostrare. <span class="qed">□</span>
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 8: di calcolo dei polinomi di MacLaurin"
 
     Per comprendere meglio l'uguaglianza:
@@ -558,7 +582,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     T'_{n,f}(x) = T_{n-1,f'}(x)
     $$
 
-    consideriamo un funzione $f$, il suo polinomio di MacLaurin ad esempio di grado $3$ è:
+    consideriamo una funzione $f$, il suo polinomio di MacLaurin ad esempio di grado $3$ è:
 
     $$
     T_{3,f}(x)  = f(0) + f'(0)  \; x + \frac{1}{2} \; f''(0)  \; x^2 + \frac{1}{3!} \; f'''(0) \; x^3
@@ -583,6 +607,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     \begin{align*}
     T'_{n,f}(x)  &= \sum_{k=1}^n  k\;\frac{f^{(k)}(0)}{k!} \; x^{k-1} = \sum_{k=1}^n  \frac{f^{(k)}(0)}{(k-1)!} \; x^{k-1}  = \sum_{k=0}^{n-1}  \frac{f^{(k+1)}(0)}{(k)!} \; x^{k} = T_{n-1,f'}(x)
     \end{align*}
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 9: formula o sviluppo di MacLaurin del seno"
 
@@ -611,6 +637,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
     ![Figura 7](../img/derivate-08-approssimazioni/fig07.svg){ .fig .ovale loading=lazy style="width:90%" }
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 10: formula o sviluppo di MacLaurin del coseno"
 
     Consideriamo
@@ -638,6 +666,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
     ![Figura 8](../img/derivate-08-approssimazioni/fig08.svg){ .fig .ovale loading=lazy style="width:90%" }
 
+<a id="box-texexpbox1-15"></a>
+
 !!! esempio "Esempio 11: formula o sviluppo di MacLaurin"
 
     Consideriamo:
@@ -654,6 +684,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     $$
 
     ![Figura 9](../img/derivate-08-approssimazioni/fig09.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 12: Calcolo dei limiti con lo sviluppo di MacLaurin"
 
@@ -676,6 +708,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     $$
 
     Il simbolo $o(x^2)$ per $x \rr 0$ indica l'insieme di funzioni che divise per $x^2$ tendono a 0 per $x \rr 0$, quindi il secondo termine tende a 0 per $x \rr 0$.  In maniera equivalente $\frac{ o(x^2)}{x^2}= o(1)$ ovvero una generica funzione che tende a 0 per $x \rr 0$.
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 13: Calcolo dei limiti con lo sviluppo di MacLaurin"
 
@@ -703,6 +737,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     \lim_{x \rr 0} \frac{e^x - e^{-x} -2\;x}{x -\sin x}&=\lim_{x \rr 0} \frac{1+x+\frac{x^2}{2}+\frac{x^3}{6}+o(x^3)-\big(1-x+\frac{x^2}{2}-\frac{x^3}{6}+o(x^3)\big)-2\;x}{x - \big(x -\frac{x^3}{6} + o(x^3)\big)} \\[2ex]
     & =\lim_{x \rr 0} \frac{\frac{x^3}{3} + o(x^3)}{\frac{x^3}{6} + o(x^3)} = \lim_{x \rr 0} \frac{x^3 \left(\frac{1}{3} +{\frac{o(x^3)}{x^3}} \right)}{x^3 \left(\frac{1}{6} + {\frac{o(x^3)}{x^3}} \right)} =\lim_{x \rr 0} \frac{\frac{1}{3} + o(1)}{\frac{1}{6} + o(1)} = 2
     \end{align*}
+
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 14: Calcolo del polinomio di MacLaurin"
 
@@ -749,12 +785,14 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 - Tutto questo discorso si può generalizzare ad un punto $x_0 \neq 0$.  Le dimostrazioni sono analoghe a quelle precedenti e sono lasciate per esercizio.
 
+<a id="box-theoKKKK-19"></a>
+
 !!! teorema "Teorema 3: del polinomio di Taylor"
 
     Data una funzione $f:(a,b)\rr \R$ derivabile $n-1$ volte in $(a,b)$ e $n$ volte in $x_0 \in (a,b)$, esiste uno e un solo polinomio $T_{n,f,x_0}$ di grado $\le n$ con la proprietà che:
 
     $$
-    T_{n,f,x_0}(x_0) = f(x_0),~~T'_{n,f,x_0}(x_0) = f'(x_0),~~\dots~~,~~T^{(n)}_{n,f,x_0}(x_0) = f^{(n)}(0)
+    T_{n,f,x_0}(x_0) = f(x_0),~~T'_{n,f,x_0}(x_0) = f'(x_0),~~\dots~~,~~T^{(n)}_{n,f,x_0}(x_0) = f^{(n)}(x_0)
     $$
 
     e questo polinomio, detto <strong>polinomio di Taylor</strong> di $f$ di grado $n$, è:
@@ -771,7 +809,9 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     T_{n,f,x_0}(x)  =& f(x_0) + f'(x_0)  \; (x-x_0) + \frac{1}{2} \; f''(x_0)  \; (x-x_0)^2 + \frac{1}{3!} \; f'''(x_0) \; (x-x_0)^3  + ~\dots~ \\[2ex] &+ \frac{1}{n!} \; f^{(n)}(x_0)(x-x_0)^n
     \end{align*}
 
-- Quando è chiara la funzione a cui si fa riferimento, per comodità omettiamo il pedice $f$ del polinomio di  Taylor e scriviamo seimplicemente $T_{n,x_0}(x)$.
+- Quando è chiara la funzione a cui si fa riferimento, per comodità omettiamo il pedice $f$ del polinomio di  Taylor e scriviamo semplicemente $T_{n,x_0}(x)$.
+
+<a id="box-theoKKKK-20"></a>
 
 !!! teorema "Teorema 4: della formula di Taylor all'ordine $n$ con resto secondo Peano"
 
@@ -780,6 +820,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     $$
     f(x) = T_{n,f,x_0}(x) + o \big(~ (x-x_0)^n \big) {\rm ~~per~~} x \rr x_0
     $$
+
+<a id="box-texexpbox1-21"></a>
 
 !!! esempio "Esempio 15: formula o sviluppo di Taylor"
 
@@ -810,6 +852,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 - A questo tipo di problema risponde il prossimo risultato, che dà un modo alternativo di quantificare l'errore di approssimazione commesso.
 
+<a id="box-theoLLL-22"></a>
+
 !!! teorema "Teorema 5: della formula di Taylor all'ordine $n$ con resto secondo Lagrange"
 
     Sia $f: [a, b] \rr  \R$ , derivabile $n+1$ volte in $[a, b]$ e sia $x_0 \in [a,b]$. Allora esiste un punto $c$ compreso tra $x_0$ e $x$ tale che:
@@ -826,7 +870,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     \exists c \in [a,b]: f(b) = f(a) + f'(c)\: (b-a) {\rm ~~ovvero ~~} \frac{f(b)-f(a)}{b-a}=f'(c)
     $$
 
-    che e'  il teorema di Lagrange.  Attenzione: l'intervallo da $(a,b)$ diventa $[a,b]$.
+    che è  il teorema di Lagrange.  Attenzione: l'intervallo da $(a,b)$ diventa $[a,b]$.
 
 !!! chiave ""
 
@@ -842,6 +886,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     \begin{equation}
     |f(x) - T_{n,x_0}(x)| \le  \frac{M}{(n+1)!} \; |x-x_0|^{n+1} \label{GGGG}
     \end{equation}
+
+<a id="box-texexpbox1-23"></a>
 
 !!! esempio "Esempio 16: stima degli errori col resto secondo Lagrange"
 
@@ -883,7 +929,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 ??? dimostrazione "Dimostrazione"
 
-    Proviamo il teorema nel caso $n = 1$.  Ponendo per comodità $x_0 = a,~x = b$ l'enunciato diviene: se $f : [a,b] \in \R$ è derivabile 2 volte in $[a,b]$,  allora esiste un punto $c \in [a,b]$ tale che:
+    Proviamo il teorema nel caso $n = 1$.  Ponendo per comodità $x_0 = a,~x = b$ l'enunciato diviene: se $f : [a,b] \rr \R$ è derivabile 2 volte in $[a,b]$,  allora esiste un punto $c \in [a,b]$ tale che:
 
     $$
     f(b) = f(a) + f'(a)\: (b-a) + \frac{1}{2} \; f''(c)\: (b-a)^2
@@ -982,7 +1028,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     f(x) = f(x_0) + f'(x_0)\: (x-x_0) + \frac{1}{2} \; f''(c)\: (x-x_0)^2
     $$
 
-    e supponiamo che in ogni punto di $(a,b)$ si abbia  $f"(x) \ge 0$ ovvero $f$ sia convessa in $(a,b)$.  Allora si ha
+    e supponiamo che in ogni punto di $(a,b)$ si abbia  $f''(x) \ge 0$ ovvero $f$ sia convessa in $(a,b)$.  Allora si ha
 
     $$
     \frac{1}{2} \; f''(c)\: (x-x_0)^2 \ge 0
@@ -1001,7 +1047,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
         Abbiamo dunque dimostrato che se una funzione (due volte derivabile) è convessa,  è anche “convessa per tangenti”
 
-- Se invece $f$ è concava, ossia $f" (x) \le 0$ in tutto $(a, b)$,  e abbiamo
+- Se invece $f$ è concava, ossia $f'' (x) \le 0$ in tutto $(a, b)$,  e abbiamo
 
     \begin{equation}
     \label{CCCC__2}

@@ -13,27 +13,33 @@ title: "Funzioni parte intera e mantissa"
 
 - Due funzioni che tipicamente si incontrano nella scrittura di <em>algoritmi</em> sono la funzione parte intera e la funzione mantissa (o parte decimale).
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: di funzione parte intera"
 
-    La <strong>funzioni parte intera</strong> è:
+    La <strong>funzione parte intera</strong> è:
 
     \begin{equation}
     \label{parte_int}
     f: \mathbb{R} \rightarrow \mathbb{Z}, x \mapsto [x] \qquad ({\rm oppure~~ x \mapsto \lfloor x \rfloor})
     \end{equation}
 
+<a id="box-defXX-2"></a>
+
 !!! definizione "Definizione 2: di funzione parte intera superiore"
 
-    La <strong>funzioni parte intera superiore</strong> è:
+    La <strong>funzione parte intera superiore</strong> è:
 
     \begin{equation}
     \label{parte_ceil}
     f: \mathbb{R} \rightarrow \mathbb{Z}, x \mapsto \lceil x \rceil
     \end{equation}
 
+<a id="box-defXX-3"></a>
+
 !!! definizione "Definizione 3: di funzione mantissa"
 
-    La <strong>funzioni mantissa</strong> è:
+    La <strong>funzione mantissa</strong> è:
 
     \begin{equation}
     \label{parte_int__2}
@@ -54,11 +60,15 @@ title: "Funzioni parte intera e mantissa"
 
 ## 2. Funzioni definite a tratti
 
-- A partire dalle funzioni elementari si possono costruirne di nuove usando <strong>definizioni analitiche diverse su intervalli diversi</strong>.
+- A partire dalle funzioni elementari se ne possono costruire di nuove usando <strong>definizioni analitiche diverse su intervalli diversi</strong>.
+
+<a id="box-defFunzioneMONcre-4"></a>
 
 !!! definizione "Definizione 4: di funzione definita a tratti"
 
     Una funzione $f$ il cui valore $f (x)$ è calcolato mediante “istruzioni” diverse a seconda dell'intervallo in cui cade la $x$ si chiama <strong>funzione definita a tratti</strong>.
+
+<a id="box-texexpbox1-5"></a>
 
 !!! esempio "Esempio 1: Funzioni definite a tratti"
 

@@ -11,6 +11,8 @@ title: "Funzioni continue"
 </div>
 ## 1. Teorema dell'algebra delle funzioni continue
 
+<a id="box-theoXXX-1"></a>
+
 !!! teorema "Teorema 1: dell'algebra delle funzioni continue"
 
     Siano $f$ e $g$ due funzioni definite almeno in un intorno di $x_0 \in \R$ e continue in $x_0$. Allora:
@@ -43,6 +45,8 @@ title: "Funzioni continue"
 
 ## 2. Teorema di continuità delle funzioni elementari
 
+<a id="box-theoXXX-2"></a>
+
 !!! teorema "Teorema 2: di continuità delle funzioni elementari"
 
     Le seguenti funzioni elementari sono continue in tutti i punti del proprio insieme di definizione:
@@ -57,7 +61,7 @@ title: "Funzioni continue"
 
 ??? dimostrazione "Dimostrazione"
 
-    Ad esempio, proviamo la continuità in tutto $\R$ della funzioni $\sin x$ e $\cos x$.
+    Ad esempio, proviamo la continuità in tutto $\R$ delle funzioni $\sin x$ e $\cos x$.
 
     - Abbiamo visto che  $\sin x$ è continuo in $x =0$, mostriamo che anche $\cos x$ è continuo in $x=0$.
 
@@ -131,13 +135,15 @@ title: "Funzioni continue"
 
 ## 3. Teorema di continuità della funzione composta
 
+<a id="box-theoXXX-3"></a>
+
 !!! teorema "Teorema 3: di continuità della funzione composta"
 
     Siano:
 
-    - $g$ una una funzione  definita almeno un intorno di $x_0$ e continua in $x_0$,
+    - $g$ una funzione  definita almeno in un intorno di $x_0$ e continua in $x_0$,
 
-    - $f$ una una funzione  definita almeno in un intorno di $t_0=g(x_0)$  e continua in $t_0$,
+    - $f$ una funzione  definita almeno in un intorno di $t_0=g(x_0)$  e continua in $t_0$,
 
     allora $f \circ g$ è definita almeno in un intorno di $x_0$ ed è continua in $x_0$.
 
@@ -163,7 +169,7 @@ title: "Funzioni continue"
 
     e la tesi è dimostrata. <span class="qed">□</span>
 
-- Ne segue che tutte le funzioni che si possono ottenere con somma, prodotto, quoziente e composizioni da funzioni elementari sono continue nel loro insieme di definizione. <strong>Quindi combinando in questi modo le funzioni si ottengono ancora funzioni continue</strong>.
+- Ne segue che tutte le funzioni che si possono ottenere con somma, prodotto, quoziente e composizioni da funzioni elementari sono continue nel loro insieme di definizione. <strong>Quindi combinando in questo modo le funzioni si ottengono ancora funzioni continue</strong>.
 
 !!! chiave ""
 
@@ -175,7 +181,7 @@ title: "Funzioni continue"
 
     - composizione di funzioni continue dà una funzione continua.
 
-- E' quindi possibile  sapere a priori che una funzione è continua nel suo insieme di definizione, senza applicare caso per caso la definizione di continuità.
+- È quindi possibile  sapere a priori che una funzione è continua nel suo insieme di definizione, senza applicare caso per caso la definizione di continuità.
 
 !!! chiave ""
 
@@ -184,6 +190,8 @@ title: "Funzioni continue"
     $$
     f(x) \rr f(x_0) {\rm ~~~~per~~~} x \rr x_0
     $$
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 1: Funzioni continue e limiti finiti al finito"
 
@@ -201,6 +209,8 @@ title: "Funzioni continue"
 
     ![Figura 2](../img/limiti-04-funzioni-continue/fig02.svg){ .fig .ovale loading=lazy style="width:80%" }
 
+<a id="box-texexpbox1-5"></a>
+
 !!! esempio "Esempio 2: Funzioni continue e limiti finiti al finito"
 
     La seguente funzione è continua con $x \in \R$ e $2 \;k \;\pi \le x \le  2 \;k \;\pi+\pi, \forall k \in \Z$:
@@ -213,12 +223,14 @@ title: "Funzioni continue"
 
     ![Figura 3](../img/limiti-04-funzioni-continue/fig03.svg){ .fig .ovale loading=lazy style="width:75%" }
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 3: Funzioni continue e limiti finiti al finito"
 
     La seguente funzione è continua con $x \in \R$ e  $x \neq (2\:k+1) \: \frac{\pi}{2}, \forall k \in \mathbb{Z}$:
 
     $$
-    f(x)=\log_a \big( 1 + (\tan x)^2\big),~~ \forall a >0
+    f(x)=\log_a \big( 1 + (\tan x)^2\big),~~ \forall a >0, a \neq 1
     $$
 
     quindi:

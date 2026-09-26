@@ -22,9 +22,13 @@ title: "Numeri complessi"
         \label{OP2}(a, b) \cdot (c, d) &= (ac - bd, ad+ bc)
         \end{align}
 
+    <a id="box-texexpbox1-1"></a>
+
     !!! esempio "Esempio 1: somma"
 
         ![Figura 1](../img/numeri-12-numeri-complessi/fig01.svg){ .fig .ovale loading=lazy style="width:42%" }
+
+    <a id="box-texexpbox1-2"></a>
 
     !!! esempio "Esempio 2: prodotto"
 
@@ -58,6 +62,8 @@ title: "Numeri complessi"
 
     dunque la coppia $(a/(a^2 + b^2 ) , -b/(a^2 + b^2 ))$ è il <strong>reciproco</strong> di $(a, b)$.
 
+<a id="box-defXX-3"></a>
+
 !!! definizione "Definizione 1: campo dei numeri complessi"
 
     Le proprietà $R_1$, $R_2$  sono verificate per la somma e il prodotto così definiti e perciò l'insieme $\R^2$ così strutturato è un campo, che chiameremo <strong>campo dei numeri complessi</strong> e indicheremo con $\C$
@@ -88,6 +94,8 @@ title: "Numeri complessi"
 
     cioè il suo quadrato coincide col numero reale $-1$
 
+<a id="box-defXX-4"></a>
+
 !!! definizione "Definizione 2: unità immaginaria"
 
     La coppia $(0, 1) \in \C$ è indicata con la lettera “$i$” ed è chiamata <strong>unità immaginaria</strong>
@@ -112,6 +120,8 @@ title: "Numeri complessi"
     \label{OP3}(a + ib) + (c + id) &= (a+ c) + i (b + d)\\[2ex]
     \label{OP4}(a + ib) \cdot (c + id) &= (ac - bd) + i (ad + bc)
     \end{align}
+
+<a id="box-defXX-5"></a>
 
 !!! definizione "Definizione 3: di forma algebrica, parte reale e parte immaginaria"
 
@@ -139,6 +149,8 @@ title: "Numeri complessi"
 
 ![Figura 3](../img/numeri-12-numeri-complessi/fig03.svg){ .fig .ovale loading=lazy style="width:61%" }
 
+<a id="box-obserXX-6"></a>
+
 !!! osservazione "Osservazione 1"
 
     L'insieme dei numeri complessi $~\C$ non è un campo ordinato
@@ -156,6 +168,8 @@ title: "Numeri complessi"
         Abbiamo quindi due quadrati che sono l'uno l'opposto dell'altro. Nessuno dei due però può essere negativo (perché sono quadrati), e questo è assurdo (perché tra $a$ e $- a$ uno dev'essere negativo, se $a\neq 0$). Concludiamo che $\C$ non è un campo ordinato.
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-defXX-7"></a>
 
 !!! definizione "Definizione 4: di coniugato"
 
@@ -179,11 +193,13 @@ title: "Numeri complessi"
      \overline{\left(\frac{1}{z}\right)} &= \frac{1}{\overline{z}}
     \end{align}
 
+<a id="box-defXX-8"></a>
+
 !!! definizione "Definizione 5: di modulo"
 
     Si chiama <strong>modulo</strong> di $z = a+ ib$ il numero reale non negativo $\sqrt{a^2 + b^2}$, si indica con $|z|$.
 
-- Se $z = a$ è reale, il suo modulo si chiama valore assoluto e si indica sempre con la $|a|$ e valgono le seguenti proprietà:
+- Se $z = a$ è reale, il suo modulo si chiama valore assoluto e si indica sempre con $|a|$ e valgono le seguenti proprietà:
 
     1. $|z| = 0 \Longleftrightarrow z=0, {\rm ~~inoltre~~} |z| \ge 0$
 
@@ -268,6 +284,8 @@ title: "Numeri complessi"
 - Vediamo come si può risolvere un'equazione nel campo complesso, quando questa coinvolge l'incognita $z = x + iy$ anche attraverso $\Re(z)$, $\Im(z)$, $z$, $|z|$.
 
 - Illustriamo il procedimento di trasformare l'equazione in una incognita complessa in un sistema di due equazioni in due incognite reali con il seguente esempio. Il metodo prevede di passare alla parte reale e immaginaria dell'equazione.
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 3: equazioni nel campo complesso (metodo algebrico)"
 
@@ -354,6 +372,8 @@ title: "Numeri complessi"
 
 - Gli intervalli più comunemente usati a questo scopo sono $[0, 2\:\pi)$ e $(-\pi, \pi]$; allora l'argomento di $z$ viene detto <strong>argomento principale</strong>.
 
+    <a id="box-texexpbox1-10"></a>
+
     !!! esempio "Esempio 4: argomenti di numeri complessi"
 
         - il numero $-i$ ha come argomento $- \pi / 2$ oppure $3\pi / 2$ oppure qualunque altro valore della forma $- \pi / 2 + 2\:k\:\pi$ con $k \in \Z$. Il suo argomento principale sarà $3\pi / 2$ se si adotta la convenzione che $\vartheta \in [0, 2\:\pi)$, $-\pi / 2$ con la convenzione che $\vartheta \in (-\pi, \pi]$.
@@ -374,6 +394,8 @@ title: "Numeri complessi"
     \label{POLARY2} \varrho= \sqrt{a^2+b^2},~~~~\cos \vartheta= \frac{a}{\sqrt{a^2+b^2}}~~~~~ {\rm e}~~~~ \sin \vartheta= \frac{b}{\sqrt{a^2+b^2}}
     \end{align}
 
+<a id="box-defXX-11"></a>
+
 !!! definizione "Definizione 6: di forma trigonometrica"
 
     Un numero complesso $z = a+ ib$ può anche scriversi nella forma
@@ -383,6 +405,8 @@ title: "Numeri complessi"
     \end{equation}
 
     che è detta <strong>forma trigonometrica</strong> dei numeri complessi.
+
+<a id="box-texexpbox1-12"></a>
 
 !!! esempio "Esempio 5: forma trigonometrica"
 
@@ -447,7 +471,9 @@ title: "Numeri complessi"
     z^n= \varrho^n \cdot \bigg\{~~ \cos \big(n\: \vartheta\big) + i ~~ \sin \big(n\: \vartheta)~~\bigg\}
     \end{align}
 
-- Le queste relazioni sui prodotti e quozienti di numeri complessi vanno sotto il nome di formule di De Moivre.
+- Queste relazioni sui prodotti e quozienti di numeri complessi vanno sotto il nome di formule di De Moivre.
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 6: potenze di numeri complessi con le formule di De Moivre"
 
@@ -483,6 +509,8 @@ title: "Numeri complessi"
 
     - Se $z$ ha modulo $\varrho$ anziché 1, oltre ad eseguire una rotazione si esegue una <strong>dilatazione di coefficiente</strong> $\varrho$.
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 7: interpretazione geometrica del prodotto di numeri complessi"
 
     - moltiplicare per $i$ significa eseguire una rotazione di $\frac{\pi}{2}$;
@@ -490,6 +518,8 @@ title: "Numeri complessi"
     - moltiplicare per $- 1$ significa eseguire una rotazione di $\pi$;
 
     - moltiplicare per $(1 +i)$ significa eseguire una dilatazione di coefficiente $\sqrt{2}$ e una rotazione di $\frac{\pi}{4}$
+
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 8: equazioni nel campo complesso (metodo trigonometrico)"
 
@@ -543,16 +573,20 @@ title: "Numeri complessi"
 
 ### 3.2 Radici $n$-esime dei numeri complessi
 
-!!! definizione "Definizione 7: di radice $n$-esime di un numero complesso"
+<a id="box-defXX-16"></a>
+
+!!! definizione "Definizione 7: di radice $n$-esima di un numero complesso"
 
     Dato un numero complesso $w$, diremo che $z$ è una radice n-esima (complessa) di $w$ se risulta $z^n = w$.
+
+<a id="box-theoXXX-17"></a>
 
 !!! teorema "Teorema 1"
 
     Sia $w \in \C$, $w \neq 0$, e $n$ intero $\ge 1$. Esistono precisamente $n$ radici $n$-esime complesse $z_0, z_1, \dots , z_{n-1}$ di $w$; posto
 
     $$
-    w = r\: \big( cos \; \varphi + i\; sin \;\varphi \big) ~~~~{\rm e}~~~~~ z_k = \varrho_k \big( \cos \: \vartheta_k +
+    w = r\: \big( \cos \; \varphi + i\; \sin \;\varphi \big) ~~~~{\rm e}~~~~~ z_k = \varrho_k \big( \cos \: \vartheta_k +
     i \; \sin \; \vartheta_k \big)
     $$
 
@@ -568,7 +602,7 @@ title: "Numeri complessi"
 
 ??? dimostrazione "Dimostrazione"
 
-    - I numeri $z_k$ sono evidentemente radici di $w$, come risulta calcolando $z^m_k$ mediante la formula di De Moivre. Mostriamo che non ve ne sono altre.
+    - I numeri $z_k$ sono evidentemente radici di $w$, come risulta calcolando $z^n_k$ mediante la formula di De Moivre. Mostriamo che non ve ne sono altre.
 
     - Se un numero $R( \cos \: \psi  + i\; \sin \psi)$ è radice $n$-esima di $w$, dovrebbe risultare
 
@@ -584,7 +618,7 @@ title: "Numeri complessi"
 
     - Dando a $h$ i valori $0, 1, \dots, n-1$ troviamo appunto i numeri $z_k$.
 
-    - Dando a $h$ un qualsiasi altro valore $\bar{h}$ diverso dai precedenti, questo può scriversi nella forma $\bar{h} = k + mn$ ( $m \in \Z$ è il quoziente e $k$ è il resto della divisione di $h$ per $n$) per cui sarebbe
+    - Dando a $h$ un qualsiasi altro valore $\bar{h}$ diverso dai precedenti, questo può scriversi nella forma $\bar{h} = k + mn$ ( $m \in \Z$ è il quoziente e $k$ è il resto della divisione di $\bar{h}$ per $n$) per cui sarebbe
 
         $$
         \psi = \frac{\varphi}{n} + \frac{2k\pi}{n} + 2m\pi = \vartheta_k + 2m\pi
@@ -593,6 +627,8 @@ title: "Numeri complessi"
         e ritroveremmo ancora gli stessi $z_k$ precedenti.
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 9: radice quinta di un numero complesso"
 
@@ -611,6 +647,8 @@ title: "Numeri complessi"
 - Per le radici complesse si usa purtroppo una notazione un po' ambigua, la stessa in uso per indicare la radice aritmetica; si indica cioè con $\sqrt[n]{z}$ o $z^{1/n}$ l'insieme delle $n$ radici complesse di $z$.
 
 - Ciò può creare confusione quando $z$ è reale. Infatti il simbolo $\sqrt{4}$, inteso come radice aritmetica di 4, è 2; inteso come radice complessa di 4 è l'insieme dei due numeri + 2 e - 2.
+
+<a id="box-texexpbox1-19"></a>
 
 !!! esempio "Esempio 10: radice cubica di un numero complesso"
 
@@ -640,13 +678,15 @@ title: "Numeri complessi"
 
 - Infatti se $w = r\:( \cos \varphi + i \; \sin \varphi)$ le radici $n$-esime $z_0, z_1 , \dots, z_{n-1}$ di $w$ si trovano ai vertici del poligono regolare di $n$ lati inscritto nella circonferenza di centro $0$ e raggio $r^{1/n}$ , con il vertice $z_0$ posto nel punto di argomento $\vartheta = \varphi/n$.
 
+<a id="box-texexpbox1-20"></a>
+
 !!! esempio "Esempio 11: radici nel piano di Gauss"
 
-    - Nella figura  sono rappresentate le radici cubiche di -1 : $z_0, z_2, z_3$ dell'esercizio precedente:
+    - Nella figura  sono rappresentate le radici cubiche di -1 : $z_0, z_1, z_2$ dell'esercizio precedente:
 
         ![Figura 6](../img/numeri-12-numeri-complessi/fig06.svg){ .fig .ovale loading=lazy style="width:47%" }
 
-    - Nella figura  sono rappresentate le radici seste di $i$ : $z_0, z_2, z_3,z_4,z_5$,
+    - Nella figura  sono rappresentate le radici seste di $i$ : $z_0, z_1, z_2, z_3,z_4,z_5$,
 
         $$
         \sqrt[6]{i} = \underbrace{\sqrt[6]{1}}_{=1} \left[ \cos \left( \frac{\pi}{2\cdot 6} + \frac{2}{6} k\pi  \right) + i \: \sin \left(  \frac{\pi}{2\cdot 6} + \frac{2}{6} k\pi \right) \right]~~~~{\rm con}~~~~ k=0,1,2,3,4,5
@@ -677,7 +717,7 @@ title: "Numeri complessi"
         Con tale notazione la <em>forma trigonometrica</em> si riscrive in modo equivalente come:
 
         $$
-        z = |z| \; ( \cos \; \varphi + i \; \sin \; \varphi) = |\varphi|e^{i \:\varphi}, \qquad \varphi = {\rm arg}(z) ~~~{\rm con~~} z \neq 0
+        z = |z| \; ( \cos \; \varphi + i \; \sin \; \varphi) = |z|e^{i \:\varphi}, \qquad \varphi = {\rm arg}(z) ~~~{\rm con~~} z \neq 0
         $$
 
         Questa notazione si chiama <strong>forma esponenziale</strong> dei numeri complessi.
@@ -755,6 +795,8 @@ title: "Numeri complessi"
 
     Le soluzioni sono  dette anche <strong>radici</strong> o <strong>zeri</strong> dell'equazione.
 
+<a id="box-obserXX-21"></a>
+
 !!! osservazione "Osservazione 2: formula risolutiva delle equazioni di secondo grado"
 
     Data una equazione di secondo grado $a\: x^2 + b \: x + c = 0$ $(a \neq 0)$, gli zeri o radici sono:
@@ -821,6 +863,8 @@ title: "Numeri complessi"
 
     dove la radice quadrata è intesa in senso complesso (il segno $\pm$ è  superfluo, perché  nel campo complesso la radice denota due numeri, uno opposto dell'altro)
 
+<a id="box-texexpbox1-22"></a>
+
 !!! esempio "Esempio 12: equazioni di secondo grado nel campo complesso "
 
     - Vogliamo risolvere:
@@ -842,6 +886,8 @@ title: "Numeri complessi"
 - Il precedente teorema  ci dice che un polinomio del tipo $z^n + a$ (con $a$ complesso) ha in $\C$ esattamente $n$ radici; nel campo reale invece l'equazione $x^n + a = 0$ può avere due, una, o nessuna radice (esempi: $x^2 - 1 =0, x^3 - 1 = 0, x^2 + 1 = 0$);  ora sappiamo che tale equazione ha sempre $n$ radici in $\C$, ma solo occasionalmente una o due di esse stanno in $\R$.
 
 - Il risultato è di portata ben più generale, come afferma il seguente teorema, di cui non riportiamo la dimostrazione.
+
+    <a id="box-obserVV-23"></a>
 
     !!! teorema "Teorema 2: fondamentale dell'algebra"
 

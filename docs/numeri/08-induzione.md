@@ -15,7 +15,7 @@ title: "Principio di induzione"
 
     “ per ogni $n \in \N$, $n \ge n_0$, vale la proprietà $p (n)$ ”
 
-- Il numero $n_0$ è il più piccolo intero per cui si vuole che la proprielà sia vera; se $n_0 = 0$ il teorema afferma semplicemente che la proprietà è vera per ogni $n \in \N$.
+- Il numero $n_0$ è il più piccolo intero per cui si vuole che la proprietà sia vera; se $n_0 = 0$ il teorema afferma semplicemente che la proprietà è vera per ogni $n \in \N$.
 
     !!! chiave ""
 
@@ -29,7 +29,7 @@ title: "Principio di induzione"
 
 - La validità di questo metodo dimostrativo, <em>intuitivamente</em>, si basa su questo fatto:
 
-    1. Per il punto 1, sappiamo che $p (n_0)$ è vera. Supponiamo ad esempio $n_0 = 1$: sappiamo quindi che $p(1)$ è vera (questo va dimostrato esplicilamente).
+    1. Per il punto 1, sappiamo che $p (n_0)$ è vera. Supponiamo ad esempio $n_0 = 1$: sappiamo quindi che $p(1)$ è vera (questo va dimostrato esplicitamente).
 
     2. Per il punto $2$, poiché è vera $p(1)$, sarà vera $p (2)$: infatti abbiamo dimostrato che qualunque sia $n$, se è vera $p ( n)$ è vera anche $p ( n + 1)$. Ma allora, poiché è vera $p (2)$, sarà vera $p (3)$; ma allora è vera $p (4)$, … e così via, dunque è vera $p (n)$ per ogni $n \ge 1$.
 
@@ -50,6 +50,8 @@ title: "Principio di induzione"
 ## 2. Dimostrazioni basate sul principio di induzione
 
 ### 2.1 Disuguaglianza di Bernoulli
+
+<a id="box-notationA-1"></a>
 
 !!! osservazione "Osservazione 1: disuguaglianza di Bernoulli"
 
@@ -109,6 +111,8 @@ title: "Principio di induzione"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 1: Disuguaglianza di Bernoulli"
 
     <div class="figure-affiancate" markdown>
@@ -128,6 +132,8 @@ title: "Principio di induzione"
     </div>
 
 ### 2.2 Alcune sommatorie importanti
+
+<a id="box-propSUM-3"></a>
 
 !!! osservazione "Osservazione 2: somma dei primi $n$ numeri naturali"
 
@@ -174,6 +180,8 @@ title: "Principio di induzione"
 
 ### 2.3 Somma dei termini della progressione geometrica
 
+<a id="box-propXX-4"></a>
+
 !!! osservazione "Osservazione 3: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
 
     Dato $q \in\ \R_+$, per ogni intero $n \ge 1$ vale:
@@ -212,7 +220,7 @@ title: "Principio di induzione"
         Quindi possiamo scrivere
 
         \begin{align*}
-        \sum_{k=1}^{n+1} q^k&= \sum_{k=1}^{n} q^{k-1} + q^n =  \frac{q^n-1}{q-1} + q^n\\[2ex]
+        \sum_{k=1}^{n+1} q^{k-1}&= \sum_{k=1}^{n} q^{k-1} + q^n =  \frac{q^n-1}{q-1} + q^n\\[2ex]
         & =  \frac{q^n-1+q^{n+1}-q^n}{q-1} =  \frac{q^{n+1}-1}{q-1}
         \end{align*}
 

@@ -15,6 +15,8 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
 ### 1.1 Radici $n$-esime aritmetiche
 
+<a id="box-theoXXX-1"></a>
+
 !!! teorema "Teorema 1"
 
     Per ogni $y \in \R$, $y > 0$ e $n \in \N$, $n \ge 1$, esiste uno e un solo $x \in \R, x >0$, tale che $x^n = y$.
@@ -32,6 +34,8 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 !!! chiave ""
 
     La radice $n$-esima aritmetica è non negativa.
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 1: radice $n$-esima aritmetica"
 
@@ -115,7 +119,7 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
     <div class="tabella" markdown><table>
     <tr>
-    <td><span class="arithmatex">\(1\)</span></td>
+    <td><span class="arithmatex">\(2\)</span></td>
     <td><span class="arithmatex">\(2^2\)</span></td>
     <td><span class="arithmatex">\(=4\)</span></td>
     </tr>
@@ -197,6 +201,8 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
     \sqrt[m]{c}=-\sqrt[m]{-c}
     $$
 
+<a id="box-texexpbox1-3"></a>
+
 !!! esempio "Esempio 2: base negativa"
 
     Per esempio:
@@ -210,6 +216,8 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
     $$
 
 - Quando si dice “non esiste in $\R$” si intende che non è possibile definire tale operazione in modo da mantenere valide le usuali regole di calcolo.
+
+<a id="box-texexpbox1-4"></a>
 
 !!! esempio "Esempio 3: non esistenza della potenza a esponente reale"
 
@@ -240,7 +248,7 @@ $$
     \begin{align}
     a^0&=1 ~~~~ \forall a \neq 0\\[2ex]
     1^c&=1 ~~~~ \forall c\\[2ex]
-    a^c&>0 ~~~~ \forall c\\[2ex] \label{FFFFF}
+    a^c&>0 ~~~~ \forall c \label{FFFFF}\\[2ex]
     a^c&>1 ~~~~ \forall a>1 {\rm ~~e ~~} c >0\\[2ex]
     a^c&<1 ~~~~ \forall a<1 {\rm ~~e ~~} c >0
     \end{align}
@@ -275,6 +283,8 @@ $$
 
     Il seguente teorema ci dice che essa ha una sola soluzione per ogni $y > 0$:
 
+    <a id="box-theoXXX-5"></a>
+
     !!! teorema "Teorema 2"
 
         Sia $a > 0$, $a\neq 1$, $y >0$. Esiste un unico numero reale $x$ tale che $a^x=y$.
@@ -295,7 +305,7 @@ $$
 x, y, a \in \R, ~~ x>0, y>0, a >0  ~~~({\rm reali~~positivi}) {\rm ~~e~~} a \neq 1,
 $$
 
-<strong>le proprietà principali dei logartimi</strong> sono (si deducono da quelle degli esponenziali):
+<strong>le proprietà principali dei logaritmi</strong> sono (si deducono da quelle degli esponenziali):
 
 !!! chiave ""
 
@@ -331,12 +341,14 @@ $$
 
 - Cosa significa allora “conoscere” o “specificare” un numero irrazionale? Significa conoscere qualche algoritmo che ci consenta (almeno teoricamente) di scrivere tante cifre decimali esatte quante ne desideriamo.
 
+    <a id="box-texexpbox1-6"></a>
+
     !!! esempio "Esempio 4: numeri irrazionali"
 
         - Nell'esempio (già considerato) del numero irrazionale:
 
             $$
-            0,10100100010001\dots
+            0,101001000100001\dots
             $$
 
             formato in base alla regola: scrivere una cifra 1, una cifra 0, una cifra 1, due cifre 0, una cifra 1, tre cifre 0, e così via) è chiaro che potremmo scrivere tante cifre quante ne desideriamo.
@@ -367,6 +379,8 @@ $$
 
         <strong>Regola di arrotondamento</strong>: l'ultima cifra che si scrive viene arrotondata all'unità inferiore (superiore) se la prima cifra che si trascura è da 0 a 4 (rispettivamente, da 5 a 9).
 
+    <a id="box-texexpbox1-7"></a>
+
     !!! esempio "Esempio 5: Arrotondamento"
 
         Ad esempio:
@@ -381,6 +395,8 @@ $$
 
 ## 2. Aritmetica modulare
 
+<a id="box-notationA-8"></a>
+
 !!! definizione "Definizione 1: di parte intera"
 
     Dato un numero reale $a \in \mathbb{R}$,  denotiamo con  $[a]$ o $\lfloor a \rfloor$  la <strong>parte intera</strong> (o “<strong>floor</strong>”) di $a$:
@@ -388,6 +404,8 @@ $$
     $$
     [a] = {\rm intero~~} n {\rm~~tale~che~~} n \le a < n+1
     $$
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 6: Parte intera"
 
@@ -397,6 +415,8 @@ $$
 
 - Mentre per i numeri positivi la parte intera si ottiene semplicemente “buttando via le cifre dopo la virgola”, per i numeri negativi occorre prendere il massimo intero $\le a$, che è diverso da quello che si ottiene buttando via le cifre dopo la virgola (tranne nel caso in cui $a$ sia già un intero)
 
+<a id="box-notationA-10"></a>
+
 !!! definizione "Definizione 2: di mantissa"
 
     Dato un numero reale $a \in \mathbb{R}$, denotiamo con $(a)$  la <strong>mantissa</strong> (o parte decimale) di $a$:
@@ -404,6 +424,8 @@ $$
     $$
     (a) = a - [a]
     $$
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 7: Mantissa"
 
@@ -415,6 +437,8 @@ $$
 
 - Per i numeri positivi, si ottiene semplicemente “buttando via le cifre prima della virgola”, per i numeri negativi la mantissa è il <strong>complemento a uno</strong> del numero che si ottiene buttando via le cifre prima della virgola.
 
+<a id="box-notationA-12"></a>
+
 !!! definizione "Definizione 3: di parte intera superiore"
 
     Dato un numero reale $a \in \mathbb{R}$, denotiamo con $\lceil a \rceil$ la <strong>parte intera superiore</strong> (o “<strong>ceil</strong>”) di $a$:
@@ -422,6 +446,8 @@ $$
     $$
     \lceil a \rceil = {\rm intero~~} n {\rm~~tale~che~~} n -1  < a \le n
     $$
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 8: di ceil"
 
@@ -447,12 +473,12 @@ Dato un numero intero $n \in \mathbb{Z}$, abbiamo
     \left\lfloor \frac{n}{2} \right\rfloor + \left\lceil \frac{n}{2} \right\rceil=n
     $$
 
-Dato due numeri interi positivi $r,s \in \mathbb{Z}$, $r, s > 0$, abbiamo
+Dati due numeri interi positivi $r,s \in \mathbb{Z}$, $r, s > 0$, abbiamo
 
 !!! chiave ""
 
     \begin{align}
-    \left\lceil \frac{r}{s}  \right\rceil &\le  \frac{r + (s-1)}{b}\\[2ex]
+    \left\lceil \frac{r}{s}  \right\rceil &\le  \frac{r + (s-1)}{s}\\[2ex]
     \left\lfloor \frac{r}{s}  \right\rfloor &\ge  \frac{r - (s-1)}{s}
     \end{align}
 
@@ -465,6 +491,8 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
     \left\lfloor \frac{ \left \lfloor \frac{p}{r} \right \rfloor }{s} \right\rfloor &= \left\lfloor \frac{p}{r\:s} \right\rfloor
     \end{align}
 
+<a id="box-notationA-14"></a>
+
 !!! definizione "Definizione 4: Divisore"
 
     Un <strong>divisore</strong> di un intero ${n} \in \mathbb{Z}$, chiamato anche <strong>fattore</strong> di ${n}$, è un intero ${m} \in \mathbb{Z}$ che può essere moltiplicato per un qualche intero ${q} \in \mathbb{Z}$ per ottenere ${n}$, i.e., se ${n}={q} \cdot {m}$.
@@ -475,6 +503,8 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
 
 - Per un intero ${a} \in \mathbb{Z}$ e un intero positivo  ${n} \in \mathbb{Z}, {n}>0$, il valore ${a} \mod {n}$ è il resto  della divisione $\frac{{a}}{{n}}$.
 
+<a id="box-funcP2-15"></a>
+
 !!! definizione "Definizione 5: di modulo (remainder)"
 
     Dato ${a} \in \mathbb{Z}$ e ${n} \in \mathbb{Z}, {n} >0$,
@@ -483,7 +513,7 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
     {a} \mod {n} = {a} - {n} \: \left\lfloor \frac{{a}}{{n}} \right\rfloor
     $$
 
-- Segue che $0 < {a} \mod {n} < {n}$
+- Segue che $0 \le {a} \mod {n} < {n}$
 
 !!! chiave ""
 
@@ -495,9 +525,11 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
 
     e diciamo che ${a}$ è <strong>equivalente</strong> a ${b}$, modulo ${n}$.
 
+<a id="box-texexpbox1-16"></a>
+
 !!! esempio "Esempio 9"
 
-    Per esempio, $23$ and $13$ sono equivalenti modulo $5$ e scriviamo $23 \equiv 13 \:(\mod 5)$
+    Per esempio, $23$ e $13$ sono equivalenti modulo $5$ e scriviamo $23 \equiv 13 \:(\mod 5)$
 
 - Equivalentemente, ${a} \equiv {b} \:(\mod {n})$ se ${a}$ e ${b}$ hanno lo stesso resto se divisi per  ${n}$.
 

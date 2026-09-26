@@ -11,6 +11,8 @@ title: "Funzioni iperboliche"
 </div>
 ## 1. Funzioni iperboliche
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: funzione seno iperbolico e funzione coseno iperbolico"
 
     Le funzioni iperboliche:

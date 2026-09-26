@@ -17,6 +17,8 @@ title: "Serie numeriche a termini non negativi"
 
 ### 1.1 Criterio del confronto
 
+<a id="box-MMM-1"></a>
+
 !!! teorema "Teorema 1: del criterio del confronto"
 
     Siano $\{a_k\}$ e $\{b_k\}$ due successioni a termini non negativi tali che  $a_k \le b_k$, definitivamente, allora:
@@ -57,6 +59,8 @@ title: "Serie numeriche a termini non negativi"
 
     Dalla \(\eqref{JJJJ}\), per il teorema del confronto per le successioni, anche ${s}^b_n \rr \ip$ per $n \rr \ip$. Quindi la coda di $\{b_k\}$ è divergente e di conseguenza $\sum b_n$ è divergente. <span class="qed">□</span>
 
+<a id="box-XXXX-2"></a>
+
 !!! osservazione "Osservazione 1"
 
     Dato $\alpha \le1$, la serie  $\sum_{k=1}^{\infty} \frac{1}{k^{\alpha}}$ è divergente a $\ip$.
@@ -76,6 +80,8 @@ title: "Serie numeriche a termini non negativi"
 ![Figura 1](../img/serie-02-termini-non-negativi/fig01.svg){ .fig .ovale loading=lazy style="width:65%" }
 
 ### 1.2 Criterio del confronto asintotico
+
+<a id="box-MMM-3"></a>
 
 !!! teorema "Teorema 2: del criterio del confronto asintotico"
 
@@ -103,9 +109,11 @@ title: "Serie numeriche a termini non negativi"
     (1- \varepsilon)\; b_k < a_k < (1 +\varepsilon)\; b_k {\rm ~~~~dato~che~}  b_k >0, \forall k
     $$
 
-    Abbiamo quindi dimostrato che $b_k < a_k  < b_k$, definitivamente. Quindi per il teorema del criterio del confronto le serie $\sum a_k$ e $\sum b_k$ hanno lo stesso carattere.
+    Abbiamo quindi dimostrato che $(1- \varepsilon)\; b_k < a_k  < (1 +\varepsilon)\; b_k$, definitivamente. Quindi per il teorema del criterio del confronto le serie $\sum a_k$ e $\sum b_k$ hanno lo stesso carattere.
 
     La prima delle due disuguaglianze implica che se $\sum a_k$ è convergente anche $\sum b_k$ è convergente, mentre la seconda implica che se $\sum a_k$ è divergente anche $\sum b_k$ è divergente. <span class="qed">□</span>
+
+<a id="box-XXXX-4"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -133,6 +141,8 @@ title: "Serie numeriche a termini non negativi"
 
 ![Figura 2](../img/serie-02-termini-non-negativi/fig02.svg){ .fig .ovale loading=lazy style="width:65%" }
 
+<a id="box-texexpbox1-5"></a>
+
 !!! esempio "Esempio 1: criterio del confronto asintotico"
 
     Determiniamo il carattere della serie:
@@ -157,20 +167,22 @@ title: "Serie numeriche a termini non negativi"
 
 ### 1.3 Criterio di condensazione
 
+<a id="box-MMM-6"></a>
+
 !!! teorema "Teorema 3: del criterio di condensazione"
 
     Se $\{a_k\}$ è una successione definitivamente decrescente a termini non negativi, allora le  serie $\sum_{k=1}^{\infty} a_k$ e $\sum_{k=0}^{\infty} 2^k\; a_{2^k}$ sono regolari e hanno lo stesso carattere  cioè o sono entrambe convergenti o sono entrambe divergenti.
 
-- Prima di dimostrare il teorema,  consideriamo la successione $\{\tilde{s}_n\}$ delle le somme parziali della successione $\{2^k \; a_{2^k}\}$, ovvero la successione:
+- Prima di dimostrare il teorema,  consideriamo la successione $\{\tilde{s}_n\}$ delle somme parziali della successione $\{2^k \; a_{2^k}\}$, ovvero la successione:
 
     $$
-    \tilde{s}_n = \sum_{k=0}^n 2^k \; a_{2^k}\qquad \forall n >0
+    \tilde{s}_n = \sum_{k=0}^n 2^k \; a_{2^k}\qquad \forall n \ge 0
     $$
 
-    e deriviamo due importanti relazioni con la successione $\{s_n\}$ delle le somme parziali della successione $\{a_{k}\}$, ovvero la successione:
+    e deriviamo due importanti relazioni con la successione $\{s_n\}$ delle somme parziali della successione $\{a_{k}\}$, ovvero la successione:
 
     $$
-    {s}_n = \sum_{k=1}^n a_{k}\qquad \forall n >1
+    {s}_n = \sum_{k=1}^n a_{k}\qquad \forall n \ge 1
     $$
 
 - Osserviamo che, per determinati valori di $n$, le somme parziali $s_n$ sono:
@@ -182,12 +194,14 @@ title: "Serie numeriche a termini non negativi"
     \underbrace{s_{15}}_{\displaystyle =s_{2^4-1}}&=s_7 + a_8 + \underbrace{a_9}_{\le a_8} + \underbrace{a_{10}}_{\le a_8}+ \underbrace{a_{11}}_{\le a_8}+ \underbrace{a_{12}}_{\le a_8}+ \underbrace{a_{13}}_{\le a_8}+ \underbrace{a_{14}}_{\le a_8}+ \underbrace{a_{15}}_{\le a_8} \le a_1 + 2\;a_2 + 4\;a_4 + 8\;a_8
     \end{align*}
 
+<a id="box-MMM-7"></a>
+
 !!! osservazione "Osservazione 3"
 
     Data una successione $\{a_k\}$ definitivamente decrescente a termini non negativi, abbiamo:
 
     \begin{equation}
-    s_{2^n-1} ~~\le~~  \underbrace{\sum_{k=0}^{n-1} 2^k \; a_{2^k}}_{=\tilde{s}_{n-1}}\qquad \forall n >1 \label{P1}
+    s_{2^n-1} ~~\le~~  \underbrace{\sum_{k=0}^{n-1} 2^k \; a_{2^k}}_{=\tilde{s}_{n-1}}\qquad \forall n \ge 1 \label{P1}
     \end{equation}
 
 ??? dimostrazione "Dimostrazione"
@@ -195,7 +209,7 @@ title: "Serie numeriche a termini non negativi"
     Dimostriamo  per induzione su $2^n$ che
 
     $$
-    s_{2^n-1} ~~\le~~ \sum_{k=0}^{n-1} 2^k \; a_{2^k}\qquad \forall n >1
+    s_{2^n-1} ~~\le~~ \sum_{k=0}^{n-1} 2^k \; a_{2^k}\qquad \forall n \ge 1
     $$
 
     <strong>Primo passo dell'induzione.</strong>  Sia $n = 1$. Allora l'asserto diventa $s_{2^1-1} \le 2^0 \; a_1$ cioè  $a_1 \le a_1$ che è evidentemente vero.
@@ -219,12 +233,14 @@ title: "Serie numeriche a termini non negativi"
     \tilde{s}_3&=\tilde{s}_2 + 8\;a_8 \le 2\;s_4 + 2 \; a_5 + 2 \; a_6 + 2 \; a_7 + 2 \; a_8 = 2\;\underbrace{s_8}_{\displaystyle =s_{2^3}}~~~ ({\rm dato~che~} a_8 \le a_7 \le a_6 \le a_5 )
     \end{align*}
 
+<a id="box-MMM-8"></a>
+
 !!! osservazione "Osservazione 4"
 
     Data una successione $\{a_k\}$ definitivamente decrescente a termini non negativi, abbiamo:
 
     \begin{equation}
-    \underbrace{\sum_{k=0}^{n} 2^k \; a_{2^k}}_{=\tilde{s}_{n}} ~~\le~~ 2\; s_{2^n} \qquad \forall n >0 \label{P2}
+    \underbrace{\sum_{k=0}^{n} 2^k \; a_{2^k}}_{=\tilde{s}_{n}} ~~\le~~ 2\; s_{2^n} \qquad \forall n \ge 0 \label{P2}
     \end{equation}
 
 ??? dimostrazione "Dimostrazione"
@@ -232,7 +248,7 @@ title: "Serie numeriche a termini non negativi"
     Dimostriamo per induzione su $2^n$ che
 
     $$
-    \tilde{s}_{n} ~~\le~~ 2\; s_{2^n}\qquad \forall n >0
+    \tilde{s}_{n} ~~\le~~ 2\; s_{2^n}\qquad \forall n \ge 0
     $$
 
     <strong>Primo passo dell'induzione.</strong>  Sia $n = 0$. Allora l'asserto diventa $\tilde{s}_{0} \le 2 \; s_{2^0} = 2 s_1$ cioè $a_1 \le 2\;a_1$ che è evidentemente vero.
@@ -254,7 +270,7 @@ title: "Serie numeriche a termini non negativi"
     Dalla relazione \(\eqref{P1}\) abbiamo:
 
     $$
-    s_{2^n-1} \le \tilde{s}_{n-1} ,~~~ \forall n >1
+    s_{2^n-1} \le \tilde{s}_{n-1} ,~~~ \forall n \ge 1
     $$
 
     Quindi se $\{\tilde{s}_n\}$ è convergente, ovvero se $\sum_{k=0}^{\infty} 2^k\; a_{2^k}$ è convergente, la sottosuccessione $\{s_{2^{n}-1}\}$ è limitata.  Dato che $\{s_n\}$ è monotona tutta la successione $\{s_n\}$ risulta limitata e convergente per il teorema di monotonia delle successioni. Di conseguenza, se $\sum_{k=0}^{\infty} 2^k\; a_{2^k}$ è convergente anche $\sum_{k=1}^{\infty}  a_{k}$ è convergente.
@@ -262,12 +278,12 @@ title: "Serie numeriche a termini non negativi"
     Dalla relazione \(\eqref{P2}\) abbiamo:
 
     $$
-    \tilde{s}_{n}  \le 2\;s_{2^n},~~~ \forall n >0
+    \tilde{s}_{n}  \le 2\;s_{2^n},~~~ \forall n \ge 0
     $$
 
     Quindi se $\{{s}_n\}$ è convergente, ovvero se $\sum_{k=1}^{\infty} a_{k}$ è convergente, allora  la sottosuccessione $\{s_{2^n}\}$ è convergente (dato che $\{{s}_n\}$ è monotona). Di conseguenza per confronto anche $\{\tilde{s}_{n}\}$ è convergente ovvero $\sum_{k=0}^{\infty} 2^k\; a_{2^k}$ converge.
 
-    Inoltre dato che $\{a_k\}$ è a non-negativi non può essere irregolare, di conseguenza abbiamo anche:
+    Inoltre dato che $\{a_k\}$ è a termini non negativi non può essere irregolare, di conseguenza abbiamo anche:
 
     \begin{equation*}
     \sum_{k=1}^{\infty} a_k {\rm ~~divergente~~} ~~\Longleftrightarrow~~ \sum_{k=0}^{\infty} 2^k\; a_{2^k} {\rm ~~divergente~~}
@@ -287,9 +303,13 @@ title: "Serie numeriche a termini non negativi"
 
 ### 1.4 Serie armonica generalizzata
 
+<a id="box-defXX-9"></a>
+
 !!! definizione "Definizione 1: di serie armonica generalizzata"
 
     Dato $\alpha \in \R$, si dice <strong>serie armonica generalizzata</strong> la serie $\sum_{k=1}^{\infty} \frac{1}{k^{\alpha}}$
+
+<a id="box-theoZERI-10"></a>
 
 !!! teorema "Teorema 4: del carattere della serie armonica generalizzata"
 
@@ -317,6 +337,8 @@ title: "Serie numeriche a termini non negativi"
 
 - Gli strumenti utili a stabilire stime asintotiche di funzioni, si possono usare anche per ottenere stime asintotiche di successioni (<strong>passaggio dal discreto al continuo</strong>) e forniscono strumenti utili per lo studio del carattere di una serie a termini positivi.
 
+<a id="box-texexpbox1-11"></a>
+
 !!! esempio "Esempio 2: passaggio dal discreto al continuo"
 
     Determiniamo il carattere della serie:
@@ -338,6 +360,8 @@ title: "Serie numeriche a termini non negativi"
     $$
 
     Perciò la serie, a termini positivi, per confronto asintotico con la serie di $1/k^2$ , converge.
+
+<a id="box-texexpbox1-12"></a>
 
 !!! esempio "Esempio 3: passaggio dal discreto al continuo"
 
@@ -365,7 +389,9 @@ title: "Serie numeriche a termini non negativi"
     \log \left( 1 + \frac{1}{k+2} \right) \sim \frac{1}{k+2} \sim \frac{1}{k} {\rm ~~~~per~~~~}   k \rr \ip
     $$
 
-    Dunque si tratta una serie a termini negativi, il cui termine generale è asintotico a $1/k$. Per confronto con la serie armonica, questa serie diverge a $\ip$.
+    Dunque si tratta di una serie a termini positivi, il cui termine generale è asintotico a $1/k$. Per confronto con la serie armonica, questa serie diverge a $\ip$.
+
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 4: passaggio dal discreto al continuo"
 
@@ -390,6 +416,8 @@ title: "Serie numeriche a termini non negativi"
     Perciò la serie, a termini positivi, per confronto asintotico con la serie di $1/(6\:k^3)$ , converge.
 
 ### 1.6 Criterio della radice
+
+<a id="box-MMM-14"></a>
 
 !!! teorema "Teorema 5: del criterio della radice"
 
@@ -450,6 +478,8 @@ title: "Serie numeriche a termini non negativi"
 
     Chiaramente questi ragionamenti rimangono rispettivamente validi anche se $\ell = \im$ oppure $\ip$.
 
+<a id="box-XXXX-15"></a>
+
 !!! osservazione "Osservazione 5"
 
     $$
@@ -458,13 +488,13 @@ title: "Serie numeriche a termini non negativi"
     {\rm convergente~} & {\rm se~} b < 1\\[2ex]
     {\rm divergente} & {\rm se~} b > 1 \\[2ex]
     {\rm convergente}  & {\rm se~} b = 1 {\rm ~~e~~} \beta < -1 \\[2ex]
-    {\rm divergente}  & {\rm se~} b = 1 {\rm ~~e~~} \beta \ge  1 
+    {\rm divergente}  & {\rm se~} b = 1 {\rm ~~e~~} \beta \ge  -1 
     \end{cases}
     $$
 
 ??? dimostrazione "Dimostrazione"
 
-    E' una serie a termini non negativi, abbiamo:
+    È una serie a termini non negativi, abbiamo:
 
     $$
     \sqrt[k]{k^\beta \cdot b^k} = b \cdot k^{\beta/k} {\rm ~~~~~e~~~~}
@@ -479,13 +509,15 @@ title: "Serie numeriche a termini non negativi"
 
     ovvero una serie armonica generalizzata; con $\beta < -1$ è convergente, mentre con $\beta \ge -1$ è divergente. <span class="qed">□</span>
 
+<a id="box-XXXX-16"></a>
+
 !!! osservazione "Osservazione 6"
 
     La serie $\sum_{k=1}^{\infty} b^k / k^k$ con $b \ge 0$ è convergente
 
 ??? dimostrazione "Dimostrazione"
 
-    E' una serie a termini non negativi, abbiamo:
+    È una serie a termini non negativi, abbiamo:
 
     $$
     \sqrt[k]{\frac{b^k}{k^k}} = \frac{b}{k} \rr 0 {\rm ~~~per~~~} k \rr \ip
@@ -494,6 +526,8 @@ title: "Serie numeriche a termini non negativi"
     quindi la serie converge per il criterio della radice. <span class="qed">□</span>
 
 ### 1.7 Criterio del rapporto
+
+<a id="box-MMM-17"></a>
 
 !!! teorema "Teorema 6: del criterio del rapporto"
 
@@ -519,13 +553,13 @@ title: "Serie numeriche a termini non negativi"
     per un opportuno $\varepsilon >0$. Ciò implica, ragionando iterativamente, che:
 
     $$
-    a_{k+1} < \left(1 - \frac{\varepsilon}{2} \right) \; a_k < \left(1 - \frac{\varepsilon}{2} \right) \; \left(1 - \frac{\varepsilon}{2} \right) \; a_{k-1} < {\rm \dots} < \left(1 - \frac{\varepsilon}{2} \right)^k  a_1
+    a_{k+1} < \left(1 - \frac{\varepsilon}{2} \right) \; a_k < \left(1 - \frac{\varepsilon}{2} \right) \; \left(1 - \frac{\varepsilon}{2} \right) \; a_{k-1} < {\rm \dots} < \left(1 - \frac{\varepsilon}{2} \right)^{k-m+1}  a_m
     $$
 
-    Abbiamo quindi dimostrato che $a_k < \left(1 - \frac{\varepsilon}{2} \right)^k \; a_1$, definitivamente. La serie geometrica:
+    Abbiamo quindi dimostrato che $a_k < \left(1 - \frac{\varepsilon}{2} \right)^{k-m} \; a_m$, definitivamente. La serie geometrica:
 
     $$
-    \sum_{k=0}^{\infty} \left(1 - \frac{\varepsilon}{2}\right)^k\; a_1 {\rm ~~~è ~convergente~dato~che~~} 1 - \frac{\varepsilon}{2} <1
+    \sum_{k=m}^{\infty} \left(1 - \frac{\varepsilon}{2}\right)^{k-m}\; a_m {\rm ~~~è ~convergente~dato~che~~} 1 - \frac{\varepsilon}{2} <1
     $$
 
     Quindi per il teorema del criterio del confronto la serie di partenza converge.
@@ -539,13 +573,13 @@ title: "Serie numeriche a termini non negativi"
     per un opportuno $\varepsilon >0$. Ciò implica, ragionando iterativamente, che:
 
     $$
-    a_{k+1} > \left(1 + \frac{\varepsilon}{2} \right) \; a_k > \left(1 + \frac{\varepsilon}{2} \right) \; \left(1 + \frac{\varepsilon}{2} \right) \; a_{k-1} > {\rm \dots} > \left(1 + \frac{\varepsilon}{2} \right)^k  a_1
+    a_{k+1} > \left(1 + \frac{\varepsilon}{2} \right) \; a_k > \left(1 + \frac{\varepsilon}{2} \right) \; \left(1 + \frac{\varepsilon}{2} \right) \; a_{k-1} > {\rm \dots} > \left(1 + \frac{\varepsilon}{2} \right)^{k-m+1}  a_m
     $$
 
-    Abbiamo quindi dimostrato che $a_k > \left(1 + \frac{\varepsilon}{2} \right)^k \; a_1$, definitivamente. La serie geometrica:
+    Abbiamo quindi dimostrato che $a_k > \left(1 + \frac{\varepsilon}{2} \right)^{k-m} \; a_m$, definitivamente. La serie geometrica:
 
     $$
-    \sum_{k=0}^{\infty} \left(1 + \frac{\varepsilon}{2}\right)^k\; a_1 {\rm ~~~è ~divergente~dato~che~~} 1 + \frac{\varepsilon}{2} >1
+    \sum_{k=m}^{\infty} \left(1 + \frac{\varepsilon}{2}\right)^{k-m}\; a_m {\rm ~~~è ~divergente~dato~che~~} 1 + \frac{\varepsilon}{2} >1
     $$
 
     Quindi per il teorema del criterio del confronto la serie di partenza diverge. <span class="qed">□</span>
@@ -553,6 +587,8 @@ title: "Serie numeriche a termini non negativi"
 !!! chiave ""
 
     Chiaramente questi ragionamenti rimangono rispettivamente validi anche se $\ell = \im$ oppure $\ip$.
+
+<a id="box-theoZERI-18"></a>
 
 !!! osservazione "Osservazione 7"
 
@@ -572,7 +608,7 @@ title: "Serie numeriche a termini non negativi"
 
 ### 1.8 Serie numeriche a termini non positivi
 
-- Sappiamo Il carattere di una serie non cambia se ne alteriamo un numero finito di termini. Di conseguenza, i criteri  per le serie a termini non negativi, si applicano anche alle serie con termini definitivamente non negativi.
+- Sappiamo che il carattere di una serie non cambia se ne alteriamo un numero finito di termini. Di conseguenza, i criteri  per le serie a termini non negativi, si applicano anche alle serie con termini definitivamente non negativi.
 
 - Raccogliendo un segno meno dall'intera serie poi, si vede che questi criteri si possono applicare anche alle serie a termini non positivi, e quindi alle serie a termini definitivamente non positivi.
 

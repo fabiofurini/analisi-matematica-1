@@ -11,15 +11,19 @@ title: "Relazioni binarie"
 </div>
 ## 1. Relazioni binarie
 
+<a id="box-notationA-1"></a>
+
 !!! definizione "Definizione 1: di relazione binaria"
 
     Dati due insiemi $\red{A}$ e $\blue{B}$,  una  <strong>relazione binaria</strong> $\violet{R}$  è un sottoinsieme del prodotto cartesiano  $\red{A} \times \blue{B}$
 
 !!! chiave ""
 
-    Quando diciamo chet $\violet{R}$ è una relazione binaria di un solo insieme  $\red{A}$,  intendiamo che  $\violet{R}$ è un sottoinsieme di  $\red{A} \times \red{A}$.
+    Quando diciamo che $\violet{R}$ è una relazione binaria di un solo insieme  $\red{A}$,  intendiamo che  $\violet{R}$ è un sottoinsieme di  $\red{A} \times \red{A}$.
 
 - Chiameremo  semplicemente relazione una relazione binaria (esistono però anche relazioni non binarie).
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 1"
 
@@ -38,7 +42,7 @@ title: "Relazioni binarie"
     - La relazione   “è sottoinsieme di” $R_{\subseteq}$ dell'insieme delle parti dei numeri naturali (indicato con $2^{\mathbb{N}}$ ) è l'insieme:
 
         $$
-        R_{\subseteq} = \bigg\{ (A,B): A,B \subseteq 2^\mathbb{N} {\rm ~~e~~} A \subseteq B \bigg\}.
+        R_{\subseteq} = \bigg\{ (A,B): A,B \in 2^\mathbb{N} {\rm ~~e~~} A \subseteq B \bigg\}.
         $$
 
 !!! chiave ""
@@ -60,6 +64,8 @@ title: "Relazioni binarie"
         $$
         \forall a,b,c \in \red{A}, \qquad (a,b) \in \violet{R} {\rm~~~e~~~} (b,c) \in \violet{R} ~~\Rightarrow~~ (a,c) \in \violet{R}
         $$
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 2"
 
@@ -85,17 +91,25 @@ title: "Relazioni binarie"
         \forall a,b \in \red{A}, ~~~~(a,b) \in \violet{R} {\rm~~~e~~~} (b,a) \in \violet{R} ~~\Rightarrow~~  a=b
         $$
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 3"
 
     - La relazione  $R_{\le}$ è  antisimmetrica, dato che  $a \le b$ e $b \le a$ implicano $a=b$.
+
+<a id="box-notationA-5"></a>
 
 !!! definizione "Definizione 2: di relazioni d'ordine parziale"
 
     Una relazione riflessiva,  antisimmetrica e  transitiva è una <strong>relazione d'ordine parziale</strong>.
 
+<a id="box-texexpbox1-6"></a>
+
 !!! esempio "Esempio 4"
 
     - La relazione   $R_{\le}$ è una relazione d'ordine parziale,  ma  la relazione $R_{<}$ non lo è in quanto non è riflessiva.
+
+<a id="box-propAAA-7"></a>
 
 !!! osservazione "Osservazione 1"
 
@@ -103,7 +117,7 @@ title: "Relazioni binarie"
 
 ??? dimostrazione "Dimostrazione"
 
-    Dobbiamo provare che la relazione sia riflessiva,  antisimmetriva e transitiva.
+    Dobbiamo provare che la relazione sia riflessiva,  antisimmetrica e transitiva.
 
     - Per essere riflessiva  dobbiamo provare che  $(S,S) \in R_{\subseteq}$, cosa che è vera dato che  $S \subseteq S$.
 
@@ -119,9 +133,13 @@ title: "Relazioni binarie"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-notationA-8"></a>
+
 !!! definizione "Definizione 3: di insieme parzialmente ordinato"
 
     Si definisce <strong>insieme parzialmente ordinato</strong>  la coppia costituita da un insieme e da una relazione d'ordine parziale  definita su di esso.
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 5"
 
@@ -132,6 +150,8 @@ title: "Relazioni binarie"
 !!! chiave ""
 
     Le relazioni possono essere rappresentate da un <strong>grafo direzionato</strong>,  dove i <strong>vertici</strong> sono gli elementi dell'insieme su cui è definita la relazione $R$ e un <strong>arco</strong>  $(a,b)$ significa che  $(a,b) \in R$.   Se il grafo è aciclico allora la relazione è una relazione d'ordine parziale.
+
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 6"
 
@@ -147,7 +167,9 @@ title: "Relazioni binarie"
         \forall b \in A, \qquad (b,a) \in R
         $$
 
-        Un insieme parzialmente ordinato potrebbe quindi contenere diversi elementi massimi $a$ tali che,  per nessun $b \in A$,  dove  $b \neq a$, abbiamo $(a,b) \in R$.
+        Un insieme parzialmente ordinato potrebbe quindi contenere diversi elementi massimali $a$ tali che,  per nessun $b \in A$,  dove  $b \neq a$, abbiamo $(a,b) \in R$.
+
+<a id="box-texexpbox1-11"></a>
 
 !!! esempio "Esempio 7"
 
@@ -155,11 +177,15 @@ title: "Relazioni binarie"
 
     ![Figura 2](../img/numeri-04-relazioni-binarie/fig02.svg){ .fig .ovale loading=lazy  }
 
+<a id="box-texexpbox1-12"></a>
+
 !!! esempio "Esempio 8"
 
     Dato un insieme di scatole di dimensioni diverse, la relazione “una scatola è contenuta nell'altra” sull'insieme di scatole può contenere diverse scatole massime, ovvero scatole che non sono contenute  in nessuna altra scatola.
 
 ## 3. Relazioni d'ordine totale
+
+<a id="box-notationA-13"></a>
 
 !!! definizione "Definizione 4: di relazione totale"
 
@@ -169,25 +195,35 @@ title: "Relazioni binarie"
     \forall a, b \in A, \qquad (a, b) \in R  {\rm ~~~o~~~} (b, a) \in R {\rm ~~(o ~entrambi)}
     $$
 
+<a id="box-texexpbox1-14"></a>
+
 !!! esempio "Esempio 9"
 
-    - Le relazioni $R_{\le}$  è una relazione totale.
+    - La relazione $R_{\le}$  è una relazione totale.
 
-    - La relazione $R_{\subseteq}$ non è un relazione totale in quanto prendendo ad esempio $S_1=\{1, 2\}$ e $S_2=\{2, 3\}$,   $(S_1,S_2) \notin R_{\subseteq}$ e $(S_2,S_1) \notin R_{\subseteq}$.
+    - La relazione $R_{\subseteq}$ non è una relazione totale in quanto prendendo ad esempio $S_1=\{1, 2\}$ e $S_2=\{2, 3\}$,   $(S_1,S_2) \notin R_{\subseteq}$ e $(S_2,S_1) \notin R_{\subseteq}$.
 
     - La relazione  “è discendente di” non è una relazione totale in quanto esistono coppie di individui $(a,b)$ per cui né $a$ discende da $b$ né $b$ discende da $a$.
+
+<a id="box-notationA-15"></a>
 
 !!! definizione "Definizione 5: di relazione di ordine totale"
 
     Una relazione di ordine parziale che è anche una relazione totale è una <strong>relazione di ordine totale</strong>.
 
+<a id="box-texexpbox1-16"></a>
+
 !!! esempio "Esempio 10"
 
     - La relazione  $R_{\le}$ è una relazione di ordine totale.
 
+<a id="box-notationA-17"></a>
+
 !!! definizione "Definizione 6: di insieme totalmente ordinato"
 
     Si definisce <strong>insieme totalmente ordinato</strong>  la coppia costituita da un insieme e da una relazione d'ordine totale definita su  di esso.
+
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 11"
 
@@ -195,9 +231,13 @@ title: "Relazioni binarie"
 
 ## 4. Funzioni
 
+<a id="box-notationA-19"></a>
+
 !!! definizione "Definizione 7: di funzione"
 
     Dati due <em>insiemi</em> $\red{A}$ e $\blue{B}$, una <strong>funzione</strong> $\violet{f}$ è una <em>relazione binaria</em> su $\red{A}$ e $\blue{B}$ se, per ciascun $a \in \red{A}$, esiste uno e un solo  $b \in \blue{B}$ tale che  $(a, b) \in \violet{f}$.
+
+<a id="box-notationA-20"></a>
 
 !!! definizione "Definizione 8: di dominio e codominio"
 
@@ -217,7 +257,9 @@ title: "Relazioni binarie"
 
     dato che $b$ è univocamente determinato dalla scelta di $a$.
 
-- Intuitivamente, la funzione $\violet{f}$ assegna un elemento di $\blue{B}$ a ciascun elemento di $\red{A}$. Nessun elemento di  $\red{A}$ è associato a due elementi differenti di $\blue{B}$. Lo stesso elemento di $\blue{B}$ può però essere assegnato allo stesso elemento di  $\red{A}$.
+- Intuitivamente, la funzione $\violet{f}$ assegna un elemento di $\blue{B}$ a ciascun elemento di $\red{A}$. Nessun elemento di  $\red{A}$ è associato a due elementi differenti di $\blue{B}$. Lo stesso elemento di $\blue{B}$ può però essere assegnato a elementi differenti di  $\red{A}$.
+
+<a id="box-texexpbox1-21"></a>
 
 !!! esempio "Esempio 12"
 
@@ -227,12 +269,14 @@ title: "Relazioni binarie"
         f = \bigg\{(a,b): a,b \in \mathbb{N} {\rm ~~e~~} b= a \mod 2\bigg\}
         $$
 
-        <u><em>è una funzione</em></u> $f: \mathbb{N} \rightarrow \{0,1\}$ dato che tutti per tutti i  numeri naturali $a$, c'è esattamente un valore  $b \in \{0,1\}$ tale che $b = a \mod 2$. Per esempio,
+        <u><em>è una funzione</em></u> $f: \mathbb{N} \rightarrow \{0,1\}$ dato che per tutti i  numeri naturali $a$, c'è esattamente un valore  $b \in \{0,1\}$ tale che $b = a \mod 2$. Per esempio,
 
         $$
         0 = f(0),~~~~ 1 = f (1),~~~~
         0 = f(2), \dots
         $$
+
+<a id="box-texexpbox1-22"></a>
 
 !!! esempio "Esempio 13"
 
@@ -242,13 +286,17 @@ title: "Relazioni binarie"
         g = \bigg\{(a,b): a,b \in \mathbb{N} {\rm ~~e~~}   a+b {\rm ~è~pari} \bigg\}
         $$
 
-        <u><em>non è una funzione</em></u>, dato che per esempio (1, 3) e (1, 5) sono intrambi in $g$.  In altre parole   per  $a =1$, non abbiamo  uno e un solo $b$ tale che $(a,b) \in g$.
+        <u><em>non è una funzione</em></u>, dato che per esempio (1, 3) e (1, 5) sono entrambi in $g$.  In altre parole   per  $a =1$, non abbiamo  uno e un solo $b$ tale che $(a,b) \in g$.
+
+<a id="box-notationA-23"></a>
 
 !!! definizione "Definizione 9: di argomento e valore"
 
     Data una funzione $\violet{f}: \red{A} \rightarrow \blue{B}$, se ${\viridian{b}} = \violet{f}(\orange{a})$, diciamo che  $\orange{a} \in \red{A}$ è l'argomento di $\violet{f}$ e che $\viridian{b} \in \blue{B}$ è il valore di $\violet{f}$ associato ad $\orange{a}$.
 
 - Possiamo  <strong>definire una funzione</strong> <em>definendo direttamente il valore</em> per tutti gli <em>elementi</em> del suo <em>dominio</em>.
+
+<a id="box-texexpbox1-24"></a>
 
 !!! esempio "Esempio 14"
 

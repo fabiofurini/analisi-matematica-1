@@ -32,7 +32,7 @@ title: "Successioni definite per ricorrenza"
     dopo tre anni
 
     $$
-    a_3 = a_2  + r \; a_2 + 10 = \left(1+ r\right) a_2 +b
+    a_3 = a_2  + r \; a_2 + b = \left(1+ r\right) a_2 +b
     $$
 
     e così via… Ogni anno la cifra viene calcolata utilizzando la cifra dell'anno precedente. Abbiamo quindi  la successione:
@@ -65,7 +65,7 @@ title: "Successioni definite per ricorrenza"
     &= \left(1+ r\right)^3 \; a_0 + b \;\big(1+ \left(1+ r\right) + \left(1+ r\right)^2 \big)
     \end{align*}
 
-    e cosi via … quindi
+    e così via … quindi
 
     $$
     a_n = s^n \: a_0 + b \: \big(1 + s + s^2 + \dots +s^{n-1}\big), {\rm ~~dove~~} s = \left(1+ r\right)>1
@@ -80,6 +80,8 @@ title: "Successioni definite per ricorrenza"
     !!! chiave ""
 
         Tuttavia, non è sempre possibile esplicitare una successione data in forma iterativa. In tal caso, resta il <strong>problema di capirne il comportamento e il limite</strong>.
+
+<a id="box-texexpbox1-1"></a>
 
 !!! esempio "Esempio 1: Comportamento di una successione definita per ricorrenza"
 
@@ -108,9 +110,11 @@ title: "Successioni definite per ricorrenza"
 
     ![Figura 1](../img/successioni-06-ricorrenza/fig01.svg){ .fig .ovale loading=lazy style="width:65%" }
 
+<a id="box-texexpbox1-2"></a>
+
 !!! esempio "Esempio 2: Comportamento di una successione definita per ricorrenza"
 
-    Cerchiamo di capire se la successione sia o meno monotona. Sappiamo che $a_n >0, \forall n \in N$, allora la disuguaglianza $a_n \le a_{n +1}$ diventa
+    Cerchiamo di capire se la successione sia o meno monotona. Sappiamo che $a_n >0, \forall n \in \N$, allora la disuguaglianza $a_n \le a_{n +1}$ diventa
 
     $$
     a_n \le a_{n +1}  \Longleftrightarrow a_n \le \frac{a_n}{1+a_n} \Longleftrightarrow 1+ a_n \le 1 \Longleftrightarrow a_n \le 0
@@ -123,7 +127,7 @@ title: "Successioni definite per ricorrenza"
     Passiamo al limite nella relazione ricorsiva.
 
     $$
-    \underbrace{\lim_{n \rr \ip } a_{n+1}}_{= \ell} = \underbrace{\lim_{n \rr \ip } \frac{a_n}{1+a_n} }_{= \frac{\ell}{1+\ell}} {\rm ~~~~quindi~~~~~} \ell = \frac{\ell}{1+\ell} {\rm ~~~~e~di~consegueza~~~~} \ell = 0
+    \underbrace{\lim_{n \rr \ip } a_{n+1}}_{= \ell} = \underbrace{\lim_{n \rr \ip } \frac{a_n}{1+a_n} }_{= \frac{\ell}{1+\ell}} {\rm ~~~~quindi~~~~~} \ell = \frac{\ell}{1+\ell} {\rm ~~~~e~di~conseguenza~~~~} \ell = 0
     $$
 
     dato che
@@ -131,6 +135,8 @@ title: "Successioni definite per ricorrenza"
     $$
     \ell - \frac{\ell}{1+\ell} =0,\qquad \frac{\ell (1+\ell) - \ell}{1+\ell}=0,\qquad \frac{\ell^2}{1+\ell}=0 ~~~\Longleftrightarrow~~~ \ell =0
     $$
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 3: Formula chiusa della ricorrenza"
 
@@ -158,7 +164,7 @@ title: "Successioni definite per ricorrenza"
     a_3  &= \frac{a_2}{1+a_2} = \frac{\frac{a_0}{1+2\;a_0}}{1+\frac{a_0}{1+2\;a_0}} = \frac{\frac{a_0}{1+2\;a_0}}{\frac{1+3\;a_0}{1+2\;a_0}}= \frac{a_0}{1+2\;a_0} \; \frac{1+2\;a_0}{1+3\;a_0} =  \frac{a_0}{1+3\;a_0}
     \end{align*}
 
-    e cosi via … quindi
+    e così via … quindi
 
     $$
     a_n = \frac{a_0}{1+n \; a_0} {\rm ~~con~~} n \in \N {\rm ~~~~~~e~abbiamo~~} \lim_{n \rr \ip } \frac{a_0}{1+n \; a_0} = 0
@@ -226,7 +232,7 @@ title: "Successioni definite per ricorrenza"
         Per identificarlo, passiamo al limite nella relazione ricorsiva, ottenendo
 
         $$
-        \underbrace{\lim_{n \rr \ip } a_{n+1}}_{= \ell} = \underbrace{\lim_{n \rr \ip }  \frac{1}{2} \left( a_n + \frac{c}{a_n} \right) }_{= \frac{1}{2} \left( \ell + \frac{c}{\ell} \right)} {\rm ~~quindi~~~}  \ell = \frac{1}{2} \left( \ell + \frac{c}{\ell} \right) {\rm ~~e~di~consegueza~~} \ell = \sqrt{c}
+        \underbrace{\lim_{n \rr \ip } a_{n+1}}_{= \ell} = \underbrace{\lim_{n \rr \ip }  \frac{1}{2} \left( a_n + \frac{c}{a_n} \right) }_{= \frac{1}{2} \left( \ell + \frac{c}{\ell} \right)} {\rm ~~quindi~~~}  \ell = \frac{1}{2} \left( \ell + \frac{c}{\ell} \right) {\rm ~~e~di~conseguenza~~} \ell = \sqrt{c}
         $$
 
         dato che
@@ -265,6 +271,8 @@ title: "Successioni definite per ricorrenza"
 
     Per ogni scelta di $b >0$ la successione $a_n$ tende a $\sqrt{c}$ e può quindi essere usata per  approssimare la radice quadrata.
 
+<a id="box-texexpbox1-4"></a>
+
 !!! esempio "Esempio 4: Comportamento della successione"
 
     Ad esempio con $c=2$ e $b=4 > \sqrt{2}$ (punti rossi) oppure $b=1 < \sqrt{2}$ (punti blu), abbiamo:
@@ -275,7 +283,7 @@ title: "Successioni definite per ricorrenza"
 
 !!! chiave ""
 
-    Il calcolo ricorsivo dei valori della successione appena vista prendono il nome di <strong>algoritmo</strong> di Erone, inizialmente proposto per calcolare <strong>il lato di un quadrato di area</strong> $c$.
+    Il calcolo ricorsivo dei valori della successione appena vista prende il nome di <strong>algoritmo</strong> di Erone, inizialmente proposto per calcolare <strong>il lato di un quadrato di area</strong> $c$.
 
 - I passi dell'algoritmo sono:
 
@@ -297,7 +305,7 @@ title: "Successioni definite per ricorrenza"
 
         Ad esempio cerchiamo di calcolare il lato di un quadrato di area $c=2$, in altre parole cerchiamo di stimare il valore $\sqrt{2}$.
 
-    Alla <strong>prima iterazione</strong> (con n=0) consideriamo ad esempio da un rettangolo di base $a_0=b=4$ (la prima <strong>approssimazione</strong> per eccesso  di $\sqrt{2}$), di conseguenza l'altezza è $\frac{c}{a_0}=\frac{1}{2}$ (la prima appr. per difetto  di $\sqrt{2}$). Quindi: $\frac{1}{2} < \sqrt{2} <4$.
+    Alla <strong>prima iterazione</strong> (con n=0) consideriamo ad esempio un rettangolo di base $a_0=b=4$ (la prima <strong>approssimazione</strong> per eccesso  di $\sqrt{2}$), di conseguenza l'altezza è $\frac{c}{a_0}=\frac{1}{2}$ (la prima appr. per difetto  di $\sqrt{2}$). Quindi: $\frac{1}{2} < \sqrt{2} <4$.
 
     Calcoliamo il valore $a_1$:
 
@@ -342,7 +350,7 @@ title: "Successioni definite per ricorrenza"
     Con la nuova stima abbiamo:
 
     $$
-    \frac{106,4876,737}{752,970,528} = \red{1.4142}34285\dots {\rm ~~~~e~~~} \sqrt{2}=1.414213562\dots
+    \frac{1,064,876,737}{752,970,528} = \red{1.4142}34285\dots {\rm ~~~~e~~~} \sqrt{2}=1.414213562\dots
     $$
 
     che è corretta fino alla quarta cifra decimale, ovvero con una sola iterazione aggiuntiva abbiamo sistemato 3 ulteriori cifre decimali.
@@ -382,6 +390,8 @@ title: "Successioni definite per ricorrenza"
     $$
     \varepsilon_n = a_n - \sqrt{c} < a_n - \frac{c}{a_n} {\rm ~~~~e~~~~} \varepsilon_n \rr 0 {\rm ~~per~~} n \rr \ip {\rm ~~dato~che~~} a_n \rr \sqrt{c}
     $$
+
+    <a id="box-texexpbox1-5"></a>
 
     !!! esempio "Esempio 5: Stima degli errori dell'algoritmo di Erone ($\sqrt{2}=1.414213562\dots$)"
 
@@ -437,6 +447,8 @@ title: "Successioni definite per ricorrenza"
         </tr>
         </table></div>
 
+    <a id="box-texexpbox1-6"></a>
+
     !!! esempio "Esempio 6: Errori e Intervalli considerati dall'algoritmo di Erone"
 
         ![Figura 5](../img/successioni-06-ricorrenza/fig05.svg){ .fig .ovale loading=lazy style="width:85%" }
@@ -483,7 +495,7 @@ title: "Successioni definite per ricorrenza"
 
     !!! chiave ""
 
-        Abbiamo ottenuto il legame tra $\varepsilon_{n+1}$ e $\varepsilon_{n}$,  indipendente sia da  $a_n$ che da  $\sqrt{c}$.
+        Abbiamo ottenuto il legame tra $\tilde{\varepsilon}_{n+1}$ e $\tilde{\varepsilon}_{n}$,  indipendente sia da  $a_n$ che da  $\sqrt{c}$.
 
     Dalla formula appena ottenuta possiamo dedurne la seguente,  semplificata e più intuitiva:
 

@@ -34,6 +34,8 @@ title: "Fenomeni vibratori"
     {\rm \textbf{periodo}~~~} T = \frac{2\:\pi}{\omega}
     $$
 
+<a id="box-texexpbox1-1"></a>
+
 !!! esempio "Esempio 1: periodo"
 
     Per esempio considerando $t' = t + \frac{2\: \pi}{\omega}$:
@@ -66,7 +68,9 @@ title: "Fenomeni vibratori"
     {\rm \textbf{frequenza}~~} \nu = \frac{\omega}{2\:\pi}
     $$
 
-    che indica quante volte la funzione si ripete nell'intervallo di  $2\: \pi$
+    che indica quante volte la funzione si ripete in un intervallo di lunghezza $1$
+
+<a id="box-texexpbox1-2"></a>
 
 !!! esempio "Esempio 2: di ampiezza, pulsazione e frequenza"
 

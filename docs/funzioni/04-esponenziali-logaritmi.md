@@ -11,6 +11,8 @@ title: "Funzioni esponenziali e logaritmiche"
 </div>
 ## 1. Funzioni esponenziali
 
+<a id="box-defXX-1"></a>
+
 !!! definizione "Definizione 1: funzioni esponenziali"
 
     Dato $b \in \R_+\setminus \{1\}$, la funzione:
@@ -41,6 +43,8 @@ title: "Funzioni esponenziali e logaritmiche"
 </div>
 
 ## 2. Funzioni logaritmiche
+
+<a id="box-defXX-2"></a>
 
 !!! definizione "Definizione 2: funzioni logaritmiche"
 
@@ -91,6 +95,8 @@ title: "Funzioni esponenziali e logaritmiche"
     $$
 
     La funzione logaritmica in base $e$  si scrive anche $\log x$ o $\ln x$ mentre quella in base $2$ si scrive anche $\lg x$.
+
+<a id="box-texexpbox1-3"></a>
 
 !!! esempio "Esempio 1: grafici di funzioni esponenziali e logaritmiche "
 
