@@ -155,7 +155,8 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
 Materiale didattico di **[Fabio Furini](https://sites.google.com/view/fabiofurini/home-page)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma. Fa parte della
-stessa collana del [Laboratorio di Ricerca Operativa](https://fabiofurini.github.io/laboratorio-ricerca-operativa/)
-e di [Modellazione MIP](https://fabiofurini.github.io/modellazione-mip/).
+stessa collana del [Laboratorio di Ricerca Operativa](https://fabiofurini.github.io/laboratorio-ricerca-operativa/),
+di [Modellazione MIP](https://fabiofurini.github.io/modellazione-mip/)
+e di [Algebra lineare](https://fabiofurini.github.io/algebra-lineare/).
 
 *This website is also available in [English](https://fabiofurini.github.io/mathematical-analysis-1/).*

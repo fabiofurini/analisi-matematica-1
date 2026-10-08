@@ -6,7 +6,7 @@ title: "Successioni definite per ricorrenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-06-ricorrenza.pdf)
 
 </div>
 

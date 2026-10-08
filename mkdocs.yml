@@ -69,6 +69,9 @@ extra:
     - icon: material/vector-polygon
       link: https://fabiofurini.github.io/modellazione-mip/
       name: Modellazione MIP
+    - icon: material/matrix
+      link: https://fabiofurini.github.io/algebra-lineare/
+      name: Algebra lineare
   alternate:
     - name: Italiano
       link: https://fabiofurini.github.io/analisi-matematica-1/

@@ -6,7 +6,7 @@ title: "Derivate di funzioni elementari"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
+**Parte 4 · Derivate · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-02-derivate-elementari.pdf)
 
 </div>
 

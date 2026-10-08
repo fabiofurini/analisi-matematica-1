@@ -6,7 +6,7 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
+**Parte 4 · Derivate · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-03-punti-angolosi-cuspidi.pdf)
 
 </div>
 

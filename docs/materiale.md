@@ -56,9 +56,11 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 
 ### Numeri e logica
 
+- Capitolo 1 · [Insiemi](pdf/slide-numeri-01-insiemi.pdf)
 - Capitolo 2 · [Basi di logica e tecniche di dimostrazione](pdf/slide-numeri-02-logica.pdf)
 - Capitolo 3 · [Insiemi numerici e intervalli](pdf/slide-numeri-03-insiemi-numerici.pdf)
 - Capitolo 4 · [Relazioni binarie](pdf/slide-numeri-04-relazioni-binarie.pdf)
+- Capitolo 5 · [Campi ordinati, estremo superiore/inferiore e assioma di continuità](pdf/slide-numeri-05-campi-ordinati.pdf)
 - Capitolo 6 · [Radicali, potenze, logaritmi e aritmetica modulare](pdf/slide-numeri-06-radicali-potenze-logaritmi.pdf)
 - Capitolo 7 · [Sommatorie e progressioni geometriche](pdf/slide-numeri-07-sommatorie.pdf)
 - Capitolo 8 · [Principio di induzione](pdf/slide-numeri-08-induzione.pdf)
@@ -81,6 +83,15 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 10 · [Funzioni composte](pdf/slide-funzioni-10-composte.pdf)
 - Capitolo 11 · [Funzioni inverse](pdf/slide-funzioni-11-inverse.pdf)
 
+### Limiti di successioni
+
+- Capitolo 1 · [Successioni e limiti di successioni](pdf/slide-successioni-01-limiti-successioni.pdf)
+- Capitolo 2 · [Calcolo dei limiti delle successioni](pdf/slide-successioni-02-calcolo-limiti.pdf)
+- Capitolo 3 · [Il numero di Nepero](pdf/slide-successioni-03-nepero.pdf)
+- Capitolo 4 · [Confronti e stime asintotiche](pdf/slide-successioni-04-stime-asintotiche.pdf)
+- Capitolo 5 · [Gerarchie degli infiniti e criterio del rapporto](pdf/slide-successioni-05-gerarchie-infiniti.pdf)
+- Capitolo 6 · [Successioni definite per ricorrenza](pdf/slide-successioni-06-ricorrenza.pdf)
+
 ### Limiti di funzioni e continuità
 
 - Capitolo 1 · [Limiti di funzioni, asintoti e continuità](pdf/slide-limiti-01-limiti-asintoti.pdf)
@@ -96,6 +107,11 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 
 ### Derivate
 
+- Capitolo 1 · [Funzione derivata](pdf/slide-derivate-01-funzione-derivata.pdf)
+- Capitolo 2 · [Derivate di funzioni elementari](pdf/slide-derivate-02-derivate-elementari.pdf)
+- Capitolo 3 · [Punti angolosi, cuspidi, punti a tangente verticale/orizzontale](pdf/slide-derivate-03-punti-angolosi-cuspidi.pdf)
+- Capitolo 4 · [Regole di calcolo delle derivate](pdf/slide-derivate-04-regole-calcolo.pdf)
+- Capitolo 5 · [Teorema del valore medio, massimi e minimi](pdf/slide-derivate-05-valor-medio.pdf)
 - Capitolo 6 · [Teorema di De l'Hospital e derivabilità](pdf/slide-derivate-06-de-l-hospital.pdf)
 - Capitolo 7 · [Derivata seconda](pdf/slide-derivate-07-derivata-seconda.pdf)
 - Capitolo 8 · [Calcolo differenziale e approssimazioni](pdf/slide-derivate-08-approssimazioni.pdf)
