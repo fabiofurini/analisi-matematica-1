@@ -6,7 +6,7 @@ title: "Numeri complessi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 12** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
+**Parte 1 · Numeri e logica · Capitolo 12** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-12-numeri-complessi.pdf)
 
 </div>
 

@@ -65,6 +65,7 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 9 · [Fattoriali, coefficienti binomiali e disuguaglianza triangolare](pdf/slide-numeri-09-fattoriali-binomiali.pdf)
 - Capitolo 10 · [Successione di Fibonacci](pdf/slide-numeri-10-fibonacci.pdf)
 - Capitolo 11 · [Cardinalità degli insiemi infiniti](pdf/slide-numeri-11-insiemi-infiniti.pdf)
+- Capitolo 12 · [Numeri complessi](pdf/slide-numeri-12-numeri-complessi.pdf)
 
 ### Funzioni
 
@@ -72,6 +73,8 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 2 · [Funzioni reali di variabile reale](pdf/slide-funzioni-02-funzioni-reali.pdf)
 - Capitolo 3 · [Funzioni potenza](pdf/slide-funzioni-03-potenza.pdf)
 - Capitolo 4 · [Funzioni esponenziali e logaritmiche](pdf/slide-funzioni-04-esponenziali-logaritmi.pdf)
+- Capitolo 5 · [Funzioni trigonometriche](pdf/slide-funzioni-05-trigonometriche.pdf)
+- Capitolo 6 · [Fenomeni vibratori](pdf/slide-funzioni-06-fenomeni-vibratori.pdf)
 - Capitolo 7 · [Funzioni parte intera e mantissa](pdf/slide-funzioni-07-parte-intera.pdf)
 - Capitolo 8 · [Funzioni iperboliche](pdf/slide-funzioni-08-iperboliche.pdf)
 - Capitolo 9 · [Operazioni sui grafici](pdf/slide-funzioni-09-operazioni-grafici.pdf)
