@@ -179,11 +179,106 @@ title: "Principio di induzione"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+<a id="box-propODD-4"></a>
+
+!!! osservazione "Osservazione 3: somma dei primi $n$ numeri dispari"
+
+    Per ogni intero $n \ge 1$, vale:
+
+    $$
+    \sum_{k=0}^{n-1} (2\:k+1) = n^2 {\rm ~~~~~o~equivalentemente~~~~} \sum_{k=1}^{n} (2\:k-1) = n^2
+    $$
+
+??? dimostrazione "Dimostrazione"
+
+    Per induzione su $n$.
+
+    - <strong>Primo passo dell'induzione</strong>
+
+        Sia $n = 1$. Allora l'asserto diventa:
+
+        $$
+        \sum_{k=0}^0 (2\:k+1) = 1^2 \text{ ~~ cioè  ~~} 1 = 1
+        $$
+
+        che è evidentemente vero.
+
+    - <strong>Passo induttivo</strong>
+
+        Supponiamo che sia vero per $n$, e proviamolo per $(n + 1)$. Per ipotesi induttiva, abbiamo:
+
+        $$
+        \sum_{k=0}^{n-1} (2\:k+1) = n^2
+        $$
+
+        Quindi possiamo scrivere:
+
+        \begin{align*}
+        \sum_{k=0}^{(n+1)-1} (2\:k+1)&= \sum_{k=0}^{n-1} (2\:k+1) + 2\:n +1
+         =  n^2 + 2\:n +1
+         =  (n+1)^2
+        \end{align*}
+
+        che è esattamente l'asserto voluto, per $n + 1$.
+
+    La seconda sommatoria coincide con la prima, con una traslazione dell'indice ($k \to k+1$):
+
+    $$
+    \sum_{k=1}^{n} (2\:k-1) = \sum_{k=0}^{n-1} \big(2\:(k+1)-1\big) = \sum_{k=0}^{n-1} (2\:k+1)
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-propEVEN-5"></a>
+
+!!! osservazione "Osservazione 4: somma dei primi $n$ numeri pari"
+
+    Per ogni intero $n \ge 1$, vale:
+
+    $$
+    \sum_{k=1}^{n} 2\:k = n \:(n+1)
+    $$
+
+??? dimostrazione "Dimostrazione"
+
+    Per induzione su $n$.
+
+    - <strong>Primo passo dell'induzione</strong>
+
+        Sia $n = 1$. Allora l'asserto diventa:
+
+        $$
+        \sum_{k=1}^1 2\:k = 1 \cdot 2 \text{ ~~ cioè  ~~} 2 = 2
+        $$
+
+        che è evidentemente vero.
+
+    - <strong>Passo induttivo</strong>
+
+        Supponiamo che sia vero per $n$, e proviamolo per $(n + 1)$. Per ipotesi induttiva, abbiamo:
+
+        $$
+        \sum_{k=1}^{n} 2\:k = n\: (n+1)
+        $$
+
+        Quindi possiamo scrivere:
+
+        \begin{align*}
+        \sum_{k=1}^{n+1} 2\:k&= \sum_{k=1}^{n} 2\:k  + 2\: (n+1) 
+        = n^2 + n + 2\: (n+1) \\[2ex]
+        & = n^2+2\:n+1+n+1
+         = (n+1)^2 + (n+1) =   (n+1) \:\big((n+1) +1 \big)
+        \end{align*}
+
+        che è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
 ### 2.3 Somma dei termini della progressione geometrica
 
-<a id="box-propXX-4"></a>
+<a id="box-propXX-6"></a>
 
-!!! osservazione "Osservazione 3: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
+!!! osservazione "Osservazione 5: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
 
     Dato $q \in\ \R_+$, per ogni intero $n \ge 1$ vale:
 
@@ -226,5 +321,117 @@ title: "Principio di induzione"
         \end{align*}
 
         che è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+### 2.4 Disuguaglianza tra media aritmetica e media geometrica
+
+<a id="box-propAMGM-7"></a>
+
+!!! osservazione "Osservazione 6: disuguaglianza tra media aritmetica e media geometrica"
+
+    Per ogni intero $n \ge 2$ e per ogni vettore \(\boldsymbol{a}=\begin{pmatrix} a_1, a_2, \dots, a_n \end{pmatrix} \in \R_{\ge 0}^n\), vale:
+
+    \begin{equation}
+    \label{AMGM}
+    \frac{\sum_{i=1}^n a_i}{n} ~~\geq~~ \sqrt[n]{\prod_{i=1}^n a_i}
+    \end{equation}
+
+- La disuguaglianza \(\eqref{AMGM}\) afferma che la <em>media aritmetica</em> è maggiore o uguale alla <em>media geometrica</em>.
+
+- Se $a_i=a$ per ogni $i \in \{1,2,\dots,n\}$, abbiamo:
+
+    $$
+    \frac{\sum_{i=1}^n a_i}{n} ~~=~~ \frac{n\;a}{n} ~~=~~ a \qquad \text{e} \qquad \sqrt[n]{\prod_{i=1}^n a_i} ~~=~~ \sqrt[n]{ a^n}  ~~=~~ a
+    $$
+
+    e la media aritmetica e la media geometrica sono uguali (è l'unico caso in cui vale l'uguaglianza).
+
+??? dimostrazione "Dimostrazione"
+
+    Per induzione su $n$.
+
+    - <strong>Primo passo dell'induzione</strong>
+
+        Sia $n = 2$. Poiché entrambi i membri sono non negativi, possiamo elevarli al quadrato:
+
+        \begin{align*}
+        \frac{a_1 + a_2}{2} ~\geq~ \sqrt{a_1 \: a_2}
+        &~~~~\Longleftrightarrow~~~~
+        \left(\frac{a_1 + a_2}{2}\right)^2 ~\geq~ a_1 \: a_2
+        ~~~~\Longleftrightarrow~~~~
+        \frac{a_1^2 + 2\:a_1 \: a_2 + a_2^2}{4} ~\geq~ a_1 \: a_2\\[2ex]
+        &~~~~\Longleftrightarrow~~~~
+        a_1^2 - 2\:a_1 \: a_2 + a_2^2 ~\geq~ 0 ~~~~\Longleftrightarrow~~~~
+        (a_1 - a_2)^2 ~\geq~ 0
+        \end{align*}
+
+        che è evidentemente vero.
+
+    - <strong>Passo induttivo</strong>
+
+        Supponiamo che sia vero per $n$, e proviamolo per $(n + 1)$. Per ipotesi induttiva, la media aritmetica di $n$ numeri reali non negativi è maggiore o uguale alla loro media geometrica. Dobbiamo dimostrare che:
+
+        \begin{equation}
+        \label{AMGM_A}
+        \tag{A}
+        \frac{\sum_{i=1}^{n+1} a_i}{n+1} ~~\geq~~ \sqrt[n+1]{\prod_{i=1}^{n+1} a_i}
+        \end{equation}
+
+        Sia $\alpha$ la media aritmetica degli $n+1$ numeri reali non negativi:
+
+        \begin{equation}
+        \label{AMGM_B} \tag{B}
+        \alpha = \frac{\sum_{i=1}^{n+1} a_i}{n+1}
+        \end{equation}
+
+        Se \( a_i = \alpha \) per ogni $i \in \{1,2,\dots,n+1\}$, allora \(\eqref{AMGM_A}\) vale con il segno di uguaglianza. Altrimenti esiste almeno un valore maggiore di $\alpha$ e almeno un valore minore di $\alpha$. Senza perdita di generalità, riordiniamo i valori in modo da avere:
+
+        $$
+        a_n > \alpha \quad \text{ e } \quad a_{n+1} < \alpha
+        $$
+
+        Allora abbiamo:
+
+        \begin{equation}
+        \label{AMGM_C} \tag{C}
+        a_n - \alpha > 0  \quad \text{ e } \quad \alpha - a_{n+1} > 0 ~~~\Longrightarrow~~~  (a_n - \alpha) \; (\alpha - a_{n+1}) > 0
+        \end{equation}
+
+        Da \(\eqref{AMGM_B}\) abbiamo:
+
+        $$
+        (n+1) \; \alpha = \sum_{i=1}^{n+1} a_i ~~~~\Longleftrightarrow~~~~ n\; \alpha = \sum_{i=1}^{n-1} a_i + 
+        \underbrace{ a_n + a_{n+1} -\alpha}_{=\,y }
+        ~~~~\Longleftrightarrow~~~~  \alpha = \frac{\sum_{i=1}^{n-1} a_i + y}{n}
+        $$
+
+        dove $y = a_n + a_{n+1} - \alpha \ge a_n - \alpha > 0$, dato che $a_{n+1} \ge 0$. Quindi $\alpha$ è anche la media aritmetica degli $n$ numeri non negativi $a_1,a_2,\dots,a_{n-1}$ e $y$. Per ipotesi induttiva, $\alpha^n \ge \left(\prod_{i=1}^{n-1} a_i \right) y$, e quindi:
+
+        \begin{equation}
+        \label{AMGM_D} \tag{D}
+        \alpha^{n+1} = \alpha^{n} \; \alpha \ge \left(\prod_{i=1}^{n-1} a_i \right) y \; \alpha
+        \end{equation}
+
+        Da \(\eqref{AMGM_C}\) segue che:
+
+        $$
+        (a_n - \alpha) \; (\alpha - a_{n+1}) = (\underbrace{ a_n + a_{n+1} -\alpha}_{=\,y}) \; \alpha - a_{n} \; a_{n+1} > 0
+        $$
+
+        e quindi:
+
+        \begin{equation}
+        \label{AMGM_E} \tag{E}
+        y \; \alpha > a_{n} \; a_{n+1}
+        \end{equation}
+
+        Sostituendo \(\eqref{AMGM_E}\) in \(\eqref{AMGM_D}\) (il prodotto $\prod_{i=1}^{n-1} a_i$ è non negativo), otteniamo:
+
+        $$
+        \alpha^{n+1} \ge \prod_{i=1}^{n+1} a_i ~~~~\Longleftrightarrow~~~~ \frac{\sum_{i=1}^{n+1} a_i}{n+1} ~~\ge~~ \sqrt[n+1]{\prod_{i=1}^{n+1} a_i}
+        $$
+
+        cioè \(\eqref{AMGM_A}\), che è esattamente l'asserto voluto, per $n + 1$.
 
     <p class="qed-riga"><span class="qed">□</span></p>

@@ -11,7 +11,7 @@ Fogli di esercizi con le **soluzioni svolte**, divisi come le parti delle dispen
     - [Massimi, minimi, estremi superiori e inferiori](es-numeri-01-massimi-minimi.md) · 11 esercizi
     - [Equazioni e disequazioni di variabile reale](es-numeri-02-equazioni-disequazioni.md) · 14 esercizi
     - [Sommatorie](es-numeri-03-sommatorie.md) · 2 esercizi
-    - [Principio di induzione](es-numeri-04-induzione.md) · 5 esercizi
+    - [Principio di induzione](es-numeri-04-induzione.md) · 15 esercizi
     - [Numeri complessi](es-numeri-05-numeri-complessi.md) · 21 esercizi
 
 -   **Funzioni**
