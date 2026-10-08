@@ -1091,9 +1091,9 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
          (f"**Esercizi · {PARTI_ES[_parte_it(parte)][0]}** · con le soluzioni svolte · "
           f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})")) if esercizi else
         (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num}** · lecture notes by {chi} · "
-         f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})") if EN else
+         f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)) if EN else
         (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num}** · dalle dispense di {chi} · "
-         f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})"),
+         f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)),
         "",
         "</div>",
         "",
@@ -1126,6 +1126,14 @@ def pdf_volume(parte: str) -> str:
     import dispense_config as C
     vol = C.VOLUMI[VOLUME_DI[parte] - 1]
     return vol["pdf_en"] if EN else vol["pdf_it"]
+
+
+def link_slide(cid: str) -> str:
+    """Link alle slide del capitolo, se sono state compilate (python/compila_slide.py)."""
+    nome = f"{'slides' if EN else 'slide'}-{cid}.pdf"
+    if not (DOCS / "pdf" / nome).exists():
+        return ""
+    return f" · [:material-presentation: {'Slides' if EN else 'Slide'} (PDF)](../pdf/{nome})"
 
 
 def _parte_it(parte: str) -> str:

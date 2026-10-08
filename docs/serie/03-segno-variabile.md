@@ -6,7 +6,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Serie · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-serie.pdf)
+**Parte 5 · Serie · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-serie.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-03-segno-variabile.pdf)
 
 </div>
 

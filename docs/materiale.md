@@ -49,3 +49,59 @@ Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubbli
     [:octicons-download-24: dispensa-5-serie.pdf](pdf/dispensa-5-serie.pdf)
 
 </div>
+
+## Slide
+
+Le slide delle lezioni, capitolo per capitolo (PDF).
+
+### Numeri e logica
+
+- Capitolo 2 · [Basi di logica e tecniche di dimostrazione](pdf/slide-numeri-02-logica.pdf)
+- Capitolo 3 · [Insiemi numerici e intervalli](pdf/slide-numeri-03-insiemi-numerici.pdf)
+- Capitolo 4 · [Relazioni binarie](pdf/slide-numeri-04-relazioni-binarie.pdf)
+- Capitolo 6 · [Radicali, potenze, logaritmi e aritmetica modulare](pdf/slide-numeri-06-radicali-potenze-logaritmi.pdf)
+- Capitolo 7 · [Sommatorie e progressioni geometriche](pdf/slide-numeri-07-sommatorie.pdf)
+- Capitolo 8 · [Principio di induzione](pdf/slide-numeri-08-induzione.pdf)
+- Capitolo 9 · [Fattoriali, coefficienti binomiali e disuguaglianza triangolare](pdf/slide-numeri-09-fattoriali-binomiali.pdf)
+- Capitolo 10 · [Successione di Fibonacci](pdf/slide-numeri-10-fibonacci.pdf)
+- Capitolo 11 · [Cardinalità degli insiemi infiniti](pdf/slide-numeri-11-insiemi-infiniti.pdf)
+
+### Funzioni
+
+- Capitolo 1 · [Le funzioni](pdf/slide-funzioni-01-funzioni.pdf)
+- Capitolo 2 · [Funzioni reali di variabile reale](pdf/slide-funzioni-02-funzioni-reali.pdf)
+- Capitolo 3 · [Funzioni potenza](pdf/slide-funzioni-03-potenza.pdf)
+- Capitolo 4 · [Funzioni esponenziali e logaritmiche](pdf/slide-funzioni-04-esponenziali-logaritmi.pdf)
+- Capitolo 7 · [Funzioni parte intera e mantissa](pdf/slide-funzioni-07-parte-intera.pdf)
+- Capitolo 8 · [Funzioni iperboliche](pdf/slide-funzioni-08-iperboliche.pdf)
+- Capitolo 9 · [Operazioni sui grafici](pdf/slide-funzioni-09-operazioni-grafici.pdf)
+- Capitolo 10 · [Funzioni composte](pdf/slide-funzioni-10-composte.pdf)
+- Capitolo 11 · [Funzioni inverse](pdf/slide-funzioni-11-inverse.pdf)
+
+### Limiti di funzioni e continuità
+
+- Capitolo 1 · [Limiti di funzioni, asintoti e continuità](pdf/slide-limiti-01-limiti-asintoti.pdf)
+- Capitolo 2 · [Calcolo dei limiti di funzioni](pdf/slide-limiti-02-calcolo-limiti.pdf)
+- Capitolo 3 · [Limiti di polinomi e funzioni razionali](pdf/slide-limiti-03-polinomi-razionali.pdf)
+- Capitolo 4 · [Funzioni continue](pdf/slide-limiti-04-funzioni-continue.pdf)
+- Capitolo 5 · [Confronto degli infiniti](pdf/slide-limiti-05-confronto-infiniti.pdf)
+- Capitolo 6 · [Limiti notevoli e stime asintotiche](pdf/slide-limiti-06-limiti-notevoli.pdf)
+- Capitolo 7 · [Sviluppi asintotici](pdf/slide-limiti-07-sviluppi-asintotici.pdf)
+- Capitolo 8 · [Teorema degli zeri e metodo della bisezione](pdf/slide-limiti-08-zeri-bisezione.pdf)
+- Capitolo 9 · [Teorema di Weierstrass e teorema dei valori intermedi](pdf/slide-limiti-09-weierstrass.pdf)
+- Capitolo 10 · [Funzioni monotone su un intervallo e invertibilità](pdf/slide-limiti-10-monotone-invertibili.pdf)
+
+### Derivate
+
+- Capitolo 6 · [Teorema di De l'Hospital e derivabilità](pdf/slide-derivate-06-de-l-hospital.pdf)
+- Capitolo 7 · [Derivata seconda](pdf/slide-derivate-07-derivata-seconda.pdf)
+- Capitolo 8 · [Calcolo differenziale e approssimazioni](pdf/slide-derivate-08-approssimazioni.pdf)
+- Capitolo 9 · [Studio di funzioni](pdf/slide-derivate-09-studio-funzioni.pdf)
+- Capitolo 10 · [Metodo di Newton](pdf/slide-derivate-10-newton.pdf)
+
+### Serie
+
+- Capitolo 1 · [Serie numeriche](pdf/slide-serie-01-serie-numeriche.pdf)
+- Capitolo 2 · [Serie numeriche a termini non negativi](pdf/slide-serie-02-termini-non-negativi.pdf)
+- Capitolo 3 · [Serie numeriche a termini di segno variabile](pdf/slide-serie-03-segno-variabile.pdf)
+- Capitolo 4 · [Serie di funzioni](pdf/slide-serie-04-serie-funzioni.pdf)

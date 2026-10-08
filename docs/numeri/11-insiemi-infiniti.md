@@ -6,7 +6,7 @@ title: "Cardinalità degli insiemi infiniti"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 11** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
+**Parte 1 · Numeri e logica · Capitolo 11** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-11-insiemi-infiniti.pdf)
 
 </div>
 

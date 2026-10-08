@@ -6,7 +6,7 @@ title: "Operazioni sui grafici"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf)
+**Parte 2 · Funzioni · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-09-operazioni-grafici.pdf)
 
 </div>
 
