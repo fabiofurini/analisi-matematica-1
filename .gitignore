@@ -31,3 +31,6 @@ python/overflow_dispensa.py
 
 # sorgenti delle slide (sul sito vanno solo i PDF)
 slides/
+
+# note rivedute da cui si generano dispense e sito (private: sul sito solo i PDF)
+note/

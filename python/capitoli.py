@@ -1,6 +1,6 @@
 """Registro dei capitoli: da dove viene ogni pagina del sito.
 
-Ogni capitolo è una dispensa di `materiale_sorgente/DISPENSE/` (copia delle
+Ogni capitolo è una dispensa di `it/note/DISPENSE/` (note rivedute, copia delle
 note originali, che restano intatte in `1000_ANALISI_MATEMATICA/`).
 """
 import os
@@ -9,7 +9,7 @@ from pathlib import Path
 # lingua: LINGUA=en python3 python/... produce il sito inglese in ../en/
 LINGUA = os.environ.get("LINGUA", "it")
 MODULO = Path(__file__).resolve().parents[2]
-SORGENTE = MODULO / "materiale_sorgente" / ("DISPENSE" if LINGUA == "it" else "DISPENSE_EN")
+SORGENTE = MODULO / LINGUA / "note" / ("DISPENSE" if LINGUA == "it" else "DISPENSE_EN")
 IT = MODULO / LINGUA          # radice del repository della lingua (it/ o en/)
 DOCS = IT / "docs"
 
@@ -140,7 +140,7 @@ def pagina(parte, num, slug):
 
 
 # ---------------------------------------------------------------- esercizi
-SORGENTE_ES = MODULO / "materiale_sorgente" / ("ESERCIZI" if LINGUA == "it" else "ESERCIZI_EN")
+SORGENTE_ES = MODULO / LINGUA / "note" / ("ESERCIZI" if LINGUA == "it" else "ESERCIZI_EN")
 CARTELLA_ES = "esercizi" if LINGUA == "it" else "exercises"   # cartella del sito
 
 # (parte del sito, numero, slug, file relativo a SORGENTE_ES)
