@@ -25,8 +25,6 @@ ma si può anche saltare direttamente a una sezione dal menu a destra.
    rifatti a mano, con carta e penna, prima di guardare la soluzione.
 2. Usa i [grafici interattivi](interattivi/index.md) per farti un'idea di che
    cosa dice un teorema o di come cambia una funzione.
-3. Ripassa i [teoremi d'esame](teoremi-esame.md): enunciato, ipotesi,
-   dimostrazione.
 
 ## Libri di riferimento
 

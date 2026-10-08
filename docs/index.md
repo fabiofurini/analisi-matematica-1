@@ -131,15 +131,6 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     [:octicons-arrow-right-24: Gli esercizi](esercizi/index.md)
 
--   :material-format-list-checks: **Teoremi d'esame**
-
-    ---
-
-    L'elenco dei risultati da saper dimostrare, ciascuno con il link al
-    capitolo in cui è dimostrato.
-
-    [:octicons-arrow-right-24: L'elenco](teoremi-esame.md)
-
 -   :material-school: **Il corso**
 
     ---
