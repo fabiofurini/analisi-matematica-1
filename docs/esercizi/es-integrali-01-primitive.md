@@ -6,7 +6,7 @@ title: "Primitive"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Integrali** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-integrali-01-primitive.pdf)
+**Esercizi · Integrali** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-serie.pdf)
 
 </div>
 

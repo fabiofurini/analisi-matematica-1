@@ -6,7 +6,7 @@ title: "Limiti notevoli e stime asintotiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-06-limiti-notevoli.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf)
 
 </div>
 

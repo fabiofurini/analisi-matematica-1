@@ -6,7 +6,7 @@ title: "Serie numeriche"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Serie** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-serie-01-serie-numeriche.pdf)
+**Esercizi · Serie** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-serie.pdf)
 
 </div>
 

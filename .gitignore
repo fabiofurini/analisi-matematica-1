@@ -18,3 +18,13 @@ STILE_E_FORMATO.md
 dispensa/
 # varie
 .DS_Store
+# sorgenti delle dispense (privati: online vanno solo i PDF)
+dispensa_*/
+notes_*/
+
+# generatore delle dispense in volumi: resta privato (contiene LaTeX delle note)
+python/genera_dispensa.py
+python/dispense_config.py
+python/dispensa_preambolo_*.tex
+python/ritocchi_*.py
+python/overflow_dispensa.py

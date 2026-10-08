@@ -6,7 +6,7 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-09-fattoriali-binomiali.pdf)
+**Parte 1 · Numeri e logica · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

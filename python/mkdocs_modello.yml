@@ -113,6 +113,7 @@ nav:
   # NAV_PARTI
   - Laboratorio interattivo:
       - interattivi/index.md
+  - Materiale scaricabile: materiale.md
   - Il corso:
       - organizzazione.md
       - Teoremi d'esame: teoremi-esame.md

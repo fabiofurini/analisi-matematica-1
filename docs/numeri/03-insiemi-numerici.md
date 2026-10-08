@@ -6,7 +6,7 @@ title: "Insiemi numerici e intervalli"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-03-insiemi-numerici.pdf)
+**Parte 1 · Numeri e logica · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

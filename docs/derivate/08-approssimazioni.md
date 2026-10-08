@@ -6,7 +6,7 @@ title: "Calcolo differenziale e approssimazioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-08-approssimazioni.pdf)
+**Parte 4 · Derivate · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
 
 </div>
 

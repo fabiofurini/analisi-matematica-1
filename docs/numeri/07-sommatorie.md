@@ -6,7 +6,7 @@ title: "Sommatorie e progressioni geometriche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-07-sommatorie.pdf)
+**Parte 1 · Numeri e logica · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

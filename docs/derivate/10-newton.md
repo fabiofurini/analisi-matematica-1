@@ -6,7 +6,7 @@ title: "Metodo di Newton"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-10-newton.pdf)
+**Parte 4 · Derivate · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
 
 </div>
 

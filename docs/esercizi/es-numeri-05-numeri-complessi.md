@@ -6,7 +6,7 @@ title: "Numeri complessi"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Numeri e logica** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-numeri-05-numeri-complessi.pdf)
+**Esercizi · Numeri e logica** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

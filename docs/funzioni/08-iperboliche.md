@@ -6,7 +6,7 @@ title: "Funzioni iperboliche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-08-iperboliche.pdf)
+**Parte 2 · Funzioni · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf)
 
 </div>
 

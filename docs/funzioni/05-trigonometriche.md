@@ -6,7 +6,7 @@ title: "Funzioni trigonometriche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/funzioni-05-trigonometriche.pdf)
+**Parte 2 · Funzioni · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf)
 
 </div>
 

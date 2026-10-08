@@ -6,7 +6,7 @@ title: "Verifica di limiti di successioni"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Limiti di successioni** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-successioni-02-verifica-limiti.pdf)
+**Esercizi · Limiti di successioni** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf)
 
 </div>
 

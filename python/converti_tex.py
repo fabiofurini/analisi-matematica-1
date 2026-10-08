@@ -1087,13 +1087,13 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
         f'<div class="info-capitolo" markdown>',
         "",
         ((f"**Exercises · {PARTI_ES[_parte_it(parte)][1]}** · with worked solutions · "
-          f"[:material-file-pdf-box: PDF](../pdf/{cid}.pdf)") if EN else
+          f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})") if EN else
          (f"**Esercizi · {PARTI_ES[_parte_it(parte)][0]}** · con le soluzioni svolte · "
-          f"[:material-file-pdf-box: PDF](../pdf/{cid}.pdf)")) if esercizi else
+          f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})")) if esercizi else
         (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num}** · lecture notes by {chi} · "
-         f"[:material-file-pdf-box: Chapter PDF](../pdf/{cid}.pdf)") if EN else
+         f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})") if EN else
         (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num}** · dalle dispense di {chi} · "
-         f"[:material-file-pdf-box: PDF del capitolo](../pdf/{cid}.pdf)"),
+         f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})"),
         "",
         "</div>",
         "",
@@ -1114,6 +1114,18 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
     from collections import Counter
     (rep / f"{cid}.txt").write_text("\n".join(f"{v:4d}  {k}" for k, v in Counter(st.avvisi).most_common()))
     return {"id": cid, "titolo": titolo, "figure": st.figure, "avvisi": len(st.avvisi), "autori": chi}
+
+
+# il volume della dispensa (formato della collana) di ogni parte del sito
+VOLUME_DI = {"numeri": 1, "numbers": 1, "funzioni": 2, "functions": 2, "successioni": 3, "sequences": 3,
+             "limiti": 3, "limits": 3, "derivate": 4, "derivatives": 4, "serie": 5, "series": 5,
+             "integrali": 5, "integrals": 5}
+
+
+def pdf_volume(parte: str) -> str:
+    import dispense_config as C
+    vol = C.VOLUMI[VOLUME_DI[parte] - 1]
+    return vol["pdf_en"] if EN else vol["pdf_it"]
 
 
 def _parte_it(parte: str) -> str:

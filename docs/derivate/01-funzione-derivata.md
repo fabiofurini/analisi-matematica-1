@@ -6,7 +6,7 @@ title: "Funzione derivata"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Derivate · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/derivate-01-funzione-derivata.pdf)
+**Parte 4 · Derivate · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Serie numeriche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Serie · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/serie-01-serie-numeriche.pdf)
+**Parte 5 · Serie · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-serie.pdf)
 
 </div>
 

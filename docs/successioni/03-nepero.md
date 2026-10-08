@@ -6,7 +6,7 @@ title: "Il numero di Nepero"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di successioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/successioni-03-nepero.pdf)
+**Parte 3 · Limiti di successioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf)
 
 </div>
 

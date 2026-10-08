@@ -13,8 +13,8 @@ ma si può anche saltare direttamente a una sezione dal menu a destra.
   <span style="color:var(--c-esempio)">**esempi svolti**</span>,
   <span style="color:var(--c-chiave)">**punti chiave**</span>.
 - **Le dimostrazioni** sono chiuse: si aprono con un clic.
-- **Il PDF di ogni capitolo** si scarica dal link in cima alla pagina; c'è anche
-  [il PDF unico di tutte le dispense](pdf/dispense-analisi-matematica-1.pdf).
+- **Il PDF del volume** che contiene il capitolo si scarica dal link in cima alla pagina;
+  tutti i volumi sono nel [materiale scaricabile](materiale.md).
 - **La ricerca** (in alto) trova parole e formule in tutte le dispense.
 - **Tema chiaro o scuro**: con l'icona in alto a destra.
 - Dal telefono il sito si legge bene: le formule lunghe scorrono in orizzontale.

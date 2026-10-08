@@ -6,7 +6,7 @@ title: "Insiemi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Numeri e logica · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/numeri-01-insiemi.pdf)
+**Parte 1 · Numeri e logica · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

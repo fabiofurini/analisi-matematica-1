@@ -6,7 +6,7 @@ title: "Insiemi di definizione"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Funzioni** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-funzioni-01-insiemi-definizione.pdf)
+**Esercizi · Funzioni** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf)
 
 </div>
 

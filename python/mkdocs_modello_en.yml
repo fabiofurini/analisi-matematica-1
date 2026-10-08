@@ -113,6 +113,7 @@ nav:
   # NAV_PARTI
   - Interactive lab:
       - interactive/index.md
+  - Downloads: downloads.md
   - The course:
       - course.md
       - Exam theorems: exam-theorems.md

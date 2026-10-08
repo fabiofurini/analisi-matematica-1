@@ -6,7 +6,7 @@ title: "Teorema degli zeri e metodo della bisezione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-08-zeri-bisezione.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf)
 
 </div>
 

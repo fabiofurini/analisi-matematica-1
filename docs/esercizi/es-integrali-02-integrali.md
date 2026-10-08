@@ -6,7 +6,7 @@ title: "Integrali"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Integrali** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-integrali-02-integrali.pdf)
+**Esercizi · Integrali** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-serie.pdf)
 
 </div>
 

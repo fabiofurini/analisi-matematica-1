@@ -6,7 +6,7 @@ title: "Massimi, minimi, estremi superiori e inferiori"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Numeri e logica** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-numeri-01-massimi-minimi.pdf)
+**Esercizi · Numeri e logica** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

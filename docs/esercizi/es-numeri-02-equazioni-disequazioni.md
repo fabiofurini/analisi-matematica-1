@@ -6,7 +6,7 @@ title: "Equazioni e disequazioni di variabile reale"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Numeri e logica** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-numeri-02-equazioni-disequazioni.pdf)
+**Esercizi · Numeri e logica** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-numeri.pdf)
 
 </div>
 

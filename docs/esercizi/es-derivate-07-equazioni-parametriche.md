@@ -6,7 +6,7 @@ title: "Equazioni parametriche"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Derivate** · con le soluzioni svolte · [:material-file-pdf-box: PDF](../pdf/es-derivate-07-equazioni-parametriche.pdf)
+**Esercizi · Derivate** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
 
 </div>
 

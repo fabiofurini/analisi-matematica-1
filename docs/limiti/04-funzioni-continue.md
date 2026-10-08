@@ -6,7 +6,7 @@ title: "Funzioni continue"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Limiti di funzioni e continuità · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: PDF del capitolo](../pdf/limiti-04-funzioni-continue.pdf)
+**Parte 3 · Limiti di funzioni e continuità · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-limiti.pdf)
 
 </div>
 
