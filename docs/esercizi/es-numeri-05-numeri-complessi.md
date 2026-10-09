@@ -214,8 +214,7 @@ title: "Numeri complessi"
     $$
     \left\{\begin{array}{l}|z|^{2}\leq2\\
     \\
-    2\Re z\leq2\end{array}\right.
-    ~~~~~~~~~~~~~~~
+    2\Re z\leq2\end{array}\right. ~~~~~~~~~~~~~~~
     \left\{\begin{array}{l}x^{2}+y^{2}\leq2\\
     \\
     x\leq1\end{array}\right.
@@ -258,12 +257,10 @@ title: "Numeri complessi"
     \\
     \left\{\begin{array}{l}x^{2}=y^{2}\\
     \\
-    |x|+|y|=1\end{array}\right.
-    ~~~
+    |x|+|y|=1\end{array}\right. ~~~
     \left\{\begin{array}{l}|x|=|y|\\
     \\
-    |x|+|y|=1\end{array}\right.
-    ~~~~
+    |x|+|y|=1\end{array}\right. ~~~~
     \left\{\begin{array}{l}|x|=1/2\\
     \\
     |y|=1/2\end{array}\right.\end{array}
@@ -299,8 +296,7 @@ title: "Numeri complessi"
     \\
     \left\{\begin{array}{l}2y^{2}+y-3=0\\
     \\
-    x+2xy=2\end{array}\right.
-    ~~~~~~
+    x+2xy=2\end{array}\right. ~~~~~~
     \left\{\begin{array}{l}y=1\vee y=-3/2\\
     \\
     x=2/(1+2y)\end{array}\right.
@@ -408,8 +404,7 @@ title: "Numeri complessi"
     r^{6}=12\\
     \\
     6\vartheta=2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=12^{1/6}\\
     \\
@@ -453,8 +448,7 @@ title: "Numeri complessi"
     r^{6}=1\\
     \\
     6\vartheta=\pi/2+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=1\\
     \\
@@ -498,8 +492,7 @@ title: "Numeri complessi"
     r^{3}=8\\
     \\
     3\vartheta=\pi+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=2\\
     \\
@@ -537,8 +530,7 @@ title: "Numeri complessi"
     r^{3}=27\\
     \\
     3\vartheta=-\pi/2+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=3\\
     \\
@@ -594,8 +586,7 @@ title: "Numeri complessi"
     r^{4}=12^{1/2}\\
     \\
     4\vartheta=-5\pi/6+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=12^{1/8}\\
     \\
@@ -627,8 +618,7 @@ title: "Numeri complessi"
     r^{3}=8\\
     \\
     3\vartheta=-\pi/2+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=2\\
     \\
@@ -672,8 +662,7 @@ title: "Numeri complessi"
     r^{4}=16\\
     \\
     4\vartheta=-\pi+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=2\\
     \\
@@ -723,8 +712,7 @@ title: "Numeri complessi"
     r^{5}=r\\
     \\
     5\vartheta=\pi-\vartheta+2k\pi
-    \end{array}\right.
-    ~~~~~~~~~~~~~
+    \end{array}\right. ~~~~~~~~~~~~~
     \left\{\begin{array}{l}
     r=0, \, r=1\\
     \\

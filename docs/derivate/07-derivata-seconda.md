@@ -417,8 +417,7 @@ title: "Derivata seconda"
     sono concave in $(0,\ip)$ se $a >1$ e convesse in $(0,\ip)$ se $0 < a < 1$,  dato che:
 
     $$
-    f'(x) = \frac{1}{x\; \log a}; ~~~~ f''(x) = - \frac{1}{x^2\; \log a}
-    ~~
+    f'(x) = \frac{1}{x\; \log a}; ~~~~ f''(x) = - \frac{1}{x^2\; \log a} ~~
     \begin{cases}
     < 0, ~ \forall x >0, & {\rm se}~~ a >1\\[2ex]
     > 0, ~ \forall x >0, & {\rm se}~~  0 < a < 1
@@ -630,12 +629,10 @@ title: "Derivata seconda"
     $$
     f(x) = x \; |x|, {\rm ~~con~~} x \neq 0,~~ f(x)=\left\{\begin{array}{lr} x^2, &x>0\\
     \\
-    -x^2, & x < 0 \end{array}\right.
-    ~~~
+    -x^2, & x < 0 \end{array}\right. ~~~
     f'(x)=\left\{\begin{array}{lr} 2\;x, &x>0 \\
     \\
-    -2\;x, & x< 0 \end{array}\right.
-    ~~~
+    -2\;x, & x< 0 \end{array}\right. ~~~
     f''(x)=\left\{\begin{array}{lr} 2, &x>0 \\
     \\
     -2, & x< 0 \end{array}\right.

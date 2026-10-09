@@ -227,6 +227,10 @@ def sistema_math(m: str, st: Stato) -> str:
     # \\[2 ex] -> \\[2ex] (MathJax non accetta lo spazio)
     m = re.sub(r"\\\\\[\s*([0-9.]+)\s*(ex|em|pt|mm|cm)\s*\]", r"\\\\[\1\2]", m)
     m = m.replace("\\hbox", "\\mbox")
+    # una riga fatta di soli ~ (spaziatura orizzontale delle note) viene letta da
+    # MkDocs come apertura di un blocco di codice e spezza la formula: la si
+    # unisce alla riga precedente.
+    m = re.sub(r"\n[ \t]*(~+)[ \t]*(?=\n)", r" \1", m)
     # dentro \text{...} e simili si entra in modo testo: la ~ di LaTeX (spazio
     # unificatore) MathJax la stampa come tilde. La si sostituisce con uno spazio.
     m = re.sub(r"\\(text|textrm|textbf|textit|textsf|texttt|mbox)\{([^{}]*)\}",

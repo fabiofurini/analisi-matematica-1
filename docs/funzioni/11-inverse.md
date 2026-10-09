@@ -50,8 +50,7 @@ title: "Funzioni inverse"
     \begin{cases}
     y = f(x)\\
     x \in D
-    \end{cases}
-    ~~~~~~~~
+    \end{cases} ~~~~~~~~
     f^{-1}:
     \begin{cases}
     x = f^{-1}(y)\\
@@ -160,8 +159,7 @@ Per il caso strettamente crescente, graficamente abbiamo:
     \begin{cases}
     y = f(x)\\
     x \in D
-    \end{cases}
-    ~~~~~~~~
+    \end{cases} ~~~~~~~~
     f^{-1}:
     \begin{cases}
     x = f^{-1}(y)\\
