@@ -179,32 +179,32 @@ title: "Serie di funzioni"
     </tr>
     <tr>
     <td><span class="arithmatex">\(n=1\)</span></td>
-    <td><span class="arithmatex">\(2.0000000000\dots\)</span></td>
-    <td><span class="arithmatex">\(2.0000000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,0000000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,0000000000\dots\)</span></td>
     <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
     <td><span class="arithmatex">\(n=2\)</span></td>
-    <td><span class="arithmatex">\(2.2500000000\dots\)</span></td>
-    <td><span class="arithmatex">\(2.5000000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,2500000000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,5000000000\dots\)</span></td>
     <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
     <td><span class="arithmatex">\(n=3\)</span></td>
-    <td><span class="arithmatex">\(2.3703703704\dots\)</span></td>
-    <td><span class="arithmatex">\(2.6666666666\dots\)</span></td>
+    <td><span class="arithmatex">\(2,3703703704\dots\)</span></td>
+    <td><span class="arithmatex">\(2,6666666666\dots\)</span></td>
     <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
     <td><span class="arithmatex">\(n=4\)</span></td>
-    <td><span class="arithmatex">\(2.4414062500\dots\)</span></td>
-    <td><span class="arithmatex">\(2.7083333333\dots\)</span></td>
+    <td><span class="arithmatex">\(2,4414062500\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7083333333\dots\)</span></td>
     <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     <tr>
     <td><span class="arithmatex">\(n=5\)</span></td>
-    <td><span class="arithmatex">\(2.4883200000\dots\)</span></td>
-    <td><span class="arithmatex">\(2.7166666666\dots\)</span></td>
+    <td><span class="arithmatex">\(2,4883200000\dots\)</span></td>
+    <td><span class="arithmatex">\(2,7166666666\dots\)</span></td>
     <td><span class="arithmatex">\(2,7182818284\dots\)</span></td>
     </tr>
     </table></div>
