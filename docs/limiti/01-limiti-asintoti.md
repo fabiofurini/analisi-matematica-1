@@ -81,7 +81,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-defXX-3"></a>
 
-!!! definizione "Definizione 3: di  intorno di $\pm \infty$"
+!!! definizione "Definizione 3: di intorno di $\pm \infty$"
 
     Dati $a,b \in \R$,   l'intorno associato ad $a$ di $\im$ è l'intervallo:
 
@@ -242,7 +242,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-9"></a>
 
-!!! esempio "Esempio 1: Limite finito all'infinito (definizione  successionale di limite)"
+!!! esempio "Esempio 1: Limite finito all'infinito (definizione successionale di limite)"
 
     Dimostriamo che:
 
@@ -360,7 +360,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-14"></a>
 
-!!! esempio "Esempio 4: Limite infinito all'infinito (definizione  successionale di limite)"
+!!! esempio "Esempio 4: Limite infinito all'infinito (definizione successionale di limite)"
 
     Dimostriamo che:
 
@@ -497,7 +497,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-19"></a>
 
-!!! esempio "Esempio 7: Limite infinito al finito (definizione  successionale di limite)"
+!!! esempio "Esempio 7: Limite infinito al finito (definizione successionale di limite)"
 
     Dimostriamo che:
 
@@ -629,7 +629,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-24"></a>
 
-!!! esempio "Esempio 10: Limite finito al finito (definizione  successionale di limite)"
+!!! esempio "Esempio 10: Limite finito al finito (definizione successionale di limite)"
 
     Consideriamo la funzione $f(x)=\sin x$ e dimostriamo che:
 
@@ -664,7 +664,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-25"></a>
 
-!!! esempio "Esempio 11: Limite finito al finito (definizione  successionale di limite)"
+!!! esempio "Esempio 11: Limite finito al finito (definizione successionale di limite)"
 
     Consideriamo la funzione:
 
@@ -807,7 +807,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-31"></a>
 
-!!! esempio "Esempio 15: Non esistenza del limite (definizione  successionale di limite)"
+!!! esempio "Esempio 15: Non esistenza del limite (definizione successionale di limite)"
 
     Dimostriamo che:
 
@@ -841,7 +841,7 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
 
 <a id="box-texexpbox1-32"></a>
 
-!!! esempio "Esempio 16: Non esistenza del limite (definizione  successionale di limite)"
+!!! esempio "Esempio 16: Non esistenza del limite (definizione successionale di limite)"
 
     Dimostriamo che:
 

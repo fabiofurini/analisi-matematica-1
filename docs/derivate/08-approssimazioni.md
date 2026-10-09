@@ -100,7 +100,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 <a id="box-texexpbox1-3"></a>
 
-!!! esempio "Esempio 1: sviluppi  asintotici al primo ordine o lineari e errori di approssimazione"
+!!! esempio "Esempio 1: sviluppi asintotici al primo ordine o lineari e errori di approssimazione"
 
     Calcoliamo lo sviluppo asintotico al primo ordine o lineare per $x \rr 0$ di:
 
@@ -132,7 +132,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 <a id="box-texexpbox1-4"></a>
 
-!!! esempio "Esempio 2: di sviluppi  asintotici al primo ordine o lineari"
+!!! esempio "Esempio 2: di sviluppi asintotici al primo ordine o lineari"
 
     Calcoliamo lo sviluppo asintotico al primo ordine o lineare per $x \rr 1$ di:
 
@@ -222,7 +222,7 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
 
 <a id="box-texexpbox1-6"></a>
 
-!!! esempio "Esempio 4: derivata terza quarta e quinta   di un polinomio"
+!!! esempio "Esempio 4: derivata terza quarta e quinta di un polinomio"
 
     Consideriamo il seguente polinomio di grado $5$:
 

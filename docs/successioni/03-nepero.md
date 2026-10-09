@@ -26,9 +26,9 @@ title: "Il numero di Nepero"
 
 ??? dimostrazione "Dimostrazione"
 
-    Proveremo che  la successione $\{a_n\}$ è  monotona crescente ($a_n \ge a_{n-1}, \forall n \in \N, n\ge 2$) e limitata ($m \le a_n \le M, \forall n \in \N, n \ge 1$); quindi è convergente per il teorema di monotonia delle successioni.
+    Proveremo che  la successione $\{a_n\}$ è  non decrescente ($a_n \ge a_{n-1}, \forall n \in \N, n\ge 2$) e limitata ($m \le a_n \le M, \forall n \in \N, n \ge 1$); quindi è convergente per il teorema di monotonia delle successioni. La dimostrazione è divisa in tre parti: (1) la monotonia di $\{a_n\}$ e la sua limitatezza inferiore; (2) la monotonia e la limitatezza superiore di una successione ausiliaria $\{b_n\}$; (3) la sintesi dei due risultati.
 
-    Per provare che $\{a_n\}$ è  monotona crescente, studiamo per $n \ge 2$, il rapporto:
+    <strong>Parte (1).</strong> Per provare che $\{a_n\}$ è  non decrescente, studiamo per $n \ge 2$, il rapporto:
 
     \begin{align*}
     \frac{a_n}{a_{n-1}} & = \frac{\left(1 + \frac{1}{n}\right)^n}{\left(1 + \frac{1}{n-1}\right)^{n-1}} = \frac{\left( \frac{n+1}{n} \right)^n}{\left( \frac{n}{n-1} \right)^{n-1}}\\[2ex] 
@@ -48,22 +48,19 @@ title: "Il numero di Nepero"
     \frac{a_n}{a_{n-1}} \ge 1
     $$
 
-    ossia $a_{n} \ge a_{n-1}$ e la successione è monotona crescente. 
+    ossia $a_{n} \ge a_{n-1}$ e la successione è non decrescente. 
 
-    Per provare che $\{a_n\}$ è  limitata,  osserviamo che,  essendo $a_1 = 2$, segue $a_n \ge 2, \forall n \ge 1$. 
-
-    Consideriamo ora la successione
-
-    $$
-    b_n = \left( 1 + \frac{1}{n}\right)^{n+1} {\rm~~si~noti~che~~} b_n = a_n \: \left( 1 + \frac{1}{n}\right) 
-    {\rm ~~perciò~~} b_n > a_n, \forall n \in \N, n \ge 1
-    $$
-
-    <p class="qed-riga"><span class="qed">□</span></p>
+    Per provare che $\{a_n\}$ è  limitata <em>inferiormente</em>,  osserviamo che,  essendo $a_1 = 2$ e la successione non decrescente, segue $a_n \ge 2, \forall n \ge 1$. <span class="qed">□</span>
 
 ??? dimostrazione "Dimostrazione"
 
-    Per provare che $\{b_n\}$ è  monotona decrescente, studiamo per $n \ge 2$, il rapporto:
+    <strong>Parte (2).</strong> Consideriamo la successione ausiliaria
+
+    $$
+    b_n = \left( 1 + \frac{1}{n}\right)^{n+1} {\rm ~~con~~} n \ge 1
+    $$
+
+    Per provare che $\{b_n\}$ è  decrescente, studiamo per $n \ge 2$, il rapporto:
 
     \begin{align*}
     \frac{b_n}{b_{n-1}} & 
@@ -98,15 +95,32 @@ title: "Il numero di Nepero"
     \frac{b_n}{b_{n-1}} < 1 {\rm ~~quindi~~ } b_n < b_{n-1}
     $$
 
-    e la successione $\{b_n\}$ è monotona (strettamente) decrescente.
+    e la successione $\{b_n\}$ è decrescente.
 
-    Poiché $b_1=4$, risulta quindi
+    Poiché $b_1=4$ e la successione è decrescente, risulta quindi
 
     $$
-    a_n < b_n \le b_1  =4, ~\forall n \ge 1
+    b_n \le b_1  =4, ~\forall n \ge 1
     $$
 
-    e $\{a_n\}$ è limitata. <span class="qed">□</span>
+    ossia $\{b_n\}$ è limitata superiormente. <span class="qed">□</span>
+
+??? dimostrazione "Dimostrazione"
+
+    <strong>Parte (3).</strong> Le due successioni sono legate da
+
+    $$
+    b_n = a_n \: \underbrace{\left( 1 + \frac{1}{n}\right)}_{>1,~ \forall n \ge 1} 
+    {\rm ~~perciò~~} b_n > a_n, \forall n \in \N, n \ge 1
+    $$
+
+    e di conseguenza
+
+    $$
+    2 \le a_n < b_n \le 4, ~\forall n \ge 1
+    $$
+
+    La successione $\{a_n\}$ è quindi non decrescente e limitata e, per il teorema di monotonia delle successioni, è convergente. <span class="qed">□</span>
 
 <a id="box-texexpbox1-2"></a>
 
@@ -187,7 +201,7 @@ title: "Il numero di Nepero"
     e anche
 
     $$
-    \left( 1 + \frac{1}{ c_n  }\right)^{ c_n  } > \left( 1 + \frac{1}{\lfloor c_n \rfloor +1 }\right)^{\lfloor c_n \rfloor } = \underbrace{\left( 1 + \frac{1}{\lfloor c_n \rfloor +1}\right)^{\lfloor c_n \rfloor +1}}_{\rr e} \cdot \underbrace{\left( 1 + \frac{1}{ \lfloor c_n +1\rfloor  }\right)^{-1}}_{\rr 1}
+    \left( 1 + \frac{1}{ c_n  }\right)^{ c_n  } > \left( 1 + \frac{1}{\lfloor c_n \rfloor +1 }\right)^{\lfloor c_n \rfloor } = \underbrace{\left( 1 + \frac{1}{\lfloor c_n \rfloor +1}\right)^{\lfloor c_n \rfloor +1}}_{\rr e} \cdot \underbrace{\left( 1 + \frac{1}{ \lfloor c_n \rfloor +1  }\right)^{-1}}_{\rr 1}
     $$
 
     quindi il primo limite del teorema segue dal teorema del confronto.
@@ -280,12 +294,20 @@ title: "Il numero di Nepero"
     \lim_{n \rr \ip }  \left( 1 + \frac{\alpha}{n}\right)^n = e^\alpha {\rm ~~~con~~~} \alpha \in \R
     \end{align*}
 
-    Dato che:
+    Se $\alpha = 0$ il risultato è immediato, dato che la successione è costante:
+
+    $$
+    \left( 1 + \frac{0}{n}\right)^n = 1^n = 1 = e^0
+    $$
+
+    Se invece $\alpha \neq 0$ (così che si possa dividere per $\alpha$), abbiamo:
 
     $$
     \left( 1 + \frac{\alpha}{n}\right)^n = \left( 
     1 + \frac{1}{\frac{n}{\alpha}}\right)^n = \left( \underbrace{\left( 1 + \frac{1}{\frac{n}{\alpha}}\right)^{\frac{n}{\alpha}}}_{\rr e} \right)^\alpha
     $$
+
+    dove si è usato il teorema precedente con $c_n = \frac{n}{\alpha}$, successione divergente a $\ip$ se $\alpha>0$ e a $\im$ se $\alpha<0$.
 
     Ad esempio con $\alpha=2$ abbiamo:
 

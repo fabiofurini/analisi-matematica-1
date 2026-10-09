@@ -288,8 +288,7 @@ title: "Funzione derivata"
 
 <a id="box-defXX-5"></a>
 
-!!! definizione "Definizione 2: retta tangente 
-"
+!!! definizione "Definizione 2: retta tangente"
 
     Data una funzione $f: (a, b) \rr \R$ e  $f$ derivabile in $x_0 \in (a, b)$, la retta di equazione:
 

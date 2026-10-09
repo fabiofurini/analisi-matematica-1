@@ -258,23 +258,25 @@ title: "Confronti e stime asintotiche"
 
         è usare il <strong>principio di sostituzione</strong>.
 
-- Ad esempio, noto che
+- Per il logaritmo il principio di sostituzione si enuncia così: se
 
     $$
-    \lim_{n \rr \ip} 	\underbrace{\log \: n}_{a_n} \rr \ip
+    a_n \thicksim b_n {\rm ~~~~e~~~~} \lim_{n \rr \ip} b_n = \ip \qquad {\rm allora} \qquad \log a_n \thicksim \log b_n
     $$
 
-    possiamo affermare
+- Infatti, dato che $a_n \thicksim b_n$, abbiamo $\frac{a_n}{b_n} \rr 1$ e quindi $\log \frac{a_n}{b_n} \rr \log 1 = 0$. Possiamo allora scrivere:
 
     $$
-    \lim_{n \rr \ip} \log \: c_n \rr \ip
+    \frac{\log a_n}{\log b_n} = \frac{\log \left( b_n \: \frac{a_n}{b_n}\right)}{\log b_n} = \frac{\log b_n + \log \frac{a_n}{b_n}}{\log b_n} = 1 + \frac{\overbrace{\log \frac{a_n}{b_n}}^{\rr 0}}{\underbrace{\log b_n}_{\rr \ip}} \rr 1
     $$
 
-    dove $\{c_n\}$ è una qualsiasi successione divergente a $\ip$, dunque
+- <strong>Attenzione</strong>: non basta che due successioni divergano entrambe a $\ip$ perché siano asintotiche. Per esempio $\log n$ e $\log e^n = n$ divergono entrambe a $\ip$, ma
 
     $$
-    \underbrace{\log n}_{a_n} \thicksim \underbrace{\log \: c_n}_{b_n}
+    \lim_{n \rr \ip} \frac{\log n}{n} = 0 \neq 1
     $$
+
+    quindi $\log n$ e $\log e^n$ non sono asintotiche.
 
 <a id="box-texexpbox1-7"></a>
 
@@ -286,22 +288,22 @@ title: "Confronti e stime asintotiche"
     \lim_{n \rr \ip} \log_3 (n^2 + 4n +1)
     $$
 
-    usando il principio di sostituzione e definendo
+    usando il principio di sostituzione e le stime asintotiche. Col metodo della decomposizione abbiamo
 
     $$
-    c_n = n^2 + 4n +1 {\rm ~~~abbiamo~~~} \lim_{n \rr \ip}  n^2 + 4n +1 = \ip
+    \underbrace{n^2 + 4\:n +1}_{a_n} = \underbrace{n^2}_{b_n} \: \underbrace{\left( 1 + \frac{4}{n} + \frac{1}{n^2}\right)}_{\rr 1} \thicksim n^2 {\rm ~~~~e~~~~} \lim_{n \rr \ip} n^2 = \ip
     $$
 
-    allora
+    allora, per il principio di sostituzione,
 
     $$
-    \log_3 n \thicksim \log_3 (n^2 + 4n +1)
+    \log_3 (n^2 + 4\:n +1) \thicksim \log_3 \left(n^2\right) = 2 \: \log_3 n
     $$
 
     e quindi
 
     $$
-    \lim_{n \rr \ip} \log_3 (n^2 + 4n +1) = \lim_{n \rr \ip} \log_3 n =\ip
+    \lim_{n \rr \ip} \log_3 (n^2 + 4\:n +1) = \lim_{n \rr \ip} 2 \: \log_3 n =\ip
     $$
 
 !!! chiave ""

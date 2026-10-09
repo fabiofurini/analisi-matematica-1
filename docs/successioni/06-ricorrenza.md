@@ -121,7 +121,7 @@ title: "Successioni definite per ricorrenza"
     a_n \le a_{n +1}  \Longleftrightarrow a_n \le \frac{a_n}{1+a_n} \Longleftrightarrow 1+ a_n \le 1 \Longleftrightarrow a_n \le 0
     $$
 
-    che sappiamo essere falsa; quindi vale la disuguaglianza opposta, ovvero la successione è strettamente decrescente ($a_n > a_{n +1}, \forall n \in \N$).
+    che sappiamo essere falsa; quindi vale la disuguaglianza opposta, ovvero la successione è decrescente ($a_n > a_{n +1}, \forall n \in \N$).
 
     Essendo anche limitata inferiormente (da zero), $a_n$ converge a un limite finito non negativo che chiamiamo  $\ell \ge 0$.
 
@@ -208,7 +208,7 @@ title: "Successioni definite per ricorrenza"
     \frac{1}{2} \left( a_n + \frac{c}{a_n} \right) < a_n, ~~~~~~  \frac{a_n^2 + c}{a_n}  < 2\:a_n, ~~~~~~ a_n^2 + c < 2\: a_n^2 , ~~~~~~   c < a_n^2
     $$
 
-    quindi la successione è strettamente decrescente se e solo se:
+    quindi la successione è decrescente se e solo se:
 
     $$
     a_n > \sqrt{c}
@@ -226,9 +226,19 @@ title: "Successioni definite per ricorrenza"
     \frac{1}{2} \left( a_n + \frac{c}{a_n} \right) -  \sqrt{c} > 0,~~~~~  \frac{a_n^2 + c}{2\:a_n} - \sqrt{c} > 0,~~~~~ \frac{a_n^2 + c - 2\: a_n\:\sqrt{c}}{2\:a_n}  > 0,~~~~~ \frac{(a_n - \sqrt{c})^2}{2\:a_n}  > 0
     $$
 
-    quindi $a_n > \sqrt{c}$ per ogni $n \ge 1$ se $\underbrace{ b }_{= a_0} \neq \sqrt{c}$.  E quindi abbiamo sempre  $a_1 > \sqrt{c},  \forall b >0$. 
+    quindi $a_n > \sqrt{c}$ per ogni $n \ge 1$ se $\underbrace{ b }_{= a_0} \neq \sqrt{c}$, mentre, se $b = \sqrt{c}$, la relazione ricorsiva dà $a_1 = \frac{1}{2} \left(\sqrt{c} + \frac{c}{\sqrt{c}} \right) = \sqrt{c}$ e, per induzione, $a_n = \sqrt{c}$ per ogni $n \ge 1$.  In ogni caso abbiamo quindi
 
-    1. Se $b >\sqrt{c}$ la successione è strettamente decrescente, pertanto ammette limite (finito e positivo) che denotiamo $\ell \ge 0$.
+    $$
+    a_n \ge \sqrt{c}, \qquad \forall b >0 {\rm ~~e~~} n \ge 1
+    $$
+
+    1. Se $b >\sqrt{c}$ la successione è decrescente ed è <strong>limitata inferiormente</strong> da $\sqrt{c}$, dato che $a_0 = b > \sqrt{c}$ e $a_n > \sqrt{c}$ per ogni $n \ge 1$. Per il teorema di monotonia delle successioni essa ammette quindi limite finito
+
+        $$
+        \ell = \inf \{ a_n : n \in \N\} \ge \sqrt{c} > 0
+        $$
+
+        in particolare $\ell > 0$ e possiamo dividere per $\ell$.
 
         Per identificarlo, passiamo al limite nella relazione ricorsiva, ottenendo
 
@@ -241,6 +251,8 @@ title: "Successioni definite per ricorrenza"
         $$
         \ell - \frac{1}{2} \left( \ell + \frac{c}{\ell} \right) = 0,~~~~~~\ell - \frac{1}{2} \left(   \frac{\ell^2+c}{\ell} \right) = 0,~~~~~~ \left(   \frac{2\: \ell^2 -\ell^2-c}{2\:\ell} \right) = 0,~~~~~~ \left(   \frac{\ell^2 -c}{2\:\ell} \right) = 0
         $$
+
+        ossia $\ell^2 = c$ e, essendo $\ell > 0$, otteniamo $\ell = \sqrt{c}$ (e non $\ell = -\sqrt{c}$).
 
         Pertanto, se $b >\sqrt{c}$, tutta la successione converge decrescendo a $\sqrt{c}$.
 
@@ -257,16 +269,18 @@ title: "Successioni definite per ricorrenza"
 - Inoltre $\forall b >0$ e $n \ge 1$ abbiamo:
 
     $$
-    \frac{c}{a_n} < \sqrt{c}  {\rm ~~~~dato~che~~~} a_n > \sqrt{c},  \qquad 
-     c = \sqrt{c} \cdot \underbrace{\sqrt{c}}_{<a_n} {\rm ~~~~~e~~~~~} c < \sqrt{c} \cdot a_n
+    \frac{c}{a_n} \le \sqrt{c}  {\rm ~~~~dato~che~~~} a_n \ge \sqrt{c},  \qquad 
+     c = \sqrt{c} \cdot \underbrace{\sqrt{c}}_{\le a_n} {\rm ~~~~~e~~~~~} c \le \sqrt{c} \cdot a_n
     $$
 
     Riassumendo, $\forall b >0$ e $n \ge 1$ abbiamo:
 
     $$
-    \frac{c}{a_n} < \sqrt{c} < a_n, \qquad   a_n \rr \sqrt{c}
+    \frac{c}{a_n} \le \sqrt{c} \le a_n, \qquad   a_n \rr \sqrt{c}
       {\rm ~~~~~e~anche~~~~} \frac{c}{a_n} \rr \sqrt{c}  {\rm ~~dato ~che~~} c =\sqrt{c} \sqrt{c}
     $$
+
+    Le disuguaglianze sono strette per ogni $b \neq \sqrt{c}$ e valgono come uguaglianze per $b = \sqrt{c}$.
 
 !!! chiave ""
 
@@ -364,7 +378,7 @@ title: "Successioni definite per ricorrenza"
     \tilde{\varepsilon}_n = \frac{|a_n - \sqrt{c}|}{\sqrt{c}}
     $$
 
-    abbiamo $\sqrt{c} < a_n, \forall b >0$ e $n \ge 1$, quindi possiamo semplicemente considerare:
+    abbiamo $\sqrt{c} \le a_n, \forall b >0$ e $n \ge 1$, quindi possiamo semplicemente considerare:
 
     $$
     \tilde{\varepsilon}_n = \frac{a_n - \sqrt{c}}{\sqrt{c}}
@@ -383,13 +397,13 @@ title: "Successioni definite per ricorrenza"
     sappiamo che
 
     $$
-    \frac{c}{a_n} < \sqrt{c} < a_n,~~~~ \forall b >0, n \ge 1
+    \frac{c}{a_n} \le \sqrt{c} \le a_n,~~~~ \forall b >0, n \ge 1
     $$
 
     quindi possiamo ottenere una stima dell'errore assoluto $\varepsilon_n$ commesso all'iterazione $n$ come segue:
 
     $$
-    \varepsilon_n = a_n - \sqrt{c} < a_n - \frac{c}{a_n} {\rm ~~~~e~~~~} \varepsilon_n \rr 0 {\rm ~~per~~} n \rr \ip {\rm ~~dato~che~~} a_n \rr \sqrt{c}
+    \varepsilon_n = a_n - \sqrt{c} \le a_n - \frac{c}{a_n} {\rm ~~~~e~~~~} \varepsilon_n \rr 0 {\rm ~~per~~} n \rr \ip {\rm ~~dato~che~~} a_n \rr \sqrt{c}
     $$
 
     <a id="box-texexpbox1-5"></a>
@@ -501,13 +515,13 @@ title: "Successioni definite per ricorrenza"
     Dalla formula appena ottenuta possiamo dedurne la seguente,  semplificata e più intuitiva:
 
     $$
-    0 \le \tilde{\varepsilon}_{n+1} < \frac{1}{2} \min \big\{\tilde{\varepsilon}_n,\tilde{\varepsilon}_n^2 \big\}
+    0 \le \tilde{\varepsilon}_{n+1} \le \frac{1}{2} \min \big\{\tilde{\varepsilon}_n,\tilde{\varepsilon}_n^2 \big\}
     $$
 
-    Quindi:
+    con disuguaglianza stretta quando $\tilde{\varepsilon}_n > 0$ (se $\tilde{\varepsilon}_n = 0$ si ha $\tilde{\varepsilon}_{n+1}=0$ e vale l'uguaglianza). Quindi:
 
     $$
-    {\rm ~~se~~~} \tilde{\varepsilon}_n < 1, {\rm ~~~si~ha~~~} \tilde{\varepsilon}_{n+1} < \frac{1}{2} \: \tilde{\varepsilon}_n^2
+    {\rm ~~se~~~} 0 < \tilde{\varepsilon}_n < 1, {\rm ~~~si~ha~~~} \tilde{\varepsilon}_{n+1} < \frac{1}{2} \: \tilde{\varepsilon}_n^2
     $$
 
     Per esempio, se l'errore relativo a una certa iterazione è pari a $10^{-3}$, al passaggio successivo sarà inferiore a $5 \cdot 10^{-7}$. In altre parole il numero di zeri dopo la virgola (che equivale al numero di cifre, dopo la virgola, correttamente stimate)  raddoppia a ogni iterazione.

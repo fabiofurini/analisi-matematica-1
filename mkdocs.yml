@@ -121,7 +121,7 @@ nav:
       - "4. Relazioni binarie": numeri/04-relazioni-binarie.md
       - "5. Campi ordinati, estremo superiore/inferiore e assioma di continuità": numeri/05-campi-ordinati.md
       - "6. Radicali, potenze, logaritmi e aritmetica modulare": numeri/06-radicali-potenze-logaritmi.md
-      - "7. Sommatorie e progressioni geometriche": numeri/07-sommatorie.md
+      - "7. Sommatorie, progressioni geometriche e aritmetiche": numeri/07-sommatorie.md
       - "8. Principio di induzione": numeri/08-induzione.md
       - "9. Fattoriali, coefficienti binomiali e disuguaglianza triangolare": numeri/09-fattoriali-binomiali.md
       - "10. Successione di Fibonacci": numeri/10-fibonacci.md

@@ -146,7 +146,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <a id="box-texexpbox1-5"></a>
 
-!!! esempio "Esempio 2: criterio di Leibniz "
+!!! esempio "Esempio 2: criterio di Leibniz"
 
     Determiniamo il carattere della serie:
 
@@ -256,7 +256,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <a id="box-texexpbox1-7"></a>
 
-!!! esempio "Esempio 3: criterio di Leibniz "
+!!! esempio "Esempio 3: criterio di Leibniz"
 
     Determiniamo il carattere della serie:
 
@@ -280,7 +280,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <a id="box-texexpbox1-8"></a>
 
-!!! esempio "Esempio 4: criterio di Leibniz "
+!!! esempio "Esempio 4: criterio di Leibniz"
 
     Determiniamo il carattere della serie:
 
@@ -322,7 +322,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <a id="box-texexpbox1-9"></a>
 
-!!! esempio "Esempio 5: criterio di Leibniz "
+!!! esempio "Esempio 5: criterio di Leibniz"
 
     Determiniamo il carattere della serie:
 
@@ -352,7 +352,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <a id="box-texexpbox1-10"></a>
 
-!!! esempio "Esempio 6: criterio di Leibniz "
+!!! esempio "Esempio 6: criterio di Leibniz"
 
     Determiniamo il carattere della serie:
 
@@ -370,7 +370,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <a id="box-texexpbox1-11"></a>
 
-!!! esempio "Esempio 7: criterio di Leibniz "
+!!! esempio "Esempio 7: criterio di Leibniz"
 
     Determiniamo il carattere della serie:
 

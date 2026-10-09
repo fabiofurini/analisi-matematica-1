@@ -411,6 +411,28 @@ title: "Serie numeriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+- Dati la ragione $q \in \R$ e un primo termine $a \in \R$, il risultato si estende alla serie $\sum_{k=0}^{\infty} a \: q^k$ dei termini della progressione geometrica:
+
+    \begin{equation}
+    \label{GEOMA}
+    {\rm la~serie~} \sum_{k=0}^{\infty} a \: q^k  {\rm ~~~~è~~~~}
+    \begin{cases}
+    {\rm convergente,~con~somma~} 0 & {\rm se~} a = 0\\[1ex]
+    {\rm convergente,~con~somma~} \frac{a}{1-q} & {\rm se~} a \neq 0 {\rm ~e~} |q| < 1\\[1ex]
+    {\rm divergente~a~} \ip & {\rm se~} a > 0 {\rm ~e~} q \ge 1\\[1ex]
+    {\rm divergente~a~} \im & {\rm se~} a < 0 {\rm ~e~} q \ge 1\\[1ex]
+    {\rm irregolare~} & {\rm se~} a \neq 0 {\rm ~e~} q \le -1
+    \end{cases}
+    \end{equation}
+
+    Infatti, se $a=0$ tutti i termini della serie sono nulli e quindi $s_n = 0$ per ogni $n$. Se invece $a \neq 0$, per il prodotto per una costante delle sommatorie la somma parziale $n$-esima è:
+
+    $$
+    s_n = \sum_{k=0}^{n} a \: q^k = a \: \sum_{k=0}^{n} q^k
+    $$
+
+    e quindi, per il teorema sul limite del prodotto di una costante per una successione, $\{s_n\}$ ha lo stesso carattere della successione delle somme parziali di $\sum_{k=0}^{\infty} q^k$, con il limite moltiplicato per $a$ (nei casi divergenti il segno di $a$ decide fra $\ip$ e $\im$).
+
 <a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 2: di serie geometrica"
@@ -439,11 +461,102 @@ title: "Serie numeriche"
 
 <div class="gi" data-grafico="geometrica"></div>
 
-### 1.5 Serie telescopica
+### 1.5 Serie aritmetica
 
-<a id="box-defXX-14"></a>
+<a id="box-defARITSERIE-14"></a>
 
-!!! definizione "Definizione 7: di serie telescopica"
+!!! definizione "Definizione 7: di serie aritmetica"
+
+    Dati il primo termine $a \in \R$ e la ragione $d \in \R$, si dice <strong>serie aritmetica</strong> la serie $\sum_{k=0}^{\infty} (a + k \: d)$
+
+- I termini della serie aritmetica sono i termini della progressione aritmetica di primo termine $a$ e ragione $d$, cioè $a, ~a+d, ~a+2\:d, ~\dots$ Come per la serie geometrica, il primo termine è in posizione $k=0$.
+
+<a id="box-theoARITSERIE-15"></a>
+
+!!! teorema "Teorema 5: del carattere e somma della serie aritmetica"
+
+    Dati il primo termine $a \in \R$ e la ragione $d \in \R$,
+
+    $$
+    {\rm la~serie~aritmetica~} \sum_{k=0}^{\infty} (a + k \: d)  {\rm ~~~~è~~~~}
+    \begin{cases}
+    {\rm divergente~a~} \ip & {\rm se~} d > 0\\[1ex]
+    {\rm divergente~a~} \im & {\rm se~} d < 0\\[1ex]
+    {\rm divergente~a~} \ip & {\rm se~} d = 0 {\rm ~e~} a > 0\\[1ex]
+    {\rm divergente~a~} \im & {\rm se~} d = 0 {\rm ~e~} a < 0\\[1ex]
+    {\rm convergente~} & {\rm se~} d = 0 {\rm ~e~} a = 0
+    \end{cases}
+    $$
+
+    Se la serie aritmetica è convergente, la  somma $s$ vale $0$
+
+??? dimostrazione "Dimostrazione"
+
+    Dati $a, d \in \R$ e $n \in \N$, la somma parziale  $n$-esima della serie aritmetica vale:
+
+    $$
+    s_n = \sum_{k=0}^{n} (a + k \: d) = a \: (n+1) + d \: \left( \frac{n \: (n+1)}{2} \right) = \frac{d}{2} \: n^2 + \left( a + \frac{d}{2} \right) n + a
+    $$
+
+    dato che equivale alla somma dei primi $n+1$ termini della progressione aritmetica. Quindi, se $d \neq 0$, raccogliendo il termine di grado massimo abbiamo:
+
+    $$
+    \lim_{n \rightarrow +\infty} s_n = \lim_{n \rightarrow +\infty} \frac{d}{2} \: n^2 \left( 1 + \underbrace{\frac{2\:a+d}{d \: n}}_{\rr 0} + \underbrace{\frac{2\:a}{d \: n^2}}_{\rr 0} \right) =
+    \begin{cases}
+    +\infty & {\rm se~} d > 0\\[2ex]
+    -\infty & {\rm se~} d < 0
+    \end{cases}
+    $$
+
+    e se $d=0$ abbiamo $s_n = a \: (n+1)$ e quindi:
+
+    $$
+    \lim_{n \rightarrow +\infty} s_n = \lim_{n \rightarrow +\infty} a \: (n+1) =
+    \begin{cases}
+    +\infty & {\rm se~} a > 0\\[1ex]
+    -\infty & {\rm se~} a < 0\\[1ex]
+    0 & {\rm se~} a = 0
+    \end{cases}
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+!!! chiave ""
+
+    La serie aritmetica è quindi convergente solo nel caso banale $a = d = 0$, in cui tutti i termini sono nulli, e non è mai irregolare (a differenza della serie geometrica, che è irregolare per $q \le -1$).
+
+- Che la serie aritmetica non possa convergere, tranne nel caso banale, si vede anche dalla condizione necessaria di convergenza \(\eqref{BBB}\). Il termine generale è $a_k = a + k \: d$ e abbiamo:
+
+    $$
+    \lim_{k \rr \ip} (a + k \: d) =
+    \begin{cases}
+    +\infty & {\rm se~} d > 0\\[1ex]
+    -\infty & {\rm se~} d < 0\\[1ex]
+    a & {\rm se~} d = 0
+    \end{cases}
+    $$
+
+    cioè $\lim_{k \rr \ip} a_k = 0$ solo se $d = 0$ e $a = 0$. In tutti gli altri casi la contronominale di \(\eqref{BBB}\) assicura che la serie non è convergente. La condizione necessaria non dice però <em>quale</em> sia il carattere: a stabilire che la serie è divergente, e con quale segno, è il calcolo delle somme parziali fatto nella dimostrazione.
+
+<a id="box-texexpbox1-16"></a>
+
+!!! esempio "Esempio 3: di serie aritmetica"
+
+    Determiniamo il carattere della serie:
+
+    $$
+    \sum_{k=0}^{\infty} \left(1 + \frac{1}{2} \: k \right)
+    $$
+
+    È una serie aritmetica di primo termine $a=1$ e ragione $d=1/2$. Dato che $d>0$, la serie è divergente a $\ip$.
+
+    ![Figura 6](../img/serie-01-serie-numeriche/fig06.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+### 1.6 Serie telescopica
+
+<a id="box-defXX-17"></a>
+
+!!! definizione "Definizione 8: di serie telescopica"
 
     Si dice <strong>serie telescopica</strong> una serie con la forma:
 
@@ -451,9 +564,9 @@ title: "Serie numeriche"
     \sum_{k=n_0}^{\infty} (b_k-b_{k+1}) {\rm ~~~~~dove~~} \{b_k\} {\rm~è~una ~successione}
     $$
 
-<a id="box-theoZERI-15"></a>
+<a id="box-theoZERI-18"></a>
 
-!!! teorema "Teorema 5: del carattere e somma della serie telescopica"
+!!! teorema "Teorema 6: del carattere e somma della serie telescopica"
 
     Una serie telescopica converge, diverge o è irregolare a seconda che la successione $\{b_k\}$ rispettivamente converga, diverga o sia irregolare.
 
@@ -481,7 +594,7 @@ title: "Serie numeriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-theoZERI-16"></a>
+<a id="box-theoZERI-19"></a>
 
 !!! osservazione "Osservazione 2"
 
@@ -507,7 +620,7 @@ title: "Serie numeriche"
 
 - Graficamente abbiamo:
 
-![Figura 6](../img/serie-01-serie-numeriche/fig06.svg){ .fig .ovale loading=lazy style="width:65%" }
+![Figura 7](../img/serie-01-serie-numeriche/fig07.svg){ .fig .ovale loading=lazy style="width:65%" }
 
 ??? dimostrazione "Dimostrazione"
 
@@ -527,9 +640,9 @@ title: "Serie numeriche"
 
     Di conseguenza la serie di Mengoli è convergente e la sua somma $s$ vale 1. <span class="qed">□</span>
 
-<a id="box-texexpbox1-17"></a>
+<a id="box-texexpbox1-20"></a>
 
-!!! esempio "Esempio 3: serie telescopica"
+!!! esempio "Esempio 4: serie telescopica"
 
     Determiniamo il carattere della serie:
 

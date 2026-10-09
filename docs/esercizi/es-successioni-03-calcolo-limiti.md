@@ -53,7 +53,7 @@ title: "Calcolo limiti di successioni"
     Se:
 
     $$
-    a_n \rr \ell_a\in \R, ~~~b_n \rr 0 {\rm ~~~e~~~} c_n \rr \infty,
+    a_n \rr \ell_a\in \R, ~~~b_n \rr 0^+ {\rm ~oppure~} b_n \rr 0^-  {\rm ~~~e~~~} c_n \rr \infty,
     $$
 
     abbiamo:
@@ -61,6 +61,8 @@ title: "Calcolo limiti di successioni"
     $$
     a_n \:\: c_n  \rr \ell_a\:\: \infty = \infty ~~ (\ell_a\neq 0), ~~~~ \frac{a_n}{b_n}  \rr \frac{\ell_a}{0} = \infty ~~ (\ell_a\neq 0), ~~~~ \frac{a_n}{c_n}  \rr \frac{\ell_a}{\infty} = 0.
     $$
+
+    L'ipotesi che $\{b_n\}$ tenda a zero per eccesso o per difetto (e quindi che sia definitivamente di segno costante, con $b_n \neq 0$) è necessaria: con $a_n=1$ e $b_n = \frac{(-1)^n}{n}$ si ha $\frac{a_n}{b_n} = (-1)^n \: n$, che è irregolare.
 
 !!! chiave ""
 

@@ -42,7 +42,7 @@ title: "Fenomeni vibratori"
     Per esempio considerando $t' = t + \frac{2\: \pi}{\omega}$:
 
     $$
-    \sin \left[ \omega \underbrace{\left( t + \frac{2\: \pi}{\omega} \right)}_{t'}\right] = \sin (\omega \: t + 2\: \pi) = \sin \omega \: t
+    \sin \left[ \omega \underbrace{\left( t + \frac{2\: \pi}{\omega} \right)}_{t'}\right] = \sin (\omega \: t + 2\: \pi) = \sin (\omega \: t)
     $$
 
 - Chiaramente abbiamo:

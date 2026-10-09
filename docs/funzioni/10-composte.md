@@ -69,7 +69,7 @@ title: "Funzioni composte"
     1. Poiché $g$ è definita su tutto $\mathbb{R}$, $h = g \circ f$ è ben definita su $\mathbb{R}$ e vale la formula
 
         $$
-        h(x) = (g \circ f) (x) = g[f(x)] = \cos x^2
+        h(x) = (g \circ f) (x) = g[f(x)] = \cos (x^2)
         $$
 
         ![Figura 3](../img/funzioni-10-composte/fig03.svg){ .fig .ovale loading=lazy style="width:73%" }

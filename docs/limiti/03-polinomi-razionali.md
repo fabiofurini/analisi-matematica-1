@@ -131,7 +131,7 @@ title: "Limiti di polinomi e funzioni razionali"
 
 <a id="box-texexpbox1-4"></a>
 
-!!! esempio "Esempio 4: Limiti di quozienti di somme di potenze a esponente razionale "
+!!! esempio "Esempio 4: Limiti di quozienti di somme di potenze a esponente razionale"
 
     Ad esempio:
 

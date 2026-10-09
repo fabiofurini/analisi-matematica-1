@@ -696,7 +696,9 @@ def lista(env: str, corpo: str, opt: str | None, st: Stato) -> str:
 
 def box(tipo: str, titolo: str, corpo_md: str, apribile: bool = False, aperto: bool = False) -> str:
     segno = "???+" if (apribile and aperto) else ("???" if apribile else "!!!")
-    tit = titolo.replace('"', "&quot;")
+    # il titolo deve stare su UNA riga: a capo e spazi multipli nelle note
+    # (\begin{Definizione}{titolo\nsu due righe}{...}) spezzerebbero il box.
+    tit = " ".join(titolo.split()).replace('"', "&quot;")
     return f'{segno} {tipo} "{tit}"\n\n{indent(corpo_md.strip())}'
 
 

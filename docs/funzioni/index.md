@@ -8,7 +8,7 @@
 
     ---
 
-    Il concetto di funzione · Definizione di funzione, dominio, codominio e immagine · Suriezioni, iniezioni e biiezioni
+    Il concetto di funzione · Definizione di funzione, dominio, codominio e immagine · Suriezioni, iniezioni e biiezioni · Inversa di una biiezione
 
     [:octicons-arrow-right-24: Leggi il capitolo](01-funzioni.md)
 
@@ -16,7 +16,7 @@
 
     ---
 
-    Funzione reale di variabile reale · Funzioni limitate · Funzioni simmetriche · Funzioni monotone · …
+    Funzione reale di variabile reale · Segno di una funzione · Funzioni limitate · Funzioni simmetriche · …
 
     [:octicons-arrow-right-24: Leggi il capitolo](02-funzioni-reali.md)
 
@@ -56,7 +56,7 @@
 
     ---
 
-    Funzioni parte intera e mantissa · Funzioni definite a tratti
+    Funzioni parte intera e mantissa · Funzioni definite a tratti · Funzione valore assoluto
 
     [:octicons-arrow-right-24: Leggi il capitolo](07-parte-intera.md)
 

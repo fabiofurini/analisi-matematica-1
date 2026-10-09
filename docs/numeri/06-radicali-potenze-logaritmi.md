@@ -194,7 +194,7 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
     1. se l'esponente $b$ è intero, oppure
 
-    2. se l'esponente $b=\frac{n}{m}$ è razionale  purché non sia $n$ dispari ed $m$ pari.
+    2. se l'esponente $b=\frac{n}{m}$ è razionale, <em>scritto in forma ridotta ai minimi termini</em>, purché non sia $n$ dispari ed $m$ pari.
 
     Se $c < 0$ e $m$ dispari, si definisce
 
@@ -215,6 +215,14 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
     $$
     (-2)^{\frac{2}{5}} = \sqrt[5]{(-2)^2} = \sqrt[5]{4}
     $$
+
+    L'ipotesi che la frazione sia ridotta ai minimi termini è essenziale: $\frac{1}{3}$ e $\frac{2}{6}$ sono lo stesso numero razionale, ma
+
+    $$
+    \sqrt[3]{(-8)^1} = \sqrt[3]{-8} = -2 \qquad {\rm ~~mentre~~} \qquad \sqrt[6]{(-8)^2} = \sqrt[6]{64} = 2.
+    $$
+
+    Solo la prima scrittura, con $\frac{n}{m}=\frac{1}{3}$ ridotta ai minimi termini, definisce $(-8)^{\frac{1}{3}}$.
 
 - Quando si dice “non esiste in $\R$” si intende che non è possibile definire tale operazione in modo da mantenere valide le usuali regole di calcolo.
 
@@ -406,6 +414,16 @@ $$
     [a] = {\rm intero~~} n {\rm~~tale~che~~} n \le a < n+1
     $$
 
+!!! chiave ""
+
+    Equivalentemente, la parte intera di $a$ è il <strong>più grande</strong> intero minore o uguale ad $a$:
+
+    $$
+    \lfloor a \rfloor = \max \big\{ n \in \Z:~~ n \le a \big\}.
+    $$
+
+- Le due descrizioni coincidono. Se $n \le a < n+1$, allora $n$ appartiene all'insieme $\{k \in \Z: k \le a\}$ e ogni altro suo elemento $k$ soddisfa $k \le a < n+1$, cioè $k \le n$ (essendo $k$ e $n$ interi): quindi $n$ ne è il massimo. Viceversa, se $n$ è il massimo di quell'insieme, allora $n \le a$ e inoltre $a < n+1$, perché altrimenti $n+1$ apparterrebbe all'insieme e $n$ non ne sarebbe il massimo.
+
 <a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 6: Parte intera"
@@ -434,7 +452,11 @@ $$
     (2,38) = 0.38;~~~~ (3) = 0;~~~~ (-1,8) = 0.2.
     $$
 
-- La mantissa quindi non è un intero ma un numero reale, compreso in $[0, 1)$.
+- La mantissa quindi non è un intero ma un numero reale, compreso in $[0, 1)$. Infatti, posto $n = [a]$, dalla definizione di parte intera abbiamo $n \le a < n+1$ e, sottraendo $n$,
+
+    $$
+    0 \le \underbrace{a - n}_{(a)} < 1.
+    $$
 
 - Per i numeri positivi, si ottiene semplicemente “buttando via le cifre prima della virgola”, per i numeri negativi la mantissa è il <strong>complemento a uno</strong> del numero che si ottiene buttando via le cifre prima della virgola.
 
@@ -447,6 +469,16 @@ $$
     $$
     \lceil a \rceil = {\rm intero~~} n {\rm~~tale~che~~} n -1  < a \le n
     $$
+
+!!! chiave ""
+
+    Equivalentemente, la parte intera superiore di $a$ è il <strong>più piccolo</strong> intero maggiore o uguale ad $a$:
+
+    $$
+    \lceil a \rceil = \min \big\{ n \in \Z:~~ n \ge a \big\}.
+    $$
+
+- Anche qui le due descrizioni coincidono. Se $n-1 < a \le n$, allora $n$ appartiene all'insieme $\{k \in \Z: k \ge a\}$ e ogni altro suo elemento $k$ soddisfa $k \ge a > n-1$, cioè $k \ge n$: quindi $n$ ne è il minimo. Viceversa, se $n$ è il minimo di quell'insieme, allora $a \le n$ e inoltre $n-1 < a$, perché altrimenti $n-1$ apparterrebbe all'insieme e $n$ non ne sarebbe il minimo.
 
 <a id="box-texexpbox1-13"></a>
 
@@ -466,6 +498,82 @@ Dato un numero reale $a \in \mathbb{R}$, abbiamo
     a - 1 < \lfloor a \rfloor \le a \le \lceil a \rceil < a + 1
     $$
 
+- Segue subito dalle due definizioni: da $\lfloor a \rfloor \le a < \lfloor a \rfloor +1$ si ricava $\lfloor a \rfloor \le a$ e $a - 1 < \lfloor a \rfloor$; da $\lceil a \rceil -1 < a \le \lceil a \rceil$ si ricava $a \le \lceil a \rceil$ e $\lceil a \rceil < a+1$.
+
+Valgono inoltre le seguenti relazioni fra le due funzioni.
+
+<a id="box-OSS_floor_segno-14"></a>
+
+!!! osservazione "Osservazione 1: parte intera, parte intera superiore e cambio di segno"
+
+    Per ogni numero reale $a \in \mathbb{R}$ si ha
+
+    \begin{equation}
+    - \lfloor a \rfloor = \lceil -a \rceil \qquad {\rm ~~e~~} \qquad - \lceil a \rceil = \lfloor -a \rfloor
+    \label{floor_segno}
+    \end{equation}
+
+    e inoltre
+
+    \begin{equation}
+    \lfloor a \rfloor = a ~~~\Longleftrightarrow~~~ a \in \Z ~~~\Longleftrightarrow~~~ \lceil a \rceil = a
+    \label{floor_intero}
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    Poniamo $n = \lfloor a \rfloor$, cioè $n \le a < n+1$. Moltiplicando per $-1$ (e invertendo i versi) otteniamo
+
+    $$
+    -n-1 < -a \le -n, \qquad {\rm ~cioè~} \qquad (-n)-1 < -a \le -n.
+    $$
+
+    Poiché $-n$ è un intero, la definizione di parte intera superiore dà $\lceil -a \rceil = -n = - \lfloor a \rfloor$: questa è la prima identità della \(\eqref{floor_segno}\). Applicando la prima identità al numero $-a$ si ottiene $-\lfloor -a \rfloor = \lceil a \rceil$, cioè la seconda.
+
+    Per la \(\eqref{floor_intero}\): se $\lfloor a \rfloor = a$ allora $a$ è un intero, perché $\lfloor a \rfloor \in \Z$. Viceversa, se $a \in \Z$ allora $a \le a < a+1$ e quindi $\lfloor a \rfloor = a$. Allo stesso modo, se $\lceil a \rceil = a$ allora $a \in \Z$; e se $a \in \Z$ allora $a-1 < a \le a$, quindi $\lceil a \rceil = a$. <span class="qed">□</span>
+
+Le due funzioni sono completamente caratterizzate dalle disuguaglianze seguenti.
+
+<a id="box-OSS_floor_car-15"></a>
+
+!!! osservazione "Osservazione 2: caratterizzazioni della parte intera e della parte intera superiore"
+
+    Per ogni numero reale $a \in \mathbb{R}$ e ogni numero intero $n \in \Z$ si ha:
+
+    \begin{align}
+    \lfloor a \rfloor = n &~~\Longleftrightarrow~~ n \le a < n+1 \label{floor_C1}\\[1ex]
+    \lfloor a \rfloor = n &~~\Longleftrightarrow~~ a-1 < n \le a \label{floor_C2}\\[1ex]
+    \lceil a \rceil = n &~~\Longleftrightarrow~~ n-1 < a \le n \label{floor_C3}\\[1ex]
+    \lceil a \rceil = n &~~\Longleftrightarrow~~ a \le n < a+1 \label{floor_C4}\\[1ex]
+    a < n &~~\Longleftrightarrow~~ \lfloor a \rfloor < n \label{floor_C5}\\[1ex]
+    n \le a &~~\Longleftrightarrow~~ n \le \lfloor a \rfloor \label{floor_C6}\\[1ex]
+    a \le n &~~\Longleftrightarrow~~ \lceil a \rceil \le n \label{floor_C7}\\[1ex]
+    n < a &~~\Longleftrightarrow~~ n < \lceil a \rceil \label{floor_C8}
+    \end{align}
+
+    e inoltre
+
+    \begin{equation}
+    \lfloor a + n \rfloor = \lfloor a \rfloor + n \qquad {\rm ~~e~~} \qquad \lceil a + n \rceil = \lceil a \rceil + n
+    \label{floor_C9}
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    - La \(\eqref{floor_C1}\) è la definizione di parte intera e la \(\eqref{floor_C3}\) è la definizione di parte intera superiore.
+
+    - La \(\eqref{floor_C2}\) è una riscrittura della \(\eqref{floor_C1}\): la condizione $n \le a < n+1$ equivale a “$n \le a$ e $a < n+1$”, cioè a “$n \le a$ e $a-1 < n$”. Allo stesso modo la \(\eqref{floor_C4}\) è una riscrittura della \(\eqref{floor_C3}\): $n-1 < a \le n$ equivale a “$a \le n$ e $n < a+1$”.
+
+    - \(\eqref{floor_C5}\): se $a < n$, allora $\lfloor a \rfloor \le a < n$. Viceversa, se $\lfloor a \rfloor < n$, allora, essendo entrambi interi, $\lfloor a \rfloor \le n-1$ e quindi $a < \lfloor a \rfloor + 1 \le n$.
+
+    - \(\eqref{floor_C7}\): se $a \le n$, allora $n$ appartiene all'insieme $\{k \in \Z: k \ge a\}$, di cui $\lceil a \rceil$ è il minimo, quindi $\lceil a \rceil \le n$. Viceversa, se $\lceil a \rceil \le n$, allora $a \le \lceil a \rceil \le n$.
+
+    - Le \(\eqref{floor_C6}\) e \(\eqref{floor_C8}\) si ottengono negando i due membri, rispettivamente, della \(\eqref{floor_C5}\) e della \(\eqref{floor_C7}\): la negazione di $a<n$ è $n \le a$ e la negazione di $\lfloor a \rfloor < n$ è $n \le \lfloor a \rfloor$; la negazione di $a \le n$ è $n < a$ e la negazione di $\lceil a \rceil \le n$ è $n < \lceil a \rceil$.
+
+    - \(\eqref{floor_C9}\): posto $m = \lfloor a \rfloor$, cioè $m \le a < m+1$, sommando $n$ si ottiene $m+n \le a+n < (m+n)+1$ con $m+n \in \Z$, quindi $\lfloor a+n \rfloor = m+n = \lfloor a \rfloor + n$. In modo analogo, posto $m=\lceil a \rceil$, da $m-1 < a \le m$ si ottiene $(m+n)-1 < a+n \le m+n$, quindi $\lceil a+n \rceil = m+n = \lceil a \rceil + n$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
 Dato un numero intero $n \in \mathbb{Z}$, abbiamo
 
 !!! chiave ""
@@ -473,6 +581,28 @@ Dato un numero intero $n \in \mathbb{Z}$, abbiamo
     $$
     \left\lfloor \frac{n}{2} \right\rfloor + \left\lceil \frac{n}{2} \right\rceil=n
     $$
+
+??? dimostrazione "Dimostrazione"
+
+    Distinguiamo i due casi.
+
+    - Se $n$ è <strong>pari</strong>, esiste $m \in \Z$ tale che $n = 2\:m$, e poiché $m$ è un intero la \(\eqref{floor_intero}\) dà $\lfloor m \rfloor = \lceil m \rceil = m$:
+
+        $$
+        \left\lfloor \frac{n}{2} \right\rfloor + \left\lceil \frac{n}{2} \right\rceil
+        = \left\lfloor \frac{2\:m}{2} \right\rfloor + \left\lceil \frac{2\:m}{2} \right\rceil
+        = \lfloor m \rfloor + \lceil m \rceil = m + m = 2\:m = n.
+        $$
+
+    - Se $n$ è <strong>dispari</strong>, esiste $m \in \Z$ tale che $n = 2\:m+1$. Poiché $m \le m + \frac{1}{2} < m+1$, la \(\eqref{floor_C1}\) dà $\left\lfloor m + \frac{1}{2} \right\rfloor = m$; poiché $(m+1)-1 < m+\frac{1}{2} \le m+1$, la \(\eqref{floor_C3}\) dà $\left\lceil m + \frac{1}{2} \right\rceil = m+1$. Quindi
+
+        $$
+        \left\lfloor \frac{n}{2} \right\rfloor + \left\lceil \frac{n}{2} \right\rceil
+        = \left\lfloor m + \frac{1}{2} \right\rfloor + \left\lceil m + \frac{1}{2} \right\rceil
+        = m + (m+1) = 2\:m+1 = n.
+        $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 Dati due numeri interi positivi $r,s \in \mathbb{Z}$, $r, s > 0$, abbiamo
 
@@ -492,7 +622,7 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
     \left\lfloor \frac{ \left \lfloor \frac{p}{r} \right \rfloor }{s} \right\rfloor &= \left\lfloor \frac{p}{r\:s} \right\rfloor
     \end{align}
 
-<a id="box-notationA-14"></a>
+<a id="box-notationA-16"></a>
 
 !!! definizione "Definizione 4: Divisore"
 
@@ -504,7 +634,7 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
 
 - Per un intero ${a} \in \mathbb{Z}$ e un intero positivo  ${n} \in \mathbb{Z}, {n}>0$, il valore ${a} \mod {n}$ è il resto  della divisione $\frac{{a}}{{n}}$.
 
-<a id="box-funcP2-15"></a>
+<a id="box-funcP2-17"></a>
 
 !!! definizione "Definizione 5: di modulo (remainder)"
 
@@ -526,7 +656,7 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
 
     e diciamo che ${a}$ è <strong>equivalente</strong> a ${b}$, modulo ${n}$.
 
-<a id="box-texexpbox1-16"></a>
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 9"
 

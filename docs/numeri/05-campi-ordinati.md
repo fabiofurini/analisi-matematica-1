@@ -152,10 +152,10 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 - Ad un punto della retta euclidea, scelto arbitrariamente, si associa $0$ e a un altro, distinto dal primo, si associa $1$, individuando così il segmento orientato $01$ che costituisce l'<strong>unità di misura</strong>
 
-- A questo punto si ha una <strong>corrispondenza biunivoca</strong> tra i numeri razionali e quei punti $P$ della retta che sono estremi dei segmenti orientati $0P$ <strong>commensurabili</strong>  con $01$. Sono chiaramente commensurabili dato che:
+- A questo punto si ha una <strong>corrispondenza biunivoca</strong> tra i numeri razionali e quei punti $P$ della retta che sono estremi dei segmenti orientati $0P$ <strong>commensurabili</strong>  con $01$. Infatti, se al punto $P$ è associato il numero razionale $p$ (la sua <strong>ascissa</strong>), il segmento $0P$ misura $p$ volte il segmento unitario $01$, e quindi il rapporto fra le due lunghezze è:
 
     $$
-    \frac{P}{1} \in \Q {\rm ~~~con~~~} P \in \Q
+    \frac{0P}{01} = \frac{p}{1} = p \in \Q
     $$
 
 ![Figura 1](../img/numeri-05-campi-ordinati/fig01.svg){ .fig .ovale loading=lazy style="width:80%" }
@@ -192,6 +192,32 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 - Di conseguenza la coppia costituita dall'insieme $\Q$ o $\R$ e dalla corrispettiva relazione $R_{\le}$ diventa un insieme totalmente ordinato.
 
+<a id="box-oss_tricotomia-6"></a>
+
+!!! osservazione "Osservazione 2: proprietà di tricotomia"
+
+    Per ogni coppia di numeri $a$, $b$ (razionali o reali) vale <strong>una e una sola</strong> delle tre relazioni:
+
+    $$
+    a < b, \qquad a = b, \qquad a > b
+    $$
+
+- Non è una proprietà nuova: è una conseguenza del fatto che “$\le$” è una relazione d'ordine <strong>totale</strong>, come mostra la dimostrazione qui sotto. Per questo motivo non la contiamo fra gli assiomi $R_1$, $R_2$, $R_3$ ed $R_4$.
+
+??? dimostrazione "Dimostrazione"
+
+    Ricordiamo che $a < b$ significa $a \le b$ e $a \neq b$.
+
+    <strong>Almeno una delle tre relazioni vale.</strong> Poiché la relazione è totale, abbiamo $a \le b$ oppure $b \le a$:
+
+    - se $a \le b$ e $a \neq b$, allora $a < b$;
+
+    - se $b \le a$ e $a \neq b$, allora $a > b$;
+
+    - se $a = b$ vale la seconda relazione.
+
+    <strong>Al più una delle tre relazioni vale.</strong> Le relazioni $a<b$ e $a=b$ non possono valere insieme, perché la prima richiede $a \neq b$; per lo stesso motivo non possono valere insieme $a>b$ e $a=b$. Infine, se valessero insieme $a<b$ e $a>b$, avremmo $a \le b$ e $b \le a$, e quindi $a = b$ per la proprietà antisimmetrica, contro $a \neq b$. <span class="qed">□</span>
+
 ## 5. Proprietà $R_3$
 
 - Mettiamo ora in evidenza le proprietà dell'ordinamento dei numeri razionali o reali:
@@ -202,29 +228,33 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
             1. $\forall a,b, c,\qquad a \le b ~~\Rightarrow~~ a +  c  \le b +c$
 
-            2. $\forall a,b,c > 0, \qquad  a \le b ~~\Rightarrow~~ a \cdot  c  \le b \cdot c$
+            2. $\forall a,b {\rm ~~e~~} \forall c > 0, \qquad  a \le b ~~\Rightarrow~~ a \cdot  c  \le b \cdot c$
 
 - Osserviamo che tutte le regole  del calcolo algebrico derivano dalle proprietà: $R_1$, $R_2$, $R_3$.
 
-<a id="box-texexpbox1-6"></a>
+<a id="box-texexpbox1-7"></a>
 
 !!! esempio "Esempio 3"
 
-    Ad esempio tutte le usuali procedure con cui si risolvono le disequazioni sono  conseguenza degli  assiomi e delle proprietà algebriche della somma e del prodotto, espresse da $R_1$ e $R_2$.
+    Ad esempio tutte le usuali procedure con cui si risolvono le disequazioni sono  conseguenza degli  assiomi e delle proprietà algebriche della somma e del prodotto, espresse da $R_1$ e $R_2$, <strong>e della compatibilità della relazione d'ordine con queste operazioni</strong>, espressa da $R_3$. È infatti $R_3$ che permette di sommare lo stesso numero ai due membri di una disequazione e di moltiplicarli per uno stesso numero positivo senza cambiare il verso.
 
 ## 6. Campi ordinati
 
-<a id="box-defXX-7"></a>
+<a id="box-defXX-8"></a>
 
 !!! definizione "Definizione 3: di campo (ordinato)"
 
-    Un <strong>campo ordinato</strong> è un insieme in cui sono definite due operazioni (somma e prodotto) e una relazione d'ordine totale, che soddisfano  le proprietà $R_1$, $R_2$, $R_3$. Un insieme con solo le proprietà $R_1$, $R_2$ si dice <strong>campo</strong>.
+    Un <strong>campo</strong> è un insieme in cui sono definite due operazioni (somma e prodotto) che soddisfano le proprietà $R_1$ ed $R_2$ e la <strong>proprietà distributiva</strong>.
+
+    Un <strong>campo ordinato</strong> è un campo in cui è definita anche una relazione d'ordine totale che soddisfa la proprietà $R_3$.
+
+- La proprietà distributiva fa parte della definizione di campo: è l'unica proprietà che lega fra loro la somma e il prodotto, e senza di essa le due operazioni resterebbero indipendenti.
 
 - Tutto ciò che abbiamo detto fin qui riguardo alle operazioni di somma e prodotto e alla relazione d'ordine totale “minore o uguale  di” (“$\le$”) vale sia per l'insieme dei numeri razionali che per l'insieme dei numeri reali.
 
-<a id="box-propAAA-8"></a>
+<a id="box-propAAA-9"></a>
 
-!!! osservazione "Osservazione 2"
+!!! osservazione "Osservazione 3"
 
     Gli insiemi dei numeri razionali $~\Q$ e dei numeri reali $~\R$ sono campi ordinati.
 
@@ -248,7 +278,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 ## 7. Insiemi limitati, massimi e minimi
 
-<a id="box-defXX-9"></a>
+<a id="box-defXX-10"></a>
 
 !!! definizione "Definizione 4: di insieme limitato"
 
@@ -270,9 +300,9 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     \forall x \in E, \qquad x \le M \qquad
     $$
 
-- Non fa differenza imporre che $m$ e/o $M$ appartengano a $\Q$ o a $\R$ in quanto la condizione è soltanto di esistenza di tali numeri.
+- Non fa differenza imporre che $m$ e/o $M$ appartengano a $\Q$ o a $\R$ in quanto la condizione è soltanto di esistenza di tali numeri. Non è però una conseguenza immediata della definizione, perché $\Q$ è un sottoinsieme proprio di $\R$: lo si ottiene dalla <strong>proprietà di Archimede</strong> (richiamata nel capitolo <em>Insiemi</em> e dimostrata più avanti in questo capitolo). Infatti, se $M \in \R$ verifica $x \le M$ per ogni $x \in E$, esiste un numero naturale $n > M$, e quindi $x \le M < n$ per ogni $x \in E$, con $n \in \Q$; allo stesso modo, se $m \in \R$ verifica $m \le x$ per ogni $x \in E$, esiste un numero naturale $n > -m$, cioè $-n < m$, e quindi $-n < x$ per ogni $x \in E$, con $-n \in \Q$. Viceversa ogni numero razionale è anche reale, e quindi le due richieste individuano gli stessi insiemi limitati.
 
-<a id="box-defXX-10"></a>
+<a id="box-defXX-11"></a>
 
 !!! definizione "Definizione 5: di massimo e minimo di un insieme"
 
@@ -287,6 +317,24 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     $$
     \forall x \in E, \qquad x_m \le x
     $$
+
+- Si noti che il massimo e il minimo, per definizione, <strong>appartengono</strong> all'insieme $E$.
+
+<a id="box-oss_unicita-max-min-12"></a>
+
+!!! osservazione "Osservazione 4"
+
+    Se un insieme $E$ possiede massimo, questo è <strong>unico</strong>; allo stesso modo, se possiede minimo, questo è unico. Si scrive allora $\max E$ e $\min E$.
+
+??? dimostrazione "Dimostrazione"
+
+    Siano $x_M$ e $x_M'$ due massimi di $E$. Poiché $x_M'$ appartiene a $E$ e $x_M$ è un massimo di $E$, abbiamo $x_M' \le x_M$. Scambiando i ruoli, poiché $x_M$ appartiene a $E$ e $x_M'$ è un massimo di $E$, abbiamo $x_M \le x_M'$. Dalla proprietà antisimmetrica della relazione d'ordine segue:
+
+    $$
+    x_M' \le x_M {\rm ~~~~e~~~~} x_M \le x_M' \qquad \Longrightarrow \qquad x_M = x_M'
+    $$
+
+    La dimostrazione per il minimo è identica: se $x_m$ e $x_m'$ sono due minimi di $E$, allora $x_m \le x_m'$ e $x_m' \le x_m$, e quindi $x_m = x_m'$. <span class="qed">□</span>
 
 !!! chiave ""
 
@@ -305,15 +353,15 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     Quindi il fatto che un insieme sia limitato è condizione necessaria ma non sufficiente al fatto che l'insieme ammetta massimo e minimo. Inoltre l'esistenza di massimo e minimo è condizione sufficiente ma non necessaria al fatto che un insieme sia limitato.  
 
-    Dalla contronominale o implicazione inversa  di \(\eqref{BBB}\) abbiamo:
+    Dalla <strong>contronominale</strong> di \(\eqref{BBB}\) abbiamo:
 
     $$
-    {\rm ~~insieme~non~limitato~}   ~~\Rightarrow~~ {\rm ~~non~esistenza~di~massimo~e~minimo~}
+    \textrm{insieme non limitato}   ~~\Rightarrow~~ \textrm{non esiste il massimo \textbf{oppure} non esiste il minimo}
     $$
 
-    ovvero se un insieme non è limitato non ha massimo o non ha minimo.
+    ovvero se un insieme non è limitato non ha massimo o non ha minimo (può averne uno dei due: $\N$ non è limitato e tuttavia ha minimo $0$).
 
-<a id="box-texexpbox1-11"></a>
+<a id="box-texexpbox1-13"></a>
 
 !!! esempio "Esempio 4: di massimi e minimi"
 
@@ -338,7 +386,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     </tr>
     </table></div>
 
-<a id="box-texexpbox1-12"></a>
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 5: di massimi e minimi"
 
@@ -351,7 +399,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     </tr>
     <tr>
     <td>III)</td>
-    <td><span class="arithmatex">\(\bigg\{~~\frac{1}{n} ~~:~~ n \in \mathbb{N}\setminus \{0\}~~\bigg\}\)</span></td>
+    <td><span class="arithmatex">\(\bigg\{~~\frac{1}{n} ~~:~~ n \in \mathbb{N}_{>0}~~\bigg\}\)</span></td>
     <td>non esiste</td>
     <td>1</td>
     </tr>
@@ -359,7 +407,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     ![Figura 3](../img/numeri-05-campi-ordinati/fig03.svg){ .fig .ovale loading=lazy style="width:58%" }
 
-<a id="box-texexpbox1-13"></a>
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 6: di massimi e minimi"
 
@@ -390,7 +438,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     Si osservi che talvolta, pur essendo l'insieme limitato, esso può non possedere massimo o minimo.
 
-<a id="box-texexpbox1-14"></a>
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 7: di massimi e minimi"
 
@@ -415,7 +463,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     27 \le  x^3 \Longleftrightarrow \sqrt[3]{27}=3 \le  x {\rm ~~~~e~~~} 3 \in E
     $$
 
-<a id="box-texexpbox1-15"></a>
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 8: di massimi e minimi"
 
@@ -461,9 +509,74 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     È un esempio di insieme limitato ma che non ammette minimo.
 
+<a id="box-ex_max-min-intervalli-18"></a>
+
+!!! esempio "Esempio 9: di massimi e minimi di intervalli"
+
+    <div class="tabella" markdown><table>
+    <tr>
+    <td>Esempio</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
+    <td>minimo</td>
+    <td>massimo</td>
+    </tr>
+    <tr>
+    <td>VIII)</td>
+    <td><span class="arithmatex">\([-2,1]\)</span></td>
+    <td><span class="arithmatex">\(-2\)</span></td>
+    <td><span class="arithmatex">\(1\)</span></td>
+    </tr>
+    <tr>
+    <td>IX)</td>
+    <td><span class="arithmatex">\((-\infty,3)\)</span></td>
+    <td>non esiste</td>
+    <td>non esiste</td>
+    </tr>
+    </table></div>
+
+    - Nell'esempio VIII) l'intervallo contiene entrambi i suoi estremi: $-2 \in [-2,1]$ e $-2 \le x$ per ogni $x \in [-2,1]$, quindi $-2$ è il minimo; $1 \in [-2,1]$ e $x \le 1$ per ogni $x \in [-2,1]$, quindi $1$ è il massimo.
+
+    - Nell'esempio IX) l'intervallo non è limitato inferiormente e quindi non ha minimo. Non ha nemmeno massimo: preso un qualunque $x \in (-\infty,3)$, il numero
+
+        $$
+        y = \frac{x+3}{2} \qquad {\rm ~~verifica~~} \qquad x < y < 3
+        $$
+
+        infatti $y - x = \frac{3-x}{2} > 0$ e $y < 3 \Leftrightarrow x < 3$. Dunque $y \in (-\infty,3)$ ed è strettamente maggiore di $x$: nessun elemento dell'insieme può essere il massimo.
+
+<a id="box-ex_max-min-diseq-19"></a>
+
+!!! esempio "Esempio 10: di massimo e minimo di un insieme definito da una disequazione"
+
+    <div class="tabella" markdown><table>
+    <tr>
+    <td>Esempio</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
+    <td>minimo</td>
+    <td>massimo</td>
+    </tr>
+    <tr>
+    <td>X)</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{R}:~~ -5 \le 3\,x < 4 \right\}\)</span></td>
+    <td><span class="arithmatex">\(-\frac{5}{3}\)</span></td>
+    <td>non esiste</td>
+    </tr>
+    </table></div>
+
+    Conviene prima <strong>risolvere la disequazione</strong>: dividendo per $3 > 0$, e usando la proprietà $R_3$ che conserva il verso, otteniamo
+
+    $$
+    -5 \le 3\,x < 4 \qquad \Longleftrightarrow \qquad -\frac{5}{3} \le x < \frac{4}{3}
+    \qquad {\rm ~~cioè~~} \qquad E = \bigg[-\frac{5}{3}, \frac{4}{3}\bigg)
+    $$
+
+    - $-\frac{5}{3} \in E$ ed è minore o uguale a ogni elemento di $E$: è quindi il minimo.
+
+    - Il massimo non esiste: come nell'esempio IX), preso $x \in E$, il numero $y = \frac{1}{2}\big(x + \frac{4}{3}\big)$ verifica $x < y < \frac{4}{3}$ ed è ancora un elemento di $E$ strettamente maggiore di $x$.
+
 ## 8. Maggioranti/minoranti e estremi superiori/inferiori
 
-<a id="box-defXX-16"></a>
+<a id="box-defXX-20"></a>
 
 !!! definizione "Definizione 6: di maggioranti di un insieme"
 
@@ -473,7 +586,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     \forall x \in E, \qquad  x \le k
     $$
 
-<a id="box-defXX-17"></a>
+<a id="box-defXX-21"></a>
 
 !!! definizione "Definizione 7: di minorante di un insieme"
 
@@ -487,13 +600,43 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     Osserviamo che un insieme superiormente (inferiormente) limitato ha molti maggioranti (minoranti). Inoltre  i maggioranti (minoranti) non appartengono necessariamente all'insieme stesso.
 
-<a id="box-defXX-18"></a>
+<a id="box-oss_semiretta-maggioranti-22"></a>
+
+!!! osservazione "Osservazione 5"
+
+    Se $k$ è un maggiorante di $E$, allora ogni numero $h \ge k$ è ancora un maggiorante di $E$; se $k$ è un minorante di $E$, allora ogni numero $h \le k$ è ancora un minorante di $E$. Quindi l'insieme dei maggioranti (minoranti) di $E$, se non è vuoto, è una <strong>semiretta</strong>.
+
+??? dimostrazione "Dimostrazione"
+
+    Sia $k$ un maggiorante di $E$ e sia $h \ge k$. Per ogni $x \in E$ abbiamo $x \le k$ per definizione di maggiorante, e quindi, per la proprietà transitiva,
+
+    $$
+    x \le k \le h \qquad \Longrightarrow \qquad x \le h
+    $$
+
+    cioè $h$ è un maggiorante di $E$. L'insieme dei maggioranti contiene allora, insieme a ogni suo elemento $k$, tutti i numeri maggiori di $k$: è dunque una semiretta illimitata superiormente.
+
+    La dimostrazione per i minoranti è analoga: se $k$ è un minorante di $E$ e $h \le k$, per ogni $x \in E$ si ha $h \le k \le x$ e quindi $h \le x$. <span class="qed">□</span>
+
+<a id="box-oss_maggiorante-massimo-23"></a>
+
+!!! osservazione "Osservazione 6"
+
+    Un maggiorante di $E$ che <strong>appartiene</strong> a $E$ è il massimo di $E$; un minorante di $E$ che appartiene a $E$ è il minimo di $E$.
+
+??? dimostrazione "Dimostrazione"
+
+    Sia $k$ un maggiorante di $E$ con $k \in E$. Per definizione di maggiorante vale $x \le k$ per ogni $x \in E$: queste sono esattamente le due condizioni che definiscono il massimo di $E$ (appartenere a $E$ ed essere maggiore o uguale a tutti i suoi elementi), e quindi $k = \max E$.
+
+    Allo stesso modo, se $k$ è un minorante di $E$ e $k \in E$, allora $k \le x$ per ogni $x \in E$ e $k \in E$, cioè $k = \min E$. <span class="qed">□</span>
+
+<a id="box-defXX-24"></a>
 
 !!! definizione "Definizione 8: di estremo superiore"
 
     L' <strong>estremo superiore</strong> di $E$ ( indicato con $\sup E$)  è il minimo  dei maggioranti di $E$.
 
-<a id="box-defXX-19"></a>
+<a id="box-defXX-25"></a>
 
 !!! definizione "Definizione 9: di estremo inferiore"
 
@@ -503,9 +646,72 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
     Osserviamo che l'estremo superiore (inferiore) può non esistere (insiemi non limitati). Osserviamo inoltre  che se l'insieme possiede massimo (minimo), questo coincide con l'estremo superiore (inferiore).
 
-<a id="box-texexpbox1-20"></a>
+!!! chiave ""
 
-!!! esempio "Esempio 9: di estremi superiori e inferiori"
+    Per gli insiemi non limitati si adotta la seguente <strong>convenzione</strong>: se $E$ non è limitato superiormente si scrive
+
+    $$
+    \sup E = +\infty
+    $$
+
+    e se $E$ non è limitato inferiormente si scrive
+
+    $$
+    \inf E = -\infty
+    $$
+
+    I simboli $+\infty$ e $-\infty$ <strong>non sono numeri</strong>: la scrittura è solo un modo compatto per dire che $E$ non ha maggioranti (minoranti).
+
+<a id="box-ex_sup-inf-intervalli-26"></a>
+
+!!! esempio "Esempio 11: di estremi superiori e inferiori di intervalli"
+
+    <div class="tabella" markdown><table>
+    <tr>
+    <td>Esempio</td>
+    <td>insieme <span class="arithmatex">\(E\)</span></td>
+    <td><span class="arithmatex">\(\inf E\)</span></td>
+    <td><span class="arithmatex">\(\sup E\)</span></td>
+    <td>minimo</td>
+    <td>massimo</td>
+    </tr>
+    <tr>
+    <td>VIII)</td>
+    <td><span class="arithmatex">\([-2,1]\)</span></td>
+    <td><span class="arithmatex">\(-2\)</span></td>
+    <td><span class="arithmatex">\(1\)</span></td>
+    <td><span class="arithmatex">\(-2\)</span></td>
+    <td><span class="arithmatex">\(1\)</span></td>
+    </tr>
+    <tr>
+    <td>IX)</td>
+    <td><span class="arithmatex">\((-\infty,3)\)</span></td>
+    <td><span class="arithmatex">\(-\infty\)</span></td>
+    <td><span class="arithmatex">\(3\)</span></td>
+    <td>non esiste</td>
+    <td>non esiste</td>
+    </tr>
+    <tr>
+    <td>X)</td>
+    <td><span class="arithmatex">\(\left\{ x \in \mathbb{R}:~~ -5 \le 3\,x < 4 \right\}\)</span></td>
+    <td><span class="arithmatex">\(-\frac{5}{3}\)</span></td>
+    <td><span class="arithmatex">\(\frac{4}{3}\)</span></td>
+    <td><span class="arithmatex">\(-\frac{5}{3}\)</span></td>
+    <td>non esiste</td>
+    </tr>
+    </table></div>
+
+    - Negli esempi VIII) e X) il minimo esiste e quindi coincide con l'estremo inferiore; nell'esempio VIII) anche il massimo esiste e coincide con l'estremo superiore.
+
+    - Nell'esempio IX) l'insieme non è limitato inferiormente e quindi, per la convenzione appena introdotta, $\inf E = -\infty$. Il numero $3$ è un maggiorante, perché $x < 3$ per ogni $x \in E$; nessun numero $k < 3$ è un maggiorante, perché il numero $y = \frac{k+3}{2}$ verifica $k < y < 3$ e quindi appartiene a $E$. Dunque $3$ è il minimo dei maggioranti, cioè $\sup E = 3$ (e non è un massimo, perché $3 \notin E$).
+
+    - Nell'esempio X), con lo stesso ragionamento applicato a $E = \big[-\frac{5}{3}, \frac{4}{3}\big)$, si ottiene $\sup E = \frac{4}{3} \notin E$.
+
+    - Riprendendo infine l'esempio III), per $E = \big\{ \frac{1}{n} : n \in \N_{>0} \big\}$ si ha $\inf E = 0$ e $\sup E = \max E = 1$. Infatti $0$ è un minorante, perché $\frac{1}{n} > 0$ per ogni $n \in \N_{>0}$; e nessun numero $k > 0$ è un minorante, perché per la <strong>proprietà di Archimede</strong> esiste $n \in \N_{>0}$ con $n > \frac{1}{k}$, e quindi $\frac{1}{n} < k$. Dunque $0$ è il massimo dei minoranti, ma non è il minimo perché $0 \notin E$.
+
+<a id="box-texexpbox1-27"></a>
+
+!!! esempio "Esempio 12: di estremi superiori e inferiori"
 
     <div class="tabella" markdown><table>
     <tr>
@@ -520,20 +726,20 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     <td>I)</td>
     <td><span class="arithmatex">\(\left\{ x \in \mathbb{Q}:~~ x \ge 0, x  < \sqrt{2}   \right\}\)</span></td>
     <td>0</td>
-    <td>non esiste</td>
+    <td>non esiste in <span class="arithmatex">\(\Q\)</span></td>
     <td>0</td>
     <td>non esiste</td>
     </tr>
     </table></div>
 
-    Abbiamo:
+    Qui si cercano i maggioranti <strong>dentro</strong> $\Q$. Abbiamo:
 
     $$
     \sqrt{2} \notin E
     {\rm ~~~~e~~~} \sqrt{2} \notin \Q
     $$
 
-    quindi massimo non esiste e nemmeno il $\sup$.
+    quindi il massimo non esiste; e non esiste nemmeno il $\sup$ <strong>in</strong> $\Q$, perché i maggioranti razionali di $E$ sono i razionali maggiori di $\sqrt{2}$ e fra questi non ce n'è uno minimo (troncando $\sqrt{2}$ per eccesso si ottengono maggioranti razionali sempre più piccoli). Come mostra l'esempio seguente, in $\R$ l'estremo superiore esiste e vale $\sqrt{2}$.
 
     <div class="tabella" markdown><table>
     <tr>
@@ -581,11 +787,41 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 - Nella <strong>definizione assiomatica</strong> di $\mathbb{R}$, questa proprietà costituisce parte della definizione stessa di $\mathbb{R}$
 
-<a id="box-defXX-21"></a>
+<a id="box-defXX-28"></a>
 
-!!! definizione "Definizione 10:  (assiomatica) dei numeri reali"
+!!! definizione "Definizione 10: (assiomatica) dei numeri reali"
 
-    Chiamiamo $\mathbb{R}$ un insieme che soddisfa le proprietà $R_1$, $R_2$, $R_3$, $R_4$, ossia un campo ordinato che ha la proprietà dell'estremo superiore
+    Chiamiamo $\mathbb{R}$ un insieme che soddisfa le proprietà $R_1$, $R_2$ (con la proprietà distributiva), $R_3$ ed $R_4$, ossia un campo ordinato che ha la proprietà dell'estremo superiore
+
+<a id="box-prop_archimede-29"></a>
+
+!!! teorema "Proposizione 1: proprietà di Archimede"
+
+    Per ogni numero reale $x$ esiste un numero naturale $n$ tale che:
+
+    $$
+    n > x
+    $$
+
+- È la proprietà che abbiamo richiamato nel capitolo <em>Insiemi</em> e usato poco sopra. <strong>Non è un assioma in più</strong>: come mostra la dimostrazione, segue dalla proprietà $R_4$.
+
+??? dimostrazione "Dimostrazione"
+
+    Supponiamo per assurdo che esista un numero reale $x$ tale che $n \le x$ per ogni $n \in \N$. Allora l'insieme $\N$ è un sottoinsieme di $\R$ non vuoto e limitato superiormente (da $x$), e quindi per la proprietà $R_4$ possiede estremo superiore in $\R$:
+
+    $$
+    s = \sup \N
+    $$
+
+    Poiché $s$ è il <strong>minimo</strong> dei maggioranti di $\N$, il numero $s-1$, che è più piccolo di $s$, non è un maggiorante di $\N$: esiste quindi $n \in \N$ tale che
+
+    $$
+    n > s-1 \qquad \Longrightarrow \qquad n+1 > s
+    $$
+
+    Ma $n+1$ è ancora un numero naturale, e questo contraddice il fatto che $s$ è un maggiorante di $\N$. L'ipotesi iniziale è dunque assurda, e per ogni $x \in \R$ esiste $n \in \N$ con $n > x$. <span class="qed">□</span>
+
+- In forma equivalente: per ogni numero reale $\varepsilon > 0$ esiste $n \in \N_{>0}$ tale che $\frac{1}{n} < \varepsilon$. Infatti basta scegliere $n > \frac{1}{\varepsilon}$, e allora $\frac{1}{n} < \varepsilon$. Di conseguenza l'unico numero non negativo minore o uguale a $\frac{1}{n}$ per ogni $n \in \N_{>0}$ è lo zero.
 
 - La proprietà dell'estremo superiore prende anche il nome di <strong>assioma di Dedekind</strong>, <strong>o assioma di continuità</strong>, o <strong>assioma di completezza</strong> e si può enunciare anche nella seguente forma equivalente.
 

@@ -85,7 +85,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
     Procedendo per dicotomia, così facendo, costruiamo una successione di intervalli $[a_n, b_n]$, ciascuno contenuto nei precedenti, con le proprietà:
 
-    1. la successione $\{a_n\}$ è monotona crescente e limitata e la successione $\{b_n\}$ monotona decrescente e limitata;
+    1. la successione $\{a_n\}$ è monotona non decrescente e limitata e la successione $\{b_n\}$ monotona non crescente e limitata;
 
     2. $b_n - a_n = \frac{b-a}{2^n} \rr 0 {\rm~~per~~} n \rr \ip;$
 
@@ -268,8 +268,7 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
 <a id="box-texexpbox1-3"></a>
 
-!!! esempio "Esempio 1: Funzione discontinua e assenza della proprietà dei
-valori intermedi"
+!!! esempio "Esempio 1: Funzione discontinua e assenza della proprietà dei valori intermedi"
 
     Consideriamo ad esempio il grafico della seguente funzione discontinua in $[a,b]$:
 

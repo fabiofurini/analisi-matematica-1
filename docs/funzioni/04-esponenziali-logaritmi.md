@@ -103,7 +103,7 @@ title: "Funzioni esponenziali e logaritmiche"
 
 <a id="box-texexpbox1-3"></a>
 
-!!! esempio "Esempio 1: grafici di funzioni esponenziali e logaritmiche "
+!!! esempio "Esempio 1: grafici di funzioni esponenziali e logaritmiche"
 
     Funzioni esponenziali:
 

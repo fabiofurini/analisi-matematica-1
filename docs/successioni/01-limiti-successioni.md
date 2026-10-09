@@ -123,7 +123,63 @@ title: "Successioni e limiti di successioni"
 
     Diciamo che una successione $\{a_n\}$ possiede (o acquista) <strong>definitivamente</strong> una certa proprietà se esiste  $\tilde{n} \in \mathbb{N}$ tale che $a_n$ soddisfa quella proprietà per ogni  $n \ge \tilde{n}$.
 
-<a id="box-texexpbox1-7"></a>
+<a id="box-defPOSITIVITA-7"></a>
+
+!!! definizione "Definizione 3: di successione positiva e negativa"
+
+    Una successione $\{a_n\}$ si dice <strong>non negativa</strong> se:
+
+    $$
+    ~a_n \ge 0,~ \forall n
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>positiva</strong> se:
+
+    $$
+    ~a_n > 0,~ \forall n
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>non positiva</strong> se:
+
+    $$
+    ~a_n \le 0,~ \forall n
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>negativa</strong> se:
+
+    $$
+    ~a_n < 0,~ \forall n
+    $$
+
+<a id="box-defPOSITIVITA_DEFINITIVA-8"></a>
+
+!!! definizione "Definizione 4: di successione definitivamente positiva e definitivamente negativa"
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente non negativa</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n \ge 0,~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente positiva</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n > 0,~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente non positiva</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n \le 0,~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente negativa</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n < 0,~ \forall n \ge \tilde{n}
+    $$
+
+<a id="box-texexpbox1-9"></a>
 
 !!! esempio "Esempio 5: Proprietà possedute definitivamente"
 
@@ -133,7 +189,7 @@ title: "Successioni e limiti di successioni"
 
     Questa  successione  è definitivamente positiva. Con $n=4$ abbiamo $a_n=0$, quindi prendendo   $\tilde{n}=5$,  si ha  $a_n > 0$ con $n \ge \tilde{n}$.
 
-<a id="box-texexpbox1-8"></a>
+<a id="box-texexpbox1-10"></a>
 
 !!! esempio "Esempio 6: Proprietà possedute definitivamente"
 
@@ -145,9 +201,9 @@ title: "Successioni e limiti di successioni"
 
 ### 1.1 Successioni convergenti e definizione di limite di successioni
 
-<a id="box-defXX-9"></a>
+<a id="box-defXX-11"></a>
 
-!!! definizione "Definizione 3: di successione convergente"
+!!! definizione "Definizione 5: di successione convergente"
 
     Una successione $\{ a_n\}$ si dice <strong>convergente</strong> se esiste un numero $\ell \in  \mathbb{R}$ tale che:
 
@@ -168,9 +224,9 @@ title: "Successioni e limiti di successioni"
 
     Il numero $n(\varepsilon)$  dipende (in generale) dal valore di  $\varepsilon$. Se la successione $\{a_n\}$ è convergente,  ad essa è quindi associato  il numero $\ell \in \R$.
 
-<a id="box-defXX-10"></a>
+<a id="box-defXX-12"></a>
 
-!!! definizione "Definizione 4: di limite della successione"
+!!! definizione "Definizione 6: di limite della successione"
 
     Il numero $\ell \in \R$ che compare nella disuguaglianza \(\eqref{limite_successione}\) si chiama <strong>limite della successione</strong> $\{a_n\}$, e si scrive della successione che:
 
@@ -199,14 +255,14 @@ title: "Successioni e limiti di successioni"
     La condizione di convergenza significa che,  fissata una striscia orizzontale “stretta a piacere”:
 
     $$
-    [\ell - \varepsilon,  \ell + \varepsilon]
+    (\ell - \varepsilon,  \ell + \varepsilon)
     $$
 
     da un certo valore di $n$ in poi,  chiamato $n(\varepsilon)$, i punti $a_n$ della successione  non escono più da questa striscia.  Nel grafico di prima, fissata la larghezza della striscia, abbiamo i valori $a_n$ all'interno della striscia per $n \ge n(\varepsilon)$.
 
-<a id="box-theoXXX-11"></a>
+<a id="box-theoXXX-13"></a>
 
-!!! teorema "Teorema 1: di unicità del limite  della successione"
+!!! teorema "Teorema 1: di unicità del limite della successione"
 
     Se una successione $\{a_n\}$ converge al limite $\ell \in \R$ allora tale limite  è unico.
 
@@ -227,14 +283,14 @@ title: "Successioni e limiti di successioni"
 
     Quindi non possono esistere due valori differenti $\ell_1$ e $\ell_2$ e   di conseguenza il limite (se esiste) è unico. <span class="qed">□</span>
 
-<a id="box-texexpbox1-12"></a>
+<a id="box-texexpbox1-14"></a>
 
 !!! esempio "Esempio 7: Verifica del limite di successione"
 
     Il grafico della successione $n \mapsto \frac{(-1)^n}{n}$, ad esempio a partire da $n=9$,  è compreso  nella striscia orizzontale:
 
     $$
-    \left[-\frac{1}{8}, \frac{1}{8}\right]
+    \left(-\frac{1}{8}, \frac{1}{8}\right)
     $$
 
     data da $\ell=0$ e $\varepsilon = \frac{1}{8}$.   Con $n=8$ abbiamo $a_n=\frac{1}{8}$, con $n=9$ abbiamo $a_n=-\frac{1}{9}$, quindi
@@ -254,7 +310,7 @@ title: "Successioni e limiti di successioni"
     dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che
 
     $$
-    n>n(\varepsilon) \Rightarrow |a_{n}|< \varepsilon
+    n \ge n(\varepsilon) \Rightarrow |a_{n}|< \varepsilon
     $$
 
     La  diseguaglianza equivale a
@@ -272,11 +328,55 @@ title: "Successioni e limiti di successioni"
 
     per soddisfare la condizione richiesta dalla definizione di limite.
 
-!!! chiave ""
+<a id="box-ossCONV_LIMITATE-15"></a>
 
-    Le successioni convergenti sono (definitivamente)  limitate.
+!!! osservazione "Osservazione 1"
 
-<a id="box-texexpbox1-13"></a>
+    Ogni successione convergente è limitata.
+
+??? dimostrazione "Dimostrazione"
+
+    Sia $\{a_n\}$ convergente al limite $\ell \in \R$. Scegliendo $\varepsilon = 1$ nella definizione di limite, esiste $n(1) \in \N$ tale che
+
+    $$
+    |a_n - \ell| < 1 {\rm~~~~per~ogni~~~~} n \ge n(1)
+    $$
+
+    Per la disuguaglianza triangolare abbiamo quindi
+
+    $$
+    |a_n| = |(a_n - \ell) + \ell| ~\le~ |a_n - \ell| + |\ell| ~<~ 1 + |\ell| {\rm~~~~per~ogni~~~~} n \ge n(1)
+    $$
+
+    I termini rimanenti $a_0, a_1, \dots, a_{n(1)-1}$ sono in numero <em>finito</em>, perciò possiamo porre
+
+    $$
+    M = \max \big\{ ~|a_0|,~ |a_1|,~ \dots,~ |a_{n(1)-1}|,~ 1 + |\ell| ~\big\} \in \R
+    $$
+
+    e otteniamo
+
+    $$
+    -M \le a_n \le M {\rm~~~~per~ogni~~~~} n \in \N
+    $$
+
+    ossia la successione è limitata. <span class="qed">□</span>
+
+- Per contronominale otteniamo anche: se una successione <strong>non</strong> è limitata, allora <strong>non</strong> è convergente.
+
+- L'implicazione non vale invece nel verso opposto: una successione limitata non è necessariamente convergente. Un controesempio è la successione $\left\{ (-1)^n \right\}$, che è limitata ($-1 \le (-1)^n \le 1$ per ogni $n \in \N$) ma non è convergente. Supponiamo infatti per assurdo che $(-1)^n \rr \ell \in \R$: fissato $\varepsilon = \frac{1}{2}$, dovremmo avere $|(-1)^n - \ell| < \frac{1}{2}$ definitivamente, mentre
+
+    - **** se $\ell \ge 0$, per ogni $n$ <em>dispari</em> abbiamo $|(-1)^n - \ell| = |-1 - \ell| = 1 + \ell \ge 1$;
+
+    - **** se $\ell < 0$, per ogni $n$ <em>pari</em> abbiamo $|(-1)^n - \ell| = |1 - \ell| = 1 + |\ell| > 1$.
+
+    In entrambi i casi la disuguaglianza $|(-1)^n - \ell| < \frac{1}{2}$ è violata per infiniti valori di $n$ (quindi non vale definitivamente), e abbiamo l'assurdo. Perciò
+
+    $$
+    \{a_n\} {\rm ~~limitata~~} \nRightarrow \{a_n\} {\rm ~~convergente}
+    $$
+
+<a id="box-texexpbox1-16"></a>
 
 !!! esempio "Esempio 8: Verifica del limite di successione"
 
@@ -299,7 +399,7 @@ title: "Successioni e limiti di successioni"
     Dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che:
 
     $$
-    n>n(\varepsilon) \Rightarrow 1 -\varepsilon < \frac{n+1}{n-1} < 1 + \varepsilon
+    n \ge n(\varepsilon) \Rightarrow 1 -\varepsilon < \frac{n+1}{n-1} < 1 + \varepsilon
     $$
 
     La disuguaglianza di sinistra è sempre soddisfatta (il numeratore della frazione è sempre più grande del denominatore). Prendiamo quella di destra:
@@ -320,7 +420,7 @@ title: "Successioni e limiti di successioni"
 
     per soddisfare la condizione richiesta dalla definizione di limite.
 
-<a id="box-texexpbox1-14"></a>
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 9: Verifica del limite di successione"
 
@@ -332,7 +432,7 @@ title: "Successioni e limiti di successioni"
 
     ![Figura 8](../img/successioni-01-limiti-successioni/fig08.svg){ .fig .ovale loading=lazy style="width:80%" }
 
-<a id="box-texexpbox1-15"></a>
+<a id="box-texexpbox1-18"></a>
 
 !!! esempio "Esempio 10: Verifica del limite di successione"
 
@@ -355,7 +455,7 @@ title: "Successioni e limiti di successioni"
     Dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che:
 
     $$
-    n>n(\varepsilon) \Rightarrow 1 -\varepsilon < 2^{\frac{1}{n}} < 1 + \varepsilon.
+    n \ge n(\varepsilon) \Rightarrow 1 -\varepsilon < 2^{\frac{1}{n}} < 1 + \varepsilon.
     $$
 
     La disuguaglianza di sinistra è sempre soddisfatta (2 elevato a un numero  razionale positivo), mentre quella di destra, prendendo il logaritmo in base $2$,  otteniamo:
@@ -378,7 +478,7 @@ title: "Successioni e limiti di successioni"
 
     per soddisfare la condizione richiesta dalla definizione di limite.
 
-<a id="box-texexpbox1-16"></a>
+<a id="box-texexpbox1-19"></a>
 
 !!! esempio "Esempio 11: Limite di successioni"
 
@@ -401,7 +501,7 @@ title: "Successioni e limiti di successioni"
     Dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che:
 
     $$
-    n>n(\varepsilon) \Rightarrow -\varepsilon < \log \left( 1 + \frac{1}{n} \right) <  \varepsilon
+    n \ge n(\varepsilon) \Rightarrow -\varepsilon < \log \left( 1 + \frac{1}{n} \right) <  \varepsilon
     $$
 
     La disuguaglianza di sinistra è sempre soddisfatta (il logaritmo in base $e$ di un numero più grande di 1), mentre  quella di destra, elevando a potenza, otteniamo:
@@ -424,9 +524,9 @@ title: "Successioni e limiti di successioni"
 
 ### 1.2 Successioni divergenti e  successioni irregolari
 
-<a id="box-defXX-17"></a>
+<a id="box-defXX-20"></a>
 
-!!! definizione "Definizione 5: di successione divergente a $+\infty$"
+!!! definizione "Definizione 7: di successione divergente a $+\infty$"
 
     Una successione $\{ a_n\}$ si dice <strong>divergente</strong> a $+\infty$ se per ogni $M>0$ esiste un numero $n(M) \in \N$  tale che:
 
@@ -434,9 +534,9 @@ title: "Successioni e limiti di successioni"
     a_n  > M {\rm~~per~ogni~~} n \ge n(M)
     $$
 
-<a id="box-defXX-18"></a>
+<a id="box-defXX-21"></a>
 
-!!! definizione "Definizione 6: di successione divergente a $-\infty$"
+!!! definizione "Definizione 8: di successione divergente a $-\infty$"
 
     Una successione $\{ a_n\}$ si dice <strong>divergente</strong> a $-\infty$ se per ogni $M>0$  esiste un numero $n(M) \in \N$  tale che:
 
@@ -472,9 +572,9 @@ title: "Successioni e limiti di successioni"
 
 - Sui simboli $+\infty$ e $-\infty$ le operazioni di somma e prodotto con le proprietà indicate in $R_1$ e $R_2$ non sono definite, anche se  potremo fare “parzialmente” queste operazioni (come vedremo in seguito).
 
-<a id="box-defXX-19"></a>
+<a id="box-defXX-22"></a>
 
-!!! definizione "Definizione 7: dell'insieme $\mathbb{R}^*$"
+!!! definizione "Definizione 9: dell'insieme $\mathbb{R}^*$"
 
     L'insieme dei numeri reali $\mathbb{R}$ con l'aggiunta dei due elementi $+\infty$ e $-\infty$ sarà indicato:
 
@@ -494,7 +594,7 @@ title: "Successioni e limiti di successioni"
 
     Le successioni il cui limite è un numero reale sono <strong>convergenti</strong>, quelle il cui limite è $+\infty$ oppure $-\infty$ sono <strong>divergenti</strong>.
 
-<a id="box-texexpbox1-20"></a>
+<a id="box-texexpbox1-23"></a>
 
 !!! esempio "Esempio 12: Successioni convergenti e divergenti"
 
@@ -506,9 +606,9 @@ title: "Successioni e limiti di successioni"
 
     - la successione $\{ 2^{\frac{1}{n}} \}$ è convergente  a $1$.
 
-<a id="box-theoXXX-21"></a>
+<a id="box-theoXXX-24"></a>
 
-!!! osservazione "Osservazione 1"
+!!! osservazione "Osservazione 2"
 
     $$
     \lim_{n \rightarrow +\infty} n^{\alpha} = 
@@ -524,7 +624,7 @@ title: "Successioni e limiti di successioni"
     Se $\alpha>0$, dobbiamo dimostrare che la successione diverge a $\ip$.  Dobbiamo quindi verificare che per ogni $M>0$ esiste $n(M) \in \N$ tale che
 
     $$
-    n>n(M)\Rightarrow a_{n}>M
+    n \ge n(M)\Rightarrow a_{n}>M
     $$
 
     La disuguaglianza
@@ -548,7 +648,7 @@ title: "Successioni e limiti di successioni"
     Se $\alpha<0$,  dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che
 
     $$
-    n>n(\varepsilon) \Rightarrow -\varepsilon < n^{\alpha} <   \varepsilon
+    n \ge n(\varepsilon) \Rightarrow -\varepsilon < n^{\alpha} <   \varepsilon
     $$
 
     La disuguaglianza di sinistra è sempre soddisfatta. La disuguaglianza di destra,  dato che $n^{\alpha}=\frac{1}{n^{|\alpha|}}$, otteniamo
@@ -573,19 +673,29 @@ title: "Successioni e limiti di successioni"
 
 - Infine osserviamo che ci sono successioni che non sono né convergenti né divergenti
 
-<a id="box-defXX-22"></a>
+<a id="box-defXX-25"></a>
 
-!!! definizione "Definizione 8: di successione irregolare o indeterminata"
+!!! definizione "Definizione 10: di successione irregolare o indeterminata"
 
     Una  successione che non è né convergente né divergente si dice <strong>irregolare</strong> o <strong>indeterminata</strong>.
 
-<a id="box-texexpbox1-23"></a>
+<a id="box-texexpbox1-26"></a>
 
 !!! esempio "Esempio 13: Successioni irregolari"
 
     - la successione  $\{ (-1)^n \}$ non è né convergente né divergente  (ma è limitata)
 
     - la successione  $\{ (-2)^n \}$ non è né convergente né divergente  (e nemmeno limitata).
+
+??? dimostrazione "Dimostrazione"
+
+    Verifichiamo che la successione $\{(-1)^n\}$ è irregolare, ossia che non è né convergente né divergente.
+
+    - **** <strong>Non è convergente</strong>: lo abbiamo dimostrato nell'osservazione [Osservazione 1](#box-ossCONV_LIMITATE-15), dove $\left\{(-1)^n\right\}$ è servita come controesempio all'implicazione inversa.
+
+    - **** <strong>Non è divergente</strong>: per ogni $n \in \N$ abbiamo $-1 \le (-1)^n \le 1$. Fissato $M = 1$, per ogni $n$ <em>dispari</em> risulta $(-1)^n = -1 < M$, quindi non può essere $(-1)^n \rr \ip$; per ogni $n$ <em>pari</em> risulta $(-1)^n = 1 > -M$, quindi non può essere $(-1)^n \rr \im$.
+
+    Il limite di $\{(-1)^n\}$ quindi non esiste. <span class="qed">□</span>
 
 - Per le successioni <strong>irregolari</strong>, l'operazione di limite non è definita, ovvero il loro <strong>limite non esiste</strong>.
 
@@ -597,9 +707,9 @@ title: "Successioni e limiti di successioni"
 
 - È comodo adottare la convenzione introdotta per i limiti anche per il $\sup$ e per l'$\inf$, estendendo la definizione di queste quantità nel modo seguente
 
-<a id="box-defXX-24"></a>
+<a id="box-defXX-27"></a>
 
-!!! definizione "Definizione 9: di estremo superiore e inferiore $\sup$ e $\inf$  (insiemi non limitati)"
+!!! definizione "Definizione 11: di estremo superiore e inferiore $\sup$ e $\inf$ (insiemi non limitati)"
 
     Se un insieme $E \subseteq \mathbb{R}$ non è limitato superiormente (inferiormente) diremo che
 
@@ -615,13 +725,13 @@ title: "Successioni e limiti di successioni"
 
 ## 3. Successioni infinitesime e infinite
 
-<a id="box-defXX-25"></a>
+<a id="box-defXX-28"></a>
 
-!!! definizione "Definizione 10: di successione infinitesima"
+!!! definizione "Definizione 12: di successione infinitesima"
 
     Una successione $\{a_n\}$ tendente a zero si dice <strong>infinitesima</strong>
 
-<a id="box-texexpbox1-26"></a>
+<a id="box-texexpbox1-29"></a>
 
 !!! esempio "Esempio 14: Successioni infinitesime"
 
@@ -629,19 +739,53 @@ title: "Successioni e limiti di successioni"
 
     - la successione $\left\{ \frac{1}{n^2} \right\}$ è infinitesima
 
+<a id="box-theoINFINITESIMA_MODULO-30"></a>
+
+!!! teorema "Teorema 2: sulle successioni infinitesime"
+
+    Una successione $\{a_n\}$ è infinitesima se e solo se la successione dei valori assoluti $\{|a_n|\}$ è infinitesima:
+
+    $$
+    \lim_{n \rr \ip} a_n = 0 \quad \Longleftrightarrow \quad \lim_{n \rr \ip} |a_n| = 0.
+    $$
+
+??? dimostrazione "Dimostrazione"
+
+    Dimostriamo le due implicazioni.
+
+    - **** ($\Rightarrow$) Se $\{a_n\}$ è infinitesima, allora $a_n \rr 0$ e quindi, per ogni $\varepsilon>0$, esiste $n(\varepsilon) \in \N$ tale che
+
+        $$
+        \underbrace{|a_n - 0|}_{=~\big| \: |a_n| - 0 \: \big|} < \varepsilon {\rm~~~~per~ogni~~~~} n \ge n(\varepsilon)
+        $$
+
+        che è esattamente la condizione $|a_n| \rr 0$.
+
+    - **** ($\Leftarrow$) Se $|a_n| \rr 0$, allora per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che
+
+        $$
+        \underbrace{\big| \: |a_n| - 0 \: \big|}_{=~|a_n|~=~|a_n - 0|} < \varepsilon {\rm~~~~per~ogni~~~~} n \ge n(\varepsilon)
+        $$
+
+        che è esattamente la condizione $a_n \rr 0$, ossia $\{a_n\}$ è infinitesima.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+- Attenzione: il teorema vale <strong>solo</strong> per il limite $0$. Per esempio $(-1)^n$ ha $|(-1)^n| = 1 \rr 1$, ma la successione $\left\{(-1)^n\right\}$ non è convergente.
+
 - Il concetto di <em>infinitesimo</em> gioca un ruolo centrale ed è fondamentale anche per avere un'<strong>immagine intuitiva</strong> corretta ed efficace dei concetti del <em>calcolo infinitesimale</em>.
 
 !!! chiave ""
 
     “<strong>infinitesimo</strong>” non è un “numero infinitamente piccolo” (concetto privo di senso) ma una <strong>quantità variabile</strong> (successione o, come vedremo, funzione), che <strong>diviene indefinitamente piccola</strong>.
 
-<a id="box-defXX-27"></a>
+<a id="box-defXX-31"></a>
 
-!!! definizione "Definizione 11: di successione infinita"
+!!! definizione "Definizione 13: di successione infinita"
 
     Una successione $\{a_n\}$ tendente a $\pm \infty$ si dice <strong>infinita</strong>
 
-<a id="box-texexpbox1-28"></a>
+<a id="box-texexpbox1-32"></a>
 
 !!! esempio "Esempio 15: Successioni infinite"
 
@@ -651,9 +795,9 @@ title: "Successioni e limiti di successioni"
 
 - Talvolta è possibile precisare se una successione convergente <strong>si avvicina al suo limite per eccesso o per difetto</strong>
 
-<a id="box-defXX-29"></a>
+<a id="box-defXX-33"></a>
 
-!!! definizione "Definizione 12: di limite per eccesso"
+!!! definizione "Definizione 14: di limite per eccesso"
 
     Si dice che la successione $\{a_n\}$ tende a $\ell \in \mathbb{R}$ per <strong>eccesso</strong>  e si scrive
 
@@ -667,9 +811,9 @@ title: "Successioni e limiti di successioni"
     0 \le a_n - \ell < \varepsilon, {\rm ~~~~definitivamente}.
     $$
 
-<a id="box-defXX-30"></a>
+<a id="box-defXX-34"></a>
 
-!!! definizione "Definizione 13: di limite per difetto"
+!!! definizione "Definizione 15: di limite per difetto"
 
     Si dice che la successione $\{a_n\}$ tende a $\ell \in \mathbb{R}$ per <strong>difetto</strong>  e si scrive
 
@@ -687,7 +831,7 @@ title: "Successioni e limiti di successioni"
 
 - Dire che $a_n \rightarrow \ell^-$ per $n \rr \ip$ significa affermare che $a_n \rightarrow \ell$ e inoltre $a_n \le \ell$ definitivamente; dunque $a_n$ si avvicina ad $\ell$ <em>da sotto</em>, ossia approssima $\ell$ per difetto.
 
-<a id="box-texexpbox1-31"></a>
+<a id="box-texexpbox1-35"></a>
 
 !!! esempio "Esempio 16: Successione con limite per eccesso"
 
@@ -697,7 +841,7 @@ title: "Successioni e limiti di successioni"
 
     ![Figura 12](../img/successioni-01-limiti-successioni/fig12.svg){ .fig .ovale loading=lazy style="width:75%" }
 
-<a id="box-texexpbox1-32"></a>
+<a id="box-texexpbox1-36"></a>
 
 !!! esempio "Esempio 17: Successione con limite per difetto"
 
@@ -707,7 +851,7 @@ title: "Successioni e limiti di successioni"
 
     ![Figura 13](../img/successioni-01-limiti-successioni/fig13.svg){ .fig .ovale loading=lazy style="width:75%" }
 
-<a id="box-texexpbox1-33"></a>
+<a id="box-texexpbox1-37"></a>
 
 !!! esempio "Esempio 18: Successione con limite ma né per difetto né per eccesso"
 
@@ -721,59 +865,91 @@ title: "Successioni e limiti di successioni"
 
 ## 4. Successioni monotone
 
-<a id="box-defXX-34"></a>
+<a id="box-defXX-38"></a>
 
-!!! definizione "Definizione 14: di successioni monotone"
+!!! definizione "Definizione 16: di successioni monotone"
 
-    Una successione $\{a_n\}$ si dice <strong>monotona crescente</strong> se:
+    Una successione $\{a_n\}$ si dice <strong>non decrescente</strong> se:
 
     $$
     ~a_n \le a_{n+1},~ \forall n
     $$
 
-    Una successione $\{a_n\}$ si dice <strong>monotona strettamente crescente</strong> se:
+    Una successione $\{a_n\}$ si dice <strong>crescente</strong> se:
 
     $$
     ~a_n < a_{n+1},~ \forall n
     $$
 
-    Una successione $\{a_n\}$ si dice <strong>monotona decrescente</strong> se:
+    Una successione $\{a_n\}$ si dice <strong>non crescente</strong> se:
 
     $$
     ~a_n \ge a_{n+1},~ \forall n
     $$
 
-    Una successione $\{a_n\}$ si dice <strong>monotona strettamente decrescente</strong> se:
+    Una successione $\{a_n\}$ si dice <strong>decrescente</strong> se:
 
     $$
     ~a_n > a_{n+1},~ \forall n
     $$
 
-<a id="box-texexpbox1-35"></a>
+    Una successione è <strong>monotona</strong> se è non decrescente oppure non crescente; è <strong>strettamente monotona</strong> se è crescente oppure decrescente.
 
-!!! esempio "Esempio 19: Successioni monotone crescenti/decrescenti"
+<a id="box-defMONOTONE_DEFINITIVE-39"></a>
 
-    - La successione $\{ n^2\}$ è monotona strettamente crescente
+!!! definizione "Definizione 17: di successioni definitivamente monotone"
 
-    - La successione $\left\{ \frac{1}{n} \right\}$ è monotona strettamente decrescente
+    Una successione $\{a_n\}$ si dice <strong>definitivamente non decrescente</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n \le a_{n+1},~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente crescente</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n < a_{n+1},~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente non crescente</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n \ge a_{n+1},~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione $\{a_n\}$ si dice <strong>definitivamente decrescente</strong> se esiste $\tilde{n} \in \mathbb{N}$ tale che:
+
+    $$
+    ~a_n > a_{n+1},~ \forall n \ge \tilde{n}
+    $$
+
+    Una successione è <strong>definitivamente monotona</strong> se è definitivamente non decrescente oppure definitivamente non crescente; è <strong>definitivamente strettamente monotona</strong> se è definitivamente crescente oppure definitivamente decrescente.
+
+<a id="box-texexpbox1-40"></a>
+
+!!! esempio "Esempio 19: Successioni crescenti e decrescenti"
+
+    - La successione $\{ n^2\}$ è crescente
+
+    - La successione $\left\{ \frac{1}{n} \right\}$ è decrescente
 
     - La successione $\left\{ (-1)^n \right\}$ non è monotona
 
-    - ogni successione costante è monotona (crescente o decrescente, non strettamente)
+    - ogni successione costante è monotona (è sia non decrescente sia non crescente), ma non è strettamente monotona
 
 - Riguardo all'operazione di limite, queste successioni hanno una importanza particolare; infatti esse non sono <strong>mai irregolari</strong>, ma sono <strong>convergenti oppure divergenti</strong> a seconda che siano <strong>limitate oppure no</strong>.
 
-<a id="box-theoSUCC_MONOTONE-36"></a>
+<a id="box-theoSUCC_MONOTONE-41"></a>
 
-!!! teorema "Teorema 2: di monotonia delle successioni"
+!!! teorema "Teorema 3: di monotonia delle successioni"
 
-    - Sia $\{a_n\}$ una <strong>successione monotona crescente e superiormente limitata</strong>. Allora $\{a_n\}$ è convergente, e il suo limite è uguale a
+    - Sia $\{a_n\}$ una <strong>successione non decrescente e superiormente limitata</strong>. Allora $\{a_n\}$ è convergente, e il suo limite è uguale a
 
         $$
         \sup \{a_n: n \in \N\}.
         $$
 
-    - Sia $\{a_n\}$ una <strong>successione monotona decrescente e inferiormente limitata</strong>. Allora $\{a_n\}$ è convergente, e il suo limite è uguale a
+    - Sia $\{a_n\}$ una <strong>successione non crescente e inferiormente limitata</strong>. Allora $\{a_n\}$ è convergente, e il suo limite è uguale a
 
         $$
         \inf \{a_n: n \in \N\}.
@@ -781,7 +957,7 @@ title: "Successioni e limiti di successioni"
 
 ??? dimostrazione "Dimostrazione"
 
-    Consideriamo il caso delle successioni monotone crescenti e superiormente limitate.
+    Consideriamo il caso delle successioni non decrescenti e superiormente limitate.
 
     Poiché la successione è limitata superiormente, l'insieme dei valori assunti dalla successione $\{a_n : n \in  \N\}$ è limitato superiormente. 
 
@@ -823,7 +999,7 @@ title: "Successioni e limiti di successioni"
     a_{n(\varepsilon)} > \ell - \varepsilon.
     $$
 
-    D'altro canto la successione è monotona crescente, perciò per ogni $n \ge n(\varepsilon)$ risulta $a_n \ge a_{n(\varepsilon)}$. Abbiamo quindi provato che
+    D'altro canto la successione è non decrescente, perciò per ogni $n \ge n(\varepsilon)$ risulta $a_n \ge a_{n(\varepsilon)}$. Abbiamo quindi provato che
 
     $$
     a_n \ge a_{n(\varepsilon)} > \ell - \varepsilon {\rm ~~per~ogni~~} n \ge n(\varepsilon)
@@ -835,13 +1011,13 @@ title: "Successioni e limiti di successioni"
     \lim_{n \rightarrow +\infty} a_n = \ell
     $$
 
-    In maniera analoga si dimostra il caso delle successioni monotone decrescenti e inferiormente limitate. <span class="qed">□</span>
+    In maniera analoga si dimostra il caso delle successioni non crescenti e inferiormente limitate. <span class="qed">□</span>
 
 - L'idea della prova è resa dalla seguente figura:
 
     ![Figura 15](../img/successioni-01-limiti-successioni/fig15.svg){ .fig .ovale loading=lazy style="width:90%" }
 
-- Per esprimere anche simbolicamente che il limite è il $\sup$ (o l'$\inf$) di una successione crescente (o decrescente) si usa la notazione
+- Per esprimere anche simbolicamente che il limite è il $\sup$ (o l'$\inf$) di una successione non decrescente (o non crescente) si usa la notazione
 
     $$
     a_n \uparrow \ell {\rm ~~~oppure~~~} a_n \downarrow \ell
@@ -851,9 +1027,9 @@ title: "Successioni e limiti di successioni"
 
 - Questo teorema è una conseguenza dell'assioma di continuità $R_4$ dei numeri reali e pertanto vale se l'ambiente che consideriamo è $\R$. Ad esempio non è  vero che una successione crescente e limitata  di numeri razionali ammette sempre limite razionale, cioè in $\Q$.
 
-    <a id="box-texexpbox1-37"></a>
+    <a id="box-texexpbox1-42"></a>
 
-    !!! esempio "Esempio 20: Successione crescente e limitata  di $\Q$"
+    !!! esempio "Esempio 20: Successione crescente e limitata di $\Q$"
 
         Sia $\{a_n\}$ la successione così definita:
 
@@ -869,11 +1045,11 @@ title: "Successioni e limiti di successioni"
 
 - Il teorema di monotonia delle successioni si può completare con il prossimo corollario, che considera successioni limitate o illimitate.
 
-<a id="box-corolXXX-38"></a>
+<a id="box-corolXXX-43"></a>
 
-!!! teorema "Corollario 1:  del teorema di monotonia delle successioni"
+!!! teorema "Corollario 1: del teorema di monotonia delle successioni"
 
-    Sia $\{a_n\}$ una successione monotona crescente. Allora esiste
+    Sia $\{a_n\}$ una successione non decrescente. Allora esiste
 
     $$
     \lim_{n \rightarrow +\infty} a_n = \sup\{a_n: n \in \N\}.
@@ -881,7 +1057,7 @@ title: "Successioni e limiti di successioni"
 
 ??? dimostrazione "Dimostrazione"
 
-    Se $\{a_n\}$ è superiormente limitata, l'enunciato è contenuto nel teorema [Teorema 2](#box-theoSUCC_MONOTONE-36) di monotonia delle successioni.
+    Se $\{a_n\}$ è superiormente limitata, l'enunciato è contenuto nel teorema [Teorema 3](#box-theoSUCC_MONOTONE-41) di monotonia delle successioni.
 
     Se invece $\{a_n\}$ è superiormente illimitata, questo significa che fissato $M > 0$ esiste un $n(M) \in \N$  tale che
 
@@ -889,7 +1065,7 @@ title: "Successioni e limiti di successioni"
     a_{n(M)} > M
     $$
 
-    D'altro canto la successione è crescente, perciò per ogni $n \ge n(M)$ si ha
+    D'altro canto la successione è non decrescente, perciò per ogni $n \ge n(M)$ si ha
 
     $$
     a_n \ge a_{n(M)} > M
@@ -921,17 +1097,17 @@ Riassumendo abbiamo:
     n \mapsto a^n
     $$
 
-- Se $a > 1$, la successione è monotona crescente e illimitata superiormente.
+- Se $a > 1$, la successione è crescente e illimitata superiormente.
 
 - Se $a = 1$, la successione è costante.
 
-- Se $0 < a < 1$, la successione è monotona decrescente e tende a zero.
+- Se $0 < a < 1$, la successione è decrescente e tende a zero.
 
 - Se $a$ è negativo,  la successione non è  monotona.
 
-<a id="box-theoXXX-39"></a>
+<a id="box-theoXXX-44"></a>
 
-!!! osservazione "Osservazione 2"
+!!! osservazione "Osservazione 3"
 
     $$
     \lim_{n \rightarrow +\infty} a^n = 
@@ -945,19 +1121,21 @@ Riassumendo abbiamo:
 
 ??? dimostrazione "Dimostrazione"
 
-    Se $|a| <1$, dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che
+    Se $a = 0$, abbiamo $a^n = 0$ per ogni $n \ge 1$: la successione è definitivamente nulla e quindi $a^n \rr 0$.
+
+    Se $0 < |a| <1$, dobbiamo verificare che per ogni $\varepsilon>0$ esiste $n(\varepsilon) \in \N$ tale che
 
     $$
-    n>n(\varepsilon) \Rightarrow -\varepsilon<a_{n}<+\varepsilon
+    n \ge n(\varepsilon) \Rightarrow |a^{n}|< \varepsilon
     $$
 
-    Quindi si deve verificare che
+    Poiché $|a^n| = |a|^n$, si deve verificare che
 
     $$
-    n>n(\varepsilon)\Rightarrow -\varepsilon<|a|^n<\varepsilon
+    n \ge n(\varepsilon)\Rightarrow |a|^n<\varepsilon
     $$
 
-    La prima diseguaglianza è sempre vera mentre la seconda è soddisfatta se
+    Passando al logaritmo in base $|a|$, che è <em>decrescente</em> dato che $0<|a|<1$, la disuguaglianza è soddisfatta se
 
     $$
     n > \log_{|a|} \varepsilon
@@ -974,14 +1152,14 @@ Riassumendo abbiamo:
     Se $a > 1$, dobbiamo verificare che per ogni $M>0$ esiste $n(M) \in \N$ tale che
 
     $$
-    n> n(M)  \Rightarrow a_{n}>M
+    n \ge n(M)  \Rightarrow a_{n}>M
     $$
 
     La disuguaglianza
 
     $$
     a^n>M
-    {\rm ~~~è~soddisfatta~per~~} 
+    {\rm ~~~è~soddisfatta~per~~}
     n>\log_a{M}
     $$
 
@@ -993,25 +1171,41 @@ Riassumendo abbiamo:
 
     per soddisfare la condizione richiesta di divergenza. <span class="qed">□</span>
 
-<a id="box-texexpbox1-40"></a>
+??? dimostrazione "Dimostrazione"
 
-!!! esempio "Esempio 21: Progressione geometrica infinitesima e monotona  decrescente"
+    Se $a \le -1$, abbiamo $|a| \ge 1$ e quindi
+
+    $$
+    a^n = (-1)^n \: |a|^n {\rm ~~~~con~~~~} |a|^n \ge 1, ~~\forall n \in \N
+    $$
+
+    ossia $a^n \ge 1$ per $n$ pari e $a^n \le -1$ per $n$ dispari. Mostriamo che la successione non è né convergente né divergente, ovvero che è irregolare.
+
+    - **** <strong>Non è convergente</strong>: se per assurdo fosse $a^n \rr \ell \in \R$, fissato $\varepsilon = \frac{1}{2}$ dovremmo avere $|a^n - \ell| < \frac{1}{2}$ definitivamente. Invece, se $\ell \ge 0$, per ogni $n$ <em>dispari</em> abbiamo $|a^n - \ell| = |a|^n + \ell \ge 1$, mentre se $\ell < 0$, per ogni $n$ <em>pari</em> abbiamo $|a^n - \ell| = |a|^n + |\ell| > 1$. In entrambi i casi la disuguaglianza è violata per infiniti valori di $n$.
+
+    - **** <strong>Non è divergente</strong>: fissato $M = 1$, per ogni $n$ <em>dispari</em> abbiamo $a^n \le -1 < M$, quindi non può essere $a^n \rr \ip$; per ogni $n$ <em>pari</em> abbiamo $a^n \ge 1 > -M$, quindi non può essere $a^n \rr \im$.
+
+    Il limite quindi non esiste. <span class="qed">□</span>
+
+<a id="box-texexpbox1-45"></a>
+
+!!! esempio "Esempio 21: Progressione geometrica infinitesima e decrescente"
 
     ![Figura 16](../img/successioni-01-limiti-successioni/fig16.svg){ .fig loading=lazy style="width:75%" }
 
-<a id="box-texexpbox1-41"></a>
+<a id="box-texexpbox1-46"></a>
 
 !!! esempio "Esempio 22: Progressione geometrica infinitesima (ma non monotona)"
 
     ![Figura 17](../img/successioni-01-limiti-successioni/fig17.svg){ .fig loading=lazy style="width:75%" }
 
-<a id="box-texexpbox1-42"></a>
+<a id="box-texexpbox1-47"></a>
 
 !!! esempio "Esempio 23: Progressione geometrica divergente"
 
     ![Figura 18](../img/successioni-01-limiti-successioni/fig18.svg){ .fig loading=lazy style="width:75%" }
 
-<a id="box-texexpbox1-43"></a>
+<a id="box-texexpbox1-48"></a>
 
 !!! esempio "Esempio 24: Progressione geometrica né convergente né divergente"
 

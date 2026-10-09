@@ -318,7 +318,7 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 <a id="box-theoDDD-8"></a>
 
-!!! teorema "Teorema 2: del limite della funzione  derivata"
+!!! teorema "Teorema 2: del limite della funzione derivata"
 
     Se $f: [a, b) \rr \R$ è continua in $a$, derivabile in $(a, b)$, e $\lim_{x \rr a^+} f'(x) = m \in \R^*$ allora $f'_+(a)=m$.
 

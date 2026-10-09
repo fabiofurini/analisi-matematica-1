@@ -271,7 +271,7 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
     \frac{ \log(n+1) }{\log n} \thicksim \frac{ \log n }{ \log n} = 1 {\rm ~~~~quindi~~~~} \lim_{n \rr \ip} \frac{ \log(n+1) }{\log n} = 1
     $$
 
-    Dove $\log(n+1) \thicksim \log(n)$ per il principio di sostituzione. Ora usando il teorema sull'algebra dei limiti, abbiamo
+    Dove $\log(n+1) \thicksim \log(n)$ per il principio di sostituzione, dato che $n+1 \thicksim n$ e $\lim_{n \rr \ip} n = \ip$. Ora usando il teorema sull'algebra dei limiti, abbiamo
 
     $$
     \lim_{n \rr \ip} \frac{a_{n+1}}{a_n} = 1 \cdot 1 = 1

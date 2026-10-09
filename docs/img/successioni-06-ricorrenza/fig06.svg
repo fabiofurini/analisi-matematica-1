@@ -91,7 +91,7 @@
 <path style="fill:none;stroke-width:0.638;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M -0.00163614 0.000656374 L 13.126885 0.000656374 " transform="matrix(0.998542,0,0,-0.998542,108.00554,176.164718)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="108.00554" y="183.375187"/>
-  <use xlink:href="#glyph0-6" x="112.371187" y="183.375187"/>
+  <use xlink:href="#glyph0-1" x="112.371187" y="183.375187"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-6" x="116.745071" y="183.375187"/>

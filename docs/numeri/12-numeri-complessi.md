@@ -870,7 +870,7 @@ title: "Numeri complessi"
 
 <a id="box-texexpbox1-22"></a>
 
-!!! esempio "Esempio 12: equazioni di secondo grado nel campo complesso "
+!!! esempio "Esempio 12: equazioni di secondo grado nel campo complesso"
 
     - Vogliamo risolvere:
 

@@ -271,9 +271,7 @@ title: "Teorema del valore medio, massimi e minimi"
 
 <a id="box-theoTM-11"></a>
 
-!!! teorema "Teorema 3: del Criterio
-Differenziale di
-Monotonia"
+!!! teorema "Teorema 3: del Criterio Differenziale di Monotonia"
 
     Data una funzione $f:I \rr \R$, continua in $I$ e derivabile nei punti interni di $I$, allora:
 

@@ -126,7 +126,7 @@ title: "Sviluppi asintotici"
 
     <a id="box-texexpbox1-3"></a>
 
-    !!! esempio "Esempio 2:  $o$ piccolo e prodotti"
+    !!! esempio "Esempio 2: $o$ piccolo e prodotti"
 
         Ad esempio per $x \rr c$:
 
@@ -159,7 +159,7 @@ title: "Sviluppi asintotici"
 
 <a id="box-texexpbox1-5"></a>
 
-!!! esempio "Esempio 3:  $o(1)$ "
+!!! esempio "Esempio 3: $o(1)$"
 
     Ad esempio:
 
@@ -187,7 +187,7 @@ title: "Sviluppi asintotici"
 
 <a id="box-texexpbox1-6"></a>
 
-!!! esempio "Esempio 4:  $o(1)$ "
+!!! esempio "Esempio 4: $o(1)$"
 
     Ad esempio:
 
@@ -228,7 +228,7 @@ title: "Sviluppi asintotici"
 
 <a id="box-texexpbox1-7"></a>
 
-!!! esempio "Esempio 5:  $o(1)$ "
+!!! esempio "Esempio 5: $o(1)$"
 
     Abbiamo
 

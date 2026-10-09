@@ -62,7 +62,7 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 4 · [Relazioni binarie](pdf/slide-numeri-04-relazioni-binarie.pdf)
 - Capitolo 5 · [Campi ordinati, estremo superiore/inferiore e assioma di continuità](pdf/slide-numeri-05-campi-ordinati.pdf)
 - Capitolo 6 · [Radicali, potenze, logaritmi e aritmetica modulare](pdf/slide-numeri-06-radicali-potenze-logaritmi.pdf)
-- Capitolo 7 · [Sommatorie e progressioni geometriche](pdf/slide-numeri-07-sommatorie.pdf)
+- Capitolo 7 · [Sommatorie, progressioni geometriche e aritmetiche](pdf/slide-numeri-07-sommatorie.pdf)
 - Capitolo 8 · [Principio di induzione](pdf/slide-numeri-08-induzione.pdf)
 - Capitolo 9 · [Fattoriali, coefficienti binomiali e disuguaglianza triangolare](pdf/slide-numeri-09-fattoriali-binomiali.pdf)
 - Capitolo 10 · [Successione di Fibonacci](pdf/slide-numeri-10-fibonacci.pdf)

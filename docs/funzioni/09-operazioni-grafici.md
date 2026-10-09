@@ -97,7 +97,7 @@ title: "Operazioni sui grafici"
 
 <a id="box-texexpbox1-4"></a>
 
-!!! esempio "Esempio 4: Operazioni sui grafici relative a $y_4 =  f(k\: x)$"
+!!! esempio "Esempio 4: Operazioni sui grafici relative a $y_4 = f(k\: x)$"
 
     Consideriamo $y = \sin x$, allora $y_4 =  \sin(k\: x).$ Con $k=\frac{1}{2}$ e $k=2$ abbiamo:
 
@@ -107,7 +107,7 @@ title: "Operazioni sui grafici"
 
 <a id="box-texexpbox1-5"></a>
 
-!!! esempio "Esempio 5: Operazioni sui grafici relative a $y_4=  f(k\: x)$"
+!!! esempio "Esempio 5: Operazioni sui grafici relative a $y_4= f(k\: x)$"
 
     Consideriamo $y = \ln x$, allora $y_4 =  \ln(k\: x).$ Con $k=-1$ abbiamo:
 
@@ -133,7 +133,7 @@ title: "Operazioni sui grafici"
 
 <a id="box-texexpbox1-6"></a>
 
-!!! esempio "Esempio 6: Operazioni sui grafici relative a $y_5=  |f(x)|$"
+!!! esempio "Esempio 6: Operazioni sui grafici relative a $y_5= |f(x)|$"
 
     Consideriamo $y = x$ allora $y_5 = |x|$
 
@@ -143,7 +143,7 @@ title: "Operazioni sui grafici"
 
 <a id="box-texexpbox1-7"></a>
 
-!!! esempio "Esempio 7: Operazioni sui grafici relative a $y_5=  |f( x)|$"
+!!! esempio "Esempio 7: Operazioni sui grafici relative a $y_5= |f( x)|$"
 
     Consideriamo $y = \sin x$ allora $y_5  = |\sin x|$
 

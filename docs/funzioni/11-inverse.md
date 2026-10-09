@@ -69,7 +69,7 @@ title: "Funzioni inverse"
 
 <a id="box-texexpbox1-3"></a>
 
-!!! esempio "Esempio 1:  grafico di funzione  invertibile "
+!!! esempio "Esempio 1: grafico di funzione invertibile"
 
     ![Figura 2](../img/funzioni-11-inverse/fig02.svg){ .fig .ovale loading=lazy style="width:80%" }
 
@@ -77,7 +77,7 @@ title: "Funzioni inverse"
 
 <a id="box-texexpbox1-4"></a>
 
-!!! esempio "Esempio 2: grafico di funzione non invertibile "
+!!! esempio "Esempio 2: grafico di funzione non invertibile"
 
     ![Figura 3](../img/funzioni-11-inverse/fig03.svg){ .fig .ovale loading=lazy style="width:80%" }
 

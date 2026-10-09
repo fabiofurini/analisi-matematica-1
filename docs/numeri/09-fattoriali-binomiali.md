@@ -496,6 +496,9 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 - Valgono anche le seguenti proprietà immediate:
 
     \begin{equation}
-    |b\:c| = |b| \: |c|, \qquad \left| \frac{b}{c}\right|= \frac{|b|}{|c|}, \qquad |-b|=|b| \qquad \forall  b,c \in \mathbb{R}.
+    \begin{aligned}
+    |b\:c| &= |b| \: |c|, \qquad |-b|=|b| & &\forall  b,c \in \mathbb{R},\\[1ex]
+    \left| \frac{b}{c}\right| &= \frac{|b|}{|c|} & &\forall  b,c \in \mathbb{R},~ c \neq 0.
+    \end{aligned}
     \label{ass_7}
     \end{equation}

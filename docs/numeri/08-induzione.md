@@ -280,7 +280,7 @@ title: "Principio di induzione"
 
 !!! osservazione "Osservazione 5: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
 
-    Dato $q \in\ \R_+$, per ogni intero $n \ge 1$ vale:
+    Dato $q \in \R$, per ogni intero $n \ge 1$ vale (con la convenzione $0^0=1$ per il caso $q=0$):
 
     \begin{equation}
     \label{GEOM}

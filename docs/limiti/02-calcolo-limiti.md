@@ -18,7 +18,7 @@ title: "Calcolo dei limiti di funzioni"
 
 <a id="box-theoALGEBRA_LIMITI_FUNZIONI-1"></a>
 
-!!! teorema "Teorema 1: dell'algebra dei limiti  caso dei limiti finiti"
+!!! teorema "Teorema 1: dell'algebra dei limiti caso dei limiti finiti"
 
     Ipotesi per $x \rr c$:
 
@@ -240,7 +240,7 @@ title: "Calcolo dei limiti di funzioni"
 
 <a id="box-corolCONFRONTO_FUNZIONI_A-6"></a>
 
-!!! teorema "Corollario 1: del teorema del confronto  (parte I)"
+!!! teorema "Corollario 1: del teorema del confronto (parte I)"
 
     Ipotesi:
 
@@ -296,7 +296,7 @@ title: "Calcolo dei limiti di funzioni"
 
 <a id="box-corolCONFRONTO_FUNZIONI_B-8"></a>
 
-!!! teorema "Corollario 2: del teorema del confronto  (parte II)"
+!!! teorema "Corollario 2: del teorema del confronto (parte II)"
 
     Ipotesi:
 
@@ -540,7 +540,7 @@ title: "Calcolo dei limiti di funzioni"
 
 <a id="box-texexpbox1-15"></a>
 
-!!! esempio "Esempio 5: Calcolo del limite col teorema del cambio di variabile nel limite "
+!!! esempio "Esempio 5: Calcolo del limite col teorema del cambio di variabile nel limite"
 
     Calcoliamo i limiti
 

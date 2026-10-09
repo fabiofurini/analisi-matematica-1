@@ -14,6 +14,28 @@ title: "Insiemi numerici e intervalli"
 
 ### 1.1 I numeri naturali
 
+$\N$ è l'insieme dei <strong>numeri naturali</strong>, ossia i numeri che si usano per contare:
+
+$$
+\N = \{0,~ 1,~ 2,~ 3,~ 4,~ \dots\}
+$$
+
+- Ricordiamo la convenzione adottata in queste note: lo <strong>zero è un numero naturale</strong>, ovvero $0 \in \N$. Altri testi escludono lo zero da $\N$: è solo una convenzione, ma va dichiarata una volta per tutte.
+
+- Indichiamo con $\N_{>0}$ l'insieme dei <strong>numeri naturali positivi</strong>:
+
+    $$
+    \N_{>0} = \N \setminus \{0\} = \{1,~ 2,~ 3,~ 4,~ \dots\}
+    $$
+
+!!! chiave ""
+
+    Nel capitolo <em>Insiemi</em> abbiamo già introdotto, per i numeri naturali:
+
+    - le definizioni di numero <strong>pari</strong> ($n = 2\,m$) e di numero <strong>dispari</strong> ($n = 2\,m+1$), con $m \in \N$, e il fatto che ogni numero naturale è pari oppure dispari, ma mai entrambe le cose;
+
+    - l'<strong>assioma del buon ordinamento</strong>, secondo cui ogni sottoinsieme non vuoto di $\N$ possiede il minimo.
+
 ### 1.2 I numeri interi
 
 $\Z$ è l'insieme dei <strong>numeri interi</strong> (detti anche numeri relativi), ossia:
@@ -36,116 +58,21 @@ I numeri razionali possono essere scritti anche in forma decimale. Ad esempio:
 \frac{3}{4} = 0, 75, {\rm ~~~mentre~~~} \frac{1}{3} =  0,333 \dots {\rm }= 0,\overline{3}.
 \end{align*}
 
-Un numero razionale, scritto in forma decimale, dopo la virgola può presentare un numero finito di cifre (diverse da zero), oppure un numero infinito di cifre diverse da zero, che però si ripetono <em>periodicamente</em>.
+Un numero razionale, scritto in forma decimale, ha un'<strong>espansione decimale finita o infinita periodica</strong>: dopo la virgola compare un numero finito di cifre, oppure un numero infinito di cifre che da un certo punto in poi si ripetono <em>periodicamente</em>.
 
-<a id="box-obserXX-1"></a>
+!!! chiave ""
 
-!!! osservazione "Osservazione 1"
+    Uno stesso numero razionale può avere due espansioni decimali diverse. L'esempio classico è l'uguaglianza
 
     $$
     0,\overline{9}=1
     $$
 
-!!! chiave ""
-
-    Esistono differenti prove di questa osservazione basate su differenti tecniche matematiche.
-
-??? dimostrazione "Dimostrazione"
-
-    Una semplice prova deriva direttamente dalla definizione di $1$ diviso $3$, abbiamo infatti:
-
-    \begin{align*}
-    \frac{1}{3} &= 0,\overline{3}\\
-    \frac{1}{3} \cdot 3 &= 0,\overline{3} \cdot 3\\
-     1 &= 0,\overline{9}
-    \end{align*}
-
-    <p class="qed-riga"><span class="qed">□</span></p>
-
-??? dimostrazione "Dimostrazione"
-
-    Usando argomenti algebrici possiamo scrivere:
-
-    \begin{align*}
-    x &= 0.999\dots\\
-    10\:x &= 9.999\dots & {\rm moltiplicando~per~} 10 \\
-    10\:x &= 9 + 0.999\dots & {\rm dividendo~la~parte~intera~da~quella~frazionaria} \\
-    10\:x &= 9 + x & {\rm per~definizione~di~} x\\
-    9\:x &= 9  & {\rm sottraendo~} x\\
-    x &= 1  & {\rm dividendo~per~} 9
-    \end{align*}
-
-    <p class="qed-riga"><span class="qed">□</span></p>
-
-??? dimostrazione "Dimostrazione"
-
-    Una prova per assurdo è la seguente:
-
-    \begin{align*}
-    0,\overline{9} & \neq 1\\
-    0,\overline{9} \cdot 9 & \neq 1 \cdot 9\\
-    0,\overline{9} \cdot 9 + 0,\overline{9}& \neq 1 \cdot 9 +0,\overline{9}\\
-    0,\overline{9} \cdot 9 + 0,\overline{9}& \neq 9,\overline{9}\\
-    0,\overline{9} \cdot  (9+1) & \neq 9,\overline{9}\\
-    0,\overline{9} \cdot  (10) & \neq 9,\overline{9}\\
-    9,\overline{9} & \neq 9,\overline{9} ~~~~~~ {\rm assurdo!}
-    \end{align*}
-
-    <p class="qed-riga"><span class="qed">□</span></p>
-
-!!! chiave ""
-
-    Altre prove partono dall'assunzione  che due numeri siano identici se e solo se la loro differenza è uguale a zero e si basano sul calcolare quanto valga $1 - 0,\overline{9}$.
-
-??? dimostrazione "Dimostrazione"
-
-    Scriviamo il numero $0,999...$ con $n$ cifre dopo la virgola come $0,(9)_n$, quindi $0,(9)_1 = 0.9$, $0,(9)_2 = 0.99$, $0,(9)_3 = 0.999$, e così via. 
-
-    Dato  $\frac{1}{10^n} = 0,0 \dots 01$, con $n$ cifre dopo la virgola, le regole di addizione per i numeri decimali implicano
-
-    $$
-    0,(9)_n + \frac{1}{10^n} = 1
-    {\rm ~~inoltre~~}
-    0,(9)_n < 1,  \forall n \in \N.
-    $$
-
-    Si deve dimostrare che $1$ è il numero più piccolo che non sia inferiore a tutti gli $0,(9)_n$. Per questo basta provare che, se un numero $x$ non è maggiore di 1 e non minore di tutti gli $0.(9)_n$, allora $x = 1$.
-
-    Quindi sia $x$ tale che
-
-    $$
-    0,(9)_n \le x \le 1
-    $$
-
-    per ogni intero positivo $n$. Quindi
-
-    $$
-    1-1 \le 1 -  x \le 1- 0,(9)_n
-    $$
-
-    che, usando l'aritmetica di base e la prima uguaglianza stabilita sopra, semplifica a
-
-    $$
-    0 \le 1 -  x  \le \frac{1}{10^n}
-    $$
-
-    Ciò implica che la differenza tra $1$ e $x$ è minore dell'inverso di qualsiasi intero positivo. Quindi questa differenza deve essere zero, e quindi $x = 1$; che a sua volta implica
-
-    $$
-    0.999\dots = 1
-    $$
-
-    <p class="qed-riga"><span class="qed">□</span></p>
-
-!!! chiave ""
-
-    Questa dimostrazione si basa sul fatto che 0 è l'unico numero non negativo minore di tutti gli inversi degli interi positivi, o equivalentemente che non esiste un numero maggiore di ogni intero.
-
-    Questa è la <strong>proprietà di Archimede</strong>, che si verifica per i numeri razionali e reali.
+    di cui abbiamo dato quattro dimostrazioni diverse nel capitolo <em>Insiemi</em>, e che quindi qui non ripetiamo.
 
 ### 1.4 I numeri reali
 
-$\R$  è l'insieme dei <strong>numeri reali</strong>, ossia quelli che, scritti in forma decimale, presentano dopo la virgola una successione qualsiasi di cifre diverse da zero, eventualmente anche <em>infinita</em> e <em>non periodica</em>.
+$\R$  è l'insieme dei <strong>numeri reali</strong>, ossia quelli che si identificano con <strong>espansioni decimali finite o infinite, periodiche o non periodiche</strong>: dopo la virgola può comparire un allineamento qualsiasi di cifre, eventualmente anche <em>infinito</em> e <em>non periodico</em>.
 
 Che esistano numeri di quest'ultimo tipo (ossia reali ma non razionali), si capisce riflettendo su esempi come:
 
@@ -153,7 +80,7 @@ $$
 0,10110111011110 \dots
 $$
 
-Il numero precedente dopo la virgola ha: una cifra uguale a $1$, poi $0$, poi due cifre uguali a $1$,  poi $0$, poi tre cifre uguali a $1$ … e così via. È chiaro che questo criterio definisce con precisione un numero decimale. D'altro canto, l'allineamento di cifre diverse da zero dopo la virgola non è né finito né periodico: questo numero perciò è irrazionale.
+Il numero precedente dopo la virgola ha: una cifra uguale a $1$, poi $0$, poi due cifre uguali a $1$,  poi $0$, poi tre cifre uguali a $1$ … e così via. È chiaro che questo criterio definisce con precisione un numero decimale. D'altro canto, l'allineamento delle cifre dopo la virgola non è né finito né periodico: questo numero perciò è irrazionale.
 
 ### 1.5 I numeri complessi
 
@@ -177,13 +104,35 @@ $\C$ è l'insieme dei <strong>numeri complessi</strong>, ossia del tipo $a + i\:
 
     - esistono numeri complessi non reali (i numeri immaginari).
 
+![Figura 1](../img/numeri-03-insiemi-numerici/fig01.svg){ .fig .ovale loading=lazy style="width:62%" }
+
+!!! chiave ""
+
+    Come per $\N_{>0}$, indichiamo con
+
+    $$
+    \Z_{>0}, \qquad \Q_{>0}, \qquad \R_{>0}
+    $$
+
+    gli insiemi dei numeri interi, razionali e reali <strong>positivi</strong>, e con
+
+    $$
+    \Z_{\ge 0}, \qquad \Q_{\ge 0}, \qquad \R_{\ge 0}
+    $$
+
+    gli insiemi dei numeri interi, razionali e reali <strong>non negativi</strong> (cioè positivi o nulli). Ad esempio:
+
+    $$
+    \R_{>0} = \{x \in \R : x > 0\} \qquad {\rm ~~e~~} \qquad \Z_{\ge 0} = \{x \in \Z : x \ge 0\} = \N
+    $$
+
 ## 2. Intervalli
 
-<a id="box-defXX-2"></a>
+<a id="box-def_intervallo-limitato-1"></a>
 
-!!! definizione "Definizione 1: di intervallo"
+!!! definizione "Definizione 1: di intervallo limitato"
 
-    Dati due numeri reali $a$, $b$, si chiama <strong>intervallo</strong> di estremi $a$ e $b$ uno dei seguenti insiemi:
+    Dati due numeri reali $a$, $b$, si chiama <strong>intervallo limitato</strong> di estremi $a$ e $b$ uno dei seguenti insiemi:
 
     \begin{align*}
     [a,b] = \big\{ x \in \mathbb{R}:  a \le x \le b \big\}, & \qquad
@@ -196,41 +145,59 @@ $\C$ è l'insieme dei <strong>numeri complessi</strong>, ossia del tipo $a + i\:
 
 - Gli intervalli $[a, b]$ si dicono <strong>chiusi</strong>; quelli $(a, b)$ si dicono <strong>aperti</strong>.
 
-- Tutti gli intervalli indicati sopra sono limitati; si chiamano intervalli (illimitati) anche le semirette, per esempio:
+<a id="box-def_intervallo-illimitato-2"></a>
+
+!!! definizione "Definizione 2: di intervallo illimitato"
+
+    Dato un numero reale $a$, si chiama <strong>intervallo illimitato</strong> (o <strong>semiretta</strong>) di estremo $a$ uno dei seguenti insiemi:
 
     \begin{align*}
-    (-\infty,b) = \big\{ x \in \mathbb{R}:  x < b \big\} \\[2ex]
-     [a,+\infty) = \big\{ x \in \mathbb{R}:  x \ge a \big\}
+    [a,+\infty) = \big\{ x \in \mathbb{R}:  x \ge a \big\}, & \qquad
+     (a,+\infty) = \big\{ x \in \mathbb{R}:  x > a \big\} \\[2ex]
+     (-\infty,a] = \big\{ x \in \mathbb{R}:  x \le a \big\}, &\qquad
+     (-\infty,a) = \big\{ x \in \mathbb{R}:  x < a \big\}
     \end{align*}
 
-    o l'intera retta
+- I simboli $-\infty$ e $+\infty$ <strong>non sono numeri reali</strong>: non sono estremi che possano appartenere all'insieme, e perciò accanto a essi si scrive sempre la parentesi tonda.
+
+- Anche l'intera retta è un intervallo illimitato:
 
     $$
     \mathbb{R} = (-\infty, +\infty)
     $$
 
-    ![Figura 1](../img/numeri-03-insiemi-numerici/fig01.svg){ .fig .ovale loading=lazy style="width:80%" }
+    ![Figura 2](../img/numeri-03-insiemi-numerici/fig02.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+<a id="box-ex_intervalli-concreti-3"></a>
+
+!!! esempio "Esempio 1: di intervalli"
+
+    La rappresentazione grafica dell'intervallo limitato chiuso $[-3,-2]$ e dell'intervallo illimitato aperto $(2,+\infty)$ è la seguente:
+
+    ![Figura 3](../img/numeri-03-insiemi-numerici/fig03.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+    Il primo contiene i suoi due estremi, il secondo non contiene il suo estremo $2$ e non è limitato superiormente.
 
 !!! chiave ""
 
     Si può dimostrare che gli intervalli, limitati o illimitati, sono tutti e soli i sottoinsiemi $I$ di $\mathbb{R}$ che soddisfano la seguente proprietà  (detta <strong>connessione</strong>):
 
     $$
-    x_1 < x_2 < x_3, {\rm ~~se~~} x_1,x_3 \in I, {\rm ~~allora~~} x_2 \in I
+    \forall x_1, x_2, x_3 \in \R {\rm ~~tali~che~~} x_1 < x_2 < x_3, {\rm ~~se~~} x_1,x_3 \in I, {\rm ~~allora~~} x_2 \in I
     $$
 
 - Nel seguito ci capiterà di considerare il prodotto cartesiano di due (o più) intervalli, cui si può dare il significato geometrico di rettangolo (in due dimensioni) o parallelepipedo (in tre dimensioni).
 
-<a id="box-texexpbox1-3"></a>
+<a id="box-texexpbox1-4"></a>
 
-!!! esempio "Esempio 1: Prodotto cartesiano di intervalli"
+!!! esempio "Esempio 2: Prodotto cartesiano di intervalli"
 
     Sia $A = [0, 1]$, $B = [1, 2]$; la figura
 
-    ![Figura 2](../img/numeri-03-insiemi-numerici/fig02.svg){ .fig .ovale loading=lazy style="width:25%" }
-
-    ![Figura 3](../img/numeri-03-insiemi-numerici/fig03.svg){ .fig .ovale loading=lazy style="width:25%" }
-
     ![Figura 4](../img/numeri-03-insiemi-numerici/fig04.svg){ .fig .ovale loading=lazy style="width:25%" }
+
+    ![Figura 5](../img/numeri-03-insiemi-numerici/fig05.svg){ .fig .ovale loading=lazy style="width:25%" }
+
+    ![Figura 6](../img/numeri-03-insiemi-numerici/fig06.svg){ .fig .ovale loading=lazy style="width:25%" }
 
     illustra gli insiemi $A \times B$ , $B \times A$ , $A \times A$ indicato anche con $A^2$. In generale,  $A \times B$  è diverso da $B \times A$.

@@ -52,11 +52,11 @@
 
     [:octicons-arrow-right-24: Leggi il capitolo](06-radicali-potenze-logaritmi.md)
 
--   **7. Sommatorie e progressioni geometriche**
+-   **7. Sommatorie, progressioni geometriche e aritmetiche**
 
     ---
 
-    Sommatorie · Progressioni geometriche
+    Sommatorie · Progressioni geometriche · Progressioni aritmetiche
 
     [:octicons-arrow-right-24: Leggi il capitolo](07-sommatorie.md)
 

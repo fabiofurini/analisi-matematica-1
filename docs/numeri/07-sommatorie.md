@@ -1,8 +1,8 @@
 ---
-title: "Sommatorie e progressioni geometriche"
+title: "Sommatorie, progressioni geometriche e aritmetiche"
 ---
 
-# Sommatorie e progressioni geometriche
+# Sommatorie, progressioni geometriche e aritmetiche
 
 <div class="info-capitolo" markdown>
 
@@ -358,13 +358,27 @@ title: "Sommatorie e progressioni geometriche"
 
     ![Figura 2](../img/numeri-07-sommatorie/fig02.svg){ .fig .ovale loading=lazy style="width:85%" }
 
+<a id="box-texexpbox1-16"></a>
+
+!!! esempio "Esempio 4: progressione geometrica con ragione negativa"
+
+    - Con $a=1$ e $q=-2$, i primi 4 termini sono:
+
+        $$
+        1,~~-2,~~4,~~-8
+        $$
+
+        Con ragione negativa i termini cambiano di segno a ogni passo: quelli in posizione dispari sono positivi, quelli in posizione pari sono negativi.
+
+    ![Figura 3](../img/numeri-07-sommatorie/fig03.svg){ .fig .ovale loading=lazy style="width:85%" }
+
 ### 2.1 Sommatorie dei termini delle progressioni geometriche
 
-<a id="box-propGEOM-16"></a>
+<a id="box-propGEOM-17"></a>
 
 !!! osservazione "Osservazione 11: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
 
-    Dato $q \in\ \R_+$, per ogni numero naturale $n \ge 1$ vale:
+    Dato $q \in \R$, per ogni numero naturale $n \ge 1$ vale:
 
     \begin{equation}
     \label{GEOM}
@@ -405,7 +419,15 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-- Dati $q \in\ \R_+, n \in \N, n \ge 1$ e $a \in \R$, la formula \(\eqref{GEOM}\) si estende come segue:
+- La dimostrazione non usa mai il segno della ragione: la formula \(\eqref{GEOM}\) vale per ogni $q \in \R$, positivo, nullo o negativo. L'unico caso da precisare è $q=0$: il primo addendo della sommatoria è $q^{1-1}=0^0$, che qui si intende uguale a $1$ (convenzione $0^0=1$). Con questa convenzione, per ogni $n \ge 1$ abbiamo:
+
+    $$
+    \sum_{k=1}^{n} 0^{k-1} = 1 + 0 + \dots + 0 = 1 \qquad {\rm ~~e~~} \qquad \frac{0^{n}-1}{0-1} = \frac{-1}{-1} = 1
+    $$
+
+    e quindi la formula \(\eqref{GEOM}\) resta vera.
+
+- Dati $q \in \R, n \in \N, n \ge 1$ e $a \in \R$, la formula \(\eqref{GEOM}\) si estende come segue:
 
     \begin{equation}
     \sum_{k=1}^{n} a \; q^{k-1}  = 
@@ -428,9 +450,9 @@ title: "Sommatorie e progressioni geometriche"
 
 - La formula \(\eqref{GEOM}\) si dimostra anche per induzione, nel capitolo «Principio di induzione».
 
-<a id="box-texexpbox1-17"></a>
+<a id="box-texexpbox1-18"></a>
 
-!!! esempio "Esempio 4: somma dei primi $n$ termini di progressioni geometriche"
+!!! esempio "Esempio 5: somma dei primi $n$ termini di progressioni geometriche"
 
     - Con $a=2$ e $q=\frac{1}{2}$, i primi 4 termini sono:
 
@@ -466,4 +488,209 @@ title: "Sommatorie e progressioni geometriche"
 
         $$
         \sum_{k=1}^4  2^{k-1} = \frac{2^4-1}{2-1} = 16-1 =15
+        $$
+
+    - Con $a=1$ e $q=-2$, i primi 4 termini sono:
+
+        $$
+        1,~~-2,~~4,~~-8 \qquad {\rm ~~e~~} \qquad  1 - 2+ 4 -8= -5
+        $$
+
+        la somma dei primi $n=4$ termini è data dalla formula:
+
+        $$
+        \sum_{k=1}^4  (-2)^{k-1} = \frac{(-2)^4-1}{-2-1} = \frac{16-1}{-3} = \frac{15}{-3} = -5
+        $$
+
+## 3. Progressioni aritmetiche
+
+<a id="box-defPROGARIT-19"></a>
+
+!!! definizione "Definizione 3: di progressione aritmetica"
+
+    Una sequenza di numeri reali è in <strong>progressione aritmetica</strong> se la differenza tra ogni termine (a partire dal secondo) e il precedente è costante. Tale costante si dice ragione della progressione.
+
+!!! chiave ""
+
+    Dato il primo termine $a \in \R$ e la ragione $d \in \R$, l'associata progressione aritmetica è:
+
+    $$
+    a,~~ a + d,~~ a + 2\:d,~~ a + 3\:d,~~ a + 4\:d,~~ \dots
+    $$
+
+    Ogni termine (a partire dal secondo) si ottiene dal precedente sommandogli $d$. Il  $k$-esimo termine ($k \in \N$, $k \ge 1$) si può  scrivere $a + (k-1)\:d$ e abbiamo:
+
+    \begin{align*}
+    &a+ (1-1)\:d=a+0\:d=a   &{\rm primo~termine,~in~posizione~} k=1\\
+    &a+ (2-1)\:d=a+1\:d=a+d  &{\rm secondo~termine,~in~posizione~} k=2\\
+    &a+ (3-1)\:d=a+2\:d   &{\rm terzo~termine,~in~posizione~} k=3\\
+    &a+ (4-1)\:d=a+3\:d   &{\rm quarto~termine,~in~posizione~} k=4\\
+    &\dots &   \dots
+    \end{align*}
+
+- La progressione aritmetica è l'analogo additivo della progressione geometrica: nella progressione geometrica si <em>moltiplica</em> ogni termine per la ragione $q$, nella progressione aritmetica si <em>somma</em> a ogni termine la ragione $d$.
+
+<a id="box-propTERMARIT-20"></a>
+
+!!! osservazione "Osservazione 12: termine $k$-esimo di una progressione aritmetica"
+
+    Dato il primo termine $a \in \R$ e la ragione $d \in \R$, indichiamo con $t_k$ il termine in posizione $k$ della progressione aritmetica. La relazione ricorsiva che definisce la progressione è:
+
+    \begin{equation}
+    \label{ARITREC}
+    t_1 = a \qquad {\rm e} \qquad t_k = t_{k-1} + d \qquad {\rm per~ogni~numero~naturale~} k \ge 2
+    \end{equation}
+
+    e la formula chiusa del termine $k$-esimo è:
+
+    \begin{equation}
+    \label{ARITTERM}
+    t_k = a + (k-1) \: d \qquad {\rm per~ogni~numero~naturale~} k \ge 1
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    La formula chiusa \(\eqref{ARITTERM}\) si ottiene applicando ripetutamente la relazione ricorsiva \(\eqref{ARITREC}\):
+
+    \begin{align*}
+    t_1 &= a = a + 0 \: d\\[1ex]
+    t_2 &= t_1 + d = a + d = a + 1 \: d\\[1ex]
+    t_3 &= t_2 + d = a + d + d  = a + 2 \: d\\[1ex]
+    t_4 &= t_3 + d = a + 2 \: d + d  = a + 3 \: d\\[1ex]
+    &\vdots\\[1ex]
+    t_k &= t_{k-1} + d = a + (k-2) \: d + d  = a + (k-1) \: d
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+- La formula chiusa \(\eqref{ARITTERM}\) si ottiene anche con il seguente ragionamento, che non richiede i puntini di sospensione. Scriviamo la relazione ricorsiva \(\eqref{ARITREC}\) nella forma $t_j - t_{j-1} = d$ per ogni posizione $j$ da $2$ a $k$:
+
+    \begin{align*}
+    t_2 - t_1 &= d \\[1ex]
+    t_3 - t_2 &= d \\[1ex]
+    t_4 - t_3 &= d \\[1ex]
+    &\vdots\\[1ex]
+    t_k - t_{k-1} &= d
+    \end{align*}
+
+    Sommiamo ora tutte queste $k-1$ uguaglianze. A destra sommiamo $d$ con sé stesso $k-1$ volte e otteniamo $d \: (k-1)$. A sinistra, la somma è <strong>telescopica</strong>: ogni termine compare due volte, una volta con il segno $+$ e una volta con il segno $-$, tranne $t_k$ e $t_1$:
+
+    $$
+    \underbrace{(t_2 - t_1) + (t_3 - t_2) + (t_4 - t_3) + \dots + (t_k - t_{k-1})}_{=\sum_{j=2}^{k} (t_j - t_{j-1})} = t_k - t_1 = t_k - a
+    $$
+
+    Uguagliando i due membri abbiamo $t_k - a = d \: (k-1)$, cioè la formula chiusa:
+
+    $$
+    t_k = a + (k-1) \: d \qquad {\rm per~ogni~numero~naturale~} k \ge 1
+    $$
+
+<a id="box-texexpbox1-21"></a>
+
+!!! esempio "Esempio 6: progressioni aritmetiche"
+
+    - Con $a=1$ e $d=\frac{1}{2}$, i primi 4 termini sono:
+
+        $$
+        1,~~\frac{3}{2},~~2,~~\frac{5}{2}
+        $$
+
+    ![Figura 4](../img/numeri-07-sommatorie/fig04.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+    - Con $a=2$ e $d=2$, i primi 4 termini sono:
+
+        $$
+        2,~~4,~~6,~~8
+        $$
+
+        cioè i primi 4 numeri pari (senza lo zero).
+
+    ![Figura 5](../img/numeri-07-sommatorie/fig05.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+### 3.1 Sommatorie dei termini delle progressioni aritmetiche
+
+<a id="box-propARIT-22"></a>
+
+!!! osservazione "Osservazione 13: somma dei primi $n$ termini della progressione aritmetica ($a=0$)"
+
+    Dato $d \in \R$, per ogni numero naturale $n \ge 1$ vale:
+
+    \begin{equation}
+    \label{ARIT}
+    \sum_{k=1}^{n} d \: (k-1) = d \: \left( \frac{n \: (n-1)}{2} \right)
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    Usando il prodotto per una costante \(\eqref{P1}\) e la riflessione di indici \(\eqref{P6}\), con lo stesso ragionamento usato per la somma dei primi $n$ numeri naturali, abbiamo:
+
+    \begin{align*}
+    \sum_{k=1}^{n} d \: (k-1) &= \frac{d}{2} \left( \sum_{k=1}^{n} (k-1) + \sum_{k=1}^{n} (k-1) \right) = \frac{d}{2} \left( \sum_{k=1}^{n} (k-1) + \sum_{k=1}^{n} \big( n-k \big) \right)\\[2ex]
+     & = \frac{d}{2}  \; \sum_{k=1}^{n}  \big(k-1+ n-k \big)
+      = \frac{d}{2} \; \sum_{k=1}^{n}  \big(n -1  \big)
+      = d \: \left( \frac{n \: (n-1)}{2} \right)
+    \end{align*}
+
+    dove nel secondo passaggio si è riflesso l'indice della seconda sommatoria: il termine di posto $k$ è $a_k = k-1$ e quindi $a_{n-k+1} = (n-k+1)-1 = n-k$. <span class="qed">□</span>
+
+- Dati $d \in \R, n \in \N, n \ge 1$ e $a \in \R$, la formula \(\eqref{ARIT}\) si estende come segue:
+
+    \begin{equation}
+    \label{ARIT_A}
+    \sum_{k=1}^{n} \big( a + d \: (k-1) \big) = a \: n + d \: \left( \frac{n \: (n-1)}{2} \right)
+    \qquad {\rm ~~dato~che~~~~} \sum_{k=1}^{n} \big( a + d \: (k-1) \big) = \underbrace{\sum_{k=1}^{n} a}_{= a \: n} + \sum_{k=1}^{n} d \: (k-1)
+    \end{equation}
+
+    dove si sono usate l'unione di sommatorie \(\eqref{P3}\) e la sommatoria con termine costante \(\eqref{P2}\). Questa formula calcola la somma dei primi $n$ termini della progressione aritmetica con primo termine $a$ qualunque.
+
+- La stessa dimostrazione per riflessione di indici, applicata direttamente alla sommatoria dei primi $n$ termini, dà la forma equivalente:
+
+    $$
+    \sum_{k=1}^{n} \big( a + d \: (k-1) \big) = \frac{n}{2} \: \Big( \underbrace{a}_{=t_1} + \underbrace{a + (n-1) \: d}_{=t_n} \Big) = n \: \left( \frac{t_1 + t_n}{2} \right)
+    $$
+
+    dato che, riflettendo l'indice, il termine di posto $k$ e il termine di posto $n-k+1$ hanno somma costante $t_k + t_{n-k+1} = 2\:a + (n-1)\:d = t_1 + t_n$. La somma dei primi $n$ termini di una progressione aritmetica è quindi $n$ volte la media tra il primo e l'ultimo termine.
+
+- Con $a=1$ e $d=1$ la progressione aritmetica è $1, 2, 3, \dots$ e la formula \(\eqref{ARIT_A}\) dà $n + \frac{n \: (n-1)}{2} = \frac{n \: (n+1)}{2}$, cioè la somma dei primi $n$ numeri naturali (senza lo zero) già vista nella sezione «Alcune sommatorie importanti». Con $a=1$ e $d=2$ la progressione è $1, 3, 5, \dots$ e la formula dà $n + 2 \: \frac{n \: (n-1)}{2} = n^2$, cioè la somma dei primi $n$ numeri dispari.
+
+<a id="box-texexpbox1-23"></a>
+
+!!! esempio "Esempio 7: somma dei primi $n$ termini di progressioni aritmetiche"
+
+    - Con $a=1$ e $d=\frac{1}{2}$, i primi 4 termini sono:
+
+        $$
+        1,~~\frac{3}{2},~~2,~~\frac{5}{2} \qquad {\rm ~~e~~} \qquad  1 + \frac{3}{2} + 2 + \frac{5}{2} = \frac{2+3+4+5}{2} = \frac{14}{2} = 7
+        $$
+
+        la somma dei primi $n=4$ termini è data dalla formula:
+
+        $$
+        \sum_{k=1}^4 \left( 1 + \frac{1}{2} \: (k-1) \right) = 1 \cdot 4 + \frac{1}{2} \: \left( \frac{4 \cdot 3}{2} \right) = 4 + 3 = 7
+        $$
+
+    - Con $a=2$ e $d=2$, i primi 4 termini sono:
+
+        $$
+        2,~~4,~~6,~~8 \qquad {\rm ~~e~~} \qquad  2 + 4 + 6 + 8 = 20
+        $$
+
+        la somma dei primi $n=4$ termini è data dalla formula:
+
+        $$
+        \sum_{k=1}^4 \big( 2 + 2 \: (k-1) \big) = 2 \cdot 4 + 2 \: \left( \frac{4 \cdot 3}{2} \right) = 8 + 12 = 20
+        $$
+
+        e con la forma equivalente: $4 \: \left( \frac{2+8}{2} \right) = 4 \cdot 5 = 20$.
+
+    - Con $a=1$ e $d=-\frac{1}{2}$, i primi 4 termini sono:
+
+        $$
+        1,~~\frac{1}{2},~~0,~~-\frac{1}{2} \qquad {\rm ~~e~~} \qquad  1 + \frac{1}{2} + 0 - \frac{1}{2} = 1
+        $$
+
+        la somma dei primi $n=4$ termini è data dalla formula:
+
+        $$
+        \sum_{k=1}^4 \left( 1 - \frac{1}{2} \: (k-1) \right) = 1 \cdot 4 - \frac{1}{2} \: \left( \frac{4 \cdot 3}{2} \right) = 4 - 3 = 1
         $$

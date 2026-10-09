@@ -37,6 +37,10 @@ def controlla(rel):
     corpo = re.sub(r"<(script|style|code|pre)[^>]*>.*?</\1>", " ", corpo, flags=re.S)
     corpo = re.sub(r"<[^>]+>", " ", corpo)
     residui = re.findall(r"\\(?:frac|begin|end|lim|sum|infty|rr|in|le|ge|cdot|sqrt|tilde|bar)\b|\$", corpo)
+    # titoli di box spezzati: restano nel testo come virgolette orfane
+    residui += ['titolo di box spezzato: ' + t for t in re.findall(r'^\s*(\S[^\n"]{0,60})"\s*$', corpo, flags=re.M)]
+    # tilde di LaTeX rimaste visibili (dentro \text{...} MathJax le stampa)
+    residui += ['tilde visibile'] * len(re.findall(r"\S~\S", corpo))
     return rel, errori, residui, len(dom)
 
 
