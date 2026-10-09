@@ -227,7 +227,21 @@ def sistema_math(m: str, st: Stato) -> str:
     # \\[2 ex] -> \\[2ex] (MathJax non accetta lo spazio)
     m = re.sub(r"\\\\\[\s*([0-9.]+)\s*(ex|em|pt|mm|cm)\s*\]", r"\\\\[\1\2]", m)
     m = m.replace("\\hbox", "\\mbox")
+    # dentro \text{...} e simili si entra in modo testo: la ~ di LaTeX (spazio
+    # unificatore) MathJax la stampa come tilde. La si sostituisce con uno spazio.
+    m = re.sub(r"\\(text|textrm|textbf|textit|textsf|texttt|mbox)\{([^{}]*)\}",
+               _tilde_in_testo, m)
     return m
+
+
+def _tilde_in_testo(k: re.Match) -> str:
+    cmd, corpo = k.group(1), k.group(2)
+    if "~" not in corpo:
+        return k.group(0)
+    nuovo = corpo.replace("~", " ")
+    pre = " " if nuovo[:1] == " " else ""
+    post = " " if nuovo[-1:] == " " else ""
+    return f"\\{cmd}{{{pre}{' '.join(nuovo.split())}{post}}}"
 
 
 def nuova_etichetta(nome: str, st: Stato) -> str:

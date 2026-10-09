@@ -85,7 +85,7 @@ title: "Insiemi"
         Un insieme può essere definito <strong>mediante proprietà</strong> come segue:
 
         $$
-        A = \big\{~ x \in U:  p(x) \textrm{~~è~vera} ~\big\}
+        A = \big\{~ x \in U:  p(x) \textrm{ è vera} ~\big\}
         $$
 
         dove $p(x)$ è la proprietà che l'elemento $x$ dell'insieme  $U$ deve possedere per appartenere all'insieme $A$. Questa tecnica  si può utilizzare per definire insiemi con un numero finito di elementi o anche infinito.
@@ -104,7 +104,7 @@ title: "Insiemi"
         Utilizzando ad esempio la proprietà $p(x)$ definita come “$x$ è una vocale” possiamo definire il seguente insieme delle vocali:
 
         $$
-        A= \underbrace{\{x \in U: x \textrm{~~~è~una~vocale}\}}_{ \{a,~e,~i,~o,~u\} }
+        A= \underbrace{\{x \in U: x \textrm{ è una vocale}\}}_{ \{a,~e,~i,~o,~u\} }
         $$
 
     Notiamo che per definire un insieme $A$ mediante una proprietà abbiamo bisogno di un insieme $U$ a cui appartengono tutti gli elementi dell'insieme $A$ che si vuole  definire. L'insieme $U$ svolge il ruolo di <strong>insieme universo</strong>.
@@ -399,7 +399,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
     Dati due insiemi $A$ e $B$, abbiamo
 
     $$
-    A = B \quad \Longleftrightarrow \quad A \subseteq B \textrm{ ~e~ } B \subseteq A.
+    A = B \quad \Longleftrightarrow \quad A \subseteq B \textrm{ e } B \subseteq A.
     $$
 
 ??? dimostrazione "Dimostrazione"
@@ -417,7 +417,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
     Dati tre insiemi $A$, $B$ e $C$, abbiamo
 
     $$
-    A \subseteq B \textrm{ ~e~ } B \subseteq C \quad \Longrightarrow \quad A \subseteq C.
+    A \subseteq B \textrm{ e } B \subseteq C \quad \Longrightarrow \quad A \subseteq C.
     $$
 
 ??? dimostrazione "Dimostrazione"
@@ -1260,7 +1260,7 @@ Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando solta
     Dati gli elementi $a$, $b$, $c$ e $d$, abbiamo
 
     $$
-    (a, b) = (c, d) \quad \Longleftrightarrow \quad a = c \textrm{ ~e~ } b = d.
+    (a, b) = (c, d) \quad \Longleftrightarrow \quad a = c \textrm{ e } b = d.
     $$
 
 ??? dimostrazione "Dimostrazione"
@@ -1284,7 +1284,7 @@ Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando solta
     Dati due insiemi (non necessariamente distinti) $A$ e $B$, l'insieme costituito da tutte le <em>coppie ordinate</em> $(a, b)$, con $a \in A$ e $b \in B$, si chiama <strong>prodotto cartesiano</strong> di $A$ per $B$ e si indica col simbolo $A \times B$:
 
     $$
-    A \times B = \big\{ (a, b) : a \in A \textrm{ ~e~ } b \in B \big\}.
+    A \times B = \big\{ (a, b) : a \in A \textrm{ e } b \in B \big\}.
     $$
 
 <a id="box-prop_ins-card-prodotto-55"></a>
@@ -1352,7 +1352,7 @@ Il prodotto cartesiano si estende a più di due insiemi.
 - Applicando ripetutamente la proprietà caratteristica delle coppie ordinate si ottiene
 
     $$
-    (a_1, a_2, \dots, a_n) = (b_1, b_2, \dots, b_n) \quad \Longleftrightarrow \quad a_i = b_i \textrm{ ~per ogni~ } i \in \{1, 2, \dots, n\}.
+    (a_1, a_2, \dots, a_n) = (b_1, b_2, \dots, b_n) \quad \Longleftrightarrow \quad a_i = b_i \textrm{ per ogni } i \in \{1, 2, \dots, n\}.
     $$
 
 <a id="box-prop_ins-card-nprodotto-58"></a>
@@ -1404,7 +1404,7 @@ Il prodotto cartesiano si estende a più di due insiemi.
     Quando si studiano sottoinsiemi del piano si sceglie come universo $U = \R^2$. Ad esempio l'insieme dei punti del piano con entrambe le coordinate positive (il <em>primo quadrante</em>) è
 
     $$
-    Q_1 = \big\{ (x_1, x_2) \in \R^2 : x_1 > 0 \textrm{ ~e~ } x_2 > 0 \big\}.
+    Q_1 = \big\{ (x_1, x_2) \in \R^2 : x_1 > 0 \textrm{ e } x_2 > 0 \big\}.
     $$
 
     Poiché $(x_1, x_2) \in Q_1$ se e solo se $x_1 \in \R_{>0}$ e $x_2 \in \R_{>0}$, abbiamo $Q_1 = \R_{>0} \times \R_{>0}$.

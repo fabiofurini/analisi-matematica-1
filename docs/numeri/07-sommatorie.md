@@ -12,7 +12,7 @@ title: "Sommatorie e progressioni geometriche"
 
 ## 1. Sommatorie
 
-<a id="box-notationA-1"></a>
+<a id="box-defSOMM-1"></a>
 
 !!! definizione "Definizione 1: di sommatoria"
 
@@ -65,31 +65,41 @@ title: "Sommatorie e progressioni geometriche"
 
 ### 1.1 Principali proprietà delle sommatorie
 
-<a id="box-propSUM-4"></a>
+<a id="box-propPROD-4"></a>
 
-!!! osservazione "Osservazione 1"
+!!! osservazione "Osservazione 1: prodotto per una costante"
 
-    Dato $c \in \R$, abbiamo:
+    Data una sommatoria $\sum_{k=1}^n a_k$ e un numero reale $c \in \R$, abbiamo:
 
     \begin{equation}
     \label{P1}
-    \sum_{k=1}^n (c \cdot a_k) = c \: \sum_{k=1}^n a_k \qquad {\rm (prodotto~per~una~costante)}
-    \end{equation}
-
-    \begin{equation}
-    \label{P2}
-    \sum_{k=1}^n c  = c \cdot n   \qquad {\rm (sommatoria~con~termine~costante)}
+    \sum_{k=1}^n (c \cdot a_k) = c \: \sum_{k=1}^n a_k
     \end{equation}
 
 ??? dimostrazione "Dimostrazione"
 
-    Prima proprietà \(\eqref{P1}\). Dalla proprietà distributiva abbiamo:
+    Dalla proprietà distributiva abbiamo:
 
     $$
     \underbrace{c\: a_1 + c\: a_2 + \dots + c\: a_n}_{=\sum_{k=1}^n (c \cdot a_k)} = \underbrace{c \: (a_1+a_2+\dots+a_n)}_{= c \: \sum_{k=1}^n a_k}
     $$
 
-    Seconda proprietà \(\eqref{P2}\):
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-propCOST-5"></a>
+
+!!! osservazione "Osservazione 2: sommatoria con termine costante"
+
+    Per ogni numero naturale $n \ge 1$ e ogni numero reale $c \in \R$, abbiamo:
+
+    \begin{equation}
+    \label{P2}
+    \sum_{k=1}^n c  = c \cdot n
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    Abbiamo:
 
     $$
     \underbrace{c\:  + c  + \dots + c\:}_{=\sum_{k=1}^n c {\rm ~~~~ovvero~} c {\rm ~sommato~} n {\rm ~volte}} = c \: n
@@ -97,9 +107,9 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-propSUM-5"></a>
+<a id="box-propUNIONE-6"></a>
 
-!!! osservazione "Osservazione 2"
+!!! osservazione "Osservazione 3: unione di sommatorie"
 
     Date due sommatorie $\sum_{k=1}^n a_k$ e $\sum_{k=1}^n b_k$, abbiamo:
 
@@ -118,30 +128,88 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-propSUM-6"></a>
+- Le tre proprietà che seguono (scomposizione, traslazione di indici e riflessione di indici) sono semplicemente differenti scritture e/o ordinamenti dei termini delle sommatorie.
 
-!!! osservazione "Osservazione 3"
+<a id="box-propSCOMP-7"></a>
 
-    Dati due numeri naturali $n,m \in \N$, abbiamo:
+!!! osservazione "Osservazione 4: scomposizione"
 
-    \begin{align}
+    Dati due numeri naturali $n \ge 1$ e $m \ge 1$, abbiamo:
+
+    \begin{equation}
     \label{P4}
-    \sum_{k=1}^{n+m} a_k   &= \sum_{k=1}^{n} a_k + \sum_{k=n+1}^{n+m} a_k  \qquad {\rm (scomposizione)}\\[2ex]
-    \label{P5}
-    \sum_{k=1}^{n} a_k   &= \sum_{k=1+m}^{n+m} a_{k-m} =  \sum_{k=1-m}^{n-m} a_{k+m} \qquad {\rm (traslazione~di~indici)}\\[2ex]
-    \label{P6}
-    \sum_{k=1}^{n} a_k   &= \sum_{k=1}^{n} a_{n-k+1} = \sum_{k=0}^{n-1} a_{n-k} \qquad {\rm (riflessione~di~indici)}
-    \end{align}
+    \sum_{k=1}^{n+m} a_k   = \sum_{k=1}^{n} a_k + \sum_{k=n+1}^{n+m} a_k
+    \end{equation}
 
 ??? dimostrazione "Dimostrazione"
 
-    Le tre proprietà sono semplicemente differenti scritture e/o ordinamenti dei termini delle sommatorie. <span class="qed">□</span>
+    I termini della sommatoria $\sum_{k=1}^{n+m} a_k$ si raggruppano nei primi $n$ e negli ultimi $m$:
+
+    $$
+    \underbrace{a_1 + a_2 + \dots + a_n}_{=\sum_{k=1}^{n} a_k} + \underbrace{a_{n+1} + a_{n+2} + \dots + a_{n+m}}_{=\sum_{k=n+1}^{n+m} a_k} = \underbrace{a_1 + a_2 + \dots + a_n + a_{n+1} + \dots + a_{n+m}}_{=\sum_{k=1}^{n+m} a_k}
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-propTRASL-8"></a>
+
+!!! osservazione "Osservazione 5: traslazione di indici"
+
+    Data una sommatoria $\sum_{k=1}^{n} a_k$ e un numero naturale $m \ge 1$, abbiamo:
+
+    \begin{equation}
+    \label{P5}
+    \sum_{k=1}^{n} a_k   = \sum_{k=1+m}^{n+m} a_{k-m} =  \sum_{k=1-m}^{n-m} a_{k+m}
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    Nella sommatoria $\sum_{k=1+m}^{n+m} a_{k-m}$ l'indice $k$ varia da $1+m$ a $n+m$ e quindi l'indice $k-m$ varia da $1$ a $n$:
+
+    $$
+    \underbrace{a_{(1+m)-m} + a_{(2+m)-m} + \dots + a_{(n+m)-m}}_{=\sum_{k=1+m}^{n+m} a_{k-m}} = \underbrace{a_1 + a_2 + \dots + a_n}_{=\sum_{k=1}^{n} a_k}
+    $$
+
+    Allo stesso modo, nella sommatoria $\sum_{k=1-m}^{n-m} a_{k+m}$ l'indice $k$ varia da $1-m$ a $n-m$ e quindi l'indice $k+m$ varia da $1$ a $n$:
+
+    $$
+    \underbrace{a_{(1-m)+m} + a_{(2-m)+m} + \dots + a_{(n-m)+m}}_{=\sum_{k=1-m}^{n-m} a_{k+m}} = \underbrace{a_1 + a_2 + \dots + a_n}_{=\sum_{k=1}^{n} a_k}
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-propRIFL-9"></a>
+
+!!! osservazione "Osservazione 6: riflessione di indici"
+
+    Data una sommatoria $\sum_{k=1}^{n} a_k$, abbiamo:
+
+    \begin{equation}
+    \label{P6}
+    \sum_{k=1}^{n} a_k   = \sum_{k=1}^{n} a_{n-k+1} = \sum_{k=0}^{n-1} a_{n-k}
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    Nella sommatoria $\sum_{k=1}^{n} a_{n-k+1}$ l'indice $k$ varia da $1$ a $n$ e quindi l'indice $n-k+1$ varia da $n$ a $1$, cioè i termini sono gli stessi, elencati in ordine inverso:
+
+    $$
+    \underbrace{a_{n} + a_{n-1} + \dots + a_{1}}_{=\sum_{k=1}^{n} a_{n-k+1}} = \underbrace{a_1 + a_2 + \dots + a_n}_{=\sum_{k=1}^{n} a_k}
+    $$
+
+    Allo stesso modo, nella sommatoria $\sum_{k=0}^{n-1} a_{n-k}$ l'indice $k$ varia da $0$ a $n-1$ e quindi l'indice $n-k$ varia da $n$ a $1$:
+
+    $$
+    \underbrace{a_{n} + a_{n-1} + \dots + a_{1}}_{=\sum_{k=0}^{n-1} a_{n-k}} = \underbrace{a_1 + a_2 + \dots + a_n}_{=\sum_{k=1}^{n} a_k}
+    $$
+
+    <p class="qed-riga"><span class="qed">□</span></p>
 
 ### 1.2 Alcune sommatorie importanti
 
-<a id="box-propSUM-7"></a>
+<a id="box-propNAT-10"></a>
 
-!!! osservazione "Osservazione 4: somma dei primi $n$ numeri naturali (senza lo zero)"
+!!! osservazione "Osservazione 7: somma dei primi $n$ numeri naturali (senza lo zero)"
 
     Per ogni numero naturale $n \ge 1$, vale:
 
@@ -150,6 +218,8 @@ title: "Sommatorie e progressioni geometriche"
     $$
 
 ??? dimostrazione "Dimostrazione"
+
+    Usando la riflessione di indici \(\eqref{P6}\) abbiamo:
 
     \begin{align*}
     \sum_{k=1}^{n} k &= \frac{1}{2} \left( \sum_{k=1}^{n} k + \sum_{k=1}^{n} k \right) = \frac{1}{2} \left( \sum_{k=1}^{n} k + \sum_{k=1}^{n} \big( n-k+1 \big) \right)\\[2ex]
@@ -160,9 +230,9 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-propYY-8"></a>
+<a id="box-propDISP-11"></a>
 
-!!! osservazione "Osservazione 5: somma dei primi $n$ numeri dispari"
+!!! osservazione "Osservazione 8: somma dei primi $n$ numeri dispari"
 
     Per ogni numero naturale $n \ge 1$, vale:
 
@@ -189,9 +259,9 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-propYY-9"></a>
+<a id="box-propPARI-12"></a>
 
-!!! osservazione "Osservazione 6: somma dei primi $n$ numeri pari (senza lo zero)"
+!!! osservazione "Osservazione 9: somma dei primi $n$ numeri pari (senza lo zero)"
 
     Per ogni numero naturale $n \ge 1$, vale:
 
@@ -207,9 +277,11 @@ title: "Sommatorie e progressioni geometriche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
+- Le tre sommatorie importanti appena viste si dimostrano anche per induzione, nel capitolo «Principio di induzione».
+
 ## 2. Progressioni geometriche
 
-<a id="box-notationA-10"></a>
+<a id="box-defPROGGEOM-13"></a>
 
 !!! definizione "Definizione 2: di progressione geometrica"
 
@@ -233,7 +305,40 @@ title: "Sommatorie e progressioni geometriche"
     &\dots &   \dots
     \end{align*}
 
-<a id="box-texexpbox1-11"></a>
+<a id="box-propTERM-14"></a>
+
+!!! osservazione "Osservazione 10: termine $k$-esimo di una progressione geometrica"
+
+    Dato il primo termine $a \in \R$ e la ragione $q \in \R$, indichiamo con $t_k$ il termine in posizione $k$ della progressione geometrica. La relazione ricorsiva che definisce la progressione è:
+
+    \begin{equation}
+    \label{GEOMREC}
+    t_1 = a \qquad {\rm e} \qquad t_k = t_{k-1} \: q \qquad {\rm per~ogni~numero~naturale~} k \ge 2
+    \end{equation}
+
+    e la formula chiusa del termine $k$-esimo è:
+
+    \begin{equation}
+    \label{GEOMTERM}
+    t_k = a \: q^{k-1} \qquad {\rm per~ogni~numero~naturale~} k \ge 1
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    La formula chiusa \(\eqref{GEOMTERM}\) si ottiene applicando ripetutamente la relazione ricorsiva \(\eqref{GEOMREC}\):
+
+    \begin{align*}
+    t_1 &= a = a \: q^0\\[1ex]
+    t_2 &= t_1 \: q = a \: q = a \: q^1\\[1ex]
+    t_3 &= t_2 \: q = a \: q \: q  = a \: q^2\\[1ex]
+    t_4 &= t_3 \: q = a \: q^2 \: q  = a \: q^3\\[1ex]
+    &\vdots\\[1ex]
+    t_k &= t_{k-1} \: q = a \: q^{k-2} \: q  = a \: q^{k-1}
+    \end{align*}
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+<a id="box-texexpbox1-15"></a>
 
 !!! esempio "Esempio 3: progressioni geometriche"
 
@@ -251,11 +356,13 @@ title: "Sommatorie e progressioni geometriche"
         1,~~2,~~4,~~8
         $$
 
+    ![Figura 2](../img/numeri-07-sommatorie/fig02.svg){ .fig .ovale loading=lazy style="width:85%" }
+
 ### 2.1 Sommatorie dei termini delle progressioni geometriche
 
-<a id="box-propXX-12"></a>
+<a id="box-propGEOM-16"></a>
 
-!!! osservazione "Osservazione 7: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
+!!! osservazione "Osservazione 11: somma dei primi $n$ termini della progressione geometrica ($a=1$)"
 
     Dato $q \in\ \R_+$, per ogni numero naturale $n \ge 1$ vale:
 
@@ -276,13 +383,19 @@ title: "Sommatorie e progressioni geometriche"
     ({q-1}) \: \sum_{k=1}^{n} q^{k-1} = {q^{n} - 1}
     $$
 
-    Applicando le proprietà delle sommatorie, si ha:
+    Applicando le proprietà delle sommatorie, in particolare il prodotto per una costante \(\eqref{P1}\) e la traslazione di indici \(\eqref{P5}\), si ha:
 
     \begin{align*}
     ({q-1}) \: \sum_{k=1}^{n} q^{k-1} &= q \: \sum_{k=1}^{n} q^{k-1} - \sum_{k=1}^{n} q^{k-1} =\\[2ex]
     & = \sum_{k=1}^{n} q^{k} - \sum_{k=1}^{n} q^{k-1} = \sum_{k=1}^n q^k - \sum_{k=0}^{n-1} q^{k} =\\[2ex]
     & =  \sum_{k=1}^{n-1} q^k + q^n - \left(1 + \sum_{k=1}^{n-1} q^k  \right) = q^{n}  - 1
     \end{align*}
+
+    Dividendo per $q-1 \neq 0$ otteniamo:
+
+    $$
+    \sum_{k=1}^{n} q^{k-1} = \frac{q^{n}-1}{q-1}
+    $$
 
     Se $q = 1$, abbiamo invece:
 
@@ -309,13 +422,27 @@ title: "Sommatorie e progressioni geometriche"
     \frac{q^n-1}{q-1} = \frac{1-q^n}{1-q} {\rm ~~e~quindi~abbiamo~anche~~~~} \sum_{k=1}^{n} a \; q^{k-1}  = 
     \begin{cases}
     a \; \left(\frac{1-q^{n}}{1-q} \right)& {\rm ~~~se~~~~}  q \neq 1\\[2ex]
-    a \; n & {\rm ~~~altrimenti} 
+    a \; n & {\rm ~~~altrimenti}
     \end{cases}
     \end{equation*}
 
-<a id="box-texexpbox1-13"></a>
+- La formula \(\eqref{GEOM}\) si dimostra anche per induzione, nel capitolo «Principio di induzione».
+
+<a id="box-texexpbox1-17"></a>
 
 !!! esempio "Esempio 4: somma dei primi $n$ termini di progressioni geometriche"
+
+    - Con $a=2$ e $q=\frac{1}{2}$, i primi 4 termini sono:
+
+        $$
+        2,~~1,~~\frac{1}{2},~~\frac{1}{4} \qquad {\rm ~~e~~} \qquad  2 + 1 + \frac{1}{2} + \frac{1}{4} = \frac{8+4+2+1}{4} = \frac{15}{4}
+        $$
+
+        la somma dei primi $n=4$ termini è data dalla formula:
+
+        $$
+        \sum_{k=1}^4  2 \; \left(\frac{1}{2}\right)^{k-1}= \sum_{k=1}^4 \frac{2}{2^{k-1}} = 2 \; \frac{1-\frac{1}{2^4}}{1-\frac{1}{2}} = 2 \; \frac{1-\frac{1}{16}}{\frac{1}{2}}= \frac{15}{16} \; 4 = \frac{15}{4}
+        $$
 
     - Con $a=1$ e $q=\frac{1}{2}$, i primi 4 termini sono:
 

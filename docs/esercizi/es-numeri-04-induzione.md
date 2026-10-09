@@ -29,7 +29,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 k^2 = \frac{1\:(1+1)\:(2\cdot1+1)}{6} \text{ ~~ cioè  ~~} 1 = 1
+        \sum_{k=1}^1 k^2 = \frac{1\:(1+1)\:(2\cdot1+1)}{6} \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -77,7 +77,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=0}^0 (2\:k+1) = 1^2 \text{ ~~ cioè  ~~} 1 = 1
+        \sum_{k=0}^0 (2\:k+1) = 1^2 \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -119,7 +119,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 2\:k = 1 \cdot 2 \text{ ~~ cioè  ~~} 2 = 2
+        \sum_{k=1}^1 2\:k = 1 \cdot 2 \text{ cioè } 2 = 2
         $$
 
         che è evidentemente vero.
@@ -161,7 +161,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 \frac{k}{2^k} = 2 - \frac{1+2}{2^1} \text{ ~~ cioè  ~~} \frac{1}{2} = \frac{1}{2}
+        \sum_{k=1}^1 \frac{k}{2^k} = 2 - \frac{1+2}{2^1} \text{ cioè } \frac{1}{2} = \frac{1}{2}
         $$
 
         che è evidentemente vero.
@@ -204,7 +204,7 @@ title: "Principio di induzione"
         Sia $n = 0$.  Un insieme con 0 elementi è un insieme vuoto ($\emptyset$).  L'insieme delle parti di un insieme vuoto contiene solo l'insieme vuoto come elemento.  Allora l'asserto diventa:
 
         $$
-        |\mathscr{P}(\emptyset)| = 2^0  \text{ ~~ cioè  ~~} 1 = 1
+        |\mathscr{P}(\emptyset)| = 2^0  \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -272,7 +272,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 k^3 = \frac{1+2+1}{4} \text{ ~~ cioè  ~~} 1 = 1
+        \sum_{k=1}^1 k^3 = \frac{1+2+1}{4} \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -335,7 +335,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 \frac{1}{k\:(k+1)} = \frac{1}{1+1} \text{ ~~ cioè  ~~} \frac{1}{2} = \frac{1}{2}
+        \sum_{k=1}^1 \frac{1}{k\:(k+1)} = \frac{1}{1+1} \text{ cioè } \frac{1}{2} = \frac{1}{2}
         $$
 
         che è evidentemente vero.
@@ -388,7 +388,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 k\:(k+1) = \frac{2+3+1}{3} \text{ ~~ cioè  ~~} 2 = 2
+        \sum_{k=1}^1 k\:(k+1) = \frac{2+3+1}{3} \text{ cioè } 2 = 2
         $$
 
         che è evidentemente vero.
@@ -442,7 +442,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        1! \ge 2^{1-1} \text{ ~~ cioè  ~~} 1 \ge 1
+        1! \ge 2^{1-1} \text{ cioè } 1 \ge 1
         $$
 
         che è evidentemente vero.
@@ -480,7 +480,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        1^1 \ge 2^{1-1} \cdot 1! \text{ ~~ cioè  ~~} 1 \ge 1
+        1^1 \ge 2^{1-1} \cdot 1! \text{ cioè } 1 \ge 1
         $$
 
         che è evidentemente vero.
@@ -532,7 +532,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        1! \le 1^1 \text{ ~~ cioè  ~~} 1 \le 1
+        1! \le 1^1 \text{ cioè } 1 \le 1
         $$
 
         che è evidentemente vero.
@@ -684,7 +684,7 @@ title: "Principio di induzione"
         Sia $n = 0$. Allora l'asserto diventa:
 
         $$
-        (1+x)\:e^0 \ge \frac{1}{0+3} \text{ ~~ cioè  ~~} x \ge -\frac{2}{3}
+        (1+x)\:e^0 \ge \frac{1}{0+3} \text{ cioè } x \ge -\frac{2}{3}
         $$
 
         che è vero per ipotesi.

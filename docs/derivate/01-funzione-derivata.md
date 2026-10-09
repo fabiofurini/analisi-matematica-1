@@ -237,7 +237,7 @@ title: "Funzione derivata"
 - Geometricamente, essendo il triangolo $ABC$ rettangolo, si ha che:
 
     $$
-    \frac{f(x_0 + h) - f(x_0)}{h} ~=~ \tan \omega \quad ({\rm \textbf{coefficiente~angolare}~della~retta~~passante~per~} A {\rm ~e~} B)
+    \frac{f(x_0 + h) - f(x_0)}{h} ~=~ \tan \omega \quad ({\rm \textbf{coefficiente angolare}~della~retta~~passante~per~} A {\rm ~e~} B)
     $$
 
 - Consideriamo il rapporto incrementale e passiamo al limite (supponendo che esista) per $h \rr 0$. Geometricamente abbiamo:
@@ -281,7 +281,7 @@ title: "Funzione derivata"
 - Per indicare la derivata  si usano i seguenti simboli:
 
     $$
-    \underbrace{f'(x_0)}_{{\rm \textbf{notazione~di~Lagrange}}}  \qquad 
+    \underbrace{f'(x_0)}_{{\rm \textbf{notazione di Lagrange}}}  \qquad 
     \underbrace{\dot{f}(x_0)}_{{\rm notazione~di~Newton}} \qquad 
     \underbrace{\frac{df}{dx}\bigg\vert _{x=x_0} {\rm~~~~e~~~~~~} \frac{dy}{dx}\bigg\vert _{x=x_0}}_{{\rm notazione~di~Leibniz}}
     $$
@@ -353,7 +353,7 @@ title: "Funzione derivata"
 - Per indicare la funzione derivata prima si usano le seguenti notazioni:
 
     $$
-    \underbrace{f'(x)}_{{\rm \textbf{notazione~di~Lagrange}}}  \qquad 
+    \underbrace{f'(x)}_{{\rm \textbf{notazione di Lagrange}}}  \qquad 
     \underbrace{\dot{f}(x)}_{{\rm notazione~di~Newton}} \qquad 
     \underbrace{ \frac{df}{dx} {\rm~~~~,~~~~~~} \frac{df(x)}{dx}  {\rm~~~~e~~~~~~} \frac{dy}{dx}}_{{\rm notazione~di~Leibniz}}
     $$

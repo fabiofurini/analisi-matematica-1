@@ -41,9 +41,9 @@ title: "Confronti e stime asintotiche"
     $$
     \lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = 
     \begin{cases}
-    0 & {\rm ~~~~caso~~1):~~}  \{a_n\} {\rm ~~è~un~infinito~di ~\textbf{ordine~inferiore~} a~~} \{b_n\}\\
-    l \in \R, l \neq 0  & {\rm ~~~~caso~~2):~~} \{a_n\} {\rm ~e~} \{b_n\} {\rm ~sono~infiniti~dello~\textbf{stesso~ordine}} \\
-    \pm \infty & {\rm ~~~~caso~~3):~~} \{a_n\} {\rm ~~è~un~infinito~di ~\textbf{ordine~superiore~} a~~} \{b_n\}\\
+    0 & {\rm ~~~~caso~~1):~~}  \{a_n\} {\rm ~~è~un~infinito~di ~\textbf{ordine inferiore } a~~} \{b_n\}\\
+    l \in \R, l \neq 0  & {\rm ~~~~caso~~2):~~} \{a_n\} {\rm ~e~} \{b_n\} {\rm ~sono~infiniti~dello~\textbf{stesso ordine}} \\
+    \pm \infty & {\rm ~~~~caso~~3):~~} \{a_n\} {\rm ~~è~un~infinito~di ~\textbf{ordine superiore } a~~} \{b_n\}\\
     {\rm inesistente} & {\rm ~~~~caso~~4):~~}  \{a_n\} {\rm ~e~} \{b_n\} {\rm ~non~sono~confrontabili}
     \end{cases}
     $$
@@ -53,9 +53,9 @@ title: "Confronti e stime asintotiche"
     $$
     \lim_{n \rightarrow +\infty} \frac{a_n}{b_n} = 
     \begin{cases}
-    0 & {\rm ~~~~caso~~1):~~}  \{a_n\} {\rm ~~è~un~infinitesimo~di ~\textbf{ordine~superiore~} a~~} \{b_n\}\\
-    l \in \R, l \neq 0  & {\rm ~~~~caso~~2):~~} \{a_n\} {\rm ~e~} \{b_n\} {\rm ~sono~infinitesimi~dello~\textbf{stesso~ordine}} \\
-    \pm \infty & {\rm ~~~~caso~~3):~~} \{a_n\} {\rm ~~è~un~infinitesimo~di ~\textbf{ordine~inferiore~} a~~} \{b_n\}\\
+    0 & {\rm ~~~~caso~~1):~~}  \{a_n\} {\rm ~~è~un~infinitesimo~di ~\textbf{ordine superiore } a~~} \{b_n\}\\
+    l \in \R, l \neq 0  & {\rm ~~~~caso~~2):~~} \{a_n\} {\rm ~e~} \{b_n\} {\rm ~sono~infinitesimi~dello~\textbf{stesso ordine}} \\
+    \pm \infty & {\rm ~~~~caso~~3):~~} \{a_n\} {\rm ~~è~un~infinitesimo~di ~\textbf{ordine inferiore } a~~} \{b_n\}\\
     {\rm inesistente} & {\rm ~~~~caso~~4):~~}  \{a_n\} {\rm ~e~} \{b_n\} {\rm ~non~sono~confrontabili}
     \end{cases}
     $$

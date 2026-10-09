@@ -147,6 +147,7 @@
   border-radius: 14px;
   padding: 10px;
   max-width: 100%;
+  min-width: min(280px, 100%);
   box-shadow: 0 2px 12px rgba(22, 50, 74, .10);
   margin: 1em auto;
 }
@@ -154,7 +155,7 @@
 [data-md-color-scheme="slate"] .md-typeset img.fig { box-shadow: none; }
 @media (max-width: 600px) { .md-typeset img.fig { width: 100% !important; } }
 .md-typeset .figure-affiancate { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
-.md-typeset .figure-affiancate > p { flex: 1 1 260px; margin: 0; }
+.md-typeset .figure-affiancate > p { flex: 0 1 280px; margin: 0; }
 .md-typeset .figure-affiancate img.fig { width: 100% !important; }
 .md-typeset .didascalia { text-align: center; font-size: .75rem; color: var(--md-default-fg-color--light); }
 

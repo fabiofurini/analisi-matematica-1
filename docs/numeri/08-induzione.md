@@ -72,7 +72,7 @@ title: "Principio di induzione"
         Sia $n = 0$. Allora l'asserto diventa:
 
         $$
-        (1+x)^0 \ge 1 + 0\: x \text{ ~~ cioè  ~~} 1 \ge 1
+        (1+x)^0 \ge 1 + 0\: x \text{ cioè } 1 \ge 1
         $$
 
         che è evidentemente vero.
@@ -153,7 +153,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 k = \frac{1\:(1+1)}{2} \text{ ~~ cioè  ~~} 1 = 1
+        \sum_{k=1}^1 k = \frac{1\:(1+1)}{2} \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -198,7 +198,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=0}^0 (2\:k+1) = 1^2 \text{ ~~ cioè  ~~} 1 = 1
+        \sum_{k=0}^0 (2\:k+1) = 1^2 \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -248,7 +248,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^1 2\:k = 1 \cdot 2 \text{ ~~ cioè  ~~} 2 = 2
+        \sum_{k=1}^1 2\:k = 1 \cdot 2 \text{ cioè } 2 = 2
         $$
 
         che è evidentemente vero.
@@ -300,7 +300,7 @@ title: "Principio di induzione"
         Sia $n = 1$. Allora l'asserto diventa:
 
         $$
-        \sum_{k=1}^{1} q^{k-1}  = \frac{q^1-1}{q-1} \text{ ~~ cioè  ~~} 1 = 1
+        \sum_{k=1}^{1} q^{k-1}  = \frac{q^1-1}{q-1} \text{ cioè } 1 = 1
         $$
 
         che è evidentemente vero.
@@ -435,3 +435,81 @@ title: "Principio di induzione"
         cioè \(\eqref{AMGM_A}\), che è esattamente l'asserto voluto, per $n + 1$.
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+### 2.5 Successione di Fibonacci
+
+- La <strong>successione di Fibonacci</strong> è definita dai due valori iniziali e dalla relazione di ricorrenza seguenti:
+
+    \begin{equation}
+    \label{FIBONACCI}
+    F_0 = 0, \qquad F_1 = 1, \qquad F_n = F_{n-1} + F_{n-2} \quad \text{per ogni intero } n \ge 2.
+    \end{equation}
+
+- I primi termini sono $0,~ 1,~ 1,~ 2,~ 3,~ 5,~ 8,~ 13,~ 21,~ 34, \dots$: ogni termine è la somma dei due che lo precedono.
+
+- Le due soluzioni dell'equazione $x^2 - x - 1 = 0$ si chiamano <strong>sezione aurea</strong> $\phi$ e <strong>coniugato della sezione aurea</strong> $\hat{\phi}$:
+
+    $$
+    \phi = \frac{1 + \sqrt{5}}{2} \qquad {\rm ~~e~~} \qquad \hat{\phi} = \frac{1 - \sqrt{5}}{2}
+    $$
+
+    Essendo soluzioni di $x^2 = x+1$, valgono le due uguaglianze:
+
+    \begin{equation}
+    \label{FIBONACCI_PHI}
+    \phi^2 = \phi + 1 \qquad {\rm ~~e~~} \qquad \hat{\phi}^2 = \hat{\phi} + 1
+    \end{equation}
+
+- La proposizione seguente dà una formula chiusa per $F_n$: il termine $n$-esimo si calcola direttamente, senza passare per tutti i termini precedenti.
+
+<a id="box-propFIB-8"></a>
+
+!!! osservazione "Osservazione 7: formula chiusa della successione di Fibonacci"
+
+    Per ogni intero $n \ge 0$, vale:
+
+    \begin{equation}
+    \label{BINET}
+    F_n = \frac{\phi^n - \hat{\phi}^n }{\sqrt{5}}
+    \end{equation}
+
+??? dimostrazione "Dimostrazione"
+
+    Per induzione su $n$. Poiché la relazione di ricorrenza lega $F_{n+1}$ ai <strong>due</strong> termini precedenti, il primo passo dell'induzione verifica l'asserto per $n=0$ e per $n=1$, e il passo induttivo lo suppone vero per $n$ e per $n-1$.
+
+    - <strong>Primo passo dell'induzione</strong>
+
+        Siano $n = 0$ e $n = 1$. Allora l'asserto diventa:
+
+        $$
+        F_0  = \frac{\phi^0 - \hat{\phi}^0 }{\sqrt{5}} = \frac{1 - 1 }{\sqrt{5}} = 0
+        \qquad {\rm ~~e~~} \qquad
+        F_1  = \frac{\phi^1 - \hat{\phi}^1 }{\sqrt{5}} = \frac{\frac{1 + \sqrt{5}}{2} - \frac{1 - \sqrt{5}}{2}}{\sqrt{5}} = \frac{\sqrt{5}}{\sqrt{5}} = 1
+        $$
+
+        che è evidentemente vero.
+
+    - <strong>Passo induttivo</strong>
+
+        Supponiamo che sia vero per $n$ e per $n-1$, con $n \ge 1$, e proviamolo per $(n + 1)$. Per definizione della successione di Fibonacci abbiamo $F_{n+1} = F_{n} + F_{n-1}$, mentre per ipotesi induttiva abbiamo:
+
+        $$
+        F_{n}  = \frac{\phi^n - \hat{\phi}^n }{\sqrt{5}} {\rm ~~~~~e~~~~~} F_{n-1}  = \frac{\phi^{n-1} - \hat{\phi}^{n-1} }{\sqrt{5}}
+        $$
+
+        Quindi possiamo scrivere:
+
+        \begin{align*}
+        F_{n+1} & = F_{n} + F_{n-1}
+         = \frac{\phi^n - \hat{\phi}^n }{\sqrt{5}} + \frac{\phi^{n-1} - \hat{\phi}^{n-1} }{\sqrt{5}}\\[2ex]
+        & = \frac{\big(\phi^n + \phi^{n-1}\big) - \big(\hat{\phi}^n  + \hat{\phi}^{n-1}\big)}{\sqrt{5}}
+         = \frac{\phi^{n-1} \big(\phi + 1\big) - \hat{\phi}^{n-1} \big(\hat{\phi}  + 1\big)}{\sqrt{5}}\\[2ex]
+        & = \frac{\phi^{n-1} \; \phi^2 - \hat{\phi}^{n-1} \; \hat{\phi}^2}{\sqrt{5}}
+         = \frac{\phi^{n+1} - \hat{\phi}^{n+1}}{\sqrt{5}}
+        \end{align*}
+
+        dove nella penultima uguaglianza si sono usate le relazioni \(\eqref{FIBONACCI_PHI}\). Questo è esattamente l'asserto voluto, per $n + 1$.
+
+    <p class="qed-riga"><span class="qed">□</span></p>
+
+- La successione di Fibonacci è studiata più in dettaglio nel capitolo «Successione di Fibonacci».
