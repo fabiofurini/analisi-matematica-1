@@ -16,7 +16,7 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
 !!! definizione "Definizione 1: di fattoriale di $n$"
 
-    Il fattoriale di $n$ è il prodotto dei primi $n$  interi. Si indica con $n!$ e si legge “$n$ fattoriale”. In formule:
+    Il fattoriale di $n$ è il prodotto dei primi $n$  interi positivi. Si indica con $n!$ e si legge “$n$ fattoriale”. In formule:
 
     $$
     n! = \prod_{k=1}^n k=1 \cdot 2 \cdot 3 \cdot {\rm} \dots {\rm} \cdot (n-1) \cdot n
@@ -67,10 +67,10 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
         \begin{equation}
         \label{MM}
-        \frac{n!}{(n-k)!}  =  n \cdot (n-1) \cdot (n-2) \cdot {\rm} \dots {\rm} \cdot (n-k+1),  {\rm ~~con~~} k\ge 1
+        \frac{n!}{(n-k)!}  =  n \cdot (n-1) \cdot (n-2) \cdot {\rm} \dots {\rm} \cdot (n-k+1),  {\rm ~~con~~} 1 \le k \le n
         \end{equation}
 
-        Con $k\ge 1$,  diventa  il prodotto di $k$ fattori, partendo da $n$ e decrescendo di una unità alla volta.
+        Con $1 \le k \le n$,  diventa  il prodotto di $k$ fattori, partendo da $n$ e decrescendo di una unità alla volta.
 
     <a id="box-texexpbox1-2"></a>
 
@@ -127,10 +127,10 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
     \begin{equation}
     \label{TT}
-     {{n-1}\choose{k-1}} + {{n-1}\choose{k}} = {{n}\choose{k}}
+     {{n-1}\choose{k-1}} + {{n-1}\choose{k}} = {{n}\choose{k}} \qquad {\rm ~~per~ogni~} n \ge 2 {\rm ~e~} 1 \le k \le n-1
     \end{equation}
 
-    Dato che:
+    (il verso della dimostrazione richiede $(k-1)!$ e $(n-k-1)!$, quindi $k \ge 1$ e $k \le n-1$). Dato che:
 
     \begin{align*}
     {{n-1}\choose{k-1}} + {{n-1}\choose{k}} &=  \frac{(n-1)!}{(k-1)!\:\underbrace{(n-1-(k-1))!}_{=~(n-k)!~=~(n-k)\:(n-k-1)!}}+\frac{(n-1)!}{k!\:(n-k-1)!}\\[2ex]
@@ -142,7 +142,7 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
     Segue anche:
 
     \begin{equation*}
-    {{n}\choose{k-1}} + {{n}\choose{k}} = {{n+1}\choose{k}}
+    {{n}\choose{k-1}} + {{n}\choose{k}} = {{n+1}\choose{k}} \qquad {\rm ~~per~ogni~} n \ge 1 {\rm ~e~} 1 \le k \le n
     \end{equation*}
 
 ### 2.1 Formula di Newton
@@ -166,7 +166,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 
     - <strong>Primo passo dell'induzione</strong>
 
-        Sia $n = 0$. Allora l'asserto diventa: $(a+b)^0 = {{0}\choose{0}} \; a^{0} \; b^0$ cioè $1 = 1$ che è evidentemente vero.
+        Sia $n = 0$. Allora l'asserto diventa: $(a+b)^0 = {{0}\choose{0}} \; a^{0} \; b^0$ cioè $1 = 1$ che è evidentemente vero (con la convenzione $0^0=1$, che copre anche il caso $a=b=0$).
 
     - <strong>Passo induttivo</strong>
 
@@ -188,7 +188,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 
 !!! osservazione "Osservazione 2"
 
-    Per ogni intero $n \ge 0$ e $k$ intero tale che $0\le k \le n$, abbiamo:
+    Per ogni intero $n \ge 0$ abbiamo:
 
     \begin{equation}
     \sum_{k=0}^{n} ~~{{n}\choose{k}} ~~ = 2^n
@@ -224,7 +224,7 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
 
     3. Per $0 < k < n$, il numero ${{n}\choose{k}}$ viene scritto all'incrocio della $n$-esima riga e della $k$-esima colonna.
 
-    4. Il numero ${{n}\choose{k}}$ risulta dalla somma dei due numeri che si trovano nella riga precedente, quello sulla stessa colonna e quello sulla colonna precedente.
+    4. Sempre per $0 < k < n$, il numero ${{n}\choose{k}}$ risulta dalla somma dei due numeri che si trovano nella riga precedente, quello sulla stessa colonna e quello sulla colonna precedente.
 
 <a id="box-texexpbox1-6"></a>
 

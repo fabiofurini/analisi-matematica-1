@@ -61,9 +61,9 @@ $$
 \hat{\phi}^2 = \left(\frac{1 - \sqrt{5}}{2}\right)^2 =  \frac{1 - 2\: \sqrt{5} +5}{4} =  \frac{3 - \sqrt{5}}{2} =  \frac{1 - \sqrt{5}}{2} +1 = \hat \phi +1
 $$
 
-<a id="box-propAAA-3"></a>
+<a id="box-propBINET-3"></a>
 
-!!! osservazione "Osservazione 1"
+!!! osservazione "Osservazione 1: formula chiusa della successione di Fibonacci"
 
     \begin{align*}
     F_i & = \frac{\phi^i - \hat{\phi}^i }{\sqrt{5}}, \qquad  \qquad i=0,1,2,\dots
@@ -104,9 +104,9 @@ $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-propAAA-4"></a>
+<a id="box-propARROT-4"></a>
 
-!!! osservazione "Osservazione 2"
+!!! osservazione "Osservazione 2: calcolo di $F_i$ per arrotondamento"
 
     \begin{align*}
     F_i & = \left\lfloor \frac{{\phi}^i}{\sqrt{5}} + \frac{1}{2} \right\rfloor, \qquad  \qquad i=0,1,2,\dots
