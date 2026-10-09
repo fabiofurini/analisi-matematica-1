@@ -32,7 +32,7 @@
 
     ---
 
-    Relazioni binarie · Relazioni d'ordine parziale · Relazioni d'ordine totale · Funzioni
+    Relazioni binarie · Proprietà delle relazioni · Rappresentazione con grafi direzionati · Relazioni di equivalenza · …
 
     [:octicons-arrow-right-24: Leggi il capitolo](04-relazioni-binarie.md)
 

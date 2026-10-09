@@ -84,7 +84,13 @@ $$
 
     - <strong>Passo induttivo</strong>
 
-        Supponiamo che sia vero per $i = k$ e $i = k - 1$ con $k \ge 1$, e proviamolo per $i = k + 1$. Per ipotesi induttiva, abbiamo: $F_{k+1}  = F_{k} + F_{k-1}$, quindi possiamo scrivere
+        Supponiamo che sia vero per $i = k$ e $i = k - 1$ con $k \ge 1$, e proviamolo per $i = k + 1$. Per definizione della successione di Fibonacci, abbiamo $F_{k+1}  = F_{k} + F_{k-1}$, mentre per ipotesi induttiva abbiamo:
+
+        $$
+        F_{k}  = \frac{\phi^k - \hat{\phi}^k }{\sqrt{5}} {\rm ~~~~~e~~~~~} F_{k-1}  = \frac{\phi^{k-1} - \hat{\phi}^{k-1} }{\sqrt{5}}
+        $$
+
+        Quindi possiamo scrivere
 
         \begin{align*}
         F_{k+1} & = F_{k} + F_{k-1} \\[2ex]
