@@ -22,15 +22,11 @@ title: "Calcolo delle funzioni derivate"
 
 ??? soluzione "Soluzione"
 
-    1.
-
-        $$
+    1. $$
         \frac{f(1+h)-f(1)}{h}=\frac{(1+h)^{3}-1}{h}=\frac{3h+3h^{2}+h^{3}}{h}=3+3h+h^{2}
         $$
 
-    2.
-
-        $$
+    2. $$
         f'(1)=\lim_{h\to0}3+3h+h^{2}=3
         $$
 
@@ -126,21 +122,15 @@ title: "Calcolo delle funzioni derivate"
 
 ??? soluzione "Soluzione"
 
-    1.
-
-        $$
+    1. $$
         \left(~\log \big(|x|\big)~\right)'=\frac{1}{|x|} \cdot \sgn (x) = \frac{1}{x}
         $$
 
-    2.
-
-        $$
+    2. $$
         \left(~ \log (3\:x)~\right)' =\big(\log 3 + \log x \big)' = \frac{1}{x}
         $$
 
-    3.
-
-        \begin{align*}
+    3. \begin{align*}
         \left(~\log\left(\left|\frac{x+2}{3-x}\right|\right)~\right)' & = \frac{1}{\left|\frac{x+2}{3-x}\right|} \cdot \sgn\left(\frac{x+2}{3-x}\right) \cdot \left(~\left(\frac{x+2}{3-x}\right)~\right)'= \frac{\left(~\left(\frac{x+2}{3-x}\right)~\right)'}{\frac{x+2}{3-x}} \\[2ex]
         &={\left(~\left(\frac{x+2}{3-x}\right)~\right)'} \cdot {\frac{3-x}{x+2}}= \frac{3-x+x+2}{(3-x)^2}\cdot {\frac{3-x}{x+2}}\\[2ex]
         &= \frac{5}{(3-x)\cdot(x+2)} = \frac{5}{-x^2+x+6}

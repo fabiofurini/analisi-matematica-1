@@ -690,9 +690,12 @@ def lista(env: str, corpo: str, opt: str | None, st: Stato) -> str:
         righe = md.split("\n")
         primo = righe[0] if righe else ""
         resto = "\n".join(righe[1:])
-        if primo.startswith(("$$", "\\begin{")):
-            # l'elemento inizia con una formula a blocco
+        if primo.startswith(("$$", "\\begin{")) and pref.rstrip() not in ("-", f"{n}."):
+            # l'elemento inizia con una formula a blocco dopo un'etichetta
             out.append(pref.rstrip() + "\n\n" + indent(md))
+        # se l'elemento inizia con una formula a blocco e non ha etichetta, la
+        # formula resta sulla riga del numero: un "1." da solo non apre una lista
+        # e il resto diventerebbe un blocco di codice
         else:
             out.append(pref + primo + ("\n" + indent(resto) if resto.strip() else ""))
     return "\n\n".join(out)

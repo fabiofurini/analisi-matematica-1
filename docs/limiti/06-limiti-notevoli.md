@@ -171,9 +171,7 @@ title: "Limiti notevoli e stime asintotiche"
 
 !!! esempio "Esempio 1: Limiti di funzioni che tendono a $e$"
 
-    1.
-
-        $$
+    1. $$
         \lim_{x \rr \ip} \left( 1 + \frac{1}{2\:x^2-10} \right)^{2\:x^2-10} = e
         $$
 
@@ -183,9 +181,7 @@ title: "Limiti notevoli e stime asintotiche"
         \eta(x) \rr \ip {\rm~~per~~} x \rr \ip.
         $$
 
-    2.
-
-        $$
+    2. $$
         \lim_{x \rr 0^+} \left( 1 + \frac{1}{1/x} \right)^{1/x} = e
         $$
 
