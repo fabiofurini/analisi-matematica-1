@@ -187,6 +187,7 @@ class Stato:
     box: dict = field(default_factory=dict)         # etichetta -> [(nome, ancora)] (prima passata)
     box_visti: dict = field(default_factory=dict)   # etichetta -> ultimo (nome, ancora) già incontrato
     box_prima: dict = field(default_factory=dict)   # risultato della prima passata
+    gruppi: set = field(default_factory=set)        # etichette di gruppi subequations
 
     def conta(self, tipo: str) -> int:
         self.contatori[tipo] = self.contatori.get(tipo, 0) + 1
@@ -448,6 +449,9 @@ def inline_cmd(s: str, st: Stato) -> str:
                 lab = risolvi_etichetta(arg, st)
                 if name == "eqref":
                     store_math = f"\\(\\eqref{{{lab}}}\\)"
+                    if arg in st.gruppi:
+                        ultima = risolvi_etichetta(arg + "__ultima", st)
+                        store_math += f"–\\(\\eqref{{{ultima}}}\\)"
                     out.append(store_math)
                 else:
                     out.append(f"[↗](#{lab})")
@@ -892,11 +896,32 @@ def figure_da(frammento: str, st: Stato, larg: int | None = None, ovale: bool = 
     return "\n\n".join(out)
 
 
+def etichetta_gruppo(corpo: str, st: Stato) -> str:
+    """subequations: MathJax non ha la sotto-numerazione (12a), (12b), ... Il \\label
+    del gruppo, che sta fuori dalla formula, passa alla prima riga e all'ultima, e
+    un \\eqref al gruppo diventa l'intervallo «(7)–(11)»."""
+    m = re.match(r"\s*\\label\{([^}]*)\}", corpo)
+    k = re.search(r"\\begin\{(\w+\*?)\}", corpo)
+    if not m or not k or k.start() < m.end() or k.group(1) not in MATH_ENVS:
+        return corpo
+    nome, env = m.group(1), k.group(1)
+    fine = corpo.rfind(f"\\end{{{env}}}")
+    righe = split_top(corpo[k.end():fine], "\\\\")
+    piene = [i for i, r in enumerate(righe) if re.sub(r"^\s*\[[^\]]*\]", "", r).strip()]
+    if not piene:
+        return corpo
+    righe[piene[0]] = righe[piene[0]].rstrip() + f" \\label{{{nome}}}\n"
+    if len(piene) > 1:
+        righe[piene[-1]] = righe[piene[-1]].rstrip() + f" \\label{{{nome}__ultima}}\n"
+        st.gruppi.add(nome)
+    return corpo[m.end():k.end()] + "\\\\".join(righe) + corpo[fine:]
+
+
 def ambiente(env: str, corpo: str, st: Stato) -> str | None:
     if env in MATH_ENVS:
         return blocco_math(env, corpo, st)
     if env in ("subequations",):
-        return converti(corpo, st)
+        return converti(etichetta_gruppo(corpo, st), st)
     if env == "empheq":
         opt, k = read_opt(corpo, 0)
         inner_env, k = read_group(corpo, k)

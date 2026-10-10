@@ -317,14 +317,13 @@ title: "Limiti notevoli e stime asintotiche"
 
     Per $x \rr 0$ abbiamo (dai limiti notevoli):
 
-    <a id="LIMMMM"></a>
-
     \begin{align}
-    \sin x &\thicksim x\\[2ex]
+    \sin x &\thicksim x \label{LIMMMM}
+    \\[2ex]
     \log(1+x) &\thicksim x\\[2ex] 
      \cos x & \thicksim  1- \frac{1}{2} x^2\\[2ex]
      e^x &\thicksim 1+ x\\[2ex] 
-    (1+x)^{\alpha}  &\thicksim 1 + \alpha \: x  {\rm ~~~~~~~~con~~~} \alpha \in \R
+    (1+x)^{\alpha}  &\thicksim 1 + \alpha \: x  {\rm ~~~~~~~~con~~~} \alpha \in \R \label{LIMMMM__ultima}
     \end{align}
 
 - Le funzioni $\thicksim x$ si comportano, in prima approssimazione o al primo ordine, come $x$ per $x \rr 0$.
@@ -333,17 +332,16 @@ title: "Limiti notevoli e stime asintotiche"
 
     Se $\varepsilon(x)$ è una funzione che tende a zero[^2] (cioè è un infinitesimo: $\varepsilon(x) \rr 0$), abbiamo:
 
-    <a id="LIM_NOT_C__2"></a>
-
     \begin{align}
-    \sin \big( \varepsilon(x) \big) &\thicksim \varepsilon(x)\\[2ex]
+    \sin \big( \varepsilon(x) \big) &\thicksim \varepsilon(x) \label{LIM_NOT_C__2}
+    \\[2ex]
      \log \big(1+\varepsilon(x)\big) &\thicksim \varepsilon(x)\\[2ex]
      \cos \big( \varepsilon(x) \big) &\thicksim 1 - \frac{1}{2} \;\varepsilon^2(x)\\[2ex]
      e^{\varepsilon(x)} &\thicksim 1 +\varepsilon(x)\\[2ex]
-      \big(1+\varepsilon(x)\big)^{\alpha}  & \thicksim 1+ \alpha \; \varepsilon(x)  {\rm ~~~~~~~~con~~~} \alpha \in \R
+      \big(1+\varepsilon(x)\big)^{\alpha}  & \thicksim 1+ \alpha \; \varepsilon(x)  {\rm ~~~~~~~~con~~~} \alpha \in \R \label{LIM_NOT_C__ultima}
     \end{align}
 
-- Le formule \(\eqref{LIM_NOT_C__2}\) si deducono dalle formule \(\eqref{LIMMMM}\)  semplicemente con un cambio di variabile
+- Le formule \(\eqref{LIM_NOT_C__2}\)–\(\eqref{LIM_NOT_C__ultima}\) si deducono dalle formule \(\eqref{LIMMMM}\)–\(\eqref{LIMMMM__ultima}\)  semplicemente con un cambio di variabile
 
     $$
     x = \varepsilon(x)
