@@ -341,11 +341,7 @@ title: "Limiti notevoli e stime asintotiche"
       \big(1+\varepsilon(x)\big)^{\alpha}  & \thicksim 1+ \alpha \; \varepsilon(x)  {\rm ~~~~~~~~con~~~} \alpha \in \R \label{LIM_NOT_C__ultima}
     \end{align}
 
-- Le formule \(\eqref{LIM_NOT_C__2}\)–\(\eqref{LIM_NOT_C__ultima}\) si deducono dalle formule \(\eqref{LIMMMM}\)–\(\eqref{LIMMMM__ultima}\)  semplicemente con un cambio di variabile
-
-    $$
-    x = \varepsilon(x)
-    $$
+- Le formule \(\eqref{LIM_NOT_C__2}\)–\(\eqref{LIM_NOT_C__ultima}\) si deducono dalle formule \(\eqref{LIMMMM}\)–\(\eqref{LIMMMM__ultima}\)  semplicemente con un cambio di variabile: si sostituisce $x$ con $\varepsilon(x)$.
 
 <a id="box-texexpbox1-10"></a>
 
