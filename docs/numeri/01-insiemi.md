@@ -117,15 +117,87 @@ title: "Insiemi"
 
     È importante che la proprietà $p(x)$ che si utilizza abbia senso per ogni $x$ dell'insieme $U$ (insieme universo), e quindi risulti vera o falsa (senza ambiguità di significato) per ogni particolare $x \in U$; l'insieme $A$ consisterà allora di tutti e soli quegli $x$ appartenenti ad $U$ per cui la proprietà $p(x)$ è vera.
 
+    Fissare un unico insieme universo per tutto il discorso è comodo, ma non è necessario. Si può partire da un <strong>qualsiasi insieme già noto</strong> $B$, che può cambiare da una definizione all'altra:
+
+    !!! chiave ""
+
+        Dato un insieme $B$ già noto, la scrittura
+
+        $$
+        A = \big\{~ x \in B:  p(x) ~\big\}
+        $$
+
+        definisce l'insieme $A$ formato da tutti e soli gli elementi di $B$ per cui la proprietà $p(x)$ è vera (di solito “è vera” non si scrive). L'insieme universo è il caso particolare in cui $B = U$ è lo stesso per tutte le definizioni di un dato contesto.
+
+    - Questa è la forma che si usa ovunque in matematica. La proprietà può essere scritta a parole o con una formula, e può essere formata da più condizioni, separate da virgole o da “e”.
+
+    - Quando l'insieme di partenza è chiaro dal contesto, spesso lo si sottintende e si scrive semplicemente $\{~ x : p(x) ~\}$. Ad esempio, in un discorso sui numeri reali, $\{~ x : x > 0 ~\}$ indica l'insieme dei numeri reali positivi. L'insieme di partenza resta comunque fissato: è solo omesso nella scrittura.
+
+    <a id="box-ex_ins-proprieta-partenza-5"></a>
+
+    !!! esempio "Esempio 4: proprietà con insiemi di partenza diversi"
+
+        - Partendo da $B = \{a,~ b,~ c,~ d,~ e\}$ e dalla stessa proprietà “$x$ è una vocale” otteniamo un insieme diverso da quello dell'esempio precedente:
+
+            $$
+            \{x \in B: x \textrm{ è una vocale}\} = \{a,~ e\}
+            $$
+
+        - Partendo da $C = \{1,~ 2,~ 3,~ 4,~ 5,~ 6\}$ possiamo definire:
+
+            $$
+            \{x \in C: x \textrm{ è pari}\} = \{2,~ 4,~ 6\}
+            $$
+
+        - Le condizioni possono essere più di una:
+
+            $$
+            \{x \in C: x \textrm{ è pari}, ~ x > 2\} = \{4,~ 6\}
+            $$
+
+        In tutti i casi l'insieme di partenza è scelto di volta in volta e non è l'universo di tutto il discorso.
+
+3. Un terzo modo di definire gli insiemi è la <strong>definizione mediante costruzione</strong>: invece di scegliere gli elementi fra quelli di un insieme che li contiene già, li <strong>costruiamo</strong> a partire dagli elementi di un insieme già noto.
+
+    !!! chiave ""
+
+        Dato un insieme $B$ già noto, un insieme può essere definito <strong>mediante costruzione</strong> come segue:
+
+        $$
+        A = \big\{~ \textrm{espressione costruita a partire da } x ~:~ x \in B ~\big\}
+        $$
+
+        ossia $A$ è formato da tutti gli oggetti che si ottengono applicando la stessa regola a ciascun elemento $x$ di $B$. Non serve conoscere in anticipo un insieme che contenga gli elementi di $A$.
+
+    <a id="box-ex_ins-costruzione-6"></a>
+
+    !!! esempio "Esempio 5: definizione mediante costruzione"
+
+        - L'insieme dei quadrati degli elementi di $\{1,~ 2,~ 3\}$:
+
+            $$
+            \big\{~ x^2 ~:~ x \in \{1,~ 2,~ 3\} ~\big\} = \{1,~ 4,~ 9\}
+            $$
+
+        - L'insieme dei doppi degli elementi di $\{1,~ 2,~ 3,~ 4\}$:
+
+            $$
+            \big\{~ 2x ~:~ x \in \{1,~ 2,~ 3,~ 4\} ~\big\} = \{2,~ 4,~ 6,~ 8\}
+            $$
+
+        Se la regola produce lo stesso oggetto da elementi diversi, l'oggetto si conta una sola volta: ad esempio $\big\{~ x^2 ~:~ x \in \{-1,~ 0,~ 1\} ~\big\} = \{0,~ 1\}$.
+
 !!! chiave ""
 
     Occorre fare attenzione alla definizione degli insiemi in quanto possono emergere contraddizioni. Esiste una definizione formale del concetto di insieme sviluppata per evitare contraddizioni ma che esula dal programma del corso.
 
-- Ad esempio l'insieme di tutti gli insiemi che non contengono se stessi non è un insieme nella definizione formale degli insiemi. Ammettere questo insieme genererebbe la contraddizione: “l'insieme di tutti gli insiemi che non appartengono a se stessi appartiene a se stesso se e solo se non appartiene a se stesso” (<strong>Paradosso di Russell</strong>, discusso negli approfondimenti alla fine del capitolo).
+- In tutti i modi visti si parte sempre da un insieme già noto. La scrittura $\{~ x : p(x) ~\}$ intesa come “tutti gli oggetti per cui $p(x)$ è vera”, senza alcun insieme di partenza (nemmeno sottinteso), in generale <strong>non</strong> definisce un insieme.
+
+- Ad esempio, con la proprietà $p(x)$ definita come “$x \notin x$” otterremmo l'insieme di tutti gli insiemi che non contengono se stessi, che però non è un insieme nella definizione formale degli insiemi. Ammettere questo insieme genererebbe la contraddizione: “l'insieme di tutti gli insiemi che non appartengono a se stessi appartiene a se stesso se e solo se non appartiene a se stesso” (<strong>Paradosso di Russell</strong>, discusso negli approfondimenti alla fine del capitolo).
 
 ## 2. Insiemi numerici
 
-<a id="box-defXX-5"></a>
+<a id="box-defXX-7"></a>
 
 !!! definizione "Definizione 2: sistema numerico"
 
@@ -149,7 +221,7 @@ title: "Insiemi"
         \N_{>0} = \N \setminus \{0\} = \{1,~ 2,~ 3,~ 4,~ \dots\}
         $$
 
-        <a id="box-def_pari-6"></a>
+        <a id="box-def_pari-8"></a>
 
         !!! definizione "Definizione 3: di numero pari"
 
@@ -159,7 +231,7 @@ title: "Insiemi"
             n = 2 \, m
             $$
 
-        <a id="box-def_dispari-7"></a>
+        <a id="box-def_dispari-9"></a>
 
         !!! definizione "Definizione 4: di numero dispari"
 
@@ -169,9 +241,9 @@ title: "Insiemi"
             n = 2 \, m + 1
             $$
 
-        <a id="box-ex_pari-dispari-8"></a>
+        <a id="box-ex_pari-dispari-10"></a>
 
-        !!! esempio "Esempio 4: numeri pari e dispari"
+        !!! esempio "Esempio 6: numeri pari e dispari"
 
             - $0$ è pari, perché $0 = 2 \cdot 0$, e $6$ è pari, perché $6 = 2 \cdot 3$.
 
@@ -187,7 +259,7 @@ title: "Insiemi"
 
         - È l'assioma che giustifica il <strong>principio di induzione</strong>, di cui ci occuperemo più avanti, e garantisce l'esistenza di un elemento più piccolo ogni volta che una proprietà è soddisfatta da almeno un numero naturale.
 
-        <a id="box-oss_pari-dispari-9"></a>
+        <a id="box-oss_pari-dispari-11"></a>
 
         !!! osservazione "Osservazione 1"
 
@@ -233,9 +305,9 @@ title: "Insiemi"
 
     3. Indichiamo con $\Q$  l'insieme dei <strong>numeri razionali</strong> ovvero l'insieme dei numeri che si possono scrivere come <strong>espansioni decimali finite o infinite periodiche</strong>. In altre parole, è l'insieme dei numeri che si possono scrivere come una frazione $\frac{p}{q}$ dove $p$ è un numero intero e $q$ è un numero naturale diverso da zero.
 
-        <a id="box-ex_ins-k2-10"></a>
+        <a id="box-ex_ins-k2-12"></a>
 
-        !!! esempio "Esempio 5: numeri razionali"
+        !!! esempio "Esempio 7: numeri razionali"
 
             - Ad esempio con $p=2$ e $q=5$ abbiamo la frazione $\frac{2}{5}$ la cui espansione decimale è $0,4$.
 
@@ -245,7 +317,7 @@ title: "Insiemi"
 
         Possiamo tuttavia rappresentare ogni numero razionale diverso da $0$ mediante una sola frazione $\frac{p}{q}$ scegliendo $p \in \Z$ e $q \in \N$ coprimi (ovvero primi tra loro, cioè $p$ e $q$ non sono divisibili per uno stesso intero maggiore di 1).
 
-        <a id="box-obserXX-11"></a>
+        <a id="box-obserXX-13"></a>
 
         !!! osservazione "Osservazione 2"
 
@@ -292,9 +364,9 @@ title: "Insiemi"
 
     4. Indichiamo con $\R$  l'insieme dei <strong>numeri reali</strong> ovvero l'insieme dei numeri che si identificano con espansioni decimali finite o infinite, periodiche o non periodiche.
 
-        <a id="box-ex_ins-k3-12"></a>
+        <a id="box-ex_ins-k3-14"></a>
 
-        !!! esempio "Esempio 6: numeri reali"
+        !!! esempio "Esempio 8: numeri reali"
 
             - Consideriamo ad esempio il numero
 
@@ -306,9 +378,9 @@ title: "Insiemi"
 
             - Altri esempi di numeri reali ma non razionali sono $\sqrt{2}$ e $\sqrt{3}$ oppure $\pi$ e il numero di Nepero $e$ che hanno espansioni decimali infinite non periodiche e dunque sono numeri reali ma non razionali.
 
-    <a id="box-ex_ins-numerici-13"></a>
+    <a id="box-ex_ins-numerici-15"></a>
 
-    !!! esempio "Esempio 7: insiemi numerici definiti per tabulazione e mediante proprietà"
+    !!! esempio "Esempio 9: insiemi numerici definiti per tabulazione e mediante proprietà"
 
         - L'insieme dei primi cinque numeri primi si può definire per tabulazione:
 
@@ -338,7 +410,7 @@ title: "Insiemi"
 
 ## 3. Relazioni tra insiemi
 
-<a id="box-def_ins-uguali-14"></a>
+<a id="box-def_ins-uguali-16"></a>
 
 !!! definizione "Definizione 5: di insiemi uguali"
 
@@ -350,9 +422,9 @@ title: "Insiemi"
 
     e significa che ogni elemento che appartiene ad $A$ appartiene anche a $B$ e ogni elemento che appartiene a $B$ appartiene anche ad $A$. Se $A$ e $B$ non sono uguali si scrive $A \neq B$.
 
-<a id="box-ex_ins-uguali-15"></a>
+<a id="box-ex_ins-uguali-17"></a>
 
-!!! esempio "Esempio 8: ordine e molteplicità degli elementi"
+!!! esempio "Esempio 10: ordine e molteplicità degli elementi"
 
     - Il concetto di <em>ordine</em> tra gli elementi è estraneo agli insiemi:
 
@@ -378,7 +450,7 @@ title: "Insiemi"
 
 Può accadere che valga solo una delle due richieste espresse dalla relazione di uguaglianza. Ad esempio, se sappiamo solo che ogni elemento di $A$ è anche elemento di $B$, potremo dire che $A$ è contenuto in $B$.
 
-<a id="box-def_ins-sottoinsieme-16"></a>
+<a id="box-def_ins-sottoinsieme-18"></a>
 
 !!! definizione "Definizione 6: di sottoinsieme"
 
@@ -392,7 +464,7 @@ Può accadere che valga solo una delle due richieste espresse dalla relazione di
 
 Se si afferma che $A \subseteq B$, non si esclude che sia $A = B$. Se invece vogliamo proprio affermare che $A$ è contenuto in $B$ ma non coincide con $B$, diremo che $A$ è <em>strettamente contenuto</em> in $B$.
 
-<a id="box-def_ins-sottoinsieme-proprio-17"></a>
+<a id="box-def_ins-sottoinsieme-proprio-19"></a>
 
 !!! definizione "Definizione 7: di sottoinsieme proprio"
 
@@ -406,9 +478,9 @@ Se si afferma che $A \subseteq B$, non si esclude che sia $A = B$. Se invece vog
 
 - In alcuni testi il simbolo $\subset$ indica l'inclusione stretta, in altri è un sinonimo di $\subseteq$. Per evitare ambiguità useremo $\subseteq$ per l'inclusione e $\subsetneqq$ per l'inclusione stretta; quando compare, il simbolo $\subset$ ha lo stesso significato di $\subseteq$.
 
-<a id="box-ex_ins-inclusione-18"></a>
+<a id="box-ex_ins-inclusione-20"></a>
 
-!!! esempio "Esempio 9: inclusione e inclusione stretta"
+!!! esempio "Esempio 11: inclusione e inclusione stretta"
 
     - $\{1, 4\} \subseteq \{1, 3, 4\}$, perché $1$ e $4$ appartengono a $\{1, 3, 4\}$. L'inclusione è stretta, $\{1, 4\} \subsetneqq \{1, 3, 4\}$, perché $3 \in \{1, 3, 4\}$ ma $3 \notin \{1, 4\}$, quindi i due insiemi non sono uguali.
 
@@ -424,9 +496,9 @@ Se si afferma che $A \subseteq B$, non si esclude che sia $A = B$. Se invece vog
 
     - un elemento appartiene a un insieme.
 
-<a id="box-ex_ins-appartiene-1-19"></a>
+<a id="box-ex_ins-appartiene-1-21"></a>
 
-!!! esempio "Esempio 10: “appartiene a” vs “è contenuto in”"
+!!! esempio "Esempio 12: “appartiene a” vs “è contenuto in”"
 
     Ad esempio:
 
@@ -446,9 +518,9 @@ Se si afferma che $A \subseteq B$, non si esclude che sia $A = B$. Se invece vog
 
 Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in questo caso  i simboli $\in$ e $\subseteq$ non sono intercambiabili, ma devono essere utilizzati correttamente.
 
-<a id="box-ex_ins-appartiene-2-20"></a>
+<a id="box-ex_ins-appartiene-2-22"></a>
 
-!!! esempio "Esempio 11: “appartiene a” vs “è contenuto in”"
+!!! esempio "Esempio 13: “appartiene a” vs “è contenuto in”"
 
     Ad esempio, se definiamo l'insieme
 
@@ -460,7 +532,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 ### 3.1 Proprietà dell'inclusione
 
-<a id="box-prop_ins-riflessiva-21"></a>
+<a id="box-prop_ins-riflessiva-23"></a>
 
 !!! teorema "Proposizione 1: proprietà riflessiva dell'inclusione"
 
@@ -474,7 +546,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
     Per la definizione di sottoinsieme dobbiamo verificare che ogni elemento di $A$ è anche elemento di $A$, cioè che per ogni $x$ vale l'implicazione $x \in A \Longrightarrow x \in A$. L'implicazione è vera perché la tesi coincide con l'ipotesi: se $x \in A$, allora $x \in A$. Quindi $A \subseteq A$. <span class="qed">□</span>
 
-<a id="box-prop_ins-antisimmetrica-22"></a>
+<a id="box-prop_ins-antisimmetrica-24"></a>
 
 !!! teorema "Proposizione 2: proprietà antisimmetrica dell'inclusione"
 
@@ -492,7 +564,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 - La proprietà antisimmetrica dà il metodo più usato per dimostrare che due insiemi $A$ e $B$ sono uguali, detto della <strong>doppia inclusione</strong>: si prende un elemento qualsiasi di $A$ e si mostra che appartiene a $B$ (cioè $A \subseteq B$), poi si prende un elemento qualsiasi di $B$ e si mostra che appartiene ad $A$ (cioè $B \subseteq A$).
 
-<a id="box-prop_ins-transitiva-23"></a>
+<a id="box-prop_ins-transitiva-25"></a>
 
 !!! teorema "Proposizione 3: proprietà transitiva dell'inclusione"
 
@@ -508,13 +580,13 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 ### 3.2 Insieme vuoto, cardinalità e insieme delle parti
 
-<a id="box-def_ins-vuoto-24"></a>
+<a id="box-def_ins-vuoto-26"></a>
 
 !!! definizione "Definizione 8: di insieme vuoto"
 
     L'<strong>insieme vuoto</strong> è l'insieme che non contiene alcun elemento. Si indica  con  $\varnothing.$
 
-<a id="box-oss_ins-vuoto-25"></a>
+<a id="box-oss_ins-vuoto-27"></a>
 
 !!! osservazione "Osservazione 3"
 
@@ -534,7 +606,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
     L'ipotesi $x \in \varnothing$ è falsa per ogni $x$, perché nessun elemento appartiene a $\varnothing$. Un'implicazione con l'ipotesi falsa è vera qualunque sia la tesi: si dice che l'implicazione è <strong>vera per vacuità</strong>. Lo stesso si vede ragionando per assurdo: se non fosse $\varnothing \subseteq A$, esisterebbe un elemento di $\varnothing$ che non appartiene ad $A$; ma $\varnothing$ non ha elementi, quindi un tale elemento non esiste. Abbiamo quindi la tesi. <span class="qed">□</span>
 
-<a id="box-def_ins-cardinalita-26"></a>
+<a id="box-def_ins-cardinalita-28"></a>
 
 !!! definizione "Definizione 9: di cardinalità di un insieme"
 
@@ -546,13 +618,13 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 - Un sottoinsieme con $k$ elementi di un insieme $A$ si chiama <strong>$k$-sottoinsieme</strong> di $A$.
 
-<a id="box-ex_ins-cardinalita-27"></a>
+<a id="box-ex_ins-cardinalita-29"></a>
 
-!!! esempio "Esempio 12: cardinalità e sottoinsiemi con k elementi"
+!!! esempio "Esempio 14: cardinalità e sottoinsiemi con k elementi"
 
     Dato l'insieme $A=\{1,2,3\}$ abbiamo $|A| = 3$. I $2$-sottoinsiemi di $A$ sono $\{1,2\}$, $\{1,3\}$ e $\{2,3\}$; i $1$-sottoinsiemi di $A$ sono i singoletti $\{1\}$, $\{2\}$ e $\{3\}$; l'unico $0$-sottoinsieme di $A$ è $\varnothing$ e l'unico $3$-sottoinsieme di $A$ è $A$ stesso.
 
-<a id="box-def_ins-parti-28"></a>
+<a id="box-def_ins-parti-30"></a>
 
 !!! definizione "Definizione 10: di insieme delle parti"
 
@@ -560,9 +632,9 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 - Ogni insieme $A$ ha due sottoinsiemi banali, che sono $A$ stesso (per la proprietà riflessiva dell'inclusione) e l'insieme vuoto $\varnothing$ (per l'Osservazione sull'insieme vuoto); i due sottoinsiemi coincidono se $A$ è vuoto.
 
-<a id="box-ex_ins-parti-29"></a>
+<a id="box-ex_ins-parti-31"></a>
 
-!!! esempio "Esempio 13: insieme delle parti"
+!!! esempio "Esempio 15: insieme delle parti"
 
     Ad esempio, dato
 
@@ -576,7 +648,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
     \mathscr{P}(A) = \bigg\{~\varnothing,~ \{1\},~ \{2\},~ \{3\},~ \{1, 2\},~ \{2, 3\},~ \{1 , 3\},~ \{1,2,3\} ~\bigg\}
     $$
 
-<a id="box-oss_ins-parti-30"></a>
+<a id="box-oss_ins-parti-32"></a>
 
 !!! osservazione "Osservazione 4"
 
@@ -602,9 +674,9 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-ex_ins-k4-31"></a>
+<a id="box-ex_ins-k4-33"></a>
 
-!!! esempio "Esempio 14: costruzione dell'insieme delle parti con un albero binario"
+!!! esempio "Esempio 16: costruzione dell'insieme delle parti con un albero binario"
 
     Dato l'insieme $A=\{1,2,3\}$ con $n=3$ elementi, la cardinalità  del suo insieme delle parti è $2^3=8$. La costruzione dell'insieme delle parti $\mathscr{P}(A)$ può essere visualizzata attraverso il seguente <strong>albero binario</strong> (grafo non diretto, connesso e aciclico) a cui a ogni livello si decide se includere o meno l'oggetto nel sottoinsieme:
 
@@ -612,7 +684,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 ## 4. Operazioni tra insiemi
 
-<a id="box-def_ins-intersezione-32"></a>
+<a id="box-def_ins-intersezione-34"></a>
 
 !!! definizione "Definizione 11: di intersezione di insiemi"
 
@@ -624,7 +696,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 È l'insieme degli elementi che appartengono sia al primo sia al secondo insieme.
 
-<a id="box-def_ins-unione-33"></a>
+<a id="box-def_ins-unione-35"></a>
 
 !!! definizione "Definizione 12: di unione di insiemi"
 
@@ -636,7 +708,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 È l'insieme degli elementi che appartengono al primo o al secondo insieme, intendendo la “o” in modo <u>non esclusivo</u> (l'insieme degli elementi che appartengono ad $A$ o a $B$ o a entrambi).
 
-<a id="box-def_ins-differenza-34"></a>
+<a id="box-def_ins-differenza-36"></a>
 
 !!! definizione "Definizione 13: di differenza di insiemi"
 
@@ -648,9 +720,9 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 È l'insieme degli elementi che appartengono al primo ma non al secondo insieme. Il simbolo “$\setminus$” si può anche scrivere “-” per analogia con la differenza aritmetica.
 
-<a id="box-ex_ins-operazioni-35"></a>
+<a id="box-ex_ins-operazioni-37"></a>
 
-!!! esempio "Esempio 15: intersezione, unione e differenza"
+!!! esempio "Esempio 17: intersezione, unione e differenza"
 
     Dati gli insiemi $A = \{1, 2, 3, 4\}$ e $B = \{3, 4, 5\}$, abbiamo
 
@@ -666,13 +738,13 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
 ### 4.1 Insiemi complementari e insiemi disgiunti
 
-<a id="box-ex_ins-universo-36"></a>
+<a id="box-ex_ins-universo-38"></a>
 
-!!! esempio "Esempio 16: insiemi universo"
+!!! esempio "Esempio 18: insiemi universo"
 
     Ad esempio, in questioni di aritmetica potrebbe essere $U= \N$; se consideriamo insiemi formati soltanto da numeri interi è naturale scegliere $U = \Z$, mentre in questioni di analisi potrebbe essere $U =\R$.
 
-<a id="box-def_ins-complementare-37"></a>
+<a id="box-def_ins-complementare-39"></a>
 
 !!! definizione "Definizione 14: di complementazione insiemi e insiemi complementari"
 
@@ -690,7 +762,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
     \overline{A} = U \setminus A.
     $$
 
-<a id="box-prop_ins-complementare-38"></a>
+<a id="box-prop_ins-complementare-40"></a>
 
 !!! teorema "Proposizione 4: proprietà del complementare"
 
@@ -720,7 +792,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-prop_ins-identita-39"></a>
+<a id="box-prop_ins-identita-41"></a>
 
 !!! teorema "Proposizione 5: leggi di identità"
 
@@ -747,7 +819,7 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-def_ins-disgiunti-40"></a>
+<a id="box-def_ins-disgiunti-42"></a>
 
 !!! definizione "Definizione 15: di insiemi disgiunti"
 
@@ -757,9 +829,9 @@ Talvolta si considerano insiemi che hanno per elementi altri insiemi. Anche in q
     \red{A} \cap \blue{B} = \varnothing
     $$
 
-<a id="box-ex_ins-disgiunti-41"></a>
+<a id="box-ex_ins-disgiunti-43"></a>
 
-!!! esempio "Esempio 17: insiemi disgiunti"
+!!! esempio "Esempio 19: insiemi disgiunti"
 
     Gli insiemi $\{1, 2\}$ e $\{3, 4\}$ sono disgiunti, mentre $\{1, 2\}$ e $\{2, 3\}$ non lo sono, perché $\{1, 2\} \cap \{2, 3\} = \{2\}$. Per la proprietà del complementare, ogni insieme $A \subseteq U$ e il suo complementare $\overline{A}$ sono disgiunti.
 
@@ -771,7 +843,7 @@ $$
 
 Per una famiglia formata da due insiemi $B$ e $C$ si ritrova l'unione $B \cup C$.
 
-<a id="box-def_ins-partizione-42"></a>
+<a id="box-def_ins-partizione-44"></a>
 
 !!! definizione "Definizione 16: di partizione"
 
@@ -791,7 +863,7 @@ Per una famiglia formata da due insiemi $B$ e $C$ si ritrova l'unione $B \cup C$
 
     Gli insiemi della famiglia $\mathcal{F}$ si chiamano <strong>blocchi</strong> della partizione.
 
-<a id="box-oss_ins-partizione-43"></a>
+<a id="box-oss_ins-partizione-45"></a>
 
 !!! osservazione "Osservazione 5"
 
@@ -803,9 +875,9 @@ Per una famiglia formata da due insiemi $B$ e $C$ si ritrova l'unione $B \cup C$
 
     ($\Longleftarrow$) Supponiamo che ogni elemento di $A$ appartenga a esattamente un insieme della famiglia. Gli insiemi della famiglia sono non vuoti per ipotesi. Ogni elemento di $A$ appartiene ad almeno un insieme della famiglia, quindi $A \subseteq \bigcup_{B \in \mathcal{F}} B$; viceversa, ogni elemento dell'unione appartiene a un sottoinsieme di $A$ e quindi ad $A$: per la doppia inclusione l'unione è $A$. Infine, se due insiemi diversi $B, C \in \mathcal{F}$ avessero un elemento comune $x$, questo elemento di $A$ apparterrebbe a due insiemi della famiglia, contro l'ipotesi: quindi $B \cap C = \varnothing$. <span class="qed">□</span>
 
-<a id="box-ex_ins-partizione-44"></a>
+<a id="box-ex_ins-partizione-46"></a>
 
-!!! esempio "Esempio 18: partizioni"
+!!! esempio "Esempio 20: partizioni"
 
     - La famiglia $\big\{ \{1, 2\},~ \{3\},~ \{4, 5, 6\} \big\}$ è una partizione di $A = \{1, 2, 3, 4, 5, 6\}$: i tre insiemi sono non vuoti e ogni elemento di $A$ appartiene a esattamente uno di essi.
 
@@ -837,7 +909,7 @@ I diagrammi di Venn sono rappresentazioni grafiche in cui gli insiemi sono rappr
 
 ### 4.3 Proprietà delle operazioni su insiemi
 
-<a id="box-oss_ins-intersezione-45"></a>
+<a id="box-oss_ins-intersezione-47"></a>
 
 !!! osservazione "Osservazione 6: proprietà dell'intersezione"
 
@@ -893,7 +965,7 @@ I diagrammi di Venn sono rappresentazioni grafiche in cui gli insiemi sono rappr
 
     </div> <span class="qed">□</span>
 
-<a id="box-oss_ins-unione-46"></a>
+<a id="box-oss_ins-unione-48"></a>
 
 !!! osservazione "Osservazione 7: proprietà dell'unione"
 
@@ -949,7 +1021,7 @@ I diagrammi di Venn sono rappresentazioni grafiche in cui gli insiemi sono rappr
 
     </div> <span class="qed">□</span>
 
-<a id="box-oss_ins-distributive-47"></a>
+<a id="box-oss_ins-distributive-49"></a>
 
 !!! osservazione "Osservazione 8: proprietà distributive (legano unione e intersezione)"
 
@@ -1011,7 +1083,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     </div> <span class="qed">□</span>
 
-<a id="box-prop_ins-assorbimento-48"></a>
+<a id="box-prop_ins-assorbimento-50"></a>
 
 !!! teorema "Proposizione 6: leggi di assorbimento"
 
@@ -1035,7 +1107,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-prop_ins-inclusione-operazioni-49"></a>
+<a id="box-prop_ins-inclusione-operazioni-51"></a>
 
 !!! teorema "Proposizione 7: inclusione, unione e intersezione"
 
@@ -1059,7 +1131,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-prop_ins-demorgan-1-50"></a>
+<a id="box-prop_ins-demorgan-1-52"></a>
 
 !!! teorema "Proposizione 8: leggi di De Morgan (prima versione)"
 
@@ -1119,7 +1191,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     </div> <span class="qed">□</span>
 
-<a id="box-prop_ins-demorgan-2-51"></a>
+<a id="box-prop_ins-demorgan-2-53"></a>
 
 !!! teorema "Proposizione 9: leggi di De Morgan (seconda versione)"
 
@@ -1209,7 +1281,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
 ### 4.4 Proprietà delle cardinalità degli insiemi
 
-<a id="box-prop_ins-card-disgiunti-52"></a>
+<a id="box-prop_ins-card-disgiunti-54"></a>
 
 !!! teorema "Proposizione 10: cardinalità dell'unione di insiemi disgiunti"
 
@@ -1231,7 +1303,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     Allo stesso modo, ogni elemento di $A_1 \cup A_2 \cup \cdots \cup A_m$ appartiene ad almeno uno degli insiemi $A_1, A_2, \dots, A_m$ e, poiché gli insiemi sono a due a due disgiunti, a uno solo di essi. Contando uno dopo l'altro gli elementi di $A_1, A_2, \dots, A_m$ contiamo quindi ogni elemento dell'unione esattamente una volta. <span class="qed">□</span>
 
-<a id="box-prop_ins-card-unione-53"></a>
+<a id="box-prop_ins-card-unione-55"></a>
 
 !!! teorema "Proposizione 11: cardinalità dell'unione"
 
@@ -1269,7 +1341,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     cioè $|A \cup B| = |A| + |B| - |A \cap B|$. <span class="qed">□</span>
 
-<a id="box-prop_ins-card-disuguaglianza-54"></a>
+<a id="box-prop_ins-card-disuguaglianza-56"></a>
 
 !!! teorema "Proposizione 12: disuguaglianza per la cardinalità dell'unione"
 
@@ -1289,7 +1361,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-prop_ins-card-sottoinsieme-55"></a>
+<a id="box-prop_ins-card-sottoinsieme-57"></a>
 
 !!! teorema "Proposizione 13: cardinalità di un sottoinsieme"
 
@@ -1321,7 +1393,7 @@ Le proprietà distributive legano fra loro unione e intersezione.
 
 Esiste un'altra operazione sugli insiemi, che può essere eseguita su due insiemi qualsiasi (cioè due insiemi non necessariamente contenuti nel medesimo universo). Per introdurla serve il concetto di <em>coppia ordinata</em>: a differenza dell'insieme $\{a, b\}$, in cui l'ordine degli elementi è irrilevante, in una coppia ordinata conta quale elemento viene prima.
 
-<a id="box-def_ins-coppia-56"></a>
+<a id="box-def_ins-coppia-58"></a>
 
 !!! definizione "Definizione 17: di coppia ordinata"
 
@@ -1335,7 +1407,7 @@ Esiste un'altra operazione sugli insiemi, che può essere eseguita su due insiem
 
 Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando soltanto insiemi. Ciò che conta della coppia ordinata è la proprietà seguente.
 
-<a id="box-prop_ins-coppia-57"></a>
+<a id="box-prop_ins-coppia-59"></a>
 
 !!! teorema "Proposizione 14: proprietà caratteristica delle coppie ordinate"
 
@@ -1359,7 +1431,7 @@ Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando solta
 
 - In particolare, se $a \neq b$ allora $(a, b) \neq (b, a)$: se fosse $(a,b) = (b,a)$, la proprietà caratteristica darebbe $a = b$. Invece gli insiemi $\{a, b\}$ e $\{b, a\}$ sono sempre uguali. Se $a = b$, le due coppie $(a,b)$ e $(b,a)$ sono la stessa coppia.
 
-<a id="box-def_ins-prodotto-58"></a>
+<a id="box-def_ins-prodotto-60"></a>
 
 !!! definizione "Definizione 18: di prodotto cartesiano"
 
@@ -1369,7 +1441,7 @@ Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando solta
     A \times B = \big\{ (a, b) : a \in A \textrm{ e } b \in B \big\}.
     $$
 
-<a id="box-prop_ins-card-prodotto-59"></a>
+<a id="box-prop_ins-card-prodotto-61"></a>
 
 !!! teorema "Proposizione 15: cardinalità del prodotto cartesiano"
 
@@ -1399,9 +1471,9 @@ Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando solta
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-<a id="box-ex_ins-prodotto-60"></a>
+<a id="box-ex_ins-prodotto-62"></a>
 
-!!! esempio "Esempio 19: prodotto cartesiano"
+!!! esempio "Esempio 21: prodotto cartesiano"
 
     $$
     \{a,b\} \times \{a,b,c\} = \big\{ (a,a),(a,b),(a,c),(b,a),(b,b),(b,c) \big\}
@@ -1415,7 +1487,7 @@ Questa definizione, dovuta a Kuratowski, esprime la coppia ordinata usando solta
 
 Il prodotto cartesiano si estende a più di due insiemi.
 
-<a id="box-def_ins-nuple-61"></a>
+<a id="box-def_ins-nuple-63"></a>
 
 !!! definizione "Definizione 19: di $n$-upla ordinata e di prodotto cartesiano di $n$ insiemi"
 
@@ -1437,7 +1509,7 @@ Il prodotto cartesiano si estende a più di due insiemi.
     (a_1, a_2, \dots, a_n) = (b_1, b_2, \dots, b_n) \quad \Longleftrightarrow \quad a_i = b_i \textrm{ per ogni } i \in \{1, 2, \dots, n\}.
     $$
 
-<a id="box-prop_ins-card-nprodotto-62"></a>
+<a id="box-prop_ins-card-nprodotto-64"></a>
 
 !!! teorema "Proposizione 16: cardinalità del prodotto cartesiano di $n$ insiemi"
 
@@ -1479,9 +1551,9 @@ Il prodotto cartesiano si estende a più di due insiemi.
     \R^n =\big\{ ~(x_1,~x_2,~ \dots,~ x_n)~: ~~x_i \in \R, ~~i \in \{1,2,\dots, n\} ~\big\}
     $$
 
-<a id="box-ex_ins-piano-63"></a>
+<a id="box-ex_ins-piano-65"></a>
 
-!!! esempio "Esempio 20: sottoinsiemi del piano"
+!!! esempio "Esempio 22: sottoinsiemi del piano"
 
     Quando si studiano sottoinsiemi del piano si sceglie come universo $U = \R^2$. Ad esempio l'insieme dei punti del piano con entrambe le coordinate positive (il <em>primo quadrante</em>) è
 
@@ -1529,7 +1601,7 @@ Chiamiamo questo insieme $S$,  si possono fare due ipotesi:
 
 - L'<strong>assioma di regolarità</strong> afferma che “Ogni insieme non vuoto $A$ contiene un elemento  disgiunto da $A$”.
 
-    <a id="box-oss_ins-regolarita-64"></a>
+    <a id="box-oss_ins-regolarita-66"></a>
 
     !!! osservazione "Osservazione 9"
 
