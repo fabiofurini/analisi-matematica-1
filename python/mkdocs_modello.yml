@@ -72,6 +72,12 @@ extra:
     - icon: material/matrix
       link: https://fabiofurini.github.io/algebra-lineare/
       name: Algebra lineare
+    - icon: material/vector-triangle
+      link: https://fabiofurini.github.io/programmazione-lineare/
+      name: Programmazione lineare
+    - icon: material/chart-bell-curve
+      link: https://fabiofurini.github.io/ottimizzazione-convessa/
+      name: Ottimizzazione convessa
   alternate:
     - name: Italiano
       link: https://fabiofurini.github.io/analisi-matematica-1/

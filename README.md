@@ -65,6 +65,8 @@ The whole course is also available in English:
 - [Laboratorio di Ricerca Operativa](https://fabiofurini.github.io/laboratorio-ricerca-operativa/)
 - [Modellazione MIP](https://fabiofurini.github.io/modellazione-mip/)
 - [Algebra lineare](https://fabiofurini.github.io/algebra-lineare/)
+- [Programmazione lineare](https://fabiofurini.github.io/programmazione-lineare/)
+- [Ottimizzazione convessa](https://fabiofurini.github.io/ottimizzazione-convessa/)
 
 ---
 
