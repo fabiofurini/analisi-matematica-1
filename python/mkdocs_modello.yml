@@ -118,7 +118,7 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
-  - javascripts/interattivi.js
+  - javascripts/interattivi.js?v=80738a4fba
 
 # le pagine delle singole app del laboratorio non stanno nel menu
 not_in_nav: |
