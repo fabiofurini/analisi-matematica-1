@@ -84,3 +84,11 @@ body:has(.gi-app-intera) .md-content__inner::before { display: none; }
   .gi-app-intera .gi-corpo { grid-template-columns: 1fr; padding: .6em; }
   .gi-app-intera .gi-board { height: 70vh; min-height: 320px; }
 }
+
+/* pagine delle app: niente spazio bianco in alto, titolo compatto (l'altezza della board la calcola il JS) */
+body:has(.gi-app-intera) .md-main__inner { margin-top: 0; }
+body:has(.gi-app-intera) .md-content__inner { margin-top: 0; padding-top: .3rem; }
+body:has(.gi-app-intera) .md-content__inner::before { display: none; }
+body:has(.gi-app-intera) .md-content__inner > h1 { font-size: 1.45em; margin: .15em 0 .2em; }
+body:has(.gi-app-intera) .md-content__inner > p { margin: .2em 0 .4em; }
+body:has(.gi-app-intera) .gi-app-intera { margin-top: .4em; }

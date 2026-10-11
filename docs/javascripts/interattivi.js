@@ -620,6 +620,20 @@
     const legenda = h("div", { class: "gi-legenda" });
     sx.append(formula, boardEl, legenda);
 
+    // app a tutta pagina: la board occupa lo spazio che resta nello schermo, così si vede tutta senza scorrere
+    if (el.classList.contains("gi-app-intera") && !R.rapporto) {
+      const altezza = () => {
+        if (!document.body.contains(el)) return;
+        const top = boardEl.getBoundingClientRect().top + window.scrollY;
+        const hh = Math.round(window.innerHeight - top - legenda.offsetHeight - 30);
+        boardEl.style.height = Math.max(window.innerWidth < 860 ? 300 : 360, hh) + "px";
+        boardEl.style.minHeight = "0";
+      };
+      requestAnimationFrame(altezza);
+      setTimeout(altezza, 700);
+      window.addEventListener("resize", altezza);
+    }
+
     // --- scelta della funzione
     if (funzioni) {
       dx.append(h("div", {}, "<strong>Funzione</strong>"));
@@ -790,9 +804,20 @@
         if (stesso) return;
       }
       const inp = input[k], lo = +inp.min, hi = +inp.max, passo = +inp.step, t0 = performance.now();
+      const nPassi = Math.round((hi - lo) / passo), discreto = Number.isInteger(passo) && passo > 0 && nPassi <= 400;
+      let i0 = Math.round((+inp.value - lo) / passo);
+      if (i0 >= nPassi) i0 = 0;
       btn.classList.add("on"); btn.textContent = "⏸";
       const step = (t) => {
         if (!document.body.contains(el)) return;
+        // parametri a passi interi (passo dell'algoritmo, n, ...): un passo ogni 0,9 s, poi si ferma
+        if (discreto) {
+          const i = Math.min(nPassi, i0 + Math.floor((t - t0) / 900));
+          if (+inp.value !== lo + i * passo) { inp.value = String(lo + i * passo); aggiorna(); }
+          if (i >= nPassi) { const a0 = anim; setTimeout(() => { if (anim === a0) { a0.btn.classList.remove("on"); a0.btn.textContent = "▶"; anim = null; } }, 900); return; }
+          anim.id = requestAnimationFrame(step);
+          return;
+        }
         const v = lo + (hi - lo) * (0.5 - 0.5 * Math.cos((t - t0) / 3200));
         inp.value = (Math.round(v / passo) * passo).toFixed(3);
         aggiorna();
