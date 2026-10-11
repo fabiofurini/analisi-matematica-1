@@ -610,7 +610,7 @@
     el.append(testa);
 
     const corpo = h("div", { class: "gi-corpo" });
-    const sx = h("div"), dx = h("div");
+    const sx = h("div", { class: "gi-sx" }), dx = h("div");
     corpo.append(sx, dx);
     el.append(corpo);
 
@@ -803,6 +803,18 @@
 
     // cambio di tema chiaro/scuro: si ridisegna con i colori giusti
     new MutationObserver(() => aggiorna(true)).observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+
+    // app a tutta pagina: la scheda segue il contenitore (anche al resize della finestra)
+    if (el.classList.contains("gi-app-intera") && window.ResizeObserver) {
+      let w0 = 0, h0 = 0;
+      new ResizeObserver(() => requestAnimationFrame(() => {
+        const w = boardEl.clientWidth, hh = boardEl.clientHeight;
+        if (!board || !w || !hh || (w === w0 && hh === h0)) return;
+        w0 = w; h0 = hh;
+        board.resizeContainer(w, hh, true);
+        board.update();
+      })).observe(boardEl);
+    }
 
     aggiorna(true);
     typeset(el);

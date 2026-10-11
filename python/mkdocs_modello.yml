@@ -120,11 +120,14 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
   - javascripts/interattivi.js
 
+# le pagine delle singole app del laboratorio non stanno nel menu
+not_in_nav: |
+  /interattivi/*.md
+
 nav:
   - Home: index.md
   # NAV_PARTI
-  - Laboratorio interattivo:
-      - interattivi/index.md
+  - Laboratorio interattivo: interattivi/index.md
   - Materiale scaricabile: materiale.md
   - Il corso:
       - organizzazione.md

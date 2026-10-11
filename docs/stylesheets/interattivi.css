@@ -69,3 +69,18 @@
 .md-typeset .gi table.gi-tabella th { font-weight: 700; }
 
 .md-typeset .gi-invito { margin: 1.6em 0 -.6em; color: var(--c-interattivo); font-size: .85em; }
+
+/* app del laboratorio a tutta pagina (una app per pagina) */
+body:has(.gi-app-intera) .md-grid { max-width: none; }
+.gi-app-intera { margin: .6em 0 1.2em; }
+body:has(.gi-app-intera) .md-typeset h1 { margin: .2em 0 .3em; font-size: 1.7em; }
+body:has(.gi-app-intera) .md-content__inner { margin-top: 0; padding-top: .2rem; }
+body:has(.gi-app-intera) .md-content__inner::before { display: none; }
+.gi-app-intera .gi-corpo { grid-template-columns: minmax(0, 2.6fr) minmax(280px, 1fr); }
+.gi-app-intera .gi-sx { display: flex; flex-direction: column; min-width: 0; }
+.gi-app-intera .gi-board { aspect-ratio: auto; height: max(420px, calc(100vh - 470px)); }
+.gi-app-intera .gi-formula { font-size: 1.3em; }
+@media (max-width: 860px) {
+  .gi-app-intera .gi-corpo { grid-template-columns: 1fr; padding: .6em; }
+  .gi-app-intera .gi-board { height: 70vh; min-height: 320px; }
+}

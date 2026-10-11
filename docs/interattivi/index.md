@@ -1,100 +1,167 @@
 # Laboratorio interattivo
 
-Qui la matematica si tocca con mano. Ogni grafico ha dei **cursori**: ciascun
-coefficiente ha il suo colore, lo stesso nel cursore e nella formula, così si
-vede subito *chi fa che cosa*. Il pulsante ▶ accanto a un coefficiente lo fa
-muovere da solo; in alcuni grafici la scheda **Sfida** propone una curva
-bersaglio da riprodurre.
-
-!!! tip "Come si usa"
-    Trascina i cursori, oppure clicca ▶ per l'animazione. Sul grafico puoi
-    spostarti trascinando con due dita (o con il mouse) e ingrandire con
-    Maiusc + rotellina. Ogni grafico si ritrova anche nel capitolo delle
-    dispense a cui si riferisce.
-
-<div class="grid cards" markdown>
-
--   :material-numeric: **[Numeri](#numeri)** — radici n-esime complesse
--   :material-function-variant: **[Funzioni](#funzioni)** — operazioni sui grafici, oscillazioni, potenze, esponenziali e logaritmi
--   :material-chart-bell-curve: **[Limiti](#limiti)** — limite di successione, Erone, bisezione
--   :material-chart-line: **[Derivate](#derivate)** — tangente, Lagrange, concavità, Taylor, Newton
--   :material-sigma: **[Serie](#serie)** — serie geometrica, serie armonica generalizzata
--   :material-chart-areaspline: **[Integrali](#integrali)** — somme di Riemann
-
-</div>
+Qui la matematica si tocca con mano. Ogni app si apre in una pagina a tutta larghezza: **trascina i punti, muovi i cursori** (il pulsante ▶ li anima) e guarda subito come cambia il grafico.
 
 ## Numeri
 
-<div class="gi" data-grafico="radici"></div>
+<div class="grid cards" markdown>
 
-Il capitolo: [Numeri complessi](../numeri/12-numeri-complessi.md).
+-   :material-hexagon-multiple-outline:{ .lg .middle } **Radici n-esime complesse**
+
+    ---
+
+    Le \(n\) soluzioni di \(z^n = w\) sul piano di Gauss: scegli l'indice \(n\), il modulo e l'argomento di \(w\) e guarda i vertici del poligono regolare.
+
+    [Apri l'app →](radici-complesse.md)
+
+</div>
 
 ## Funzioni
 
-<div class="gi" data-grafico="operazioni"></div>
+<div class="grid cards" markdown>
 
-Il capitolo: [Operazioni sui grafici](../funzioni/09-operazioni-grafici.md).
+-   :material-chart-line-variant:{ .lg .middle } **Operazioni sui grafici**
 
-<div class="gi" data-grafico="oscillazioni"></div>
+    ---
 
-Il capitolo: [Fenomeni vibratori](../funzioni/06-fenomeni-vibratori.md).
+    Traslazioni, dilatazioni e simmetrie di un grafico: i quattro coefficienti di \(a f(bx + c) + d\) si muovono con i cursori.
 
-<div class="gi" data-grafico="potenze"></div>
+    [Apri l'app →](operazioni-sui-grafici.md)
 
-Il capitolo: [Funzioni potenza](../funzioni/03-potenza.md).
+-   :material-sine-wave:{ .lg .middle } **Oscillazioni armoniche**
 
-<div class="gi" data-grafico="esponenziali"></div>
+    ---
 
-Il capitolo: [Funzioni esponenziali e logaritmiche](../funzioni/04-esponenziali-logaritmi.md).
+    Ampiezza, pulsazione e fase di \(A\sin(\omega x + \varphi)\): vedi come cambiano il periodo e la posizione dell'onda.
+
+    [Apri l'app →](oscillazioni.md)
+
+-   :material-exponent:{ .lg .middle } **Funzioni potenza**
+
+    ---
+
+    Il grafico di \(y = x^{\alpha}\) al variare dell'esponente, con la scelta dell'esponente tra molti casi tipici.
+
+    [Apri l'app →](funzioni-potenza.md)
+
+-   :material-exponent-box:{ .lg .middle } **Esponenziali e logaritmi**
+
+    ---
+
+    L'esponenziale e il logaritmo di base \(a\), simmetrici rispetto alla bisettrice: muovi la base e guarda crescita e decrescita.
+
+    [Apri l'app →](esponenziali-logaritmi.md)
+
+</div>
 
 ## Limiti
 
-<div class="gi" data-grafico="successione"></div>
+<div class="grid cards" markdown>
 
-Il capitolo: [Successioni e limiti di successioni](../successioni/01-limiti-successioni.md).
+-   :material-dots-horizontal:{ .lg .middle } **Limite di una successione**
 
-<div class="gi" data-grafico="erone"></div>
+    ---
 
-Il capitolo: [Successioni definite per ricorrenza](../successioni/06-ricorrenza.md).
+    La fascia \((\ell-\varepsilon, \ell+\varepsilon)\) intorno al limite e la soglia \(N\): rimpicciolisci \(\varepsilon\) e guarda da dove in poi i termini restano dentro.
 
-<div class="gi" data-grafico="bisezione"></div>
+    [Apri l'app →](limite-successione.md)
 
-Il capitolo: [Teorema degli zeri e metodo della bisezione](../limiti/08-zeri-bisezione.md).
+-   :material-square-root:{ .lg .middle } **Successione di Erone**
+
+    ---
+
+    L'iterazione \(x_{n+1} = \tfrac12(x_n + a/x_n)\) che converge a \(\sqrt a\), disegnata come ragnatela: scegli \(a\), il punto di partenza e il numero di passi.
+
+    [Apri l'app →](successione-di-erone.md)
+
+-   :material-content-cut:{ .lg .middle } **Metodo di bisezione**
+
+    ---
+
+    A ogni passo l'intervallo si dimezza e contiene ancora lo zero: avanza passo passo e confronta l'errore con la stima teorica.
+
+    [Apri l'app →](bisezione.md)
+
+</div>
 
 ## Derivate
 
-<div class="gi" data-grafico="tangente"></div>
+<div class="grid cards" markdown>
 
-Il capitolo: [Funzione derivata](../derivate/01-funzione-derivata.md).
+-   :material-vector-line:{ .lg .middle } **Dalla secante alla tangente**
 
-<div class="gi" data-grafico="lagrange"></div>
+    ---
 
-Il capitolo: [Teorema del valore medio, massimi e minimi](../derivate/05-valor-medio.md).
+    Il rapporto incrementale quando \(h \to 0\): trascina \(h\) verso zero, da destra e da sinistra, e guarda la secante diventare tangente.
 
-<div class="gi" data-grafico="concavita"></div>
+    [Apri l'app →](secante-tangente.md)
 
-Il capitolo: [Derivata seconda](../derivate/07-derivata-seconda.md).
+-   :material-slope-uphill:{ .lg .middle } **Teorema di Lagrange**
 
-<div class="gi" data-grafico="taylor"></div>
+    ---
 
-Il capitolo: [Calcolo differenziale e approssimazioni](../derivate/08-approssimazioni.md).
+    Esiste un punto in cui la tangente è parallela alla secante: sposta gli estremi dell'intervallo e trova i punti \(c\).
 
-<div class="gi" data-grafico="newton"></div>
+    [Apri l'app →](teorema-di-lagrange.md)
 
-Il capitolo: [Metodo di Newton](../derivate/10-newton.md).
+-   :material-chart-bell-curve-cumulative:{ .lg .middle } **Derivata prima e seconda**
+
+    ---
+
+    Monotonia, concavità e flessi: muovi un punto sul grafico e leggi il segno di \(f'\) e di \(f''\).
+
+    [Apri l'app →](concavita.md)
+
+-   :material-chart-areaspline-variant:{ .lg .middle } **Polinomi di Mac Laurin**
+
+    ---
+
+    L'approssimazione di una funzione con il polinomio di grado \(n\): alza il grado e guarda dove il polinomio segue il grafico.
+
+    [Apri l'app →](polinomi-di-maclaurin.md)
+
+-   :material-chart-timeline-variant:{ .lg .middle } **Metodo di Newton**
+
+    ---
+
+    Si scende lungo le tangenti verso lo zero: scegli il punto di partenza e le iterazioni, e osserva come raddoppiano le cifre esatte.
+
+    [Apri l'app →](metodo-di-newton.md)
+
+</div>
 
 ## Serie
 
-<div class="gi" data-grafico="geometrica"></div>
+<div class="grid cards" markdown>
 
-Il capitolo: [Serie numeriche](../serie/01-serie-numeriche.md).
+-   :material-sigma:{ .lg .middle } **Serie geometrica**
 
-<div class="gi" data-grafico="seriep"></div>
+    ---
 
-Il capitolo: [Serie numeriche a termini non negativi](../serie/02-termini-non-negativi.md).
+    Le somme parziali di \(\sum q^k\): cambia la ragione \(q\) e guarda quando convergono, quando oscillano e quando divergono.
+
+    [Apri l'app →](serie-geometrica.md)
+
+-   :material-sigma-lower:{ .lg .middle } **Serie armonica generalizzata**
+
+    ---
+
+    La serie \(\sum 1/n^p\), a termini positivi e a segni alterni: varia \(p\) e confronta le somme parziali.
+
+    [Apri l'app →](serie-armonica.md)
+
+</div>
 
 ## Integrali
 
-<div class="gi" data-grafico="riemann"></div>
+<div class="grid cards" markdown>
 
-Gli esercizi: [Primitive](../esercizi/es-integrali-01-primitive.md) · [Integrali](../esercizi/es-integrali-02-integrali.md).
+-   :material-chart-histogram:{ .lg .middle } **Somme di Riemann**
+
+    ---
+
+    L'area sotto il grafico come limite di rettangoli: aumenta il numero di rettangoli e scegli dove misurare l'altezza.
+
+    [Apri l'app →](somme-di-riemann.md)
+
+</div>
