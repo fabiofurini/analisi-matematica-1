@@ -6,8 +6,8 @@ Uso:
 
 Per ogni capitolo produce:
   - docs/<parte>/<NN>-<slug>.md          la pagina (MkDocs Material + MathJax)
-  - build/figure/<id>/figNN.tex          ogni tikzpicture come documento standalone
-  - build/report/<id>.txt                comandi sconosciuti e avvisi da rivedere
+  - BUILD/figure/<id>/figNN.tex          ogni tikzpicture come documento standalone
+  - BUILD/report/<id>.txt                comandi sconosciuti e avvisi da rivedere
 
 Le figure si compilano poi con `estrai_figure.py` (TikZ → SVG).
 
@@ -21,11 +21,10 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from capitoli import CAPITOLI, DOCS, IT, LINGUA, SORGENTE, ident, ident_it, pagina
+from capitoli import BUILD, CAPITOLI, DOCS, LINGUA, SORGENTE, ident, ident_it, pagina
 
 EN = LINGUA == "en"
 
-BUILD = IT / "build"
 
 # ---------------------------------------------------------------------------
 # utilità di parsing
@@ -1231,4 +1230,5 @@ if __name__ == "__main__":
                 continue
             risultati.append(r)
             print(f"{r['id']:45s} figure:{r['figure']:3d} avvisi:{r['avvisi']:3d}  {r['titolo']}")
+    BUILD.mkdir(parents=True, exist_ok=True)
     (BUILD / "capitoli.json").write_text(json.dumps(risultati, ensure_ascii=False, indent=1))

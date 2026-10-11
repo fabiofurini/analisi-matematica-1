@@ -1,17 +1,23 @@
 """Registro dei capitoli: da dove viene ogni pagina del sito.
 
-Ogni capitolo è una dispensa di `it/note/DISPENSE/` (note rivedute, copia delle
+Ogni capitolo è una dispensa di `it/note/NOTES_IT/DISPENSE/` (in inglese
+`en/note/NOTES_EN/DISPENSE/`, stessi nomi; note rivedute, copia delle
 note originali, che restano intatte in `1000_ANALISI_MATEMATICA/`).
 """
 import os
+import tempfile
 from pathlib import Path
 
 # lingua: LINGUA=en python3 python/... produce il sito inglese in ../en/
 LINGUA = os.environ.get("LINGUA", "it")
 MODULO = Path(__file__).resolve().parents[2]
-SORGENTE = MODULO / LINGUA / "note" / ("DISPENSE" if LINGUA == "it" else "DISPENSE_EN")
+NOTE = MODULO / LINGUA / "note" / ("NOTES_EN" if LINGUA == "en" else "NOTES_IT")
+SORGENTE = NOTE / "DISPENSE"
 IT = MODULO / LINGUA          # radice del repository della lingua (it/ o en/)
 DOCS = IT / "docs"
+# file intermedi (figure TikZ estratte, report, compilazioni delle figure): FUORI da
+# Dropbox, in BUILD (variabile d'ambiente AM1_BUILD, altrimenti una cartella in /tmp)
+BUILD = Path(os.environ.get("AM1_BUILD", Path(tempfile.gettempdir()) / "analisi-matematica-1-build")) / LINGUA
 
 # (cartella del sito, titolo della parte, icona, descrizione breve, parte delle note)
 PARTI = [
@@ -140,7 +146,7 @@ def pagina(parte, num, slug):
 
 
 # ---------------------------------------------------------------- esercizi
-SORGENTE_ES = MODULO / LINGUA / "note" / ("ESERCIZI" if LINGUA == "it" else "ESERCIZI_EN")
+SORGENTE_ES = NOTE / "ESERCIZI"
 CARTELLA_ES = "esercizi" if LINGUA == "it" else "exercises"   # cartella del sito
 
 # (parte del sito, numero, slug, file relativo a SORGENTE_ES)

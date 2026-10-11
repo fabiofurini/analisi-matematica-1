@@ -1,6 +1,7 @@
 """Compila le figure delle note (TikZ/pgfplots) in SVG per il sito.
 
-Legge build/figure/<id>/ prodotto da converti_tex.py: ogni figNN.tikz diventa
+Legge BUILD/figure/<id>/ prodotto da converti_tex.py (BUILD sta fuori da
+Dropbox, vedi capitoli.py; se manca, si rilancia prima converti_tex.py): ogni figNN.tikz diventa
 un documento standalone con il preambolo del capitolo (stessi font e macro
 delle note), si compila con pdflatex in una copia temporanea della cartella
 del capitolo (gli originali non si toccano) e si converte in SVG con
@@ -20,9 +21,7 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from capitoli import DOCS, IT, SORGENTE
-
-BUILD = IT / "build"
+from capitoli import BUILD, DOCS, SORGENTE
 
 
 def preambolo_standalone(pre: str, cartella: Path) -> str:
@@ -91,6 +90,10 @@ def copia_file(cid: str, fig: Path) -> str:
 
 
 def main(filtri: list[str]):
+    if not (BUILD / "figure").is_dir():
+        # cartella temporanea vuota (riavvio, pulizia di /tmp): si rigenerano gli intermedi
+        print(f"{BUILD / 'figure'} non c'è: rilancio converti_tex.py {' '.join(f for f in filtri if f)}")
+        subprocess.run([sys.executable, str(Path(__file__).with_name("converti_tex.py")), *[f for f in filtri if f]], check=True)
     (BUILD / "tmp").mkdir(parents=True, exist_ok=True)
     lavori = []
     for d in sorted((BUILD / "figure").iterdir()):

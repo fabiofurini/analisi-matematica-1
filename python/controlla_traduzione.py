@@ -1,6 +1,6 @@
 """Controllo della traduzione inglese: parole italiane rimaste nei sorgenti EN.
 
-Conta, per ogni file di DISPENSE_EN (ed ESERCIZI_EN se esiste), le parole
+Conta, per ogni file di en/note/NOTES_EN/DISPENSE (ed ESERCIZI se esiste), le parole
 italiane frequenti fuori dai commenti LaTeX. Uso:
     LINGUA=en python3 python/controlla_traduzione.py
 """

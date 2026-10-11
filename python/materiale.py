@@ -2,10 +2,9 @@
 
 Uso: python3 python/materiale.py    (LINGUA=en per l'inglese)
 """
-import json
+import re
 
-from capitoli import CAPITOLI, DOCS, IT, LINGUA, PARTI, ident
-BUILD = IT / "build"
+from capitoli import CAPITOLI, DOCS, LINGUA, PARTI, ident, pagina
 import dispense_config as C
 
 EN = LINGUA == "en"
@@ -24,7 +23,14 @@ if __name__ == "__main__":
                   f"    {v['descrizione'][1 if EN else 0]}", "", f"    [:octicons-download-24: {pdf}](pdf/{pdf})", ""]
     righe += ["</div>", ""]
     # le slide dei capitoli (solo quelle già compilate)
-    titoli = {c["id"]: c["titolo"] for c in json.loads((BUILD / "capitoli.json").read_text())}
+    # i titoli dei capitoli vengono dalle pagine già convertite in docs/ (front matter),
+    # così la pagina si rigenera anche senza gli intermedi di converti_tex.py
+    titoli = {}
+    for parte, num, slug, _rel in CAPITOLI:
+        p = DOCS / pagina(parte, num, slug)
+        m = re.search(r'^title: "(.*)"$', p.read_text(encoding="utf-8"), re.M) if p.exists() else None
+        if m:
+            titoli[ident(parte, num, slug)] = m.group(1)
     pref = "slides" if EN else "slide"
     blocchi = []
     for cartella, nome_parte, *_ in PARTI:
