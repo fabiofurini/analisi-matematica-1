@@ -78,6 +78,9 @@ extra:
     - icon: material/chart-bell-curve
       link: https://fabiofurini.github.io/ottimizzazione-convessa/
       name: Ottimizzazione convessa
+    - icon: material/code-braces
+      link: https://fabiofurini.github.io/algoritmi/
+      name: Algoritmi
   alternate:
     - name: Italiano
       link: https://fabiofurini.github.io/analisi-matematica-1/
