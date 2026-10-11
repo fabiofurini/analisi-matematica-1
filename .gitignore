@@ -1,11 +1,33 @@
-# Python
+# Su GitHub va solo ciò che serve agli studenti (REGOLE_MODULI_TEMATICI §0.5 e §1):
+# docs/, mkdocs.yml, README.md, LICENSE, LICENSE-CODE, CITATION.cff, .github/
+# più gli script pubblici del sito in python/ (il generatore delle dispense resta privato).
+
+# generatore delle dispense in volumi: resta privato (contiene LaTeX delle note)
+python/genera_dispensa.py
+python/dispense_config.py
+python/dispensa_preambolo_*.tex
+python/ritocchi_*.py
+python/overflow_dispensa.py
+python/test/
+# sorgenti delle slide (sul sito vanno solo i PDF)
+slides/
+# note rivedute da cui si generano dispense e sito (private: repository git locale)
+note/
+# volumi generati delle dispense (sorgenti LaTeX; online vanno solo i PDF in docs/pdf/)
+volumes/
+dispensa/
+dispensa_*/
+notes_*/
+# nessun sorgente LaTeX va su GitHub
+*.tex
+# copia del materiale di partenza: mai su GitHub
+materiale_sorgente/
+# prodotti intermedi e sito costruito
+build/
+site/
+# Python e LaTeX
 __pycache__/
 *.pyc
-# MkDocs
-site/
-# prodotti intermedi della conversione (si rigenerano)
-build/
-# LaTeX
 *.aux
 *.log
 *.out
@@ -15,22 +37,6 @@ build/
 *.synctex.gz
 # materiale interno, non pubblicato
 STILE_E_FORMATO.md
-dispensa/
 # varie
 .DS_Store
-# sorgenti delle dispense (privati: online vanno solo i PDF)
-dispensa_*/
-notes_*/
-
-# generatore delle dispense in volumi: resta privato (contiene LaTeX delle note)
-python/genera_dispensa.py
-python/dispense_config.py
-python/dispensa_preambolo_*.tex
-python/ritocchi_*.py
-python/overflow_dispensa.py
-
-# sorgenti delle slide (sul sito vanno solo i PDF)
-slides/
-
-# note rivedute da cui si generano dispense e sito (private: sul sito solo i PDF)
-note/
+*conflicted copy*

@@ -2,7 +2,7 @@
 
 Non si pubblicano più i PDF dei singoli capitoli nel formato delle note: i PDF
 sono i cinque volumi prodotti da genera_dispensa.py (sorgenti privati in
-it/dispensa_N_* e en/notes_N_*). Questo script li genera, compila e copia in
+it/volumes/lecture_notes/dispensa_N_* e en/volumes/lecture_notes/lecture_notes_N_*). Questo script li genera, compila e copia in
 docs/pdf/.  Uso: python3 python/compila_pdf.py [dispensa-N]   (LINGUA=en)
 """
 import os
