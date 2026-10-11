@@ -469,6 +469,7 @@
       { k: "c", nome: "\\theta", min: 0, max: 6.28, step: 0.02, val: 0, descr: "l'argomento di \\(w\\)" },
     ],
     vista: [-3.2, 2.4, 3.2, -2.4],
+    stessaScala: true,
     disegna(board, st) {
       const R = () => Math.pow(st.p().b, 1 / st.p().a);
       board.create("circle", [[0, 0], () => R()], { strokeColor: st.colore("orig"), strokeWidth: 1.5, dash: 2, fillOpacity: 0, highlight: false });
@@ -738,7 +739,7 @@
       const muted = css(el, "--gi-muted"), line = css(el, "--gi-line");
       const assi = { strokeColor: muted, ticks: { strokeColor: line, majorHeight: -1, label: { strokeColor: muted } } };
       board = JXG.JSXGraph.initBoard(bid, {
-        boundingbox: vista(), axis: true, keepAspectRatio: false, showCopyright: false, showNavigation: false,
+        boundingbox: vista(), axis: true, keepAspectRatio: !!R.stessaScala, showCopyright: false, showNavigation: false,
         pan: { enabled: true, needShift: false, needTwoFingers: true }, zoom: { wheel: true, needShift: true },
         defaultAxes: { x: assi, y: assi },
       });
