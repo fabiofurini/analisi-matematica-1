@@ -818,7 +818,7 @@
           anim.id = requestAnimationFrame(step);
           return;
         }
-        const v = lo + (hi - lo) * (0.5 - 0.5 * Math.cos((t - t0) / 3200));
+        const v = lo + (hi - lo) * (0.5 - 0.5 * Math.cos((t - t0) / 6000));
         inp.value = (Math.round(v / passo) * passo).toFixed(3);
         aggiorna();
         anim.id = requestAnimationFrame(step);
