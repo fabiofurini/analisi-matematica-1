@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Laboratorio interattivo
 
 Qui la matematica si tocca con mano. Ogni app si apre in una pagina a tutta larghezza: **trascina i punti, muovi i cursori** (il pulsante ▶ li anima) e guarda subito come cambia il grafico.

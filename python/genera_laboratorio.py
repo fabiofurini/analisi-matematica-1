@@ -158,7 +158,7 @@ def main():
     out.mkdir(exist_ok=True)
     ix = 0 if not EN else 1
     scritti = set()
-    righe = [f"# {T['titolo']}", "", T["intro"], ""]
+    righe = ["---", "hide:", "  - navigation", "---", "", f"# {T['titolo']}", "", T["intro"], ""]
     for g, nit, nen, _icona in GRUPPI:
         righe += [f"## {nen if EN else nit}", "", '<div class="grid cards" markdown>', ""]
         for a in APP:
