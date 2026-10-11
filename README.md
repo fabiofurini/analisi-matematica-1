@@ -35,7 +35,7 @@ esercizi (gli stessi script producono anche la versione inglese, con `LINGUA=en`
 ```bash
 python3 python/converti_tex.py     # LaTeX -> pagine Markdown (capitoli ed esercizi)
 python3 python/estrai_figure.py    # figure TikZ -> SVG (serve una distribuzione TeX)
-python3 python/compila_pdf.py      # PDF dei capitoli, degli esercizi e PDF unico
+python3 python/compila_pdf.py      # PDF dei volumi: dispense ed eserciziari
 python3 python/genera_sito.py      # navigazione, pagine delle parti, indice
 python3 -m pip install mkdocs-material
 python3 -m mkdocs serve            # anteprima locale

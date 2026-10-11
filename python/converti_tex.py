@@ -1134,9 +1134,9 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
         f'<div class="info-capitolo" markdown>',
         "",
         ((f"**Exercises · {PARTI_ES[_parte_it(parte)][1]}** · with worked solutions · "
-          f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})") if EN else
+          f"[:material-file-pdf-box: Exercises, volume (PDF)](../pdf/{pdf_volume(parte, True)})") if EN else
          (f"**Esercizi · {PARTI_ES[_parte_it(parte)][0]}** · con le soluzioni svolte · "
-          f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})")) if esercizi else
+          f"[:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/{pdf_volume(parte, True)})")) if esercizi else
         (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num}** · lecture notes by {chi} · "
          f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)) if EN else
         (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num}** · dalle dispense di {chi} · "
@@ -1163,15 +1163,17 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
     return {"id": cid, "titolo": titolo, "figure": st.figure, "avvisi": len(st.avvisi), "autori": chi}
 
 
-# il volume della dispensa (formato della collana) di ogni parte del sito
+# il volume della dispensa (formato della collana) di ogni parte del sito; lo stesso
+# numero ha l'eserciziario della parte (esercizi-<N>, gli integrali nel 5)
 VOLUME_DI = {"numeri": 1, "numbers": 1, "funzioni": 2, "functions": 2, "successioni": 3, "sequences": 3,
              "limiti": 3, "limits": 3, "derivate": 4, "derivatives": 4, "serie": 5, "series": 5,
              "integrali": 5, "integrals": 5}
 
 
-def pdf_volume(parte: str) -> str:
+def pdf_volume(parte: str, esercizi: bool = False) -> str:
     import dispense_config as C
-    vol = C.VOLUMI[VOLUME_DI[parte] - 1]
+    file = f"{'esercizi' if esercizi else 'dispensa'}-{VOLUME_DI[parte]}"
+    vol = next(v for v in C.VOLUMI if v["file"] == file)
     return vol["pdf_en"] if EN else vol["pdf_it"]
 
 

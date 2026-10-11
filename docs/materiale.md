@@ -4,7 +4,9 @@ title: Materiale scaricabile
 
 # Materiale scaricabile
 
-Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubblicazione del sito. Testi e figure sono sotto licenza [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.it).
+Le dispense e gli eserciziari in PDF, un volume per ogni parte del corso, aggiornati a ogni pubblicazione del sito. Testi e figure sono sotto licenza [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.it).
+
+## Dispense
 
 <div class="grid cards" markdown>
 
@@ -12,7 +14,7 @@ Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubbli
 
     ---
 
-    Il primo volume: il linguaggio e i numeri su cui si costruisce l'analisi. Insiemi, logica e tecniche di dimostrazione, insiemi numerici e relazioni binarie, campi ordinati, estremo superiore e assioma di continuità, radicali, potenze e logaritmi, sommatorie e progressioni geometriche, principio di induzione, fattoriali e coefficienti binomiali, successione di Fibonacci, insiemi infiniti, numeri complessi. Definizioni, teoremi con dimostrazione, esempi svolti; in fondo gli esercizi della parte con le soluzioni.
+    Il primo volume: il linguaggio e i numeri su cui si costruisce l'analisi. Insiemi, logica e tecniche di dimostrazione, insiemi numerici e relazioni binarie, campi ordinati, estremo superiore e assioma di continuità, radicali, potenze e logaritmi, sommatorie e progressioni geometriche, principio di induzione, fattoriali e coefficienti binomiali, successione di Fibonacci, insiemi infiniti, numeri complessi. Definizioni, teoremi con dimostrazione, esempi svolti; gli esercizi della parte, con le soluzioni, sono nel volume Esercizi 1.
 
     [:octicons-download-24: dispensa-1-numeri.pdf](pdf/dispensa-1-numeri.pdf)
 
@@ -20,7 +22,7 @@ Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubbli
 
     ---
 
-    Il secondo volume: le funzioni e i loro grafici. Funzioni fra insiemi e funzioni reali di variabile reale, funzioni potenza, esponenziali e logaritmiche, trigonometriche, fenomeni vibratori, parte intera e funzioni a tratti, funzioni iperboliche, operazioni sui grafici, funzioni composte e inverse. Definizioni, risultati, molti grafici ed esempi svolti; in fondo gli esercizi della parte con le soluzioni.
+    Il secondo volume: le funzioni e i loro grafici. Funzioni fra insiemi e funzioni reali di variabile reale, funzioni potenza, esponenziali e logaritmiche, trigonometriche, fenomeni vibratori, parte intera e funzioni a tratti, funzioni iperboliche, operazioni sui grafici, funzioni composte e inverse. Definizioni, risultati, molti grafici ed esempi svolti; gli esercizi della parte, con le soluzioni, sono nel volume Esercizi 2.
 
     [:octicons-download-24: dispensa-2-funzioni.pdf](pdf/dispensa-2-funzioni.pdf)
 
@@ -28,7 +30,7 @@ Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubbli
 
     ---
 
-    Il terzo volume: i limiti, in due parti numerate ciascuna da 1 come le note. Limiti di successioni: proprietà e limiti, calcolo dei limiti, il numero di Nepero, confronti e stime asintotiche, gerarchie degli infiniti e criterio del rapporto, successioni per ricorrenza. Limiti di funzioni e continuità: limiti e asintoti, calcolo dei limiti, polinomi e funzioni razionali, funzioni continue, confronto degli infiniti, limiti notevoli, sviluppi asintotici, teorema degli zeri e bisezione, teorema di Weierstrass e dei valori intermedi, funzioni monotone e invertibilità. In fondo gli esercizi con le soluzioni.
+    Il terzo volume: i limiti, in due parti numerate ciascuna da 1 come le note. Limiti di successioni: proprietà e limiti, calcolo dei limiti, il numero di Nepero, confronti e stime asintotiche, gerarchie degli infiniti e criterio del rapporto, successioni per ricorrenza. Limiti di funzioni e continuità: limiti e asintoti, calcolo dei limiti, polinomi e funzioni razionali, funzioni continue, confronto degli infiniti, limiti notevoli, sviluppi asintotici, teorema degli zeri e bisezione, teorema di Weierstrass e dei valori intermedi, funzioni monotone e invertibilità. Gli esercizi, con le soluzioni, sono nel volume Esercizi 3.
 
     [:octicons-download-24: dispensa-3-limiti.pdf](pdf/dispensa-3-limiti.pdf)
 
@@ -36,7 +38,7 @@ Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubbli
 
     ---
 
-    Il quarto volume: il calcolo differenziale. La funzione derivata, derivate delle funzioni elementari, punti angolosi e cuspidi, regole di calcolo, teorema del valor medio, massimi e minimi, teorema di De l'Hospital, derivata seconda, approssimazioni e formula di Taylor, studio di funzioni, metodo di Newton. Definizioni, teoremi con dimostrazione, grafici ed esempi svolti; in fondo gli esercizi della parte con le soluzioni.
+    Il quarto volume: il calcolo differenziale. La funzione derivata, derivate delle funzioni elementari, punti angolosi e cuspidi, regole di calcolo, teorema del valor medio, massimi e minimi, teorema di De l'Hospital, derivata seconda, approssimazioni e formula di Taylor, studio di funzioni, metodo di Newton. Definizioni, teoremi con dimostrazione, grafici ed esempi svolti; gli esercizi della parte, con le soluzioni, sono nel volume Esercizi 4.
 
     [:octicons-download-24: dispensa-4-derivate.pdf](pdf/dispensa-4-derivate.pdf)
 
@@ -44,9 +46,55 @@ Le dispense in PDF, un volume per ogni parte del corso, aggiornate a ogni pubbli
 
     ---
 
-    Il quinto volume: le serie. Serie numeriche, serie a termini non negativi e criteri di convergenza, serie a termini di segno variabile, serie di funzioni. Definizioni, teoremi con dimostrazione ed esempi svolti; in fondo gli esercizi sulle serie con le soluzioni e, in appendice, gli esercizi su primitive e integrali.
+    Il quinto volume: le serie. Serie numeriche, serie a termini non negativi e criteri di convergenza, serie a termini di segno variabile, serie di funzioni. Definizioni, teoremi con dimostrazione ed esempi svolti; gli esercizi sulle serie e su primitive e integrali, con le soluzioni, sono nel volume Esercizi 5.
 
     [:octicons-download-24: dispensa-5-serie.pdf](pdf/dispensa-5-serie.pdf)
+
+</div>
+
+## Esercizi
+
+<div class="grid cards" markdown>
+
+-   :material-pencil-box-multiple: **Esercizi, volume 1 · Numeri e logica**
+
+    ---
+
+    Gli esercizi svolti della prima parte del corso, una scheda per capitolo, con la soluzione subito dopo ogni testo: massimi, minimi, estremi superiori e inferiori, equazioni e disequazioni, sommatorie, principio di induzione, numeri complessi. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+
+    [:octicons-download-24: esercizi-1-numeri.pdf](pdf/esercizi-1-numeri.pdf)
+
+-   :material-pencil-box-multiple: **Esercizi, volume 2 · Funzioni**
+
+    ---
+
+    Gli esercizi svolti sulle funzioni, una scheda per capitolo, con la soluzione subito dopo ogni testo: insiemi di definizione e funzioni inverse. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+
+    [:octicons-download-24: esercizi-2-funzioni.pdf](pdf/esercizi-2-funzioni.pdf)
+
+-   :material-pencil-box-multiple: **Esercizi, volume 3 · Limiti**
+
+    ---
+
+    Gli esercizi svolti sui limiti, in due parti come il volume delle dispense, una scheda per capitolo, con la soluzione subito dopo ogni testo. Limiti di successioni: proprietà delle successioni, verifica e calcolo di limiti, esercizi aggiuntivi. Limiti di funzioni: limiti di funzioni reali di variabile reale. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+
+    [:octicons-download-24: esercizi-3-limiti.pdf](pdf/esercizi-3-limiti.pdf)
+
+-   :material-pencil-box-multiple: **Esercizi, volume 4 · Derivate**
+
+    ---
+
+    Gli esercizi svolti sul calcolo differenziale, una scheda per capitolo, con la soluzione subito dopo ogni testo: cuspidi, flessi e tangenti, calcolo delle derivate, rette tangenti, asintoti, prolungamenti continui, derivabilità, equazioni parametriche, studi di funzione, sviluppi di Mc Laurin, limiti con sviluppi asintotici, metodi di Newton e di bisezione, ricerca di estremi. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+
+    [:octicons-download-24: esercizi-4-derivate.pdf](pdf/esercizi-4-derivate.pdf)
+
+-   :material-pencil-box-multiple: **Esercizi, volume 5 · Serie e integrali**
+
+    ---
+
+    Gli esercizi svolti sulle serie numeriche e, nella seconda parte, su primitive e integrali, una scheda per capitolo, con la soluzione subito dopo ogni testo. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+
+    [:octicons-download-24: esercizi-5-serie.pdf](pdf/esercizi-5-serie.pdf)
 
 </div>
 

@@ -1,8 +1,9 @@
 """Registro dei capitoli: da dove viene ogni pagina del sito.
 
-Ogni capitolo è una dispensa di `it/note/NOTES_IT/DISPENSE/` (in inglese
-`en/note/NOTES_EN/DISPENSE/`, stessi nomi; note rivedute, copia delle
-note originali, che restano intatte in `1000_ANALISI_MATEMATICA/`).
+Ogni capitolo è una nota di `it/note/NOTES_IT/PARTE_<n>_<NOME>/` (in inglese
+`en/note/NOTES_EN/PARTE_<n>_<NOME>/`, stessi nomi; note rivedute, copia delle
+note originali, che restano intatte in `1000_ANALISI_MATEMATICA/`); le schede di
+esercizi della parte stanno in `PARTE_<n>_<NOME>/EXERCISES/` (struttura comune dei moduli).
 """
 import os
 import tempfile
@@ -12,7 +13,7 @@ from pathlib import Path
 LINGUA = os.environ.get("LINGUA", "it")
 MODULO = Path(__file__).resolve().parents[2]
 NOTE = MODULO / LINGUA / "note" / ("NOTES_EN" if LINGUA == "en" else "NOTES_IT")
-SORGENTE = NOTE / "DISPENSE"
+SORGENTE = NOTE   # PARTE_<n>_<NOME>/<k>_<Nome>/<Nome>.tex
 IT = MODULO / LINGUA          # radice del repository della lingua (it/ o en/)
 DOCS = IT / "docs"
 # file intermedi (figure TikZ estratte, report, compilazioni delle figure): FUORI da
@@ -146,39 +147,39 @@ def pagina(parte, num, slug):
 
 
 # ---------------------------------------------------------------- esercizi
-SORGENTE_ES = NOTE / "ESERCIZI"
+SORGENTE_ES = NOTE   # PARTE_<n>_<NOME>/EXERCISES/<k>_<Nome>/<Nome>.tex
 CARTELLA_ES = "esercizi" if LINGUA == "it" else "exercises"   # cartella del sito
 
 # (parte del sito, numero, slug, file relativo a SORGENTE_ES)
 ESERCIZI = [
-    ("numeri", 1, "massimi-minimi", "ESERCIZI_PARTE_1/1_MassimiMinimi_Estremi/MassimiMinimiEstremi.tex"),
-    ("numeri", 2, "equazioni-disequazioni", "ESERCIZI_PARTE_1/2_Equazioni_Disequazioni/EquazioniDisequazioni.tex"),
-    ("numeri", 3, "sommatorie", "ESERCIZI_PARTE_1/3_Sommatorie/Sommatorie.tex"),
-    ("numeri", 4, "induzione", "ESERCIZI_PARTE_1/4_PrincipioDiInduzione/PrincipioDiInduzione.tex"),
-    ("numeri", 5, "numeri-complessi", "ESERCIZI_PARTE_1/5_Numeri_Complessi/Numeri_complessi.tex"),
-    ("funzioni", 1, "insiemi-definizione", "ESERCIZI_PARTE_2/1_InsiemiDiDefinizione/InsiemiDiDefinizione.tex"),
-    ("funzioni", 2, "funzioni-inverse", "ESERCIZI_PARTE_2/2_FunzioniInverse/FunzioniInverse.tex"),
-    ("successioni", 1, "proprieta", "ESERCIZI_PARTE_3/A_Successioni/1_ProprietaSuccessioni/ProprietaSuccessioni.tex"),
-    ("successioni", 2, "verifica-limiti", "ESERCIZI_PARTE_3/A_Successioni/2_DefinizioneLimiteSuccessioni/DefinizioneLimiteSuccessioni.tex"),
-    ("successioni", 3, "calcolo-limiti", "ESERCIZI_PARTE_3/A_Successioni/3_CalcoloLimitiSuccessioni/CalcoloLimitiSuccessioni.tex"),
-    ("successioni", 4, "aggiuntivi", "ESERCIZI_PARTE_3/A_Successioni/4_EserciziAggiuntivi/EserciziAggiuntivi.tex"),
-    ("limiti", 1, "limiti-funzioni", "ESERCIZI_PARTE_3/B_Funzioni/1_LimitiDiFunzione/LimitiDiFunzione.tex"),
-    ("derivate", 1, "cuspidi-flessi-tangenti", "ESERCIZI_PARTE_4/1_CuspidiFlessiTangenti/CuspidiFlessiTangenti.tex"),
-    ("derivate", 2, "calcolo-derivate", "ESERCIZI_PARTE_4/2_CalcoloDerivate/CalcoloDerivate.tex"),
-    ("derivate", 3, "rette-tangenti", "ESERCIZI_PARTE_4/3_RetteTangenti/RetteTangenti.tex"),
-    ("derivate", 4, "asintoti", "ESERCIZI_PARTE_4/4_Asintoti/Asintoti.tex"),
-    ("derivate", 5, "prolungamenti", "ESERCIZI_PARTE_4/5_ProlungamentiContinui/ProlungamentiContinui.tex"),
-    ("derivate", 6, "derivabilita", "ESERCIZI_PARTE_4/6_Derivabilità/Derivabilità.tex"),
-    ("derivate", 7, "equazioni-parametriche", "ESERCIZI_PARTE_4/7_EquazioniParametriche/EquazioniParametriche.tex"),
-    ("derivate", 8, "studi-funzione", "ESERCIZI_PARTE_4/8_StudiDiFunzione/StudiDiFunzione.tex"),
-    ("derivate", 9, "mclaurin", "ESERCIZI_PARTE_4/9_SviluppiDiMcLaurin/SviluppiDiMcLaurin.tex"),
-    ("derivate", 10, "limiti-sviluppi", "ESERCIZI_PARTE_4/10_Limiti/Limiti.tex"),
-    ("derivate", 11, "newton", "ESERCIZI_PARTE_4/11_MetodoDiNewton/MetodoDiNewton.tex"),
-    ("derivate", 12, "bisezione", "ESERCIZI_PARTE_4/12_MetodoDiBisezione/MetodoDiBisezione.tex"),
-    ("derivate", 13, "estremi", "ESERCIZI_PARTE_4/13_RicercaMassimiMinimi/RicercaMassimiMinimi.tex"),
-    ("serie", 1, "serie-numeriche", "ESERCIZI_PARTE_5/1_SerieNumeriche/Serie.tex"),
-    ("integrali", 1, "primitive", "ESERCIZI_PARTE_6/1_primitive/primitive.tex"),
-    ("integrali", 2, "integrali", "ESERCIZI_PARTE_6/2_integrali/integrali.tex"),
+    ("numeri", 1, "massimi-minimi", "PARTE_1_NUMERIeLOGICA/EXERCISES/1_MassimiMinimi_Estremi/MassimiMinimiEstremi.tex"),
+    ("numeri", 2, "equazioni-disequazioni", "PARTE_1_NUMERIeLOGICA/EXERCISES/2_Equazioni_Disequazioni/EquazioniDisequazioni.tex"),
+    ("numeri", 3, "sommatorie", "PARTE_1_NUMERIeLOGICA/EXERCISES/3_Sommatorie/Sommatorie.tex"),
+    ("numeri", 4, "induzione", "PARTE_1_NUMERIeLOGICA/EXERCISES/4_PrincipioDiInduzione/PrincipioDiInduzione.tex"),
+    ("numeri", 5, "numeri-complessi", "PARTE_1_NUMERIeLOGICA/EXERCISES/5_Numeri_Complessi/Numeri_complessi.tex"),
+    ("funzioni", 1, "insiemi-definizione", "PARTE_2_FUNZIONI/EXERCISES/1_InsiemiDiDefinizione/InsiemiDiDefinizione.tex"),
+    ("funzioni", 2, "funzioni-inverse", "PARTE_2_FUNZIONI/EXERCISES/2_FunzioniInverse/FunzioniInverse.tex"),
+    ("successioni", 1, "proprieta", "PARTE_3_LIMITI/EXERCISES/A_Successioni/1_ProprietaSuccessioni/ProprietaSuccessioni.tex"),
+    ("successioni", 2, "verifica-limiti", "PARTE_3_LIMITI/EXERCISES/A_Successioni/2_DefinizioneLimiteSuccessioni/DefinizioneLimiteSuccessioni.tex"),
+    ("successioni", 3, "calcolo-limiti", "PARTE_3_LIMITI/EXERCISES/A_Successioni/3_CalcoloLimitiSuccessioni/CalcoloLimitiSuccessioni.tex"),
+    ("successioni", 4, "aggiuntivi", "PARTE_3_LIMITI/EXERCISES/A_Successioni/4_EserciziAggiuntivi/EserciziAggiuntivi.tex"),
+    ("limiti", 1, "limiti-funzioni", "PARTE_3_LIMITI/EXERCISES/B_Funzioni/1_LimitiDiFunzione/LimitiDiFunzione.tex"),
+    ("derivate", 1, "cuspidi-flessi-tangenti", "PARTE_4_DERIVATE/EXERCISES/1_CuspidiFlessiTangenti/CuspidiFlessiTangenti.tex"),
+    ("derivate", 2, "calcolo-derivate", "PARTE_4_DERIVATE/EXERCISES/2_CalcoloDerivate/CalcoloDerivate.tex"),
+    ("derivate", 3, "rette-tangenti", "PARTE_4_DERIVATE/EXERCISES/3_RetteTangenti/RetteTangenti.tex"),
+    ("derivate", 4, "asintoti", "PARTE_4_DERIVATE/EXERCISES/4_Asintoti/Asintoti.tex"),
+    ("derivate", 5, "prolungamenti", "PARTE_4_DERIVATE/EXERCISES/5_ProlungamentiContinui/ProlungamentiContinui.tex"),
+    ("derivate", 6, "derivabilita", "PARTE_4_DERIVATE/EXERCISES/6_Derivabilità/Derivabilità.tex"),
+    ("derivate", 7, "equazioni-parametriche", "PARTE_4_DERIVATE/EXERCISES/7_EquazioniParametriche/EquazioniParametriche.tex"),
+    ("derivate", 8, "studi-funzione", "PARTE_4_DERIVATE/EXERCISES/8_StudiDiFunzione/StudiDiFunzione.tex"),
+    ("derivate", 9, "mclaurin", "PARTE_4_DERIVATE/EXERCISES/9_SviluppiDiMcLaurin/SviluppiDiMcLaurin.tex"),
+    ("derivate", 10, "limiti-sviluppi", "PARTE_4_DERIVATE/EXERCISES/10_Limiti/Limiti.tex"),
+    ("derivate", 11, "newton", "PARTE_4_DERIVATE/EXERCISES/11_MetodoDiNewton/MetodoDiNewton.tex"),
+    ("derivate", 12, "bisezione", "PARTE_4_DERIVATE/EXERCISES/12_MetodoDiBisezione/MetodoDiBisezione.tex"),
+    ("derivate", 13, "estremi", "PARTE_4_DERIVATE/EXERCISES/13_RicercaMassimiMinimi/RicercaMassimiMinimi.tex"),
+    ("serie", 1, "serie-numeriche", "PARTE_5_SERIE/EXERCISES/1_SerieNumeriche/Serie.tex"),
+    ("integrali", 1, "primitive", "PARTE_6_INTEGRALI/EXERCISES/1_primitive/primitive.tex"),
+    ("integrali", 2, "integrali", "PARTE_6_INTEGRALI/EXERCISES/2_integrali/integrali.tex"),
 ]
 PARTI_ES = {  # parte -> (titolo IT, titolo EN, cartella EN)
     "numeri": ("Numeri e logica", "Numbers and logic", "numbers"),
