@@ -603,6 +603,20 @@
 
     // --- intestazione
     const testa = h("div", { class: "gi-testa" }, `<span class="gi-titolo">${R.titolo}<small>${R.sottotitolo || ""}</small></span>`);
+
+    // app a tutta pagina: il titolo e la descrizione della pagina vanno nella testata della scatola
+    if (el.classList.contains("gi-app-intera")) {
+      const h1 = el.parentElement && el.parentElement.querySelector(":scope > h1");
+      if (h1) {
+        const p = h1.nextElementSibling && h1.nextElementSibling.tagName === "P" ? h1.nextElementSibling : null;
+        const t1 = h1.cloneNode(true);
+        t1.querySelectorAll(".headerlink").forEach((a) => a.remove());
+        testa.querySelector(".gi-titolo").innerHTML = t1.innerHTML + (p ? `<small>${p.innerHTML}</small>` : "");
+        h1.classList.add("gi-nascosto");
+        if (p) p.classList.add("gi-nascosto");
+        typeset(testa);
+      }
+    }
     const tabs = h("div", { class: "gi-tabs" });
     const tEsplora = h("button", { class: "gi-tab", "aria-selected": "true" }, "Esplora");
     const tSfida = h("button", { class: "gi-tab", "aria-selected": "false" }, "Sfida");

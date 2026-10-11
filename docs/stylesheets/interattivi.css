@@ -92,3 +92,10 @@ body:has(.gi-app-intera) .md-content__inner::before { display: none; }
 body:has(.gi-app-intera) .md-content__inner > h1 { font-size: 1.45em; margin: .15em 0 .2em; }
 body:has(.gi-app-intera) .md-content__inner > p { margin: .2em 0 .4em; }
 body:has(.gi-app-intera) .gi-app-intera { margin-top: .4em; }
+
+/* pagine delle app: titolo e descrizione stanno nella testata della scatola */
+.gi-nascosto { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.gi-app-intera .gi-testa { display: flex !important; }
+.gi-app-intera .gi-testa .gi-titolo { font-size: 1.25em; line-height: 1.3; }
+.gi-app-intera .gi-testa .gi-titolo small { display: block; margin: .2em 0 0; font-size: .72em; line-height: 1.4; opacity: .92; white-space: normal; }
+.gi-app-intera .gi-testa .gi-titolo small a { color: inherit; text-decoration: underline; }

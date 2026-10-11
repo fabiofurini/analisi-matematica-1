@@ -92,7 +92,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
-  - stylesheets/interattivi.css
+  - stylesheets/interattivi.css?v=45a6a58ff5
 
 markdown_extensions:
   - admonition
@@ -118,7 +118,7 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
-  - javascripts/interattivi.js?v=80738a4fba
+  - javascripts/interattivi.js?v=45a6a58ff5
 
 # le pagine delle singole app del laboratorio non stanno nel menu
 not_in_nav: |
