@@ -6,11 +6,12 @@ iniziale o None). Il grafico si inserisce alla FINE della sezione indicata
 teoria, poi le mani sul grafico.
 """
 GRAFICI_NEI_CAPITOLI = {
-    "numeri-12-numeri-complessi": [("### 3.2 ", "radici", None)],
+    "numeri-09-numeri-complessi": [("### 3.2 ", "radici", None)],
     "funzioni-03-potenza": [("### 1.2 ", "potenze", None)],
     "funzioni-04-esponenziali-logaritmi": [("## 2. ", "esponenziali", None)],
-    "funzioni-06-fenomeni-vibratori": [("## 1. ", "oscillazioni", None)],
-    "funzioni-09-operazioni-grafici": [("## 1. ", "operazioni", None)],
+    # fenomeni vibratori: sezione finale del capitolo sulle funzioni trigonometriche (dal 2026-10-12)
+    "funzioni-05-trigonometriche": [("### 4.1 ", "oscillazioni", None)],
+    "funzioni-08-operazioni-grafici": [("## 1. ", "operazioni", None)],
     "successioni-01-limiti-successioni": [("### 1.1 ", "successione", None)],
     "successioni-03-nepero": [("## 1. ", "successione", "s4")],
     "successioni-06-ricorrenza": [("## 2. ", "erone", None)],

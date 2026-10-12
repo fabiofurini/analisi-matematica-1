@@ -21,7 +21,7 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from capitoli import BUILD, CAPITOLI, DOCS, LINGUA, SORGENTE, ident, ident_it, pagina
+from capitoli import BUILD, CAPITOLI, DOCS, LINGUA, SORGENTE, ident, ident_it, num_volume, pagina
 
 EN = LINGUA == "en"
 
@@ -1137,9 +1137,9 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
           f"[:material-file-pdf-box: Exercises, volume (PDF)](../pdf/{pdf_volume(parte, True)})") if EN else
          (f"**Esercizi · {PARTI_ES[_parte_it(parte)][0]}** · con le soluzioni svolte · "
           f"[:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/{pdf_volume(parte, True)})")) if esercizi else
-        (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num}** · lecture notes by {chi} · "
+        (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num_volume(parte, num)}** · lecture notes by {chi} · "
          f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)) if EN else
-        (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num}** · dalle dispense di {chi} · "
+        (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num_volume(parte, num)}** · dalle dispense di {chi} · "
          f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)),
         "",
         "</div>",
@@ -1164,10 +1164,11 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
 
 
 # il volume della dispensa (formato della collana) di ogni parte del sito; lo stesso
-# numero ha l'eserciziario della parte (esercizi-<N>, gli integrali nel 5)
-VOLUME_DI = {"numeri": 1, "numbers": 1, "funzioni": 2, "functions": 2, "successioni": 3, "sequences": 3,
-             "limiti": 3, "limits": 3, "derivate": 4, "derivatives": 4, "serie": 5, "series": 5,
-             "integrali": 5, "integrals": 5}
+# numero ha l'eserciziario della parte (esercizi-<N>, gli integrali nel 6). Le
+# relazioni binarie sono una parte del sito a sé ma il capitolo 1 del volume 3.
+VOLUME_DI = {"logica": 1, "logic": 1, "numeri": 2, "numbers": 2, "relazioni": 3, "relations": 3,
+             "funzioni": 3, "functions": 3, "successioni": 4, "sequences": 4, "limiti": 4, "limits": 4,
+             "derivate": 5, "derivatives": 5, "serie": 6, "series": 6, "integrali": 6, "integrals": 6}
 
 
 def pdf_volume(parte: str, esercizi: bool = False) -> str:

@@ -1,6 +1,6 @@
 # Derivate
 
-*Parte 4 delle dispense.* Derivata, regole di calcolo, teoremi del calcolo differenziale, Taylor, studio di funzione, Newton.
+*Parte 5 delle dispense.* Derivata, regole di calcolo, teoremi del calcolo differenziale, Taylor, studio di funzione, Newton.
 
 <div class="grid cards" markdown>
 

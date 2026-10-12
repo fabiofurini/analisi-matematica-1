@@ -1,6 +1,6 @@
 # Serie
 
-*Parte 5 delle dispense.* Serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni.
+*Parte 6 delle dispense.* Serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni.
 
 <div class="grid cards" markdown>
 

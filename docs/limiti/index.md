@@ -1,6 +1,6 @@
 # Limiti di funzioni e continuità
 
-*Parte 3 delle dispense.* Limiti, asintoti, limiti notevoli, continuità, teorema degli zeri, Weierstrass.
+*Parte 4 delle dispense.* Limiti, asintoti, limiti notevoli, continuità, teorema degli zeri, Weierstrass.
 
 <div class="grid cards" markdown>
 

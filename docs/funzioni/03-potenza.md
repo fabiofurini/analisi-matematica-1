@@ -6,7 +6,7 @@ title: "Funzioni potenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-03-potenza.pdf)
+**Parte 3 · Funzioni · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-03-potenza.pdf)
 
 </div>
 

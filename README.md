@@ -20,11 +20,12 @@ interattivi, con gli stessi numeri e gli stessi colori del PDF.
 
 | Parte | Argomenti |
 |---|---|
-| 1 · Numeri e logica | insiemi, logica, numeri reali ed estremi, sommatorie, induzione, binomiali, numeri complessi |
-| 2 · Funzioni | funzioni elementari e loro grafici, composte, inverse |
-| 3 · Limiti | successioni e limiti, Nepero, stime asintotiche; limiti di funzioni, continuità, zeri, Weierstrass |
-| 4 · Derivate | regole di calcolo, Fermat, Lagrange, De l'Hospital, Taylor, studio di funzione, Newton |
-| 5 · Serie | serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni |
+| 1 · Logica e metodi di dimostrazione | logica, tecniche di dimostrazione, principio di induzione |
+| 2 · Numeri e insiemi | insiemi, numeri reali ed estremi, radicali e logaritmi, sommatorie, binomiali, insiemi infiniti, numeri complessi |
+| 3 · Funzioni | relazioni binarie, funzioni elementari e loro grafici, composte, inverse |
+| 4 · Limiti | successioni e limiti, Nepero, stime asintotiche; limiti di funzioni, continuità, zeri, Weierstrass |
+| 5 · Derivate | regole di calcolo, Fermat, Lagrange, De l'Hospital, Taylor, studio di funzione, Newton |
+| 6 · Serie | serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni |
 | Esercizi | circa 300 esercizi con soluzioni svolte, compresi primitive e integrali |
 
 ## Come è costruito

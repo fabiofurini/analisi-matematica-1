@@ -6,7 +6,7 @@ Uso: python3 python/materiale.py    (LINGUA=en per l'inglese)
 """
 import re
 
-from capitoli import CAPITOLI, DOCS, LINGUA, PARTI, ident, pagina
+from capitoli import CAPITOLI, DOCS, LINGUA, PARTI, ident, num_volume, pagina
 import dispense_config as C
 
 EN = LINGUA == "en"
@@ -59,7 +59,7 @@ if __name__ == "__main__":
         for parte, num, slug, _rel in CAPITOLI:
             cid = ident(parte, num, slug)
             if parte == cartella and (DOCS / "pdf" / f"{pref}-{cid}.pdf").exists():
-                voci.append(f"- {'Chapter' if EN else 'Capitolo'} {num} · [{titoli.get(cid, slug)}](pdf/{pref}-{cid}.pdf)")
+                voci.append(f"- {'Chapter' if EN else 'Capitolo'} {num_volume(parte, num)} · [{titoli.get(cid, slug)}](pdf/{pref}-{cid}.pdf)")
         if voci:
             blocchi += [f"### {nome_parte}", ""] + voci + [""]
     if blocchi:

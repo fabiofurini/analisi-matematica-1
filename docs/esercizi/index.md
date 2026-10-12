@@ -4,15 +4,20 @@ Fogli di esercizi con le **soluzioni svolte**, divisi come le parti delle dispen
 
 <div class="grid cards" markdown>
 
--   **Numeri e logica**
+-   **Logica e metodi di dimostrazione**
+
+    ---
+
+    - [Principio di induzione](es-logica-01-induzione.md) · 15 esercizi
+
+-   **Numeri e insiemi**
 
     ---
 
     - [Massimi, minimi, estremi superiori e inferiori](es-numeri-01-massimi-minimi.md) · 11 esercizi
     - [Equazioni e disequazioni di variabile reale](es-numeri-02-equazioni-disequazioni.md) · 14 esercizi
     - [Sommatorie](es-numeri-03-sommatorie.md) · 2 esercizi
-    - [Principio di induzione](es-numeri-04-induzione.md) · 15 esercizi
-    - [Numeri complessi](es-numeri-05-numeri-complessi.md) · 21 esercizi
+    - [Numeri complessi](es-numeri-04-numeri-complessi.md) · 21 esercizi
 
 -   **Funzioni**
 

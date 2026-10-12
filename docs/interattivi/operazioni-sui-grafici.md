@@ -5,7 +5,7 @@ hide:
 title: "Operazioni sui grafici"
 ---
 
-[← Laboratorio](index.md) · Capitolo: [Operazioni sui grafici](../funzioni/09-operazioni-grafici.md)
+[← Laboratorio](index.md) · Capitolo: [Operazioni sui grafici](../funzioni/08-operazioni-grafici.md)
 
 # Operazioni sui grafici
 

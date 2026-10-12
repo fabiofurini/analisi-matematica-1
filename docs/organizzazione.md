@@ -3,8 +3,8 @@
 ## Come usare questo sito
 
 Il sito contiene le **dispense del corso** di Analisi Matematica 1, divise in
-cinque parti come nel PDF: numeri e logica, funzioni, limiti (di successioni e
-di funzioni), derivate, serie. Ogni capitolo si legge dall'inizio alla fine,
+sei parti come i volumi PDF: logica e metodi di dimostrazione, numeri e insiemi,
+funzioni (con le relazioni binarie), limiti (di successioni e di funzioni), derivate, serie. Ogni capitolo si legge dall'inizio alla fine,
 ma si può anche saltare direttamente a una sezione dal menu a destra.
 
 - **I box colorati** hanno lo stesso colore e lo stesso numero che nel PDF:

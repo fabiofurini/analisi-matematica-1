@@ -21,81 +21,97 @@ DOCS = IT / "docs"
 BUILD = Path(os.environ.get("AM1_BUILD", Path(tempfile.gettempdir()) / "analisi-matematica-1-build")) / LINGUA
 
 # (cartella del sito, titolo della parte, icona, descrizione breve, parte delle note)
+# Le parti delle note e i volumi (2026-10-12, decisione di Fabio): 1 Logica e metodi di
+# dimostrazione, 2 Numeri e insiemi, 3 Funzioni (relazioni binarie + funzioni), 4 Limiti
+# (successioni + funzioni), 5 Derivate, 6 Serie. Sul sito le relazioni binarie sono una
+# parte a sé, subito prima delle funzioni; nel volume 3 sono il primo capitolo.
 PARTI = [
-    ("numeri", "Numeri e logica", "material/numeric",
-     "Insiemi, logica, numeri reali ed estremi, sommatorie, induzione, numeri complessi.", "1"),
+    ("logica", "Logica e metodi di dimostrazione", "material/lightbulb-on-outline",
+     "Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principio di induzione.", "1"),
+    ("numeri", "Numeri e insiemi", "material/numeric",
+     "Insiemi, numeri reali ed estremi, radicali e logaritmi, sommatorie, binomiali, insiemi infiniti, numeri complessi.", "2"),
+    ("relazioni", "Relazioni binarie", "material/relation-many-to-many",
+     "Relazioni e loro proprietà, grafi direzionati, relazioni di equivalenza e d'ordine; le funzioni come relazioni particolari.", "3"),
     ("funzioni", "Funzioni", "material/function-variant",
-     "Le funzioni elementari e i loro grafici: potenze, esponenziali, trigonometriche, inverse.", "2"),
+     "Le funzioni elementari e i loro grafici: potenze, esponenziali, trigonometriche, inverse.", "3"),
     ("successioni", "Limiti di successioni", "material/dots-horizontal",
-     "Successioni, limiti, il numero di Nepero, stime asintotiche, ricorrenze.", "3"),
+     "Successioni, limiti, il numero di Nepero, stime asintotiche, ricorrenze.", "4"),
     ("limiti", "Limiti di funzioni e continuità", "material/chart-bell-curve",
-     "Limiti, asintoti, limiti notevoli, continuità, teorema degli zeri, Weierstrass.", "3"),
+     "Limiti, asintoti, limiti notevoli, continuità, teorema degli zeri, Weierstrass.", "4"),
     ("derivate", "Derivate", "material/chart-line",
-     "Derivata, regole di calcolo, teoremi del calcolo differenziale, Taylor, studio di funzione, Newton.", "4"),
+     "Derivata, regole di calcolo, teoremi del calcolo differenziale, Taylor, studio di funzione, Newton.", "5"),
     ("serie", "Serie", "material/sigma",
-     "Serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni.", "5"),
+     "Serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni.", "6"),
 ]
+# voce breve del menu in alto (una o due parole, decisione di Fabio del 2026-10-12);
+# i titoli completi restano nelle pagine delle parti e nei volumi
+MENU = {
+    "logica": ("Logica", "Logic"), "numeri": ("Numeri", "Numbers"), "relazioni": ("Relazioni", "Relations"),
+    "funzioni": ("Funzioni", "Functions"), "successioni": ("Successioni", "Sequences"), "limiti": ("Limiti", "Limits"),
+    "derivate": ("Derivate", "Derivatives"), "serie": ("Serie", "Series"),
+}
 
 # (parte, numero, slug, file sorgente relativo a SORGENTE)
 CAPITOLI = [
-    ("numeri", 1, "insiemi", "PARTE_1_NUMERIeLOGICA/1_Insiemi/Insiemi.tex"),
-    ("numeri", 2, "logica", "PARTE_1_NUMERIeLOGICA/2_Logica/logica.tex"),
-    ("numeri", 3, "insiemi-numerici", "PARTE_1_NUMERIeLOGICA/3_InsiemiNumerici/InsiemiNumerici.tex"),
-    ("numeri", 4, "relazioni-binarie", "PARTE_1_NUMERIeLOGICA/4_RelazioniBinarie/RelazioniBinarie.tex"),
-    ("numeri", 5, "campi-ordinati", "PARTE_1_NUMERIeLOGICA/5_CampiOrdinati_Estremi_AssiomaDiContinuità/CampiOrdinati_Estremi_AssiomaDiContinuità.tex"),
-    ("numeri", 6, "radicali-potenze-logaritmi", "PARTE_1_NUMERIeLOGICA/6_RadicaliPotenzeLogaritmi/RadicaliPotenzeLogaritmi.tex"),
-    ("numeri", 7, "sommatorie", "PARTE_1_NUMERIeLOGICA/7_SommatorieProgressioniGeometriche/SommatorieProgressioniGeometriche.tex"),
-    ("numeri", 8, "induzione", "PARTE_1_NUMERIeLOGICA/8_Principio_di_Induzione/Principio_di_Induzione.tex"),
-    ("numeri", 9, "fattoriali-binomiali", "PARTE_1_NUMERIeLOGICA/9_FattorialiCoeffBinomDisTriang/FattorialiCoeffBinomDisTriang.tex"),
-    ("numeri", 10, "fibonacci", "PARTE_1_NUMERIeLOGICA/10_SuccessioneDiFibonacci/SuccessioneDiFibonacci.tex"),
-    ("numeri", 11, "insiemi-infiniti", "PARTE_1_NUMERIeLOGICA/11_Insiemi_infiniti/Insiemi_infiniti.tex"),
-    ("numeri", 12, "numeri-complessi", "PARTE_1_NUMERIeLOGICA/12_Numeri_complessi/Numeri_complessi.tex"),
-    ("funzioni", 1, "funzioni", "PARTE_2_FUNZIONI/1_Funzioni/Funzioni.tex"),
-    ("funzioni", 2, "funzioni-reali", "PARTE_2_FUNZIONI/2_FunzioniRealiDiVariabileReale/FunzioniRealiDiVariabileReale.tex"),
-    ("funzioni", 3, "potenza", "PARTE_2_FUNZIONI/3_FunzioniPotenza/FunzioniPotenza.tex"),
-    ("funzioni", 4, "esponenziali-logaritmi", "PARTE_2_FUNZIONI/4_FunzioniEsponenzialiELogaritmiche/FunzioniEsponenzialiELogaritmiche.tex"),
-    ("funzioni", 5, "trigonometriche", "PARTE_2_FUNZIONI/5_FunzioniTrigonometriche/FunzioniTrigonometriche.tex"),
-    ("funzioni", 6, "fenomeni-vibratori", "PARTE_2_FUNZIONI/6_FenomeniVibratori/FenomeniVibratori.tex"),
-    ("funzioni", 7, "parte-intera", "PARTE_2_FUNZIONI/7_FunzioniParteInteraEaTratti/FunzioniParteInteraEaTratti.tex"),
-    ("funzioni", 8, "iperboliche", "PARTE_2_FUNZIONI/8_FunzioniIperboliche/FunzioniIperboliche.tex"),
-    ("funzioni", 9, "operazioni-grafici", "PARTE_2_FUNZIONI/9_OperazioniSuiGrafici/OperazioniSuiGrafici.tex"),
-    ("funzioni", 10, "composte", "PARTE_2_FUNZIONI/10_FunzioniComposte/FunzioniComposte.tex"),
-    ("funzioni", 11, "inverse", "PARTE_2_FUNZIONI/11_FunzioniInverse/FunzioniInverse.tex"),
-    ("successioni", 1, "limiti-successioni", "PARTE_3_LIMITI/1_SUCCESSIONI/1_SuccessioniProprietàLimiti/SuccessioniProprietàLimiti.tex"),
-    ("successioni", 2, "calcolo-limiti", "PARTE_3_LIMITI/1_SUCCESSIONI/2_CalcoloLimitiSuccessioni/CalcoloLimitiSuccessioni.tex"),
-    ("successioni", 3, "nepero", "PARTE_3_LIMITI/1_SUCCESSIONI/3_IlNumeroDiNepero/IlNumeroDiNepero.tex"),
-    ("successioni", 4, "stime-asintotiche", "PARTE_3_LIMITI/1_SUCCESSIONI/4_ConfrontiStimeAsintotiche/ConfrontiStimeAsintotiche.tex"),
-    ("successioni", 5, "gerarchie-infiniti", "PARTE_3_LIMITI/1_SUCCESSIONI/5_GerarchieDegliInfinitiCriterioDelRapporto/GerarchieDegliInfinitiCriterioDelRapporto.tex"),
-    ("successioni", 6, "ricorrenza", "PARTE_3_LIMITI/1_SUCCESSIONI/6_SuccessioniDefinitePerRicorrenza/SuccessioniDefinitePerRicorrenza.tex"),
-    ("limiti", 1, "limiti-asintoti", "PARTE_3_LIMITI/2_FUNZIONI/1_LimitiDiFunzioniAsintoti/LimitiDiFunzioniAsintoti.tex"),
-    ("limiti", 2, "calcolo-limiti", "PARTE_3_LIMITI/2_FUNZIONI/2_CalcoloLimitiDiFunzioni/CalcoloLimitiDiFunzioni.tex"),
-    ("limiti", 3, "polinomi-razionali", "PARTE_3_LIMITI/2_FUNZIONI/3_LimitiDiPolinomiFunzioniRazionali/LimitiDiPolinomiFunzioniRazionali.tex"),
-    ("limiti", 4, "funzioni-continue", "PARTE_3_LIMITI/2_FUNZIONI/4_FunzioniContinue/FunzioniContinue.tex"),
-    ("limiti", 5, "confronto-infiniti", "PARTE_3_LIMITI/2_FUNZIONI/5_GerarchiaInfiniti/GerarchiaInfiniti.tex"),
-    ("limiti", 6, "limiti-notevoli", "PARTE_3_LIMITI/2_FUNZIONI/6_LimitiNotevoliStimeAsintotiche/LimitiNotevoliStimeAsintotiche.tex"),
-    ("limiti", 7, "sviluppi-asintotici", "PARTE_3_LIMITI/2_FUNZIONI/7_SviluppiAsintotici/SviluppiAsintotici.tex"),
-    ("limiti", 8, "zeri-bisezione", "PARTE_3_LIMITI/2_FUNZIONI/8_TeoremaDegliZeriMetodoDellaBisezione/TeoremaDegliZeriMetodoDellaBisezione.tex"),
-    ("limiti", 9, "weierstrass", "PARTE_3_LIMITI/2_FUNZIONI/9_TeoremaWeierstrassTeoremaValoriIntermedi/TeoremaWeierstrassTeoremaValoriIntermedi.tex"),
-    ("limiti", 10, "monotone-invertibili", "PARTE_3_LIMITI/2_FUNZIONI/10_FunzioniMonotoneInvertibilità/FunzioniMonotoneInvertibilità.tex"),
-    ("derivate", 1, "funzione-derivata", "PARTE_4_DERIVATE/1_FunzioneDerivata/FunzioneDerivata.tex"),
-    ("derivate", 2, "derivate-elementari", "PARTE_4_DERIVATE/2_DerivateFunzioniElementari/DerivateFunzioniElementari.tex"),
-    ("derivate", 3, "punti-angolosi-cuspidi", "PARTE_4_DERIVATE/3_PuntiAngolosiCuspidi/PuntiAngolosiCuspidiFlessi.tex"),
-    ("derivate", 4, "regole-calcolo", "PARTE_4_DERIVATE/4_RegoleCalcoloDerivate/RegoleCalcoloDerivate.tex"),
-    ("derivate", 5, "valor-medio", "PARTE_4_DERIVATE/5_TeoremaValoreMedioMassimiMinimi/TeoremaValoreMedioMassimiMinimi.tex"),
-    ("derivate", 6, "de-l-hospital", "PARTE_4_DERIVATE/6_TeoremaDiDeLHospitalDerivabilità/TeoremaDiDeLHospital.tex"),
-    ("derivate", 7, "derivata-seconda", "PARTE_4_DERIVATE/7_DerivataSeconda/DerivataSeconda.tex"),
-    ("derivate", 8, "approssimazioni", "PARTE_4_DERIVATE/8_Approssimazioni/Approssimazioni.tex"),
-    ("derivate", 9, "studio-funzioni", "PARTE_4_DERIVATE/9_StudioGrafici/StudioGrafici.tex"),
-    ("derivate", 10, "newton", "PARTE_4_DERIVATE/10_MetodoDiNewton/MetodoDiNewton.tex"),
-    ("serie", 1, "serie-numeriche", "PARTE_5_SERIE/1_SerieNumeriche/SerieNumeriche.tex"),
-    ("serie", 2, "termini-non-negativi", "PARTE_5_SERIE/2_SerieNumericheTerminiNonNegativi/SerieNumericheTerminiNonNegativi.tex"),
-    ("serie", 3, "segno-variabile", "PARTE_5_SERIE/3_SerieNumericheTerminiAlterni/SerieNumericheTerminiAlterni.tex"),
-    ("serie", 4, "serie-funzioni", "PARTE_5_SERIE/4_SerieDiFunzioni/SerieDiFunzioni.tex"),
+    ("logica", 1, "logica", "PARTE_1_LOGICA/1_Logica/logica.tex"),
+    ("logica", 2, "induzione", "PARTE_1_LOGICA/2_Principio_di_Induzione/Principio_di_Induzione.tex"),
+    ("numeri", 1, "insiemi", "PARTE_2_NUMERI_E_INSIEMI/1_Insiemi/Insiemi.tex"),
+    ("numeri", 2, "insiemi-numerici", "PARTE_2_NUMERI_E_INSIEMI/2_InsiemiNumerici/InsiemiNumerici.tex"),
+    ("numeri", 3, "campi-ordinati", "PARTE_2_NUMERI_E_INSIEMI/3_CampiOrdinati_Estremi_AssiomaDiContinuità/CampiOrdinati_Estremi_AssiomaDiContinuità.tex"),
+    ("numeri", 4, "radicali-potenze-logaritmi", "PARTE_2_NUMERI_E_INSIEMI/4_RadicaliPotenzeLogaritmi/RadicaliPotenzeLogaritmi.tex"),
+    ("numeri", 5, "sommatorie", "PARTE_2_NUMERI_E_INSIEMI/5_SommatorieProgressioniGeometriche/SommatorieProgressioniGeometriche.tex"),
+    ("numeri", 6, "fattoriali-binomiali", "PARTE_2_NUMERI_E_INSIEMI/6_FattorialiCoeffBinomDisTriang/FattorialiCoeffBinomDisTriang.tex"),
+    ("numeri", 7, "fibonacci", "PARTE_2_NUMERI_E_INSIEMI/7_SuccessioneDiFibonacci/SuccessioneDiFibonacci.tex"),
+    ("numeri", 8, "insiemi-infiniti", "PARTE_2_NUMERI_E_INSIEMI/8_Insiemi_infiniti/Insiemi_infiniti.tex"),
+    ("numeri", 9, "numeri-complessi", "PARTE_2_NUMERI_E_INSIEMI/9_Numeri_complessi/Numeri_complessi.tex"),
+    ("relazioni", 1, "relazioni-binarie", "PARTE_3_FUNZIONI/1_RelazioniBinarie/RelazioniBinarie.tex"),
+    ("funzioni", 1, "funzioni", "PARTE_3_FUNZIONI/2_Funzioni/Funzioni.tex"),
+    ("funzioni", 2, "funzioni-reali", "PARTE_3_FUNZIONI/3_FunzioniRealiDiVariabileReale/FunzioniRealiDiVariabileReale.tex"),
+    ("funzioni", 3, "potenza", "PARTE_3_FUNZIONI/4_FunzioniPotenza/FunzioniPotenza.tex"),
+    ("funzioni", 4, "esponenziali-logaritmi", "PARTE_3_FUNZIONI/5_FunzioniEsponenzialiELogaritmiche/FunzioniEsponenzialiELogaritmiche.tex"),
+    ("funzioni", 5, "trigonometriche", "PARTE_3_FUNZIONI/6_FunzioniTrigonometriche/FunzioniTrigonometriche.tex"),
+    ("funzioni", 6, "parte-intera", "PARTE_3_FUNZIONI/7_FunzioniParteInteraEaTratti/FunzioniParteInteraEaTratti.tex"),
+    ("funzioni", 7, "iperboliche", "PARTE_3_FUNZIONI/8_FunzioniIperboliche/FunzioniIperboliche.tex"),
+    ("funzioni", 8, "operazioni-grafici", "PARTE_3_FUNZIONI/9_OperazioniSuiGrafici/OperazioniSuiGrafici.tex"),
+    ("funzioni", 9, "composte", "PARTE_3_FUNZIONI/10_FunzioniComposte/FunzioniComposte.tex"),
+    ("funzioni", 10, "inverse", "PARTE_3_FUNZIONI/11_FunzioniInverse/FunzioniInverse.tex"),
+    ("successioni", 1, "limiti-successioni", "PARTE_4_LIMITI/1_SUCCESSIONI/1_SuccessioniProprietàLimiti/SuccessioniProprietàLimiti.tex"),
+    ("successioni", 2, "calcolo-limiti", "PARTE_4_LIMITI/1_SUCCESSIONI/2_CalcoloLimitiSuccessioni/CalcoloLimitiSuccessioni.tex"),
+    ("successioni", 3, "nepero", "PARTE_4_LIMITI/1_SUCCESSIONI/3_IlNumeroDiNepero/IlNumeroDiNepero.tex"),
+    ("successioni", 4, "stime-asintotiche", "PARTE_4_LIMITI/1_SUCCESSIONI/4_ConfrontiStimeAsintotiche/ConfrontiStimeAsintotiche.tex"),
+    ("successioni", 5, "gerarchie-infiniti", "PARTE_4_LIMITI/1_SUCCESSIONI/5_GerarchieDegliInfinitiCriterioDelRapporto/GerarchieDegliInfinitiCriterioDelRapporto.tex"),
+    ("successioni", 6, "ricorrenza", "PARTE_4_LIMITI/1_SUCCESSIONI/6_SuccessioniDefinitePerRicorrenza/SuccessioniDefinitePerRicorrenza.tex"),
+    ("limiti", 1, "limiti-asintoti", "PARTE_4_LIMITI/2_FUNZIONI/1_LimitiDiFunzioniAsintoti/LimitiDiFunzioniAsintoti.tex"),
+    ("limiti", 2, "calcolo-limiti", "PARTE_4_LIMITI/2_FUNZIONI/2_CalcoloLimitiDiFunzioni/CalcoloLimitiDiFunzioni.tex"),
+    ("limiti", 3, "polinomi-razionali", "PARTE_4_LIMITI/2_FUNZIONI/3_LimitiDiPolinomiFunzioniRazionali/LimitiDiPolinomiFunzioniRazionali.tex"),
+    ("limiti", 4, "funzioni-continue", "PARTE_4_LIMITI/2_FUNZIONI/4_FunzioniContinue/FunzioniContinue.tex"),
+    ("limiti", 5, "confronto-infiniti", "PARTE_4_LIMITI/2_FUNZIONI/5_GerarchiaInfiniti/GerarchiaInfiniti.tex"),
+    ("limiti", 6, "limiti-notevoli", "PARTE_4_LIMITI/2_FUNZIONI/6_LimitiNotevoliStimeAsintotiche/LimitiNotevoliStimeAsintotiche.tex"),
+    ("limiti", 7, "sviluppi-asintotici", "PARTE_4_LIMITI/2_FUNZIONI/7_SviluppiAsintotici/SviluppiAsintotici.tex"),
+    ("limiti", 8, "zeri-bisezione", "PARTE_4_LIMITI/2_FUNZIONI/8_TeoremaDegliZeriMetodoDellaBisezione/TeoremaDegliZeriMetodoDellaBisezione.tex"),
+    ("limiti", 9, "weierstrass", "PARTE_4_LIMITI/2_FUNZIONI/9_TeoremaWeierstrassTeoremaValoriIntermedi/TeoremaWeierstrassTeoremaValoriIntermedi.tex"),
+    ("limiti", 10, "monotone-invertibili", "PARTE_4_LIMITI/2_FUNZIONI/10_FunzioniMonotoneInvertibilità/FunzioniMonotoneInvertibilità.tex"),
+    ("derivate", 1, "funzione-derivata", "PARTE_5_DERIVATE/1_FunzioneDerivata/FunzioneDerivata.tex"),
+    ("derivate", 2, "derivate-elementari", "PARTE_5_DERIVATE/2_DerivateFunzioniElementari/DerivateFunzioniElementari.tex"),
+    ("derivate", 3, "punti-angolosi-cuspidi", "PARTE_5_DERIVATE/3_PuntiAngolosiCuspidi/PuntiAngolosiCuspidiFlessi.tex"),
+    ("derivate", 4, "regole-calcolo", "PARTE_5_DERIVATE/4_RegoleCalcoloDerivate/RegoleCalcoloDerivate.tex"),
+    ("derivate", 5, "valor-medio", "PARTE_5_DERIVATE/5_TeoremaValoreMedioMassimiMinimi/TeoremaValoreMedioMassimiMinimi.tex"),
+    ("derivate", 6, "de-l-hospital", "PARTE_5_DERIVATE/6_TeoremaDiDeLHospitalDerivabilità/TeoremaDiDeLHospital.tex"),
+    ("derivate", 7, "derivata-seconda", "PARTE_5_DERIVATE/7_DerivataSeconda/DerivataSeconda.tex"),
+    ("derivate", 8, "approssimazioni", "PARTE_5_DERIVATE/8_Approssimazioni/Approssimazioni.tex"),
+    ("derivate", 9, "studio-funzioni", "PARTE_5_DERIVATE/9_StudioGrafici/StudioGrafici.tex"),
+    ("derivate", 10, "newton", "PARTE_5_DERIVATE/10_MetodoDiNewton/MetodoDiNewton.tex"),
+    ("serie", 1, "serie-numeriche", "PARTE_6_SERIE/1_SerieNumeriche/SerieNumeriche.tex"),
+    ("serie", 2, "termini-non-negativi", "PARTE_6_SERIE/2_SerieNumericheTerminiNonNegativi/SerieNumericheTerminiNonNegativi.tex"),
+    ("serie", 3, "segno-variabile", "PARTE_6_SERIE/3_SerieNumericheTerminiAlterni/SerieNumericheTerminiAlterni.tex"),
+    ("serie", 4, "serie-funzioni", "PARTE_6_SERIE/4_SerieDiFunzioni/SerieDiFunzioni.tex"),
 ]
 
 
 PARTI_EN = {
-    "numeri": ("numbers", "Numbers and logic", "Sets, logic, real numbers and suprema, summations, induction, complex numbers."),
+    "logica": ("logic", "Logic and proof methods", "Propositions and quantifiers, implications, proof techniques, mathematical induction."),
+    "numeri": ("numbers", "Numbers and sets", "Sets, real numbers and suprema, roots and logarithms, summations, binomials, infinite sets, complex numbers."),
+    "relazioni": ("relations", "Binary relations", "Relations and their properties, directed graphs, equivalence and order relations; functions as special relations."),
     "funzioni": ("functions", "Functions", "Elementary functions and their graphs: powers, exponentials, trigonometric functions, inverses."),
     "successioni": ("sequences", "Limits of sequences", "Sequences, limits, Euler's number, asymptotic estimates, recursive sequences."),
     "limiti": ("limits", "Limits of functions and continuity", "Limits, asymptotes, standard limits, continuity, zeros theorem, Weierstrass."),
@@ -108,7 +124,7 @@ SLUG_EN = {
     "induzione": "induction", "fattoriali-binomiali": "factorials-binomials", "fibonacci": "fibonacci",
     "insiemi-infiniti": "infinite-sets", "numeri-complessi": "complex-numbers", "funzioni": "functions",
     "funzioni-reali": "real-functions", "potenza": "power-functions", "esponenziali-logaritmi": "exponentials-logarithms",
-    "trigonometriche": "trigonometric-functions", "fenomeni-vibratori": "oscillations", "parte-intera": "integer-part",
+    "trigonometriche": "trigonometric-functions", "parte-intera": "integer-part",
     "iperboliche": "hyperbolic-functions", "operazioni-grafici": "graph-transformations", "composte": "composite-functions",
     "inverse": "inverse-functions", "limiti-successioni": "limits-of-sequences", "calcolo-limiti": "computing-limits",
     "nepero": "euler-number", "stime-asintotiche": "asymptotic-estimates", "gerarchie-infiniti": "hierarchy-of-infinities",
@@ -125,7 +141,28 @@ CAPITOLI_IT = list(CAPITOLI)
 if LINGUA == "en":
     PARTI = [(PARTI_EN[k][0], PARTI_EN[k][1], icona, PARTI_EN[k][2], np) for k, _, icona, _, np in PARTI]
     _cartella = {k: v[0] for k, v in PARTI_EN.items()}
+    MENU = {PARTI_EN[k][0]: v for k, v in MENU.items()}
     CAPITOLI = [(_cartella[p], n, SLUG_EN[s], rel) for p, n, s, rel in CAPITOLI]
+
+
+# parti del sito che nel volume proseguono la numerazione di un'altra parte: nel volume 3
+# «Relazioni binarie» è il capitolo 1 e «Le funzioni» il 2. Gli indirizzi delle pagine
+# restano numerati dentro la parte del sito (funzioni/01-funzioni.md), ma il numero
+# mostrato (menu, schede, testata del capitolo) è quello del volume, come nel PDF.
+PROSEGUE = {"funzioni": "relazioni"}
+if LINGUA == "en":
+    PROSEGUE = {PARTI_EN[k][0]: PARTI_EN[v][0] for k, v in PROSEGUE.items()}
+
+
+def num_volume(parte, num):
+    """Numero del capitolo nel suo volume (quello mostrato sul sito)."""
+    prima = PROSEGUE.get(parte)
+    return num + (sum(1 for c in CAPITOLI if c[0] == prima) if prima else 0)
+
+
+def voce_menu(parte):
+    """Voce breve della parte nel menu in alto (cartella del sito della lingua)."""
+    return MENU[parte][1 if LINGUA == "en" else 0]
 
 
 def ident(parte, num, slug):
@@ -152,37 +189,39 @@ CARTELLA_ES = "esercizi" if LINGUA == "it" else "exercises"   # cartella del sit
 
 # (parte del sito, numero, slug, file relativo a SORGENTE_ES)
 ESERCIZI = [
-    ("numeri", 1, "massimi-minimi", "PARTE_1_NUMERIeLOGICA/EXERCISES/1_MassimiMinimi_Estremi/MassimiMinimiEstremi.tex"),
-    ("numeri", 2, "equazioni-disequazioni", "PARTE_1_NUMERIeLOGICA/EXERCISES/2_Equazioni_Disequazioni/EquazioniDisequazioni.tex"),
-    ("numeri", 3, "sommatorie", "PARTE_1_NUMERIeLOGICA/EXERCISES/3_Sommatorie/Sommatorie.tex"),
-    ("numeri", 4, "induzione", "PARTE_1_NUMERIeLOGICA/EXERCISES/4_PrincipioDiInduzione/PrincipioDiInduzione.tex"),
-    ("numeri", 5, "numeri-complessi", "PARTE_1_NUMERIeLOGICA/EXERCISES/5_Numeri_Complessi/Numeri_complessi.tex"),
-    ("funzioni", 1, "insiemi-definizione", "PARTE_2_FUNZIONI/EXERCISES/1_InsiemiDiDefinizione/InsiemiDiDefinizione.tex"),
-    ("funzioni", 2, "funzioni-inverse", "PARTE_2_FUNZIONI/EXERCISES/2_FunzioniInverse/FunzioniInverse.tex"),
-    ("successioni", 1, "proprieta", "PARTE_3_LIMITI/EXERCISES/A_Successioni/1_ProprietaSuccessioni/ProprietaSuccessioni.tex"),
-    ("successioni", 2, "verifica-limiti", "PARTE_3_LIMITI/EXERCISES/A_Successioni/2_DefinizioneLimiteSuccessioni/DefinizioneLimiteSuccessioni.tex"),
-    ("successioni", 3, "calcolo-limiti", "PARTE_3_LIMITI/EXERCISES/A_Successioni/3_CalcoloLimitiSuccessioni/CalcoloLimitiSuccessioni.tex"),
-    ("successioni", 4, "aggiuntivi", "PARTE_3_LIMITI/EXERCISES/A_Successioni/4_EserciziAggiuntivi/EserciziAggiuntivi.tex"),
-    ("limiti", 1, "limiti-funzioni", "PARTE_3_LIMITI/EXERCISES/B_Funzioni/1_LimitiDiFunzione/LimitiDiFunzione.tex"),
-    ("derivate", 1, "cuspidi-flessi-tangenti", "PARTE_4_DERIVATE/EXERCISES/1_CuspidiFlessiTangenti/CuspidiFlessiTangenti.tex"),
-    ("derivate", 2, "calcolo-derivate", "PARTE_4_DERIVATE/EXERCISES/2_CalcoloDerivate/CalcoloDerivate.tex"),
-    ("derivate", 3, "rette-tangenti", "PARTE_4_DERIVATE/EXERCISES/3_RetteTangenti/RetteTangenti.tex"),
-    ("derivate", 4, "asintoti", "PARTE_4_DERIVATE/EXERCISES/4_Asintoti/Asintoti.tex"),
-    ("derivate", 5, "prolungamenti", "PARTE_4_DERIVATE/EXERCISES/5_ProlungamentiContinui/ProlungamentiContinui.tex"),
-    ("derivate", 6, "derivabilita", "PARTE_4_DERIVATE/EXERCISES/6_Derivabilità/Derivabilità.tex"),
-    ("derivate", 7, "equazioni-parametriche", "PARTE_4_DERIVATE/EXERCISES/7_EquazioniParametriche/EquazioniParametriche.tex"),
-    ("derivate", 8, "studi-funzione", "PARTE_4_DERIVATE/EXERCISES/8_StudiDiFunzione/StudiDiFunzione.tex"),
-    ("derivate", 9, "mclaurin", "PARTE_4_DERIVATE/EXERCISES/9_SviluppiDiMcLaurin/SviluppiDiMcLaurin.tex"),
-    ("derivate", 10, "limiti-sviluppi", "PARTE_4_DERIVATE/EXERCISES/10_Limiti/Limiti.tex"),
-    ("derivate", 11, "newton", "PARTE_4_DERIVATE/EXERCISES/11_MetodoDiNewton/MetodoDiNewton.tex"),
-    ("derivate", 12, "bisezione", "PARTE_4_DERIVATE/EXERCISES/12_MetodoDiBisezione/MetodoDiBisezione.tex"),
-    ("derivate", 13, "estremi", "PARTE_4_DERIVATE/EXERCISES/13_RicercaMassimiMinimi/RicercaMassimiMinimi.tex"),
-    ("serie", 1, "serie-numeriche", "PARTE_5_SERIE/EXERCISES/1_SerieNumeriche/Serie.tex"),
-    ("integrali", 1, "primitive", "PARTE_6_INTEGRALI/EXERCISES/1_primitive/primitive.tex"),
-    ("integrali", 2, "integrali", "PARTE_6_INTEGRALI/EXERCISES/2_integrali/integrali.tex"),
+    ("logica", 1, "induzione", "PARTE_1_LOGICA/EXERCISES/1_PrincipioDiInduzione/PrincipioDiInduzione.tex"),
+    ("numeri", 1, "massimi-minimi", "PARTE_2_NUMERI_E_INSIEMI/EXERCISES/1_MassimiMinimi_Estremi/MassimiMinimiEstremi.tex"),
+    ("numeri", 2, "equazioni-disequazioni", "PARTE_2_NUMERI_E_INSIEMI/EXERCISES/2_Equazioni_Disequazioni/EquazioniDisequazioni.tex"),
+    ("numeri", 3, "sommatorie", "PARTE_2_NUMERI_E_INSIEMI/EXERCISES/3_Sommatorie/Sommatorie.tex"),
+    ("numeri", 4, "numeri-complessi", "PARTE_2_NUMERI_E_INSIEMI/EXERCISES/4_Numeri_Complessi/Numeri_complessi.tex"),
+    ("funzioni", 1, "insiemi-definizione", "PARTE_3_FUNZIONI/EXERCISES/1_InsiemiDiDefinizione/InsiemiDiDefinizione.tex"),
+    ("funzioni", 2, "funzioni-inverse", "PARTE_3_FUNZIONI/EXERCISES/2_FunzioniInverse/FunzioniInverse.tex"),
+    ("successioni", 1, "proprieta", "PARTE_4_LIMITI/EXERCISES/A_Successioni/1_ProprietaSuccessioni/ProprietaSuccessioni.tex"),
+    ("successioni", 2, "verifica-limiti", "PARTE_4_LIMITI/EXERCISES/A_Successioni/2_DefinizioneLimiteSuccessioni/DefinizioneLimiteSuccessioni.tex"),
+    ("successioni", 3, "calcolo-limiti", "PARTE_4_LIMITI/EXERCISES/A_Successioni/3_CalcoloLimitiSuccessioni/CalcoloLimitiSuccessioni.tex"),
+    ("successioni", 4, "aggiuntivi", "PARTE_4_LIMITI/EXERCISES/A_Successioni/4_EserciziAggiuntivi/EserciziAggiuntivi.tex"),
+    ("limiti", 1, "limiti-funzioni", "PARTE_4_LIMITI/EXERCISES/B_Funzioni/1_LimitiDiFunzione/LimitiDiFunzione.tex"),
+    ("derivate", 1, "cuspidi-flessi-tangenti", "PARTE_5_DERIVATE/EXERCISES/1_CuspidiFlessiTangenti/CuspidiFlessiTangenti.tex"),
+    ("derivate", 2, "calcolo-derivate", "PARTE_5_DERIVATE/EXERCISES/2_CalcoloDerivate/CalcoloDerivate.tex"),
+    ("derivate", 3, "rette-tangenti", "PARTE_5_DERIVATE/EXERCISES/3_RetteTangenti/RetteTangenti.tex"),
+    ("derivate", 4, "asintoti", "PARTE_5_DERIVATE/EXERCISES/4_Asintoti/Asintoti.tex"),
+    ("derivate", 5, "prolungamenti", "PARTE_5_DERIVATE/EXERCISES/5_ProlungamentiContinui/ProlungamentiContinui.tex"),
+    ("derivate", 6, "derivabilita", "PARTE_5_DERIVATE/EXERCISES/6_Derivabilità/Derivabilità.tex"),
+    ("derivate", 7, "equazioni-parametriche", "PARTE_5_DERIVATE/EXERCISES/7_EquazioniParametriche/EquazioniParametriche.tex"),
+    ("derivate", 8, "studi-funzione", "PARTE_5_DERIVATE/EXERCISES/8_StudiDiFunzione/StudiDiFunzione.tex"),
+    ("derivate", 9, "mclaurin", "PARTE_5_DERIVATE/EXERCISES/9_SviluppiDiMcLaurin/SviluppiDiMcLaurin.tex"),
+    ("derivate", 10, "limiti-sviluppi", "PARTE_5_DERIVATE/EXERCISES/10_Limiti/Limiti.tex"),
+    ("derivate", 11, "newton", "PARTE_5_DERIVATE/EXERCISES/11_MetodoDiNewton/MetodoDiNewton.tex"),
+    ("derivate", 12, "bisezione", "PARTE_5_DERIVATE/EXERCISES/12_MetodoDiBisezione/MetodoDiBisezione.tex"),
+    ("derivate", 13, "estremi", "PARTE_5_DERIVATE/EXERCISES/13_RicercaMassimiMinimi/RicercaMassimiMinimi.tex"),
+    ("serie", 1, "serie-numeriche", "PARTE_6_SERIE/EXERCISES/1_SerieNumeriche/Serie.tex"),
+    ("integrali", 1, "primitive", "PARTE_7_INTEGRALI/EXERCISES/1_primitive/primitive.tex"),
+    ("integrali", 2, "integrali", "PARTE_7_INTEGRALI/EXERCISES/2_integrali/integrali.tex"),
 ]
 PARTI_ES = {  # parte -> (titolo IT, titolo EN, cartella EN)
-    "numeri": ("Numeri e logica", "Numbers and logic", "numbers"),
+    "logica": ("Logica e metodi di dimostrazione", "Logic and proof methods", "logic"),
+    "numeri": ("Numeri e insiemi", "Numbers and sets", "numbers"),
+    "relazioni": ("Relazioni binarie", "Binary relations", "relations"),
     "funzioni": ("Funzioni", "Functions", "functions"),
     "successioni": ("Limiti di successioni", "Limits of sequences", "sequences"),
     "limiti": ("Limiti di funzioni", "Limits of functions", "limits"),
@@ -215,3 +254,53 @@ def ident_es_it(cid):
         if ident_es(*c[:3]) == cid:
             return ident_es(*ci[:3])
     return cid
+
+
+# ---------------------------------------------------------------- pagine spostate
+# Ristrutturazione del 2026-10-12 (logica e numeri divisi, relazioni binarie prima delle
+# funzioni, «Fenomeni vibratori» dentro «Funzioni trigonometriche»): i vecchi indirizzi
+# delle pagine rimandano ai nuovi con il plugin mkdocs-redirects (genera_sito.py li
+# scrive in mkdocs.yml). Vecchia pagina -> nuova pagina, relative a docs/.
+PAGINE_SPOSTATE_IT = {
+    "numeri/02-logica.md": "logica/01-logica.md",
+    "numeri/08-induzione.md": "logica/02-induzione.md",
+    "numeri/03-insiemi-numerici.md": "numeri/02-insiemi-numerici.md",
+    "numeri/05-campi-ordinati.md": "numeri/03-campi-ordinati.md",
+    "numeri/06-radicali-potenze-logaritmi.md": "numeri/04-radicali-potenze-logaritmi.md",
+    "numeri/07-sommatorie.md": "numeri/05-sommatorie.md",
+    "numeri/09-fattoriali-binomiali.md": "numeri/06-fattoriali-binomiali.md",
+    "numeri/10-fibonacci.md": "numeri/07-fibonacci.md",
+    "numeri/11-insiemi-infiniti.md": "numeri/08-insiemi-infiniti.md",
+    "numeri/12-numeri-complessi.md": "numeri/09-numeri-complessi.md",
+    "numeri/04-relazioni-binarie.md": "relazioni/01-relazioni-binarie.md",
+    "funzioni/06-fenomeni-vibratori.md": "funzioni/05-trigonometriche.md",
+    "funzioni/07-parte-intera.md": "funzioni/06-parte-intera.md",
+    "funzioni/08-iperboliche.md": "funzioni/07-iperboliche.md",
+    "funzioni/09-operazioni-grafici.md": "funzioni/08-operazioni-grafici.md",
+    "funzioni/10-composte.md": "funzioni/09-composte.md",
+    "funzioni/11-inverse.md": "funzioni/10-inverse.md",
+    "esercizi/es-numeri-04-induzione.md": "esercizi/es-logica-01-induzione.md",
+    "esercizi/es-numeri-05-numeri-complessi.md": "esercizi/es-numeri-04-numeri-complessi.md",
+}
+PAGINE_SPOSTATE_EN = {
+    "numbers/02-logic.md": "logic/01-logic.md",
+    "numbers/08-induction.md": "logic/02-induction.md",
+    "numbers/03-number-sets.md": "numbers/02-number-sets.md",
+    "numbers/05-ordered-fields.md": "numbers/03-ordered-fields.md",
+    "numbers/06-roots-powers-logarithms.md": "numbers/04-roots-powers-logarithms.md",
+    "numbers/07-summations.md": "numbers/05-summations.md",
+    "numbers/09-factorials-binomials.md": "numbers/06-factorials-binomials.md",
+    "numbers/10-fibonacci.md": "numbers/07-fibonacci.md",
+    "numbers/11-infinite-sets.md": "numbers/08-infinite-sets.md",
+    "numbers/12-complex-numbers.md": "numbers/09-complex-numbers.md",
+    "numbers/04-binary-relations.md": "relations/01-binary-relations.md",
+    "functions/06-oscillations.md": "functions/05-trigonometric-functions.md",
+    "functions/07-integer-part.md": "functions/06-integer-part.md",
+    "functions/08-hyperbolic-functions.md": "functions/07-hyperbolic-functions.md",
+    "functions/09-graph-transformations.md": "functions/08-graph-transformations.md",
+    "functions/10-composite-functions.md": "functions/09-composite-functions.md",
+    "functions/11-inverse-functions.md": "functions/10-inverse-functions.md",
+    "exercises/es-numbers-04-induction.md": "exercises/es-logic-01-induction.md",
+    "exercises/es-numbers-05-complex-numbers.md": "exercises/es-numbers-04-complex-numbers.md",
+}
+PAGINE_SPOSTATE = PAGINE_SPOSTATE_EN if LINGUA == "en" else PAGINE_SPOSTATE_IT

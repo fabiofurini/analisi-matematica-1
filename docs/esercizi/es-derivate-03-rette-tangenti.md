@@ -6,7 +6,7 @@ title: "Rette tangenti"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Derivate** · con le soluzioni svolte · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-derivate.pdf)
+**Esercizi · Derivate** · con le soluzioni svolte · [:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/esercizi-5-derivate.pdf)
 
 </div>
 

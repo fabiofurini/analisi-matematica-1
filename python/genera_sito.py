@@ -12,7 +12,7 @@ import re
 
 from pathlib import Path
 
-from capitoli import CAPITOLI, DOCS, IT, LINGUA, PARTI, pagina
+from capitoli import CAPITOLI, DOCS, IT, LINGUA, PAGINE_SPOSTATE, PARTI, num_volume, pagina, voce_menu
 
 EN = LINGUA == "en"
 
@@ -85,15 +85,17 @@ def main():
         for parte, num, slug, _ in caps:
             t = titolo(parte, num, slug)
             rel = pagina(parte, num, slug)
-            voci.append(f'      - "{num}. {t}": {rel}')
-            card += [f"-   **{num}. {t}**", "", "    ---", "",
+            nv = num_volume(parte, num)   # numero nel volume (come nel PDF)
+            voci.append(f'      - "{nv}. {t}": {rel}')
+            card += [f"-   **{nv}. {t}**", "", "    ---", "",
                      f"    {sommario(parte, num, slug)}", "",
                      f"    [:octicons-arrow-right-24: {'Read the chapter' if EN else 'Leggi il capitolo'}]({num:02d}-{slug}.md)", ""]
-            indice.append(f"{num}. [{t}]({rel})")
+            indice.append(f"{nv}. [{t}]({rel})")
         card += ["</div>", ""]
         indice.append("")
         (DOCS / key / "index.md").write_text("\n".join(card))
-        nav_parti.append(f"  - {nome}:\n" + "\n".join(voci))
+        # nel menu in alto la voce breve (una o due parole); il titolo completo resta nella pagina
+        nav_parti.append(f"  - {voce_menu(key)}:\n" + "\n".join(voci))
     (DOCS / "indice.md").write_text("\n".join(indice))
     voce_es = esercizi()
     if voce_es:
@@ -101,6 +103,12 @@ def main():
 
     yml = (Path(__file__).parent / ("mkdocs_modello_en.yml" if EN else "mkdocs_modello.yml")).read_text()
     yml = yml.replace("  # NAV_PARTI", "\n".join(nav_parti))
+    # i vecchi indirizzi delle pagine spostate rimandano ai nuovi (mkdocs-redirects)
+    for vecchia, nuova in PAGINE_SPOSTATE.items():
+        assert not (DOCS / vecchia).exists(), f"pagina vecchia ancora presente: {vecchia}"
+        assert (DOCS / nuova).exists(), f"pagina nuova mancante: {nuova}"
+    mappa = "\n".join(f"        {v}: {n}" for v, n in PAGINE_SPOSTATE.items())
+    yml = yml.replace("  # REDIRECTS", "  - redirects:\n      redirect_maps:\n" + mappa)
     (IT / "mkdocs.yml").write_text(yml)
     (DOCS / "img").mkdir(exist_ok=True)
     print(f"[{LINGUA}] mkdocs.yml, indice e pagine delle parti aggiornati")

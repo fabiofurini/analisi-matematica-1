@@ -5,7 +5,7 @@ hide:
 title: "Radici n-esime complesse"
 ---
 
-[← Laboratorio](index.md) · Capitolo: [Numeri complessi](../numeri/12-numeri-complessi.md)
+[← Laboratorio](index.md) · Capitolo: [Numeri complessi](../numeri/09-numeri-complessi.md)
 
 # Radici n-esime complesse
 

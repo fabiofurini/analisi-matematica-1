@@ -51,6 +51,7 @@ theme:
 plugins:
   - search:
       lang: it
+  # REDIRECTS
 
 extra:
   social:
@@ -127,8 +128,8 @@ not_in_nav: |
 nav:
   - Home: index.md
   # NAV_PARTI
-  - Laboratorio interattivo: interattivi/index.md
-  - Materiale scaricabile: materiale.md
+  - Lab: interattivi/index.md
+  - Download: materiale.md
   - Il corso:
       - organizzazione.md
       - Indice completo: indice.md

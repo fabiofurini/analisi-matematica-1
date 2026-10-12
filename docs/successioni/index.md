@@ -1,6 +1,6 @@
 # Limiti di successioni
 
-*Parte 3 delle dispense.* Successioni, limiti, il numero di Nepero, stime asintotiche, ricorrenze.
+*Parte 4 delle dispense.* Successioni, limiti, il numero di Nepero, stime asintotiche, ricorrenze.
 
 <div class="grid cards" markdown>
 

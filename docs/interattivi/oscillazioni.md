@@ -5,7 +5,7 @@ hide:
 title: "Oscillazioni armoniche"
 ---
 
-[← Laboratorio](index.md) · Capitolo: [Fenomeni vibratori](../funzioni/06-fenomeni-vibratori.md)
+[← Laboratorio](index.md) · Capitolo: [Funzioni trigonometriche: un'applicazione, i fenomeni vibratori](../funzioni/05-trigonometriche.md)
 
 # Oscillazioni armoniche
 

@@ -6,7 +6,7 @@ title: "Funzioni esponenziali e logaritmiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 4** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-04-esponenziali-logaritmi.pdf)
+**Parte 3 · Funzioni · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-04-esponenziali-logaritmi.pdf)
 
 </div>
 

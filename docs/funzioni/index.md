@@ -1,10 +1,10 @@
 # Funzioni
 
-*Parte 2 delle dispense.* Le funzioni elementari e i loro grafici: potenze, esponenziali, trigonometriche, inverse.
+*Parte 3 delle dispense.* Le funzioni elementari e i loro grafici: potenze, esponenziali, trigonometriche, inverse.
 
 <div class="grid cards" markdown>
 
--   **1. Le funzioni**
+-   **2. Le funzioni**
 
     ---
 
@@ -12,7 +12,7 @@
 
     [:octicons-arrow-right-24: Leggi il capitolo](01-funzioni.md)
 
--   **2. Funzioni reali di variabile reale**
+-   **3. Funzioni reali di variabile reale**
 
     ---
 
@@ -20,7 +20,7 @@
 
     [:octicons-arrow-right-24: Leggi il capitolo](02-funzioni-reali.md)
 
--   **3. Funzioni potenza**
+-   **4. Funzioni potenza**
 
     ---
 
@@ -28,7 +28,7 @@
 
     [:octicons-arrow-right-24: Leggi il capitolo](03-potenza.md)
 
--   **4. Funzioni esponenziali e logaritmiche**
+-   **5. Funzioni esponenziali e logaritmiche**
 
     ---
 
@@ -36,21 +36,13 @@
 
     [:octicons-arrow-right-24: Leggi il capitolo](04-esponenziali-logaritmi.md)
 
--   **5. Funzioni trigonometriche**
+-   **6. Funzioni trigonometriche**
 
     ---
 
-    Funzioni trigonometriche · Valori delle funzioni trigonometriche · Principali formule trigonometriche
+    Funzioni trigonometriche · Valori delle funzioni trigonometriche · Principali formule trigonometriche · Un'applicazione: i fenomeni vibratori
 
     [:octicons-arrow-right-24: Leggi il capitolo](05-trigonometriche.md)
-
--   **6. Fenomeni vibratori**
-
-    ---
-
-    Fenomeni vibratori · Effetti di smorzamento o di amplificazione
-
-    [:octicons-arrow-right-24: Leggi il capitolo](06-fenomeni-vibratori.md)
 
 -   **7. Funzioni parte intera e mantissa**
 
@@ -58,7 +50,7 @@
 
     Funzioni parte intera e mantissa · Funzioni definite a tratti · Funzione valore assoluto
 
-    [:octicons-arrow-right-24: Leggi il capitolo](07-parte-intera.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](06-parte-intera.md)
 
 -   **8. Funzioni iperboliche**
 
@@ -66,7 +58,7 @@
 
     Funzioni iperboliche · Principali formule iperboliche
 
-    [:octicons-arrow-right-24: Leggi il capitolo](08-iperboliche.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](07-iperboliche.md)
 
 -   **9. Operazioni sui grafici**
 
@@ -74,7 +66,7 @@
 
     Operazioni sui grafici
 
-    [:octicons-arrow-right-24: Leggi il capitolo](09-operazioni-grafici.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](08-operazioni-grafici.md)
 
 -   **10. Funzioni composte**
 
@@ -82,7 +74,7 @@
 
     Funzioni composte
 
-    [:octicons-arrow-right-24: Leggi il capitolo](10-composte.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](09-composte.md)
 
 -   **11. Funzioni inverse**
 
@@ -90,6 +82,6 @@
 
     Funzioni invertibili e funzioni inverse
 
-    [:octicons-arrow-right-24: Leggi il capitolo](11-inverse.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](10-inverse.md)
 
 </div>

@@ -1,33 +1,38 @@
 # Indice completo
 
-## [Numeri e logica](numeri/index.md)
+## [Logica e metodi di dimostrazione](logica/index.md)
+
+1. [Basi di logica e tecniche di dimostrazione](logica/01-logica.md)
+2. [Principio di induzione](logica/02-induzione.md)
+
+## [Numeri e insiemi](numeri/index.md)
 
 1. [Insiemi](numeri/01-insiemi.md)
-2. [Basi di logica e tecniche di dimostrazione](numeri/02-logica.md)
-3. [Insiemi numerici e intervalli](numeri/03-insiemi-numerici.md)
-4. [Relazioni binarie](numeri/04-relazioni-binarie.md)
-5. [Campi ordinati, estremo superiore/inferiore e assioma di continuità](numeri/05-campi-ordinati.md)
-6. [Radicali, potenze, logaritmi e aritmetica modulare](numeri/06-radicali-potenze-logaritmi.md)
-7. [Sommatorie, progressioni geometriche e aritmetiche](numeri/07-sommatorie.md)
-8. [Principio di induzione](numeri/08-induzione.md)
-9. [Fattoriali, coefficienti binomiali e disuguaglianza triangolare](numeri/09-fattoriali-binomiali.md)
-10. [Successione di Fibonacci](numeri/10-fibonacci.md)
-11. [Cardinalità degli insiemi infiniti](numeri/11-insiemi-infiniti.md)
-12. [Numeri complessi](numeri/12-numeri-complessi.md)
+2. [Insiemi numerici e intervalli](numeri/02-insiemi-numerici.md)
+3. [Campi ordinati, estremo superiore/inferiore e assioma di continuità](numeri/03-campi-ordinati.md)
+4. [Radicali, potenze, logaritmi e aritmetica modulare](numeri/04-radicali-potenze-logaritmi.md)
+5. [Sommatorie, progressioni geometriche e aritmetiche](numeri/05-sommatorie.md)
+6. [Fattoriali, coefficienti binomiali e disuguaglianza triangolare](numeri/06-fattoriali-binomiali.md)
+7. [Successione di Fibonacci](numeri/07-fibonacci.md)
+8. [Cardinalità degli insiemi infiniti](numeri/08-insiemi-infiniti.md)
+9. [Numeri complessi](numeri/09-numeri-complessi.md)
+
+## [Relazioni binarie](relazioni/index.md)
+
+1. [Relazioni binarie](relazioni/01-relazioni-binarie.md)
 
 ## [Funzioni](funzioni/index.md)
 
-1. [Le funzioni](funzioni/01-funzioni.md)
-2. [Funzioni reali di variabile reale](funzioni/02-funzioni-reali.md)
-3. [Funzioni potenza](funzioni/03-potenza.md)
-4. [Funzioni esponenziali e logaritmiche](funzioni/04-esponenziali-logaritmi.md)
-5. [Funzioni trigonometriche](funzioni/05-trigonometriche.md)
-6. [Fenomeni vibratori](funzioni/06-fenomeni-vibratori.md)
-7. [Funzioni parte intera e mantissa](funzioni/07-parte-intera.md)
-8. [Funzioni iperboliche](funzioni/08-iperboliche.md)
-9. [Operazioni sui grafici](funzioni/09-operazioni-grafici.md)
-10. [Funzioni composte](funzioni/10-composte.md)
-11. [Funzioni inverse](funzioni/11-inverse.md)
+2. [Le funzioni](funzioni/01-funzioni.md)
+3. [Funzioni reali di variabile reale](funzioni/02-funzioni-reali.md)
+4. [Funzioni potenza](funzioni/03-potenza.md)
+5. [Funzioni esponenziali e logaritmiche](funzioni/04-esponenziali-logaritmi.md)
+6. [Funzioni trigonometriche](funzioni/05-trigonometriche.md)
+7. [Funzioni parte intera e mantissa](funzioni/06-parte-intera.md)
+8. [Funzioni iperboliche](funzioni/07-iperboliche.md)
+9. [Operazioni sui grafici](funzioni/08-operazioni-grafici.md)
+10. [Funzioni composte](funzioni/09-composte.md)
+11. [Funzioni inverse](funzioni/10-inverse.md)
 
 ## [Limiti di successioni](successioni/index.md)
 

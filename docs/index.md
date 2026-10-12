@@ -16,7 +16,7 @@ associato al [DIAG](https://www.diag.uniroma1.it/), Sapienza Università di Roma
 dimostrazioni, esempi svolti passo per passo, esercizi e **grafici interattivi**
 per vedere la matematica muoversi.
 
-[Inizia dai numeri :material-arrow-right:](numeri/index.md){ .md-button .md-button--primary }
+[Inizia dalla logica :material-arrow-right:](logica/index.md){ .md-button .md-button--primary }
 [Prova un grafico interattivo](interattivi/index.md){ .md-button }
 [:material-download: Scarica le dispense (PDF)](materiale.md){ .md-button }
 
@@ -53,16 +53,34 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
 <div class="grid cards" markdown>
 
--   :material-numeric: **1 · Numeri e logica**
+-   :material-lightbulb-on-outline: **1 · Logica e metodi di dimostrazione**
 
     ---
 
-    Insiemi, logica e tecniche di dimostrazione, numeri reali ed estremo
-    superiore, sommatorie, induzione, coefficienti binomiali, numeri complessi.
+    Simboli logici e implicazioni, contronominale, condizioni necessarie e
+    sufficienti, dimostrazioni per assurdo, principio di induzione.
+
+    [:octicons-arrow-right-24: I capitoli](logica/index.md)
+
+-   :material-numeric: **2 · Numeri e insiemi**
+
+    ---
+
+    Insiemi, numeri reali ed estremo superiore, radicali e logaritmi,
+    sommatorie, coefficienti binomiali, insiemi infiniti, numeri complessi.
 
     [:octicons-arrow-right-24: I capitoli](numeri/index.md)
 
--   :material-function-variant: **2 · Funzioni**
+-   :material-relation-many-to-many: **3 · Relazioni binarie**
+
+    ---
+
+    Proprietà delle relazioni, grafi direzionati, relazioni di equivalenza
+    e d'ordine: le funzioni sono relazioni particolari.
+
+    [:octicons-arrow-right-24: Il capitolo](relazioni/index.md)
+
+-   :material-function-variant: **3 · Funzioni**
 
     ---
 
@@ -71,7 +89,7 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     [:octicons-arrow-right-24: I capitoli](funzioni/index.md)
 
--   :material-dots-horizontal: **3 · Limiti di successioni**
+-   :material-dots-horizontal: **4 · Limiti di successioni**
 
     ---
 
@@ -80,7 +98,7 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     [:octicons-arrow-right-24: I capitoli](successioni/index.md)
 
--   :material-chart-bell-curve: **3 · Limiti di funzioni e continuità**
+-   :material-chart-bell-curve: **4 · Limiti di funzioni e continuità**
 
     ---
 
@@ -89,7 +107,7 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     [:octicons-arrow-right-24: I capitoli](limiti/index.md)
 
--   :material-chart-line: **4 · Derivate**
+-   :material-chart-line: **5 · Derivate**
 
     ---
 
@@ -98,7 +116,7 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
 
     [:octicons-arrow-right-24: I capitoli](derivate/index.md)
 
--   :material-sigma: **5 · Serie**
+-   :material-sigma: **6 · Serie**
 
     ---
 

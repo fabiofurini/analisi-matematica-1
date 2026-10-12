@@ -6,7 +6,7 @@ title: "Le funzioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Funzioni · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-01-funzioni.pdf)
+**Parte 3 · Funzioni · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-01-funzioni.pdf)
 
 </div>
 
@@ -109,6 +109,8 @@ title: "Le funzioni"
 !!! definizione "Definizione 2: di funzione"
 
     Dati due insiemi $A$, $B$ qualsiasi, una <strong>funzione</strong> $f$ di <strong>dominio</strong> $A$ a valori in $B$ (o anche “di <strong>codominio</strong> $B$”) è una qualsiasi legge che ad ogni elemento di $A$ associa <em>uno e un solo elemento</em> di $B$.
+
+- Nel linguaggio del capitolo precedente, «Relazioni binarie», la legge $f$ si identifica con l'insieme delle coppie $(x, f(x))$ con $x \in A$: una funzione è quindi una <strong>relazione binaria</strong> su $A$ e $B$ con la <strong>proprietà funzionale</strong>, cioè a ogni $x \in A$ corrisponde uno e un solo $y \in B$ con $(x,y)$ nella relazione (è la definizione di funzione data in quel capitolo).
 
 - La scrittura:
 
@@ -358,7 +360,7 @@ title: "Le funzioni"
 
 !!! chiave ""
 
-    Le due osservazioni precedenti sono enunciate per insiemi <strong>finiti</strong>: le dimostrazioni <em>contano</em> gli elementi, e il conteggio ha senso solo per insiemi finiti. Il confronto fra le “grandezze” di due insiemi infiniti richiede una nozione diversa di cardinalità, che si introduce nel capitolo “Cardinalità degli insiemi infiniti” della Parte 1.
+    Le due osservazioni precedenti sono enunciate per insiemi <strong>finiti</strong>: le dimostrazioni <em>contano</em> gli elementi, e il conteggio ha senso solo per insiemi finiti. Il confronto fra le “grandezze” di due insiemi infiniti richiede una nozione diversa di cardinalità, che si introduce nel capitolo “Cardinalità degli insiemi infiniti” della Parte 2.
 
 <a id="box-notationA-19"></a>
 
