@@ -601,6 +601,8 @@ In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e s
 
 ## 6. Logica e insiemi
 
+Gli insiemi sono trattati in dettaglio nel capitolo “Insiemi” della Parte 2 (volume 2); qui ne usiamo solo le nozioni di base.
+
 Il linguaggio logico e il linguaggio insiemistico sono due facce della stessa medaglia.
 
 ### 6.1 Implicazione logica e inclusione insiemistica
