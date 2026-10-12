@@ -6,7 +6,7 @@ title: "Insiemi numerici e intervalli"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri e insiemi · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-02-insiemi-numerici.pdf)
+**Parte 2 · Numeri · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-02-insiemi-numerici.pdf)
 
 </div>
 
@@ -30,7 +30,7 @@ $$
 
 !!! chiave ""
 
-    Nel capitolo <em>Insiemi</em> abbiamo già introdotto, per i numeri naturali:
+    Nel capitolo <em>[Insiemi](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/)</em> abbiamo già introdotto, per i numeri naturali:
 
     - le definizioni di numero <strong>pari</strong> ($n = 2\,m$) e di numero <strong>dispari</strong> ($n = 2\,m+1$), con $m \in \N$, e il fatto che ogni numero naturale è pari oppure dispari, ma mai entrambe le cose;
 
@@ -68,7 +68,7 @@ Un numero razionale, scritto in forma decimale, ha un'<strong>espansione decimal
     0,\overline{9}=1
     $$
 
-    di cui abbiamo dato quattro dimostrazioni diverse nel capitolo <em>Insiemi</em>, e che quindi qui non ripetiamo.
+    di cui abbiamo dato quattro dimostrazioni diverse nel capitolo <em>[Insiemi](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/)</em>, e che quindi qui non ripetiamo.
 
 ### 1.4 I numeri reali
 

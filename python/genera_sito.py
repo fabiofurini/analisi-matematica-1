@@ -12,7 +12,7 @@ import re
 
 from pathlib import Path
 
-from capitoli import CAPITOLI, DOCS, IT, LINGUA, PAGINE_SPOSTATE, PARTI, num_volume, pagina, voce_menu
+from capitoli import CAPITOLI, DOCS, IT, LINGUA, PAGINE_SPOSTATE, PARTI, ident, num_volume, pagina, voce_menu
 
 EN = LINGUA == "en"
 
@@ -35,6 +35,31 @@ def sommario(parte, num, slug, max_voci=4):
     sez = [re.sub(r"\$[^$]*\$", "…", s) for s in sez]
     testo = " · ".join(sez[:max_voci])
     return testo + (" · …" if len(sez) > max_voci else "")
+
+
+def barra_parte(key, np, caps, descr):
+    """In testa alla pagina della parte: la stessa pillola dei capitoli (Parte N · titolo breve),
+    la descrizione in una riga e l'elenco breve del materiale da scaricare."""
+    from converti_tex import link_app, link_slide, link_volumi
+    n = len(caps)
+    pill = (f"**{'Part' if EN else 'Parte'} {np} · {voce_menu(key)}** · {n} "
+            + (("chapter" if n == 1 else "chapters") if EN else ("capitolo" if n == 1 else "capitoli")))
+    righe = ['<div class="info-capitolo" markdown>', "", pill, "", "</div>", "", descr, "",
+             "**Downloads**" if EN else "**Da scaricare**", ""]
+    righe += [f"- {v}" for v in link_volumi(key)]
+    slide = []
+    for parte, num, slug, _ in caps:
+        s = link_slide(ident(parte, num, slug))
+        if s:
+            url = s[s.index("](") + 2:-1]
+            slide.append(f"[{num_volume(parte, num)}]({url})")
+    if slide:
+        righe.append(f"- :material-presentation: {'Slides by chapter' if EN else 'Slide dei capitoli'}: " + " · ".join(slide))
+    app = []
+    for parte, num, slug, _ in caps:
+        app += [a for a in link_app(pagina(parte, num, slug)) if a not in app]
+    righe += [f"- {a}" for a in app]
+    return righe + [""]
 
 
 def esercizi():
@@ -78,8 +103,7 @@ def main():
         if not caps:
             continue
         voci = [f"      - {key}/index.md"]
-        card = [f"# {nome}", "", (f"*Part {np} of the lecture notes.* " if EN else f"*Parte {np} delle dispense.* ") + descr, "",
-                '<div class="grid cards" markdown>', ""]
+        card = [f"# {nome}", ""] + barra_parte(key, np, caps, descr) + ['<div class="grid cards" markdown>', ""]
         indice.append(f"## [{nome}]({key}/index.md)")
         indice.append("")
         for parte, num, slug, _ in caps:

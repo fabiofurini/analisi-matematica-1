@@ -6,7 +6,7 @@ title: "Basi di logica e tecniche di dimostrazione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Logica e metodi di dimostrazione · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-1-logica.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-logica-01-logica.pdf)
+**Parte 1 · Logica · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-logica.pdf) · [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-logica-01-logica.pdf)
 
 </div>
 
@@ -601,7 +601,7 @@ In questo modo abbiamo provato che “$n^2$ pari” è condizione necessaria e s
 
 ## 6. Logica e insiemi
 
-Gli insiemi sono trattati in dettaglio nel capitolo “Insiemi” della Parte 2 (volume 2); qui ne usiamo solo le nozioni di base.
+Gli insiemi sono trattati in dettaglio nel capitolo “[Insiemi](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/)” della Parte 2 (volume 2); qui ne usiamo solo le nozioni di base.
 
 Il linguaggio logico e il linguaggio insiemistico sono due facce della stessa medaglia.
 

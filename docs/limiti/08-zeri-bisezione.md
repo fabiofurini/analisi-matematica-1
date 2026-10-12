@@ -6,7 +6,7 @@ title: "Teorema degli zeri e metodo della bisezione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti di funzioni e continuità · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-08-zeri-bisezione.pdf)
+**Parte 4 · Limiti · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-08-zeri-bisezione.pdf) · [:material-gesture-tap: App: Metodo di bisezione](../interattivi/bisezione.md)
 
 </div>
 

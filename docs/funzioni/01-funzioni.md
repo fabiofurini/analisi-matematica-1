@@ -6,7 +6,7 @@ title: "Le funzioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Funzioni · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-01-funzioni.pdf)
+**Parte 3 · Funzioni · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-01-funzioni.pdf)
 
 </div>
 
@@ -110,7 +110,7 @@ title: "Le funzioni"
 
     Dati due insiemi $A$, $B$ qualsiasi, una <strong>funzione</strong> $f$ di <strong>dominio</strong> $A$ a valori in $B$ (o anche “di <strong>codominio</strong> $B$”) è una qualsiasi legge che ad ogni elemento di $A$ associa <em>uno e un solo elemento</em> di $B$.
 
-- Nel linguaggio del capitolo precedente, «Relazioni binarie», la legge $f$ si identifica con l'insieme delle coppie $(x, f(x))$ con $x \in A$: una funzione è quindi una <strong>relazione binaria</strong> su $A$ e $B$ con la <strong>proprietà funzionale</strong>, cioè a ogni $x \in A$ corrisponde uno e un solo $y \in B$ con $(x,y)$ nella relazione (è la definizione di funzione data in quel capitolo).
+- Nel linguaggio del capitolo precedente, «[Relazioni binarie](https://fabiofurini.github.io/analisi-matematica-1/relazioni/01-relazioni-binarie/)», la legge $f$ si identifica con l'insieme delle coppie $(x, f(x))$ con $x \in A$: una funzione è quindi una <strong>relazione binaria</strong> su $A$ e $B$ con la <strong>proprietà funzionale</strong>, cioè a ogni $x \in A$ corrisponde uno e un solo $y \in B$ con $(x,y)$ nella relazione (è la definizione di funzione data in quel capitolo).
 
 - La scrittura:
 
@@ -360,7 +360,7 @@ title: "Le funzioni"
 
 !!! chiave ""
 
-    Le due osservazioni precedenti sono enunciate per insiemi <strong>finiti</strong>: le dimostrazioni <em>contano</em> gli elementi, e il conteggio ha senso solo per insiemi finiti. Il confronto fra le “grandezze” di due insiemi infiniti richiede una nozione diversa di cardinalità, che si introduce nel capitolo “Cardinalità degli insiemi infiniti” della Parte 2.
+    Le due osservazioni precedenti sono enunciate per insiemi <strong>finiti</strong>: le dimostrazioni <em>contano</em> gli elementi, e il conteggio ha senso solo per insiemi finiti. Il confronto fra le “grandezze” di due insiemi infiniti richiede una nozione diversa di cardinalità, che si introduce nel capitolo “[Cardinalità degli insiemi infiniti](https://fabiofurini.github.io/analisi-matematica-1/numeri/08-insiemi-infiniti/)” della Parte 2.
 
 <a id="box-notationA-19"></a>
 
@@ -418,7 +418,7 @@ title: "Le funzioni"
 
 !!! chiave ""
 
-    Qui l'inversa è definita su <strong>tutto</strong> il codominio $B$, e perciò servono <em>sia</em> l'iniettività <em>sia</em> la suriettività di $f$. Nel capitolo “Funzioni inverse” si studiano invece le funzioni reali di variabile reale, e lì una funzione si dice <em>invertibile</em> quando è soltanto <strong>iniettiva</strong>: l'inversa viene costruita sull'<em>immagine</em> $f(D)$ e non su tutto il codominio, e rispetto all'immagine la suriettività è automatica.
+    Qui l'inversa è definita su <strong>tutto</strong> il codominio $B$, e perciò servono <em>sia</em> l'iniettività <em>sia</em> la suriettività di $f$. Nel capitolo “[Funzioni inverse](https://fabiofurini.github.io/analisi-matematica-1/funzioni/10-inverse/)” si studiano invece le funzioni reali di variabile reale, e lì una funzione si dice <em>invertibile</em> quando è soltanto <strong>iniettiva</strong>: l'inversa viene costruita sull'<em>immagine</em> $f(D)$ e non su tutto il codominio, e rispetto all'immagine la suriettività è automatica.
 
 <a id="box-texexpbox1-22"></a>
 

@@ -6,7 +6,7 @@ title: "Funzione derivata"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-01-funzione-derivata.pdf)
+**Parte 5 · Derivate · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-01-funzione-derivata.pdf) · [:material-gesture-tap: App: Dalla secante alla tangente](../interattivi/secante-tangente.md)
 
 </div>
 

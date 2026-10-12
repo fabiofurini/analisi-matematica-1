@@ -6,7 +6,7 @@ title: "Calcolo limiti di successioni"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Limiti di successioni** · con le soluzioni svolte · [:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/esercizi-4-limiti.pdf)
+**Esercizi · Parte 4 · Successioni** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
 
 </div>
 

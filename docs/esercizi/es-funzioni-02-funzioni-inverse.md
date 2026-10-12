@@ -6,7 +6,7 @@ title: "Funzioni inverse"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Funzioni** · con le soluzioni svolte · [:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/esercizi-3-funzioni.pdf)
+**Esercizi · Parte 3 · Funzioni** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf)
 
 </div>
 

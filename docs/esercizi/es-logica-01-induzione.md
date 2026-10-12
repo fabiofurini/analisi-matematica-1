@@ -6,7 +6,7 @@ title: "Principio di induzione"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Logica e metodi di dimostrazione** · con le soluzioni svolte · [:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/esercizi-1-logica.pdf)
+**Esercizi · Parte 1 · Logica** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf)
 
 </div>
 

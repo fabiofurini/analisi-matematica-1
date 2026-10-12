@@ -6,7 +6,7 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti di funzioni e continuità · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-10-monotone-invertibili.pdf)
+**Parte 4 · Limiti · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-10-monotone-invertibili.pdf)
 
 </div>
 

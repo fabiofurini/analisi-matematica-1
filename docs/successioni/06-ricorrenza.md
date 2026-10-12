@@ -6,7 +6,7 @@ title: "Successioni definite per ricorrenza"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti di successioni · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-06-ricorrenza.pdf)
+**Parte 4 · Successioni · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-06-ricorrenza.pdf) · [:material-gesture-tap: App: Successione di Erone](../interattivi/successione-di-erone.md)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Limiti di funzioni reali di variabile reale"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Limiti di funzioni** · con le soluzioni svolte · [:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/esercizi-4-limiti.pdf)
+**Esercizi · Parte 4 · Limiti** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
 
 </div>
 

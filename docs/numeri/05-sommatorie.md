@@ -6,7 +6,7 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri e insiemi · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-05-sommatorie.pdf)
+**Parte 2 · Numeri · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-05-sommatorie.pdf)
 
 </div>
 
@@ -277,7 +277,7 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
 
     <p class="qed-riga"><span class="qed">□</span></p>
 
-- Le tre sommatorie importanti appena viste si dimostrano anche per induzione, nel capitolo «Principio di induzione» della Parte 1.
+- Le tre sommatorie importanti appena viste si dimostrano anche per induzione, nel capitolo «[Principio di induzione](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/)» della Parte 1.
 
 ## 2. Progressioni geometriche
 
@@ -448,7 +448,7 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
     \end{cases}
     \end{equation*}
 
-- La formula \(\eqref{GEOM}\) si dimostra anche per induzione, nel capitolo «Principio di induzione» della Parte 1.
+- La formula \(\eqref{GEOM}\) si dimostra anche per induzione, nel capitolo «[Principio di induzione](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/)» della Parte 1.
 
 <a id="box-texexpbox1-18"></a>
 

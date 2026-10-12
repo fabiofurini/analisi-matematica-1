@@ -6,7 +6,7 @@ title: "Successione di Fibonacci"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri e insiemi · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-07-fibonacci.pdf)
+**Parte 2 · Numeri · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-07-fibonacci.pdf)
 
 </div>
 

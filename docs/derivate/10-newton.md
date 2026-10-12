@@ -6,7 +6,7 @@ title: "Metodo di Newton"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-10-newton.pdf)
+**Parte 5 · Derivate · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-10-newton.pdf) · [:material-gesture-tap: App: Metodo di Newton](../interattivi/metodo-di-newton.md)
 
 </div>
 

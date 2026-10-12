@@ -6,7 +6,7 @@ title: "Derivabilità"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Derivate** · con le soluzioni svolte · [:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/esercizi-5-derivate.pdf)
+**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
 
 </div>
 

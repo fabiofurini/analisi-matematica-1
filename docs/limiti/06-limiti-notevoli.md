@@ -6,7 +6,7 @@ title: "Limiti notevoli e stime asintotiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti di funzioni e continuità · Capitolo 6** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-06-limiti-notevoli.pdf)
+**Parte 4 · Limiti · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-06-limiti-notevoli.pdf)
 
 </div>
 

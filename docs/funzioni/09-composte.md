@@ -6,7 +6,7 @@ title: "Funzioni composte"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Funzioni · Capitolo 10** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-09-composte.pdf)
+**Parte 3 · Funzioni · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-09-composte.pdf)
 
 </div>
 

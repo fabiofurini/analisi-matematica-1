@@ -6,7 +6,7 @@ title: "Serie numeriche a termini non negativi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 6 · Serie · Capitolo 2** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-02-termini-non-negativi.pdf)
+**Parte 6 · Serie · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-02-termini-non-negativi.pdf) · [:material-gesture-tap: App: Serie armonica generalizzata](../interattivi/serie-armonica.md)
 
 </div>
 

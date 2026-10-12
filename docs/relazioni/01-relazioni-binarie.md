@@ -6,7 +6,7 @@ title: "Relazioni binarie"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Relazioni binarie · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-relazioni-01-relazioni-binarie.pdf)
+**Parte 3 · Relazioni · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-relazioni-01-relazioni-binarie.pdf)
 
 </div>
 
@@ -1819,4 +1819,4 @@ Vediamo ora in dettaglio, per ciascuna proprietà, come si dimostra che una rela
     f = \big\{ (n,2\:n): n \in \mathbb{N} \big\} {~~e~~} f: \mathbb{N} \rightarrow \mathbb{N}
     $$
 
-- Il capitolo successivo, «Funzioni», riparte da questa definizione: una funzione $f: A \rightarrow B$ è una relazione binaria su $A$ e $B$ con la <strong>proprietà funzionale</strong> (a ogni $a \in A$ corrisponde uno e un solo $b \in B$). Lì si studiano dominio, codominio e immagine, e le funzioni iniettive, suriettive e biiettive.
+- Il capitolo successivo, «[Funzioni](https://fabiofurini.github.io/analisi-matematica-1/funzioni/01-funzioni/)», riparte da questa definizione: una funzione $f: A \rightarrow B$ è una relazione binaria su $A$ e $B$ con la <strong>proprietà funzionale</strong> (a ogni $a \in A$ corrisponde uno e un solo $b \in B$). Lì si studiano dominio, codominio e immagine, e le funzioni iniettive, suriettive e biiettive.

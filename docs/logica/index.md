@@ -1,6 +1,18 @@
 # Logica e metodi di dimostrazione
 
-*Parte 1 delle dispense.* Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principio di induzione.
+<div class="info-capitolo" markdown>
+
+**Parte 1 · Logica** · 2 capitoli
+
+</div>
+
+Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principio di induzione.
+
+**Da scaricare**
+
+- [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-logica.pdf)
+- [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf)
+- :material-presentation: Slide dei capitoli: [1](../pdf/slide-logica-01-logica.pdf) · [2](../pdf/slide-logica-02-induzione.pdf)
 
 <div class="grid cards" markdown>
 

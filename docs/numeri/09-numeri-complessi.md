@@ -6,7 +6,7 @@ title: "Numeri complessi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri e insiemi · Capitolo 9** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-09-numeri-complessi.pdf)
+**Parte 2 · Numeri · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-09-numeri-complessi.pdf) · [:material-gesture-tap: App: Radici n-esime complesse](../interattivi/radici-complesse.md)
 
 </div>
 

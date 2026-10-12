@@ -6,7 +6,7 @@ title: "Teorema del valore medio, massimi e minimi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 5** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-05-valor-medio.pdf)
+**Parte 5 · Derivate · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-05-valor-medio.pdf) · [:material-gesture-tap: App: Teorema di Lagrange](../interattivi/teorema-di-lagrange.md)
 
 </div>
 

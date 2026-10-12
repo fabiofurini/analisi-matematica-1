@@ -6,7 +6,7 @@ title: "Successioni e limiti di successioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti di successioni · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-01-limiti-successioni.pdf)
+**Parte 4 · Successioni · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-01-limiti-successioni.pdf) · [:material-gesture-tap: App: Limite di una successione](../interattivi/limite-successione.md)
 
 </div>
 

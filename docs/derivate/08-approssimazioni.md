@@ -6,7 +6,7 @@ title: "Calcolo differenziale e approssimazioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 8** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-08-approssimazioni.pdf)
+**Parte 5 · Derivate · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-08-approssimazioni.pdf) · [:material-gesture-tap: App: Polinomi di Mac Laurin](../interattivi/polinomi-di-maclaurin.md)
 
 </div>
 

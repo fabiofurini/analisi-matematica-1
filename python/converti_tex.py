@@ -1133,14 +1133,7 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
         "",
         f'<div class="info-capitolo" markdown>',
         "",
-        ((f"**Exercises · {PARTI_ES[_parte_it(parte)][1]}** · with worked solutions · "
-          f"[:material-file-pdf-box: Exercises, volume (PDF)](../pdf/{pdf_volume(parte, True)})") if EN else
-         (f"**Esercizi · {PARTI_ES[_parte_it(parte)][0]}** · con le soluzioni svolte · "
-          f"[:material-file-pdf-box: Esercizi del volume (PDF)](../pdf/{pdf_volume(parte, True)})")) if esercizi else
-        (f"**Part {parte_numero(parte)} · {nome_parte(parte)} · Chapter {num_volume(parte, num)}** · lecture notes by {chi} · "
-         f"[:material-file-pdf-box: Lecture notes, volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)) if EN else
-        (f"**Parte {parte_numero(parte)} · {nome_parte(parte)} · Capitolo {num_volume(parte, num)}** · dalle dispense di {chi} · "
-         f"[:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/{pdf_volume(parte)})" + link_slide(cid)),
+        barra_esercizi(parte) if esercizi else barra_capitolo(parte, num, slug),
         "",
         "</div>",
         "",
@@ -1176,6 +1169,66 @@ def pdf_volume(parte: str, esercizi: bool = False) -> str:
     file = f"{'esercizi' if esercizi else 'dispensa'}-{VOLUME_DI[parte]}"
     vol = next(v for v in C.VOLUMI if v["file"] == file)
     return vol["pdf_en"] if EN else vol["pdf_it"]
+
+
+# ---------------------------------------------------------------- barra in testa alle pagine
+# Come negli altri moduli (Programmazione lineare intera): una pillola «Parte N · titolo breve ·
+# Capitolo M» con il materiale da scaricare del capitolo (dispensa e eserciziario del volume,
+# slide del capitolo, app del laboratorio collegate al capitolo).
+ES_PARTE_NUM = {"integrali": "7", "integrals": "7"}   # parte delle note dei soli esercizi
+ES_BREVE = {"integrali": ("Integrali", "Integrals"), "integrals": ("Integrali", "Integrals")}
+
+
+def _pdf(file, testo, icona, su="../"):
+    import dispense_config as C
+    vol = next(v for v in C.VOLUMI if v["file"] == file)
+    nome = vol["pdf_en"] if EN else vol["pdf_it"]
+    if not (DOCS / "pdf" / nome).exists():
+        return ""
+    return f"[:material-{icona}: {testo}]({su}pdf/{nome})"
+
+
+def link_volumi(parte, su="../", dispensa=True):
+    n = VOLUME_DI[parte]
+    voci = []
+    if dispensa:
+        voci.append(_pdf(f"dispensa-{n}", f"{'Lecture notes' if EN else 'Dispensa'}, volume {n} (PDF)", "file-pdf-box", su))
+    voci.append(_pdf(f"esercizi-{n}", f"{'Exercises' if EN else 'Esercizi'}, volume {n} (PDF)", "pencil-box-multiple", su))
+    return [v for v in voci if v]
+
+
+def link_app(rel_pagina, su="../"):
+    """Le app del laboratorio che rimandano a questa pagina (elenco APP di genera_laboratorio.py)."""
+    import genera_laboratorio as G
+    out = []
+    for a in G.APP:
+        _, _ric, sit, sen, _ic, tit_it, tit_en, _d1, _d2, l_it, l_en = a
+        if any(pg == rel_pagina for _t, pg in (l_en if EN else l_it)):
+            out.append(f"[:material-gesture-tap: App: {tit_en if EN else tit_it}]({su}{G.CARTELLA}/{sen if EN else sit}.md)")
+    return out
+
+
+def breve_parte(parte):
+    from capitoli import voce_menu
+    if parte in ES_BREVE:
+        return ES_BREVE[parte][1 if EN else 0]
+    return voce_menu(parte)
+
+
+def barra_capitolo(parte, num, slug):
+    cid = ident(parte, num, slug)
+    testa = (f"**{'Part' if EN else 'Parte'} {parte_numero(parte)} · {breve_parte(parte)} · "
+             f"{'Chapter' if EN else 'Capitolo'} {num_volume(parte, num)}**")
+    voci = [testa] + link_volumi(parte) + [link_slide(cid).lstrip(" ·")] + link_app(pagina(parte, num, slug))
+    return " · ".join(v for v in voci if v)
+
+
+def barra_esercizi(parte):
+    k = _parte_it(parte)
+    np = ES_PARTE_NUM.get(parte) or parte_numero(parte)
+    testa = (f"**{'Exercises' if EN else 'Esercizi'} · {'Part' if EN else 'Parte'} {np} · {breve_parte(parte)}** · "
+             + ("with worked solutions" if EN else "con le soluzioni svolte"))
+    return " · ".join([testa] + link_volumi(parte, dispensa=False))
 
 
 def link_slide(cid: str) -> str:

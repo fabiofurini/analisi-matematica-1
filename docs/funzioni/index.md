@@ -1,6 +1,22 @@
 # Funzioni
 
-*Parte 3 delle dispense.* Le funzioni elementari e i loro grafici: potenze, esponenziali, trigonometriche, inverse.
+<div class="info-capitolo" markdown>
+
+**Parte 3 · Funzioni** · 10 capitoli
+
+</div>
+
+Le funzioni elementari e i loro grafici: potenze, esponenziali, trigonometriche, inverse.
+
+**Da scaricare**
+
+- [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf)
+- [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf)
+- :material-presentation: Slide dei capitoli: [2](../pdf/slide-funzioni-01-funzioni.pdf) · [3](../pdf/slide-funzioni-02-funzioni-reali.pdf) · [4](../pdf/slide-funzioni-03-potenza.pdf) · [5](../pdf/slide-funzioni-04-esponenziali-logaritmi.pdf) · [6](../pdf/slide-funzioni-05-trigonometriche.pdf) · [7](../pdf/slide-funzioni-06-parte-intera.pdf) · [8](../pdf/slide-funzioni-07-iperboliche.pdf) · [9](../pdf/slide-funzioni-08-operazioni-grafici.pdf) · [10](../pdf/slide-funzioni-09-composte.pdf) · [11](../pdf/slide-funzioni-10-inverse.pdf)
+- [:material-gesture-tap: App: Funzioni potenza](../interattivi/funzioni-potenza.md)
+- [:material-gesture-tap: App: Esponenziali e logaritmi](../interattivi/esponenziali-logaritmi.md)
+- [:material-gesture-tap: App: Oscillazioni armoniche](../interattivi/oscillazioni.md)
+- [:material-gesture-tap: App: Operazioni sui grafici](../interattivi/operazioni-sui-grafici.md)
 
 <div class="grid cards" markdown>
 

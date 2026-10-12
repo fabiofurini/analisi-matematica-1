@@ -6,7 +6,7 @@ title: "Insiemi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri e insiemi · Capitolo 1** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-01-insiemi.pdf)
+**Parte 2 · Numeri · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-01-insiemi.pdf)
 
 </div>
 
@@ -1641,7 +1641,7 @@ Chiamiamo questo insieme $S$,  si possono fare due ipotesi:
 
 - In forma equivalente: per ogni numero reale $\varepsilon > 0$ esiste un numero naturale $n > 0$ tale che $\frac{1}{n} < \varepsilon$ (basta prendere $n$ maggiore di $\frac{1}{\varepsilon}$). Di conseguenza l'unico numero non negativo minore o uguale a $\frac{1}{n}$ per ogni $n$ è lo zero: è questa la forma in cui la proprietà interviene nella dimostrazione qui sotto.
 
-- Non si tratta di un assioma in più: nel capitolo <em>Campi ordinati, estremo superiore/inferiore e assioma di continuità</em> la dimostreremo a partire dalla proprietà dell'estremo superiore dei numeri reali.
+- Non si tratta di un assioma in più: nel capitolo <em>[Campi ordinati, estremo superiore/inferiore e assioma di continuità](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/)</em> la dimostreremo a partire dalla proprietà dell'estremo superiore dei numeri reali.
 
 ??? dimostrazione "Dimostrazione"
 

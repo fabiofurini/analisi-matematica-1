@@ -6,7 +6,7 @@ title: "Sviluppi asintotici"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti di funzioni e continuità · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-07-sviluppi-asintotici.pdf)
+**Parte 4 · Limiti · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-07-sviluppi-asintotici.pdf)
 
 </div>
 

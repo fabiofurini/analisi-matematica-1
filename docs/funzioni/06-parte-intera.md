@@ -6,7 +6,7 @@ title: "Funzioni parte intera e mantissa"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Funzioni · Capitolo 7** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-06-parte-intera.pdf)
+**Parte 3 · Funzioni · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-06-parte-intera.pdf)
 
 </div>
 
@@ -49,7 +49,7 @@ title: "Funzioni parte intera e mantissa"
 
 - La funzione parte intera $f(x)= \lfloor x \rfloor$ e la funzione parte intera superiore $f(x)= \lceil x \rceil$ sono <strong>non decrescenti</strong> in $\mathbb{R}$, ma <strong>non</strong> sono crescenti.
 
-    - Sono non decrescenti: siano $x_1 < x_2$. Allora $\lfloor x_1 \rfloor \le x_1 < x_2$ e, poiché $\lfloor x_1 \rfloor$ è un intero minore o uguale a $x_2$, mentre $\lfloor x_2 \rfloor$ è il <em>più grande</em> intero minore o uguale a $x_2$ (si veda il capitolo “Radicali, potenze, logaritmi e aritmetica modulare” della Parte 2), si ha $\lfloor x_1 \rfloor \le \lfloor x_2 \rfloor$. Analogamente $\lceil x_2 \rceil \ge x_2 > x_1$ e, poiché $\lceil x_1 \rceil$ è il <em>più piccolo</em> intero maggiore o uguale a $x_1$, si ha $\lceil x_1 \rceil \le \lceil x_2 \rceil$.
+    - Sono non decrescenti: siano $x_1 < x_2$. Allora $\lfloor x_1 \rfloor \le x_1 < x_2$ e, poiché $\lfloor x_1 \rfloor$ è un intero minore o uguale a $x_2$, mentre $\lfloor x_2 \rfloor$ è il <em>più grande</em> intero minore o uguale a $x_2$ (si veda il capitolo “[Radicali, potenze, logaritmi e aritmetica modulare](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/)” della Parte 2), si ha $\lfloor x_1 \rfloor \le \lfloor x_2 \rfloor$. Analogamente $\lceil x_2 \rceil \ge x_2 > x_1$ e, poiché $\lceil x_1 \rceil$ è il <em>più piccolo</em> intero maggiore o uguale a $x_1$, si ha $\lceil x_1 \rceil \le \lceil x_2 \rceil$.
 
     - Non sono crescenti: entrambe sono <em>costanti</em> su ogni intervallo compreso fra due interi consecutivi, per esempio
 
@@ -102,7 +102,7 @@ title: "Funzioni parte intera e mantissa"
 
 ## 3. Funzione valore assoluto
 
-- Nel capitolo “Fattoriali, coefficienti binomiali e disuguaglianza triangolare” della Parte 2 il <strong>valore assoluto</strong> di un numero reale $a$ è stato definito da
+- Nel capitolo “[Fattoriali, coefficienti binomiali e disuguaglianza triangolare](https://fabiofurini.github.io/analisi-matematica-1/numeri/06-fattoriali-binomiali/)” della Parte 2 il <strong>valore assoluto</strong> di un numero reale $a$ è stato definito da
 
     $$
     |a|  =

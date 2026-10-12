@@ -1,6 +1,23 @@
 # Derivate
 
-*Parte 5 delle dispense.* Derivata, regole di calcolo, teoremi del calcolo differenziale, Taylor, studio di funzione, Newton.
+<div class="info-capitolo" markdown>
+
+**Parte 5 · Derivate** · 10 capitoli
+
+</div>
+
+Derivata, regole di calcolo, teoremi del calcolo differenziale, Taylor, studio di funzione, Newton.
+
+**Da scaricare**
+
+- [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf)
+- [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
+- :material-presentation: Slide dei capitoli: [1](../pdf/slide-derivate-01-funzione-derivata.pdf) · [2](../pdf/slide-derivate-02-derivate-elementari.pdf) · [3](../pdf/slide-derivate-03-punti-angolosi-cuspidi.pdf) · [4](../pdf/slide-derivate-04-regole-calcolo.pdf) · [5](../pdf/slide-derivate-05-valor-medio.pdf) · [6](../pdf/slide-derivate-06-de-l-hospital.pdf) · [7](../pdf/slide-derivate-07-derivata-seconda.pdf) · [8](../pdf/slide-derivate-08-approssimazioni.pdf) · [9](../pdf/slide-derivate-09-studio-funzioni.pdf) · [10](../pdf/slide-derivate-10-newton.pdf)
+- [:material-gesture-tap: App: Dalla secante alla tangente](../interattivi/secante-tangente.md)
+- [:material-gesture-tap: App: Teorema di Lagrange](../interattivi/teorema-di-lagrange.md)
+- [:material-gesture-tap: App: Derivata prima e seconda](../interattivi/concavita.md)
+- [:material-gesture-tap: App: Polinomi di Mac Laurin](../interattivi/polinomi-di-maclaurin.md)
+- [:material-gesture-tap: App: Metodo di Newton](../interattivi/metodo-di-newton.md)
 
 <div class="grid cards" markdown>
 

@@ -1,6 +1,19 @@
 # Limiti di funzioni e continuità
 
-*Parte 4 delle dispense.* Limiti, asintoti, limiti notevoli, continuità, teorema degli zeri, Weierstrass.
+<div class="info-capitolo" markdown>
+
+**Parte 4 · Limiti** · 10 capitoli
+
+</div>
+
+Limiti, asintoti, limiti notevoli, continuità, teorema degli zeri, Weierstrass.
+
+**Da scaricare**
+
+- [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf)
+- [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
+- :material-presentation: Slide dei capitoli: [1](../pdf/slide-limiti-01-limiti-asintoti.pdf) · [2](../pdf/slide-limiti-02-calcolo-limiti.pdf) · [3](../pdf/slide-limiti-03-polinomi-razionali.pdf) · [4](../pdf/slide-limiti-04-funzioni-continue.pdf) · [5](../pdf/slide-limiti-05-confronto-infiniti.pdf) · [6](../pdf/slide-limiti-06-limiti-notevoli.pdf) · [7](../pdf/slide-limiti-07-sviluppi-asintotici.pdf) · [8](../pdf/slide-limiti-08-zeri-bisezione.pdf) · [9](../pdf/slide-limiti-09-weierstrass.pdf) · [10](../pdf/slide-limiti-10-monotone-invertibili.pdf)
+- [:material-gesture-tap: App: Metodo di bisezione](../interattivi/bisezione.md)
 
 <div class="grid cards" markdown>
 

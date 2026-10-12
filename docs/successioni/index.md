@@ -1,6 +1,20 @@
 # Limiti di successioni
 
-*Parte 4 delle dispense.* Successioni, limiti, il numero di Nepero, stime asintotiche, ricorrenze.
+<div class="info-capitolo" markdown>
+
+**Parte 4 · Successioni** · 6 capitoli
+
+</div>
+
+Successioni, limiti, il numero di Nepero, stime asintotiche, ricorrenze.
+
+**Da scaricare**
+
+- [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf)
+- [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
+- :material-presentation: Slide dei capitoli: [1](../pdf/slide-successioni-01-limiti-successioni.pdf) · [2](../pdf/slide-successioni-02-calcolo-limiti.pdf) · [3](../pdf/slide-successioni-03-nepero.pdf) · [4](../pdf/slide-successioni-04-stime-asintotiche.pdf) · [5](../pdf/slide-successioni-05-gerarchie-infiniti.pdf) · [6](../pdf/slide-successioni-06-ricorrenza.pdf)
+- [:material-gesture-tap: App: Limite di una successione](../interattivi/limite-successione.md)
+- [:material-gesture-tap: App: Successione di Erone](../interattivi/successione-di-erone.md)
 
 <div class="grid cards" markdown>
 

@@ -6,7 +6,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri e insiemi · Capitolo 3** · dalle dispense di Fabio Furini · [:material-file-pdf-box: Dispensa del volume (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-03-campi-ordinati.pdf)
+**Parte 2 · Numeri · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-03-campi-ordinati.pdf)
 
 </div>
 
@@ -306,7 +306,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     \forall x \in E, \qquad x \le M \qquad
     $$
 
-- Non fa differenza imporre che $m$ e/o $M$ appartengano a $\Q$ o a $\R$ in quanto la condizione è soltanto di esistenza di tali numeri. Non è però una conseguenza immediata della definizione, perché $\Q$ è un sottoinsieme proprio di $\R$: lo si ottiene dalla <strong>proprietà di Archimede</strong> (richiamata nel capitolo <em>Insiemi</em> e dimostrata più avanti in questo capitolo). Infatti, se $M \in \R$ verifica $x \le M$ per ogni $x \in E$, esiste un numero naturale $n > M$, e quindi $x \le M < n$ per ogni $x \in E$, con $n \in \Q$; allo stesso modo, se $m \in \R$ verifica $m \le x$ per ogni $x \in E$, esiste un numero naturale $n > -m$, cioè $-n < m$, e quindi $-n < x$ per ogni $x \in E$, con $-n \in \Q$. Viceversa ogni numero razionale è anche reale, e quindi le due richieste individuano gli stessi insiemi limitati.
+- Non fa differenza imporre che $m$ e/o $M$ appartengano a $\Q$ o a $\R$ in quanto la condizione è soltanto di esistenza di tali numeri. Non è però una conseguenza immediata della definizione, perché $\Q$ è un sottoinsieme proprio di $\R$: lo si ottiene dalla <strong>proprietà di Archimede</strong> (richiamata nel capitolo <em>[Insiemi](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/)</em> e dimostrata più avanti in questo capitolo). Infatti, se $M \in \R$ verifica $x \le M$ per ogni $x \in E$, esiste un numero naturale $n > M$, e quindi $x \le M < n$ per ogni $x \in E$, con $n \in \Q$; allo stesso modo, se $m \in \R$ verifica $m \le x$ per ogni $x \in E$, esiste un numero naturale $n > -m$, cioè $-n < m$, e quindi $-n < x$ per ogni $x \in E$, con $-n \in \Q$. Viceversa ogni numero razionale è anche reale, e quindi le due richieste individuano gli stessi insiemi limitati.
 
 <a id="box-defXX-12"></a>
 
@@ -809,7 +809,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
     n > x
     $$
 
-- È la proprietà che abbiamo richiamato nel capitolo <em>Insiemi</em> e usato poco sopra. <strong>Non è un assioma in più</strong>: come mostra la dimostrazione, segue dalla proprietà $R_4$.
+- È la proprietà che abbiamo richiamato nel capitolo <em>[Insiemi](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/)</em> e usato poco sopra. <strong>Non è un assioma in più</strong>: come mostra la dimostrazione, segue dalla proprietà $R_4$.
 
 ??? dimostrazione "Dimostrazione"
 
