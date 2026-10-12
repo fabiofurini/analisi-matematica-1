@@ -6,7 +6,7 @@ title: "Equazioni e disequazioni di variabile reale"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 2 · Numeri** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf)
+**Esercizi · Parte 2 · Numeri** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-book-open-variant: Capitolo 4: Radicali, potenze, logaritmi e aritmetica modulare](../numeri/04-radicali-potenze-logaritmi.md) · [:material-book-open-variant: Capitolo 6: Fattoriali, coefficienti binomiali e disuguaglianza triangolare](../numeri/06-fattoriali-binomiali.md)
 
 </div>
 

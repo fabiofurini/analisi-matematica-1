@@ -1133,7 +1133,7 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
         "",
         f'<div class="info-capitolo" markdown>',
         "",
-        barra_esercizi(parte) if esercizi else barra_capitolo(parte, num, slug),
+        barra_esercizi(parte, cid) if esercizi else barra_capitolo(parte, num, slug),
         "",
         "</div>",
         "",
@@ -1144,6 +1144,9 @@ def converti_capitolo(parte: str, num: int, slug: str, rel: str, esercizi: bool 
     from interattivi_capitoli import inserisci
     if not esercizi:
         md = inserisci(ident_it(cid), md, EN)
+    coda = "" if esercizi else riga_schede(cid)
+    if coda:
+        md = md.rstrip() + "\n\n---\n\n" + coda + "\n"
     out = "\n".join(testa) + "\n" + md + note + "\n"
     out = re.sub(r"\n{3,}", "\n\n", out)
     dest = DOCS / CARTELLA_ES / f"{cid}.md" if esercizi else DOCS / pagina(parte, num, slug)
@@ -1215,20 +1218,49 @@ def breve_parte(parte):
     return voce_menu(parte)
 
 
+def _titolo_pagina(rel, riserva):
+    f = DOCS / rel
+    m = re.search(r'^title: "(.*)"$', f.read_text(encoding="utf-8"), re.M) if f.exists() else None
+    return m.group(1) if m else riserva
+
+
+def link_schede(cid, su="../"):
+    """Le pagine di esercizi sul sito collegate al capitolo (SCHEDA_CAPITOLI in capitoli.py)."""
+    from capitoli import CARTELLA_ES, ident_es, schede_del_capitolo
+    out = []
+    for e in schede_del_capitolo(cid):
+        eid = ident_es(*e[:3])
+        out.append((_titolo_pagina(f"{CARTELLA_ES}/{eid}.md", e[2]), f"{su}{CARTELLA_ES}/{eid}.md"))
+    return out
+
+
 def barra_capitolo(parte, num, slug):
     cid = ident(parte, num, slug)
     testa = (f"**{'Part' if EN else 'Parte'} {parte_numero(parte)} · {breve_parte(parte)} · "
              f"{'Chapter' if EN else 'Capitolo'} {num_volume(parte, num)}**")
-    voci = [testa] + link_volumi(parte) + [link_slide(cid).lstrip(" ·")] + link_app(pagina(parte, num, slug))
+    schede = [f"[:material-pencil: {'Exercises' if EN else 'Esercizi'}: {t}]({u})" for t, u in link_schede(cid)]
+    voci = [testa] + link_volumi(parte) + schede + [link_slide(cid).lstrip(" ·")] + link_app(pagina(parte, num, slug))
     return " · ".join(v for v in voci if v)
 
 
-def barra_esercizi(parte):
+def riga_schede(cid):
+    """In fondo alla pagina del capitolo: «Esercizi su questo capitolo: …»."""
+    l = link_schede(cid)
+    if not l:
+        return ""
+    return ("**Exercises on this chapter:** " if EN else "**Esercizi su questo capitolo:** ") + " · ".join(
+        f"[:material-pencil: {t}]({u})" for t, u in l)
+
+
+def barra_esercizi(parte, eid):
     k = _parte_it(parte)
     np = ES_PARTE_NUM.get(parte) or parte_numero(parte)
     testa = (f"**{'Exercises' if EN else 'Esercizi'} · {'Part' if EN else 'Parte'} {np} · {breve_parte(parte)}** · "
              + ("with worked solutions" if EN else "con le soluzioni svolte"))
-    return " · ".join([testa] + link_volumi(parte, dispensa=False))
+    from capitoli import capitoli_della_scheda
+    caps = [f"[:material-book-open-variant: {'Chapter' if EN else 'Capitolo'} {num_volume(c[0], c[1])}: "
+            f"{_titolo_pagina(pagina(*c[:3]), c[2])}](../{pagina(*c[:3])})" for c in capitoli_della_scheda(eid)]
+    return " · ".join([testa] + link_volumi(parte, dispensa=False) + caps)
 
 
 def link_slide(cid: str) -> str:

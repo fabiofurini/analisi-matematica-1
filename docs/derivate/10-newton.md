@@ -6,7 +6,7 @@ title: "Metodo di Newton"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-10-newton.pdf) · [:material-gesture-tap: App: Metodo di Newton](../interattivi/metodo-di-newton.md)
+**Parte 5 · Derivate · Capitolo 10** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Metodi di Newton](../esercizi/es-derivate-11-newton.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-10-newton.pdf) · [:material-gesture-tap: App: Metodo di Newton](../interattivi/metodo-di-newton.md)
 
 </div>
 
@@ -410,3 +410,8 @@ title: "Metodo di Newton"
     <td>0.01314…</td>
     </tr>
     </table></div>
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Metodi di Newton](../esercizi/es-derivate-11-newton.md)
+

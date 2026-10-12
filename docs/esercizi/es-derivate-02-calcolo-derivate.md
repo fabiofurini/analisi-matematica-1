@@ -6,7 +6,7 @@ title: "Calcolo delle funzioni derivate"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
+**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-book-open-variant: Capitolo 2: Derivate di funzioni elementari](../derivate/02-derivate-elementari.md) · [:material-book-open-variant: Capitolo 4: Regole di calcolo delle derivate](../derivate/04-regole-calcolo.md)
 
 </div>
 

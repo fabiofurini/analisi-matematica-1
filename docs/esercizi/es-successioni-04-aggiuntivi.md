@@ -6,7 +6,7 @@ title: "Esercizi aggiuntivi"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 4 · Successioni** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
+**Esercizi · Parte 4 · Successioni** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-book-open-variant: Capitolo 2: Calcolo dei limiti delle successioni](../successioni/02-calcolo-limiti.md)
 
 </div>
 

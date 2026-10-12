@@ -6,7 +6,7 @@ title: "Principio di induzione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 1 · Logica · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-logica.pdf) · [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-logica-02-induzione.pdf)
+**Parte 1 · Logica · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-logica.pdf) · [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf) · [:material-pencil: Esercizi: Principio di induzione](../esercizi/es-logica-01-induzione.md) · [:material-presentation: Slide (PDF)](../pdf/slide-logica-02-induzione.pdf)
 
 </div>
 
@@ -513,3 +513,8 @@ title: "Principio di induzione"
     <p class="qed-riga"><span class="qed">□</span></p>
 
 - La successione di Fibonacci è studiata più in dettaglio nel capitolo «[Successione di Fibonacci](https://fabiofurini.github.io/analisi-matematica-1/numeri/07-fibonacci/)» della Parte 2.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Principio di induzione](../esercizi/es-logica-01-induzione.md)
+

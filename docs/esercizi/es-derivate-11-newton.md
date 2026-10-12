@@ -6,7 +6,7 @@ title: "Metodi di Newton"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
+**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-book-open-variant: Capitolo 10: Metodo di Newton](../derivate/10-newton.md)
 
 </div>
 

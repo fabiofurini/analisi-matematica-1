@@ -6,7 +6,7 @@ title: "Massimi, minimi, estremi superiori e inferiori"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 2 · Numeri** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf)
+**Esercizi · Parte 2 · Numeri** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-book-open-variant: Capitolo 3: Campi ordinati, estremo superiore/inferiore e assioma di continuità](../numeri/03-campi-ordinati.md)
 
 </div>
 

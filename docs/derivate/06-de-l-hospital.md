@@ -6,7 +6,7 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-06-de-l-hospital.pdf)
+**Parte 5 · Derivate · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Derivabilità](../esercizi/es-derivate-06-derivabilita.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-06-de-l-hospital.pdf)
 
 </div>
 
@@ -421,3 +421,8 @@ title: "Teorema di De l'Hospital e derivabilità"
     $$
 
     ![Figura 4](../img/derivate-06-de-l-hospital/fig04.svg){ .fig .ovale loading=lazy style="width:55%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Derivabilità](../esercizi/es-derivate-06-derivabilita.md)
+

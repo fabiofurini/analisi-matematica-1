@@ -6,7 +6,7 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-04-radicali-potenze-logaritmi.pdf)
+**Parte 2 · Numeri · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-pencil: Esercizi: Equazioni e disequazioni di variabile reale](../esercizi/es-numeri-02-equazioni-disequazioni.md) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-04-radicali-potenze-logaritmi.pdf)
 
 </div>
 
@@ -665,3 +665,8 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
 - Equivalentemente, ${a} \equiv {b} \:(\mod {n})$ se ${a}$ e ${b}$ hanno lo stesso resto se divisi per  ${n}$.
 
 - Equivalentemente, ${a} \equiv {b} \:(\mod {n})$ se e solo se  ${n}$ è un divisore di $|{b} - {a}|$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Equazioni e disequazioni di variabile reale](../esercizi/es-numeri-02-equazioni-disequazioni.md)
+

@@ -6,7 +6,7 @@ title: "Funzione derivata"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-01-funzione-derivata.pdf) · [:material-gesture-tap: App: Dalla secante alla tangente](../interattivi/secante-tangente.md)
+**Parte 5 · Derivate · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Rette tangenti](../esercizi/es-derivate-03-rette-tangenti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-01-funzione-derivata.pdf) · [:material-gesture-tap: App: Dalla secante alla tangente](../interattivi/secante-tangente.md)
 
 </div>
 
@@ -472,3 +472,8 @@ title: "Funzione derivata"
     $$
 
     ovvero se una funzione è discontinua in $x_0$ non può essere derivabile in $x_0$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Rette tangenti](../esercizi/es-derivate-03-rette-tangenti.md)
+

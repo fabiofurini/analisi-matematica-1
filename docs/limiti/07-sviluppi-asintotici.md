@@ -6,7 +6,7 @@ title: "Sviluppi asintotici"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-07-sviluppi-asintotici.pdf)
+**Parte 4 · Limiti · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Limiti di funzioni reali di variabile reale](../esercizi/es-limiti-01-limiti-funzioni.md) · [:material-pencil: Esercizi: Limiti con sviluppi asintotici](../esercizi/es-derivate-10-limiti-sviluppi.md) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-07-sviluppi-asintotici.pdf)
 
 </div>
 
@@ -357,3 +357,8 @@ Vediamo ora come ottenere gli <strong>sviluppi asintotici</strong> a partire dai
           e^{\varepsilon(x)} &= 1 + \varepsilon(x) + o\big(\varepsilon(x)\big)  \\[2ex]
           \big(1+\varepsilon(x)\big)^\alpha &= 1 + \alpha \; \varepsilon(x) + o\big(\varepsilon(x)\big)  {\rm ~~~~~~~~con~~~} \alpha \in \R
     \end{align}
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Limiti di funzioni reali di variabile reale](../esercizi/es-limiti-01-limiti-funzioni.md) · [:material-pencil: Limiti con sviluppi asintotici](../esercizi/es-derivate-10-limiti-sviluppi.md)
+

@@ -6,7 +6,7 @@ title: "Funzioni reali di variabile reale"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Funzioni · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-02-funzioni-reali.pdf)
+**Parte 3 · Funzioni · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-pencil: Esercizi: Insiemi di definizione](../esercizi/es-funzioni-01-insiemi-definizione.md) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-02-funzioni-reali.pdf)
 
 </div>
 
@@ -358,5 +358,9 @@ title: "Funzioni reali di variabile reale"
     $$
     y = k \qquad k \in \mathbb{R}
     $$
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Insiemi di definizione](../esercizi/es-funzioni-01-insiemi-definizione.md)
 
 [^1]:  Se la retta non intersecasse il grafico significherebbe che all'ingresso $x$ non corrisponde alcuna uscita. Se la retta intersecasse in più di un punto significherebbe che all'ingresso $x$ corrispondono più uscite distinte, cadendo quindi l'univocità della funzione.

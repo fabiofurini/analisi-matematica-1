@@ -6,7 +6,7 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-06-fattoriali-binomiali.pdf)
+**Parte 2 · Numeri · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-pencil: Esercizi: Equazioni e disequazioni di variabile reale](../esercizi/es-numeri-02-equazioni-disequazioni.md) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-06-fattoriali-binomiali.pdf)
 
 </div>
 
@@ -502,3 +502,8 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     \end{aligned}
     \label{ass_7}
     \end{equation}
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Equazioni e disequazioni di variabile reale](../esercizi/es-numeri-02-equazioni-disequazioni.md)
+

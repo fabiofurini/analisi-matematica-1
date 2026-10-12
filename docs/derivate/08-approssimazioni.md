@@ -6,7 +6,7 @@ title: "Calcolo differenziale e approssimazioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-08-approssimazioni.pdf) · [:material-gesture-tap: App: Polinomi di Mac Laurin](../interattivi/polinomi-di-maclaurin.md)
+**Parte 5 · Derivate · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Sviluppi di Mc Laurin](../esercizi/es-derivate-09-mclaurin.md) · [:material-pencil: Esercizi: Limiti con sviluppi asintotici](../esercizi/es-derivate-10-limiti-sviluppi.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-08-approssimazioni.pdf) · [:material-gesture-tap: App: Polinomi di Mac Laurin](../interattivi/polinomi-di-maclaurin.md)
 
 </div>
 
@@ -1064,3 +1064,8 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     !!! chiave ""
 
         Abbiamo dunque dimostrato che se una funzione (due volte derivabile) è concava,  è anche “concava per tangenti”
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Sviluppi di Mc Laurin](../esercizi/es-derivate-09-mclaurin.md) · [:material-pencil: Limiti con sviluppi asintotici](../esercizi/es-derivate-10-limiti-sviluppi.md)
+

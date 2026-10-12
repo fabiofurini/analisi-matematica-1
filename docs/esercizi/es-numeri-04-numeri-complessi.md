@@ -6,7 +6,7 @@ title: "Numeri complessi"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 2 · Numeri** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf)
+**Esercizi · Parte 2 · Numeri** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-book-open-variant: Capitolo 9: Numeri complessi](../numeri/09-numeri-complessi.md)
 
 </div>
 

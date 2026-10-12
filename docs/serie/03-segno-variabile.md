@@ -6,7 +6,7 @@ title: "Serie numeriche a termini di segno variabile"
 
 <div class="info-capitolo" markdown>
 
-**Parte 6 · Serie · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-03-segno-variabile.pdf)
+**Parte 6 · Serie · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-pencil: Esercizi: Serie numeriche](../esercizi/es-serie-01-serie-numeriche.md) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-03-segno-variabile.pdf)
 
 </div>
 
@@ -389,4 +389,8 @@ title: "Serie numeriche a termini di segno variabile"
 <p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
 
 <div class="gi" data-grafico="seriep" data-funzione="alt"></div>
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Serie numeriche](../esercizi/es-serie-01-serie-numeriche.md)
 

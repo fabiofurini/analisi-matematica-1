@@ -6,7 +6,7 @@ title: "Studio di funzioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-09-studio-funzioni.pdf)
+**Parte 5 · Derivate · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Asintoti](../esercizi/es-derivate-04-asintoti.md) · [:material-pencil: Esercizi: Equazioni parametriche](../esercizi/es-derivate-07-equazioni-parametriche.md) · [:material-pencil: Esercizi: Studi di funzione](../esercizi/es-derivate-08-studi-funzione.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-09-studio-funzioni.pdf)
 
 </div>
 
@@ -290,3 +290,8 @@ title: "Studio di funzioni"
     $$
 
     per il teorema della gerarchia degli infiniti.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Asintoti](../esercizi/es-derivate-04-asintoti.md) · [:material-pencil: Equazioni parametriche](../esercizi/es-derivate-07-equazioni-parametriche.md) · [:material-pencil: Studi di funzione](../esercizi/es-derivate-08-studi-funzione.md)
+

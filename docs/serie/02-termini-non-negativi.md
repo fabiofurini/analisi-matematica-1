@@ -6,7 +6,7 @@ title: "Serie numeriche a termini non negativi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 6 · Serie · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-02-termini-non-negativi.pdf) · [:material-gesture-tap: App: Serie armonica generalizzata](../interattivi/serie-armonica.md)
+**Parte 6 · Serie · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-pencil: Esercizi: Serie numeriche](../esercizi/es-serie-01-serie-numeriche.md) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-02-termini-non-negativi.pdf) · [:material-gesture-tap: App: Serie armonica generalizzata](../interattivi/serie-armonica.md)
 
 </div>
 
@@ -620,3 +620,8 @@ title: "Serie numeriche a termini non negativi"
 !!! chiave ""
 
     In sintesi, quindi, i criteri visti si applicano alle serie che hanno tutti i termini (tranne un numero finito) dello stesso segno.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Serie numeriche](../esercizi/es-serie-01-serie-numeriche.md)
+

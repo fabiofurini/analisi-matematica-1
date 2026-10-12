@@ -6,7 +6,7 @@ title: "Teorema del valore medio, massimi e minimi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-05-valor-medio.pdf) · [:material-gesture-tap: App: Teorema di Lagrange](../interattivi/teorema-di-lagrange.md)
+**Parte 5 · Derivate · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Ricerca di estremi e punti di estremo locali e globali](../esercizi/es-derivate-13-estremi.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-05-valor-medio.pdf) · [:material-gesture-tap: App: Teorema di Lagrange](../interattivi/teorema-di-lagrange.md)
 
 </div>
 
@@ -535,3 +535,8 @@ title: "Teorema del valore medio, massimi e minimi"
     ![Figura 11](../img/derivate-05-valor-medio/fig11.svg){ .fig .ovale loading=lazy style="width:70%" }
 
 - Attenzione a non usare indiscriminatamente il passaggio dal discreto al continuo. Ad esempio non si può effettuare il passaggio per le successioni $\frac{n!}{2^n}$ o $\frac{n^2+(-1)^n \; n}{n^3+1}$ in quanto sono definite soltanto per i numeri naturali.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Ricerca di estremi e punti di estremo locali e globali](../esercizi/es-derivate-13-estremi.md)
+

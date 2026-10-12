@@ -304,3 +304,78 @@ PAGINE_SPOSTATE_EN = {
     "exercises/es-numbers-05-complex-numbers.md": "exercises/es-numbers-04-complex-numbers.md",
 }
 PAGINE_SPOSTATE = PAGINE_SPOSTATE_EN if LINGUA == "en" else PAGINE_SPOSTATE_IT
+
+
+# ---------------------------------------------------------------- capitoli <-> schede di esercizi
+# Per argomento (2026-10-12, richiesta di Fabio): ogni scheda rimanda ai capitoli su cui si
+# esercita; la barra di ogni capitolo e la riga in fondo alla pagina rimandano alle sue schede.
+# ID italiani; le schede degli integrali non hanno capitoli (le note non esistono).
+SCHEDA_CAPITOLI = {
+    "es-logica-01-induzione": ["logica-02-induzione"],
+    "es-numeri-01-massimi-minimi": ["numeri-03-campi-ordinati"],
+    "es-numeri-02-equazioni-disequazioni": ["numeri-04-radicali-potenze-logaritmi", "numeri-06-fattoriali-binomiali"],
+    "es-numeri-03-sommatorie": ["numeri-05-sommatorie"],
+    "es-numeri-04-numeri-complessi": ["numeri-09-numeri-complessi"],
+    "es-funzioni-01-insiemi-definizione": ["funzioni-02-funzioni-reali"],
+    "es-funzioni-02-funzioni-inverse": ["funzioni-10-inverse"],
+    "es-successioni-01-proprieta": ["successioni-01-limiti-successioni"],
+    "es-successioni-02-verifica-limiti": ["successioni-01-limiti-successioni"],
+    "es-successioni-03-calcolo-limiti": ["successioni-02-calcolo-limiti", "successioni-03-nepero",
+                                         "successioni-04-stime-asintotiche", "successioni-05-gerarchie-infiniti"],
+    "es-successioni-04-aggiuntivi": ["successioni-02-calcolo-limiti"],
+    "es-limiti-01-limiti-funzioni": ["limiti-02-calcolo-limiti", "limiti-06-limiti-notevoli", "limiti-07-sviluppi-asintotici"],
+    "es-derivate-01-cuspidi-flessi-tangenti": ["derivate-03-punti-angolosi-cuspidi", "derivate-07-derivata-seconda"],
+    "es-derivate-02-calcolo-derivate": ["derivate-02-derivate-elementari", "derivate-04-regole-calcolo"],
+    "es-derivate-03-rette-tangenti": ["derivate-01-funzione-derivata"],
+    "es-derivate-04-asintoti": ["limiti-01-limiti-asintoti", "derivate-09-studio-funzioni"],
+    "es-derivate-05-prolungamenti": ["limiti-04-funzioni-continue"],
+    "es-derivate-06-derivabilita": ["derivate-06-de-l-hospital"],
+    "es-derivate-07-equazioni-parametriche": ["derivate-09-studio-funzioni"],
+    "es-derivate-08-studi-funzione": ["derivate-09-studio-funzioni"],
+    "es-derivate-09-mclaurin": ["derivate-08-approssimazioni"],
+    "es-derivate-10-limiti-sviluppi": ["derivate-08-approssimazioni", "limiti-07-sviluppi-asintotici"],
+    "es-derivate-11-newton": ["derivate-10-newton"],
+    "es-derivate-12-bisezione": ["limiti-08-zeri-bisezione"],
+    "es-derivate-13-estremi": ["derivate-05-valor-medio"],
+    "es-serie-01-serie-numeriche": ["serie-01-serie-numeriche", "serie-02-termini-non-negativi", "serie-03-segno-variabile"],
+}
+# titoli brevi delle schede nel menu «Esercizi» (gli altri restano quelli della pagina)
+TITOLO_BREVE_ES = {
+    "es-numeri-01-massimi-minimi": ("Massimi, minimi, estremi", "Max, min, suprema"),
+    "es-numeri-02-equazioni-disequazioni": ("Equazioni e disequazioni", "Equations and inequalities"),
+    "es-successioni-02-verifica-limiti": ("Verifica di limiti", "Verifying limits"),
+    "es-successioni-03-calcolo-limiti": ("Calcolo di limiti", "Computing limits"),
+    "es-limiti-01-limiti-funzioni": ("Limiti di funzioni", "Limits of functions"),
+    "es-derivate-02-calcolo-derivate": ("Calcolo delle derivate", "Computing derivatives"),
+    "es-derivate-13-estremi": ("Estremi locali e globali", "Local and global extrema"),
+}
+
+
+def _id_cap(cid_it):
+    for c, ci in zip(CAPITOLI, CAPITOLI_IT):
+        if ident(*ci[:3]) == cid_it:
+            return c
+    raise KeyError(cid_it)
+
+
+def _id_es(eid_it):
+    for e, ei in zip(ESERCIZI, ESERCIZI_IT):
+        if ident_es(*ei[:3]) == eid_it:
+            return e
+    raise KeyError(eid_it)
+
+
+def schede_del_capitolo(cid):
+    """Le schede (righe di ESERCIZI della lingua) collegate al capitolo cid (ID della lingua)."""
+    cit = ident_it(cid)
+    return [_id_es(e) for e, caps in SCHEDA_CAPITOLI.items() if cit in caps]
+
+
+def capitoli_della_scheda(eid):
+    """I capitoli (righe di CAPITOLI della lingua) su cui si esercita la scheda eid."""
+    return [_id_cap(c) for c in SCHEDA_CAPITOLI.get(ident_es_it(eid), [])]
+
+
+def titolo_breve_es(eid, titolo):
+    t = TITOLO_BREVE_ES.get(ident_es_it(eid))
+    return t[1 if LINGUA == "en" else 0] if t else titolo

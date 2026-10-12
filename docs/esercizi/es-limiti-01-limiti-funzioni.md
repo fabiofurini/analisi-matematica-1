@@ -6,7 +6,7 @@ title: "Limiti di funzioni reali di variabile reale"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 4 · Limiti** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
+**Esercizi · Parte 4 · Limiti** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-book-open-variant: Capitolo 2: Calcolo dei limiti di funzioni](../limiti/02-calcolo-limiti.md) · [:material-book-open-variant: Capitolo 6: Limiti notevoli e stime asintotiche](../limiti/06-limiti-notevoli.md) · [:material-book-open-variant: Capitolo 7: Sviluppi asintotici](../limiti/07-sviluppi-asintotici.md)
 
 </div>
 

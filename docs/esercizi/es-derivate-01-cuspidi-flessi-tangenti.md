@@ -6,7 +6,7 @@ title: "Cuspidi, flessi e tangenti"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
+**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-book-open-variant: Capitolo 3: Punti angolosi, cuspidi, punti a tangente verticale/orizzontale](../derivate/03-punti-angolosi-cuspidi.md) · [:material-book-open-variant: Capitolo 7: Derivata seconda](../derivate/07-derivata-seconda.md)
 
 </div>
 

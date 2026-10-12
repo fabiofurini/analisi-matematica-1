@@ -6,7 +6,7 @@ title: "Successioni e limiti di successioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Successioni · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-01-limiti-successioni.pdf) · [:material-gesture-tap: App: Limite di una successione](../interattivi/limite-successione.md)
+**Parte 4 · Successioni · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Proprietà delle successioni](../esercizi/es-successioni-01-proprieta.md) · [:material-pencil: Esercizi: Verifica di limiti di successioni](../esercizi/es-successioni-02-verifica-limiti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-01-limiti-successioni.pdf) · [:material-gesture-tap: App: Limite di una successione](../interattivi/limite-successione.md)
 
 </div>
 
@@ -1210,3 +1210,8 @@ Riassumendo abbiamo:
 !!! esempio "Esempio 24: Progressione geometrica né convergente né divergente"
 
     ![Figura 19](../img/successioni-01-limiti-successioni/fig19.svg){ .fig loading=lazy style="width:75%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Proprietà delle successioni](../esercizi/es-successioni-01-proprieta.md) · [:material-pencil: Verifica di limiti di successioni](../esercizi/es-successioni-02-verifica-limiti.md)
+

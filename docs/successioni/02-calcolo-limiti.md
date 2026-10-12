@@ -6,7 +6,7 @@ title: "Calcolo dei limiti delle successioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Successioni · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-02-calcolo-limiti.pdf)
+**Parte 4 · Successioni · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Calcolo limiti di successioni](../esercizi/es-successioni-03-calcolo-limiti.md) · [:material-pencil: Esercizi: Esercizi aggiuntivi](../esercizi/es-successioni-04-aggiuntivi.md) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-02-calcolo-limiti.pdf)
 
 </div>
 
@@ -844,6 +844,10 @@ title: "Calcolo dei limiti delle successioni"
         $$
         \lim_{n \rr \ip } \left( \frac{1}{n}\right)^{-\log n} = \lim_{n \rr \ip } e^{ \overbrace{-\log n}^{\rr \im} \: \overbrace{\log \frac{1}{n}}^{\rr \im} } = e^{\ip} = \ip.
         $$
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Calcolo limiti di successioni](../esercizi/es-successioni-03-calcolo-limiti.md) · [:material-pencil: Esercizi aggiuntivi](../esercizi/es-successioni-04-aggiuntivi.md)
 
 [^1]: Un insieme su cui è definita un'operazione è detto struttura algebrica
 [^2]: Un  insieme è dotato di una struttura d'ordine se su di esso è definita una relazione d'ordine

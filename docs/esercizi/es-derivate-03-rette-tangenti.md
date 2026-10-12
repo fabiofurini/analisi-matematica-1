@@ -6,7 +6,7 @@ title: "Rette tangenti"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
+**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-book-open-variant: Capitolo 1: Funzione derivata](../derivate/01-funzione-derivata.md)
 
 </div>
 

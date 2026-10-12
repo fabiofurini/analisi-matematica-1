@@ -6,7 +6,7 @@ title: "Calcolo dei limiti di funzioni"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-02-calcolo-limiti.pdf)
+**Parte 4 · Limiti · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Limiti di funzioni reali di variabile reale](../esercizi/es-limiti-01-limiti-funzioni.md) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-02-calcolo-limiti.pdf)
 
 </div>
 
@@ -574,3 +574,8 @@ title: "Calcolo dei limiti di funzioni"
         $$
 
     ![Figura 4](../img/limiti-02-calcolo-limiti/fig04.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Limiti di funzioni reali di variabile reale](../esercizi/es-limiti-01-limiti-funzioni.md)
+

@@ -6,7 +6,7 @@ title: "Funzioni inverse"
 
 <div class="info-capitolo" markdown>
 
-**Parte 3 · Funzioni · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-10-inverse.pdf)
+**Parte 3 · Funzioni · Capitolo 11** · [:material-file-pdf-box: Dispensa, volume 3 (PDF)](../pdf/dispensa-3-funzioni.pdf) · [:material-pencil-box-multiple: Esercizi, volume 3 (PDF)](../pdf/esercizi-3-funzioni.pdf) · [:material-pencil: Esercizi: Funzioni inverse](../esercizi/es-funzioni-02-funzioni-inverse.md) · [:material-presentation: Slide (PDF)](../pdf/slide-funzioni-10-inverse.pdf)
 
 </div>
 
@@ -710,3 +710,8 @@ Per il caso strettamente crescente, graficamente abbiamo:
         $$
 
     ![Figura 21](../img/funzioni-10-inverse/fig21.svg){ .fig .ovale loading=lazy style="width:61%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Funzioni inverse](../esercizi/es-funzioni-02-funzioni-inverse.md)
+

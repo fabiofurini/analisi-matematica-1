@@ -6,7 +6,7 @@ title: "Ricerca di estremi e punti di estremo locali e globali"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf)
+**Esercizi · Parte 5 · Derivate** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-book-open-variant: Capitolo 5: Teorema del valore medio, massimi e minimi](../derivate/05-valor-medio.md)
 
 </div>
 

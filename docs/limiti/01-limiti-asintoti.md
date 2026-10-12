@@ -6,7 +6,7 @@ title: "Limiti di funzioni, asintoti e continuità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-01-limiti-asintoti.pdf)
+**Parte 4 · Limiti · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Asintoti](../esercizi/es-derivate-04-asintoti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-01-limiti-asintoti.pdf)
 
 </div>
 
@@ -874,3 +874,8 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     La funzione ha infinite oscillazioni in uno spazio finito perciò non è possibile  disegnarne il grafico in un intervallo $(0, b]$ con $b\in \R_+$.
 
     ![Figura 10](../img/limiti-01-limiti-asintoti/fig10.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Asintoti](../esercizi/es-derivate-04-asintoti.md)
+

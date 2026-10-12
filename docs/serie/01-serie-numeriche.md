@@ -6,7 +6,7 @@ title: "Serie numeriche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 6 · Serie · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-01-serie-numeriche.pdf) · [:material-gesture-tap: App: Serie geometrica](../interattivi/serie-geometrica.md)
+**Parte 6 · Serie · Capitolo 1** · [:material-file-pdf-box: Dispensa, volume 6 (PDF)](../pdf/dispensa-6-serie.pdf) · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-pencil: Esercizi: Serie numeriche](../esercizi/es-serie-01-serie-numeriche.md) · [:material-presentation: Slide (PDF)](../pdf/slide-serie-01-serie-numeriche.pdf) · [:material-gesture-tap: App: Serie geometrica](../interattivi/serie-geometrica.md)
 
 </div>
 
@@ -687,3 +687,8 @@ title: "Serie numeriche"
     \end{align*}
 
     Quindi è una serie telescopica convergente e la somma $s$ vale $\frac{1}{15}$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Serie numeriche](../esercizi/es-serie-01-serie-numeriche.md)
+

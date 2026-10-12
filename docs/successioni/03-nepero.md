@@ -6,7 +6,7 @@ title: "Il numero di Nepero"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Successioni · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-03-nepero.pdf)
+**Parte 4 · Successioni · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Calcolo limiti di successioni](../esercizi/es-successioni-03-calcolo-limiti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-03-nepero.pdf)
 
 </div>
 
@@ -370,3 +370,8 @@ title: "Il numero di Nepero"
         $$
         \lim_{n \rr \ip } \left( 1 + \frac{1}{n}\right)^n= e
         $$
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Calcolo limiti di successioni](../esercizi/es-successioni-03-calcolo-limiti.md)
+

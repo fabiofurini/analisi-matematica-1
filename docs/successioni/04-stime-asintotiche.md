@@ -6,7 +6,7 @@ title: "Confronti e stime asintotiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Successioni · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-04-stime-asintotiche.pdf)
+**Parte 4 · Successioni · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Calcolo limiti di successioni](../esercizi/es-successioni-03-calcolo-limiti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-successioni-04-stime-asintotiche.pdf)
 
 </div>
 
@@ -317,3 +317,8 @@ title: "Confronti e stime asintotiche"
     3. <em>Transitiva</em>:  se $a_n \thicksim b_n$  e $b_n \thicksim c_n$ allora $a_n \thicksim c_n$
 
     fa sì che “<strong>asintotico</strong>” sia una <strong>relazione di equivalenza</strong>.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Calcolo limiti di successioni](../esercizi/es-successioni-03-calcolo-limiti.md)
+

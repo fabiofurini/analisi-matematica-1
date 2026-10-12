@@ -6,7 +6,7 @@ title: "Limiti notevoli e stime asintotiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-06-limiti-notevoli.pdf)
+**Parte 4 · Limiti · Capitolo 6** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Limiti di funzioni reali di variabile reale](../esercizi/es-limiti-01-limiti-funzioni.md) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-06-limiti-notevoli.pdf)
 
 </div>
 
@@ -621,6 +621,10 @@ title: "Limiti notevoli e stime asintotiche"
     $$
 
     ![Figura 15](../img/limiti-06-limiti-notevoli/fig15.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Limiti di funzioni reali di variabile reale](../esercizi/es-limiti-01-limiti-funzioni.md)
 
 [^1]: non ha importanza a che cosa tenda $x$
 [^2]: non ha importanza a che cosa tenda $x$

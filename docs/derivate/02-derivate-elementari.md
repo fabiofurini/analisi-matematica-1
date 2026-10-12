@@ -6,7 +6,7 @@ title: "Derivate di funzioni elementari"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-02-derivate-elementari.pdf)
+**Parte 5 · Derivate · Capitolo 2** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Calcolo delle funzioni derivate](../esercizi/es-derivate-02-calcolo-derivate.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-02-derivate-elementari.pdf)
 
 </div>
 
@@ -311,3 +311,8 @@ title: "Derivate di funzioni elementari"
     $$
 
     ![Figura 2](../img/derivate-02-derivate-elementari/fig02.svg){ .fig .ovale loading=lazy style="width:82%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Calcolo delle funzioni derivate](../esercizi/es-derivate-02-calcolo-derivate.md)
+

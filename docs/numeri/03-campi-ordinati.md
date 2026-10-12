@@ -6,7 +6,7 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-03-campi-ordinati.pdf)
+**Parte 2 · Numeri · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-pencil: Esercizi: Massimi, minimi, estremi superiori e inferiori](../esercizi/es-numeri-01-massimi-minimi.md) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-03-campi-ordinati.pdf)
 
 </div>
 
@@ -862,6 +862,10 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 !!! chiave ""
 
     Quindi l'interpretazione geometrica della proprietà $R_4$ ci mostra come l'insieme $\mathbb{R}$ sia una rappresentazione adeguata della nostra idea intuitiva di retta, così adeguata che <strong>spesso in matematica si usa l'espressione  “la retta reale” per indicare</strong> $\mathbb{R}$, confondendo l'insieme numerico con la sua rappresentazione geometrica naturale.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Massimi, minimi, estremi superiori e inferiori](../esercizi/es-numeri-01-massimi-minimi.md)
 
 [^1]: una struttura algebrica è un insieme, chiamato insieme sostegno (della struttura), munito di una o più operazioni
 [^2]: Non presenteremo però una dimostrazione formale.

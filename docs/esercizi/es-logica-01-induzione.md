@@ -6,7 +6,7 @@ title: "Principio di induzione"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 1 · Logica** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf)
+**Esercizi · Parte 1 · Logica** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf) · [:material-book-open-variant: Capitolo 2: Principio di induzione](../logica/02-induzione.md)
 
 </div>
 

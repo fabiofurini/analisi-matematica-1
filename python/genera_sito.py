@@ -78,14 +78,17 @@ def esercizi():
         if not fogli:
             continue
         nome = nen if EN else nit
-        voci.append(f"      - {nome}:")
+        # nel menu il nome breve della parte (come le voci in alto)
+        from capitoli import MENU, titolo_breve_es
+        breve = {"integrali": ("Integrali", "Integrals")}.get(key) or MENU.get(key) or MENU.get(cen)
+        voci.append(f"      - {breve[1 if EN else 0] if breve else nome}:")
         righe += [f"-   **{nome}**", "", "    ---", ""]
         for e in fogli:
             cid = ident_es(*e[:3])
             testo = (DOCS / CARTELLA_ES / f"{cid}.md").read_text()
             t = re.search(r'^title: "(.*)"$', testo, re.M).group(1)
             n = len(re.findall(r'^!!! esercizio ', testo, re.M))
-            voci.append(f'          - "{t}": {CARTELLA_ES}/{cid}.md')
+            voci.append(f'          - "{titolo_breve_es(cid, t)}": {CARTELLA_ES}/{cid}.md')
             righe.append(f"    - [{t}]({cid}.md) · {n} " + ("exercises" if EN else "esercizi"))
         righe.append("")
     righe += ["</div>", ""]

@@ -6,7 +6,7 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-03-punti-angolosi-cuspidi.pdf)
+**Parte 5 · Derivate · Capitolo 3** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Cuspidi, flessi e tangenti](../esercizi/es-derivate-01-cuspidi-flessi-tangenti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-03-punti-angolosi-cuspidi.pdf)
 
 </div>
 
@@ -343,3 +343,8 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     $$
 
     e la funzione ha un punto a tangente orizzontale (da destra)  in $x_0=0$.
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Cuspidi, flessi e tangenti](../esercizi/es-derivate-01-cuspidi-flessi-tangenti.md)
+

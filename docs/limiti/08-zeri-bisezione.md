@@ -6,7 +6,7 @@ title: "Teorema degli zeri e metodo della bisezione"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-08-zeri-bisezione.pdf) · [:material-gesture-tap: App: Metodo di bisezione](../interattivi/bisezione.md)
+**Parte 4 · Limiti · Capitolo 8** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Metodo di bisezione](../esercizi/es-derivate-12-bisezione.md) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-08-zeri-bisezione.pdf) · [:material-gesture-tap: App: Metodo di bisezione](../interattivi/bisezione.md)
 
 </div>
 
@@ -486,4 +486,8 @@ title: "Teorema degli zeri e metodo della bisezione"
 <p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
 
 <div class="gi" data-grafico="bisezione"></div>
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Metodo di bisezione](../esercizi/es-derivate-12-bisezione.md)
 

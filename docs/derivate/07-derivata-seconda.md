@@ -6,7 +6,7 @@ title: "Derivata seconda"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-07-derivata-seconda.pdf) · [:material-gesture-tap: App: Derivata prima e seconda](../interattivi/concavita.md)
+**Parte 5 · Derivate · Capitolo 7** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Cuspidi, flessi e tangenti](../esercizi/es-derivate-01-cuspidi-flessi-tangenti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-07-derivata-seconda.pdf) · [:material-gesture-tap: App: Derivata prima e seconda](../interattivi/concavita.md)
 
 </div>
 
@@ -645,4 +645,8 @@ title: "Derivata seconda"
 <p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
 
 <div class="gi" data-grafico="concavita"></div>
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Cuspidi, flessi e tangenti](../esercizi/es-derivate-01-cuspidi-flessi-tangenti.md)
 

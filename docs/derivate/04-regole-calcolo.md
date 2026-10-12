@@ -6,7 +6,7 @@ title: "Regole di calcolo delle derivate"
 
 <div class="info-capitolo" markdown>
 
-**Parte 5 · Derivate · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-04-regole-calcolo.pdf)
+**Parte 5 · Derivate · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 5 (PDF)](../pdf/dispensa-5-derivate.pdf) · [:material-pencil-box-multiple: Esercizi, volume 5 (PDF)](../pdf/esercizi-5-derivate.pdf) · [:material-pencil: Esercizi: Calcolo delle funzioni derivate](../esercizi/es-derivate-02-calcolo-derivate.md) · [:material-presentation: Slide (PDF)](../pdf/slide-derivate-04-regole-calcolo.pdf)
 
 </div>
 
@@ -957,3 +957,8 @@ title: "Regole di calcolo delle derivate"
     $$
     E(x)=x \cdot \frac{\alpha\; x^{\alpha-1}}{x^\alpha}=\alpha \qquad {\rm ~~(elasticità~ costante)}
     $$
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Calcolo delle funzioni derivate](../esercizi/es-derivate-02-calcolo-derivate.md)
+

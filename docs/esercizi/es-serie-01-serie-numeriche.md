@@ -6,7 +6,7 @@ title: "Serie numeriche"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 6 · Serie** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf)
+**Esercizi · Parte 6 · Serie** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf) · [:material-book-open-variant: Capitolo 1: Serie numeriche](../serie/01-serie-numeriche.md) · [:material-book-open-variant: Capitolo 2: Serie numeriche a termini non negativi](../serie/02-termini-non-negativi.md) · [:material-book-open-variant: Capitolo 3: Serie numeriche a termini di segno variabile](../serie/03-segno-variabile.md)
 
 </div>
 

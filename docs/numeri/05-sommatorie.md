@@ -6,7 +6,7 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-05-sommatorie.pdf)
+**Parte 2 · Numeri · Capitolo 5** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-pencil: Esercizi: Sommatorie](../esercizi/es-numeri-03-sommatorie.md) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-05-sommatorie.pdf)
 
 </div>
 
@@ -694,3 +694,8 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
         $$
         \sum_{k=1}^4 \left( 1 - \frac{1}{2} \: (k-1) \right) = 1 \cdot 4 - \frac{1}{2} \: \left( \frac{4 \cdot 3}{2} \right) = 4 - 3 = 1
         $$
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Sommatorie](../esercizi/es-numeri-03-sommatorie.md)
+

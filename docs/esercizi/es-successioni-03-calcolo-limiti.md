@@ -6,7 +6,7 @@ title: "Calcolo limiti di successioni"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 4 · Successioni** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf)
+**Esercizi · Parte 4 · Successioni** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-book-open-variant: Capitolo 2: Calcolo dei limiti delle successioni](../successioni/02-calcolo-limiti.md) · [:material-book-open-variant: Capitolo 3: Il numero di Nepero](../successioni/03-nepero.md) · [:material-book-open-variant: Capitolo 4: Confronti e stime asintotiche](../successioni/04-stime-asintotiche.md) · [:material-book-open-variant: Capitolo 5: Gerarchie degli infiniti e criterio del rapporto](../successioni/05-gerarchie-infiniti.md)
 
 </div>
 

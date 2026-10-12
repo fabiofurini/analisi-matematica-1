@@ -6,7 +6,7 @@ title: "Funzioni continue"
 
 <div class="info-capitolo" markdown>
 
-**Parte 4 · Limiti · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-04-funzioni-continue.pdf)
+**Parte 4 · Limiti · Capitolo 4** · [:material-file-pdf-box: Dispensa, volume 4 (PDF)](../pdf/dispensa-4-limiti.pdf) · [:material-pencil-box-multiple: Esercizi, volume 4 (PDF)](../pdf/esercizi-4-limiti.pdf) · [:material-pencil: Esercizi: Prolungamenti continui](../esercizi/es-derivate-05-prolungamenti.md) · [:material-presentation: Slide (PDF)](../pdf/slide-limiti-04-funzioni-continue.pdf)
 
 </div>
 
@@ -243,3 +243,8 @@ title: "Funzioni continue"
     Ad esempio con $a=e$ abbiamo:
 
     ![Figura 4](../img/limiti-04-funzioni-continue/fig04.svg){ .fig .ovale loading=lazy style="width:75%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Prolungamenti continui](../esercizi/es-derivate-05-prolungamenti.md)
+

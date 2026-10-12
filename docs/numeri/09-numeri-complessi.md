@@ -6,7 +6,7 @@ title: "Numeri complessi"
 
 <div class="info-capitolo" markdown>
 
-**Parte 2 · Numeri · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-09-numeri-complessi.pdf) · [:material-gesture-tap: App: Radici n-esime complesse](../interattivi/radici-complesse.md)
+**Parte 2 · Numeri · Capitolo 9** · [:material-file-pdf-box: Dispensa, volume 2 (PDF)](../pdf/dispensa-2-numeri.pdf) · [:material-pencil-box-multiple: Esercizi, volume 2 (PDF)](../pdf/esercizi-2-numeri.pdf) · [:material-pencil: Esercizi: Numeri complessi](../esercizi/es-numeri-04-numeri-complessi.md) · [:material-presentation: Slide (PDF)](../pdf/slide-numeri-09-numeri-complessi.pdf) · [:material-gesture-tap: App: Radici n-esime complesse](../interattivi/radici-complesse.md)
 
 </div>
 
@@ -907,6 +907,10 @@ title: "Numeri complessi"
 <strong>Coseni e seni dei principali angoli</strong>
 
 ![Figura 9](../img/numeri-09-numeri-complessi/fig09.svg){ .fig .ovale loading=lazy style="width:69%" }
+
+---
+
+**Esercizi su questo capitolo:** [:material-pencil: Numeri complessi](../esercizi/es-numeri-04-numeri-complessi.md)
 
 [^1]: In un triangolo non degenere, la somma delle lunghezze di due lati è maggiore della lunghezza del terzo.
 [^2]: Se $P(z)$ è un polinomio in $z$ di grado $n$ e $z_0$ è una sua radice, si dice che $z_0$ è di molteplicità $k$ ($k$ intero, $\ge 1$) se vale la formula $P(z)=(z-z_0)^k\;Q(z)$, dove $Q$ è un polinomio tale che $Q(z_0) \neq 0$.
