@@ -17,7 +17,7 @@ dimostrazioni, esempi svolti passo per passo, esercizi e **grafici interattivi**
 per vedere la matematica muoversi.
 
 [Inizia dalla logica :material-arrow-right:](logica/index.md){ .md-button .md-button--primary }
-[Prova un grafico interattivo](interattivi/index.md){ .md-button }
+[Vai al laboratorio interattivo](interattivi/index.md){ .md-button }
 [:material-download: Scarica le dispense (PDF)](materiale.md){ .md-button }
 
 </div>
