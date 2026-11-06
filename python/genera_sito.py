@@ -16,6 +16,10 @@ from capitoli import CAPITOLI, DOCS, IT, LINGUA, PAGINE_SPOSTATE, PARTI, ident, 
 
 EN = LINGUA == "en"
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[2].parent / "QUIZ_ENGINE"))
+import integra_quiz as QZ  # noqa: E402
+
 REPO = "https://github.com/fabiofurini/analisi-matematica-1"
 SITO = "https://fabiofurini.github.io/analisi-matematica-1/"
 
@@ -98,6 +102,36 @@ def esercizi():
     return "\n".join(voci)
 
 
+# parti dell'autovalutazione: i sei volumi delle dispense, più gli integrali (solo esercizi)
+VOLUMI_QUIZ = {"1": ("Logica e metodi di dimostrazione", "Logic and proof methods"), "2": ("Numeri e insiemi", "Numbers and sets"),
+               "3": ("Funzioni", "Functions"), "4": ("Limiti", "Limits"), "5": ("Derivate", "Derivatives"),
+               "6": ("Serie", "Series"), "integrali": ("Primitive e integrali", "Antiderivatives and integrals")}
+
+
+def capitoli_quiz() -> tuple[dict, dict]:
+    """slug dei capitoli nella banca dell'autovalutazione (gli identificativi inglesi) -> «n. titolo» e -> parte"""
+    import json
+    import os
+    import subprocess
+    from capitoli import CARTELLA_ES, ESERCIZI, ident_es
+    codice = ("import capitoli as C, json; print(json.dumps([C.ident(*c[:3]) for c in C.CAPITOLI]"
+              " + [C.ident_es(*e[:3]) for e in C.ESERCIZI if e[0] == 'integrals']))")
+    chiavi = json.loads(subprocess.run([sys.executable, "-c", codice], cwd=Path(__file__).parent, check=True,
+                                       capture_output=True, text=True,
+                                       env={**os.environ, "LINGUA": "en", "PYTHONDONTWRITEBYTECODE": "1"}).stdout)
+    nomi = [f"{num_volume(c[0], c[1])}. {titolo(*c[:3])}" for c in CAPITOLI]
+    vol = {p[0]: p[4] for p in PARTI}
+    parti = [VOLUMI_QUIZ[vol[c[0]]][1 if EN else 0] for c in CAPITOLI]
+    for e in ESERCIZI:                    # gli integrali: solo esercizi
+        if e[0] in ("integrali", "integrals"):
+            f = DOCS / CARTELLA_ES / f"{ident_es(*e[:3])}.md"
+            m = re.search(r'^title: "(.*)"$', f.read_text(), re.M) if f.exists() else None
+            nomi.append(m.group(1) if m else e[2])
+            parti.append(VOLUMI_QUIZ["integrali"][1 if EN else 0])
+    assert len(chiavi) == len(nomi) == len(parti)
+    return dict(zip(chiavi, nomi)), dict(zip(chiavi, parti))
+
+
 def main():
     nav_parti = []
     indice = ["# Full index" if EN else "# Indice completo", ""]
@@ -127,6 +161,11 @@ def main():
     voce_es = esercizi()
     if voce_es:
         nav_parti.append(voce_es)
+    # autovalutazione: motore e banca (<modulo>/quiz/) in docs/, pagina e voce «Quiz» dopo gli esercizi
+    capitoli_q, parti_q = capitoli_quiz()
+    voce_quiz = QZ.integra(DOCS, IT.parent / "quiz", LINGUA, capitoli=capitoli_q, parti=parti_q)
+    if voce_quiz:
+        nav_parti.append(voce_quiz)
 
     yml = (Path(__file__).parent / ("mkdocs_modello_en.yml" if EN else "mkdocs_modello.yml")).read_text()
     yml = yml.replace("  # NAV_PARTI", "\n".join(nav_parti))
@@ -136,6 +175,8 @@ def main():
         assert (DOCS / nuova).exists(), f"pagina nuova mancante: {nuova}"
     mappa = "\n".join(f"        {v}: {n}" for v, n in PAGINE_SPOSTATE.items())
     yml = yml.replace("  # REDIRECTS", "  - redirects:\n      redirect_maps:\n" + mappa)
+    if (DOCS / QZ.pagina(LINGUA)).exists():          # autovalutazione: quiz.css e quiz.js (QUIZ_ENGINE)
+        yml = QZ.voci_mkdocs(yml, DOCS)
     (IT / "mkdocs.yml").write_text(yml)
     (DOCS / "img").mkdir(exist_ok=True)
     print(f"[{LINGUA}] mkdocs.yml, indice e pagine delle parti aggiornati")

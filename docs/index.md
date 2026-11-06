@@ -18,6 +18,7 @@ per vedere la matematica muoversi.
 
 [Inizia dalla logica :material-arrow-right:](logica/index.md){ .md-button .md-button--primary }
 [Vai al laboratorio interattivo](interattivi/index.md){ .md-button }
+[:material-clipboard-check-outline: Mettiti alla prova](autovalutazione.md){ .md-button }
 [:material-download: Scarica le dispense (PDF)](materiale.md){ .md-button }
 
 </div>
@@ -148,6 +149,16 @@ colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
     svolta che si apre con un clic.
 
     [:octicons-arrow-right-24: Gli esercizi](esercizi/index.md)
+
+-   :material-clipboard-check-outline: **Autovalutazione**
+
+    ---
+
+    *Facsimile d'esame*
+
+    Un facsimile nuovo a ogni avvio: 13 domande, 33 punti, con la soluzione e il link alle dispense.
+
+    [:octicons-arrow-right-24: Mettiti alla prova](autovalutazione.md)
 
 -   :material-school: **Il corso**
 

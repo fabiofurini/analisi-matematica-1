@@ -114,6 +114,7 @@ extra_css:
   - stylesheets/extra.css
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
   - stylesheets/interattivi.css?v=45a6a58ff5
+  - stylesheets/quiz.css?v=9e3792b41c
 
 markdown_extensions:
   - admonition
@@ -140,6 +141,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
   - javascripts/interattivi.js?v=45e5c6b98b
+  - javascripts/quiz.js?v=be7fae2b85
 
 # le pagine delle singole app del laboratorio non stanno nel menu
 not_in_nav: |
@@ -253,6 +255,7 @@ nav:
       - Integrali:
           - "Primitive": esercizi/es-integrali-01-primitive.md
           - "Integrali": esercizi/es-integrali-02-integrali.md
+  - Quiz: autovalutazione.md
   - Lab: interattivi/index.md
   - Download: materiale.md
   - Il corso:
