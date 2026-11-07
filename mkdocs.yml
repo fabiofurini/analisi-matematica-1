@@ -259,6 +259,6 @@ nav:
   - Quiz: autovalutazione.md
   - Laboratorio: interattivi/index.md
   - Materiale: materiale.md
-  - Il corso:
-      - organizzazione.md
+  - Indice:
       - Indice completo: indice.md
+      - Come si lavora con il corso: organizzazione.md
