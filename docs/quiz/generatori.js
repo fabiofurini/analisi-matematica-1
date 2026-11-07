@@ -300,7 +300,7 @@
   // ================================================================== 6. regole di derivazione
   G.push({
     id: "am1-g-derivata", livello: "facile", capitolo: "derivatives-04-differentiation-rules",
-    link: L("derivate/04-regole-calcolo/#1-regole-di-calcolo-delle-derivate", "derivatives/04-differentiation-rules/#1-rules-for-computing-derivatives"),
+    link: L("derivate/04-regole-calcolo/#box-theoALGEBRA_DER-1", "derivatives/04-differentiation-rules/#box-theoALGEBRA_DER-1"),
     genera: ripeti(function (rng, lingua) {
       var tipo = ri(rng, 1, 3), f, x0, corr, pool, regola, coef;
       if (tipo === 1) {
@@ -344,7 +344,7 @@
   function derPoli(c) { var g = c.length - 1, d = []; for (var i = 0; i < g; i++) d.push(F(c[i]).mul(g - i)); return d.length ? d : [F(0)]; }
   G.push({
     id: "am1-g-tangente", livello: "facile", capitolo: "derivatives-01-the-derivative",
-    link: L("derivate/01-funzione-derivata/#31-derivata-e-retta-tangente", "derivatives/01-the-derivative/#31-derivative-and-tangent-line"),
+    link: L("derivate/01-funzione-derivata/#box-defXX-5", "derivatives/01-the-derivative/#box-defXX-5"),
     genera: ripeti(function (rng, lingua) {
       var g = ri(rng, 2, 3), c = [riNZ(rng, -3, 3)];
       for (var i = 0; i < g; i++) c.push(ri(rng, -4, 4));
@@ -369,7 +369,7 @@
   // ================================================================== 8. coefficienti di MacLaurin
   G.push({
     id: "am1-g-maclaurin", livello: "facile", capitolo: "derivatives-08-approximations",
-    link: L("derivate/08-approssimazioni/#3-formulasviluppo-di-taylor-con-resto-secondo-peano", "derivatives/08-approximations/#3-taylor-formulaexpansion-with-peano-remainder"),
+    link: L("derivate/08-approssimazioni/#box-theoKKKK-10", "derivatives/08-approximations/#box-theoKKKK-10"),
     genera: ripeti(function (rng, lingua) {
       var tipo = ri(rng, 1, 5), a = pick(rng, [-3, -2, -1, 2, 3]), k = ri(rng, 2, 4), f, corr;
       var ak = Math.pow(a, k), ax = (a === -1 ? "-" : a) + "x";
@@ -418,7 +418,7 @@
   // ================================================================== 10. somma di una serie geometrica
   G.push({
     id: "am1-g-serie-geometrica", livello: "facile", capitolo: "series-01-numerical-series",
-    link: L("serie/01-serie-numeriche/#14-serie-geometrica", "series/01-numerical-series/#14-geometric-series"),
+    link: L("serie/01-serie-numeriche/#box-theoZERI-12", "series/01-numerical-series/#box-theoZERI-12"),
     genera: ripeti(function (rng, lingua) {
       var den = ri(rng, 2, 5), num = riNZ(rng, -den + 1, den - 1), q = new Fr(num, den);
       if (q.d !== den) return null;
@@ -442,7 +442,7 @@
   // ================================================================== 11. sommatoria di una progressione aritmetica
   G.push({
     id: "am1-g-sommatoria", livello: "facile", capitolo: "numbers-05-summations",
-    link: L("numeri/05-sommatorie/#12-alcune-sommatorie-importanti", "numbers/05-summations/#12-some-important-summations"),
+    link: L("numeri/05-sommatorie/#box-propNAT-10", "numbers/05-summations/#box-propNAT-10"),
     genera: ripeti(function (rng, lingua) {
       var a = riNZ(rng, -5, 6), b = riNZ(rng, -6, 6), n = ri(rng, 10, 40);
       var corr = F(a * n * (n + 1) / 2 + b * n);
@@ -476,7 +476,7 @@
   // ================================================================== 13. formula di Newton (binomio)
   G.push({
     id: "am1-g-binomio", livello: "facile", capitolo: "numbers-06-factorials-binomials",
-    link: L("numeri/06-fattoriali-binomiali/#21-formula-di-newton", "numbers/06-factorials-binomials/#21-newtons-formula"),
+    link: L("numeri/06-fattoriali-binomiali/#box-PROP_NEWTON-4", "numbers/06-factorials-binomials/#box-PROP_NEWTON-4"),
     genera: ripeti(function (rng, lingua) {
       var n = ri(rng, 4, 6), k = ri(rng, 2, n - 1), p = pick(rng, [-2, -1, 1, 2, 3]), q = pick(rng, [-3, -2, -1, 2, 3]);
       var corr = F(binom(n, k) * Math.pow(p, n - k) * Math.pow(q, k));
@@ -519,7 +519,7 @@
   // ================================================================== 15. punto di flesso di una cubica
   G.push({
     id: "am1-g-flesso", livello: "facile", capitolo: "derivatives-07-second-derivative",
-    link: L("derivate/07-derivata-seconda/#5-punti-di-flesso", "derivatives/07-second-derivative/#5-inflection-points"),
+    link: L("derivate/07-derivata-seconda/#box-defXX-23", "derivatives/07-second-derivative/#box-defXX-23"),
     genera: ripeti(function (rng, lingua) {
       var a = riNZ(rng, -3, 3), b = riNZ(rng, -9, 9), c = ri(rng, -6, 6), d = ri(rng, -6, 6);
       var x = new Fr(-b, 3 * a);
@@ -541,7 +541,7 @@
   // ================================================================== 16. (media) estremi locali di una cubica
   G.push({
     id: "am1-g-estremi-locali", livello: "media", capitolo: "derivatives-05-mean-value",
-    link: L("derivate/05-valor-medio/#5-ricerca-di-massimi-e-minimi", "derivatives/05-mean-value/#5-finding-maxima-and-minima"),
+    link: L("derivate/05-valor-medio/#box-theoFERMAT-6", "derivatives/05-mean-value/#box-theoFERMAT-6"),
     genera: ripeti(function (rng, lingua) {
       var al = ri(rng, -3, 2), be = ri(rng, al + 1, 3), c = riNZ(rng, -5, 5), s = pick(rng, [1, -1]);
       // f(x) = s (2x^3 - 3(al+be)x^2 + 6 al be x) + c,  f'(x) = 6 s (x - al)(x - be)
@@ -605,7 +605,7 @@
   // ================================================================== 18. (media) serie con parametro
   G.push({
     id: "am1-g-serie-parametro", livello: "media", capitolo: "series-02-nonnegative-terms",
-    link: L("serie/02-termini-non-negativi/#12-criterio-del-confronto-asintotico", "series/02-nonnegative-terms/#12-limit-comparison-test"),
+    link: L("serie/02-termini-non-negativi/#box-MMM-3", "series/02-nonnegative-terms/#box-MMM-3"),
     genera: ripeti(function (rng, lingua) {
       var p = ri(rng, 1, 4), q = ri(rng, 1, 3), r = pick(rng, [1, 2]), c = ri(rng, 1, 5), d = ri(rng, 1, 5);
       // a_k = (k^p + c)^{1/r} / (k^q + d) * 1/k^alpha  ~  k^{p/r - q - alpha}
@@ -726,7 +726,7 @@
   // ================================================================== 23. (complessa) polinomio di MacLaurin di ordine 3 di un prodotto
   G.push({
     id: "am1-g-maclaurin-prodotto", livello: "complessa", capitolo: "derivatives-08-approximations",
-    link: L("derivate/08-approssimazioni/#3-formulasviluppo-di-taylor-con-resto-secondo-peano", "derivatives/08-approximations/#3-taylor-formulaexpansion-with-peano-remainder"),
+    link: L("derivate/08-approssimazioni/#box-theoKKKK-10", "derivatives/08-approximations/#box-theoKKKK-10"),
     genera: ripeti(function (rng, lingua) {
       var tipo = ri(rng, 1, 2), a = riNZ(rng, -2, 2), b = pick(rng, [1, 2, 3, -1, -2]);
       var A = F(a), B = F(b), f, c, d1, d2, d3;
@@ -791,7 +791,7 @@
   // ------------------------------------------------------------------ numeri: logaritmi
   G.push({
     id: "am1-g-logaritmi", livello: "facile", capitolo: "numbers-04-roots-powers-logarithms",
-    link: L("numeri/04-radicali-potenze-logaritmi/", "numbers/04-roots-powers-logarithms/"),
+    link: L("numeri/04-radicali-potenze-logaritmi/#box-theoXXX-5", "numbers/04-roots-powers-logarithms/#box-theoXXX-5"),
     genera: ripeti(function (rng, lingua) {
       var b = pick(rng, [2, 3, 5]), mx = { 2: 9, 3: 6, 5: 4 }[b];
       var e1 = ri(rng, 1, mx), e2 = ri(rng, 1, mx), e3 = ri(rng, 1, mx);
@@ -809,7 +809,7 @@
   // ------------------------------------------------------------------ numeri: aritmetica modulare
   G.push({
     id: "am1-g-modulo", livello: "media", capitolo: "numbers-04-roots-powers-logarithms",
-    link: L("numeri/04-radicali-potenze-logaritmi/", "numbers/04-roots-powers-logarithms/"),
+    link: L("numeri/04-radicali-potenze-logaritmi/#box-funcP2-17", "numbers/04-roots-powers-logarithms/#box-funcP2-17"),
     genera: ripeti(function (rng, lingua) {
       var a = ri(rng, 2, 9), n = ri(rng, 5, 20), m = ri(rng, 3, 11);
       if (a % m === 0) return null;
@@ -829,7 +829,7 @@
   // ------------------------------------------------------------------ numeri: somma di una progressione geometrica
   G.push({
     id: "am1-g-progressione-geometrica", livello: "media", capitolo: "numbers-05-summations",
-    link: L("numeri/05-sommatorie/", "numbers/05-summations/"),
+    link: L("numeri/05-sommatorie/#box-propGEOM-17", "numbers/05-summations/#box-propGEOM-17"),
     genera: ripeti(function (rng, lingua) {
       var q = pick(rng, [2, 3, -2, -3]), c = ri(rng, 1, 3), m = ri(rng, 0, 2), n = m + ri(rng, 3, 5);
       var Q = F(q), C = F(c);
@@ -849,7 +849,7 @@
   // ------------------------------------------------------------------ numeri: disequazione con valore assoluto
   G.push({
     id: "am1-g-valore-assoluto", livello: "media", capitolo: "numbers-06-factorials-binomials",
-    link: L("numeri/06-fattoriali-binomiali/", "numbers/06-factorials-binomials/"),
+    link: L("numeri/06-fattoriali-binomiali/#box-defXX-8", "numbers/06-factorials-binomials/#box-defXX-8"),
     genera: ripeti(function (rng, lingua) {
       var a = pick(rng, [2, 3]), b = riNZ(rng, -5, 5), c = ri(rng, 1, 6), rel = pick(rng, [">", ">=", "<", "<="]);
       var opp = { ">": "<=", ">=": "<", "<": ">=", "<=": ">" }[rel];
@@ -871,7 +871,7 @@
   // ------------------------------------------------------------------ numeri: quoziente di numeri complessi
   G.push({
     id: "am1-g-complessi-quoziente", livello: "media", capitolo: "numbers-09-complex-numbers",
-    link: L("numeri/09-numeri-complessi/", "numbers/09-complex-numbers/"),
+    link: L("numeri/09-numeri-complessi/#box-defXX-7", "numbers/09-complex-numbers/#box-defXX-7"),
     genera: ripeti(function (rng, lingua) {
       var p = ri(rng, -3, 3), q = riNZ(rng, -3, 3), c = ri(rng, -3, 3), d = riNZ(rng, -3, 3);
       var nr = p * c - q * d, ni = p * d + q * c;
@@ -1096,7 +1096,7 @@
   // ------------------------------------------------------------------ derivate: tangente parallela a una retta
   G.push({
     id: "am1-g-tangente-parallela", livello: "facile", capitolo: "derivatives-01-the-derivative",
-    link: L("derivate/01-funzione-derivata/", "derivatives/01-the-derivative/"),
+    link: L("derivate/01-funzione-derivata/#box-defXX-8", "derivatives/01-the-derivative/#box-defXX-8"),
     genera: ripeti(function (rng, lingua) {
       var x0 = riNZ(rng, -4, 4), p = ri(rng, -5, 5), q = ri(rng, -5, 5), k = riNZ(rng, -6, 6);
       var m = 2 * x0 + p;
@@ -1117,7 +1117,7 @@
   // ------------------------------------------------------------------ derivate: regola della catena
   G.push({
     id: "am1-g-derivata-composta", livello: "media", capitolo: "derivatives-04-differentiation-rules",
-    link: L("derivate/04-regole-calcolo/", "derivatives/04-differentiation-rules/"),
+    link: L("derivate/04-regole-calcolo/#box-theoCATENA_DER-4", "derivatives/04-differentiation-rules/#box-theoCATENA_DER-4"),
     genera: ripeti(function (rng, lingua) {
       var tipo = ri(rng, 1, 3), a = ri(rng, 1, 4), x0 = ri(rng, -3, 3), g, cand, f, b, n = 0;
       if (tipo === 1) {
@@ -1146,7 +1146,7 @@
   // ------------------------------------------------------------------ derivate: intervallo di decrescenza di una cubica
   G.push({
     id: "am1-g-monotonia", livello: "media", capitolo: "derivatives-05-mean-value",
-    link: L("derivate/05-valor-medio/", "derivatives/05-mean-value/"),
+    link: L("derivate/05-valor-medio/#box-theoTM-11", "derivatives/05-mean-value/#box-theoTM-11"),
     genera: ripeti(function (rng, lingua) {
       var r1 = ri(rng, -4, 2), r2 = r1 + ri(rng, 1, 4), c = ri(rng, -5, 5);
       var coef = [F(1), new Fr(-3 * (r1 + r2), 2), F(3 * r1 * r2), F(c)];
@@ -1165,7 +1165,7 @@
   // ------------------------------------------------------------------ derivate: De l'Hospital con potenze
   G.push({
     id: "am1-g-hopital-potenze", livello: "media", capitolo: "derivatives-06-lhopital",
-    link: L("derivate/06-de-l-hospital/", "derivatives/06-lhopital/"),
+    link: L("derivate/06-de-l-hospital/#box-theoHosp-1", "derivatives/06-lhopital/#box-theoHosp-1"),
     genera: ripeti(function (rng, lingua) {
       var c = pick(rng, [1, 2, -1, 3, -2]), m = ri(rng, 2, 5), n = ri(rng, 2, 5);
       if (m === n) return null;
@@ -1187,7 +1187,7 @@
   // ------------------------------------------------------------------ derivate: De l'Hospital con coseno
   G.push({
     id: "am1-g-hopital-coseno", livello: "media", capitolo: "derivatives-06-lhopital",
-    link: L("derivate/06-de-l-hospital/", "derivatives/06-lhopital/"),
+    link: L("derivate/06-de-l-hospital/#box-theoHosp-1", "derivatives/06-lhopital/#box-theoHosp-1"),
     genera: ripeti(function (rng, lingua) {
       var a = ri(rng, 1, 4), b = riNZ(rng, -3, 3);
       var g = new Fr(a * a, 2 * b);
@@ -1206,7 +1206,7 @@
   // ------------------------------------------------------------------ derivate: flessi e concavità di una quartica
   G.push({
     id: "am1-g-convessita", livello: "complessa", capitolo: "derivatives-07-second-derivative",
-    link: L("derivate/07-derivata-seconda/", "derivatives/07-second-derivative/"),
+    link: L("derivate/07-derivata-seconda/#box-theoFERMAT-16", "derivatives/07-second-derivative/#box-theoFERMAT-16"),
     genera: ripeti(function (rng, lingua) {
       var s1 = ri(rng, -3, 2), s2 = s1 + ri(rng, 1, 3), C = ri(rng, -6, 6);
       var A = -2 * (s1 + s2), B = 6 * s1 * s2;
@@ -1232,7 +1232,7 @@
   // ------------------------------------------------------------------ derivate: metodo di Newton (un passo)
   G.push({
     id: "am1-g-newton", livello: "media", capitolo: "derivatives-10-newton",
-    link: L("derivate/10-newton/", "derivatives/10-newton/"),
+    link: L("derivate/10-newton/#box-theoZERI-1", "derivatives/10-newton/#box-theoZERI-1"),
     genera: ripeti(function (rng, lingua) {
       var m = pick(rng, [2, 3]), x0 = ri(rng, 1, 4), c = ri(rng, 2, 30);
       if (Math.round(Math.pow(c, 1 / m)) ** m === c) return null;
@@ -1252,7 +1252,7 @@
   // ------------------------------------------------------------------ derivate: metodo di Newton (due passi)
   G.push({
     id: "am1-g-newton-due-passi", livello: "complessa", capitolo: "derivatives-10-newton",
-    link: L("derivate/10-newton/", "derivatives/10-newton/"),
+    link: L("derivate/10-newton/#box-theoZERI-1", "derivatives/10-newton/#box-theoZERI-1"),
     genera: ripeti(function (rng, lingua) {
       var c = ri(rng, 2, 20), x0 = ri(rng, 1, 5);
       if (Math.round(Math.sqrt(c)) ** 2 === c) return null;
@@ -1272,7 +1272,7 @@
   // ------------------------------------------------------------------ serie: telescopica
   G.push({
     id: "am1-g-serie-telescopica", livello: "media", capitolo: "series-01-numerical-series",
-    link: L("serie/01-serie-numeriche/", "series/01-numerical-series/"),
+    link: L("serie/01-serie-numeriche/#box-theoZERI-18", "series/01-numerical-series/#box-theoZERI-18"),
     genera: ripeti(function (rng, lingua) {
       var a = ri(rng, 0, 3), b = ri(rng, 1, 3), c = pick(rng, [1, b, 2 * b]);
       var H = F(0); for (var j = 1; j <= b; j++) H = H.add(new Fr(1, a + j));
@@ -1293,7 +1293,7 @@
   // ------------------------------------------------------------------ serie: criterio del rapporto
   G.push({
     id: "am1-g-criterio-rapporto", livello: "media", capitolo: "series-02-nonnegative-terms",
-    link: L("serie/02-termini-non-negativi/", "series/02-nonnegative-terms/"),
+    link: L("serie/02-termini-non-negativi/#box-MMM-17", "series/02-nonnegative-terms/#box-MMM-17"),
     genera: ripeti(function (rng, lingua) {
       var tipo = ri(rng, 1, 3), p = ri(rng, 0, 3), Q, ak, corr, cand;
       var esito = { C: T(lingua, "la serie converge", "the series converges"), D: T(lingua, "la serie diverge", "the series diverges"), N: T(lingua, "il criterio non decide", "the test is inconclusive") };
@@ -1325,7 +1325,7 @@
   // ------------------------------------------------------------------ serie: stima dell'errore di Leibniz
   G.push({
     id: "am1-g-leibniz-stima", livello: "media", capitolo: "series-03-alternating-series",
-    link: L("serie/03-segno-variabile/", "series/03-alternating-series/"),
+    link: L("serie/03-segno-variabile/#box-theoZERI-6", "series/03-alternating-series/#box-theoZERI-6"),
     genera: ripeti(function (rng, lingua) {
       var cp = pick(rng, [[1, 2], [1, 3], [2, 2], [2, 4], [3, 3], [3, 6]]), p = cp[0], m = cp[1];
       var t = Math.pow(10, m / p), g = t - 1;
@@ -1344,7 +1344,7 @@
   // ------------------------------------------------------------------ serie: convergenza di una serie a segni alterni
   G.push({
     id: "am1-g-convergenza-alternata", livello: "complessa", capitolo: "series-03-alternating-series",
-    link: L("serie/03-segno-variabile/", "series/03-alternating-series/"),
+    link: L("serie/03-segno-variabile/#box-theoZERI-4", "series/03-alternating-series/#box-theoZERI-4"),
     genera: ripeti(function (rng, lingua) {
       var a = ri(rng, 0, 3), b = ri(rng, 1, 5), e = b - a;
       var key = e > 1 ? "A" : (e > 0 ? "S" : "N0");
@@ -1358,6 +1358,384 @@
       var sp = T(lingua, "Il modulo del termine generale è $\\sim " + (e === 1 ? "\\frac{1}{k}" : (e === 0 ? "1" : "\\frac{1}{k^{" + e + "}}")) + "$. Se l'esponente è $> 1$ la serie dei moduli converge; se è in $(0, 1]$ converge solo per Leibniz (termini definitivamente decrescenti e infinitesimi); se è $\\le 0$ il termine generale non tende a $0$.",
         "The modulus of the general term is $\\sim " + (e === 1 ? "\\frac{1}{k}" : (e === 0 ? "1" : "\\frac{1}{k^{" + e + "}}")) + "$. If the exponent is $> 1$ the series of moduli converges; if it is in $(0, 1]$ it converges only by Leibniz (eventually decreasing infinitesimal terms); if it is $\\le 0$ the general term does not tend to $0$.");
       return chiudi(rng, testo, o(key), altri.map(o), sp, { param: { a: a, b: b } });
+    })
+  });
+
+  // ================================================================== generatori aggiunti il 7 novembre 2026
+  // (brief QUIZ_ENGINE/BRIEF_QUIZ_COPERTURA.md); il link punta al riquadro della dispensa di cui parla la domanda.
+
+  // ------------------------------------------------------------------ logica: condizione necessaria / sufficiente
+  G.push({
+    id: "am1-g-condizione", livello: "facile", capitolo: "logic-01-logic",
+    link: L("logica/01-logica/#box-notationA-7", "logic/01-logic/#box-notationA-7"),
+    genera: ripeti(function (rng, lingua) {
+      var m = ri(rng, -6, 6), r = ri(rng, 1, 5), lo = m - r, hi = m + r, tipo = ri(rng, 1, 4), a, b;
+      if (tipo === 1) { a = lo - ri(rng, 0, 3); b = hi + ri(rng, 1, 3); }        // J contiene I: p sufficiente
+      else if (tipo === 2) { a = lo + ri(rng, 0, r - 1); b = a + ri(rng, 1, hi - a); if (a === lo && b === hi) return null; } // J dentro I
+      else if (tipo === 3) { a = lo + ri(rng, 1, 2 * r - 1); b = hi + ri(rng, 1, 3); }   // si sovrappongono
+      else { a = lo; b = hi; }                                                 // uguali
+      var sI = a <= lo && hi <= b, sJ = lo <= a && b <= hi;   // I sottoinsieme di J, J sottoinsieme di I
+      var key = sI && sJ ? "NS" : (sI ? "S" : (sJ ? "N" : "X"));
+      var testi = { S: T(lingua, "condizione sufficiente ma non necessaria", "a sufficient but not necessary condition"),
+                    N: T(lingua, "condizione necessaria ma non sufficiente", "a necessary but not sufficient condition"),
+                    NS: T(lingua, "condizione necessaria e sufficiente", "a necessary and sufficient condition"),
+                    X: T(lingua, "condizione né necessaria né sufficiente", "neither a necessary nor a sufficient condition") };
+      var o = function (kk) { return OT(testi[kk], kk); };
+      var altri = ["S", "N", "NS", "X"].filter(function (kk) { return kk !== key; });
+      var pm = m === 0 ? "x" : (m > 0 ? "x - " + m : "x + " + (-m));
+      var p = "|" + pm + "| < " + r, q = a + " < x < " + b;
+      var testo = T(lingua, "Per $x \\in \\R$, la condizione «$" + p + "$» è, per la condizione «$" + q + "$»:",
+        "For $x \\in \\R$, the condition “$" + p + "$” is, for the condition “$" + q + "$”:");
+      var sp = T(lingua, "«$" + p + "$» equivale a $x \\in (" + lo + ", " + hi + ")$, l'altra a $x \\in (" + a + ", " + b + ")$. $p$ è sufficiente per $q$ se l'insieme di $p$ è contenuto in quello di $q$ ($p \\Rightarrow q$), necessaria se vale il contenimento opposto.",
+        "“$" + p + "$” is equivalent to $x \\in (" + lo + ", " + hi + ")$, the other to $x \\in (" + a + ", " + b + ")$. $p$ is sufficient for $q$ if the set of $p$ is contained in that of $q$ ($p \\Rightarrow q$), necessary if the opposite inclusion holds.");
+      return chiudi(rng, testo, o(key), altri.map(o), sp, { param: { m: m, r: r, a: a, b: b } });
+    })
+  });
+
+  // ------------------------------------------------------------------ induzione: somme notevoli
+  G.push({
+    id: "am1-g-somma-induzione", livello: "facile", capitolo: "logic-02-induction",
+    link: L("logica/02-induzione/#box-propSUM-3", "logic/02-induction/#box-propSUM-3"),
+    genera: ripeti(function (rng, lingua) {
+      var m = ri(rng, 1, 10), n = m + ri(rng, 8, 30), a = ri(rng, 1, 5), b = riNZ(rng, -6, 6);
+      var S = function (u) { return u * (u + 1) / 2; };   // 1 + ... + u
+      var cnt = n - m + 1, sk = S(n) - S(m - 1);
+      var g = a * sk + b * cnt;
+      var cand = [a * sk + b * (cnt - 1), a * (S(n) - S(m)) + b * (cnt - 1), a * sk, a * (n * (n - 1) / 2 - S(m - 1)) + b * cnt];
+      var distr = distinti(g, cand, String);
+      if (!distr) return null;
+      var term = (a === 1 ? "k" : a + "k") + (b > 0 ? " + " + b : " - " + (-b));
+      var testo = T(lingua, "Usando $\\sum_{k=1}^{n} k = \\frac{n\\,(n+1)}{2}$, quanto vale $\\sum_{k=" + m + "}^{" + n + "} (" + term + ")$?",
+        "Using $\\sum_{k=1}^{n} k = \\frac{n\\,(n+1)}{2}$, what is $\\sum_{k=" + m + "}^{" + n + "} (" + term + ")$?");
+      var sp = T(lingua, "Gli addendi sono $" + n + " - " + m + " + 1 = " + cnt + "$; $\\sum_{k=" + m + "}^{" + n + "} k = \\frac{" + n + " \\cdot " + (n + 1) + "}{2} - \\frac{" + (m - 1) + " \\cdot " + m + "}{2} = " + sk + "$, quindi la somma vale $" + a + " \\cdot " + sk + (b > 0 ? " + " : " - ") + Math.abs(b) + " \\cdot " + cnt + " = " + g + "$.",
+        "There are $" + n + " - " + m + " + 1 = " + cnt + "$ terms; $\\sum_{k=" + m + "}^{" + n + "} k = \\frac{" + n + " \\cdot " + (n + 1) + "}{2} - \\frac{" + (m - 1) + " \\cdot " + m + "}{2} = " + sk + "$, so the sum is $" + a + " \\cdot " + sk + (b > 0 ? " + " : " - ") + Math.abs(b) + " \\cdot " + cnt + " = " + g + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { m: m, n: n, a: a, b: b } });
+    })
+  });
+
+  // ------------------------------------------------------------------ induzione: stima con la disuguaglianza di Bernoulli
+  G.push({
+    id: "am1-g-bernoulli", livello: "facile", capitolo: "logic-02-induction",
+    link: L("logica/02-induzione/#box-notationA-1", "logic/02-induction/#box-notationA-1"),
+    genera: ripeti(function (rng, lingua) {
+      var p = ri(rng, 1, 3), q = ri(rng, 4, 25), M = ri(rng, 2, 9);
+      if (gcd(p, q) !== 1) return null;
+      var v = new Fr((M - 1) * q, p), g = Math.ceil(v.n / v.d);
+      var cand = [v.d === 1 ? g - 1 : Math.floor(v.n / v.d), Math.ceil(M * q / p), g + 1, g + q, 2 * g];
+      var distr = distinti(g, cand, String);
+      if (!distr || distr.some(function (c) { return c < 1; })) return null;
+      var x = new Fr(p, q).tex();
+      var testo = T(lingua, "Disuguaglianza di Bernoulli: $(1 + x)^n \\ge 1 + n\\,x$ per $x \\ge -1$ e $n \\in \\N$. Con $x = " + x + "$, qual è il più piccolo $n$ per cui la disuguaglianza GARANTISCE $\\left(1 + " + x + "\\right)^n \\ge " + M + "$, cioè $1 + n \\cdot " + x + " \\ge " + M + "$?",
+        "Bernoulli's inequality: $(1 + x)^n \\ge 1 + n\\,x$ for $x \\ge -1$ and $n \\in \\N$. With $x = " + x + "$, what is the smallest $n$ for which the inequality GUARANTEES $\\left(1 + " + x + "\\right)^n \\ge " + M + "$, i.e. $1 + n \\cdot " + x + " \\ge " + M + "$?");
+      var sp = T(lingua, "Serve $n \\cdot " + x + " \\ge " + (M - 1) + "$, cioè $n \\ge " + v.tex() + "$: il più piccolo intero è $" + g + "$.",
+        "We need $n \\cdot " + x + " \\ge " + (M - 1) + "$, i.e. $n \\ge " + v.tex() + "$: the smallest integer is $" + g + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { p: p, q: q, M: M } });
+    })
+  });
+
+  // ------------------------------------------------------------------ induzione: minimo con la disuguaglianza AM-GM
+  G.push({
+    id: "am1-g-amgm", livello: "complessa", capitolo: "logic-02-induction",
+    link: L("logica/02-induzione/#box-propAMGM-7", "logic/02-induction/#box-propAMGM-7"),
+    genera: ripeti(function (rng, lingua) {
+      var a = ri(rng, 1, 5), x0 = ri(rng, 1, 4), b = 2 * a * x0 * x0 * x0;
+      var g = 3 * a * x0 * x0;
+      var cand = [2 * a * x0 * x0, 3 * a * x0, a * x0 * x0 + b, 3 * a * x0 * x0 * x0];
+      var distr = distinti(g, cand, String);
+      if (!distr) return null;
+      var fx = (a === 1 ? "" : a) + "x^2 + \\frac{" + b + "}{x}";
+      var testo = T(lingua, "Con la disuguaglianza tra media aritmetica e media geometrica ($\\frac{a_1 + \\dots + a_n}{n} \\ge \\sqrt[n]{a_1 \\cdots a_n}$ per $a_i \\ge 0$, uguaglianza se e solo se gli $a_i$ sono uguali), qual è il valore minimo di $f(x) = " + fx + "$ per $x > 0$?",
+        "Using the inequality between arithmetic and geometric means ($\\frac{a_1 + \\dots + a_n}{n} \\ge \\sqrt[n]{a_1 \\cdots a_n}$ for $a_i \\ge 0$, equality if and only if the $a_i$ are equal), what is the minimum of $f(x) = " + fx + "$ for $x > 0$?");
+      var h = b / 2;
+      var sp = T(lingua, "Si spezza $f(x) = " + (a === 1 ? "" : a) + "x^2 + \\frac{" + h + "}{x} + \\frac{" + h + "}{x}$: il prodotto dei tre addendi è la costante $" + (a * h * h) + "$, quindi $f(x) \\ge 3\\sqrt[3]{" + (a * h * h) + "} = " + g + "$, con uguaglianza quando $" + (a === 1 ? "" : a) + "x^2 = \\frac{" + h + "}{x}$, cioè $x = " + x0 + "$.",
+        "Split $f(x) = " + (a === 1 ? "" : a) + "x^2 + \\frac{" + h + "}{x} + \\frac{" + h + "}{x}$: the product of the three terms is the constant $" + (a * h * h) + "$, so $f(x) \\ge 3\\sqrt[3]{" + (a * h * h) + "} = " + g + "$, with equality when $" + (a === 1 ? "" : a) + "x^2 = \\frac{" + h + "}{x}$, i.e. $x = " + x0 + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { a: a, b: b } });
+    })
+  });
+
+  // ------------------------------------------------------------------ insiemi: cardinalità dell'unione
+  G.push({
+    id: "am1-g-cardinalita", livello: "facile", capitolo: "numbers-01-sets",
+    link: L("numeri/01-insiemi/#box-prop_ins-card-unione-55", "numbers/01-sets/#box-prop_ins-card-unione-55"),
+    genera: ripeti(function (rng, lingua) {
+      var a = ri(rng, 8, 40), b = ri(rng, 5, 35), c = ri(rng, 1, Math.min(a, b) - 1), u = a + b - c, tipo = ri(rng, 1, 2), g, cand, testo;
+      if (tipo === 1) {
+        g = u; cand = [a + b, a + b + c, a + b - 2 * c, Math.max(a, b)];
+        testo = T(lingua, "Insiemi finiti $A$ e $B$ hanno $|A| = " + a + "$, $|B| = " + b + "$ e $|A \\cap B| = " + c + "$. Quanto vale $|A \\cup B|$?",
+          "Finite sets $A$ and $B$ have $|A| = " + a + "$, $|B| = " + b + "$ and $|A \\cap B| = " + c + "$. What is $|A \\cup B|$?");
+      } else {
+        g = c; cand = [a + b - u + 1, u - a, u - b, a + b + u];
+        testo = T(lingua, "Insiemi finiti $A$ e $B$ hanno $|A| = " + a + "$, $|B| = " + b + "$ e $|A \\cup B| = " + u + "$. Quanto vale $|A \\cap B|$?",
+          "Finite sets $A$ and $B$ have $|A| = " + a + "$, $|B| = " + b + "$ and $|A \\cup B| = " + u + "$. What is $|A \\cap B|$?");
+      }
+      var distr = distinti(g, cand, String);
+      if (!distr || distr.some(function (v) { return v < 0; })) return null;
+      var sp = T(lingua, "Gli elementi comuni si contano una volta sola: $|A \\cup B| = |A| + |B| - |A \\cap B|$, cioè $" + u + " = " + a + " + " + b + " - " + c + "$.",
+        "Common elements are counted once: $|A \\cup B| = |A| + |B| - |A \\cap B|$, i.e. $" + u + " = " + a + " + " + b + " - " + c + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { a: a, b: b, c: c, tipo: tipo } });
+    })
+  });
+
+  // ------------------------------------------------------------------ numeri complessi: radici n-esime
+  function angTex(a, b) {   // a*pi/b ridotto, 0 <= a/b < 2
+    var g0 = gcd(a, b) || 1; a /= g0; b /= g0;
+    if (a === 0) return "0";
+    var num = a === 1 ? "\\pi" : a + "\\pi";
+    return b === 1 ? num : "\\frac{" + num + "}{" + b + "}";
+  }
+  function trigTex(mod, a, b) {   // mod (Fr) * (cos + i sin) dell'angolo a*pi/b
+    var t = angTex(a, b), m = mod.eq(1) ? "" : mod.tex();
+    var c = "\\cos " + t + " + i\\sin " + t;
+    return m === "" ? c : m + "\\left(" + c + "\\right)";
+  }
+  G.push({
+    id: "am1-g-radici-complesse", livello: "complessa", capitolo: "numbers-09-complex-numbers",
+    link: L("numeri/09-numeri-complessi/#box-theoXXX-17", "numbers/09-complex-numbers/#box-theoXXX-17"),
+    genera: ripeti(function (rng, lingua) {
+      var n = pick(rng, [2, 3, 4, 6]), rho = n === 6 ? ri(rng, 1, 2) : ri(rng, 1, 3), R = Math.pow(rho, n);
+      var q = ri(rng, 0, 3);          // argomento di w: q*pi/2
+      var wt = [String(R), (R === 1 ? "" : R) + "i", String(-R), "-" + (R === 1 ? "" : R) + "i"][q];
+      // radici: argomento (q*pi/2 + 2k*pi)/n = (q + 4k)*pi/(2n)
+      var den = 2 * n, k = ri(rng, 0, n - 1), kk = ri(rng, 0, n - 1);
+      var ang = function (num) { num = ((num % (2 * den)) + 2 * den) % (2 * den); return num; };
+      var a0 = ang(q + 4 * k), a1 = ang(q + 4 * k + 2), a2 = ang(q + 4 * kk + 2 + 4), a3 = ang(q + 4 * k + 1);
+      var r = F(rho), rw = new Fr(R, n);
+      if (rw.eq(r)) rw = F(R).add(1);
+      var opz = function (m, a) { return O(trigTex(m, a, den), m.key() + "|" + (a / den)); };
+      var cand = [opz(r, a1), opz(r, a2), opz(rw, a0), opz(r, a3)];
+      var giusta = opz(r, a0), vis = [giusta.k], distr = [];
+      cand.forEach(function (o) { if (distr.length < 3 && vis.indexOf(o.k) < 0) { vis.push(o.k); distr.push(o); } });
+      if (distr.length < 3) return null;
+      var nome = T(lingua, { 2: "quadrata", 3: "cubica", 4: "quarta", 6: "sesta" }[n], { 2: "square", 3: "cube", 4: "fourth", 6: "sixth" }[n]);
+      var testo = T(lingua, "Quale dei seguenti numeri complessi è una radice " + nome + " di $w = " + wt + "$, cioè soddisfa $z^{" + n + "} = " + wt + "$?",
+        "Which of the following complex numbers is a " + nome + " root of $w = " + wt + "$, i.e. satisfies $z^{" + n + "} = " + wt + "$?");
+      var sp = T(lingua, "$w = " + trigTex(F(R), q, 2) + "$. Le radici hanno modulo $\\sqrt[" + n + "]{" + R + "} = " + rho + "$ e argomenti $\\frac{" + angTex(q, 2) + " + 2k\\pi}{" + n + "}$, $k = 0, \\dots, " + (n - 1) + "$; per De Moivre $z^{" + n + "}$ ha modulo $" + rho + "^{" + n + "}$ e argomento $" + n + "$ volte quello di $z$.",
+        "$w = " + trigTex(F(R), q, 2) + "$. The roots have modulus $\\sqrt[" + n + "]{" + R + "} = " + rho + "$ and arguments $\\frac{" + angTex(q, 2) + " + 2k\\pi}{" + n + "}$, $k = 0, \\dots, " + (n - 1) + "$; by De Moivre $z^{" + n + "}$ has modulus $" + rho + "^{" + n + "}$ and argument $" + n + "$ times that of $z$.");
+      return chiudi(rng, testo, giusta, distr, sp, { param: { n: n, R: R, q: q } });
+    })
+  });
+
+  // ------------------------------------------------------------------ funzioni: zeri dopo una trasformazione del grafico
+  G.push({
+    id: "am1-g-trasformazioni", livello: "facile", capitolo: "functions-08-graph-transformations",
+    link: L("funzioni/08-operazioni-grafici/#14-operazioni-relative-a-y_4-fkx", "functions/08-graph-transformations/#14-operations-related-to-y_4-fkx"),
+    genera: ripeti(function (rng, lingua) {
+      var x0 = riNZ(rng, -9, 9), k = pick(rng, [2, 3, 4, -2, -3]), c = riNZ(rng, -6, 6);
+      var g = new Fr(x0 + c, k);
+      var cand = [F(k * x0 + c), new Fr(x0 - c, k), new Fr(x0, k).add(c), F(x0 + c)];
+      var distr = distinti(g, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var arg = k + "x" + (c > 0 ? " - " + c : " + " + (-c));
+      var testo = T(lingua, "Una funzione $f: \\R \\rr \\R$ si annulla soltanto in $x = " + x0 + "$. Dove si annulla la funzione $g(x) = f(" + arg + ")$?",
+        "A function $f: \\R \\rr \\R$ vanishes only at $x = " + x0 + "$. Where does the function $g(x) = f(" + arg + ")$ vanish?");
+      var sp = T(lingua, "$g(x) = 0$ se e solo se l'argomento di $f$ vale $" + x0 + "$: $" + arg + " = " + x0 + "$, cioè $x = \\frac{" + x0 + (c > 0 ? " + " + c : " - " + (-c)) + "}{" + k + "} = " + g.tex() + "$.",
+        "$g(x) = 0$ if and only if the argument of $f$ equals $" + x0 + "$: $" + arg + " = " + x0 + "$, i.e. $x = \\frac{" + x0 + (c > 0 ? " + " + c : " - " + (-c)) + "}{" + k + "} = " + g.tex() + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { x0: x0, k: k, c: c } });
+    })
+  });
+
+  // ------------------------------------------------------------------ funzioni: valore di una funzione composta
+  G.push({
+    id: "am1-g-composta", livello: "facile", capitolo: "functions-09-composite-functions",
+    link: L("funzioni/09-composte/#box-defXX-1", "functions/09-composite-functions/#box-defXX-1"),
+    genera: ripeti(function (rng, lingua) {
+      var a = riNZ(rng, -4, 4), b = ri(rng, -5, 5), c = riNZ(rng, -3, 3), d = ri(rng, -5, 5), x0 = riNZ(rng, -3, 3);
+      var f = function (x) { return a * x + b; }, gg = function (x) { return c * x * x + d; };
+      var giusto = gg(f(x0));
+      var cand = [f(gg(x0)), gg(x0) * f(x0), gg(x0) + f(x0), c * f(x0) + d];
+      var distr = distinti(giusto, cand, String);
+      if (!distr) return null;
+      var ft = poli([a, b]), gt = poli([c, 0, d]);
+      var testo = T(lingua, "Siano $f(x) = " + ft + "$ e $g(x) = " + gt + "$. Quanto vale la funzione composta $(g \\circ f)(" + x0 + ") = g(f(" + x0 + "))$?",
+        "Let $f(x) = " + ft + "$ and $g(x) = " + gt + "$. What is the composite function $(g \\circ f)(" + x0 + ") = g(f(" + x0 + "))$?");
+      var sp = T(lingua, "Prima si applica $f$: $f(" + x0 + ") = " + f(x0) + "$; poi $g$: $g(" + f(x0) + ") = " + giusto + "$. Nell'ordine opposto, $(f \\circ g)(" + x0 + ") = " + f(gg(x0)) + "$.",
+        "First apply $f$: $f(" + x0 + ") = " + f(x0) + "$; then $g$: $g(" + f(x0) + ") = " + giusto + "$. In the opposite order, $(f \\circ g)(" + x0 + ") = " + f(gg(x0)) + "$.");
+      return chiudi(rng, testo, OF(giusto), distr.map(OF), sp, { param: { a: a, b: b, c: c, d: d, x0: x0 } });
+    })
+  });
+
+  // ------------------------------------------------------------------ funzioni: valore della funzione inversa
+  G.push({
+    id: "am1-g-inversa", livello: "media", capitolo: "functions-10-inverse-functions",
+    link: L("funzioni/10-inverse/#box-defXX-2", "functions/10-inverse-functions/#box-defXX-2"),
+    genera: ripeti(function (rng, lingua) {
+      var a = riNZ(rng, -5, 5), b = ri(rng, -6, 6), c = riNZ(rng, -3, 3), d = ri(rng, -6, 6), y0 = ri(rng, -6, 6);
+      if (a * d - b * c === 0 || c * y0 - a === 0) return null;
+      var fv = function (x) { var den = F(x).mul(c).add(d); return den.n === 0 ? null : F(x).mul(a).add(b).div(den); };
+      var g = new Fr(b - d * y0, c * y0 - a);
+      var cand = [];
+      [function () { return fv(y0); }, function () { return new Fr(y0 - b, a); }, function () { return F(1).div(fv(y0)); },
+       function () { return new Fr(d * y0 - b, a - c * y0 + 2 * c); }].forEach(function (h) {
+        try { var v = h(); if (v !== null) cand.push(v); } catch (e) { /* candidato non definito */ }
+      });
+      var distr = distinti(g, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var ft = "\\frac{" + poli([a, b]) + "}{" + poli([c, d]) + "}";
+      var testo = T(lingua, "La funzione $f(x) = " + ft + "$ è invertibile sul suo dominio. Quanto vale $f^{-1}(" + y0 + ")$, cioè il numero $x$ con $f(x) = " + y0 + "$?",
+        "The function $f(x) = " + ft + "$ is invertible on its domain. What is $f^{-1}(" + y0 + ")$, i.e. the number $x$ with $f(x) = " + y0 + "$?");
+      var sp = T(lingua, "Si risolve $" + ft + " = " + y0 + "$: $" + poli([a, b]) + " = " + y0 + "\\,(" + poli([c, d]) + ")$, da cui $x = \\frac{" + (b - d * y0) + "}{" + (c * y0 - a) + "} = " + g.tex() + "$. Calcolare $f(" + y0 + ")$ è un errore tipico.",
+        "Solve $" + ft + " = " + y0 + "$: $" + poli([a, b]) + " = " + y0 + "\\,(" + poli([c, d]) + ")$, hence $x = \\frac{" + (b - d * y0) + "}{" + (c * y0 - a) + "} = " + g.tex() + "$. Computing $f(" + y0 + ")$ is a typical mistake.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { a: a, b: b, c: c, d: d, y0: y0 } });
+    })
+  });
+
+  // ------------------------------------------------------------------ funzioni: immagine dopo più trasformazioni
+  G.push({
+    id: "am1-g-immagine-trasformata", livello: "complessa", capitolo: "functions-08-graph-transformations",
+    link: L("funzioni/08-operazioni-grafici/#15-operazioni-relative-a-y_5fx", "functions/08-graph-transformations/#15-operations-related-to-y_5fx"),
+    genera: ripeti(function (rng, lingua) {
+      var m = ri(rng, -6, 2), M = ri(rng, m + 1, 7), k = pick(rng, [-3, -2, 2, 3]), c = ri(rng, -8, 8);
+      var u = k * m + c, v = k * M + c, lo = Math.min(u, v), hi = Math.max(u, v);   // immagine di k f + c
+      var gl = (lo <= 0 && hi >= 0) ? 0 : Math.min(Math.abs(lo), Math.abs(hi)), gh = Math.max(Math.abs(lo), Math.abs(hi));
+      var I = function (p, q) { return [{ lo: F(p), li: true, hi: F(q), hi_i: true }]; };
+      var giusta = I(gl, gh);
+      var d1 = I(Math.min(Math.abs(u), Math.abs(v)), Math.max(Math.abs(u), Math.abs(v)));   // solo gli estremi
+      var d2 = I(lo, hi);                                                                       // dimentica il modulo
+      var d3 = I(Math.abs(k * m) + c > Math.abs(k * M) + c ? Math.abs(k * M) + c : Math.abs(k * m) + c, Math.max(Math.abs(k * m), Math.abs(k * M)) + c);
+      if (gl === gh) return null;
+      var vis = [insKey(giusta)], distr = [];
+      [d1, d2, d3, I(gl, gh + Math.abs(c) + 1)].forEach(function (s) { var kk = insKey(s); if (distr.length < 3 && vis.indexOf(kk) < 0 && s[0].lo.cmp(s[0].hi) < 0) { vis.push(kk); distr.push(OI(s)); } });
+      if (distr.length < 3) return null;
+      var gt = "\\left|" + k + "\\,f(x)" + (c === 0 ? "" : (c > 0 ? " + " + c : " - " + (-c))) + "\\right|";
+      var testo = T(lingua, "Una funzione $f: \\R \\rr \\R$ ha immagine (insieme dei valori) l'intervallo $[" + m + ", " + M + "]$. Qual è l'immagine di $g(x) = " + gt + "$?",
+        "A function $f: \\R \\rr \\R$ has image (set of values) the interval $[" + m + ", " + M + "]$. What is the image of $g(x) = " + gt + "$?");
+      var sp = T(lingua, "Moltiplicando per $" + k + "$ e sommando $" + c + "$, i valori $t \\in [" + m + ", " + M + "]$ diventano $" + k + "t" + (c === 0 ? "" : (c > 0 ? " + " + c : " - " + (-c))) + "$, che descrive $[" + lo + ", " + hi + "]$; il modulo ribalta la parte negativa: si ottiene $[" + gl + ", " + gh + "]$" + (lo < 0 && hi > 0 ? " (il valore $0$ è assunto)" : "") + ".",
+        "Multiplying by $" + k + "$ and adding $" + c + "$, the values $t \\in [" + m + ", " + M + "]$ become $" + k + "t" + (c === 0 ? "" : (c > 0 ? " + " + c : " - " + (-c))) + "$, which ranges over $[" + lo + ", " + hi + "]$; the absolute value reflects the negative part: one gets $[" + gl + ", " + gh + "]$" + (lo < 0 && hi > 0 ? " (the value $0$ is taken)" : "") + ".");
+      return chiudi(rng, testo, OI(giusta), distr, sp, { param: { m: m, M: M, k: k, c: c } });
+    })
+  });
+
+  // ------------------------------------------------------------------ limiti: tre passi del metodo di bisezione
+  G.push({
+    id: "am1-g-bisezione", livello: "complessa", capitolo: "limits-08-zeros-bisection",
+    link: L("limiti/08-zeri-bisezione/#box-theoZERI-2", "limits/08-zeros-bisection/#box-theoZERI-2"),
+    genera: ripeti(function (rng, lingua) {
+      var a = ri(rng, 1, 4), c = ri(rng, a * a + 1, (a + 1) * (a + 1) - 1), k = pick(rng, [2, 3]);
+      var p = function (x) { return k === 2 ? x.mul(x).sub(c) : x.mul(x).mul(x).sub(c); };
+      if (k === 3) { c = ri(rng, a * a * a + 1, (a + 1) * (a + 1) * (a + 1) - 1); }
+      var lo = F(a), hi = F(a + 1), passi = [[lo, hi]];
+      for (var s = 0; s < 4; s++) {
+        var m = lo.add(hi).div(2), v = p(m);
+        if (v.n === 0) return null;
+        if (p(lo).sgn() * v.sgn() < 0) hi = m; else lo = m;
+        passi.push([lo, hi]);
+      }
+      var I = function (q) { return [{ lo: q[0], li: true, hi: q[1], hi_i: true }]; };
+      var g = passi[3];
+      var altra = g[0].eq(passi[2][0]) ? [g[1], passi[2][1]] : [passi[2][0], g[0]];   // metà sbagliata all'ultimo passo
+      var giusta = OI(I(g)), vis = [giusta.k], distr = [];
+      [I(passi[2]), I(passi[4]), I(altra)].forEach(function (s) { var o = OI(s); if (vis.indexOf(o.k) < 0) { vis.push(o.k); distr.push(o); } });
+      if (distr.length < 3) return null;
+      var fx = (k === 2 ? "x^2" : "x^3") + " - " + c;
+      var testo = T(lingua, "Metodo di bisezione per $f(x) = " + fx + "$ su $[" + a + ", " + (a + 1) + "]$ (dove $f$ cambia segno): a ogni passo si calcola $f$ nel punto medio e si tiene la metà ai cui estremi $f$ ha segni opposti. Quale intervallo si ottiene dopo $3$ passi?",
+        "Bisection method for $f(x) = " + fx + "$ on $[" + a + ", " + (a + 1) + "]$ (where $f$ changes sign): at each step evaluate $f$ at the midpoint and keep the half at whose endpoints $f$ has opposite signs. Which interval is obtained after $3$ steps?");
+      var sp = T(lingua, "Gli intervalli successivi sono " + passi.slice(1, 4).map(function (q) { return "$[" + q[0].tex() + ", " + q[1].tex() + "]$"; }).join(", ") + ": ogni passo dimezza la lunghezza, che dopo $3$ passi è $\\frac18$.",
+        "The successive intervals are " + passi.slice(1, 4).map(function (q) { return "$[" + q[0].tex() + ", " + q[1].tex() + "]$"; }).join(", ") + ": each step halves the length, which is $\\frac18$ after $3$ steps.");
+      return chiudi(rng, testo, giusta, distr, sp, { param: { a: a, c: c, k: k } });
+    })
+  });
+
+  // ------------------------------------------------------------------ serie: carattere di una serie di funzioni razionali
+  G.push({
+    id: "am1-g-carattere-serie", livello: "facile", capitolo: "series-02-nonnegative-terms",
+    link: L("serie/02-termini-non-negativi/#box-theoZERI-10", "series/02-nonnegative-terms/#box-theoZERI-10"),
+    genera: ripeti(function (rng, lingua) {
+      var p = ri(rng, 0, 3), q = ri(rng, p, p + 3), a = ri(rng, 1, 5), b = ri(rng, 1, 6), s = pick(rng, [1, -1]);
+      var e = q - p;   // termine generale ~ (s a) / k^e
+      var key = e >= 2 ? "C" : (s > 0 ? "P" : "M");
+      var testi = { C: T(lingua, "converge", "it converges"), P: T(lingua, "diverge a $+\\infty$", "it diverges to $+\\infty$"),
+                    M: T(lingua, "diverge a $-\\infty$", "it diverges to $-\\infty$"), I: T(lingua, "è irregolare", "it is irregular") };
+      var o = function (kk) { return OT(testi[kk], kk); };
+      var altri = ["C", "P", "M", "I"].filter(function (kk) { return kk !== key; });
+      var num = (s < 0 ? "-" : "") + (a === 1 && p > 0 ? "" : a) + (p === 0 ? "" : (p === 1 ? "k" : "k^{" + p + "}"));
+      var den = (q === 0 ? "" : (q === 1 ? "k" : "k^{" + q + "}")) + " + " + b;
+      if (q === 0) return null;
+      var testo = T(lingua, "Come si comporta la serie $\\sum_{k=1}^{\\infty} \\frac{" + num + "}{" + den + "}$?", "How does the series $\\sum_{k=1}^{\\infty} \\frac{" + num + "}{" + den + "}$ behave?");
+      var ek = e === 0 ? "1" : (e === 1 ? "\\frac{1}{k}" : "\\frac{1}{k^{" + e + "}}");
+      var sp = T(lingua, "Il termine generale ha segno costante ed è asintotico a $" + (s * a) + "\\," + ek + "$: per il confronto asintotico la serie si comporta come l'armonica generalizzata $\\sum \\frac{1}{k^{" + e + "}}$, che converge se e solo se l'esponente è $> 1$" + (e === 0 ? " (qui il termine generale non tende nemmeno a $0$)" : "") + ".",
+        "The general term has constant sign and is asymptotic to $" + (s * a) + "\\," + ek + "$: by asymptotic comparison the series behaves like the generalised harmonic series $\\sum \\frac{1}{k^{" + e + "}}$, which converges if and only if the exponent is $> 1$" + (e === 0 ? " (here the general term does not even tend to $0$)" : "") + ".");
+      return chiudi(rng, testo, o(key), altri.map(o), sp, { param: { p: p, q: q, a: a, b: b, s: s } });
+    })
+  });
+
+  // ------------------------------------------------------------------ serie: somma con la serie di Taylor dell'esponenziale
+  function eTex(c, meno1) { return "e^{" + c + "}" + (meno1 ? " - 1" : ""); }
+  G.push({
+    id: "am1-g-somma-taylor", livello: "facile", capitolo: "series-04-series-of-functions",
+    link: L("serie/04-serie-funzioni/#box-theoKKKK-4", "series/04-series-of-functions/#box-theoKKKK-4"),
+    genera: ripeti(function (rng, lingua) {
+      var c = pick(rng, [-4, -3, -2, 2, 3, 4]), da1 = rng() < 0.5;
+      var g = { t: eTex(c, da1), k: c + "|" + (da1 ? 1 : 0) };
+      var cand = [{ t: eTex(c, !da1), k: c + "|" + (da1 ? 0 : 1) }, { t: eTex(-c, da1), k: (-c) + "|" + (da1 ? 1 : 0) },
+                  { t: eTex(-c, !da1), k: (-c) + "|" + (da1 ? 0 : 1) }];
+      var cs = c < 0 ? "(" + c + ")" : String(c);
+      var testo = T(lingua, "Usando la serie di Taylor $e^x = \\sum_{k=0}^{\\infty} \\frac{x^k}{k!}$, valida per ogni $x \\in \\R$, quanto vale $\\sum_{k=" + (da1 ? 1 : 0) + "}^{\\infty} \\frac{" + cs + "^k}{k!}$?",
+        "Using the Taylor series $e^x = \\sum_{k=0}^{\\infty} \\frac{x^k}{k!}$, valid for every $x \\in \\R$, what is $\\sum_{k=" + (da1 ? 1 : 0) + "}^{\\infty} \\frac{" + cs + "^k}{k!}$?");
+      var sp = T(lingua, "Con $x = " + c + "$ la serie da $k = 0$ vale $e^{" + c + "}$" + (da1 ? "; partendo da $k = 1$ manca il termine $k = 0$, che vale $1$: $e^{" + c + "} - 1$." : "."),
+        "With $x = " + c + "$ the series from $k = 0$ equals $e^{" + c + "}$" + (da1 ? "; starting from $k = 1$ the term $k = 0$, equal to $1$, is missing: $e^{" + c + "} - 1$." : "."));
+      return chiudi(rng, testo, O(g.t, g.k), cand.map(function (x) { return O(x.t, x.k); }), sp, { param: { c: c, da1: da1 ? 1 : 0 } });
+    })
+  });
+
+  // ------------------------------------------------------------------ integrali: integrale di seno e coseno
+  G.push({
+    id: "am1-g-integrale-trig", livello: "facile", capitolo: "es-integrals-02-integrals",
+    link: L("esercizi/es-integrali-02-integrali/", "exercises/es-integrals-02-integrals/"),
+    genera: ripeti(function (rng, lingua) {
+      var a = riNZ(rng, -5, 5), b = riNZ(rng, -5, 5), k = ri(rng, 1, 3), fin = pick(rng, [2, 1]);   // estremo pi/(fin*k)
+      // int_0^{pi/(2k)} sin(kx) = 1/k, cos(kx) = 1/k ; int_0^{pi/k} sin(kx) = 2/k, cos(kx) = 0
+      var Is = fin === 2 ? new Fr(1, k) : new Fr(2, k), Ic = fin === 2 ? new Fr(1, k) : F(0);
+      var g = Is.mul(a).add(Ic.mul(b));
+      var cand = [Is.mul(a).sub(Ic.mul(b)), F(a + b), Is.mul(a).add(Ic.mul(b)).mul(k).mul(k), F(a).mul(fin === 2 ? 1 : 2).add(b).neg()];
+      var distr = distinti(g, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var arg = k === 1 ? "x" : k + "x", sup = "\\frac{\\pi}{" + (fin * k === 1 ? "" : fin * k) + "}";
+      if (fin * k === 1) sup = "\\pi";
+      var f = (a === 1 ? "" : (a === -1 ? "-" : a)) + "\\sin(" + arg + ")" + (b > 0 ? " + " : " - ") + (Math.abs(b) === 1 ? "" : Math.abs(b)) + "\\cos(" + arg + ")";
+      var testo = T(lingua, "Quanto vale $\\int_0^{" + sup + "} \\big(" + f + "\\big)\\,dx$?", "What is $\\int_0^{" + sup + "} \\big(" + f + "\\big)\\,dx$?");
+      var sp = T(lingua, "Una primitiva è $-\\frac{" + a + "}{" + k + "}\\cos(" + arg + ") + \\frac{" + b + "}{" + k + "}\\sin(" + arg + ")$: valutandola tra $0$ e $" + sup + "$ si ottiene $" + g.tex() + "$.",
+        "An antiderivative is $-\\frac{" + a + "}{" + k + "}\\cos(" + arg + ") + \\frac{" + b + "}{" + k + "}\\sin(" + arg + ")$: evaluating it between $0$ and $" + sup + "$ gives $" + g.tex() + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { a: a, b: b, k: k, fin: fin } });
+    })
+  });
+
+  // ------------------------------------------------------------------ primitive: primitiva con una condizione
+  G.push({
+    id: "am1-g-primitiva-valore", livello: "facile", capitolo: "es-integrals-01-antiderivatives",
+    link: L("esercizi/es-integrali-01-primitive/", "exercises/es-integrals-01-antiderivatives/"),
+    genera: ripeti(function (rng, lingua) {
+      var a = pick(rng, [3, -3, 6, -6]), b = pick(rng, [2, -2, 4, -4]), c = ri(rng, -5, 5), d = ri(rng, -5, 5), t = riNZ(rng, -3, 3);
+      var Fv = function (x) { return new Fr(a * x * x * x, 3).add(new Fr(b * x * x, 2)).add(c * x).add(d); };
+      var g = Fv(t);
+      var cand = [Fv(t).sub(d), F(a * t * t * t + b * t * t + c * t + d), F(2 * a * t + b + d), Fv(t).add(d)];
+      var distr = distinti(g, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var f = poli([a, b, c]);
+      var testo = T(lingua, "Sia $F$ la primitiva di $f(x) = " + f + "$ con $F(0) = " + d + "$. Quanto vale $F(" + t + ")$?",
+        "Let $F$ be the antiderivative of $f(x) = " + f + "$ with $F(0) = " + d + "$. What is $F(" + t + ")$?");
+      var sp = T(lingua, "Le primitive sono $" + poli([new Fr(a, 3), new Fr(b, 2), c, 0]) + " + C$; la condizione $F(0) = " + d + "$ dà $C = " + d + "$, quindi $F(" + t + ") = " + g.tex() + "$.",
+        "The antiderivatives are $" + poli([new Fr(a, 3), new Fr(b, 2), c, 0]) + " + C$; the condition $F(0) = " + d + "$ gives $C = " + d + "$, so $F(" + t + ") = " + g.tex() + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { a: a, b: b, c: c, d: d, t: t } });
+    })
+  });
+
+  // ------------------------------------------------------------------ integrali: area tra parabola e retta
+  G.push({
+    id: "am1-g-area-tra-curve", livello: "complessa", capitolo: "es-integrals-02-integrals",
+    link: L("esercizi/es-integrali-02-integrali/", "exercises/es-integrals-02-integrals/"),
+    genera: ripeti(function (rng, lingua) {
+      var r1 = ri(rng, -4, 2), r2 = ri(rng, r1 + 1, 5), a = pick(rng, [1, -1, 2, -2]), m = ri(rng, -3, 3), q = ri(rng, -4, 4);
+      // parabola p(x) = a (x - r1)(x - r2) + m x + q, retta y = m x + q: si incontrano in r1, r2
+      var L3 = Math.pow(r2 - r1, 3), g = new Fr(Math.abs(a) * L3, 6);
+      var cand = [new Fr(-a * L3, 6), F(Math.abs(a) * L3), new Fr(Math.abs(a) * L3, 3), new Fr(Math.abs(a) * Math.pow(r2 - r1, 2), 2)];
+      var distr = distinti(g, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var pc = [a, -a * (r1 + r2) + m, a * r1 * r2 + q];
+      var testo = T(lingua, "Qual è l'area della regione limitata del piano compresa tra la parabola $y = " + poli(pc) + "$ e la retta $y = " + poli([m, q]) + "$?",
+        "What is the area of the bounded region of the plane enclosed by the parabola $y = " + poli(pc) + "$ and the line $y = " + poli([m, q]) + "$?");
+      var sp = T(lingua, "Le curve si incontrano dove $" + poli([a, -a * (r1 + r2), a * r1 * r2]) + " = 0$, cioè in $x = " + r1 + "$ e $x = " + r2 + "$. L'area è $\\int_{" + r1 + "}^{" + r2 + "} \\big|" + a + "\\,(" + fat(r1) + ")(" + fat(r2) + ")\\big|\\,dx = \\frac{" + Math.abs(a) + " \\cdot " + (r2 - r1) + "^3}{6} = " + g.tex() + "$.",
+        "The curves meet where $" + poli([a, -a * (r1 + r2), a * r1 * r2]) + " = 0$, i.e. at $x = " + r1 + "$ and $x = " + r2 + "$. The area is $\\int_{" + r1 + "}^{" + r2 + "} \\big|" + a + "\\,(" + fat(r1) + ")(" + fat(r2) + ")\\big|\\,dx = \\frac{" + Math.abs(a) + " \\cdot " + (r2 - r1) + "^3}{6} = " + g.tex() + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { r1: r1, r2: r2, a: a, m: m, q: q } });
     })
   });
 })();
