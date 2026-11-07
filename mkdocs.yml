@@ -111,6 +111,7 @@ extra:
       lang: en
 
 extra_css:
+  - stylesheets/collana.css
   - stylesheets/extra.css
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
   - stylesheets/interattivi.css?v=45a6a58ff5
@@ -256,8 +257,8 @@ nav:
           - "Primitive": esercizi/es-integrali-01-primitive.md
           - "Integrali": esercizi/es-integrali-02-integrali.md
   - Quiz: autovalutazione.md
-  - Lab: interattivi/index.md
-  - Download: materiale.md
+  - Laboratorio: interattivi/index.md
+  - Materiale: materiale.md
   - Il corso:
       - organizzazione.md
       - Indice completo: indice.md

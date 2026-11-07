@@ -1,5 +1,32 @@
 # Indice completo
 
+<!-- collana-organizzazione -->
+## Come è fatto ogni capitolo
+
+Ogni capitolo è una delle dispense del corso, con gli stessi numeri e gli stessi
+colori: così sul sito e sul PDF si ritrova tutto nello stesso posto.
+
+<div class="grid" markdown>
+
+!!! definizione "Definizione"
+    Il significato preciso di un concetto nuovo.
+
+!!! teorema "Teorema"
+    Un risultato da ricordare, con le sue ipotesi.
+
+!!! esempio "Esempio"
+    Un calcolo svolto per intero, un passaggio alla volta.
+
+!!! chiave ""
+    **In verde** il punto chiave da portarsi via.
+
+</div>
+
+??? dimostrazione "Dimostrazione — si apre con un clic"
+    Le dimostrazioni sono tutte presenti, ma chiuse: prima si legge
+    l'enunciato, poi si apre la dimostrazione quando la si vuole studiare.
+<!-- /collana-organizzazione -->
+
 ## [Logica e metodi di dimostrazione](logica/index.md)
 
 1. [Basi di logica e tecniche di dimostrazione](logica/01-logica.md)
