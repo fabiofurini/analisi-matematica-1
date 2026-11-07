@@ -193,3 +193,10 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 2 · [Serie numeriche a termini non negativi](pdf/slide-serie-02-termini-non-negativi.pdf)
 - Capitolo 3 · [Serie numeriche a termini di segno variabile](pdf/slide-serie-03-segno-variabile.pdf)
 - Capitolo 4 · [Serie di funzioni](pdf/slide-serie-04-serie-funzioni.pdf)
+
+<!-- banca-domande -->
+## Banca delle domande del quiz
+
+Tutte le domande dell'autovalutazione, divise per parte e capitolo, con la risposta corretta e la spiegazione; per le domande generate, che cambiano i numeri a ogni avvio, alcuni esempi.
+
+[:material-format-list-checks: Banca delle domande](quiz/elenco_domande.html){ .md-button }
