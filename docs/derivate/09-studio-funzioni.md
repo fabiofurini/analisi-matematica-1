@@ -10,6 +10,24 @@ title: "Studio di funzioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema del valore medio, massimi e minimi»](https://fabiofurini.github.io/analisi-matematica-1/derivate/05-valor-medio/): massimi, minimi e monotonia.
+
+    - Da questo modulo, [«Derivata seconda»](https://fabiofurini.github.io/analisi-matematica-1/derivate/07-derivata-seconda/): convessità e flessi.
+
+    - Da questo modulo, [«Limiti di funzioni, asintoti e continuità»](https://fabiofurini.github.io/analisi-matematica-1/limiti/01-limiti-asintoti/): limiti e asintoti.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - seguire lo schema dello studio del grafico di una funzione;
+
+    - trovare dominio, simmetrie, segno, limiti e asintoti;
+
+    - trovare monotonia, estremi, convessità e flessi dalle derivate.
+
 ## 1. Grafico di funzioni reali di variabile  reale
 
 - Il calcolo infinitesimale e differenziale sviluppato fin qui ci permette di affrontare in modo completo il problema di tracciare il grafico di una funzione $f$, ovvero effettuare lo <strong>studio di funzione</strong>.
@@ -290,6 +308,16 @@ title: "Studio di funzioni"
     $$
 
     per il teorema della gerarchia degli infiniti.
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Lo studio di funzione raccoglie dominio, simmetrie, segno, limiti e asintoti, derivata prima e seconda.
+
+    - La derivata prima dà monotonia ed estremi, la derivata seconda convessità e flessi.
+
+    - Ogni informazione deve essere coerente con il grafico finale.
 
 ---
 

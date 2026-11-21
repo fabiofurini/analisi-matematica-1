@@ -10,6 +10,20 @@ title: "Le funzioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Relazioni binarie»](https://fabiofurini.github.io/analisi-matematica-1/relazioni/01-relazioni-binarie/): relazioni binarie e funzioni come relazioni.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare la definizione di funzione, dominio, codominio e immagine;
+
+    - decidere se una funzione è suriettiva, iniettiva o biiettiva;
+
+    - calcolare l'inversa di una biiezione.
+
 ## 1. Il concetto di funzione
 
 !!! chiave ""
@@ -449,3 +463,13 @@ title: "Le funzioni"
     $$
 
     dove si è usato che $-m-\frac{1}{2}$ ha parte intera superiore $-m$, essendo $-m$ un intero positivo.
+
+## 5. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione $f: A \to B$ associa a ogni elemento di $A$ un elemento di $B$; la sua immagine è l'insieme dei valori assunti.
+
+    - $f$ è suriettiva se l'immagine è $B$, iniettiva se punti diversi hanno immagini diverse, biiettiva se è entrambe.
+
+    - Solo una biiezione ha inversa, che riporta ogni valore alla sua controimmagine.

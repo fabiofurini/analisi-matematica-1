@@ -10,6 +10,22 @@ title: "Funzioni trigonometriche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): funzioni periodiche, pari e dispari.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - convertire gli angoli fra gradi e radianti;
+
+    - definire seno, coseno e tangente sulla circonferenza unitaria e disegnarne i grafici;
+
+    - calcolarne i valori negli angoli notevoli e usare le principali formule trigonometriche;
+
+    - descrivere un'oscillazione con le funzioni trigonometriche.
+
 ## 1. Funzioni trigonometriche
 
 <a id="box-defXX-1"></a>
@@ -620,3 +636,13 @@ In sintesi:
 ![Figura 13](../img/funzioni-05-trigonometriche/fig13.svg){ .fig .ovale loading=lazy style="width:80%" }
 
 ![Figura 14](../img/funzioni-05-trigonometriche/fig14.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+## 5. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Un angolo di $180^\circ$ misura $\pi$ radianti.
+
+    - $\sin x$ e $\cos x$ sono le coordinate di un punto della circonferenza unitaria, periodiche di periodo $2\pi$; $\tan x = \sin x / \cos x$ ha periodo $\pi$.
+
+    - $\sin^2 x + \cos^2 x = 1$, insieme alle formule di addizione e di duplicazione, dà tutte le altre.

@@ -10,6 +10,22 @@ title: "Relazioni binarie"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Insiemi»](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/): insiemi, coppie ordinate e prodotti cartesiani.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire una relazione binaria e verificarne riflessività, simmetria, antisimmetria e transitività;
+
+    - rappresentare una relazione con un grafo direzionato;
+
+    - riconoscere le relazioni di equivalenza e le loro classi, e le relazioni d'ordine parziale e totale;
+
+    - vedere una funzione come una relazione particolare.
+
 ## 1. Relazioni binarie
 
 <a id="box-notationA-1"></a>
@@ -1820,3 +1836,15 @@ Vediamo ora in dettaglio, per ciascuna proprietà, come si dimostra che una rela
     $$
 
 - Il capitolo successivo, «[Funzioni](https://fabiofurini.github.io/analisi-matematica-1/funzioni/01-funzioni/)», riparte da questa definizione: una funzione $f: A \rightarrow B$ è una relazione binaria su $A$ e $B$ con la <strong>proprietà funzionale</strong> (a ogni $a \in A$ corrisponde uno e un solo $b \in B$). Lì si studiano dominio, codominio e immagine, e le funzioni iniettive, suriettive e biiettive.
+
+## 8. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una relazione binaria su $A$ è un sottoinsieme di $A \times A$, e si può disegnare come un grafo direzionato.
+
+    - Una relazione di equivalenza è riflessiva, simmetrica e transitiva; le sue classi formano una partizione.
+
+    - Una relazione d'ordine è riflessiva, antisimmetrica e transitiva; è totale se due elementi qualsiasi sono confrontabili.
+
+    - Una funzione è una relazione che associa a ogni elemento del dominio esattamente un'immagine.

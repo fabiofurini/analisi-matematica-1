@@ -10,6 +10,22 @@ title: "Funzioni continue"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Limiti di funzioni, asintoti e continuità»](https://fabiofurini.github.io/analisi-matematica-1/limiti/01-limiti-asintoti/): la definizione di continuità.
+
+    - Da questo modulo, [«Calcolo dei limiti di funzioni»](https://fabiofurini.github.io/analisi-matematica-1/limiti/02-calcolo-limiti/): l'algebra dei limiti.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - dimostrare che somme, prodotti e quozienti di funzioni continue sono continui;
+
+    - usare la continuità delle funzioni elementari;
+
+    - usare la continuità delle funzioni composte per calcolare limiti.
+
 ## 1. Teorema dell'algebra delle funzioni continue
 
 <a id="box-theoXXX-1"></a>
@@ -243,6 +259,16 @@ title: "Funzioni continue"
     Ad esempio con $a=e$ abbiamo:
 
     ![Figura 4](../img/limiti-04-funzioni-continue/fig04.svg){ .fig .ovale loading=lazy style="width:75%" }
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Somme, prodotti e quozienti (dove definiti) di funzioni continue sono continui.
+
+    - Le funzioni elementari sono continue nei loro domini.
+
+    - La composizione di funzioni continue è continua: il limite passa dentro una funzione continua.
 
 ---
 

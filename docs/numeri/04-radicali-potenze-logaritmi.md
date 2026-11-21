@@ -10,6 +10,20 @@ title: "Radicali, potenze, logaritmi e aritmetica modulare"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Campi ordinati, estremo superiore/inferiore e assioma di continuità»](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/): i numeri reali e il loro ordinamento.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare con radicali, potenze a esponente razionale e reale e logaritmi, usandone le proprietà;
+
+    - calcolare la parte intera, la mantissa e la parte intera superiore di un numero reale;
+
+    - calcolare quoziente e resto di una divisione e lavorare con le congruenze modulo $n$.
+
 ## 1. Radicali, potenze, logaritmi
 
 - In conseguenza della proprietà $R_4$ possiamo eseguire, nel campo reale, operazioni che sono solo occasionalmente possibili nel campo razionale, come l'estrazione di radice o l'elevamento a potenza.
@@ -665,6 +679,16 @@ Dato inoltre anche un numero reale non negativo  $p \in \mathbb{R},p \ge 0$, abb
 - Equivalentemente, ${a} \equiv {b} \:(\mod {n})$ se ${a}$ e ${b}$ hanno lo stesso resto se divisi per  ${n}$.
 
 - Equivalentemente, ${a} \equiv {b} \:(\mod {n})$ se e solo se  ${n}$ è un divisore di $|{b} - {a}|$.
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Potenze, radicali e logaritmi seguono le regole $a^{x+y} = a^x a^y$, $(a^x)^y = a^{xy}$, $\log_a(xy) = \log_a x + \log_a y$.
+
+    - $\lfloor x \rfloor$ è il più grande intero non maggiore di $x$; la mantissa è $x - \lfloor x \rfloor \in [0,1)$.
+
+    - Il resto $n \bmod m$ è il resto della divisione; l'aritmetica modulare calcola con i resti.
 
 ---
 

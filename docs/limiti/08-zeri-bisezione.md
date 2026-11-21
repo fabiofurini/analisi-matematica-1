@@ -10,6 +10,22 @@ title: "Teorema degli zeri e metodo della bisezione"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzioni continue»](https://fabiofurini.github.io/analisi-matematica-1/limiti/04-funzioni-continue/): le funzioni continue.
+
+    - Da questo modulo, [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): le successioni monotone.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare e usare il teorema degli zeri;
+
+    - trovare uno zero di una funzione continua con il metodo della bisezione;
+
+    - stimare l'errore del metodo della bisezione e il numero di passi che richiede.
+
 ## 1. Zeri di una funzione
 
 !!! chiave ""
@@ -486,6 +502,16 @@ title: "Teorema degli zeri e metodo della bisezione"
 <p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
 
 <div class="gi" data-grafico="bisezione"></div>
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione continua su $[a,b]$ con $f(a) f(b) < 0$ ha uno zero in $(a,b)$ (Bolzano).
+
+    - La bisezione dimezza l'intervallo a ogni passo, tenendo la metà in cui il segno cambia.
+
+    - Dopo $n$ passi l'errore è al più $(b-a)/2^n$.
 
 ---
 

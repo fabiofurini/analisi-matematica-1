@@ -10,6 +10,22 @@ title: "Funzioni esponenziali e logaritmiche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Radicali, potenze, logaritmi e aritmetica modulare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/): potenze e logaritmi.
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): le funzioni monotone.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - disegnare i grafici delle funzioni esponenziali $a^x$ per $a > 1$ e $0 < a < 1$;
+
+    - disegnare i grafici delle funzioni logaritmiche come loro inverse;
+
+    - cambiare la base di esponenziali e logaritmi.
+
 ## 1. Funzioni esponenziali
 
 <a id="box-defXX-1"></a>
@@ -112,3 +128,13 @@ title: "Funzioni esponenziali e logaritmiche"
     Funzioni logaritmiche:
 
     ![Figura 6](../img/funzioni-04-esponenziali-logaritmi/fig06.svg){ .fig .ovale loading=lazy style="width:58%" }
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $a^x$ è positiva, crescente se $a > 1$ e decrescente se $0 < a < 1$.
+
+    - $\log_a x$ è l'inversa di $a^x$ ed è definita per $x > 0$.
+
+    - Cambio di base: $c^x = d^{\lambda x}$ con $\lambda = \log_d c$, e $\log_c x = \frac{\log_d x}{\log_d c}$.

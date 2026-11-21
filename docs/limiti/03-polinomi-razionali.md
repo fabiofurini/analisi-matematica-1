@@ -10,6 +10,22 @@ title: "Limiti di polinomi e funzioni razionali"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Calcolo dei limiti di funzioni»](https://fabiofurini.github.io/analisi-matematica-1/limiti/02-calcolo-limiti/): l'algebra dei limiti.
+
+    - Da questo modulo, [«Funzioni potenza»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/03-potenza/): polinomi e potenze.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare i limiti dei polinomi a $\pm\infty$;
+
+    - calcolare i limiti delle funzioni razionali a $\pm\infty$;
+
+    - calcolare limiti di quozienti di somme di potenze con esponenti razionali.
+
 ## 1. Limiti di polinomi a $\pm \infty$
 
 - Un polinomio  di grado (massimo) $n$ si può scrivere come:
@@ -226,5 +242,15 @@ title: "Limiti di polinomi e funzioni razionali"
     $$
     \lim_{x \rr  0}  f(x) =0
     $$
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - A $\pm\infty$ un polinomio si comporta come il suo termine di grado massimo.
+
+    - Una funzione razionale a $\pm\infty$ si comporta come il quoziente dei termini di grado massimo: i gradi decidono il limite.
+
+    - La stessa idea vale con somme di potenze a esponente razionale: domina la potenza più grande.
 
 [^1]: Se un monomio di grado $i$ è mancante abbiamo $a_i=0$,  $a_0$ è il termine noto dato che $x^0=1.$

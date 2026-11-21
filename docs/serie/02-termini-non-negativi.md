@@ -10,6 +10,22 @@ title: "Serie numeriche a termini non negativi"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Serie numeriche»](https://fabiofurini.github.io/analisi-matematica-1/serie/01-serie-numeriche/): le serie numeriche.
+
+    - Da questo modulo, [«Confronti e stime asintotiche»](https://fabiofurini.github.io/analisi-matematica-1/successioni/04-stime-asintotiche/): le stime asintotiche.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - applicare i criteri del confronto e del confronto asintotico;
+
+    - applicare il criterio di condensazione e studiare la serie armonica generalizzata;
+
+    - applicare i criteri della radice e del rapporto.
+
 ## 1. Serie numeriche a termini non negativi
 
 !!! chiave ""
@@ -620,6 +636,18 @@ title: "Serie numeriche a termini non negativi"
 !!! chiave ""
 
     In sintesi, quindi, i criteri visti si applicano alle serie che hanno tutti i termini (tranne un numero finito) dello stesso segno.
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una serie a termini non negativi converge o diverge a $+\infty$.
+
+    - Confronto: una serie minore di una convergente converge; serie asintotiche hanno lo stesso carattere.
+
+    - $\sum 1/n^\alpha$ converge se e solo se $\alpha > 1$.
+
+    - Criteri della radice e del rapporto: limite $< 1$ converge, $> 1$ diverge, $= 1$ nessuna conclusione.
 
 ---
 

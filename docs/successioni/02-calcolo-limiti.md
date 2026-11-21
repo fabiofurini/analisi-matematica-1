@@ -10,6 +10,20 @@ title: "Calcolo dei limiti delle successioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): la definizione di limite di una successione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare limiti con l'algebra dei limiti, e riconoscere le forme indeterminate;
+
+    - usare i teoremi di permanenza del segno;
+
+    - calcolare limiti con il teorema del confronto.
+
 ## 1. Il calcolo dei limiti delle successioni
 
 - Le dimostrazioni dei  <strong>teoremi basilari</strong> sul calcolo  limiti  si basano sulla <strong>definizione di limite</strong>, sull'<strong>uso di disuguaglianze</strong>, e sull'uso di <strong>proprietà definitivamente vere</strong>.
@@ -844,6 +858,16 @@ title: "Calcolo dei limiti delle successioni"
         $$
         \lim_{n \rr \ip } \left( \frac{1}{n}\right)^{-\log n} = \lim_{n \rr \ip } e^{ \overbrace{-\log n}^{\rr \im} \: \overbrace{\log \frac{1}{n}}^{\rr \im} } = e^{\ip} = \ip.
         $$
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Il limite di una somma, di un prodotto o di un quoziente è la somma, il prodotto o il quoziente dei limiti, tranne nelle forme indeterminate.
+
+    - Se $a_n \to \ell > 0$, allora definitivamente $a_n > 0$ (permanenza del segno).
+
+    - Se $a_n \le b_n \le c_n$ e $a_n, c_n \to \ell$, allora $b_n \to \ell$ (teorema del confronto).
 
 ---
 

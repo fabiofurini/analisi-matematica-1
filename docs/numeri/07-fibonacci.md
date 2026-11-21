@@ -10,6 +10,20 @@ title: "Successione di Fibonacci"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): le dimostrazioni per induzione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire per ricorrenza la successione di Fibonacci e calcolarne i termini;
+
+    - definire la sezione aurea e collegarla ai numeri di Fibonacci;
+
+    - dimostrare per induzione proprietà dei numeri di Fibonacci.
+
 ## 1. Successione di Fibonacci
 
 <a id="box-fibonacci-1"></a>
@@ -154,3 +168,13 @@ $$
 - I valori di $F_i$, con $i=0,1,\dots,10$, sono:
 
     ![Figura 4](../img/numeri-07-fibonacci/fig04.svg){ .fig .ovale loading=lazy style="width:60%" }
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - La successione di Fibonacci comincia con due uni e ogni termine è la somma dei due precedenti.
+
+    - La sezione aurea $\phi = \frac{1+\sqrt5}{2}$ e la sua coniugata $\hat\phi$ sono le radici di $x^2 = x + 1$, e i numeri di Fibonacci si esprimono tramite esse.
+
+    - Le proprietà dei numeri di Fibonacci si dimostrano per induzione.

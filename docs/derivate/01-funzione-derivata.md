@@ -10,6 +10,22 @@ title: "Funzione derivata"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Limiti di funzioni, asintoti e continuità»](https://fabiofurini.github.io/analisi-matematica-1/limiti/01-limiti-asintoti/): limiti di funzioni e continuità.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere la retta per due punti e la retta tangente a un grafico;
+
+    - enunciare la definizione di derivata in un punto e di funzione derivata;
+
+    - calcolare derivate dalla definizione;
+
+    - dimostrare che una funzione derivabile è continua.
+
 ## 1. Retta passante per due punti
 
 - A partire da due punti
@@ -472,6 +488,16 @@ title: "Funzione derivata"
     $$
 
     ovvero se una funzione è discontinua in $x_0$ non può essere derivabile in $x_0$.
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $f'(x_0) = \lim_{h \to 0} \frac{f(x_0+h) - f(x_0)}{h}$, limite delle pendenze delle secanti.
+
+    - La retta tangente in $x_0$ è $y = f(x_0) + f'(x_0)(x - x_0)$.
+
+    - Derivabile implica continua; il contrario è falso (per esempio $|x|$ in $0$).
 
 ---
 

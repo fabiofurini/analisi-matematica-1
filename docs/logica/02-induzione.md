@@ -10,6 +10,22 @@ title: "Principio di induzione"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Basi di logica e tecniche di dimostrazione»](https://fabiofurini.github.io/analisi-matematica-1/logica/01-logica/): implicazioni universali e dimostrazioni.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare il principio di induzione;
+
+    - scrivere una dimostrazione per induzione, con passo base e passo induttivo;
+
+    - dimostrare la disuguaglianza di Bernoulli, le sommatorie notevoli e la somma di una progressione geometrica;
+
+    - dimostrare la disuguaglianza fra media aritmetica e media geometrica e proprietà della successione di Fibonacci.
+
 ## 1. Il principio di induzione
 
 - Presentiamo ora un metodo dimostrativo, detto dimostrazione per induzione. Questo procedimento si può applicare a teoremi con la struttura seguente:
@@ -513,6 +529,16 @@ title: "Principio di induzione"
     <p class="qed-riga"><span class="qed">□</span></p>
 
 - La successione di Fibonacci è studiata più in dettaglio nel capitolo «[Successione di Fibonacci](https://fabiofurini.github.io/analisi-matematica-1/numeri/07-fibonacci/)» della Parte 2.
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Se vale $P(n_0)$ e $P(n) \Rightarrow P(n+1)$ per ogni $n \ge n_0$, allora $P(n)$ vale per ogni $n \ge n_0$.
+
+    - Una dimostrazione per induzione ha due passi: il passo base e il passo induttivo, che usa l'ipotesi induttiva.
+
+    - L'induzione dimostra la disuguaglianza di Bernoulli $(1+x)^n \ge 1 + nx$, le forme chiuse delle sommatorie e la disuguaglianza fra media aritmetica e geometrica.
 
 ---
 

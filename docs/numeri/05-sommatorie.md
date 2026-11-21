@@ -10,6 +10,22 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): le dimostrazioni per induzione.
+
+    - Da questo modulo, [«Radicali, potenze, logaritmi e aritmetica modulare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/): le potenze.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - usare il simbolo di sommatoria e le sue proprietà;
+
+    - calcolare la somma di una progressione geometrica;
+
+    - calcolare la somma di una progressione aritmetica.
+
 ## 1. Sommatorie
 
 <a id="box-defSOMM-1"></a>
@@ -694,6 +710,16 @@ title: "Sommatorie, progressioni geometriche e aritmetiche"
         $$
         \sum_{k=1}^4 \left( 1 - \frac{1}{2} \: (k-1) \right) = 1 \cdot 4 - \frac{1}{2} \: \left( \frac{4 \cdot 3}{2} \right) = 4 - 3 = 1
         $$
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Il simbolo $\sum_{k=m}^n a_k$ somma i termini da $k=m$ a $k=n$; è lineare e il suo indice si può traslare.
+
+    - Progressione geometrica: $\sum_{k=0}^{n} q^k = \frac{1-q^{n+1}}{1-q}$ per $q \ne 1$.
+
+    - Progressione aritmetica: la somma è il numero dei termini per la media del primo e dell'ultimo termine.
 
 ---
 

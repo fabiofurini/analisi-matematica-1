@@ -10,6 +10,20 @@ title: "Confronti e stime asintotiche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Calcolo dei limiti delle successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/02-calcolo-limiti/): l'algebra dei limiti e il teorema del confronto.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - confrontare due successioni infinitesime o infinite;
+
+    - riconoscere successioni asintotiche, $a_n \sim b_n$;
+
+    - calcolare limiti sostituendo le successioni con altre asintotiche più semplici.
+
 ## 1. Confronti e stime asintotiche
 
 - Abbiamo visto che una successione che tende a $0$ è un <strong>infinitesimo</strong>; una successione che diverge (a $\ip$, a $\im$) si dice <strong>infinito</strong>.
@@ -317,6 +331,16 @@ title: "Confronti e stime asintotiche"
     3. <em>Transitiva</em>:  se $a_n \thicksim b_n$  e $b_n \thicksim c_n$ allora $a_n \thicksim c_n$
 
     fa sì che “<strong>asintotico</strong>” sia una <strong>relazione di equivalenza</strong>.
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $a_n \sim b_n$ quando $a_n / b_n \to 1$.
+
+    - Nei prodotti e nei quozienti una successione si può sostituire con una asintotica senza cambiare il limite.
+
+    - Nelle somme la sostituzione in generale non è lecita.
 
 ---
 

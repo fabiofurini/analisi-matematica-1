@@ -10,6 +10,22 @@ title: "Basi di logica e tecniche di dimostrazione"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    Nessuno: è il primo capitolo della collana.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - usare i simboli logici, i connettivi e i quantificatori;
+
+    - dimostrare un'implicazione universale, e confutarla con un controesempio;
+
+    - usare la legge della contronominale e riconoscere condizioni sufficienti e necessarie;
+
+    - scrivere una dimostrazione per assurdo, e tradurre le operazioni logiche in operazioni sugli insiemi.
+
 ## 1. Simboli logici
 
 !!! chiave ""
@@ -732,3 +748,15 @@ Esiste una relazione tra operazioni sugli insiemi e operazioni logiche. Precisam
     $$
     \neg \big({\blue{q(x)} \vee \orange{r(x)}} \big)= \neg {\blue{q(x)}} \wedge \neg {\orange{r(x)}}
     $$
+
+## 7. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Un'implicazione universale si dimostra per ogni elemento; per confutarla basta un controesempio.
+
+    - $P \Rightarrow Q$ equivale a $\neg Q \Rightarrow \neg P$ (contronominale): $P$ è condizione sufficiente per $Q$, e $Q$ condizione necessaria per $P$.
+
+    - Una dimostrazione per assurdo suppone la negazione della tesi e arriva a una contraddizione.
+
+    - Congiunzione, disgiunzione e negazione corrispondono a intersezione, unione e complementare di insiemi.

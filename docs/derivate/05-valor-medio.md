@@ -10,6 +10,24 @@ title: "Teorema del valore medio, massimi e minimi"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Regole di calcolo delle derivate»](https://fabiofurini.github.io/analisi-matematica-1/derivate/04-regole-calcolo/): le regole di calcolo delle derivate.
+
+    - Da questo modulo, [«Teorema di Weierstrass e teorema dei valori intermedi»](https://fabiofurini.github.io/analisi-matematica-1/limiti/09-weierstrass/): il teorema di Weierstrass.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire massimi e minimi locali e globali;
+
+    - usare il teorema di Fermat per trovare i punti stazionari;
+
+    - enunciare il teorema del valore medio (di Lagrange) e il test di monotonia;
+
+    - trovare i massimi e i minimi di una funzione su un intervallo.
+
 ## 1. Massimi/minimi locali e globali
 
 - Uno degli usi  del calcolo differenziale consiste nella <strong>ricerca dei massimi e minimi</strong>, ovvero nell'<strong>ottimizzazione</strong> di una funzione definita su un intervallo $I$ (chiuso/aperto, limitato/illimitato).
@@ -535,6 +553,18 @@ title: "Teorema del valore medio, massimi e minimi"
     ![Figura 11](../img/derivate-05-valor-medio/fig11.svg){ .fig .ovale loading=lazy style="width:70%" }
 
 - Attenzione a non usare indiscriminatamente il passaggio dal discreto al continuo. Ad esempio non si può effettuare il passaggio per le successioni $\frac{n!}{2^n}$ o $\frac{n^2+(-1)^n \; n}{n^3+1}$ in quanto sono definite soltanto per i numeri naturali.
+
+## 6. In sintesi
+
+!!! chiave "In sintesi"
+
+    - In un estremo locale interno di una funzione derivabile $f'(x_0) = 0$ (Fermat).
+
+    - Teorema del valore medio: $f(b) - f(a) = f'(c)(b - a)$ per qualche $c \in (a,b)$.
+
+    - $f' \ge 0$ su un intervallo vuol dire crescente, $f' \le 0$ decrescente.
+
+    - Gli estremi su $[a,b]$ stanno fra punti stazionari, punti di non derivabilità ed estremi dell'intervallo.
 
 ---
 

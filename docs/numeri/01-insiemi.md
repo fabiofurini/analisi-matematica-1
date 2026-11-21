@@ -10,6 +10,22 @@ title: "Insiemi"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Basi di logica e tecniche di dimostrazione»](https://fabiofurini.github.io/analisi-matematica-1/logica/01-logica/): simboli logici e legame fra logica e insiemi.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - descrivere insiemi per elencazione e per proprietà, e riconoscere gli insiemi numerici;
+
+    - decidere inclusione e uguaglianza fra insiemi, e calcolare insiemi delle parti e cardinalità;
+
+    - calcolare intersezioni, unioni, differenze e complementari, e riconoscere le partizioni;
+
+    - lavorare con coppie ordinate e prodotti cartesiani.
+
 ## 1. Introduzione informale alla teoria degli insiemi
 
 - La teoria degli insiemi si basa sui seguenti tre concetti chiave:
@@ -1682,3 +1698,13 @@ Chiamiamo questo insieme $S$,  si possono fare due ipotesi:
     $$
 
     <p class="qed-riga"><span class="qed">□</span></p>
+
+## 6. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Due insiemi sono uguali quando ciascuno è sottoinsieme dell'altro; l'insieme vuoto è sottoinsieme di ogni insieme.
+
+    - Un insieme finito con $n$ elementi ha $2^n$ sottoinsiemi, che formano il suo insieme delle parti.
+
+    - Intersezione, unione, differenza e complementare seguono le leggi dei connettivi logici; una partizione divide un insieme in parti disgiunte non vuote.

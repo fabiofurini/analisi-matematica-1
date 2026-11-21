@@ -10,6 +10,22 @@ title: "Funzioni monotone su un intervallo e invertibilità"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema di Weierstrass e teorema dei valori intermedi»](https://fabiofurini.github.io/analisi-matematica-1/limiti/09-weierstrass/): il teorema dei valori intermedi.
+
+    - Da questo modulo, [«Funzioni inverse»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/10-inverse/): le funzioni inverse.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare i limiti destro e sinistro di una funzione monotona su un intervallo;
+
+    - dimostrare che una funzione continua e strettamente monotona su un intervallo è invertibile;
+
+    - dedurre la continuità delle funzioni inverse.
+
 ## 1. Funzioni monotone su un intervallo
 
 - Ci occupiamo ora di funzioni monotone su un intervallo (e <strong>non necessariamente continue</strong>) e il prossimo teorema  (basato sull'assioma di continuità di $\R$) si può vedere come una estensione alle funzioni del teorema di monotonia per le successioni.
@@ -245,3 +261,13 @@ title: "Funzioni monotone su un intervallo e invertibilità"
     1. la continuità della funzione $a^x$ implica la continuità della funzione $\log_a x.$
 
     2. la continuità delle funzioni $\sin x$, $\cos x$ e $\tan x$ implica la continuità delle funzioni $\arcsin x$, $\arccos x$ e $\arctan x.$
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione monotona su un intervallo ha limiti destro e sinistro in ogni punto (teorema di monotonia).
+
+    - Una funzione strettamente monotona è invertibile, e la sua inversa è strettamente monotona.
+
+    - L'inversa di una funzione continua e strettamente monotona su un intervallo è continua.

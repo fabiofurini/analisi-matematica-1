@@ -10,6 +10,26 @@ title: "Regole di calcolo delle derivate"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Derivate di funzioni elementari»](https://fabiofurini.github.io/analisi-matematica-1/derivate/02-derivate-elementari/): le derivate delle funzioni elementari.
+
+    - Da questo modulo, [«Funzioni composte»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/09-composte/): le funzioni composte.
+
+    - Da questo modulo, [«Funzioni inverse»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/10-inverse/): le funzioni inverse.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare derivate di somme, prodotti e quozienti;
+
+    - calcolare derivate di funzioni composte con la regola della catena;
+
+    - calcolare la derivata di una funzione inversa;
+
+    - calcolare derivate logaritmiche ed elasticità.
+
 ## 1. Regole di calcolo delle derivate
 
 - Vediamo ora la relazione tra l'operazione di derivata e le principali operazioni già note sulle funzioni; in particolare mostreremo la relazione tra:
@@ -957,6 +977,18 @@ title: "Regole di calcolo delle derivate"
     $$
     E(x)=x \cdot \frac{\alpha\; x^{\alpha-1}}{x^\alpha}=\alpha \qquad {\rm ~~(elasticità~ costante)}
     $$
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $(fg)' = f'g + fg'$ e $(f/g)' = (f'g - fg')/g^2$.
+
+    - Regola della catena: $(g \circ f)'(x) = g'(f(x))\, f'(x)$.
+
+    - $(f^{-1})'(y) = 1/f'(x)$ con $y = f(x)$, quando $f'(x) \ne 0$.
+
+    - La derivata logaritmica è $f'/f$; l'elasticità è $x f'(x)/f(x)$.
 
 ---
 

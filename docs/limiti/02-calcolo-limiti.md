@@ -10,6 +10,24 @@ title: "Calcolo dei limiti di funzioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Limiti di funzioni, asintoti e continuità»](https://fabiofurini.github.io/analisi-matematica-1/limiti/01-limiti-asintoti/): la definizione di limite di una funzione.
+
+    - Da questo modulo, [«Calcolo dei limiti delle successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/02-calcolo-limiti/): i teoremi sui limiti di successioni.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare limiti con l'algebra dei limiti;
+
+    - usare i teoremi di permanenza del segno e del confronto;
+
+    - usare l'aritmetizzazione parziale di $\pm\infty$;
+
+    - calcolare limiti con un cambio di variabile.
+
 ## 1. Il calcolo dei limiti di funzioni
 
 - Enunciamo i teoremi sui limiti di funzioni che discendono immediatamente dai corrispondenti teoremi sui limiti di successioni e dalla definizione successionale di limite
@@ -574,6 +592,16 @@ title: "Calcolo dei limiti di funzioni"
         $$
 
     ![Figura 4](../img/limiti-02-calcolo-limiti/fig04.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - I teoremi sui limiti di successioni passano alle funzioni: algebra dei limiti, permanenza del segno, confronto.
+
+    - Valgono regole come $\ell + \infty = \infty$ e $\ell / \infty = 0$; le forme indeterminate richiedono altri strumenti.
+
+    - Un cambio di variabile riconduce un limite a uno noto.
 
 ---
 

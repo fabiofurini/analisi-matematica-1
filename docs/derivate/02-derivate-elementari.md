@@ -10,6 +10,22 @@ title: "Derivate di funzioni elementari"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzione derivata»](https://fabiofurini.github.io/analisi-matematica-1/derivate/01-funzione-derivata/): la definizione di derivata.
+
+    - Da questo modulo, [«Limiti notevoli e stime asintotiche»](https://fabiofurini.github.io/analisi-matematica-1/limiti/06-limiti-notevoli/): i limiti notevoli.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare le derivate delle funzioni potenza;
+
+    - calcolare le derivate di seno e coseno;
+
+    - calcolare le derivate di $e^x$ e di $\ln x$.
+
 ## 1. Funzioni derivate di funzioni elementari
 
 - Deriveremo nel seguito le funzioni derivate di alcune delle principali funzioni elementari.
@@ -311,6 +327,16 @@ title: "Derivate di funzioni elementari"
     $$
 
     ![Figura 2](../img/derivate-02-derivate-elementari/fig02.svg){ .fig .ovale loading=lazy style="width:82%" }
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $(x^\alpha)' = \alpha x^{\alpha - 1}$.
+
+    - $(\sin x)' = \cos x$ e $(\cos x)' = -\sin x$, dai limiti notevoli.
+
+    - $(e^x)' = e^x$ e $(\ln x)' = 1/x$.
 
 ---
 

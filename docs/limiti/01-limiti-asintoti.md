@@ -10,6 +10,24 @@ title: "Limiti di funzioni, asintoti e continuità"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): i limiti di successioni.
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): le funzioni reali e i loro grafici.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare la definizione di limite di una funzione, con le successioni e con gli intorni;
+
+    - calcolare limiti finiti e infiniti all'infinito e in un punto, e trovare gli asintoti;
+
+    - enunciare la definizione di continuità in un punto;
+
+    - dimostrare che un limite non esiste.
+
 ## 1. Definizione successionale di limite
 
 L'operazione di limite si può estendere dalle successioni alle funzioni reali di variabile reale.  
@@ -874,6 +892,18 @@ che si legge: il limite di $f(x)$, per $x$ che tende a $c$, è  $\ell$.
     La funzione ha infinite oscillazioni in uno spazio finito perciò non è possibile  disegnarne il grafico in un intervallo $(0, b]$ con $b\in \R_+$.
 
     ![Figura 10](../img/limiti-01-limiti-asintoti/fig10.svg){ .fig .ovale loading=lazy style="width:80%" }
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $\lim_{x \to x_0} f(x) = \ell$ se $f(x_n) \to \ell$ per ogni successione $x_n \to x_0$ con $x_n \ne x_0$; equivalentemente, con gli intorni.
+
+    - Asintoti orizzontali e verticali nascono da limiti finiti all'infinito e da limiti infiniti in un punto.
+
+    - $f$ è continua in $x_0$ se $\lim_{x \to x_0} f(x) = f(x_0)$.
+
+    - Due successioni che danno limiti diversi provano che il limite non esiste.
 
 ---
 

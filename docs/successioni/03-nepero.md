@@ -10,6 +10,22 @@ title: "Il numero di Nepero"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): le successioni monotone.
+
+    - Da questo modulo, [«Fattoriali, coefficienti binomiali e disuguaglianza triangolare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/06-fattoriali-binomiali/): la formula del binomio di Newton.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - dimostrare che $(1 + 1/n)^n$ è crescente e limitata, e definire $e$ come suo limite;
+
+    - calcolare limiti legati a $e$;
+
+    - usare $e$ nei problemi di interesse composto.
+
 ## 1. Il numero $e$ di Nepero
 
 <a id="box-theoNEPERO-1"></a>
@@ -370,6 +386,16 @@ title: "Il numero di Nepero"
         $$
         \lim_{n \rr \ip } \left( 1 + \frac{1}{n}\right)^n= e
         $$
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $(1 + 1/n)^n$ è crescente e limitata, quindi converge: il suo limite è $e \approx 2{,}718$.
+
+    - $e$ è la base dell'esponenziale e del logaritmo naturali.
+
+    - Gli interessi pagati $n$ volte all'anno al tasso $t$ danno il fattore $(1 + t/n)^n$, che tende a $e^t$.
 
 ---
 

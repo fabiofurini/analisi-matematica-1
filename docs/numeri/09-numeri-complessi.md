@@ -10,6 +10,24 @@ title: "Numeri complessi"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Insiemi numerici e intervalli»](https://fabiofurini.github.io/analisi-matematica-1/numeri/02-insiemi-numerici/): gli insiemi numerici.
+
+    - Da questo modulo, [«Radicali, potenze, logaritmi e aritmetica modulare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/): potenze e radicali.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare con i numeri complessi in forma algebrica: somma, prodotto, coniugato, modulo, quoziente;
+
+    - passare alla forma trigonometrica e moltiplicare e dividere in essa;
+
+    - calcolare le radici $n$-esime di un numero complesso;
+
+    - risolvere equazioni di secondo grado in $\C$ ed enunciare il teorema fondamentale dell'algebra.
+
 ## 1. Definizione di $\C$ e struttura di campo
 
 - Abbiamo indicato con $\R^2$ (abbreviazione di $\R \times \R$) l'insieme delle coppie ordinate $(a, b)$ di numeri reali.
@@ -907,6 +925,16 @@ title: "Numeri complessi"
 <strong>Coseni e seni dei principali angoli</strong>
 
 ![Figura 9](../img/numeri-09-numeri-complessi/fig09.svg){ .fig .ovale loading=lazy style="width:69%" }
+
+## 5. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $\C$ è un campo; ogni numero complesso è $a + ib$ con $i^2 = -1$, e $z\bar z = |z|^2$.
+
+    - In forma trigonometrica i moduli si moltiplicano e gli argomenti si sommano.
+
+    - Un numero complesso non nullo ha esattamente $n$ radici $n$-esime distinte; ogni polinomio di grado $n \ge 1$ ha $n$ radici complesse (teorema fondamentale dell'algebra).
 
 ---
 

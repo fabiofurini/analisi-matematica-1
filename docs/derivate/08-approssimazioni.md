@@ -10,6 +10,24 @@ title: "Calcolo differenziale e approssimazioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Derivata seconda»](https://fabiofurini.github.io/analisi-matematica-1/derivate/07-derivata-seconda/): le derivate di ordine $n$.
+
+    - Da questo modulo, [«Sviluppi asintotici»](https://fabiofurini.github.io/analisi-matematica-1/limiti/07-sviluppi-asintotici/): il simbolo di o piccolo.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - scrivere il differenziale e lo sviluppo al primo ordine di una funzione;
+
+    - scrivere polinomi di Taylor e di MacLaurin;
+
+    - usare la formula di Taylor con resto di Peano per calcolare limiti;
+
+    - stimare errori con il resto di Lagrange.
+
 ## 1. Sviluppi asintotici al primo ordine
 
 - Un'operazione molto frequente sia in matematica che nelle sue applicazioni è quella di approssimazione lineare di una data funzione derivabile (operazione anche chiamata sviluppo asintotico al primo ordine).
@@ -1064,6 +1082,16 @@ f(x)   = f(0) + f'(0)\; x + o(x) {\rm ~~~per~~~} x \rr 0
     !!! chiave ""
 
         Abbiamo dunque dimostrato che se una funzione (due volte derivabile) è concava,  è anche “concava per tangenti”
+
+## 5. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $f(x_0 + h) = f(x_0) + f'(x_0) h + o(h)$: il differenziale è la migliore approssimazione lineare.
+
+    - Il polinomio di Taylor di ordine $n$ ha le stesse derivate di $f$ in $x_0$ fino all'ordine $n$.
+
+    - Resto di Peano: l'errore è $o((x - x_0)^n)$; resto di Lagrange: vale $\frac{f^{(n+1)}(c)}{(n+1)!}(x - x_0)^{n+1}$.
 
 ---
 

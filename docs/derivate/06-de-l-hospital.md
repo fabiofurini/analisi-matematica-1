@@ -10,6 +10,22 @@ title: "Teorema di De l'Hospital e derivabilità"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema del valore medio, massimi e minimi»](https://fabiofurini.github.io/analisi-matematica-1/derivate/05-valor-medio/): il teorema del valore medio.
+
+    - Da questo modulo, [«Calcolo dei limiti di funzioni»](https://fabiofurini.github.io/analisi-matematica-1/limiti/02-calcolo-limiti/): le forme indeterminate.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare limiti di forme indeterminate $0/0$ e $\infty/\infty$ con il teorema di De l'Hospital;
+
+    - verificare le ipotesi del teorema;
+
+    - usare il limite della derivata per decidere la derivabilità in un punto.
+
 ## 1. Teorema di De l'Hospital
 
 - Una notevole applicazione del calcolo differenziale si ha nel calcolo dei limiti che si presentano nelle forme di indecisione:
@@ -421,6 +437,16 @@ title: "Teorema di De l'Hospital e derivabilità"
     $$
 
     ![Figura 4](../img/derivate-06-de-l-hospital/fig04.svg){ .fig .ovale loading=lazy style="width:55%" }
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - De l'Hospital: nelle forme $0/0$ e $\infty/\infty$, se $f'/g'$ ha limite, $f/g$ ha lo stesso limite.
+
+    - Se $f'/g'$ non ha limite, non si può dire nulla su $f/g$.
+
+    - Se $f$ è continua in $x_0$ e $f'(x) \to \ell$ per $x \to x_0$, allora $f'(x_0) = \ell$.
 
 ---
 

@@ -10,6 +10,22 @@ title: "Serie numeriche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): limiti di successioni e progressioni geometriche.
+
+    - Da questo modulo, [«Sommatorie, progressioni geometriche e aritmetiche»](https://fabiofurini.github.io/analisi-matematica-1/numeri/05-sommatorie/): sommatorie e progressioni geometriche.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire una serie come limite delle sue somme parziali;
+
+    - usare le proprietà delle serie e delle loro code;
+
+    - studiare le serie armonica, geometrica, aritmetica e telescopica.
+
 ## 1. Serie numeriche
 
 - Introduciamo ora le serie numeriche, che estendono l'operazione di somma a un numero infinito di addendi.
@@ -687,6 +703,16 @@ title: "Serie numeriche"
     \end{align*}
 
     Quindi è una serie telescopica convergente e la somma $s$ vale $\frac{1}{15}$.
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - La somma di una serie è il limite delle sue somme parziali: converge, diverge o è irregolare.
+
+    - Se la serie converge, i suoi termini tendono a $0$; il contrario è falso (serie armonica).
+
+    - $\sum q^n$ converge a $\frac{1}{1-q}$ per $|q| < 1$; le serie telescopiche si sommano direttamente.
 
 ---
 

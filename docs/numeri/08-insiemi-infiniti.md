@@ -10,6 +10,22 @@ title: "Cardinalità degli insiemi infiniti"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Insiemi»](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/): la cardinalità degli insiemi finiti.
+
+    - Da questo modulo, [«Campi ordinati, estremo superiore/inferiore e assioma di continuità»](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/): i numeri reali.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire quando due insiemi hanno la stessa cardinalità, tramite una biiezione;
+
+    - dimostrare che $\Z$ e $\Q$ sono numerabili;
+
+    - dimostrare che $\R$ non è numerabile e ha la cardinalità del continuo.
+
 ## 1. Potenza del numerabile
 
 !!! chiave ""
@@ -328,3 +344,13 @@ title: "Cardinalità degli insiemi infiniti"
 - Abbiamo incontrato fin qui solo due livelli gerarchici di infinito: la potenza del numerabile e quella del continuo. Non si deve credere che esistano solo queste due! Ad esempio, l'insieme di tutti i sottoinsiemi di $\R$ è ancora più numeroso di $\R$; e con questo procedimento si può sempre costruire un insieme più numeroso di un insieme dato.
 
 - Perciò i livelli gerarchici delle cardinalità infinite sono anch'essi infiniti.
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Due insiemi hanno la stessa cardinalità se esiste una biiezione fra di essi; un insieme è numerabile se ha la cardinalità di $\N$.
+
+    - $\Z$ e $\Q$ sono numerabili, anche se sembrano più grandi di $\N$.
+
+    - $\R$ non è numerabile (argomento diagonale): ha la cardinalità del continuo.

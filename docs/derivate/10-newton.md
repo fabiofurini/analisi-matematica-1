@@ -10,6 +10,22 @@ title: "Metodo di Newton"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzione derivata»](https://fabiofurini.github.io/analisi-matematica-1/derivate/01-funzione-derivata/): la retta tangente.
+
+    - Da questo modulo, [«Teorema degli zeri e metodo della bisezione»](https://fabiofurini.github.io/analisi-matematica-1/limiti/08-zeri-bisezione/): il metodo della bisezione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - descrivere geometricamente il metodo di Newton con le rette tangenti;
+
+    - calcolarne le iterazioni;
+
+    - stimarne l'errore e confrontarlo con il metodo della bisezione.
+
 ## 1. Metodo di Newton
 
 - Supponiamo di voler risolvere l'equazione
@@ -410,6 +426,16 @@ title: "Metodo di Newton"
     <td>0.01314…</td>
     </tr>
     </table></div>
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Metodo di Newton: $x_{n+1} = x_n - f(x_n)/f'(x_n)$, lo zero della retta tangente in $x_n$.
+
+    - Sotto ipotesi opportune l'errore a ogni passo circa si eleva al quadrato.
+
+    - È molto più veloce della bisezione, ma richiede un buon punto di partenza.
 
 ---
 

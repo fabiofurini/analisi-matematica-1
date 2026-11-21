@@ -10,6 +10,24 @@ title: "Successioni e limiti di successioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Campi ordinati, estremo superiore/inferiore e assioma di continuità»](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/): estremo superiore, estremo inferiore e assioma di continuità.
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): funzioni limitate e monotone.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire una successione e le proprietà che valgono definitivamente;
+
+    - enunciare la definizione di successione convergente e di limite, e dimostrare l'unicità del limite;
+
+    - riconoscere successioni divergenti e irregolari, infinitesime e infinite;
+
+    - usare i limiti delle successioni monotone e delle progressioni geometriche.
+
 ## 1. Definizione di successione e proprietà
 
 - Consideriamo l'insieme $\mathbb{N}$ degli interi non negativi ordinato secondo l'ordine naturale
@@ -1210,6 +1228,18 @@ Riassumendo abbiamo:
 !!! esempio "Esempio 24: Progressione geometrica né convergente né divergente"
 
     ![Figura 19](../img/successioni-01-limiti-successioni/fig19.svg){ .fig loading=lazy style="width:75%" }
+
+## 6. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $a_n \to \ell$ se per ogni $\varepsilon > 0$ definitivamente $|a_n - \ell| < \varepsilon$; il limite è unico.
+
+    - Una successione converge, diverge a $\pm\infty$ oppure è irregolare.
+
+    - Una successione monotona ha sempre limite, il suo estremo superiore o inferiore.
+
+    - $q^n \to 0$ per $|q| < 1$, $q^n \to +\infty$ per $q > 1$, e $q^n$ è irregolare per $q \le -1$.
 
 ---
 

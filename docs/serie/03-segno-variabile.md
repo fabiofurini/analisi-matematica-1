@@ -10,6 +10,20 @@ title: "Serie numeriche a termini di segno variabile"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Serie numeriche a termini non negativi»](https://fabiofurini.github.io/analisi-matematica-1/serie/02-termini-non-negativi/): i criteri per le serie a termini non negativi.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire la convergenza assoluta e dimostrare che implica la convergenza;
+
+    - applicare il criterio di Leibniz alle serie a segni alterni;
+
+    - stimare l'errore di una somma parziale di una serie a segni alterni.
+
 ## 1. Serie a termini di segno variabile
 
 <a id="box-defXX-1"></a>
@@ -389,6 +403,16 @@ title: "Serie numeriche a termini di segno variabile"
 <p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
 
 <div class="gi" data-grafico="seriep" data-funzione="alt"></div>
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una serie assolutamente convergente converge.
+
+    - Leibniz: se $a_n$ decresce a $0$, $\sum (-1)^n a_n$ converge.
+
+    - L'errore della somma parziale è al più il primo termine trascurato.
 
 ---
 

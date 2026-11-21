@@ -10,6 +10,22 @@ title: "Serie di funzioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Serie numeriche a termini di segno variabile»](https://fabiofurini.github.io/analisi-matematica-1/serie/03-segno-variabile/): la convergenza assoluta.
+
+    - Da questo modulo, [«Calcolo differenziale e approssimazioni»](https://fabiofurini.github.io/analisi-matematica-1/derivate/08-approssimazioni/): la formula di Taylor.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire una serie di funzioni e il suo insieme di convergenza;
+
+    - scrivere le serie di Taylor delle funzioni trascendenti elementari;
+
+    - decidere su quale intervallo una funzione è sviluppabile in serie di Taylor.
+
 ## 1. Serie di funzioni
 
 - Le <strong>serie di funzioni</strong> sono serie numeriche dipendenti da un parametro $x$: quando queste serie convergono per ogni valore $x$ appartenente a un certo intervallo, rappresentano delle <strong>funzioni di nuovo tipo</strong>
@@ -250,3 +266,13 @@ title: "Serie di funzioni"
     <span class="qed">□</span>
 
 ## 2. Serie nel campo complesso
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una serie di funzioni converge nei punti in cui converge la serie numerica.
+
+    - La serie di Taylor di $f$ in $x_0$ ha i coefficienti $f^{(k)}(x_0)/k!$ dei polinomi di Taylor.
+
+    - Una funzione è sviluppabile in serie di Taylor su un intervallo quando lì la serie converge a $f(x)$, come per le funzioni trascendenti elementari.

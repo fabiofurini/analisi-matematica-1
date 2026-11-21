@@ -10,6 +10,20 @@ title: "Sviluppi asintotici"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Limiti notevoli e stime asintotiche»](https://fabiofurini.github.io/analisi-matematica-1/limiti/06-limiti-notevoli/): limiti notevoli e stime asintotiche.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare la definizione del simbolo di o piccolo e calcolare con esso;
+
+    - scrivere sviluppi asintotici ricavati dai limiti notevoli;
+
+    - calcolare limiti con gli sviluppi asintotici, anche nelle somme.
+
 ## 1. Simbolo di "$o$ piccolo" e sviluppi asintotici
 
 <a id="box-defXX-1"></a>
@@ -357,6 +371,16 @@ Vediamo ora come ottenere gli <strong>sviluppi asintotici</strong> a partire dai
           e^{\varepsilon(x)} &= 1 + \varepsilon(x) + o\big(\varepsilon(x)\big)  \\[2ex]
           \big(1+\varepsilon(x)\big)^\alpha &= 1 + \alpha \; \varepsilon(x) + o\big(\varepsilon(x)\big)  {\rm ~~~~~~~~con~~~} \alpha \in \R
     \end{align}
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $f = o(g)$ per $x \to x_0$ quando $f/g \to 0$; $o(1)$ è un infinitesimo.
+
+    - Dai limiti notevoli: $\sin x = x + o(x)$, $e^x = 1 + x + o(x)$, $\ln(1+x) = x + o(x)$.
+
+    - A differenza delle stime asintotiche, gli sviluppi con $o$ si possono sommare.
 
 ---
 

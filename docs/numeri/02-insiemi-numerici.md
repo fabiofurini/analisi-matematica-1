@@ -10,6 +10,20 @@ title: "Insiemi numerici e intervalli"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Insiemi»](https://fabiofurini.github.io/analisi-matematica-1/numeri/01-insiemi/): insiemi, sottoinsiemi e operazioni sugli insiemi.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - descrivere i cinque principali insiemi numerici $\N \subset \Z \subset \Q \subset \R \subset \C$;
+
+    - scrivere intervalli limitati e illimitati con la loro notazione;
+
+    - rappresentare gli intervalli sulla retta reale.
+
 ## 1. I cinque principali insiemi numerici
 
 ### 1.1 I numeri naturali
@@ -201,3 +215,13 @@ $\C$ è l'insieme dei <strong>numeri complessi</strong>, ossia del tipo $a + i\:
     ![Figura 6](../img/numeri-02-insiemi-numerici/fig06.svg){ .fig .ovale loading=lazy style="width:25%" }
 
     illustra gli insiemi $A \times B$ , $B \times A$ , $A \times A$ indicato anche con $A^2$. In generale,  $A \times B$  è diverso da $B \times A$.
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - I principali insiemi numerici sono $\N \subset \Z \subset \Q \subset \R \subset \C$; ognuno estende il precedente.
+
+    - Un intervallo limitato ha due estremi finiti, che possono appartenergli o no ($[a,b]$, $(a,b)$, $[a,b)$, $(a,b]$).
+
+    - Un intervallo illimitato ha $-\infty$ o $+\infty$ come estremo, che non gli appartiene mai.

@@ -10,6 +10,22 @@ title: "Derivata seconda"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema del valore medio, massimi e minimi»](https://fabiofurini.github.io/analisi-matematica-1/derivate/05-valor-medio/): il test di monotonia.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare derivate seconde e derivate di ordine $n$;
+
+    - definire insiemi convessi e funzioni convesse e concave;
+
+    - decidere la convessità dalla derivata seconda e dalle rette tangenti;
+
+    - trovare i punti di flesso.
+
 ## 1. Derivata seconda e funzione derivata seconda
 
 - Possiamo ora chiederci  se la funzione $f' (x)$ sia a sua volta derivabile (in un punto o in un  intervallo).
@@ -645,6 +661,18 @@ title: "Derivata seconda"
 <p class="gi-invito"><strong>Prova tu</strong> — il grafico interattivo qui sotto ti fa vedere quello che hai appena letto: muovi i cursori.</p>
 
 <div class="gi" data-grafico="concavita"></div>
+
+## 6. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione è convessa quando il suo epigrafico è un insieme convesso.
+
+    - $f'' \ge 0$ su un intervallo vuol dire convessa, $f'' \le 0$ concava.
+
+    - Una funzione convessa derivabile sta sopra le sue rette tangenti.
+
+    - In un punto di flesso la funzione cambia concavità.
 
 ---
 

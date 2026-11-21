@@ -10,6 +10,20 @@ title: "Funzioni composte"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Le funzioni»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/01-funzioni/): funzioni, dominio e immagine.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare la definizione di funzione composta e calcolare $g \circ f$;
+
+    - trovare il dominio di una funzione composta;
+
+    - scrivere una funzione data come composizione di funzioni più semplici.
+
 ## 1. Funzioni composte
 
 <a id="box-defXX-1"></a>
@@ -125,3 +139,13 @@ title: "Funzioni composte"
     $$
 
     $f^2$ viene detta <strong>iterata seconda</strong> di $f$. Analogamente, $f^n$ si dice <strong>funzione iterata $n$-esima</strong> di $f$.
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $(g \circ f)(x) = g(f(x))$: prima $f$, poi $g$.
+
+    - Il dominio di $g \circ f$ è l'insieme degli $x$ del dominio di $f$ con $f(x)$ nel dominio di $g$.
+
+    - In generale $g \circ f \ne f \circ g$.

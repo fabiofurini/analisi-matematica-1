@@ -10,6 +10,22 @@ title: "Fattoriali, coefficienti binomiali e disuguaglianza triangolare"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Sommatorie, progressioni geometriche e aritmetiche»](https://fabiofurini.github.io/analisi-matematica-1/numeri/05-sommatorie/): le sommatorie.
+
+    - Da questo modulo, [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): le dimostrazioni per induzione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare fattoriali e coefficienti binomiali, e usare la formula del binomio di Newton;
+
+    - calcolare valori assoluti e usare la disuguaglianza triangolare;
+
+    - calcolare la norma euclidea di un vettore.
+
 ## 1. Fattoriali
 
 <a id="box-notationA-1"></a>
@@ -502,6 +518,16 @@ La potenza $n$-esima di un binomio $(a + b)$ si può calcolare con la seguente f
     \end{aligned}
     \label{ass_7}
     \end{equation}
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $n! = 1 \cdot 2 \cdots n$ con $0! = 1$; $\binom{n}{k} = \frac{n!}{k!\,(n-k)!}$ dà i coefficienti della formula del binomio di Newton.
+
+    - La disuguaglianza triangolare $|a+b| \le |a| + |b|$ vale per i numeri reali e, con la norma euclidea, per i vettori.
+
+    - La norma euclidea di ${\boldsymbol x} \in \R^n$ è $\sqrt{x_1^2 + \dots + x_n^2}$.
 
 ---
 

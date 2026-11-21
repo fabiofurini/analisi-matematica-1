@@ -10,6 +10,22 @@ title: "Funzioni reali di variabile reale"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Le funzioni»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/01-funzioni/): funzioni, dominio e immagine.
+
+    - Da questo modulo, [«Insiemi numerici e intervalli»](https://fabiofurini.github.io/analisi-matematica-1/numeri/02-insiemi-numerici/): gli intervalli.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - trovare il dominio naturale di una funzione reale e studiarne il segno;
+
+    - decidere se una funzione è limitata, pari o dispari;
+
+    - riconoscere le funzioni monotone e periodiche.
+
 ## 1. Funzione reale di variabile reale
 
 <a id="box-defImmagine-1"></a>
@@ -358,6 +374,16 @@ title: "Funzioni reali di variabile reale"
     $$
     y = k \qquad k \in \mathbb{R}
     $$
+
+## 7. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione reale di variabile reale ha dominio e codominio in $\R$, e si disegna con il suo grafico.
+
+    - Le funzioni pari hanno grafico simmetrico rispetto all'asse $y$, le dispari rispetto all'origine.
+
+    - Le funzioni monotone conservano o invertono l'ordine; le funzioni periodiche ripetono i loro valori con periodo $T$.
 
 ---
 

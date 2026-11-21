@@ -10,6 +10,20 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzione derivata»](https://fabiofurini.github.io/analisi-matematica-1/derivate/01-funzione-derivata/): la derivata e la retta tangente.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - calcolare derivate destra e sinistra;
+
+    - riconoscere punti angolosi e cuspidi;
+
+    - riconoscere punti a tangente verticale e orizzontale.
+
 ## 1. Derivata destra e derivata sinistra
 
 <a id="box-defXX-1"></a>
@@ -343,6 +357,16 @@ title: "Punti angolosi, cuspidi, punti a tangente verticale/orizzontale"
     $$
 
     e la funzione ha un punto a tangente orizzontale (da destra)  in $x_0=0$.
+
+## 5. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione è derivabile in $x_0$ quando le derivate destra e sinistra esistono, sono finite e uguali.
+
+    - Punto angoloso: derivate laterali diverse, almeno una finita; cuspide: derivate laterali infinite di segno opposto.
+
+    - Tangente verticale: derivate laterali entrambe $+\infty$ o entrambe $-\infty$; tangente orizzontale: $f'(x_0) = 0$.
 
 ---
 

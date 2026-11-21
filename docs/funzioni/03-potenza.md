@@ -10,6 +10,22 @@ title: "Funzioni potenza"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): dominio, segno, simmetrie e monotonia delle funzioni reali.
+
+    - Da questo modulo, [«Radicali, potenze, logaritmi e aritmetica modulare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/): potenze a esponente razionale e reale.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - disegnare i grafici delle funzioni potenza con esponente naturale, intero, razionale e reale;
+
+    - riconoscere i polinomi e il loro grado;
+
+    - riconoscere le funzioni di proporzionalità diretta e inversa.
+
 ## 1. Funzioni potenza
 
 <a id="box-defXX-1"></a>
@@ -275,3 +291,13 @@ title: "Funzioni potenza"
 ![Figura 22](../img/funzioni-03-potenza/fig22.svg){ .fig .ovale loading=lazy style="width:61%" }
 
 ![Figura 23](../img/funzioni-03-potenza/fig23.svg){ .fig .ovale loading=lazy style="width:61%" }
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Il grafico di $x^\alpha$ dipende dall'esponente: potenze naturali pari o dispari, potenze negative, radici, esponenti reali.
+
+    - Un polinomio è una somma di funzioni potenza con esponenti naturali; il suo grado è l'esponente più grande.
+
+    - La proporzionalità diretta è $y = kx$, quella inversa è $y = k/x$.

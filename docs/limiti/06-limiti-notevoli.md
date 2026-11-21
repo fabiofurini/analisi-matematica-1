@@ -10,6 +10,22 @@ title: "Limiti notevoli e stime asintotiche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzioni continue»](https://fabiofurini.github.io/analisi-matematica-1/limiti/04-funzioni-continue/): le funzioni continue.
+
+    - Da questo modulo, [«Funzioni trigonometriche»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/05-trigonometriche/): le funzioni trigonometriche.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - usare i limiti notevoli di $\sin x / x$, $(1 - \cos x)/x^2$, $(e^x - 1)/x$, $\ln(1+x)/x$;
+
+    - prolungare una funzione per continuità;
+
+    - scrivere stime asintotiche e usarle per calcolare limiti e disegnare grafici.
+
 ## 1. Limiti notevoli
 
 - Vediamo ora alcune comuni tecniche di calcolo dei limiti che  combinano i teoremi generali sui limiti con l'uso di alcuni limiti notevoli di certe funzioni elementari.
@@ -621,6 +637,16 @@ title: "Limiti notevoli e stime asintotiche"
     $$
 
     ![Figura 15](../img/limiti-06-limiti-notevoli/fig15.svg){ .fig .ovale loading=lazy style="width:85%" }
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $\frac{\sin x}{x} \to 1$, $\frac{1 - \cos x}{x^2} \to \frac12$, $\frac{e^x - 1}{x} \to 1$, $\frac{\ln(1+x)}{x} \to 1$ per $x \to 0$.
+
+    - Quindi, per $x \to 0$: $\sin x \sim x$, $1 - \cos x \sim x^2/2$, $e^x - 1 \sim x$, $\ln(1+x) \sim x$.
+
+    - Funzioni asintotiche si possono sostituire nei prodotti e nei quozienti.
 
 ---
 

@@ -10,6 +10,20 @@ title: "Funzioni iperboliche"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzioni esponenziali e logaritmiche»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/04-esponenziali-logaritmi/): la funzione esponenziale $e^x$.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire il seno e il coseno iperbolici tramite $e^x$ e disegnarne i grafici;
+
+    - definire la tangente iperbolica;
+
+    - usare le principali formule iperboliche, a partire da $\cosh^2 x - \sinh^2 x = 1$.
+
 ## 1. Funzioni iperboliche
 
 <a id="box-defXX-1"></a>
@@ -101,3 +115,13 @@ title: "Funzioni iperboliche"
     \sinH ( 2 \: x)  &= 2 \: \sinH x \: \cosH x\\[2ex]
     \cosH ( 2 \: x)  &= \cosH^2 x + \sinH^2 x
     \end{align}
+
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $\sinh x = \frac{e^x - e^{-x}}{2}$ è dispari, $\cosh x = \frac{e^x + e^{-x}}{2}$ è pari e vale almeno $1$.
+
+    - $\cosh^2 x - \sinh^2 x = 1$: il punto $(\cosh t, \sinh t)$ percorre un'iperbole.
+
+    - Le formule iperboliche somigliano a quelle trigonometriche, con qualche cambio di segno.

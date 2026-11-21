@@ -10,6 +10,22 @@ title: "Confronto degli infiniti"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Gerarchie degli infiniti e criterio del rapporto»](https://fabiofurini.github.io/analisi-matematica-1/successioni/05-gerarchie-infiniti/): la gerarchia degli infiniti per le successioni.
+
+    - Da questo modulo, [«Calcolo dei limiti di funzioni»](https://fabiofurini.github.io/analisi-matematica-1/limiti/02-calcolo-limiti/): i limiti di funzioni.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - confrontare logaritmi, potenze ed esponenziali per $x \to +\infty$;
+
+    - confrontare gli infiniti per $x \to 0^+$;
+
+    - calcolare limiti di forme indeterminate con il confronto degli infiniti.
+
 ## 1. Confronto degli infiniti per funzioni
 
 <a id="box-theoXXX-1"></a>
@@ -246,3 +262,13 @@ title: "Confronto degli infiniti"
     dato che abbiamo $\alpha=2, \lambda=1$ e $b=e>1$.
 
     ![Figura 8](../img/limiti-05-confronto-infiniti/fig08.svg){ .fig .ovale loading=lazy style="width:70%" }
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Per $x \to +\infty$: $\log_b x \ll x^\alpha \ll a^x$ (con $\alpha > 0$, $a > 1$).
+
+    - Per $x \to 0^+$: $|\log x| \ll x^{-\alpha}$, quindi $x^\alpha \log x \to 0$.
+
+    - In una somma l'infinito dominante decide il limite.

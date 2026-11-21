@@ -10,6 +10,22 @@ title: "Funzioni parte intera e mantissa"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Radicali, potenze, logaritmi e aritmetica modulare»](https://fabiofurini.github.io/analisi-matematica-1/numeri/04-radicali-potenze-logaritmi/): parte intera e mantissa di un numero.
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): le funzioni reali e i loro grafici.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - disegnare i grafici delle funzioni parte intera e mantissa;
+
+    - lavorare con le funzioni definite a tratti;
+
+    - disegnare la funzione valore assoluto e funzioni definite con essa.
+
 ## 1. Funzioni parte intera e mantissa
 
 - Due funzioni che tipicamente si incontrano nella scrittura di <em>algoritmi</em> sono la funzione parte intera e la funzione mantissa (o parte decimale).
@@ -154,3 +170,13 @@ title: "Funzioni parte intera e mantissa"
 - Il grafico è formato dalle due semirette $y=-x$ per $x \le 0$ e $y=x$ per $x \ge 0$:
 
 ![Figura 5](../img/funzioni-06-parte-intera/fig05.svg){ .fig .ovale loading=lazy style="width:48%" }
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $\lfloor x \rfloor$ è una funzione a gradini; la mantissa $x - \lfloor x \rfloor$ è periodica di periodo $1$.
+
+    - Una funzione definita a tratti usa formule diverse su intervalli diversi.
+
+    - $|x|$ vale $x$ per $x \ge 0$ e $-x$ per $x < 0$: il suo grafico è una V.

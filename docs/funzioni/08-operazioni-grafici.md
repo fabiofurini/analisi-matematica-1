@@ -10,6 +10,22 @@ title: "Operazioni sui grafici"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Funzioni reali di variabile reale»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/02-funzioni-reali/): grafici delle funzioni reali.
+
+    - Da questo modulo, [«Funzioni parte intera e mantissa»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/06-parte-intera/): la funzione valore assoluto.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - ottenere il grafico di $f(x) + a$ e di $f(x+a)$ con traslazioni;
+
+    - ottenere il grafico di $k f(x)$ e di $f(kx)$ con dilatazioni, compressioni e simmetrie;
+
+    - ottenere i grafici di $|f(x)|$ e di $f(|x|)$.
+
 ## 1. Operazioni sui grafici
 
 - Conoscendo il grafico di una funzione $y = f (x)$ mediante semplici trasformazioni geometriche è possibile disegnare il grafico delle seguenti funzioni:
@@ -173,3 +189,12 @@ title: "Operazioni sui grafici"
 
 <div class="gi" data-grafico="operazioni"></div>
 
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - $f(x) + a$ trasla il grafico verticalmente, $f(x + a)$ orizzontalmente (a sinistra per $a > 0$).
+
+    - $k f(x)$ dilata il grafico verticalmente, $f(kx)$ lo comprime orizzontalmente; un $k$ negativo lo ribalta anche.
+
+    - $|f(x)|$ ribalta sopra l'asse la parte negativa; $f(|x|)$ ripete simmetricamente a sinistra la parte destra.

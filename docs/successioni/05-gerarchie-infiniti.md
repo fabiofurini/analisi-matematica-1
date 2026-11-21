@@ -10,6 +10,20 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Confronti e stime asintotiche»](https://fabiofurini.github.io/analisi-matematica-1/successioni/04-stime-asintotiche/): i confronti fra successioni.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - ordinare gli infiniti $\log n$, $n^\alpha$, $a^n$, $n!$, $n^n$;
+
+    - applicare il criterio del rapporto alle successioni;
+
+    - calcolare limiti con la gerarchia degli infiniti.
+
 ## 1. Gerarchie degli infiniti delle successioni parte 1 e parte 2
 
 <a id="box-theoXXX-1"></a>
@@ -345,6 +359,14 @@ title: "Gerarchie degli infiniti e criterio del rapporto"
     $$
 
     Utilizzando il teorema del criterio del rapporto, si ottiene la tesi. <span class="qed">□</span>
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Gerarchia: $\log_b n \ll n^\alpha \ll a^n \ll n! \ll n^n$ (con $\alpha > 0$, $a > 1$).
+
+    - Criterio del rapporto: se $a_{n+1}/a_n \to \ell < 1$ la successione positiva tende a $0$, se $\ell > 1$ tende a $+\infty$.
 
 ---
 

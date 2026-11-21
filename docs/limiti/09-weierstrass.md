@@ -10,6 +10,22 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema degli zeri e metodo della bisezione»](https://fabiofurini.github.io/analisi-matematica-1/limiti/08-zeri-bisezione/): il teorema degli zeri.
+
+    - Da questo modulo, [«Campi ordinati, estremo superiore/inferiore e assioma di continuità»](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/): estremo superiore ed estremo inferiore.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - enunciare il teorema di Weierstrass e verificarne le ipotesi;
+
+    - enunciare e usare il teorema dei valori intermedi;
+
+    - dimostrare l'esistenza della radice $n$-esima di un numero positivo.
+
 ## 1. Teorema di Weierstrass
 
 - Il  seguente teorema stabilisce condizioni <strong>sufficienti  ma non necessarie</strong>  affinché una funzione abbia massimo e minimo.
@@ -371,3 +387,13 @@ title: "Teorema di Weierstrass e teorema dei valori intermedi"
     $$
 
     L'unicità deriva dal fatto che la funzione  è strettamente crescente. <span class="qed">□</span>
+
+## 4. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione continua su un intervallo chiuso e limitato ha massimo e minimo (Weierstrass).
+
+    - Una funzione continua su un intervallo assume ogni valore compreso fra due suoi valori.
+
+    - Quindi $x^n = c$ ha soluzione per ogni $c > 0$.

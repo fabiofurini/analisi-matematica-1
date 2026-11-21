@@ -10,6 +10,24 @@ title: "Funzioni inverse"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Le funzioni»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/01-funzioni/): funzioni iniettive e inversa di una biiezione.
+
+    - Da questo modulo, [«Funzioni trigonometriche»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/05-trigonometriche/): le funzioni trigonometriche.
+
+    - Da questo modulo, [«Funzioni iperboliche»](https://fabiofurini.github.io/analisi-matematica-1/funzioni/07-iperboliche/): le funzioni iperboliche.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - decidere se una funzione è invertibile e calcolarne l'inversa;
+
+    - disegnare il grafico dell'inversa per simmetria rispetto alla retta $y = x$;
+
+    - definire le inverse delle funzioni potenza, trigonometriche (arcoseno, arcocoseno, arcotangente) e iperboliche.
+
 ## 1. Funzioni invertibili e funzioni inverse
 
 - Data una funzione reale di variabile reale $f : D \rightarrow \mathbb{R}$,  per ogni ingresso $x$ nel dominio $D$ esiste un'unica uscita $y=f(x)$ nell'immagine del dominio $f(D)$.
@@ -710,6 +728,16 @@ Per il caso strettamente crescente, graficamente abbiamo:
         $$
 
     ![Figura 21](../img/funzioni-10-inverse/fig21.svg){ .fig .ovale loading=lazy style="width:61%" }
+
+## 2. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una funzione è invertibile su un insieme in cui è iniettiva; l'inversa soddisfa $f^{-1}(f(x)) = x$.
+
+    - Il grafico di $f^{-1}$ è il simmetrico del grafico di $f$ rispetto alla retta $y = x$.
+
+    - Arcoseno, arcocoseno e arcotangente invertono seno, coseno e tangente ristretti a intervalli in cui sono iniettivi.
 
 ---
 

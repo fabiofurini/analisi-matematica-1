@@ -10,6 +10,22 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Insiemi numerici e intervalli»](https://fabiofurini.github.io/analisi-matematica-1/numeri/02-insiemi-numerici/): gli insiemi numerici e gli intervalli.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - spiegare perché $\Q$ non basta per misurare tutte le grandezze, con le grandezze incommensurabili;
+
+    - enunciare le proprietà di un campo ordinato e di una relazione d'ordine totale;
+
+    - trovare massimo, minimo, maggioranti, minoranti, estremo superiore ed estremo inferiore di un insieme;
+
+    - enunciare l'assioma di continuità e usarlo per definire i numeri reali.
+
 ## 1. Proprietà $R_1$ e $R_2$
 
 - Inizieremo ora a studiare più da vicino la <strong>struttura degli insiemi numerici</strong> che abbiamo introdotto in precedenza, ed in particolare:  l'insieme $\mathbb{Q}$ dei <strong>numeri razionali</strong> e l'insieme $\mathbb{R}$ dei <strong>numeri reali</strong>.
@@ -862,6 +878,16 @@ title: "Campi ordinati, estremo superiore/inferiore e assioma di continuità"
 !!! chiave ""
 
     Quindi l'interpretazione geometrica della proprietà $R_4$ ci mostra come l'insieme $\mathbb{R}$ sia una rappresentazione adeguata della nostra idea intuitiva di retta, così adeguata che <strong>spesso in matematica si usa l'espressione  “la retta reale” per indicare</strong> $\mathbb{R}$, confondendo l'insieme numerico con la sua rappresentazione geometrica naturale.
+
+## 11. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Esistono grandezze incommensurabili, come il lato e la diagonale di un quadrato: $\Q$ ha delle lacune.
+
+    - $\Q$ e $\R$ sono campi ordinati; $\R$ soddisfa anche l'assioma di continuità.
+
+    - L'estremo superiore è il minimo dei maggioranti; ogni insieme non vuoto di reali limitato superiormente ha estremo superiore in $\R$, che è un massimo quando appartiene all'insieme.
 
 ---
 

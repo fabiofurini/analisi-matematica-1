@@ -10,6 +10,22 @@ title: "Successioni definite per ricorrenza"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Successioni e limiti di successioni»](https://fabiofurini.github.io/analisi-matematica-1/successioni/01-limiti-successioni/): le successioni monotone e i loro limiti.
+
+    - Da questo modulo, [«Principio di induzione»](https://fabiofurini.github.io/analisi-matematica-1/logica/02-induzione/): le dimostrazioni per induzione.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire una successione per ricorrenza e calcolarne i termini;
+
+    - studiarne monotonia e limitatezza per induzione, e calcolarne il limite;
+
+    - approssimare le radici quadrate con l'algoritmo di Erone e stimarne l'errore.
+
 ## 1. Successioni definite per ricorrenza
 
 - Cominciamo con il seguente problema:
@@ -534,3 +550,12 @@ title: "Successioni definite per ricorrenza"
 
 <div class="gi" data-grafico="erone"></div>
 
+## 3. In sintesi
+
+!!! chiave "In sintesi"
+
+    - Una successione per ricorrenza dà $a_{n+1}$ in funzione di $a_n$.
+
+    - Monotona e limitata vuol dire convergente; il limite risolve l'equazione di punto fisso.
+
+    - L'algoritmo di Erone $a_{n+1} = \frac12 (a_n + c/a_n)$ converge a $\sqrt c$, e l'errore diminuisce molto in fretta.
