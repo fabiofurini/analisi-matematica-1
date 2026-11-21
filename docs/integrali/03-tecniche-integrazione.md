@@ -10,6 +10,28 @@ title: "Tecniche di integrazione e applicazioni"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema fondamentale del calcolo integrale»](https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/): primitive, formula fondamentale del calcolo integrale, primitive immediate.
+
+    - Da questo modulo, [«Regole di calcolo delle derivate»](https://fabiofurini.github.io/analisi-matematica-1/derivate/04-regole-calcolo/): derivata del prodotto e della funzione composta.
+
+    - Da questo modulo, [«Limiti di polinomi e funzioni razionali»](https://fabiofurini.github.io/analisi-matematica-1/limiti/03-polinomi-razionali/): polinomi, radici e funzioni razionali.
+
+    - Da questo modulo, [«L'integrale di Riemann»](https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/): area del trapezoide e media integrale.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - dimostrare e usare le formule di integrazione per sostituzione e per parti, per integrali indefiniti e definiti;
+
+    - integrare una funzione razionale con la divisione e la decomposizione in fratti semplici;
+
+    - calcolare l'area di una regione compresa fra due grafici;
+
+    - calcolare il valor medio di una funzione su un intervallo e interpretarlo.
+
 ## 1. Integrazione per sostituzione
 
 <a id="box-theoSostituzione-1"></a>
@@ -293,6 +315,8 @@ title: "Tecniche di integrazione e applicazioni"
     - Il valor medio di $x^2$ in $[0, 3]$ è $\displaystyle \frac13\left[\frac{x^3}{3}\right]_0^3 = 3$; come prevede il Teorema della media integrale è assunto in $c = \sqrt3 \in [0,3]$.
 
     - Se un punto si muove con velocità $v(t) = 3t^2$ (metri al secondo) per $t \in [0, 2]$, lo spazio percorso è $\int_0^2 3t^2\,dt = 8$ metri e la velocità media è $\frac{8}{2} = 4$ metri al secondo.
+
+## 6. In sintesi
 
 !!! chiave "In sintesi"
 

@@ -10,6 +10,28 @@ title: "Teorema fondamentale del calcolo integrale"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«L'integrale di Riemann»](https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/): definizione e proprietà dell'integrale, teorema della media integrale.
+
+    - Da questo modulo, [«Funzione derivata»](https://fabiofurini.github.io/analisi-matematica-1/derivate/01-funzione-derivata/), [«Derivate di funzioni elementari»](https://fabiofurini.github.io/analisi-matematica-1/derivate/02-derivate-elementari/) e [«Regole di calcolo delle derivate»](https://fabiofurini.github.io/analisi-matematica-1/derivate/04-regole-calcolo/): derivate e regola della catena.
+
+    - Da questo modulo, [«Teorema del valore medio, massimi e minimi»](https://fabiofurini.github.io/analisi-matematica-1/derivate/05-valor-medio/): una funzione con derivata nulla in un intervallo è costante.
+
+    - Da questo modulo, [«Teorema di De l'Hospital e derivabilità»](https://fabiofurini.github.io/analisi-matematica-1/derivate/06-de-l-hospital/): il teorema di De l'Hospital.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - riconoscere una primitiva e descrivere tutte le primitive di una funzione su un intervallo;
+
+    - enunciare e dimostrare le due parti del teorema fondamentale del calcolo integrale;
+
+    - calcolare integrali definiti con una primitiva e la tabella delle primitive immediate;
+
+    - derivare funzioni integrali con estremi variabili e usarle nei limiti e negli studi di funzione.
+
 ## 1. Primitive
 
 <a id="box-defPrimitiva-1"></a>
@@ -348,6 +370,8 @@ title: "Teorema fondamentale del calcolo integrale"
     - <strong>Concavità.</strong> $F''(x) = -2x\,e^{-x^2}$: $F$ è convessa in $(\im, 0]$, concava in $[0, \ip)$ e ha un flesso in $x = 0$, con tangente $y = x$.
 
     - <strong>Simmetria.</strong> La funzione $H(x) = F(x) + F(-x)$ ha derivata $H'(x) = e^{-x^2} - e^{-x^2} = 0$, quindi è costante e vale $H(0) = 0$: $F$ è dispari.
+
+## 6. In sintesi
 
 !!! chiave "In sintesi"
 

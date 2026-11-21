@@ -16,6 +16,8 @@ title: "Serie di funzioni"
 
     - Da questo modulo, [«Calcolo differenziale e approssimazioni»](https://fabiofurini.github.io/analisi-matematica-1/derivate/08-approssimazioni/): la formula di Taylor.
 
+    - Da questo modulo, [«Numeri complessi»](https://fabiofurini.github.io/analisi-matematica-1/numeri/09-numeri-complessi/): forma algebrica e modulo di un numero complesso.
+
 !!! chiave "Obiettivi"
 
     Alla fine di questo capitolo sarai in grado di:
@@ -24,7 +26,9 @@ title: "Serie di funzioni"
 
     - scrivere le serie di Taylor delle funzioni trascendenti elementari;
 
-    - decidere su quale intervallo una funzione è sviluppabile in serie di Taylor.
+    - decidere su quale intervallo una funzione è sviluppabile in serie di Taylor;
+
+    - riconoscere la convergenza di una serie a termini complessi, anche attraverso la convergenza assoluta.
 
 ## 1. Serie di funzioni
 
@@ -263,9 +267,84 @@ title: "Serie di funzioni"
 
 ??? dimostrazione "Dimostrazione"
 
-    <span class="qed">□</span>
+    Le derivate di $\sin x$ e $\cos x$ sono $\pm\sin x$ oppure $\pm\cos x$, quindi per ogni $c$:
+
+    $$
+    \left|\sin^{(2\;k+2)}(c)\right| \le 1, \qquad \left|\cos^{(2\;k+1)}(c)\right| \le 1
+    $$
+
+    Fissato $x$, gli errori di Lagrange soddisfano:
+
+    $$
+    \left|\frac{\sin^{(2\;k+2)}(c)}{(2\;k+2)!} \;x^{2\;k+2}\right| \le \frac{|x|^{2\;k+2}}{(2\;k+2)!} \rr 0,
+    \qquad \left|\frac{\cos^{(2\;k+1)}(c)}{(2\;k+1)!} \;x^{2\;k+1}\right| \le \frac{|x|^{2\;k+1}}{(2\;k+1)!} \rr 0
+    $$
+
+    per $k \rr \ip$, dal teorema della gerarchia di infiniti. Quindi le serie convergono a $\sin x$ e $\cos x$ per ogni $x \in \R$. <span class="qed">□</span>
 
 ## 2. Serie nel campo complesso
+
+- Le definizioni date per le serie numeriche valgono anche per le successioni di numeri complessi: al posto del valore assoluto si usa il <strong>modulo</strong>.
+
+<a id="box-defXX-8"></a>
+
+!!! definizione "Definizione 3: di serie a termini complessi"
+
+    Data una successione $\{z_k\}$ di numeri complessi, la serie $\sum_{k=0}^{\infty} z_k$ è <strong>convergente</strong> se la successione delle somme parziali $s_n = \sum_{k=0}^{n} z_k$ ha limite $s \in \C$, cioè se $|s_n - s| \rr 0$ per $n \rr \ip$; il numero $s$ è la <strong>somma</strong> della serie. La serie è <strong>assolutamente convergente</strong> se converge la serie a termini reali non negativi $\sum_{k=0}^{\infty} |z_k|$.
+
+- Scriviamo $z_k = a_k + i\,b_k$ con $a_k, b_k \in \R$. Per ogni $w \in \C$ vale $\max\{|{\rm Re}\,w|, |{\rm Im}\,w|\} \le |w| \le |{\rm Re}\,w| + |{\rm Im}\,w|$, quindi:
+
+    $$
+    \sum_{k=0}^{\infty} z_k {\rm ~~converge} \iff \sum_{k=0}^{\infty} a_k {\rm ~~e~~} \sum_{k=0}^{\infty} b_k
+    {\rm ~~convergono}
+    $$
+
+    e in tal caso $\sum_{k=0}^{\infty} z_k = \sum_{k=0}^{\infty} a_k + i \sum_{k=0}^{\infty} b_k$.
+
+- Come nel caso reale, se la serie converge allora $z_k = s_k - s_{k-1} \rr 0$.
+
+<a id="box-theoZERI-9"></a>
+
+!!! teorema "Teorema 1"
+
+    Se una serie $\sum z_k$ di numeri complessi converge assolutamente allora converge.
+
+??? dimostrazione "Dimostrazione"
+
+    Sia $z_k = a_k + i\,b_k$. Poiché $|z_k| = \sqrt{a_k^2 + b_k^2}$, per ogni $k$ abbiamo:
+
+    $$
+    |a_k| \le |z_k| {\rm ~~~~~e~~~~~} |b_k| \le |z_k|
+    $$
+
+    Per il criterio del confronto tra serie a termini non negativi, dalla convergenza di $\sum |z_k|$ segue quella di $\sum |a_k|$ e di $\sum |b_k|$. Le due serie reali $\sum a_k$ e $\sum b_k$ convergono quindi assolutamente, e perciò convergono. Per l'osservazione precedente converge anche $\sum z_k$. <span class="qed">□</span>
+
+<a id="box-texexpbox1-10"></a>
+
+!!! esempio "Esempio 3: serie geometrica complessa"
+
+    Sia $z \in \C$ con $z \neq 1$. Le somme parziali della serie geometrica sono:
+
+    $$
+    s_n = \sum_{k=0}^{n} z^k = \frac{1 - z^{n+1}}{1 - z}
+    $$
+
+    - Se $|z| < 1$, allora $|z^{n+1}| = |z|^{n+1} \rr 0$ e quindi
+
+        $$
+        \sum_{k=0}^{\infty} z^k = \frac{1}{1-z}
+        $$
+
+        La convergenza è anche assoluta, perché $\sum |z|^k$ è una serie geometrica reale di ragione $|z| < 1$.
+
+    - Se $|z| \ge 1$, allora $|z^k| = |z|^k \ge 1$: il termine generale non tende a $0$ e la serie non converge.
+
+    Per esempio, con $z = \frac{i}{2}$:
+
+    $$
+    \sum_{k=0}^{\infty} \left(\frac{i}{2}\right)^k = \frac{1}{1 - \frac{i}{2}} = \frac{1 + \frac{i}{2}}{1 + \frac14}
+    = \frac45 + \frac25\, i
+    $$
 
 ## 3. In sintesi
 
@@ -276,3 +355,5 @@ title: "Serie di funzioni"
     - La serie di Taylor di $f$ in $x_0$ ha i coefficienti $f^{(k)}(x_0)/k!$ dei polinomi di Taylor.
 
     - Una funzione è sviluppabile in serie di Taylor su un intervallo quando lì la serie converge a $f(x)$, come per le funzioni trascendenti elementari.
+
+    - Una serie di numeri complessi converge se e solo se convergono le serie delle parti reali e immaginarie; la convergenza assoluta implica la convergenza, e $\sum z^k = 1/(1-z)$ per $|z| < 1$.

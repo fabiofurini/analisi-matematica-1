@@ -12,11 +12,11 @@ title: "L'integrale di Riemann"
 
 !!! nota "Prerequisiti"
 
-    - Dal capitolo [«Campi ordinati, estremo superiore/inferiore e assioma di continuità»](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/): estremo superiore e inferiore di un insieme e loro esistenza in $\R$.
+    - Da questo modulo, [«Campi ordinati, estremo superiore/inferiore e assioma di continuità»](https://fabiofurini.github.io/analisi-matematica-1/numeri/03-campi-ordinati/): estremo superiore e inferiore di un insieme e loro esistenza in $\R$.
 
-    - Dal capitolo [«Sommatorie, progressioni geometriche e aritmetiche»](https://fabiofurini.github.io/analisi-matematica-1/numeri/05-sommatorie/): il simbolo di sommatoria e la somma dei primi $n$ numeri naturali.
+    - Da questo modulo, [«Sommatorie, progressioni geometriche e aritmetiche»](https://fabiofurini.github.io/analisi-matematica-1/numeri/05-sommatorie/): il simbolo di sommatoria e la somma dei primi $n$ numeri naturali.
 
-    - Dai capitoli [«Funzioni continue»](https://fabiofurini.github.io/analisi-matematica-1/limiti/04-funzioni-continue/) e [«Teorema di Weierstrass e teorema dei valori intermedi»](https://fabiofurini.github.io/analisi-matematica-1/limiti/09-weierstrass/): continuità, massimo e minimo su un intervallo chiuso e limitato, valori intermedi.
+    - Da questo modulo, [«Funzioni continue»](https://fabiofurini.github.io/analisi-matematica-1/limiti/04-funzioni-continue/) e [«Teorema di Weierstrass e teorema dei valori intermedi»](https://fabiofurini.github.io/analisi-matematica-1/limiti/09-weierstrass/): continuità, massimo e minimo su un intervallo chiuso e limitato, valori intermedi.
 
 !!! chiave "Obiettivi"
 
@@ -609,6 +609,8 @@ title: "L'integrale di Riemann"
 !!! osservazione "Osservazione 2"
 
     L'ipotesi di continuità non si può togliere. La funzione $f(x) = 0$ per $x \in [0,1)$ e $f(x) = 1$ per $x \in [1,2]$ è integrabile (è monotona) e, per l'additività e l'Osservazione sulle modifiche in un numero finito di punti, ha media integrale $\frac12 \int_0^2 f(x)\,dx = \frac12$, un valore che $f$ non assume.
+
+## 6. In sintesi
 
 !!! chiave "In sintesi"
 

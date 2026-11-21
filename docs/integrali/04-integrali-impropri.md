@@ -10,6 +10,28 @@ title: "Integrali impropri"
 
 </div>
 
+!!! nota "Prerequisiti"
+
+    - Da questo modulo, [«Teorema fondamentale del calcolo integrale»](https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/) e [«Tecniche di integrazione e applicazioni»](https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/): calcolo di integrali definiti con le primitive.
+
+    - Da questo modulo, [«Limiti notevoli e stime asintotiche»](https://fabiofurini.github.io/analisi-matematica-1/limiti/06-limiti-notevoli/) e [«Funzioni monotone su un intervallo e invertibilità»](https://fabiofurini.github.io/analisi-matematica-1/limiti/10-monotone-invertibili/): equivalenze asintotiche e limiti delle funzioni monotone.
+
+    - Da questo modulo, [«Serie numeriche a termini non negativi»](https://fabiofurini.github.io/analisi-matematica-1/serie/02-termini-non-negativi/): criteri del confronto e serie armonica generalizzata.
+
+!!! chiave "Obiettivi"
+
+    Alla fine di questo capitolo sarai in grado di:
+
+    - definire l'integrale improprio su un intervallo illimitato e di una funzione illimitata, e calcolarlo con il limite;
+
+    - stabilire il carattere degli integrali notevoli $\int_1^{\ip} \frac{dx}{x^p}$ e $\int_0^1 \frac{dx}{x^p}$;
+
+    - enunciare, dimostrare e usare i criteri del confronto, del confronto asintotico e della convergenza assoluta;
+
+    - usare il criterio integrale per studiare una serie a termini positivi.
+
+- L'integrale di Riemann è definito per funzioni limitate su intervalli chiusi e limitati. In questo capitolo lo estendiamo con un limite a intervalli illimitati e a funzioni illimitate.
+
 ## 1. Integrali su intervalli illimitati
 
 <a id="box-defImproprioIllimitato-1"></a>
@@ -311,6 +333,8 @@ title: "Integrali impropri"
     $$
 
     Le somme parziali della serie armonica crescono come $\log n$: per superare $10$ servono più di $8000$ termini, perché $1 + \log n < 10$ finché $n < e^9 \approx 8103$.
+
+## 5. In sintesi
 
 !!! chiave "In sintesi"
 
