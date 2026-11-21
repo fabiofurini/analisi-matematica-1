@@ -75,3 +75,10 @@
 2. [Serie numeriche a termini non negativi](serie/02-termini-non-negativi.md)
 3. [Serie numeriche a termini di segno variabile](serie/03-segno-variabile.md)
 4. [Serie di funzioni](serie/04-serie-funzioni.md)
+
+## [Integrali](integrali/index.md)
+
+1. [L'integrale di Riemann](integrali/01-integrale-riemann.md)
+2. [Teorema fondamentale del calcolo integrale](integrali/02-teorema-fondamentale.md)
+3. [Tecniche di integrazione e applicazioni](integrali/03-tecniche-integrazione.md)
+4. [Integrali impropri](integrali/04-integrali-impropri.md)

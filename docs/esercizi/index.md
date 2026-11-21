@@ -71,5 +71,9 @@ Fogli di esercizi con le **soluzioni svolte**, divisi come le parti delle dispen
 
     - [Primitive](es-integrali-01-primitive.md) · 6 esercizi
     - [Integrali](es-integrali-02-integrali.md) · 20 esercizi
+    - [Integrale di Riemann e proprietà](es-integrali-03-integrale-riemann.md) · 7 esercizi
+    - [Funzioni integrali e teorema fondamentale](es-integrali-04-funzioni-integrali.md) · 7 esercizi
+    - [Integrali definiti, aree e valor medio](es-integrali-05-integrali-definiti-aree.md) · 7 esercizi
+    - [Integrali impropri](es-integrali-06-integrali-impropri.md) · 7 esercizi
 
 </div>

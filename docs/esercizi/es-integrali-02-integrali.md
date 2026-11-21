@@ -6,7 +6,7 @@ title: "Integrali"
 
 <div class="info-capitolo" markdown>
 
-**Esercizi · Parte 7 · Integrali** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 6 (PDF)](../pdf/esercizi-6-serie.pdf)
+**Esercizi · Parte 7 · Integrali** · con le soluzioni svolte · [:material-pencil-box-multiple: Esercizi, volume 7 (PDF)](../pdf/esercizi-7-integrali.pdf) · [:material-book-open-variant: Capitolo 3: Tecniche di integrazione e applicazioni](../integrali/03-tecniche-integrazione.md) · [:material-book-open-variant: Capitolo 4: Integrali impropri](../integrali/04-integrali-impropri.md)
 
 </div>
 

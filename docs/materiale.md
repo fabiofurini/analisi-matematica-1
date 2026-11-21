@@ -58,6 +58,14 @@ Le dispense e gli eserciziari in PDF, un volume per ogni parte del corso, aggior
 
     [:octicons-download-24: dispensa-6-serie.pdf](pdf/dispensa-6-serie.pdf)
 
+-   :material-book-open-variant: **Volume 7 · Integrali**
+
+    ---
+
+    Il settimo volume: il calcolo integrale. L'integrale di Riemann con somme inferiori e superiori, le classi di funzioni integrabili, le proprietà dell'integrale e il teorema della media; primitive e teorema fondamentale del calcolo integrale; integrazione per sostituzione, per parti e delle funzioni razionali, aree e valor medio; integrali impropri, criteri di convergenza e criterio integrale per le serie. Definizioni, teoremi con dimostrazione, figure ed esempi svolti; gli esercizi della parte, con le soluzioni, sono nel volume Esercizi 7.
+
+    [:octicons-download-24: dispensa-7-integrali.pdf](pdf/dispensa-7-integrali.pdf)
+
 </div>
 
 ## Esercizi
@@ -104,13 +112,21 @@ Le dispense e gli eserciziari in PDF, un volume per ogni parte del corso, aggior
 
     [:octicons-download-24: esercizi-5-derivate.pdf](pdf/esercizi-5-derivate.pdf)
 
--   :material-pencil-box-multiple: **Esercizi, volume 6 · Serie e integrali**
+-   :material-pencil-box-multiple: **Esercizi, volume 6 · Serie**
 
     ---
 
-    Gli esercizi svolti sulle serie numeriche e, nella seconda parte, su primitive e integrali, una scheda per capitolo, con la soluzione subito dopo ogni testo. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+    Gli esercizi svolti sulle serie numeriche, con la soluzione subito dopo ogni testo: carattere di una serie, criteri di convergenza, serie a termini di segno variabile. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
 
     [:octicons-download-24: esercizi-6-serie.pdf](pdf/esercizi-6-serie.pdf)
+
+-   :material-pencil-box-multiple: **Esercizi, volume 7 · Integrali**
+
+    ---
+
+    Gli esercizi svolti sul calcolo integrale, con la soluzione subito dopo ogni testo: primitive, integrali definiti e impropri, somme di Riemann e proprietà dell'integrale, funzioni integrali e teorema fondamentale, integrali definiti e aree, convergenza degli integrali impropri. Le schede sono di Fabio Furini e Gianluca Priori; molti esercizi sono tratti da M. Bramanti, *Esercitazioni di Analisi matematica 1*, Esculapio.
+
+    [:octicons-download-24: esercizi-7-integrali.pdf](pdf/esercizi-7-integrali.pdf)
 
 </div>
 
@@ -193,6 +209,13 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 2 · [Serie numeriche a termini non negativi](pdf/slide-serie-02-termini-non-negativi.pdf)
 - Capitolo 3 · [Serie numeriche a termini di segno variabile](pdf/slide-serie-03-segno-variabile.pdf)
 - Capitolo 4 · [Serie di funzioni](pdf/slide-serie-04-serie-funzioni.pdf)
+
+### Integrali
+
+- Capitolo 1 · [L'integrale di Riemann](pdf/slide-integrali-01-integrale-riemann.pdf)
+- Capitolo 2 · [Teorema fondamentale del calcolo integrale](pdf/slide-integrali-02-teorema-fondamentale.pdf)
+- Capitolo 3 · [Tecniche di integrazione e applicazioni](pdf/slide-integrali-03-tecniche-integrazione.pdf)
+- Capitolo 4 · [Integrali impropri](pdf/slide-integrali-04-integrali-impropri.pdf)
 
 <!-- banca-domande -->
 ## Banca delle domande del quiz

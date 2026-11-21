@@ -5,7 +5,7 @@ hide:
 title: "Somme di Riemann"
 ---
 
-[← Laboratorio](index.md) · Esercizi: [Primitive](../esercizi/es-integrali-01-primitive.md) · [Integrali](../esercizi/es-integrali-02-integrali.md)
+[← Laboratorio](index.md) · Capitolo: [L'integrale di Riemann](../integrali/01-integrale-riemann.md)
 
 # Somme di Riemann
 

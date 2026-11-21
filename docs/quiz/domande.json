@@ -33000,6 +33000,3036 @@
     ],
     "spiegazione": "Adding $e^{i\\vartheta}$ and $e^{-i\\vartheta} = \\cos\\vartheta - i\\sin\\vartheta$ gives $2\\cos\\vartheta$. The last option gives $\\sin\\vartheta$, the second $\\cosH\\vartheta$."
    }
+  },
+  {
+   "id": "am1-f-1101",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defSomme-2",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defSomme-2"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Sia $f(x) = x^2$ in $[0,2]$ e $P = \\{0, 1, 2\\}$. Quanto vale la somma superiore $S(f,P)$?",
+    "opzioni": [
+     "$1$",
+     "$5$",
+     "$4$",
+     "$\\frac{8}{3}$"
+    ],
+    "spiegazione": "$f$ è crescente: i massimi sono $f(1) = 1$ e $f(2) = 4$, con ampiezze $1$: $S = 1 + 4 = 5$. La somma inferiore vale $0 + 1 = 1$; $\\frac83$ è l'integrale."
+   },
+   "en": {
+    "testo": "Let $f(x) = x^2$ on $[0,2]$ and $P = \\{0, 1, 2\\}$. What is the upper sum $S(f,P)$?",
+    "opzioni": [
+     "$1$",
+     "$5$",
+     "$4$",
+     "$\\frac{8}{3}$"
+    ],
+    "spiegazione": "$f$ is increasing: the maxima are $f(1) = 1$ and $f(2) = 4$, with widths $1$: $S = 1 + 4 = 5$. The lower sum is $0 + 1 = 1$; $\\frac83$ is the integral."
+   }
+  },
+  {
+   "id": "am1-f-1102",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defSomme-2",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defSomme-2"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Per una funzione limitata $f$ e una partizione $P$ di $[a,b]$, quale relazione vale sempre fra somma inferiore $s(f,P)$ e somma superiore $S(f,P)$?",
+    "opzioni": [
+     "$s(f,P) = S(f,P)$",
+     "$s(f,P) \\ge S(f,P)$",
+     "$s(f,P) \\le S(f,P)$",
+     "$s(f,P) < 0 < S(f,P)$"
+    ],
+    "spiegazione": "In ogni intervallo $m_k = \\inf f \\le \\sup f = M_k$, quindi $\\sum m_k \\Delta x_k \\le \\sum M_k \\Delta x_k$. L'uguaglianza vale per esempio per le costanti."
+   },
+   "en": {
+    "testo": "For a bounded function $f$ and a partition $P$ of $[a,b]$, which relation always holds between the lower sum $s(f,P)$ and the upper sum $S(f,P)$?",
+    "opzioni": [
+     "$s(f,P) = S(f,P)$",
+     "$s(f,P) \\ge S(f,P)$",
+     "$s(f,P) \\le S(f,P)$",
+     "$s(f,P) < 0 < S(f,P)$"
+    ],
+    "spiegazione": "On every interval $m_k = \\inf f \\le \\sup f = M_k$, hence $\\sum m_k \\Delta x_k \\le \\sum M_k \\Delta x_k$. Equality holds for instance for constants."
+   }
+  },
+  {
+   "id": "am1-f-1103",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#1-partizioni-e-somme-di-riemann",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#1-partitions-and-riemann-sums"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Una partizione $P'$ di $[a,b]$ è più fine di $P$ (cioè $P \\subseteq P'$). Che cosa si può dire delle somme di una funzione limitata $f$?",
+    "opzioni": [
+     "$s(f,P) \\le s(f,P')$ e $S(f,P') \\le S(f,P)$",
+     "$s(f,P') \\le s(f,P)$ e $S(f,P) \\le S(f,P')$",
+     "$s(f,P') = s(f,P)$ e $S(f,P') = S(f,P)$",
+     "$S(f,P') \\le s(f,P) \\le S(f,P)$"
+    ],
+    "spiegazione": "Aggiungendo punti, l'estremo inferiore su un sottointervallo non diminuisce e quello superiore non aumenta: la somma inferiore cresce, quella superiore cala."
+   },
+   "en": {
+    "testo": "A partition $P'$ of $[a,b]$ is finer than $P$ (that is, $P \\subseteq P'$). What can be said about the sums of a bounded function $f$?",
+    "opzioni": [
+     "$s(f,P) \\le s(f,P')$ and $S(f,P') \\le S(f,P)$",
+     "$s(f,P') \\le s(f,P)$ and $S(f,P) \\le S(f,P')$",
+     "$s(f,P') = s(f,P)$ and $S(f,P') = S(f,P)$",
+     "$S(f,P') \\le s(f,P) \\le S(f,P)$"
+    ],
+    "spiegazione": "Adding points, the infimum on a subinterval does not decrease and the supremum does not increase: the lower sum increases, the upper sum decreases."
+   }
+  },
+  {
+   "id": "am1-f-1104",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-corSommeConfronto-5",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-corSommeConfronto-5"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Sia $f$ limitata in $[a,b]$ e siano $P_1$, $P_2$ due partizioni qualsiasi. Quale disuguaglianza è sempre vera?",
+    "opzioni": [
+     "$s(f,P_1) \\le s(f,P_2)$",
+     "$S(f,P_1) \\le S(f,P_2)$",
+     "$S(f,P_1) \\le s(f,P_2)$",
+     "$s(f,P_1) \\le S(f,P_2)$"
+    ],
+    "spiegazione": "La partizione $P_1 \\cup P_2$ raffina entrambe: $s(f,P_1) \\le s(f,P_1 \\cup P_2) \\le S(f,P_1 \\cup P_2) \\le S(f,P_2)$. Le altre dipendono dalle partizioni."
+   },
+   "en": {
+    "testo": "Let $f$ be bounded on $[a,b]$ and let $P_1$, $P_2$ be any two partitions. Which inequality always holds?",
+    "opzioni": [
+     "$s(f,P_1) \\le s(f,P_2)$",
+     "$S(f,P_1) \\le S(f,P_2)$",
+     "$S(f,P_1) \\le s(f,P_2)$",
+     "$s(f,P_1) \\le S(f,P_2)$"
+    ],
+    "spiegazione": "The partition $P_1 \\cup P_2$ refines both: $s(f,P_1) \\le s(f,P_1 \\cup P_2) \\le S(f,P_1 \\cup P_2) \\le S(f,P_2)$. The others depend on the partitions."
+   }
+  },
+  {
+   "id": "am1-f-1105",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defIntegrale-6",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defIntegrale-6"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Secondo la definizione di Riemann, quando una funzione limitata $f$ è integrabile in $[a,b]$?",
+    "opzioni": [
+     "quando esiste una partizione con $s(f,P) = S(f,P)$",
+     "quando $\\sup_P s(f,P) = \\inf_P S(f,P)$",
+     "quando $f$ è continua in $[a,b]$",
+     "quando $f(x) \\ge 0$ per ogni $x$"
+    ],
+    "spiegazione": "L'integrale è il valore comune dell'estremo superiore delle somme inferiori e dell'estremo inferiore delle superiori. La continuità è sufficiente, non è la definizione."
+   },
+   "en": {
+    "testo": "According to Riemann's definition, when is a bounded function $f$ integrable on $[a,b]$?",
+    "opzioni": [
+     "when some partition gives $s(f,P) = S(f,P)$",
+     "when $\\sup_P s(f,P) = \\inf_P S(f,P)$",
+     "when $f$ is continuous on $[a,b]$",
+     "when $f(x) \\ge 0$ for every $x$"
+    ],
+    "spiegazione": "The integral is the common value of the supremum of the lower sums and the infimum of the upper sums. Continuity is sufficient, it is not the definition."
+   }
+  },
+  {
+   "id": "am1-f-1106",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#21-interpretazione-geometrica",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#21-geometric-interpretation"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Sia $f(x) = x - 1$ in $[0,3]$. Quanto vale $\\int_0^3 (x-1)\\,dx$, usando l'interpretazione come area con segno?",
+    "opzioni": [
+     "$\\frac52$",
+     "$2$",
+     "$\\frac32$",
+     "$\\frac12$"
+    ],
+    "spiegazione": "Sotto l'asse il triangolo in $[0,1]$ ha area $\\frac12$, sopra quello in $[1,3]$ ha area $2$: $2 - \\frac12 = \\frac32$. $\\frac52$ è l'area senza segno."
+   },
+   "en": {
+    "testo": "Let $f(x) = x - 1$ on $[0,3]$. What is $\\int_0^3 (x-1)\\,dx$, using the interpretation as a signed area?",
+    "opzioni": [
+     "$\\frac52$",
+     "$2$",
+     "$\\frac32$",
+     "$\\frac12$"
+    ],
+    "spiegazione": "Below the axis the triangle on $[0,1]$ has area $\\frac12$, above the one on $[1,3]$ has area $2$: $2 - \\frac12 = \\frac32$. $\\frac52$ is the unsigned area."
+   }
+  },
+  {
+   "id": "am1-f-1107",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#21-interpretazione-geometrica",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#21-geometric-interpretation"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Una funzione integrabile $f$ vale $f(x) \\le 0$ in tutto $[a,b]$. Che cosa rappresenta $\\int_a^b f(x)\\,dx$?",
+    "opzioni": [
+     "l'opposto dell'area fra il grafico e l'asse $x$",
+     "l'area della regione fra il grafico e l'asse $x$",
+     "il valore minimo di $f$ moltiplicato per $b - a$",
+     "un numero positivo, uguale alla media di $f$"
+    ],
+    "spiegazione": "Le parti sotto l'asse contano con il segno meno: l'integrale è un numero $\\le 0$, opposto dell'area. Il minimo per $b-a$ è solo una stima dal basso."
+   },
+   "en": {
+    "testo": "An integrable function $f$ satisfies $f(x) \\le 0$ on the whole $[a,b]$. What does $\\int_a^b f(x)\\,dx$ represent?",
+    "opzioni": [
+     "minus the area between the graph and the $x$-axis",
+     "the area between the graph and the $x$-axis",
+     "the minimum of $f$ multiplied by $b - a$",
+     "a positive number, equal to the mean of $f$"
+    ],
+    "spiegazione": "Parts below the axis count with a minus sign: the integral is a number $\\le 0$, the opposite of the area. The minimum times $b-a$ is only a lower estimate."
+   }
+  },
+  {
+   "id": "am1-f-1108",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-exDirichlet-10",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-exDirichlet-10"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "La funzione di Dirichlet in $[0,1]$ vale $1$ sui razionali e $0$ sugli irrazionali. Per ogni partizione $P$, quanto valgono $s(D,P)$ e $S(D,P)$?",
+    "opzioni": [
+     "$s = S = \\frac12$",
+     "$s = S = 0$",
+     "$s = 0$ e $S$ dipende da $P$",
+     "$s = 0$ e $S = 1$"
+    ],
+    "spiegazione": "Ogni intervallo contiene razionali e irrazionali, quindi $m_k = 0$ e $M_k = 1$: $s = 0$, $S = \\sum \\Delta x_k = 1$. Per questo $D$ non è integrabile."
+   },
+   "en": {
+    "testo": "The Dirichlet function on $[0,1]$ equals $1$ on rationals and $0$ on irrationals. For every partition $P$, what are $s(D,P)$ and $S(D,P)$?",
+    "opzioni": [
+     "$s = S = \\frac12$",
+     "$s = S = 0$",
+     "$s = 0$ and $S$ depends on $P$",
+     "$s = 0$ and $S = 1$"
+    ],
+    "spiegazione": "Every interval contains rationals and irrationals, so $m_k = 0$ and $M_k = 1$: $s = 0$, $S = \\sum \\Delta x_k = 1$. This is why $D$ is not integrable."
+   }
+  },
+  {
+   "id": "am1-f-1109",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoCriterio-11",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoCriterio-11"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Criterio di integrabilità di Riemann: una funzione limitata $f$ è integrabile in $[a,b]$ se e solo se",
+    "opzioni": [
+     "per ogni $\\varepsilon > 0$ esiste $P$ con $S(f,P) - s(f,P) < \\varepsilon$",
+     "esiste $\\varepsilon > 0$ e una $P$ con $S(f,P) - s(f,P) < \\varepsilon$",
+     "per ogni partizione $P$ si ha $S(f,P) = s(f,P)$",
+     "$S(f,P_n) - s(f,P_n) = \\frac1n$ per le partizioni uniformi"
+    ],
+    "spiegazione": "La differenza fra somme superiori e inferiori deve poter diventare piccola a piacere. Che sia nulla per ogni $P$ succede solo per le costanti."
+   },
+   "en": {
+    "testo": "Riemann's integrability criterion: a bounded function $f$ is integrable on $[a,b]$ if and only if",
+    "opzioni": [
+     "for every $\\varepsilon > 0$ there is $P$ with $S(f,P) - s(f,P) < \\varepsilon$",
+     "there are $\\varepsilon > 0$ and $P$ with $S(f,P) - s(f,P) < \\varepsilon$",
+     "for every partition $P$ we have $S(f,P) = s(f,P)$",
+     "$S(f,P_n) - s(f,P_n) = \\frac1n$ for uniform partitions"
+    ],
+    "spiegazione": "The difference between upper and lower sums must become arbitrarily small. Being zero for every $P$ only happens for constants."
+   }
+  },
+  {
+   "id": "am1-f-1110",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#23-somme-di-riemann",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#23-riemann-sums"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per $f(x) = x$ in $[0,1]$ con la partizione uniforme in $2$ intervalli e i punti medi $t_1 = \\frac14$, $t_2 = \\frac34$, quanto vale la somma di Riemann $\\sum f(t_k)\\,\\Delta x_k$?",
+    "opzioni": [
+     "$\\frac14$",
+     "$\\frac12$",
+     "$\\frac34$",
+     "$1$"
+    ],
+    "spiegazione": "$\\frac14 \\cdot \\frac12 + \\frac34 \\cdot \\frac12 = \\frac12$: per una funzione lineare i punti medi danno esattamente l'integrale."
+   },
+   "en": {
+    "testo": "For $f(x) = x$ on $[0,1]$ with the uniform partition into $2$ intervals and the midpoints $t_1 = \\frac14$, $t_2 = \\frac34$, what is the Riemann sum $\\sum f(t_k)\\,\\Delta x_k$?",
+    "opzioni": [
+     "$\\frac14$",
+     "$\\frac12$",
+     "$\\frac34$",
+     "$1$"
+    ],
+    "spiegazione": "$\\frac14 \\cdot \\frac12 + \\frac34 \\cdot \\frac12 = \\frac12$: for a linear function the midpoints give exactly the integral."
+   }
+  },
+  {
+   "id": "am1-f-1111",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoMonotone-12",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoMonotone-12"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella dimostrazione che una funzione non decrescente $f$ è integrabile, con la partizione uniforme $P_n$ di $[a,b]$, quanto vale $S(f,P_n) - s(f,P_n)$?",
+    "opzioni": [
+     "$\\frac{f(b) - f(a)}{n}$",
+     "$(b-a)\\big(f(b) - f(a)\\big)$",
+     "$\\frac{(b-a)(f(b) - f(a))}{n}$",
+     "$\\frac{b - a}{n}$"
+    ],
+    "spiegazione": "Con $m_k = f(x_{k-1})$ e $M_k = f(x_k)$ la somma $\\frac{b-a}{n}\\sum (f(x_k) - f(x_{k-1}))$ è telescopica e vale $\\frac{(b-a)(f(b)-f(a))}{n} \\rr 0$."
+   },
+   "en": {
+    "testo": "In the proof that a non-decreasing function $f$ is integrable, with the uniform partition $P_n$ of $[a,b]$, what is $S(f,P_n) - s(f,P_n)$?",
+    "opzioni": [
+     "$\\frac{f(b) - f(a)}{n}$",
+     "$(b-a)\\big(f(b) - f(a)\\big)$",
+     "$\\frac{(b-a)(f(b) - f(a))}{n}$",
+     "$\\frac{b - a}{n}$"
+    ],
+    "spiegazione": "With $m_k = f(x_{k-1})$ and $M_k = f(x_k)$ the sum $\\frac{b-a}{n}\\sum (f(x_k) - f(x_{k-1}))$ telescopes and equals $\\frac{(b-a)(f(b)-f(a))}{n} \\rr 0$."
+   }
+  },
+  {
+   "id": "am1-f-1112",
+   "livello": "ipotesi",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#3-classi-di-funzioni-integrabili",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#3-classes-of-integrable-functions"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "La parte intera $[x]$ ha un salto in ogni intero. È integrabile in $[0,3]$?",
+    "opzioni": [
+     "no, perché è discontinua",
+     "sì, perché è monotona",
+     "sì, ma solo perché i salti sono di ampiezza $1$",
+     "no, perché non ha primitive"
+    ],
+    "spiegazione": "Le funzioni monotone sono integrabili anche se discontinue: la continuità è sufficiente ma non necessaria."
+   },
+   "en": {
+    "testo": "The integer part $[x]$ has a jump at every integer. Is it integrable on $[0,3]$?",
+    "opzioni": [
+     "no, because it is discontinuous",
+     "yes, because it is monotone",
+     "yes, but only because the jumps have size $1$",
+     "no, because it has no antiderivatives"
+    ],
+    "spiegazione": "Monotone functions are integrable even if discontinuous: continuity is sufficient but not necessary."
+   }
+  },
+  {
+   "id": "am1-f-1113",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defUnifCont-13",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defUnifCont-13"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quale delle seguenti funzioni NON è uniformemente continua nell'intervallo indicato?",
+    "opzioni": [
+     "$x^2$ in $[0,1]$",
+     "$\\sqrt{x}$ in $[0,1]$",
+     "$\\sin x$ in $[0, \\pi]$",
+     "$\\frac1x$ in $(0,1]$"
+    ],
+    "spiegazione": "Le prime tre sono continue su intervalli chiusi e limitati (Heine--Cantor). Per $\\frac1x$ i punti $\\frac1n$ e $\\frac{1}{n+1}$ sono vicini ma le immagini distano $1$."
+   },
+   "en": {
+    "testo": "Which of the following functions is NOT uniformly continuous on the given interval?",
+    "opzioni": [
+     "$x^2$ on $[0,1]$",
+     "$\\sqrt{x}$ on $[0,1]$",
+     "$\\sin x$ on $[0, \\pi]$",
+     "$\\frac1x$ on $(0,1]$"
+    ],
+    "spiegazione": "The first three are continuous on closed and bounded intervals (Heine--Cantor). For $\\frac1x$ the points $\\frac1n$ and $\\frac{1}{n+1}$ are close but their images are $1$ apart."
+   }
+  },
+  {
+   "id": "am1-f-1114",
+   "livello": "ipotesi",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoHeineCantor-15",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoHeineCantor-15"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Il teorema di Heine--Cantor dice che una funzione continua su $I$ è uniformemente continua su $I$. Quale ipotesi su $I$ serve?",
+    "opzioni": [
+     "$I$ chiuso e limitato",
+     "$I$ aperto",
+     "$I$ limitato, anche non chiuso",
+     "nessuna: vale per ogni intervallo"
+    ],
+    "spiegazione": "Serve $I = [a,b]$: $\\frac1x$ è continua sul limitato $(0,1]$ e $x^2$ su $\\R$, ma nessuna delle due è uniformemente continua."
+   },
+   "en": {
+    "testo": "The Heine--Cantor theorem says that a function continuous on $I$ is uniformly continuous on $I$. Which assumption on $I$ is needed?",
+    "opzioni": [
+     "$I$ closed and bounded",
+     "$I$ open",
+     "$I$ bounded, even if not closed",
+     "none: it holds for every interval"
+    ],
+    "spiegazione": "We need $I = [a,b]$: $\\frac1x$ is continuous on the bounded $(0,1]$ and $x^2$ on $\\R$, but neither is uniformly continuous."
+   }
+  },
+  {
+   "id": "am1-f-1115",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoContinue-16",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoContinue-16"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella dimostrazione dell'integrabilità di una funzione continua $f$ su $[a,b]$, che cosa garantisce la continuità uniforme?",
+    "opzioni": [
+     "che $f$ è monotona su ogni intervallo $I_k$ di $P$",
+     "che $f$ ha una primitiva in $[a,b]$",
+     "che $M_k - m_k$ è piccolo se $\\Delta x_k < \\delta$",
+     "che $s(f,P) = S(f,P)$ per ogni partizione $P$"
+    ],
+    "spiegazione": "Con $\\Delta x_k < \\delta$ massimo e minimo in $I_k$ distano meno di $\\frac{\\varepsilon}{b-a}$, quindi $S - s < \\varepsilon$ e si applica il criterio di Riemann."
+   },
+   "en": {
+    "testo": "In the proof that a continuous function $f$ on $[a,b]$ is integrable, what does uniform continuity guarantee?",
+    "opzioni": [
+     "that $f$ is monotone on every interval $I_k$ of $P$",
+     "that $f$ has an antiderivative on $[a,b]$",
+     "that $M_k - m_k$ is small if $\\Delta x_k < \\delta$",
+     "that $s(f,P) = S(f,P)$ for every partition $P$"
+    ],
+    "spiegazione": "With $\\Delta x_k < \\delta$ the maximum and the minimum on $I_k$ differ by less than $\\frac{\\varepsilon}{b-a}$, hence $S - s < \\varepsilon$ and Riemann's criterion applies."
+   }
+  },
+  {
+   "id": "am1-f-1116",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoLinearita-18",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoLinearita-18"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Sapendo che $\\int_0^1 f(x)\\,dx = 2$ e $\\int_0^1 g(x)\\,dx = -1$, quanto vale $\\int_0^1 \\big(3f(x) - 2g(x)\\big)\\,dx$?",
+    "opzioni": [
+     "$4$",
+     "$8$",
+     "$5$",
+     "$1$"
+    ],
+    "spiegazione": "Per la linearità: $3 \\cdot 2 - 2 \\cdot (-1) = 8$."
+   },
+   "en": {
+    "testo": "Knowing that $\\int_0^1 f(x)\\,dx = 2$ and $\\int_0^1 g(x)\\,dx = -1$, what is $\\int_0^1 \\big(3f(x) - 2g(x)\\big)\\,dx$?",
+    "opzioni": [
+     "$4$",
+     "$8$",
+     "$5$",
+     "$1$"
+    ],
+    "spiegazione": "By linearity: $3 \\cdot 2 - 2 \\cdot (-1) = 8$."
+   }
+  },
+  {
+   "id": "am1-f-1117",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoAdditivita-19",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoAdditivita-19"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Sapendo che $\\int_0^5 f(x)\\,dx = 7$ e $\\int_2^5 f(x)\\,dx = 3$, quanto vale $\\int_2^0 f(x)\\,dx$?",
+    "opzioni": [
+     "$4$",
+     "$10$",
+     "$-4$",
+     "$-10$"
+    ],
+    "spiegazione": "Per l'additività $\\int_0^2 f = 7 - 3 = 4$, e scambiando gli estremi cambia il segno: $\\int_2^0 f = -4$."
+   },
+   "en": {
+    "testo": "Knowing that $\\int_0^5 f(x)\\,dx = 7$ and $\\int_2^5 f(x)\\,dx = 3$, what is $\\int_2^0 f(x)\\,dx$?",
+    "opzioni": [
+     "$4$",
+     "$10$",
+     "$-4$",
+     "$-10$"
+    ],
+    "spiegazione": "By additivity $\\int_0^2 f = 7 - 3 = 4$, and swapping the limits changes the sign: $\\int_2^0 f = -4$."
+   }
+  },
+  {
+   "id": "am1-f-1118",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-corStime-22",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-corStime-22"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Senza calcolarlo, in quale intervallo cade $\\int_1^3 \\frac{dx}{1+x^2}$? (La funzione è decrescente in $[1,3]$.)",
+    "opzioni": [
+     "$\\left[\\frac15, 1\\right]$",
+     "$\\left[\\frac{1}{10}, \\frac12\\right]$",
+     "$[0, 2]$",
+     "$\\left[\\frac12, 2\\right]$"
+    ],
+    "spiegazione": "In $[1,3]$ si ha $\\frac{1}{10} \\le f \\le \\frac12$; moltiplicando per $b - a = 2$: $\\frac15 \\le \\int \\le 1$. Anche $[0,2]$ contiene l'integrale, ma non è la stima data da minimo e massimo."
+   },
+   "en": {
+    "testo": "Without computing it, in which interval does $\\int_1^3 \\frac{dx}{1+x^2}$ lie? (The function is decreasing on $[1,3]$.)",
+    "opzioni": [
+     "$\\left[\\frac15, 1\\right]$",
+     "$\\left[\\frac{1}{10}, \\frac12\\right]$",
+     "$[0, 2]$",
+     "$\\left[\\frac12, 2\\right]$"
+    ],
+    "spiegazione": "On $[1,3]$ we have $\\frac{1}{10} \\le f \\le \\frac12$; multiplying by $b - a = 2$: $\\frac15 \\le \\int \\le 1$. $[0,2]$ also contains the integral, but it is not the estimate given by minimum and maximum."
+   }
+  },
+  {
+   "id": "am1-f-1119",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoValoreAssoluto-24",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoValoreAssoluto-24"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Se $f$ è integrabile in $[a,b]$, quale relazione vale sempre?",
+    "opzioni": [
+     "$\\left|\\int_a^b f\\right| = \\int_a^b |f|$",
+     "$\\int_a^b |f| \\le \\left|\\int_a^b f\\right|$",
+     "$\\left|\\int_a^b f\\right| \\le (b-a)\\,|f(a)|$",
+     "$\\left|\\int_a^b f\\right| \\le \\int_a^b |f|$"
+    ],
+    "spiegazione": "Da $-|f| \\le f \\le |f|$ e dalla monotonia. L'uguaglianza può fallire: $\\int_{-1}^1 x\\,dx = 0$ mentre $\\int_{-1}^1 |x|\\,dx = 1$."
+   },
+   "en": {
+    "testo": "If $f$ is integrable on $[a,b]$, which relation always holds?",
+    "opzioni": [
+     "$\\left|\\int_a^b f\\right| = \\int_a^b |f|$",
+     "$\\int_a^b |f| \\le \\left|\\int_a^b f\\right|$",
+     "$\\left|\\int_a^b f\\right| \\le (b-a)\\,|f(a)|$",
+     "$\\left|\\int_a^b f\\right| \\le \\int_a^b |f|$"
+    ],
+    "spiegazione": "From $-|f| \\le f \\le |f|$ and monotonicity. Equality may fail: $\\int_{-1}^1 x\\,dx = 0$ while $\\int_{-1}^1 |x|\\,dx = 1$."
+   }
+  },
+  {
+   "id": "am1-f-1120",
+   "livello": "ipotesi",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoValoreAssoluto-24",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoValoreAssoluto-24"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "La funzione $f$ vale $1$ sui razionali e $-1$ sugli irrazionali di $[0,1]$. Che cosa mostra questo esempio?",
+    "opzioni": [
+     "che $|f|$ integrabile implica $f$ integrabile",
+     "che $|f|$ può essere integrabile senza $f$",
+     "che $f$ è integrabile con integrale $0$",
+     "che $|f|$ non è integrabile in $[0,1]$"
+    ],
+    "spiegazione": "$|f| = 1$ è costante, quindi integrabile, ma $s(f,P) = -1$ e $S(f,P) = 1$ per ogni $P$: $f$ non è integrabile. Il teorema vale solo in una direzione."
+   },
+   "en": {
+    "testo": "The function $f$ equals $1$ on the rationals and $-1$ on the irrationals of $[0,1]$. What does this example show?",
+    "opzioni": [
+     "that $|f|$ integrable implies $f$ integrable",
+     "that $|f|$ can be integrable even if $f$ is not",
+     "that $f$ is integrable with integral $0$",
+     "that $|f|$ is not integrable"
+    ],
+    "spiegazione": "$|f| = 1$ is constant, hence integrable, but $s(f,P) = -1$ and $S(f,P) = 1$ for every $P$: $f$ is not integrable. The theorem only holds in one direction."
+   }
+  },
+  {
+   "id": "am1-f-1121",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defMedia-26",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defMedia-26"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Sapendo che $\\int_0^1 x^2\\,dx = \\frac13$, qual è la media integrale di $f(x) = x^2$ in $[0,1]$ e in quale punto $c \\in [0,1]$ è assunta?",
+    "opzioni": [
+     "$\\frac12$, in $c = \\frac{1}{\\sqrt2}$",
+     "$\\frac13$, in $c = \\frac13$",
+     "$\\frac13$, in $c = \\frac{1}{\\sqrt3}$",
+     "$\\frac16$, in $c = \\frac{1}{\\sqrt6}$"
+    ],
+    "spiegazione": "La media è $\\frac{1}{1-0}\\cdot\\frac13 = \\frac13$ e $c^2 = \\frac13$ dà $c = \\frac{1}{\\sqrt3}$."
+   },
+   "en": {
+    "testo": "Knowing that $\\int_0^1 x^2\\,dx = \\frac13$, what is the integral mean of $f(x) = x^2$ on $[0,1]$ and at which point $c \\in [0,1]$ is it taken?",
+    "opzioni": [
+     "$\\frac12$, at $c = \\frac{1}{\\sqrt2}$",
+     "$\\frac13$, at $c = \\frac13$",
+     "$\\frac13$, at $c = \\frac{1}{\\sqrt3}$",
+     "$\\frac16$, at $c = \\frac{1}{\\sqrt6}$"
+    ],
+    "spiegazione": "The mean is $\\frac{1}{1-0}\\cdot\\frac13 = \\frac13$ and $c^2 = \\frac13$ gives $c = \\frac{1}{\\sqrt3}$."
+   }
+  },
+  {
+   "id": "am1-f-1122",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoMedia-27",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoMedia-27"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Teorema della media integrale: se $f$ è continua in $[a,b]$, allora",
+    "opzioni": [
+     "esiste $c \\in [a,b]$ con $f(c) = \\frac{1}{b-a}\\int_a^b f(x)\\,dx$",
+     "esiste $c \\in (a,b)$ con $f'(c) = \\frac{f(b) - f(a)}{b-a}$",
+     "$\\int_a^b f(x)\\,dx = \\frac{f(a) + f(b)}{2}\\,(b-a)$",
+     "la media integrale è il punto medio $\\frac{a+b}{2}$"
+    ],
+    "spiegazione": "La media integrale sta fra minimo e massimo (Weierstrass) ed è assunta per il teorema dei valori intermedi. La seconda opzione è il teorema di Lagrange."
+   },
+   "en": {
+    "testo": "Integral mean value theorem: if $f$ is continuous on $[a,b]$, then",
+    "opzioni": [
+     "there is $c \\in [a,b]$ with $f(c) = \\frac{1}{b-a}\\int_a^b f(x)\\,dx$",
+     "there is $c \\in (a,b)$ with $f'(c) = \\frac{f(b) - f(a)}{b-a}$",
+     "$\\int_a^b f(x)\\,dx = \\frac{f(a) + f(b)}{2}\\,(b-a)$",
+     "the integral mean is the midpoint $\\frac{a+b}{2}$"
+    ],
+    "spiegazione": "The integral mean lies between minimum and maximum (Weierstrass) and is taken by the intermediate value theorem. The second option is Lagrange's theorem."
+   }
+  },
+  {
+   "id": "am1-f-1123",
+   "livello": "ipotesi",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-obsMediaContinuita-29",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-obsMediaContinuita-29"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "La funzione $f(x) = 0$ per $x \\in [0,1)$ e $f(x) = 1$ per $x \\in [1,2]$ ha media integrale $\\frac12$ in $[0,2]$. Perché il teorema della media non si applica?",
+    "opzioni": [
+     "perché $f$ non è integrabile",
+     "perché l'intervallo non è chiuso",
+     "perché $f$ non è continua",
+     "perché $f$ non è limitata"
+    ],
+    "spiegazione": "$f$ è integrabile (monotona) e limitata su $[0,2]$, ma non è continua in $1$: non assume il valore $\\frac12$."
+   },
+   "en": {
+    "testo": "The function $f(x) = 0$ for $x \\in [0,1)$ and $f(x) = 1$ for $x \\in [1,2]$ has integral mean $\\frac12$ on $[0,2]$. Why does the mean value theorem not apply?",
+    "opzioni": [
+     "because $f$ is not integrable",
+     "because the interval is not closed",
+     "because $f$ is not continuous",
+     "because $f$ is not bounded"
+    ],
+    "spiegazione": "$f$ is integrable (monotone) and bounded on $[0,2]$, but it is not continuous at $1$: it never takes the value $\\frac12$."
+   }
+  },
+  {
+   "id": "am1-f-1124",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-defPrimitiva-1",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-defPrimitiva-1"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quale delle seguenti funzioni è una primitiva di $f(x) = x\\,e^{x^2}$ in $\\R$?",
+    "opzioni": [
+     "$2x\\,e^{x^2} + 3$",
+     "$e^{x^2} + 1$",
+     "$\\frac{x^2}{2}\\,e^{x^2}$",
+     "$\\frac12\\,e^{x^2} + 3$"
+    ],
+    "spiegazione": "Derivando $\\frac12 e^{x^2} + 3$ si ottiene $\\frac12 \\cdot 2x\\,e^{x^2} = x\\,e^{x^2}$. La derivata di $e^{x^2}$ è $2x\\,e^{x^2}$."
+   },
+   "en": {
+    "testo": "Which of the following functions is an antiderivative of $f(x) = x\\,e^{x^2}$ on $\\R$?",
+    "opzioni": [
+     "$2x\\,e^{x^2} + 3$",
+     "$e^{x^2} + 1$",
+     "$\\frac{x^2}{2}\\,e^{x^2}$",
+     "$\\frac12\\,e^{x^2} + 3$"
+    ],
+    "spiegazione": "Differentiating $\\frac12 e^{x^2} + 3$ gives $\\frac12 \\cdot 2x\\,e^{x^2} = x\\,e^{x^2}$. The derivative of $e^{x^2}$ is $2x\\,e^{x^2}$."
+   }
+  },
+  {
+   "id": "am1-f-1125",
+   "livello": "teorema",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-theoPrimitive-3",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-theoPrimitive-3"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "$F$ e $G$ sono due primitive della stessa funzione $f$ nell'intervallo $I$. Che cosa si può concludere?",
+    "opzioni": [
+     "$F = G$",
+     "$G - F$ è costante in $I$",
+     "$G = c\\,F$ per una costante $c$",
+     "$F' - G' = c$ con $c \\neq 0$"
+    ],
+    "spiegazione": "$(G - F)' = 0$ nell'intervallo $I$, quindi $G - F$ è costante (corollario del teorema di Lagrange)."
+   },
+   "en": {
+    "testo": "$F$ and $G$ are two antiderivatives of the same function $f$ on the interval $I$. What can be concluded?",
+    "opzioni": [
+     "$F = G$",
+     "$G - F$ is constant on $I$",
+     "$G = c\\,F$ for some constant $c$",
+     "$F' - G' = c$ with $c \\neq 0$"
+    ],
+    "spiegazione": "$(G - F)' = 0$ on the interval $I$, hence $G - F$ is constant (corollary of Lagrange's theorem)."
+   }
+  },
+  {
+   "id": "am1-f-1126",
+   "livello": "ipotesi",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-obsIntervallo-4",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-obsIntervallo-4"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "$F(x) = \\log|x|$ e $G(x) = \\log|x| + 1$ per $x > 0$, $G(x) = \\log|x|$ per $x < 0$, hanno entrambe derivata $\\frac1x$ in $\\R \\setminus \\{0\\}$, ma $G - F$ non è costante. Perché non c'è contraddizione?",
+    "opzioni": [
+     "perché $\\frac1x$ non è continua",
+     "perché $G$ non è derivabile",
+     "perché il dominio non è un intervallo",
+     "perché $\\log|x|$ non è una primitiva"
+    ],
+    "spiegazione": "Il teorema sulle primitive vale su un intervallo: in $\\R \\setminus \\{0\\}$ la differenza è costante su ciascuna delle due semirette, con costanti diverse."
+   },
+   "en": {
+    "testo": "$F(x) = \\log|x|$ and $G(x) = \\log|x| + 1$ for $x > 0$, $G(x) = \\log|x|$ for $x < 0$, both have derivative $\\frac1x$ on $\\R \\setminus \\{0\\}$, but $G - F$ is not constant. Why is there no contradiction?",
+    "opzioni": [
+     "because $\\frac1x$ is not continuous",
+     "because $G$ is not differentiable",
+     "because $\\R \\setminus \\{0\\}$ is not an interval",
+     "because $\\log|x|$ is not an antiderivative"
+    ],
+    "spiegazione": "The theorem on antiderivatives holds on an interval: on $\\R \\setminus \\{0\\}$ the difference is constant on each of the two half-lines, with different constants."
+   }
+  },
+  {
+   "id": "am1-f-1127",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-defFunzioneIntegrale-6",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-defFunzioneIntegrale-6"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Sia $F(x) = \\int_2^x f(t)\\,dt$ con $f$ continua. Quanto vale $F(2)$?",
+    "opzioni": [
+     "$0$",
+     "$f(2)$",
+     "$2\\,f(2)$",
+     "non si può dire"
+    ],
+    "spiegazione": "$F(2) = \\int_2^2 f(t)\\,dt = 0$: un integrale con estremi uguali vale zero."
+   },
+   "en": {
+    "testo": "Let $F(x) = \\int_2^x f(t)\\,dt$ with $f$ continuous. What is $F(2)$?",
+    "opzioni": [
+     "$0$",
+     "$f(2)$",
+     "$2\\,f(2)$",
+     "it cannot be said"
+    ],
+    "spiegazione": "$F(2) = \\int_2^2 f(t)\\,dt = 0$: an integral with equal limits is zero."
+   }
+  },
+  {
+   "id": "am1-f-1128",
+   "livello": "teorema",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-propLipschitz-8",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-propLipschitz-8"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Se $f$ è integrabile in $[a,b]$ e $|f| \\le L$, quale proprietà ha la funzione integrale $F(x) = \\int_a^x f(t)\\,dt$?",
+    "opzioni": [
+     "è derivabile con $F' = f$",
+     "$|F(x) - F(y)| \\le L|x - y|$",
+     "è crescente in $[a,b]$",
+     "è limitata da $L$"
+    ],
+    "spiegazione": "$|F(x) - F(y)| = \\left|\\int_y^x f\\right| \\le L|x-y|$. La derivabilità richiede $f$ continua (prima parte del teorema fondamentale)."
+   },
+   "en": {
+    "testo": "If $f$ is integrable on $[a,b]$ and $|f| \\le L$, which property does the integral function $F(x) = \\int_a^x f(t)\\,dt$ have?",
+    "opzioni": [
+     "it is differentiable with $F' = f$",
+     "$|F(x) - F(y)| \\le L|x - y|$",
+     "it is increasing on $[a,b]$",
+     "it is bounded by $L$"
+    ],
+    "spiegazione": "$|F(x) - F(y)| = \\left|\\int_y^x f\\right| \\le L|x-y|$. Differentiability requires $f$ continuous (first part of the fundamental theorem)."
+   }
+  },
+  {
+   "id": "am1-f-1129",
+   "livello": "teorema",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-theoTFC1-9",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-theoTFC1-9"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Prima parte del teorema fondamentale: se $f$ è continua in $[a,b]$ e $F(x) = \\int_a^x f(t)\\,dt$, allora",
+    "opzioni": [
+     "$F(b) - F(a) = f(b) - f(a)$",
+     "$F$ è continua ma non derivabile",
+     "$F$ è derivabile e $F'(x) = f(x)$",
+     "$F'(x) = f(x) - f(a)$"
+    ],
+    "spiegazione": "Il rapporto incrementale è la media integrale su $[x, x+h]$, che per il teorema della media vale $f(c_h) \\rr f(x)$."
+   },
+   "en": {
+    "testo": "First part of the fundamental theorem: if $f$ is continuous on $[a,b]$ and $F(x) = \\int_a^x f(t)\\,dt$, then",
+    "opzioni": [
+     "$F(b) - F(a) = f(b) - f(a)$",
+     "$F$ is continuous but not differentiable",
+     "$F$ is differentiable and $F'(x) = f(x)$",
+     "$F'(x) = f(x) - f(a)$"
+    ],
+    "spiegazione": "The difference quotient is the integral mean on $[x, x+h]$, which by the mean value theorem equals $f(c_h) \\rr f(x)$."
+   }
+  },
+  {
+   "id": "am1-f-1130",
+   "livello": "teorema",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-theoTFC2-10",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-theoTFC2-10"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Seconda parte del teorema fondamentale: se $f$ è continua in $[a,b]$ e $G$ è una sua primitiva, allora $\\int_a^b f(x)\\,dx$ vale",
+    "opzioni": [
+     "$G'(b) - G'(a)$",
+     "$G(a) - G(b)$",
+     "$\\frac{G(b) - G(a)}{b-a}$",
+     "$G(b) - G(a)$"
+    ],
+    "spiegazione": "$G$ differisce da $\\int_a^x f$ per una costante, che si cancella nella differenza: $\\int_a^b f = G(b) - G(a)$."
+   },
+   "en": {
+    "testo": "Second part of the fundamental theorem: if $f$ is continuous on $[a,b]$ and $G$ is an antiderivative of it, then $\\int_a^b f(x)\\,dx$ equals",
+    "opzioni": [
+     "$G'(b) - G'(a)$",
+     "$G(a) - G(b)$",
+     "$\\frac{G(b) - G(a)}{b-a}$",
+     "$G(b) - G(a)$"
+    ],
+    "spiegazione": "$G$ differs from $\\int_a^x f$ by a constant, which cancels in the difference: $\\int_a^b f = G(b) - G(a)$."
+   }
+  },
+  {
+   "id": "am1-f-1131",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-exTFC2-11",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-exTFC2-11"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quanto vale $\\int_0^{\\pi} \\sin x\\,dx$?",
+    "opzioni": [
+     "$2$",
+     "$0$",
+     "$1$",
+     "$-2$"
+    ],
+    "spiegazione": "$\\big[-\\cos x\\big]_0^{\\pi} = -\\cos\\pi + \\cos 0 = 1 + 1 = 2$. Il valore $0$ si ottiene su $[0, 2\\pi]$."
+   },
+   "en": {
+    "testo": "What is $\\int_0^{\\pi} \\sin x\\,dx$?",
+    "opzioni": [
+     "$2$",
+     "$0$",
+     "$1$",
+     "$-2$"
+    ],
+    "spiegazione": "$\\big[-\\cos x\\big]_0^{\\pi} = -\\cos\\pi + \\cos 0 = 1 + 1 = 2$. The value $0$ is obtained on $[0, 2\\pi]$."
+   }
+  },
+  {
+   "id": "am1-f-1132",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#4-primitive-immediate",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#4-basic-antiderivatives"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quale delle seguenti è una primitiva di $\\tan x$ in $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$?",
+    "opzioni": [
+     "$\\log|\\cos x|$",
+     "$-\\log|\\cos x|$",
+     "$\\frac{1}{\\cos^2 x}$",
+     "$\\log|\\sin x|$"
+    ],
+    "spiegazione": "$\\tan x = -\\frac{(\\cos x)'}{\\cos x}$, quindi una primitiva è $-\\log|\\cos x|$. $\\frac{1}{\\cos^2 x}$ è la derivata di $\\tan x$."
+   },
+   "en": {
+    "testo": "Which of the following is an antiderivative of $\\tan x$ on $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$?",
+    "opzioni": [
+     "$\\log|\\cos x|$",
+     "$-\\log|\\cos x|$",
+     "$\\frac{1}{\\cos^2 x}$",
+     "$\\log|\\sin x|$"
+    ],
+    "spiegazione": "$\\tan x = -\\frac{(\\cos x)'}{\\cos x}$, hence an antiderivative is $-\\log|\\cos x|$. $\\frac{1}{\\cos^2 x}$ is the derivative of $\\tan x$."
+   }
+  },
+  {
+   "id": "am1-f-1133",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#4-primitive-immediate",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#4-basic-antiderivatives"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quanto vale $\\int_0^1 \\frac{dx}{1+x^2}$?",
+    "opzioni": [
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{\\log 2}{2}$",
+     "$\\frac{\\pi}{4}$",
+     "$\\frac{\\pi}{3}$"
+    ],
+    "spiegazione": "$\\big[\\arctan x\\big]_0^1 = \\frac{\\pi}{4}$. $\\frac{\\log 2}{2}$ sarebbe $\\int_0^1 \\frac{x}{1+x^2}\\,dx$."
+   },
+   "en": {
+    "testo": "What is $\\int_0^1 \\frac{dx}{1+x^2}$?",
+    "opzioni": [
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{\\log 2}{2}$",
+     "$\\frac{\\pi}{4}$",
+     "$\\frac{\\pi}{3}$"
+    ],
+    "spiegazione": "$\\big[\\arctan x\\big]_0^1 = \\frac{\\pi}{4}$. $\\frac{\\log 2}{2}$ would be $\\int_0^1 \\frac{x}{1+x^2}\\,dx$."
+   }
+  },
+  {
+   "id": "am1-f-1134",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#4-primitive-immediate",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#4-basic-antiderivatives"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quanto vale $\\int_1^4 \\frac{dx}{\\sqrt{x}}$?",
+    "opzioni": [
+     "$\\frac32$",
+     "$\\log 4$",
+     "$3$",
+     "$2$"
+    ],
+    "spiegazione": "Una primitiva di $x^{-1/2}$ è $2\\sqrt{x}$: $2\\sqrt4 - 2\\sqrt1 = 2$."
+   },
+   "en": {
+    "testo": "What is $\\int_1^4 \\frac{dx}{\\sqrt{x}}$?",
+    "opzioni": [
+     "$\\frac32$",
+     "$\\log 4$",
+     "$3$",
+     "$2$"
+    ],
+    "spiegazione": "An antiderivative of $x^{-1/2}$ is $2\\sqrt{x}$: $2\\sqrt4 - 2\\sqrt1 = 2$."
+   }
+  },
+  {
+   "id": "am1-f-1135",
+   "livello": "teorema",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-theoDerivataIntegrale-13",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-theoDerivataIntegrale-13"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Se $f$ è continua e $\\alpha$, $\\beta$ sono derivabili, qual è la derivata di $G(x) = \\int_{\\alpha(x)}^{\\beta(x)} f(t)\\,dt$?",
+    "opzioni": [
+     "$f(\\beta(x))\\,\\beta'(x) - f(\\alpha(x))\\,\\alpha'(x)$",
+     "$f(\\beta(x)) - f(\\alpha(x))$",
+     "$f'(\\beta(x))\\,\\beta'(x) - f'(\\alpha(x))\\,\\alpha'(x)$",
+     "$f(\\beta'(x)) - f(\\alpha'(x))$"
+    ],
+    "spiegazione": "Con una primitiva $F$: $G = F(\\beta(x)) - F(\\alpha(x))$, e la regola della catena dà $F'(\\beta)\\beta' - F'(\\alpha)\\alpha'$ con $F' = f$."
+   },
+   "en": {
+    "testo": "If $f$ is continuous and $\\alpha$, $\\beta$ are differentiable, what is the derivative of $G(x) = \\int_{\\alpha(x)}^{\\beta(x)} f(t)\\,dt$?",
+    "opzioni": [
+     "$f(\\beta(x))\\,\\beta'(x) - f(\\alpha(x))\\,\\alpha'(x)$",
+     "$f(\\beta(x)) - f(\\alpha(x))$",
+     "$f'(\\beta(x))\\,\\beta'(x) - f'(\\alpha(x))\\,\\alpha'(x)$",
+     "$f(\\beta'(x)) - f(\\alpha'(x))$"
+    ],
+    "spiegazione": "With an antiderivative $F$: $G = F(\\beta(x)) - F(\\alpha(x))$, and the chain rule gives $F'(\\beta)\\beta' - F'(\\alpha)\\alpha'$ with $F' = f$."
+   }
+  },
+  {
+   "id": "am1-f-1136",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#5-derivata-di-una-funzione-integrale",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#5-derivative-of-an-integral-function"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Qual è la derivata di $G(x) = \\int_0^{x^2} \\cos t\\,dt$?",
+    "opzioni": [
+     "$\\cos(x^2)$",
+     "$2x\\cos(x^2)$",
+     "$-2x\\sin(x^2)$",
+     "$\\cos x$"
+    ],
+    "spiegazione": "$G'(x) = \\cos(x^2)\\cdot(x^2)' = 2x\\cos(x^2)$. Infatti $G(x) = \\sin(x^2)$."
+   },
+   "en": {
+    "testo": "What is the derivative of $G(x) = \\int_0^{x^2} \\cos t\\,dt$?",
+    "opzioni": [
+     "$\\cos(x^2)$",
+     "$2x\\cos(x^2)$",
+     "$-2x\\sin(x^2)$",
+     "$\\cos x$"
+    ],
+    "spiegazione": "$G'(x) = \\cos(x^2)\\cdot(x^2)' = 2x\\cos(x^2)$. Indeed $G(x) = \\sin(x^2)$."
+   }
+  },
+  {
+   "id": "am1-f-1137",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-exLimite-15",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-exLimite-15"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quanto vale $\\lim_{x \\rr 0} \\frac{1}{x^2}\\int_0^{x} \\sin t\\,dt$?",
+    "opzioni": [
+     "$\\frac14$",
+     "$\\frac13$",
+     "$\\frac12$",
+     "$\\ip$"
+    ],
+    "spiegazione": "Forma $\\frac00$; per De l'Hospital e il teorema fondamentale: $\\lim \\frac{\\sin x}{2x} = \\frac12$."
+   },
+   "en": {
+    "testo": "What is $\\lim_{x \\rr 0} \\frac{1}{x^2}\\int_0^{x} \\sin t\\,dt$?",
+    "opzioni": [
+     "$\\frac14$",
+     "$\\frac13$",
+     "$\\frac12$",
+     "$\\ip$"
+    ],
+    "spiegazione": "Form $\\frac00$; by L'Hôpital's rule and the fundamental theorem: $\\lim \\frac{\\sin x}{2x} = \\frac12$."
+   }
+  },
+  {
+   "id": "am1-f-1138",
+   "livello": "ipotesi",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-exStudio-16",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-exStudio-16"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Sia $F(x) = \\int_0^x e^{-t^2}\\,dt$. Quale affermazione è FALSA?",
+    "opzioni": [
+     "$F$ è crescente in $\\R$",
+     "$F$ è dispari",
+     "$F$ ha un flesso in $x = 0$",
+     "$F$ non è derivabile in $\\R$"
+    ],
+    "spiegazione": "Per il teorema fondamentale $F' = e^{-x^2}$ esiste anche senza formula elementare per $F$. $F' > 0$, $F'' = -2x e^{-x^2}$ cambia segno in $0$, $F$ è dispari."
+   },
+   "en": {
+    "testo": "Let $F(x) = \\int_0^x e^{-t^2}\\,dt$. Which statement is FALSE?",
+    "opzioni": [
+     "$F$ is increasing on $\\R$",
+     "$F$ is odd",
+     "$F$ has an inflection point at $x = 0$",
+     "$F$ is not differentiable on $\\R$"
+    ],
+    "spiegazione": "By the fundamental theorem $F' = e^{-x^2}$ exists even without an elementary formula for $F$. $F' > 0$, $F'' = -2x e^{-x^2}$ changes sign at $0$, $F$ is odd."
+   }
+  },
+  {
+   "id": "am1-f-1139",
+   "livello": "teorema",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-theoSostituzione-1",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-theoSostituzione-1"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Formula di integrazione per sostituzione, con $f$ continua e $g$ con derivata continua: $\\int_a^b f(g(x))\\,g'(x)\\,dx$ è uguale a",
+    "opzioni": [
+     "$\\int_a^b f(t)\\,dt$",
+     "$\\int_{g(a)}^{g(b)} f(t)\\,dt$",
+     "$\\int_{g^{-1}(a)}^{g^{-1}(b)} f(t)\\,dt$",
+     "$f(g(b)) - f(g(a))$"
+    ],
+    "spiegazione": "Con $t = g(x)$ cambiano anche gli estremi: $x = a$ diventa $t = g(a)$ e $x = b$ diventa $t = g(b)$."
+   },
+   "en": {
+    "testo": "Integration by substitution formula, with $f$ continuous and $g$ with continuous derivative: $\\int_a^b f(g(x))\\,g'(x)\\,dx$ equals",
+    "opzioni": [
+     "$\\int_a^b f(t)\\,dt$",
+     "$\\int_{g(a)}^{g(b)} f(t)\\,dt$",
+     "$\\int_{g^{-1}(a)}^{g^{-1}(b)} f(t)\\,dt$",
+     "$f(g(b)) - f(g(a))$"
+    ],
+    "spiegazione": "With $t = g(x)$ the limits change too: $x = a$ becomes $t = g(a)$ and $x = b$ becomes $t = g(b)$."
+   }
+  },
+  {
+   "id": "am1-f-1140",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#1-integrazione-per-sostituzione",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#1-integration-by-substitution"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Con la sostituzione $t = 1 + x^2$, in quale integrale si trasforma $\\int_0^1 x\\sqrt{1+x^2}\\,dx$?",
+    "opzioni": [
+     "$\\frac12\\int_1^2 \\sqrt{t}\\,dt$",
+     "$\\int_0^1 \\sqrt{t}\\,dt$",
+     "$2\\int_1^2 \\sqrt{t}\\,dt$",
+     "$\\frac12\\int_0^1 \\sqrt{t}\\,dt$"
+    ],
+    "spiegazione": "$dt = 2x\\,dx$, quindi $x\\,dx = \\frac12 dt$, e gli estremi $x = 0, 1$ diventano $t = 1, 2$."
+   },
+   "en": {
+    "testo": "With the substitution $t = 1 + x^2$, into which integral does $\\int_0^1 x\\sqrt{1+x^2}\\,dx$ turn?",
+    "opzioni": [
+     "$\\frac12\\int_1^2 \\sqrt{t}\\,dt$",
+     "$\\int_0^1 \\sqrt{t}\\,dt$",
+     "$2\\int_1^2 \\sqrt{t}\\,dt$",
+     "$\\frac12\\int_0^1 \\sqrt{t}\\,dt$"
+    ],
+    "spiegazione": "$dt = 2x\\,dx$, so $x\\,dx = \\frac12 dt$, and the limits $x = 0, 1$ become $t = 1, 2$."
+   }
+  },
+  {
+   "id": "am1-f-1141",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-exCambioVariabile-4",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-exCambioVariabile-4"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Con il cambio di variabile $x = \\sin t$, $t \\in \\left[0, \\frac{\\pi}{2}\\right]$, quanto vale $\\int_0^1 \\sqrt{1 - x^2}\\,dx$?",
+    "opzioni": [
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{\\pi}{6}$",
+     "$\\frac{1}{\\pi}$",
+     "$\\frac{\\pi}{4}$"
+    ],
+    "spiegazione": "L'integrale diventa $\\int_0^{\\pi/2} \\cos^2 t\\,dt = \\frac{\\pi}{4}$: è l'area di un quarto del cerchio di raggio $1$."
+   },
+   "en": {
+    "testo": "With the change of variable $x = \\sin t$, $t \\in \\left[0, \\frac{\\pi}{2}\\right]$, what is $\\int_0^1 \\sqrt{1 - x^2}\\,dx$?",
+    "opzioni": [
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{\\pi}{6}$",
+     "$\\frac{1}{\\pi}$",
+     "$\\frac{\\pi}{4}$"
+    ],
+    "spiegazione": "The integral becomes $\\int_0^{\\pi/2} \\cos^2 t\\,dt = \\frac{\\pi}{4}$: the area of a quarter of the circle of radius $1$."
+   }
+  },
+  {
+   "id": "am1-f-1142",
+   "livello": "teorema",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-theoParti-5",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-theoParti-5"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Formula di integrazione per parti: $\\int f(x)\\,g'(x)\\,dx$ è uguale a",
+    "opzioni": [
+     "$f(x)\\,g(x) + \\int f'(x)\\,g(x)\\,dx$",
+     "$f'(x)\\,g(x) - \\int f(x)\\,g'(x)\\,dx$",
+     "$f(x)\\,g(x) - \\int f'(x)\\,g(x)\\,dx$",
+     "$\\int f(x)\\,dx \\cdot \\int g'(x)\\,dx$"
+    ],
+    "spiegazione": "Viene da $(fg)' = f'g + fg'$: $fg$ è una primitiva di $f'g + fg'$, quindi $\\int fg' = fg - \\int f'g$."
+   },
+   "en": {
+    "testo": "Integration by parts formula: $\\int f(x)\\,g'(x)\\,dx$ equals",
+    "opzioni": [
+     "$f(x)\\,g(x) + \\int f'(x)\\,g(x)\\,dx$",
+     "$f'(x)\\,g(x) - \\int f(x)\\,g'(x)\\,dx$",
+     "$f(x)\\,g(x) - \\int f'(x)\\,g(x)\\,dx$",
+     "$\\int f(x)\\,dx \\cdot \\int g'(x)\\,dx$"
+    ],
+    "spiegazione": "It comes from $(fg)' = f'g + fg'$: $fg$ is an antiderivative of $f'g + fg'$, hence $\\int fg' = fg - \\int f'g$."
+   }
+  },
+  {
+   "id": "am1-f-1143",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-exParti-6",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-exParti-6"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quale delle seguenti è una primitiva di $\\log x$ in $(0, \\ip)$?",
+    "opzioni": [
+     "$x\\log x - x$",
+     "$\\frac1x$",
+     "$x\\log x$",
+     "$\\frac{\\log^2 x}{2}$"
+    ],
+    "spiegazione": "Per parti con $f = \\log x$, $g' = 1$: $x\\log x - \\int 1\\,dx = x\\log x - x$. $\\frac{\\log^2 x}{2}$ è una primitiva di $\\frac{\\log x}{x}$."
+   },
+   "en": {
+    "testo": "Which of the following is an antiderivative of $\\log x$ on $(0, \\ip)$?",
+    "opzioni": [
+     "$x\\log x - x$",
+     "$\\frac1x$",
+     "$x\\log x$",
+     "$\\frac{\\log^2 x}{2}$"
+    ],
+    "spiegazione": "By parts with $f = \\log x$, $g' = 1$: $x\\log x - \\int 1\\,dx = x\\log x - x$. $\\frac{\\log^2 x}{2}$ is an antiderivative of $\\frac{\\log x}{x}$."
+   }
+  },
+  {
+   "id": "am1-f-1144",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#2-integrazione-per-parti",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#2-integration-by-parts"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quanto vale $\\int_0^{\\pi} x\\sin x\\,dx$?",
+    "opzioni": [
+     "$0$",
+     "$\\pi$",
+     "$2$",
+     "$-\\pi$"
+    ],
+    "spiegazione": "Per parti con $f = x$: $\\big[-x\\cos x\\big]_0^{\\pi} + \\int_0^{\\pi}\\cos x\\,dx = \\pi + 0 = \\pi$."
+   },
+   "en": {
+    "testo": "What is $\\int_0^{\\pi} x\\sin x\\,dx$?",
+    "opzioni": [
+     "$0$",
+     "$\\pi$",
+     "$2$",
+     "$-\\pi$"
+    ],
+    "spiegazione": "By parts with $f = x$: $\\big[-x\\cos x\\big]_0^{\\pi} + \\int_0^{\\pi}\\cos x\\,dx = \\pi + 0 = \\pi$."
+   }
+  },
+  {
+   "id": "am1-f-1145",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-exCiclico-7",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-exCiclico-7"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Integrando due volte per parti, quale primitiva si ottiene per $e^x \\sin x$?",
+    "opzioni": [
+     "$e^x(\\sin x - \\cos x)$",
+     "$\\frac{e^x(\\sin x + \\cos x)}{2}$",
+     "$\\frac{e^x(\\sin x - \\cos x)}{2}$",
+     "$-\\frac{e^x\\cos x}{2}$"
+    ],
+    "spiegazione": "Si arriva a $I = e^x(\\sin x - \\cos x) - I$, cioè $I = \\frac{e^x(\\sin x - \\cos x)}{2}$ (si verifica derivando)."
+   },
+   "en": {
+    "testo": "Integrating by parts twice, which antiderivative is obtained for $e^x \\sin x$?",
+    "opzioni": [
+     "$e^x(\\sin x - \\cos x)$",
+     "$\\frac{e^x(\\sin x + \\cos x)}{2}$",
+     "$\\frac{e^x(\\sin x - \\cos x)}{2}$",
+     "$-\\frac{e^x\\cos x}{2}$"
+    ],
+    "spiegazione": "One gets $I = e^x(\\sin x - \\cos x) - I$, that is $I = \\frac{e^x(\\sin x - \\cos x)}{2}$ (check by differentiating)."
+   }
+  },
+  {
+   "id": "am1-f-1146",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#3-integrazione-delle-funzioni-razionali",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#3-integration-of-rational-functions"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quale decomposizione in fratti semplici vale per $\\frac{1}{x^2 - 1}$?",
+    "opzioni": [
+     "$\\frac{1}{x-1} + \\frac{1}{x+1}$",
+     "$\\frac{1}{x-1} - \\frac{1}{x+1}$",
+     "$\\frac{1}{(x-1)^2} + \\frac{1}{x+1}$",
+     "$\\frac{1/2}{x-1} - \\frac{1/2}{x+1}$"
+    ],
+    "spiegazione": "Da $1 = A(x+1) + B(x-1)$ con $x = \\pm 1$ si trova $A = \\frac12$, $B = -\\frac12$."
+   },
+   "en": {
+    "testo": "Which partial fraction decomposition holds for $\\frac{1}{x^2 - 1}$?",
+    "opzioni": [
+     "$\\frac{1}{x-1} + \\frac{1}{x+1}$",
+     "$\\frac{1}{x-1} - \\frac{1}{x+1}$",
+     "$\\frac{1}{(x-1)^2} + \\frac{1}{x+1}$",
+     "$\\frac{1/2}{x-1} - \\frac{1/2}{x+1}$"
+    ],
+    "spiegazione": "From $1 = A(x+1) + B(x-1)$ with $x = \\pm 1$ we find $A = \\frac12$, $B = -\\frac12$."
+   }
+  },
+  {
+   "id": "am1-f-1147",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#31-denominatore-di-primo-e-di-secondo-grado",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#31-denominator-of-first-and-second-degree"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Per integrare $\\frac{x+3}{x^2+2x+5}$ (discriminante negativo), che cosa si fa?",
+    "opzioni": [
+     "si scrive $x + 3 = \\frac12(2x+2) + 2$ e si completa il quadrato",
+     "si cercano $A$, $B$ con $\\frac{A}{x-x_1} + \\frac{B}{x-x_2}$",
+     "si divide il numeratore per il denominatore",
+     "si integra per parti con $f = x + 3$"
+    ],
+    "spiegazione": "Con $\\Delta < 0$ il denominatore non si fattorizza: si separa un multiplo di $Q' = 2x + 2$ (logaritmo) e il resto dà un'arcotangente, perché $x^2 + 2x + 5 = (x+1)^2 + 4$."
+   },
+   "en": {
+    "testo": "To integrate $\\frac{x+3}{x^2+2x+5}$ (negative discriminant), what does one do?",
+    "opzioni": [
+     "write $x + 3 = \\frac12(2x+2) + 2$ and complete the square",
+     "look for $A$, $B$ with $\\frac{A}{x-x_1} + \\frac{B}{x-x_2}$",
+     "divide the numerator by the denominator",
+     "integrate by parts with $f = x + 3$"
+    ],
+    "spiegazione": "With $\\Delta < 0$ the denominator does not factor: one separates a multiple of $Q' = 2x + 2$ (logarithm) and the rest gives an arctangent, since $x^2 + 2x + 5 = (x+1)^2 + 4$."
+   }
+  },
+  {
+   "id": "am1-f-1148",
+   "livello": "ipotesi",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#3-integrazione-delle-funzioni-razionali",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#3-integration-of-rational-functions"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Prima di usare i fratti semplici per $\\int \\frac{x^3 + x + 1}{x^2 + 1}\\,dx$, che cosa bisogna fare?",
+    "opzioni": [
+     "niente: si scrive subito $\\frac{A}{x-i} + \\frac{B}{x+i}$",
+     "la divisione del numeratore per il denominatore",
+     "una sostituzione $t = x^2 + 1$",
+     "derivare numeratore e denominatore"
+    ],
+    "spiegazione": "I fratti semplici valgono per funzioni razionali proprie: $x^3 + x + 1 = x(x^2+1) + 1$, quindi l'integranda è $x + \\frac{1}{x^2+1}$."
+   },
+   "en": {
+    "testo": "Before using partial fractions for $\\int \\frac{x^3 + x + 1}{x^2 + 1}\\,dx$, what must be done?",
+    "opzioni": [
+     "nothing: write at once $\\frac{A}{x-i} + \\frac{B}{x+i}$",
+     "the division of the numerator by the denominator",
+     "a substitution $t = x^2 + 1$",
+     "differentiate numerator and denominator"
+    ],
+    "spiegazione": "Partial fractions hold for proper rational functions: $x^3 + x + 1 = x(x^2+1) + 1$, so the integrand is $x + \\frac{1}{x^2+1}$."
+   }
+  },
+  {
+   "id": "am1-f-1149",
+   "livello": "teorema",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-propArea-11",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-propArea-11"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Se $f$ e $g$ sono continue in $[a,b]$ e $f(x) \\le g(x)$, quanto vale l'area della regione $\\{a \\le x \\le b, ~ f(x) \\le y \\le g(x)\\}$?",
+    "opzioni": [
+     "$\\int_a^b g - \\int_a^b |f|$",
+     "$\\int_a^b (f - g)\\,dx$",
+     "$\\left|\\int_a^b g\\right| + \\left|\\int_a^b f\\right|$",
+     "$\\int_a^b (g - f)\\,dx$"
+    ],
+    "spiegazione": "Traslando verso l'alto di una costante entrambe le funzioni diventano non negative e l'area è la differenza dei due trapezoidi: $\\int (g - f)$, senza ipotesi sul segno."
+   },
+   "en": {
+    "testo": "If $f$ and $g$ are continuous on $[a,b]$ and $f(x) \\le g(x)$, what is the area of the region $\\{a \\le x \\le b, ~ f(x) \\le y \\le g(x)\\}$?",
+    "opzioni": [
+     "$\\int_a^b g - \\int_a^b |f|$",
+     "$\\int_a^b (f - g)\\,dx$",
+     "$\\left|\\int_a^b g\\right| + \\left|\\int_a^b f\\right|$",
+     "$\\int_a^b (g - f)\\,dx$"
+    ],
+    "spiegazione": "Shifting both functions up by a constant makes them non-negative and the area is the difference of the two regions: $\\int (g - f)$, with no assumption on the sign."
+   }
+  },
+  {
+   "id": "am1-f-1150",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-exAreaParabola-12",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-exAreaParabola-12"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Qual è l'area della regione compresa fra $y = x^2$ e $y = x + 2$?",
+    "opzioni": [
+     "$\\frac{27}{2}$",
+     "$\\frac92$",
+     "$\\frac{10}{3}$",
+     "$\\frac76$"
+    ],
+    "spiegazione": "Le curve si incontrano in $x = -1$ e $x = 2$; $\\int_{-1}^2 (x + 2 - x^2)\\,dx = \\frac{10}{3} + \\frac76 = \\frac92$."
+   },
+   "en": {
+    "testo": "What is the area of the region between $y = x^2$ and $y = x + 2$?",
+    "opzioni": [
+     "$\\frac{27}{2}$",
+     "$\\frac92$",
+     "$\\frac{10}{3}$",
+     "$\\frac76$"
+    ],
+    "spiegazione": "The curves meet at $x = -1$ and $x = 2$; $\\int_{-1}^2 (x + 2 - x^2)\\,dx = \\frac{10}{3} + \\frac76 = \\frac92$."
+   }
+  },
+  {
+   "id": "am1-f-1151",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#4-aree-di-regioni-piane",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#4-areas-of-plane-regions"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Qual è l'area della regione compresa fra il grafico di $y = \\sin x$ e l'asse $x$ per $x \\in [0, 2\\pi]$?",
+    "opzioni": [
+     "$0$",
+     "$2$",
+     "$4$",
+     "$2\\pi$"
+    ],
+    "spiegazione": "L'area è $\\int_0^{2\\pi} |\\sin x|\\,dx = 2 + 2 = 4$. L'integrale con segno $\\int_0^{2\\pi}\\sin x\\,dx$ vale $0$."
+   },
+   "en": {
+    "testo": "What is the area of the region between the graph of $y = \\sin x$ and the $x$-axis for $x \\in [0, 2\\pi]$?",
+    "opzioni": [
+     "$0$",
+     "$2$",
+     "$4$",
+     "$2\\pi$"
+    ],
+    "spiegazione": "The area is $\\int_0^{2\\pi} |\\sin x|\\,dx = 2 + 2 = 4$. The signed integral $\\int_0^{2\\pi}\\sin x\\,dx$ is $0$."
+   }
+  },
+  {
+   "id": "am1-f-1152",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#5-valor-medio-di-una-funzione",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#5-mean-value-of-a-function"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Un punto si muove con velocità $v(t) = 3t^2$ metri al secondo per $t \\in [0,2]$. Qual è la velocità media?",
+    "opzioni": [
+     "$4$ metri al secondo",
+     "$8$ metri al secondo",
+     "$6$ metri al secondo",
+     "$12$ metri al secondo"
+    ],
+    "spiegazione": "Lo spazio percorso è $\\int_0^2 3t^2\\,dt = 8$ metri; la velocità media è il valor medio $\\frac{8}{2} = 4$."
+   },
+   "en": {
+    "testo": "A point moves with velocity $v(t) = 3t^2$ metres per second for $t \\in [0,2]$. What is the mean velocity?",
+    "opzioni": [
+     "$4$ metres per second",
+     "$8$ metres per second",
+     "$6$ metres per second",
+     "$12$ metres per second"
+    ],
+    "spiegazione": "The distance covered is $\\int_0^2 3t^2\\,dt = 8$ metres; the mean velocity is the mean value $\\frac{8}{2} = 4$."
+   }
+  },
+  {
+   "id": "am1-f-1153",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#box-exValorMedio-15",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#box-exValorMedio-15"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Qual è il valor medio di $\\sin x$ nell'intervallo $[0, \\pi]$?",
+    "opzioni": [
+     "$\\frac12$",
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{1}{\\pi}$",
+     "$\\frac{2}{\\pi}$"
+    ],
+    "spiegazione": "$\\frac{1}{\\pi}\\int_0^{\\pi}\\sin x\\,dx = \\frac{2}{\\pi}$."
+   },
+   "en": {
+    "testo": "What is the mean value of $\\sin x$ on the interval $[0, \\pi]$?",
+    "opzioni": [
+     "$\\frac12$",
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{1}{\\pi}$",
+     "$\\frac{2}{\\pi}$"
+    ],
+    "spiegazione": "$\\frac{1}{\\pi}\\int_0^{\\pi}\\sin x\\,dx = \\frac{2}{\\pi}$."
+   }
+  },
+  {
+   "id": "am1-f-1154",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-defImproprioIllimitato-1",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-defImproprioIllimitato-1"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quanto vale $\\int_0^{\\ip} e^{-x}\\,dx$?",
+    "opzioni": [
+     "$1$",
+     "$\\ip$",
+     "$0$",
+     "$e$"
+    ],
+    "spiegazione": "$\\int_0^{\\omega} e^{-x}\\,dx = 1 - e^{-\\omega} \\rr 1$ per $\\omega \\rr \\ip$."
+   },
+   "en": {
+    "testo": "What is $\\int_0^{\\ip} e^{-x}\\,dx$?",
+    "opzioni": [
+     "$1$",
+     "$\\ip$",
+     "$0$",
+     "$e$"
+    ],
+    "spiegazione": "$\\int_0^{\\omega} e^{-x}\\,dx = 1 - e^{-\\omega} \\rr 1$ as $\\omega \\rr \\ip$."
+   }
+  },
+  {
+   "id": "am1-f-1155",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#1-integrali-su-intervalli-illimitati",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#1-integrals-on-unbounded-intervals"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Qual è il carattere dell'integrale improprio $\\int_0^{\\ip} \\cos x\\,dx$?",
+    "opzioni": [
+     "converge a $0$",
+     "diverge a $\\ip$",
+     "non esiste",
+     "converge a $1$"
+    ],
+    "spiegazione": "$\\int_0^{\\omega}\\cos x\\,dx = \\sin\\omega$, che non ha limite per $\\omega \\rr \\ip$."
+   },
+   "en": {
+    "testo": "What is the behaviour of the improper integral $\\int_0^{\\ip} \\cos x\\,dx$?",
+    "opzioni": [
+     "it converges to $0$",
+     "it diverges to $\\ip$",
+     "it does not exist",
+     "it converges to $1$"
+    ],
+    "spiegazione": "$\\int_0^{\\omega}\\cos x\\,dx = \\sin\\omega$, which has no limit as $\\omega \\rr \\ip$."
+   }
+  },
+  {
+   "id": "am1-f-1156",
+   "livello": "teorema",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoNotevoleInfinito-3",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoNotevoleInfinito-3"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per quali $p \\in \\R$ converge $\\int_1^{\\ip} \\frac{dx}{x^p}$?",
+    "opzioni": [
+     "per $p \\ge 1$",
+     "per $p > 1$",
+     "per $p < 1$",
+     "per $p > 0$"
+    ],
+    "spiegazione": "Per $p \\neq 1$ l'integrale fino a $\\omega$ vale $\\frac{\\omega^{1-p} - 1}{1-p}$, finito al limite solo se $p > 1$; per $p = 1$ si ha $\\log\\omega \\rr \\ip$."
+   },
+   "en": {
+    "testo": "For which $p \\in \\R$ does $\\int_1^{\\ip} \\frac{dx}{x^p}$ converge?",
+    "opzioni": [
+     "for $p \\ge 1$",
+     "for $p > 1$",
+     "for $p < 1$",
+     "for $p > 0$"
+    ],
+    "spiegazione": "For $p \\neq 1$ the integral up to $\\omega$ equals $\\frac{\\omega^{1-p} - 1}{1-p}$, finite in the limit only if $p > 1$; for $p = 1$ we get $\\log\\omega \\rr \\ip$."
+   }
+  },
+  {
+   "id": "am1-f-1157",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoNotevoleInfinito-3",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoNotevoleInfinito-3"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quanto vale $\\int_1^{\\ip} \\frac{dx}{x^3}$?",
+    "opzioni": [
+     "$\\frac13$",
+     "$\\ip$",
+     "$\\frac32$",
+     "$\\frac12$"
+    ],
+    "spiegazione": "Con $p = 3 > 1$ il valore è $\\frac{1}{p-1} = \\frac12$."
+   },
+   "en": {
+    "testo": "What is $\\int_1^{\\ip} \\frac{dx}{x^3}$?",
+    "opzioni": [
+     "$\\frac13$",
+     "$\\ip$",
+     "$\\frac32$",
+     "$\\frac12$"
+    ],
+    "spiegazione": "With $p = 3 > 1$ the value is $\\frac{1}{p-1} = \\frac12$."
+   }
+  },
+  {
+   "id": "am1-f-1158",
+   "livello": "teorema",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoNotevoleZero-5",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoNotevoleZero-5"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Per quali $p \\in \\R$ converge $\\int_0^{1} \\frac{dx}{x^p}$?",
+    "opzioni": [
+     "per $p > 1$",
+     "per $p \\le 1$",
+     "per $p < 1$",
+     "per ogni $p$"
+    ],
+    "spiegazione": "$\\int_{\\varepsilon}^1 x^{-p}\\,dx = \\frac{1 - \\varepsilon^{1-p}}{1-p}$ ha limite finito solo se $1 - p > 0$; per $p = 1$ si ha $-\\log\\varepsilon \\rr \\ip$. È il contrario del caso all'infinito."
+   },
+   "en": {
+    "testo": "For which $p \\in \\R$ does $\\int_0^{1} \\frac{dx}{x^p}$ converge?",
+    "opzioni": [
+     "for $p > 1$",
+     "for $p \\le 1$",
+     "for $p < 1$",
+     "for every $p$"
+    ],
+    "spiegazione": "$\\int_{\\varepsilon}^1 x^{-p}\\,dx = \\frac{1 - \\varepsilon^{1-p}}{1-p}$ has a finite limit only if $1 - p > 0$; for $p = 1$ we get $-\\log\\varepsilon \\rr \\ip$. It is the opposite of the case at infinity."
+   }
+  },
+  {
+   "id": "am1-f-1159",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-exFunzioniIllimitate-6",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-exFunzioniIllimitate-6"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quanto vale l'integrale improprio $\\int_0^1 \\log x\\,dx$?",
+    "opzioni": [
+     "$-1$",
+     "$\\im$",
+     "$0$",
+     "$1$"
+    ],
+    "spiegazione": "Con la primitiva $x\\log x - x$: $\\lim_{\\varepsilon \\rr 0^+}\\big[x\\log x - x\\big]_{\\varepsilon}^1 = -1$, perché $\\varepsilon\\log\\varepsilon \\rr 0$."
+   },
+   "en": {
+    "testo": "What is the improper integral $\\int_0^1 \\log x\\,dx$?",
+    "opzioni": [
+     "$-1$",
+     "$\\im$",
+     "$0$",
+     "$1$"
+    ],
+    "spiegazione": "With the antiderivative $x\\log x - x$: $\\lim_{\\varepsilon \\rr 0^+}\\big[x\\log x - x\\big]_{\\varepsilon}^1 = -1$, because $\\varepsilon\\log\\varepsilon \\rr 0$."
+   }
+  },
+  {
+   "id": "am1-f-1160",
+   "livello": "ipotesi",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#2-integrali-di-funzioni-illimitate",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#2-integrals-of-unbounded-functions"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il calcolo $\\int_{-1}^{1} \\frac{dx}{x^2} = \\left[-\\frac1x\\right]_{-1}^{1} = -2$ è sbagliato. Perché?",
+    "opzioni": [
+     "perché la primitiva corretta è $\\frac{1}{x}$",
+     "perché l'intervallo è simmetrico",
+     "perché $\\frac{1}{x^2}$ è pari",
+     "perché l'integranda è illimitata in $0$"
+    ],
+    "spiegazione": "La formula fondamentale richiede una funzione continua su $[-1,1]$. Spezzando in $0$, $\\int_0^1 \\frac{dx}{x^2} = \\ip$: l'integrale diverge (un integrale di funzione positiva non può essere negativo)."
+   },
+   "en": {
+    "testo": "The computation $\\int_{-1}^{1} \\frac{dx}{x^2} = \\left[-\\frac1x\\right]_{-1}^{1} = -2$ is wrong. Why?",
+    "opzioni": [
+     "because the correct antiderivative is $\\frac{1}{x}$",
+     "because the interval is symmetric",
+     "because $\\frac{1}{x^2}$ is even",
+     "because the integrand is unbounded at $0$"
+    ],
+    "spiegazione": "The fundamental formula requires a function continuous on $[-1,1]$. Splitting at $0$, $\\int_0^1 \\frac{dx}{x^2} = \\ip$: the integral diverges (an integral of a positive function cannot be negative)."
+   }
+  },
+  {
+   "id": "am1-f-1161",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-obsNonNegative-7",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-obsNonNegative-7"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Sia $f$ continua e non negativa in $[a, \\ip)$. Quali sono i possibili caratteri di $\\int_a^{\\ip} f(x)\\,dx$?",
+    "opzioni": [
+     "converge, diverge a $\\ip$ oppure non esiste",
+     "converge oppure diverge a $\\ip$",
+     "converge sempre",
+     "converge oppure diverge a $\\im$"
+    ],
+    "spiegazione": "La funzione $\\omega \\mapsto \\int_a^{\\omega} f$ è non decrescente: per il teorema di monotonia ha sempre limite, finito o $\\ip$."
+   },
+   "en": {
+    "testo": "Let $f$ be continuous and non-negative on $[a, \\ip)$. What are the possible behaviours of $\\int_a^{\\ip} f(x)\\,dx$?",
+    "opzioni": [
+     "it converges, diverges to $\\ip$ or does not exist",
+     "it converges or diverges to $\\ip$",
+     "it always converges",
+     "it converges or diverges to $\\im$"
+    ],
+    "spiegazione": "The function $\\omega \\mapsto \\int_a^{\\omega} f$ is non-decreasing: by the monotonicity theorem it always has a limit, finite or $\\ip$."
+   }
+  },
+  {
+   "id": "am1-f-1162",
+   "livello": "teorema",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoConfronto-8",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoConfronto-8"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Criterio del confronto: siano $0 \\le f(x) \\le g(x)$ per $x \\ge a$, con $f$ e $g$ continue. Quale implicazione vale?",
+    "opzioni": [
+     "se $\\int_a^{\\ip} g$ converge, allora $\\int_a^{\\ip} f$ converge",
+     "se $\\int_a^{\\ip} f$ converge, allora $\\int_a^{\\ip} g$ converge",
+     "se $\\int_a^{\\ip} g$ diverge, allora $\\int_a^{\\ip} f$ diverge",
+     "$\\int_a^{\\ip} f$ e $\\int_a^{\\ip} g$ hanno sempre lo stesso carattere"
+    ],
+    "spiegazione": "La convergenza passa dalla maggiorante alla minorante, la divergenza dalla minorante alla maggiorante. Le altre implicazioni sono false (per esempio $f = 0$)."
+   },
+   "en": {
+    "testo": "Comparison test: let $0 \\le f(x) \\le g(x)$ for $x \\ge a$, with $f$ and $g$ continuous. Which implication holds?",
+    "opzioni": [
+     "if $\\int_a^{\\ip} g$ converges, then $\\int_a^{\\ip} f$ converges",
+     "if $\\int_a^{\\ip} f$ converges, then $\\int_a^{\\ip} g$ converges",
+     "if $\\int_a^{\\ip} g$ diverges, then $\\int_a^{\\ip} f$ diverges",
+     "$\\int_a^{\\ip} f$ and $\\int_a^{\\ip} g$ always behave alike"
+    ],
+    "spiegazione": "Convergence passes from the larger function to the smaller one, divergence from the smaller to the larger. The other implications are false (for example $f = 0$)."
+   }
+  },
+  {
+   "id": "am1-f-1163",
+   "livello": "ipotesi",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoConfrontoAsintotico-9",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoConfrontoAsintotico-9"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nel criterio del confronto asintotico per $\\int_a^{\\ip}$ si richiede $f, g > 0$ e $\\frac{f(x)}{g(x)} \\rr \\ell$. Per quali $\\ell$ si conclude che i due integrali hanno lo stesso carattere?",
+    "opzioni": [
+     "per ogni $\\ell \\ge 0$",
+     "solo per $\\ell = 1$",
+     "per $0 < \\ell < \\ip$",
+     "per ogni $\\ell$, anche $\\ip$"
+    ],
+    "spiegazione": "Con $0 < \\ell < \\ip$ si ha definitivamente $\\frac{\\ell}{2} g \\le f \\le \\frac{3\\ell}{2} g$. Con $\\ell = 0$ vale solo: $\\int g$ converge $\\Rightarrow$ $\\int f$ converge."
+   },
+   "en": {
+    "testo": "In the limit comparison test for $\\int_a^{\\ip}$ one requires $f, g > 0$ and $\\frac{f(x)}{g(x)} \\rr \\ell$. For which $\\ell$ do the two integrals have the same behaviour?",
+    "opzioni": [
+     "for every $\\ell \\ge 0$",
+     "only for $\\ell = 1$",
+     "for $0 < \\ell < \\ip$",
+     "for every $\\ell$, even $\\ip$"
+    ],
+    "spiegazione": "With $0 < \\ell < \\ip$ eventually $\\frac{\\ell}{2} g \\le f \\le \\frac{3\\ell}{2} g$. With $\\ell = 0$ only: $\\int g$ converges $\\Rightarrow$ $\\int f$ converges."
+   }
+  },
+  {
+   "id": "am1-f-1164",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-exConfrontoInfinito-10",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-exConfrontoInfinito-10"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Qual è il carattere di $\\int_1^{\\ip} \\frac{x+1}{x^3+2}\\,dx$?",
+    "opzioni": [
+     "diverge: è asintotica a $\\frac1x$",
+     "converge: è asintotica a $\\frac{1}{x^2}$",
+     "non esiste, perché oscilla",
+     "diverge, perché il numeratore tende a $\\ip$"
+    ],
+    "spiegazione": "Per $x \\rr \\ip$, $\\frac{x+1}{x^3+2} \\sim \\frac{1}{x^2}$ e $\\int_1^{\\ip}\\frac{dx}{x^2}$ converge: per confronto asintotico l'integrale converge."
+   },
+   "en": {
+    "testo": "What is the behaviour of $\\int_1^{\\ip} \\frac{x+1}{x^3+2}\\,dx$?",
+    "opzioni": [
+     "it diverges: it is asymptotic to $\\frac1x$",
+     "it converges: it is asymptotic to $\\frac{1}{x^2}$",
+     "it does not exist, it oscillates",
+     "it diverges, since the numerator tends to $\\ip$"
+    ],
+    "spiegazione": "As $x \\rr \\ip$, $\\frac{x+1}{x^3+2} \\sim \\frac{1}{x^2}$ and $\\int_1^{\\ip}\\frac{dx}{x^2}$ converges: by limit comparison the integral converges."
+   }
+  },
+  {
+   "id": "am1-f-1165",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-exConfrontoZero-11",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-exConfrontoZero-11"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Qual è il carattere di $\\int_0^{1} \\frac{dx}{e^x - 1}$?",
+    "opzioni": [
+     "converge a $\\log(e - 1)$",
+     "converge, perché l'integranda è limitata",
+     "non esiste, perché oscilla",
+     "diverge: è asintotica a $\\frac1x$ in $0$"
+    ],
+    "spiegazione": "Per $x \\rr 0^+$, $e^x - 1 \\sim x$, quindi l'integranda è asintotica a $\\frac1x$ e $\\int_0^1 \\frac{dx}{x}$ diverge."
+   },
+   "en": {
+    "testo": "What is the behaviour of $\\int_0^{1} \\frac{dx}{e^x - 1}$?",
+    "opzioni": [
+     "it converges to $\\log(e - 1)$",
+     "it converges, because the integrand is bounded",
+     "it does not exist, it oscillates",
+     "it diverges: asymptotic to $\\frac1x$ at $0$"
+    ],
+    "spiegazione": "As $x \\rr 0^+$, $e^x - 1 \\sim x$, so the integrand is asymptotic to $\\frac1x$ and $\\int_0^1 \\frac{dx}{x}$ diverges."
+   }
+  },
+  {
+   "id": "am1-f-1166",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-exParametro-12",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-exParametro-12"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Per quali $\\alpha \\in \\R$ converge $\\int_0^{\\ip} \\frac{x^{\\alpha}}{1+x^2}\\,dx$?",
+    "opzioni": [
+     "$-1 < \\alpha < 1$",
+     "$\\alpha < 1$",
+     "$\\alpha > -1$",
+     "$0 < \\alpha < 2$"
+    ],
+    "spiegazione": "In $0$ l'integranda è asintotica a $x^{\\alpha}$ (serve $\\alpha > -1$), all'infinito a $x^{\\alpha - 2}$ (serve $2 - \\alpha > 1$, cioè $\\alpha < 1$)."
+   },
+   "en": {
+    "testo": "For which $\\alpha \\in \\R$ does $\\int_0^{\\ip} \\frac{x^{\\alpha}}{1+x^2}\\,dx$ converge?",
+    "opzioni": [
+     "$-1 < \\alpha < 1$",
+     "$\\alpha < 1$",
+     "$\\alpha > -1$",
+     "$0 < \\alpha < 2$"
+    ],
+    "spiegazione": "At $0$ the integrand is asymptotic to $x^{\\alpha}$ (we need $\\alpha > -1$), at infinity to $x^{\\alpha - 2}$ (we need $2 - \\alpha > 1$, that is $\\alpha < 1$)."
+   }
+  },
+  {
+   "id": "am1-f-1167",
+   "livello": "teorema",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoAssoluta-13",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoAssoluta-13"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Per $f$ continua in $[a, \\ip)$, che cosa afferma il teorema della convergenza assoluta?",
+    "opzioni": [
+     "se $\\int_a^{\\ip} f$ converge, allora $\\int_a^{\\ip} |f|$ converge",
+     "$\\int_a^{\\ip} f$ e $\\int_a^{\\ip} |f|$ hanno lo stesso carattere",
+     "se $\\int_a^{\\ip} |f|$ converge, allora $\\int_a^{\\ip} f$ converge",
+     "se $f \\rr 0$, allora $\\int_a^{\\ip} f$ converge"
+    ],
+    "spiegazione": "Si usa $0 \\le f + |f| \\le 2|f|$ e il confronto. Il viceversa è falso in generale."
+   },
+   "en": {
+    "testo": "For $f$ continuous on $[a, \\ip)$, what does the absolute convergence theorem state?",
+    "opzioni": [
+     "if $\\int_a^{\\ip} f$ converges, then $\\int_a^{\\ip} |f|$ converges",
+     "$\\int_a^{\\ip} f$ and $\\int_a^{\\ip} |f|$ behave alike",
+     "if $\\int_a^{\\ip} |f|$ converges, then $\\int_a^{\\ip} f$ converges",
+     "if $f \\rr 0$, then $\\int_a^{\\ip} f$ converges"
+    ],
+    "spiegazione": "One uses $0 \\le f + |f| \\le 2|f|$ and comparison. The converse is false in general."
+   }
+  },
+  {
+   "id": "am1-f-1168",
+   "livello": "teorema",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-theoCriterioIntegrale-15",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-theoCriterioIntegrale-15"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Criterio integrale: se $f$ è continua, non negativa e non crescente in $[1, \\ip)$, che cosa si può dire di $\\sum_{k=1}^{\\infty} f(k)$ e $\\int_1^{\\ip} f(x)\\,dx$?",
+    "opzioni": [
+     "hanno la stessa somma",
+     "hanno lo stesso carattere",
+     "la serie converge sempre",
+     "l'integrale è sempre minore della serie e quindi converge"
+    ],
+    "spiegazione": "Da $f(k+1) \\le \\int_k^{k+1} f \\le f(k)$ si ottengono stime in entrambe le direzioni: stesso carattere, ma in generale somma e integrale sono diversi."
+   },
+   "en": {
+    "testo": "Integral test: if $f$ is continuous, non-negative and non-increasing on $[1, \\ip)$, what can be said about $\\sum_{k=1}^{\\infty} f(k)$ and $\\int_1^{\\ip} f(x)\\,dx$?",
+    "opzioni": [
+     "they have the same sum",
+     "they have the same behaviour",
+     "the series always converges",
+     "the integral is always smaller than the series, so it converges"
+    ],
+    "spiegazione": "From $f(k+1) \\le \\int_k^{k+1} f \\le f(k)$ one gets estimates in both directions: same behaviour, but in general sum and integral differ."
+   }
+  },
+  {
+   "id": "am1-f-1169",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#4-criterio-integrale-per-le-serie",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#4-integral-test-for-series"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Usando il criterio integrale, qual è il carattere di $\\sum_{k=2}^{\\infty} \\frac{1}{k\\log k}$?",
+    "opzioni": [
+     "converge, perché il termine generale tende a $0$",
+     "converge, perché $\\frac{1}{k\\log k} \\le \\frac{1}{k}$",
+     "il criterio integrale non si applica",
+     "diverge: $\\int_2^{\\omega} \\frac{dx}{x\\log x} \\rr \\ip$"
+    ],
+    "spiegazione": "Con $t = \\log x$ l'integrale fino a $\\omega$ vale $\\log\\log\\omega - \\log\\log 2 \\rr \\ip$: la serie diverge. Il confronto con $\\frac1k$ (divergente) non dà informazioni."
+   },
+   "en": {
+    "testo": "Using the integral test, what is the behaviour of $\\sum_{k=2}^{\\infty} \\frac{1}{k\\log k}$?",
+    "opzioni": [
+     "it converges, since the general term tends to $0$",
+     "it converges, since $\\frac{1}{k\\log k} \\le \\frac{1}{k}$",
+     "the integral test does not apply",
+     "it diverges: $\\int_2^{\\omega} \\frac{dx}{x\\log x} \\rr \\ip$"
+    ],
+    "spiegazione": "With $t = \\log x$ the integral up to $\\omega$ equals $\\log\\log\\omega - \\log\\log 2 \\rr \\ip$: the series diverges. Comparison with $\\frac1k$ (divergent) gives no information."
+   }
+  },
+  {
+   "id": "am1-f-1170",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-exArmonica-17",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-exArmonica-17"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Dal criterio integrale con $f(x) = \\frac1x$ si ottengono stime per $H_n = 1 + \\frac12 + \\dots + \\frac1n$. Quali?",
+    "opzioni": [
+     "$\\log n \\le H_n \\le \\log(n+1)$",
+     "$\\log(n-1) \\le H_n \\le \\log n$",
+     "$\\log(n+1) \\le H_n \\le 1 + \\log n$",
+     "$\\sqrt{n} \\le H_n \\le n$"
+    ],
+    "spiegazione": "$\\int_1^{n+1}\\frac{dx}{x} \\le H_n$ e $H_n - 1 \\le \\int_1^n \\frac{dx}{x}$: le somme parziali della serie armonica crescono come $\\log n$."
+   },
+   "en": {
+    "testo": "From the integral test with $f(x) = \\frac1x$ one gets estimates for $H_n = 1 + \\frac12 + \\dots + \\frac1n$. Which ones?",
+    "opzioni": [
+     "$\\log n \\le H_n \\le \\log(n+1)$",
+     "$\\log(n-1) \\le H_n \\le \\log n$",
+     "$\\log(n+1) \\le H_n \\le 1 + \\log n$",
+     "$\\sqrt{n} \\le H_n \\le n$"
+    ],
+    "spiegazione": "$\\int_1^{n+1}\\frac{dx}{x} \\le H_n$ and $H_n - 1 \\le \\int_1^n \\frac{dx}{x}$: the partial sums of the harmonic series grow like $\\log n$."
+   }
+  },
+  {
+   "id": "am1-f-1171",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defPartizione-1",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defPartizione-1"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale dei seguenti insiemi è una partizione di $[0,2]$?",
+    "opzioni": [
+     "$\\{0, \\frac12, 1\\}$",
+     "$\\{\\frac12, 1, 2\\}$",
+     "$\\{0, \\frac12, \\frac32, 2\\}$",
+     "$\\{0, 1, \\frac52, 3\\}$"
+    ],
+    "spiegazione": "Una partizione è un insieme finito di punti di $[0,2]$ che contiene entrambi gli estremi $0$ e $2$."
+   },
+   "en": {
+    "testo": "Which of the following sets is a partition of $[0,2]$?",
+    "opzioni": [
+     "$\\{0, \\frac12, 1\\}$",
+     "$\\{\\frac12, 1, 2\\}$",
+     "$\\{0, \\frac12, \\frac32, 2\\}$",
+     "$\\{0, 1, \\frac52, 3\\}$"
+    ],
+    "spiegazione": "A partition is a finite set of points of $[0,2]$ containing both endpoints $0$ and $2$."
+   }
+  },
+  {
+   "id": "am1-f-1172",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-defPartizione-1",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-defPartizione-1"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Nella partizione uniforme di $[1,3]$ in $4$ intervalli, quali sono i punti?",
+    "opzioni": [
+     "$1, \\frac32, 2, \\frac52, 3$",
+     "$1, 2, 3$",
+     "$0, \\frac34, \\frac32, \\frac94, 3$",
+     "$1, \\frac54, \\frac32, \\frac74, 2$"
+    ],
+    "spiegazione": "L'ampiezza è $\\frac{3-1}{4} = \\frac12$, quindi $x_k = 1 + \\frac{k}{2}$ per $k = 0, 1, 2, 3, 4$."
+   },
+   "en": {
+    "testo": "In the uniform partition of $[1,3]$ into $4$ intervals, what are the points?",
+    "opzioni": [
+     "$1, \\frac32, 2, \\frac52, 3$",
+     "$1, 2, 3$",
+     "$0, \\frac34, \\frac32, \\frac94, 3$",
+     "$1, \\frac54, \\frac32, \\frac74, 2$"
+    ],
+    "spiegazione": "The width is $\\frac{3-1}{4} = \\frac12$, so $x_k = 1 + \\frac{k}{2}$ for $k = 0, 1, 2, 3, 4$."
+   }
+  },
+  {
+   "id": "am1-f-1173",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-propRaffinamento-4",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-propRaffinamento-4"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Perché aggiungendo un punto $y$ in $I_k$ la somma inferiore non diminuisce?",
+    "opzioni": [
+     "perché $f$ è continua in $[a,b]$",
+     "perché la nuova partizione ha più intervalli",
+     "perché $f(y) \\ge m_k$ e la somma cresce di $f(y)$",
+     "perché sui sottointervalli l'inf è $\\ge m_k$"
+    ],
+    "spiegazione": "Su $[x_{k-1}, y]$ e $[y, x_k]$ gli estremi inferiori sono $\\ge m_k$, quindi $m'(y - x_{k-1}) + m''(x_k - y) \\ge m_k\\,\\Delta x_k$. Non serve la continuità."
+   },
+   "en": {
+    "testo": "Why does the lower sum not decrease when a point $y$ is added in $I_k$?",
+    "opzioni": [
+     "because $f$ is continuous",
+     "because the new partition has more intervals",
+     "because $f(y) \\ge m_k$ and the sum grows by $f(y)$",
+     "because the infimum on subintervals is $\\ge m_k$"
+    ],
+    "spiegazione": "On $[x_{k-1}, y]$ and $[y, x_k]$ the infima are $\\ge m_k$, hence $m'(y - x_{k-1}) + m''(x_k - y) \\ge m_k\\,\\Delta x_k$. Continuity is not needed."
+   }
+  },
+  {
+   "id": "am1-f-1174",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#22-criterio-di-integrabilita",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#22-integrability-criterion"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per una funzione limitata $f$ e una partizione $P$ si trova $S(f,P) - s(f,P) = 0{,}01$. Che cosa si può concludere sull'integrale (se esiste)?",
+    "opzioni": [
+     "che vale $0{,}01$",
+     "che sta fra $s(f,P)$ e $S(f,P)$",
+     "che $f$ è costante su ogni $I_k$",
+     "che $f$ non è integrabile"
+    ],
+    "spiegazione": "Se $f$ è integrabile, $s(f,P) \\le \\int_a^b f \\le S(f,P)$ per ogni $P$; una sola partizione non basta però a dimostrare l'integrabilità."
+   },
+   "en": {
+    "testo": "For a bounded function $f$ and a partition $P$ one finds $S(f,P) - s(f,P) = 0.01$. What can be concluded about the integral (if it exists)?",
+    "opzioni": [
+     "that it is equal to the number $0.01$",
+     "that it lies between $s(f,P)$ and $S(f,P)$",
+     "that $f$ is constant on each $I_k$",
+     "that $f$ is not integrable"
+    ],
+    "spiegazione": "If $f$ is integrable, $s(f,P) \\le \\int_a^b f \\le S(f,P)$ for every $P$; a single partition, however, does not prove integrability."
+   }
+  },
+  {
+   "id": "am1-f-1175",
+   "livello": "ipotesi",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#22-criterio-di-integrabilita",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#22-integrability-criterion"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Per la funzione di Dirichlet $D$ in $[0,1]$, perché il criterio di integrabilità di Riemann fallisce?",
+    "opzioni": [
+     "perché $D$ non è limitata",
+     "perché $[0,1]$ non è aperto",
+     "perché sempre $S(D,P) - s(D,P) = 1$",
+     "perché $D$ è monotona in $[0,1]$"
+    ],
+    "spiegazione": "Ogni intervallo contiene razionali e irrazionali: $S(D,P) - s(D,P) = 1 - 0$ non scende mai sotto $1$. $D$ è limitata e non monotona."
+   },
+   "en": {
+    "testo": "For the Dirichlet function $D$ on $[0,1]$, why does Riemann's integrability criterion fail?",
+    "opzioni": [
+     "because $D$ is not bounded",
+     "because $[0,1]$ is not open",
+     "because always $S(D,P) - s(D,P) = 1$",
+     "because $D$ is monotone on $[0,1]$"
+    ],
+    "spiegazione": "Every interval contains rationals and irrationals: $S(D,P) - s(D,P) = 1 - 0$ never drops below $1$. $D$ is bounded and not monotone."
+   }
+  },
+  {
+   "id": "am1-f-1176",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#23-somme-di-riemann",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#23-riemann-sums"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Per $f(x) = x^2$ in $[0,1]$, partizione uniforme in $2$ intervalli, quanto vale la somma di Riemann con gli estremi sinistri?",
+    "opzioni": [
+     "$\\frac58$",
+     "$\\frac13$",
+     "$\\frac14$",
+     "$\\frac18$"
+    ],
+    "spiegazione": "Estremi sinistri $0$ e $\\frac12$: $\\left(0 + \\frac14\\right)\\cdot\\frac12 = \\frac18$. Con gli estremi destri si ottiene $\\frac58$; l'integrale è $\\frac13$."
+   },
+   "en": {
+    "testo": "For $f(x) = x^2$ on $[0,1]$, uniform partition into $2$ intervals, what is the Riemann sum with the left endpoints?",
+    "opzioni": [
+     "$\\frac58$",
+     "$\\frac13$",
+     "$\\frac14$",
+     "$\\frac18$"
+    ],
+    "spiegazione": "Left endpoints $0$ and $\\frac12$: $\\left(0 + \\frac14\\right)\\cdot\\frac12 = \\frac18$. The right endpoints give $\\frac58$; the integral is $\\frac13$."
+   }
+  },
+  {
+   "id": "am1-f-1177",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#23-somme-di-riemann",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#23-riemann-sums"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Per una funzione integrabile $f$ e una partizione $P$, dove sta sempre una somma di Riemann $\\sigma(f,P) = \\sum f(t_k)\\,\\Delta x_k$, con $t_k \\in I_k$?",
+    "opzioni": [
+     "fra $s(f,P)$ e $S(f,P)$",
+     "sotto $s(f,P)$",
+     "sopra $S(f,P)$",
+     "esattamente in $\\int_a^b f$"
+    ],
+    "spiegazione": "$m_k \\le f(t_k) \\le M_k$, quindi $s(f,P) \\le \\sigma(f,P) \\le S(f,P)$, qualunque sia la scelta dei punti."
+   },
+   "en": {
+    "testo": "For an integrable function $f$ and a partition $P$, where does a Riemann sum $\\sigma(f,P) = \\sum f(t_k)\\,\\Delta x_k$, with $t_k \\in I_k$, always lie?",
+    "opzioni": [
+     "between $s(f,P)$ and $S(f,P)$",
+     "always below $s(f,P)$",
+     "always above $S(f,P)$",
+     "exactly at $\\int_a^b f$"
+    ],
+    "spiegazione": "$m_k \\le f(t_k) \\le M_k$, hence $s(f,P) \\le \\sigma(f,P) \\le S(f,P)$, whatever the choice of the points."
+   }
+  },
+  {
+   "id": "am1-f-1178",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#31-continuita-uniforme",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#31-uniform-continuity"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per $f(x) = 3x + 1$ in $\\R$, quale $\\delta$ funziona nella definizione di continuità uniforme per ogni $\\varepsilon > 0$?",
+    "opzioni": [
+     "$\\delta = 3\\varepsilon$",
+     "$\\delta = \\frac{\\varepsilon}{3}$",
+     "$\\delta = \\varepsilon + 1$",
+     "nessuno: non è uniformemente continua"
+    ],
+    "spiegazione": "$|f(x) - f(y)| = 3|x - y| < \\varepsilon$ se $|x - y| < \\frac{\\varepsilon}{3}$; lo stesso $\\delta$ va bene per tutti i punti."
+   },
+   "en": {
+    "testo": "For $f(x) = 3x + 1$ on $\\R$, which $\\delta$ works in the definition of uniform continuity for every $\\varepsilon > 0$?",
+    "opzioni": [
+     "$\\delta = 3\\varepsilon$",
+     "$\\delta = \\frac{\\varepsilon}{3}$",
+     "$\\delta = \\varepsilon + 1$",
+     "none: it is not uniformly continuous"
+    ],
+    "spiegazione": "$|f(x) - f(y)| = 3|x - y| < \\varepsilon$ if $|x - y| < \\frac{\\varepsilon}{3}$; the same $\\delta$ works for all points."
+   }
+  },
+  {
+   "id": "am1-f-1179",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#32-integrabilita-delle-funzioni-continue",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#32-integrability-of-continuous-functions"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale delle seguenti funzioni è sicuramente integrabile in $[0,1]$ per i teoremi del capitolo?",
+    "opzioni": [
+     "$\\frac{1}{x}$ per $x > 0$, con $f(0) = 0$",
+     "la funzione di Dirichlet",
+     "$e^{x}\\cos x$",
+     "$\\sin\\frac1x$ per $x > 0$, con $f(0) = 7$, perché è illimitata"
+    ],
+    "spiegazione": "$e^x\\cos x$ è continua in $[0,1]$. $\\frac1x$ è illimitata (non è integrabile secondo Riemann); la Dirichlet non è integrabile; l'ultima opzione è limitata, non illimitata."
+   },
+   "en": {
+    "testo": "Which of the following functions is certainly integrable on $[0,1]$ by the theorems of the chapter?",
+    "opzioni": [
+     "$\\frac{1}{x}$ for $x > 0$, with $f(0) = 0$",
+     "the Dirichlet function",
+     "$e^{x}\\cos x$",
+     "$\\sin\\frac1x$ for $x > 0$, with $f(0) = 7$, as it is unbounded"
+    ],
+    "spiegazione": "$e^x\\cos x$ is continuous on $[0,1]$. $\\frac1x$ is unbounded (not Riemann integrable); the Dirichlet function is not integrable; the last option is bounded, not unbounded."
+   }
+  },
+  {
+   "id": "am1-f-1180",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#32-integrabilita-delle-funzioni-continue",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#32-integrability-of-continuous-functions"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quali teoremi si usano per dimostrare che una funzione continua su $[a,b]$ è integrabile?",
+    "opzioni": [
+     "Weierstrass, Heine--Cantor, criterio di Riemann",
+     "Lagrange, De l'Hospital e Rolle",
+     "il teorema degli zeri e la bisezione",
+     "il teorema fondamentale del calcolo"
+    ],
+    "spiegazione": "Weierstrass dà massimo e minimo su ogni intervallo, Heine--Cantor li rende vicini su intervalli piccoli, il criterio conclude. Il teorema fondamentale viene dopo e usa questo risultato."
+   },
+   "en": {
+    "testo": "Which theorems are used to prove that a continuous function on $[a,b]$ is integrable?",
+    "opzioni": [
+     "Weierstrass, Heine--Cantor, Riemann's criterion",
+     "Lagrange, L'Hôpital and Rolle",
+     "the zeros theorem and the bisection method",
+     "the fundamental theorem of calculus"
+    ],
+    "spiegazione": "Weierstrass gives maximum and minimum on each interval, Heine--Cantor makes them close on small intervals, the criterion concludes. The fundamental theorem comes later and uses this result."
+   }
+  },
+  {
+   "id": "am1-f-1181",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#41-linearita",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#41-linearity"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Sapendo che $\\int_0^1 x\\,dx = \\frac12$ e $\\int_0^1 x^2\\,dx = \\frac13$, quanto vale $\\int_0^1 (6x^2 - 4x + 1)\\,dx$?",
+    "opzioni": [
+     "$3$",
+     "$\\frac12$",
+     "$2$",
+     "$1$"
+    ],
+    "spiegazione": "Per la linearità: $6\\cdot\\frac13 - 4\\cdot\\frac12 + 1 = 2 - 2 + 1 = 1$."
+   },
+   "en": {
+    "testo": "Knowing that $\\int_0^1 x\\,dx = \\frac12$ and $\\int_0^1 x^2\\,dx = \\frac13$, what is $\\int_0^1 (6x^2 - 4x + 1)\\,dx$?",
+    "opzioni": [
+     "$3$",
+     "$\\frac12$",
+     "$2$",
+     "$1$"
+    ],
+    "spiegazione": "By linearity: $6\\cdot\\frac13 - 4\\cdot\\frac12 + 1 = 2 - 2 + 1 = 1$."
+   }
+  },
+  {
+   "id": "am1-f-1182",
+   "livello": "ipotesi",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#41-linearita",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#41-linearity"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per due funzioni integrabili $f$, $g$ in $[a,b]$, quale uguaglianza è FALSA in generale?",
+    "opzioni": [
+     "$\\int_a^b (f + g) = \\int_a^b f + \\int_a^b g$",
+     "$\\int_a^b f\\,g = \\int_a^b f \\cdot \\int_a^b g$",
+     "$\\int_a^b 3f = 3\\int_a^b f$",
+     "$\\int_a^b (f - g) = \\int_a^b f - \\int_a^b g$"
+    ],
+    "spiegazione": "L'integrale è lineare, non moltiplicativo: per $f = g = 1$ in $[0,2]$ si ha $\\int_0^2 1 = 2$, mentre $2 \\cdot 2 = 4$."
+   },
+   "en": {
+    "testo": "For two integrable functions $f$, $g$ on $[a,b]$, which equality is FALSE in general?",
+    "opzioni": [
+     "$\\int_a^b (f + g) = \\int_a^b f + \\int_a^b g$",
+     "$\\int_a^b f\\,g = \\int_a^b f \\cdot \\int_a^b g$",
+     "$\\int_a^b 3f = 3\\int_a^b f$",
+     "$\\int_a^b (f - g) = \\int_a^b f - \\int_a^b g$"
+    ],
+    "spiegazione": "The integral is linear, not multiplicative: for $f = g = 1$ on $[0,2]$ we have $\\int_0^2 1 = 2$, while $2 \\cdot 2 = 4$."
+   }
+  },
+  {
+   "id": "am1-f-1183",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#42-additivita-rispetto-allintervallo",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#42-additivity-with-respect-to-the-interval"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Sia $f(x) = x$ per $x \\in [0,1]$ e $f(x) = 1$ per $x \\in [1,3]$. Quanto vale $\\int_0^3 f(x)\\,dx$?",
+    "opzioni": [
+     "$\\frac52$",
+     "$3$",
+     "$\\frac32$",
+     "$\\frac92$"
+    ],
+    "spiegazione": "Per l'additività: $\\int_0^1 x\\,dx + \\int_1^3 1\\,dx = \\frac12 + 2 = \\frac52$."
+   },
+   "en": {
+    "testo": "Let $f(x) = x$ for $x \\in [0,1]$ and $f(x) = 1$ for $x \\in [1,3]$. What is $\\int_0^3 f(x)\\,dx$?",
+    "opzioni": [
+     "$\\frac52$",
+     "$3$",
+     "$\\frac32$",
+     "$\\frac92$"
+    ],
+    "spiegazione": "By additivity: $\\int_0^1 x\\,dx + \\int_1^3 1\\,dx = \\frac12 + 2 = \\frac52$."
+   }
+  },
+  {
+   "id": "am1-f-1184",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#42-additivita-rispetto-allintervallo",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#42-additivity-with-respect-to-the-interval"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Con le convenzioni sugli estremi, quanto vale $\\int_3^1 f(x)\\,dx + \\int_1^3 f(x)\\,dx$ per $f$ integrabile?",
+    "opzioni": [
+     "$2\\int_1^3 f(x)\\,dx$",
+     "non è definito",
+     "$0$",
+     "$\\int_1^3 |f(x)|\\,dx$"
+    ],
+    "spiegazione": "$\\int_3^1 f = -\\int_1^3 f$, quindi la somma è $0$ (come $\\int_1^1 f$ per l'additività)."
+   },
+   "en": {
+    "testo": "With the conventions on the limits, what is $\\int_3^1 f(x)\\,dx + \\int_1^3 f(x)\\,dx$ for integrable $f$?",
+    "opzioni": [
+     "$2\\int_1^3 f(x)\\,dx$",
+     "it is not defined",
+     "$0$",
+     "$\\int_1^3 |f(x)|\\,dx$"
+    ],
+    "spiegazione": "$\\int_3^1 f = -\\int_1^3 f$, so the sum is $0$ (like $\\int_1^1 f$ by additivity)."
+   }
+  },
+  {
+   "id": "am1-f-1185",
+   "livello": "teorema",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#box-theoMonotonia-21",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#box-theoMonotonia-21"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Se $f$ e $g$ sono integrabili in $[a,b]$ e $f(x) \\le g(x)$ per ogni $x$, quale conclusione dà il teorema di monotonia dell'integrale?",
+    "opzioni": [
+     "$f(x) \\le \\int_a^b g$ per ogni $x$",
+     "$\\int_a^b f \\le \\int_a^b g$",
+     "$\\int_a^b |f| \\le \\int_a^b |g|$",
+     "$\\int_a^b f < \\int_a^b g$"
+    ],
+    "spiegazione": "Da $s(f,P) \\le s(g,P) \\le \\int g$ per ogni $P$. La disuguaglianza può essere un'uguaglianza ($f = g$); con i valori assoluti è falsa ($f = -2 \\le g = 1$)."
+   },
+   "en": {
+    "testo": "If $f$ and $g$ are integrable on $[a,b]$ and $f(x) \\le g(x)$ for every $x$, what does the monotonicity theorem conclude?",
+    "opzioni": [
+     "$f(x) \\le \\int_a^b g$ for every $x$",
+     "$\\int_a^b f \\le \\int_a^b g$",
+     "$\\int_a^b |f| \\le \\int_a^b |g|$",
+     "$\\int_a^b f < \\int_a^b g$"
+    ],
+    "spiegazione": "From $s(f,P) \\le s(g,P) \\le \\int g$ for every $P$. The inequality may be an equality ($f = g$); with absolute values it is false ($f = -2 \\le g = 1$)."
+   }
+  },
+  {
+   "id": "am1-f-1186",
+   "livello": "facile",
+   "capitolo": "integrals-01-riemann-integral",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/01-integrale-riemann/#5-teorema-della-media-integrale",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/01-riemann-integral/#5-integral-mean-value-theorem"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Qual è la media integrale di $f(x) = |x - 1|$ in $[0,3]$ (calcolata con le aree dei triangoli)?",
+    "opzioni": [
+     "$\\frac52$",
+     "$1$",
+     "$\\frac12$",
+     "$\\frac56$"
+    ],
+    "spiegazione": "$\\int_0^3 |x-1|\\,dx = \\frac12 + 2 = \\frac52$ e la media è $\\frac13 \\cdot \\frac52 = \\frac56$, assunta in $x = \\frac16$ e in $x = \\frac{11}{6}$."
+   },
+   "en": {
+    "testo": "What is the integral mean of $f(x) = |x - 1|$ on $[0,3]$ (computed with the areas of triangles)?",
+    "opzioni": [
+     "$\\frac52$",
+     "$1$",
+     "$\\frac12$",
+     "$\\frac56$"
+    ],
+    "spiegazione": "$\\int_0^3 |x-1|\\,dx = \\frac12 + 2 = \\frac52$ and the mean is $\\frac13 \\cdot \\frac52 = \\frac56$, taken at $x = \\frac16$ and at $x = \\frac{11}{6}$."
+   }
+  },
+  {
+   "id": "am1-f-1187",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-defIndefinito-5",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-defIndefinito-5"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che cosa indica il simbolo $\\int f(x)\\,dx$ (integrale indefinito) di una funzione $f$ su un intervallo?",
+    "opzioni": [
+     "un numero reale positivo",
+     "l'area sotto il grafico di $f$",
+     "tutte le primitive di $f$",
+     "la derivata di $f$"
+    ],
+    "spiegazione": "$\\int f(x)\\,dx = F(x) + c$ è la famiglia delle primitive. L'integrale definito $\\int_a^b f$ invece è un numero."
+   },
+   "en": {
+    "testo": "What does the symbol $\\int f(x)\\,dx$ (indefinite integral) of a function $f$ on an interval denote?",
+    "opzioni": [
+     "a positive real number",
+     "the area under the graph of $f$",
+     "all the antiderivatives of $f$",
+     "the derivative of $f$"
+    ],
+    "spiegazione": "$\\int f(x)\\,dx = F(x) + c$ is the family of antiderivatives. The definite integral $\\int_a^b f$ instead is a number."
+   }
+  },
+  {
+   "id": "am1-f-1188",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#box-defIndefinito-5",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#box-defIndefinito-5"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Qual è la primitiva $F$ di $f(x) = 2x + 3$ in $\\R$ con $F(1) = 0$?",
+    "opzioni": [
+     "$x^2 + 3x - 4$",
+     "$x^2 + 3x$",
+     "$x^2 + 3x + 4$",
+     "$2x^2 + 3x - 5$"
+    ],
+    "spiegazione": "Le primitive sono $x^2 + 3x + c$; $F(1) = 4 + c = 0$ dà $c = -4$."
+   },
+   "en": {
+    "testo": "What is the antiderivative $F$ of $f(x) = 2x + 3$ on $\\R$ with $F(1) = 0$?",
+    "opzioni": [
+     "$x^2 + 3x - 4$",
+     "$x^2 + 3x$",
+     "$x^2 + 3x + 4$",
+     "$2x^2 + 3x - 5$"
+    ],
+    "spiegazione": "The antiderivatives are $x^2 + 3x + c$; $F(1) = 4 + c = 0$ gives $c = -4$."
+   }
+  },
+  {
+   "id": "am1-f-1189",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#2-la-funzione-integrale",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#2-the-integral-function"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Sia $F(x) = \\int_0^x t\\,dt$ per $x \\in \\R$. Quanto vale $F(-2)$?",
+    "opzioni": [
+     "$-2$",
+     "$2$",
+     "$0$",
+     "$-4$"
+    ],
+    "spiegazione": "$F(x) = \\frac{x^2}{2}$ per ogni $x$: per $x < 0$, $\\int_0^x t\\,dt = -\\int_x^0 t\\,dt$ e l'integrale fra $x$ e $0$ è negativo. Quindi $F(-2) = 2$."
+   },
+   "en": {
+    "testo": "Let $F(x) = \\int_0^x t\\,dt$ for $x \\in \\R$. What is $F(-2)$?",
+    "opzioni": [
+     "$-2$",
+     "$2$",
+     "$0$",
+     "$-4$"
+    ],
+    "spiegazione": "$F(x) = \\frac{x^2}{2}$ for every $x$: for $x < 0$, $\\int_0^x t\\,dt = -\\int_x^0 t\\,dt$ and the integral between $x$ and $0$ is negative. Hence $F(-2) = 2$."
+   }
+  },
+  {
+   "id": "am1-f-1190",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#2-la-funzione-integrale",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#2-the-integral-function"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Sia $f = 0$ in $[0,1)$ e $f = 1$ in $[1,2]$, e $F(x) = \\int_0^x f(t)\\,dt$. Che cosa si può dire di $F$?",
+    "opzioni": [
+     "$F$ è discontinua nel punto $1$",
+     "$F$ è derivabile in $1$ con $F'(1) = 1$",
+     "$F$ è costante in $[0,2]$",
+     "$F$ è continua ma non derivabile in $1$"
+    ],
+    "spiegazione": "$F = 0$ in $[0,1]$ e $F(x) = x - 1$ in $[1,2]$: è continua (la funzione integrale lo è sempre) ma ha un punto angoloso in $1$, dove $f$ non è continua."
+   },
+   "en": {
+    "testo": "Let $f = 0$ on $[0,1)$ and $f = 1$ on $[1,2]$, and $F(x) = \\int_0^x f(t)\\,dt$. What can be said about $F$?",
+    "opzioni": [
+     "$F$ is discontinuous at the point $1$",
+     "$F$ is differentiable at $1$ with $F'(1) = 1$",
+     "$F$ is constant on $[0,2]$",
+     "$F$ is continuous but not differentiable at $1$"
+    ],
+    "spiegazione": "$F = 0$ on $[0,1]$ and $F(x) = x - 1$ on $[1,2]$: it is continuous (an integral function always is) but has a corner at $1$, where $f$ is not continuous."
+   }
+  },
+  {
+   "id": "am1-f-1191",
+   "livello": "ipotesi",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#3-teorema-fondamentale-del-calcolo-integrale",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#3-fundamental-theorem-of-calculus"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella prima parte del teorema fondamentale ($F' = f$ per $F(x) = \\int_a^x f$), quale ipotesi su $f$ si usa?",
+    "opzioni": [
+     "$f$ derivabile",
+     "$f$ monotona",
+     "$f$ continua",
+     "$f$ positiva"
+    ],
+    "spiegazione": "La continuità serve sia per il teorema della media sia per $f(c_h) \\rr f(x)$. Con un salto (esempio della funzione a gradino) $F$ non è derivabile nel salto."
+   },
+   "en": {
+    "testo": "In the first part of the fundamental theorem ($F' = f$ for $F(x) = \\int_a^x f$), which assumption on $f$ is used?",
+    "opzioni": [
+     "$f$ differentiable",
+     "$f$ monotone",
+     "$f$ continuous",
+     "$f$ positive"
+    ],
+    "spiegazione": "Continuity is needed both for the mean value theorem and for $f(c_h) \\rr f(x)$. With a jump (step function example) $F$ is not differentiable at the jump."
+   }
+  },
+  {
+   "id": "am1-f-1192",
+   "livello": "facile",
+   "capitolo": "integrals-02-fundamental-theorem",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/02-teorema-fondamentale/#4-primitive-immediate",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/02-fundamental-theorem/#4-basic-antiderivatives"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quanto vale $\\int_1^{e} \\frac{dx}{x}$?",
+    "opzioni": [
+     "$1$",
+     "$e - 1$",
+     "$\\frac{1}{e}$",
+     "$0$"
+    ],
+    "spiegazione": "$\\big[\\log x\\big]_1^{e} = 1 - 0 = 1$."
+   },
+   "en": {
+    "testo": "What is $\\int_1^{e} \\frac{dx}{x}$?",
+    "opzioni": [
+     "$1$",
+     "$e - 1$",
+     "$\\frac{1}{e}$",
+     "$0$"
+    ],
+    "spiegazione": "$\\big[\\log x\\big]_1^{e} = 1 - 0 = 1$."
+   }
+  },
+  {
+   "id": "am1-f-1193",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#1-integrazione-per-sostituzione",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#1-integration-by-substitution"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Qual è una primitiva di $\\cos x\\,\\sin^3 x$?",
+    "opzioni": [
+     "$\\frac{\\cos^4 x}{4}$",
+     "$\\sin^3 x\\,\\cos x$",
+     "$\\frac{\\sin^4 x}{4}$",
+     "$3\\sin^2 x\\cos^2 x$"
+    ],
+    "spiegazione": "Con $t = \\sin x$, $dt = \\cos x\\,dx$: $\\int t^3\\,dt = \\frac{t^4}{4}$."
+   },
+   "en": {
+    "testo": "What is an antiderivative of $\\cos x\\,\\sin^3 x$?",
+    "opzioni": [
+     "$\\frac{\\cos^4 x}{4}$",
+     "$\\sin^3 x\\,\\cos x$",
+     "$\\frac{\\sin^4 x}{4}$",
+     "$3\\sin^2 x\\cos^2 x$"
+    ],
+    "spiegazione": "With $t = \\sin x$, $dt = \\cos x\\,dx$: $\\int t^3\\,dt = \\frac{t^4}{4}$."
+   }
+  },
+  {
+   "id": "am1-f-1194",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#31-denominatore-di-primo-e-di-secondo-grado",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#31-denominator-of-first-and-second-degree"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Qual è una primitiva di $\\frac{2x+3}{(x+1)^2}$ in $(-1, \\ip)$?",
+    "opzioni": [
+     "$2\\log(x+1) + \\frac{1}{x+1}$",
+     "$2\\log(x+1) - \\frac{1}{x+1}$",
+     "$\\log(x+1)^2$",
+     "$\\frac{-(2x+3)}{x+1}$"
+    ],
+    "spiegazione": "$2x + 3 = 2(x+1) + 1$, quindi l'integranda è $\\frac{2}{x+1} + \\frac{1}{(x+1)^2}$, con primitiva $2\\log(x+1) - \\frac{1}{x+1}$."
+   },
+   "en": {
+    "testo": "What is an antiderivative of $\\frac{2x+3}{(x+1)^2}$ on $(-1, \\ip)$?",
+    "opzioni": [
+     "$2\\log(x+1) + \\frac{1}{x+1}$",
+     "$2\\log(x+1) - \\frac{1}{x+1}$",
+     "$\\log(x+1)^2$",
+     "$\\frac{-(2x+3)}{x+1}$"
+    ],
+    "spiegazione": "$2x + 3 = 2(x+1) + 1$, so the integrand is $\\frac{2}{x+1} + \\frac{1}{(x+1)^2}$, with antiderivative $2\\log(x+1) - \\frac{1}{x+1}$."
+   }
+  },
+  {
+   "id": "am1-f-1195",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#31-denominatore-di-primo-e-di-secondo-grado",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#31-denominator-of-first-and-second-degree"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quanto vale $\\int \\frac{dx}{(x+1)^2 + 4}$?",
+    "opzioni": [
+     "$\\arctan\\frac{x+1}{2} + c$",
+     "$\\log\\big((x+1)^2 + 4\\big) + c$",
+     "$2\\arctan(x+1) + c$",
+     "$\\frac12\\arctan\\frac{x+1}{2} + c$"
+    ],
+    "spiegazione": "$\\int \\frac{dx}{(x+p/2)^2 + k^2} = \\frac1k\\arctan\\frac{x+p/2}{k} + c$ con $k = 2$."
+   },
+   "en": {
+    "testo": "What is $\\int \\frac{dx}{(x+1)^2 + 4}$?",
+    "opzioni": [
+     "$\\arctan\\frac{x+1}{2} + c$",
+     "$\\log\\big((x+1)^2 + 4\\big) + c$",
+     "$2\\arctan(x+1) + c$",
+     "$\\frac12\\arctan\\frac{x+1}{2} + c$"
+    ],
+    "spiegazione": "$\\int \\frac{dx}{(x+p/2)^2 + k^2} = \\frac1k\\arctan\\frac{x+p/2}{k} + c$ with $k = 2$."
+   }
+  },
+  {
+   "id": "am1-f-1196",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#4-aree-di-regioni-piane",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#4-areas-of-plane-regions"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Qual è l'area della regione limitata compresa fra $y = x^3$ e $y = x$?",
+    "opzioni": [
+     "$\\frac12$",
+     "$\\frac32$",
+     "$\\frac14$",
+     "$\\frac13$"
+    ],
+    "spiegazione": "Le curve si incontrano in $-1, 0, 1$: l'area è $\\int_{-1}^1 |x^3 - x|\\,dx = \\frac14 + \\frac14 = \\frac12$. L'integrale con segno vale $0$."
+   },
+   "en": {
+    "testo": "What is the area of the bounded region between $y = x^3$ and $y = x$?",
+    "opzioni": [
+     "$\\frac12$",
+     "$\\frac32$",
+     "$\\frac14$",
+     "$\\frac13$"
+    ],
+    "spiegazione": "The curves meet at $-1, 0, 1$: the area is $\\int_{-1}^1 |x^3 - x|\\,dx = \\frac14 + \\frac14 = \\frac12$. The signed integral is $0$."
+   }
+  },
+  {
+   "id": "am1-f-1197",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#5-valor-medio-di-una-funzione",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#5-mean-value-of-a-function"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Qual è il valor medio di $f(x) = x^2$ in $[0,3]$?",
+    "opzioni": [
+     "$9$",
+     "$3$",
+     "$\\frac92$",
+     "$\\frac32$"
+    ],
+    "spiegazione": "$\\frac13\\int_0^3 x^2\\,dx = \\frac13 \\cdot 9 = 3$, assunto in $c = \\sqrt3$."
+   },
+   "en": {
+    "testo": "What is the mean value of $f(x) = x^2$ on $[0,3]$?",
+    "opzioni": [
+     "$9$",
+     "$3$",
+     "$\\frac92$",
+     "$\\frac32$"
+    ],
+    "spiegazione": "$\\frac13\\int_0^3 x^2\\,dx = \\frac13 \\cdot 9 = 3$, taken at $c = \\sqrt3$."
+   }
+  },
+  {
+   "id": "am1-f-1198",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#box-defImproprioFunzione-4",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#box-defImproprioFunzione-4"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Come si definisce $\\int_0^1 f(x)\\,dx$ per $f$ continua in $(0,1]$ e illimitata vicino a $0$?",
+    "opzioni": [
+     "$\\lim_{\\omega \\rr \\ip} \\int_0^{\\omega} f$",
+     "$\\lim_{x \\rr 0^+} \\big(f(1) - f(x)\\big)$",
+     "$\\sup_P s(f,P)$ al variare di $P$ in $[0,1]$",
+     "$\\lim_{\\varepsilon \\rr 0^+} \\int_{\\varepsilon}^{1} f$"
+    ],
+    "spiegazione": "Si integra su $[\\varepsilon, 1]$, dove $f$ è continua, e si passa al limite per $\\varepsilon \\rr 0^+$. Le somme di Riemann richiedono una funzione limitata."
+   },
+   "en": {
+    "testo": "How is $\\int_0^1 f(x)\\,dx$ defined for $f$ continuous on $(0,1]$ and unbounded near $0$?",
+    "opzioni": [
+     "$\\lim_{\\omega \\rr \\ip} \\int_0^{\\omega} f$",
+     "$\\lim_{x \\rr 0^+} \\big(f(1) - f(x)\\big)$",
+     "$\\sup_P s(f,P)$ over all partitions $P$ of $[0,1]$",
+     "$\\lim_{\\varepsilon \\rr 0^+} \\int_{\\varepsilon}^{1} f$"
+    ],
+    "spiegazione": "One integrates on $[\\varepsilon, 1]$, where $f$ is continuous, and takes the limit as $\\varepsilon \\rr 0^+$. Riemann sums require a bounded function."
+   }
+  },
+  {
+   "id": "am1-f-1199",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#2-integrali-di-funzioni-illimitate",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#2-integrals-of-unbounded-functions"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quanto vale $\\int_0^1 \\frac{dx}{\\sqrt{x}}$?",
+    "opzioni": [
+     "$\\ip$",
+     "$2$",
+     "$1$",
+     "$\\frac12$"
+    ],
+    "spiegazione": "$\\int_{\\varepsilon}^1 x^{-1/2}\\,dx = 2 - 2\\sqrt{\\varepsilon} \\rr 2$: con $p = \\frac12 < 1$ converge."
+   },
+   "en": {
+    "testo": "What is $\\int_0^1 \\frac{dx}{\\sqrt{x}}$?",
+    "opzioni": [
+     "$\\ip$",
+     "$2$",
+     "$1$",
+     "$\\frac12$"
+    ],
+    "spiegazione": "$\\int_{\\varepsilon}^1 x^{-1/2}\\,dx = 2 - 2\\sqrt{\\varepsilon} \\rr 2$: with $p = \\frac12 < 1$ it converges."
+   }
+  },
+  {
+   "id": "am1-f-1200",
+   "livello": "facile",
+   "capitolo": "integrals-04-improper-integrals",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/04-integrali-impropri/#4-criterio-integrale-per-le-serie",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/04-improper-integrals/#4-integral-test-for-series"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Per quali $p > 0$ converge $\\sum_{k=1}^{\\infty} \\frac{1}{k^p}$, secondo il criterio integrale?",
+    "opzioni": [
+     "per $p \\ge 1$",
+     "per $p < 1$",
+     "per $p > 1$",
+     "per ogni $p > 0$"
+    ],
+    "spiegazione": "$\\frac{1}{x^p}$ è positiva e decrescente: la serie ha il carattere di $\\int_1^{\\ip}\\frac{dx}{x^p}$, che converge se e solo se $p > 1$."
+   },
+   "en": {
+    "testo": "For which $p > 0$ does $\\sum_{k=1}^{\\infty} \\frac{1}{k^p}$ converge, according to the integral test?",
+    "opzioni": [
+     "for $p \\ge 1$",
+     "for $p < 1$",
+     "for $p > 1$",
+     "for every $p > 0$"
+    ],
+    "spiegazione": "$\\frac{1}{x^p}$ is positive and decreasing: the series behaves like $\\int_1^{\\ip}\\frac{dx}{x^p}$, which converges if and only if $p > 1$."
+   }
+  },
+  {
+   "id": "am1-f-1201",
+   "livello": "facile",
+   "capitolo": "integrals-03-integration-techniques",
+   "link": {
+    "it": "https://fabiofurini.github.io/analisi-matematica-1/integrali/03-tecniche-integrazione/#5-valor-medio-di-una-funzione",
+    "en": "https://fabiofurini.github.io/mathematical-analysis-1/integrals/03-integration-techniques/#5-mean-value-of-a-function"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Il valor medio di una funzione continua $f$ in $[0,4]$ è $3$. Quanto vale $\\int_0^4 f(x)\\,dx$?",
+    "opzioni": [
+     "$\\frac34$",
+     "$7$",
+     "$12$",
+     "$3$"
+    ],
+    "spiegazione": "Il valor medio è $\\frac{1}{4}\\int_0^4 f$, quindi $\\int_0^4 f = 4 \\cdot 3 = 12$."
+   },
+   "en": {
+    "testo": "The mean value of a continuous function $f$ on $[0,4]$ is $3$. What is $\\int_0^4 f(x)\\,dx$?",
+    "opzioni": [
+     "$\\frac34$",
+     "$7$",
+     "$12$",
+     "$3$"
+    ],
+    "spiegazione": "The mean value is $\\frac{1}{4}\\int_0^4 f$, hence $\\int_0^4 f = 4 \\cdot 3 = 12$."
+   }
   }
  ]
 }

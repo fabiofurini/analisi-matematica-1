@@ -112,6 +112,15 @@ per vedere la matematica muoversi.
 
     [:octicons-arrow-right-24: I capitoli](serie/index.md)
 
+-   :material-chart-areaspline: **7 · Integrali**
+
+    ---
+
+    Integrale di Riemann, teorema fondamentale del calcolo, tecniche di
+    integrazione, aree, integrali impropri e criterio integrale.
+
+    [:octicons-arrow-right-24: I capitoli](integrali/index.md)
+
 </div>
 
 <!-- collana-da-non-perdere -->

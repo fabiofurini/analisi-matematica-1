@@ -26,7 +26,8 @@ interattivi, con gli stessi numeri e gli stessi colori del PDF.
 | 4 · Limiti | successioni e limiti, Nepero, stime asintotiche; limiti di funzioni, continuità, zeri, Weierstrass |
 | 5 · Derivate | regole di calcolo, Fermat, Lagrange, De l'Hospital, Taylor, studio di funzione, Newton |
 | 6 · Serie | serie numeriche, criteri di convergenza, serie a segno variabile, serie di funzioni |
-| Esercizi | circa 300 esercizi con soluzioni svolte, compresi primitive e integrali |
+| 7 · Integrali | integrale di Riemann, teorema fondamentale, tecniche di integrazione, aree, integrali impropri |
+| Esercizi | circa 340 esercizi con soluzioni svolte |
 
 ## Come è costruito
 

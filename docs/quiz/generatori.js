@@ -1738,4 +1738,83 @@
       return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { r1: r1, r2: r2, a: a, m: m, q: q } });
     })
   });
+
+  // ================================================================== Parte 7 · Integrali (capitoli del 21 novembre 2026)
+  // ------------------------------------------------------------------ somma superiore di una funzione lineare
+  G.push({
+    id: "am1-g-somma-superiore", livello: "facile", capitolo: "integrals-01-riemann-integral",
+    link: L("integrali/01-integrale-riemann/#box-defSomme-2", "integrals/01-riemann-integral/#box-defSomme-2"),
+    genera: ripeti(function (rng, lingua) {
+      var a = pick(rng, [1, 2, 3, 4]), b = ri(rng, -3, 3), Lg = pick(rng, [1, 2, 3]), n = pick(rng, [2, 3, 4]);
+      var base = new Fr(a * Lg * Lg, 2 * n);
+      var S = base.mul(n + 1).add(b * Lg), s = base.mul(n - 1).add(b * Lg), I = new Fr(a * Lg * Lg, 2).add(b * Lg);
+      var cand = [s, I, base.mul(2 * (n + 1)).add(b * Lg), S.add(Lg)];
+      var distr = distinti(S, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var f = poli([a, b]);
+      var testo = T(lingua, "Sia $f(x) = " + f + "$ in $[0, " + Lg + "]$ e sia $P_{" + n + "}$ la partizione uniforme in $" + n + "$ intervalli. Quanto vale la somma superiore $S(f, P_{" + n + "})$?",
+        "Let $f(x) = " + f + "$ on $[0, " + Lg + "]$ and let $P_{" + n + "}$ be the uniform partition into $" + n + "$ intervals. What is the upper sum $S(f, P_{" + n + "})$?");
+      var sp = T(lingua, "$f$ è crescente: in ogni intervallo il massimo è nell'estremo destro $x_k = \\frac{" + Lg + "k}{" + n + "}$. Quindi $S = \\sum_{k=1}^{" + n + "} f(x_k)\\,\\frac{" + Lg + "}{" + n + "} = " + S.tex() + "$; la somma inferiore vale $" + s.tex() + "$ e l'integrale $" + I.tex() + "$.",
+        "$f$ is increasing: on every interval the maximum is at the right endpoint $x_k = \\frac{" + Lg + "k}{" + n + "}$. Hence $S = \\sum_{k=1}^{" + n + "} f(x_k)\\,\\frac{" + Lg + "}{" + n + "} = " + S.tex() + "$; the lower sum is $" + s.tex() + "$ and the integral $" + I.tex() + "$.");
+      return chiudi(rng, testo, OF(S), distr.map(OF), sp, { param: { a: a, b: b, L: Lg, n: n } });
+    })
+  });
+
+  // ------------------------------------------------------------------ valor medio di un polinomio di secondo grado
+  G.push({
+    id: "am1-g-valor-medio", livello: "facile", capitolo: "integrals-03-integration-techniques",
+    link: L("integrali/03-tecniche-integrazione/#box-exValorMedio-15", "integrals/03-integration-techniques/#box-exValorMedio-15"),
+    genera: ripeti(function (rng, lingua) {
+      var c = riNZ(rng, -4, 4), d = ri(rng, -5, 5), b = pick(rng, [1, 2, 3, 4]);
+      var m = new Fr(c * b * b, 3).add(d);
+      var cand = [new Fr(c * b * b, 2).add(d), new Fr(c * b * b * b, 3).add(d * b), F(c * b * b + d), new Fr(c * b * b, 3)];
+      var distr = distinti(m, cand, function (v) { return v.key(); });
+      if (!distr) return null;
+      var f = poli([c, 0, d]);
+      var testo = T(lingua, "Qual è il valor medio (media integrale) di $f(x) = " + f + "$ nell'intervallo $[0, " + b + "]$?",
+        "What is the mean value (integral mean) of $f(x) = " + f + "$ on the interval $[0, " + b + "]$?");
+      var sp = T(lingua, "Il valor medio è $\\frac{1}{" + b + "}\\int_0^{" + b + "} f(x)\\,dx = \\frac{1}{" + b + "}\\left(\\frac{" + c + " \\cdot " + b + "^3}{3} + " + d + " \\cdot " + b + "\\right) = " + m.tex() + "$.",
+        "The mean value is $\\frac{1}{" + b + "}\\int_0^{" + b + "} f(x)\\,dx = \\frac{1}{" + b + "}\\left(\\frac{" + c + " \\cdot " + b + "^3}{3} + " + d + " \\cdot " + b + "\\right) = " + m.tex() + "$.");
+      return chiudi(rng, testo, OF(m), distr.map(OF), sp, { param: { c: c, d: d, b: b } });
+    })
+  });
+
+  // ------------------------------------------------------------------ derivata di una funzione integrale con estremo x^2
+  G.push({
+    id: "am1-g-derivata-funzione-integrale", livello: "media", capitolo: "integrals-02-fundamental-theorem",
+    link: L("integrali/02-teorema-fondamentale/#box-theoDerivataIntegrale-13", "integrals/02-fundamental-theorem/#box-theoDerivataIntegrale-13"),
+    genera: ripeti(function (rng, lingua) {
+      var p = riNZ(rng, -3, 3), q = ri(rng, -4, 4), x0 = riNZ(rng, -2, 2);
+      var v = function (t) { return p * t + q; };
+      var g = F(v(x0 * x0) * 2 * x0);
+      var cand = [F(v(x0 * x0)), F(v(x0) * 2 * x0), F(v(x0 * x0) * x0 * x0), F(v(x0 * x0) * 2 * x0 - v(0))];
+      var distr = distinti(g, cand, function (z) { return z.key(); });
+      if (!distr) return null;
+      var f = poli([p, q], "t");
+      var testo = T(lingua, "Sia $G(x) = \\int_0^{x^2} (" + f + ")\\,dt$. Quanto vale $G'(" + x0 + ")$?",
+        "Let $G(x) = \\int_0^{x^2} (" + f + ")\\,dt$. What is $G'(" + x0 + ")$?");
+      var sp = T(lingua, "Per il teorema fondamentale e la regola della catena $G'(x) = f(x^2)\\cdot 2x$, con $f(t) = " + f + "$. In $x = " + x0 + "$: $f(" + (x0 * x0) + ") \\cdot " + (2 * x0) + " = " + g.tex() + "$.",
+        "By the fundamental theorem and the chain rule $G'(x) = f(x^2)\\cdot 2x$, with $f(t) = " + f + "$. At $x = " + x0 + "$: $f(" + (x0 * x0) + ") \\cdot " + (2 * x0) + " = " + g.tex() + "$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { p: p, q: q, x0: x0 } });
+    })
+  });
+
+  // ------------------------------------------------------------------ integrale improprio notevole all'infinito
+  G.push({
+    id: "am1-g-improprio-potenza", livello: "media", capitolo: "integrals-04-improper-integrals",
+    link: L("integrali/04-integrali-impropri/#box-theoNotevoleInfinito-3", "integrals/04-improper-integrals/#box-theoNotevoleInfinito-3"),
+    genera: ripeti(function (rng, lingua) {
+      var p = pick(rng, [2, 3, 4]), a = pick(rng, [1, 2, 3]), c = ri(rng, 1, 6);
+      var apow = Math.pow(a, p - 1);
+      var g = new Fr(c, (p - 1) * apow);
+      var cand = [new Fr(c, p * apow), new Fr(c, p - 1), new Fr(c, (p + 1) * apow), new Fr(c, (p - 1) * apow * a), new Fr(c * apow, p - 1), F(c), new Fr(c, (p - 1) * (p - 1))];
+      var distr = distinti(g, cand, function (z) { return z.key(); });
+      if (!distr) return null;
+      var testo = T(lingua, "Quanto vale l'integrale improprio $\\int_{" + a + "}^{+\\infty} \\frac{" + c + "}{x^{" + p + "}}\\,dx$?",
+        "What is the improper integral $\\int_{" + a + "}^{+\\infty} \\frac{" + c + "}{x^{" + p + "}}\\,dx$?");
+      var sp = T(lingua, "Con $p = " + p + " > 1$ converge: $\\int_{" + a + "}^{\\omega} " + c + "\\,x^{-" + p + "}\\,dx = \\frac{" + c + "}{" + (p - 1) + "}\\left(" + a + "^{-" + (p - 1) + "} - \\omega^{-" + (p - 1) + "}\\right) \\rr " + g.tex() + "$ per $\\omega \\rr +\\infty$.",
+        "With $p = " + p + " > 1$ it converges: $\\int_{" + a + "}^{\\omega} " + c + "\\,x^{-" + p + "}\\,dx = \\frac{" + c + "}{" + (p - 1) + "}\\left(" + a + "^{-" + (p - 1) + "} - \\omega^{-" + (p - 1) + "}\\right) \\rr " + g.tex() + "$ as $\\omega \\rr +\\infty$.");
+      return chiudi(rng, testo, OF(g), distr.map(OF), sp, { param: { p: p, a: a, c: c } });
+    })
+  });
 })();

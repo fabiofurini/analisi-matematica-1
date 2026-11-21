@@ -221,6 +221,12 @@ nav:
       - "2. Serie numeriche a termini non negativi": serie/02-termini-non-negativi.md
       - "3. Serie numeriche a termini di segno variabile": serie/03-segno-variabile.md
       - "4. Serie di funzioni": serie/04-serie-funzioni.md
+  - Integrali:
+      - integrali/index.md
+      - "1. L'integrale di Riemann": integrali/01-integrale-riemann.md
+      - "2. Teorema fondamentale del calcolo integrale": integrali/02-teorema-fondamentale.md
+      - "3. Tecniche di integrazione e applicazioni": integrali/03-tecniche-integrazione.md
+      - "4. Integrali impropri": integrali/04-integrali-impropri.md
   - Esercizi:
       - esercizi/index.md
       - Logica:
@@ -259,6 +265,10 @@ nav:
       - Integrali:
           - "Primitive": esercizi/es-integrali-01-primitive.md
           - "Integrali": esercizi/es-integrali-02-integrali.md
+          - "Integrale di Riemann e proprietà": esercizi/es-integrali-03-integrale-riemann.md
+          - "Funzioni integrali e teorema fondamentale": esercizi/es-integrali-04-funzioni-integrali.md
+          - "Integrali definiti e aree": esercizi/es-integrali-05-integrali-definiti-aree.md
+          - "Integrali impropri": esercizi/es-integrali-06-integrali-impropri.md
   - Quiz: autovalutazione.md
   - Laboratorio: interattivi/index.md
   - Materiale: materiale.md
