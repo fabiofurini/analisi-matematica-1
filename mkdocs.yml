@@ -84,9 +84,12 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/fabiofurini
       name: GitHub
-    - icon: material/chart-timeline-variant
-      link: https://fabiofurini.github.io/laboratorio-ricerca-operativa/
-      name: Laboratorio di Ricerca Operativa
+    - icon: material/chart-line
+      link: https://fabiofurini.github.io/modellazione-pl/
+      name: Modellazione PL
+    - icon: material/chart-bell-curve-cumulative
+      link: https://fabiofurini.github.io/modellazione-pnl/
+      name: Modellazione PNL
     - icon: material/vector-polygon
       link: https://fabiofurini.github.io/modellazione-mip/
       name: Modellazione MIP
