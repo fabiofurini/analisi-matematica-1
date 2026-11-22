@@ -1,18 +1,8 @@
 # Logica e metodi di dimostrazione
 
-<div class="info-capitolo" markdown>
+*Parte 1 del corso, volume 1 delle dispense.* Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principio di induzione.
 
-**Parte 1 · Logica** · 2 capitoli
-
-</div>
-
-Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principio di induzione.
-
-**Da scaricare**
-
-- [:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-logica.pdf)
-- [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf)
-- :material-presentation: Slide dei capitoli: [1](../pdf/slide-logica-01-logica.pdf) · [2](../pdf/slide-logica-02-induzione.pdf)
+[:material-file-pdf-box: Dispensa, volume 1 (PDF)](../pdf/dispensa-1-logica.pdf){ .md-button } [:material-pencil-box-multiple: Esercizi, volume 1 (PDF)](../pdf/esercizi-1-logica.pdf){ .md-button } [:material-pencil: Esercizi svolti](../esercizi/es-logica-01-induzione.md){ .md-button }
 
 <div class="grid cards" markdown>
 
@@ -22,7 +12,7 @@ Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principi
 
     Simboli logici · Implicazioni universali e dimostrazioni · Legge della contronominale · Condizioni sufficienti  e condizioni necessarie · …
 
-    [:octicons-arrow-right-24: Leggi il capitolo](01-logica.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](01-logica.md) · [Slide](../pdf/slide-logica-01-logica.pdf)
 
 -   **2. Principio di induzione**
 
@@ -30,6 +20,6 @@ Proposizioni e quantificatori, implicazioni, tecniche di dimostrazione, principi
 
     Il principio di induzione · Dimostrazioni basate sul principio di induzione
 
-    [:octicons-arrow-right-24: Leggi il capitolo](02-induzione.md)
+    [:octicons-arrow-right-24: Leggi il capitolo](02-induzione.md) · [Slide](../pdf/slide-logica-02-induzione.pdf)
 
 </div>
