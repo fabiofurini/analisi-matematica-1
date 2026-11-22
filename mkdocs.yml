@@ -84,6 +84,36 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/fabiofurini
       name: GitHub
+    - icon: material/matrix
+      link: https://fabiofurini.github.io/algebra-lineare/
+      name: Algebra lineare
+    - icon: material/code-braces
+      link: https://fabiofurini.github.io/algoritmi/
+      name: Algoritmi
+    - icon: material/vector-triangle
+      link: https://fabiofurini.github.io/programmazione-lineare/
+      name: Programmazione lineare
+    - icon: material/dots-grid
+      link: https://fabiofurini.github.io/programmazione-lineare-intera/
+      name: Programmazione lineare intera
+    - icon: material/vector-curve
+      link: https://fabiofurini.github.io/ottimizzazione-convessa/
+      name: Ottimizzazione convessa
+    - icon: material/graph-outline
+      link: https://fabiofurini.github.io/ottimizzazione-su-reti/
+      name: Ottimizzazione su reti
+    - icon: material/hexagon-multiple-outline
+      link: https://fabiofurini.github.io/ottimizzazione-combinatoria/
+      name: Problemi di ottimizzazione combinatoria
+    - icon: material/table-large
+      link: https://fabiofurini.github.io/programmazione-dinamica/
+      name: Programmazione dinamica
+    - icon: material/map-marker-path
+      link: https://fabiofurini.github.io/algoritmi-euristici/
+      name: Algoritmi euristici
+    - icon: material/approximately-equal
+      link: https://fabiofurini.github.io/algoritmi-di-approssimazione/
+      name: Algoritmi di approssimazione
     - icon: material/chart-line
       link: https://fabiofurini.github.io/modellazione-pl/
       name: Modellazione PL
@@ -93,18 +123,6 @@ extra:
     - icon: material/vector-polygon
       link: https://fabiofurini.github.io/modellazione-mip/
       name: Modellazione MIP
-    - icon: material/matrix
-      link: https://fabiofurini.github.io/algebra-lineare/
-      name: Algebra lineare
-    - icon: material/vector-triangle
-      link: https://fabiofurini.github.io/programmazione-lineare/
-      name: Programmazione lineare
-    - icon: material/chart-bell-curve
-      link: https://fabiofurini.github.io/ottimizzazione-convessa/
-      name: Ottimizzazione convessa
-    - icon: material/code-braces
-      link: https://fabiofurini.github.io/algoritmi/
-      name: Algoritmi
   alternate:
     - name: Italiano
       link: https://fabiofurini.github.io/analisi-matematica-1/
