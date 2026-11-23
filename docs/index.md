@@ -20,9 +20,6 @@ Il corso presenta l'analisi matematica di una variabile: logica e tecniche di di
 numeri, relazioni e funzioni, successioni e limiti, continuità, derivate e studio di funzione, serie e
 integrali.
 
-Ogni capitolo ha definizioni, teoremi con dimostrazione, esempi svolti passo per passo, esercizi e
-**grafici interattivi** per vedere la matematica muoversi.
-
 [Comincia :material-arrow-right:](logica/index.md){ .md-button .md-button--primary }
 [:material-pencil: Esercizi](esercizi/index.md){ .md-button }
 [:material-gesture-tap: Laboratorio](interattivi/index.md){ .md-button }
