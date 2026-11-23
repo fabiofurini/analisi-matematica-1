@@ -218,7 +218,7 @@ Le slide delle lezioni, capitolo per capitolo (PDF).
 - Capitolo 4 · [Integrali impropri](pdf/slide-integrali-04-integrali-impropri.pdf)
 
 <!-- banca-domande -->
-## Banca delle domande del quiz
+## Banca delle domande
 
 Tutte le domande dell'autovalutazione, divise per parte e capitolo, con la risposta corretta e la spiegazione; per le domande generate, che cambiano i numeri a ogni avvio, alcuni esempi.
 
